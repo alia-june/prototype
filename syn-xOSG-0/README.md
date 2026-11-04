@@ -12,6 +12,30 @@ Version **0.4.0** is the loose/fuzzy-hardening release. Its central question is 
 
 > **Prototype status:** this repository path is a staging location. Nothing in this README implies production deployment, privilege escalation, autonomous authority, or modification of an underlying model.
 
+## Theoretical applications
+
+xOSG-0 is intended first as a research substrate for studying how complex human-directed AI and software workflows can remain inspectable when authority, state, uncertainty, failure, and verification are distributed across multiple layers.
+
+Potential theoretical applications include:
+
+- **Layered authority models** — studying how policy, workflow, runtime, and human decision authority can coexist without collapsing into a single implicit controller.
+- **Human-led machine orchestration** — exploring systems where models assist with decomposition, synthesis, and coordination while the human operator retains binding decision agency.
+- **Compatibility of heterogeneous systems** — testing how components with different assumptions, interfaces, capabilities, or failure modes can interact without requiring them to become identical.
+- **Bounded autonomy research** — examining how useful machine initiative can exist inside explicit state, transition, verification, and authority constraints.
+- **Fail-closed AI workflows** — modeling systems that expose uncertainty, malformed state, and incomplete evidence instead of converting ambiguity into apparent success.
+- **Provenance-aware computation** — studying how outputs can carry enough execution history, evidence, and state context to support later inspection and attestation.
+- **Stateful reasoning environments** — exploring whether persistent registers, explicit transitions, and durable workflow state improve continuity over prompt-only orchestration.
+- **Adversarial workflow testing** — using fuzzing, malformed persistence, contradictory state, timing anomalies, and near-valid inputs to probe the behavior of orchestration systems.
+- **Synthetic expert overlays** — investigating layered expert instructions and machine descriptions that reinforce one another without claiming to alter the underlying model.
+- **Deterministic offload** — identifying which validation, transition, policy, and persistence checks can be moved from probabilistic reasoning into deterministic mechanisms.
+- **Multi-instance coordination** — modeling interactions among distinct AI instances or software machines while preserving local identity, authority boundaries, and provenance.
+- **Control-plane separation** — exploring architectures where execution, verification, policy, and authorization are deliberately separated rather than fused into one process.
+- **Inspectable failure semantics** — treating rejection, invalidity, corruption, and blocked states as first-class outcomes rather than exceptional edge cases.
+- **Experimental governance kernels** — providing a sandbox for researching monotonic restrictions, production gates, explicit release authority, and other governance structures before any production implementation.
+- **Machine-readable capability envelopes** — studying universal descriptions of what a program, model, or service can safely do before it is composed into a larger workflow.
+
+These are research directions, not claims that v0.4.0 already implements a formal solution to each problem.
+
 ## Core workflow
 
 ```text
