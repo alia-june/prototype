@@ -1,0 +1,23 @@
+{
+  "schema": "xosg.minimized-evidence.v1",
+  "release": "0.10.0",
+  "data_touch": {
+    "model_default": "DT0-DT3",
+    "semantic_full_content": false
+  },
+  "scaffolding": {
+    "prompt_scaffolding_checks": 12,
+    "prompt_scaffolding_passed": 12,
+    "release_checks": 11,
+    "release_passed": 11,
+    "payload_preservation": true,
+    "unknown_descriptor_policy": "UNRESOLVED",
+    "wrapper_executes_payload": false
+  },
+  "gate": {
+    "state": "LOCKED_POST_RELEASE",
+    "current_release_active": true,
+    "new_promotion_allowed": false
+  },
+  "pass": true
+}
