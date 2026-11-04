@@ -1,0 +1,15 @@
+{
+  "prepared_files": 484,
+  "prepared_bytes": 1250181,
+  "packages": {
+    "source-packages/bare-metal-0-initial-fuzzy": {"files":22,"bytes":34766},
+    "source-packages/bare-metal-0-original": {"files":13,"bytes":15698},
+    "source-packages/bare-metal-0-v0.2-actualized": {"files":19,"bytes":26465},
+    "source-packages/consolidated-v0.5-reconstruction": {"files":81,"bytes":209646},
+    "supporting/goal-scaffolding-v0.10.0": {"files":111,"bytes":309324},
+    "supporting/operator-kernel-preproduction-v0.4.0": {"files":47,"bytes":123282},
+    "supporting/operator-learning-layer-predecomposition": {"files":21,"bytes":41538},
+    "supporting/operator-orchestrator-kernel-production-release": {"files":78,"bytes":222291},
+    "supporting/orchestrator-control-kernel-v0.9.0": {"files":92,"bytes":267171}
+  }
+}
