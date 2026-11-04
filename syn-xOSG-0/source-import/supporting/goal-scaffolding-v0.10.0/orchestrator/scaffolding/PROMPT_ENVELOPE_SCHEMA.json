@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "xOSG-0 Goal Scaffold Artifact",
+  "type": "object",
+  "required": ["schema_version", "mode", "wrapper", "pre_context", "payload", "post_context", "attestation"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "mode": {"type": "string"},
+    "wrapper": {"const": "core-access"},
+    "pre_context": {"type": "object"},
+    "payload": {
+      "type": "object",
+      "required": ["goal_verbatim", "sha256"],
+      "properties": {
+        "goal_verbatim": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "post_context": {"type": "object"},
+    "attestation": {"type": "object"}
+  }
+}
