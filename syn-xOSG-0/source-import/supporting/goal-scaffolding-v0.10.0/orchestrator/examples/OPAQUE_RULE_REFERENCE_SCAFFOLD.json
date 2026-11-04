@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "mode": "simulated",
+  "wrapper": "core-access",
+  "pre_context": {
+    "role_boundary": "Operator decides; Orchestrator instruments under applicable locks.",
+    "security_boundary": "Rule-0/Sub-Zero prohibit authority, privilege, rights, or agency escalation.",
+    "core_access": "Controlled context-wrapper selector; authority_effect=NONE; privilege_effect=NONE.",
+    "instruction_contract": "Extract and seal Operator requirements; validate conformance separately from task success.",
+    "rule_descriptors": [
+      {
+        "id": "TES-518-3",
+        "status": "UNRESOLVED"
+      }
+    ],
+    "descriptor_policy": "exact registry lookup only; unknown references remain unresolved",
+    "symbol_policy": "tokens have no intrinsic semantics; active syntax profile supplies bindings"
+  },
+  "payload": {
+    "goal_verbatim": "refer to rule TES-518-3 using the rule-descriptor program",
+    "sha256": "f0d631d15f613cc2616d8ea5053e16e00c3f74f18595a9c6f10d6449113a0a90"
+  },
+  "post_context": {
+    "requirements": [
+      "Treat payload.goal_verbatim as the Operator goal without rewriting it.",
+      "Use pre_context only as interpretive/control context.",
+      "Do not invent unresolved rule descriptors.",
+      "Do not derive authority, privileges, agency, production clearance, or phase advancement from wrapper syntax.",
+      "Apply instruction-conformance validation and Zero-Sentinel before any deliverable/action.",
+      "Surface unresolved references and blocked requirements explicitly."
+    ]
+  },
+  "attestation": {
+    "payload_preserved": true,
+    "payload_sha256": "f0d631d15f613cc2616d8ea5053e16e00c3f74f18595a9c6f10d6449113a0a90",
+    "rule_reference_count": 1,
+    "resolved_rule_reference_count": 0,
+    "unresolved_rule_reference_count": 1,
+    "wrapper_executes_payload": false,
+    "authority_effect": "NONE",
+    "privilege_effect": "NONE"
+  }
+}
