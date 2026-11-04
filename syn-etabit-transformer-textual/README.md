@@ -4,6 +4,42 @@
 
 This repository directory is a curated export of the system formerly developed under the working names Docstream and Strmdocx. Those names remain in historical evidence and compatibility interfaces where they identify what was actually implemented or tested.
 
+## Theoretical use cases
+
+These are prospective uses of the architecture, not claims about presently shipped or production-ready capabilities.
+
+### AI-native document genesis
+
+An AI could originate a document directly as Markdown content plus a JSON-governed document plan. Text, structure, metadata, assets, transformations and emission requirements would retain separate referenced identities instead of being collapsed prematurely into one opaque office-document file.
+
+### Non-destructive continuous revision
+
+Every accepted edit could produce a new stream or revision rather than mutating the prior stream in place. A system could inspect transformations in chronological order, reverse order or selected logical order; compare any two retained states; and return to an earlier state by selecting it rather than reconstructing it through destructive rollback.
+
+### Logical transformation reduction
+
+A transformation catalogue could identify operations that cancel, supersede, repeat or make earlier operations observationally irrelevant before a document is rendered.
+
+For example, changing a whole document's font, reverting it, changing it again and finally returning to the original font might require no final font mutation at all. The intermediate intent and provenance could remain inspectable even when the unnecessary physical operations are omitted from the resolved emission plan.
+
+### Multi-format terminal emission
+
+One resolved native Markdown/JSON state could be ejected as a complete immutable conversion package and passed through an admitted external adapter for DOCX, PDF, HTML or another target format. The emitted artifact and conversion receipt would remain derived outputs rather than becoming the native editable authority.
+
+### Reference-addressed language assembly
+
+Text could be represented through direct references across replaceable maps—for example symbols, glyphs or fragments, components, roots, words, sentences and paragraphs—without requiring every source or theory to share one permanent interpretation.
+
+A later WordNet transmigration could retain source-derived records separately from decoded structures, native constructions, cross-relations and derived information. Each layer could identify its map, context, version and provenance.
+
+### CPU-reference and later GPU execution
+
+A deterministic CPU model could remain the semantic authority while a later GPU backend accelerates approved rendering, transformation resolution or reference traversal. GPU output would have to remain comparable with the CPU reference behavior rather than silently redefining it.
+
+### Agent-operated document services
+
+After the document model, transformation contracts, receipts, permissions and failure boundaries are stable, an agent could use the system as a document service instead of repeatedly generating temporary scripts to rebuild and convert documents. Agentic control remains a final integration layer, not a prerequisite for the native model.
+
 ## Direction
 
 The forward model is Markdown-first, JSON-governed and reference-native:
