@@ -1,0 +1,13 @@
+{
+  "schema": "docstream.theory-inspection-index/1",
+  "study_status": "PARTIAL_GOVERNING_SOURCE_MISSING",
+  "generated_for": "AUTH-18B",
+  "files": [
+    {"path":"source_register.json","catalog":"sources","schema":"docstream.relative-theory.sources/1","bytes":5277,"sha256":"14845ec67dddab08e5de5786a68177249deb938793e22358e51ee8f30f8699b4","record_count":10},
+    {"path":"wordnet_relation_catalog.json","catalog":"wordnet_relations","schema":"docstream.relative-theory.wordnet-relations/1","bytes":7899,"sha256":"fd0247b777ac5f98408ff698ee7a8a491c8d2aad3033860bd1ea1c72d500cf41","record_count":16},
+    {"path":"generic_relation_catalog.json","catalog":"generic_relations","schema":"docstream.relative-theory.generic-relations/1","bytes":4847,"sha256":"86b995267b212da83f7ab4812b72bbb8a800e8792cac68a861fcc3937b0d700e","record_count":17},
+    {"path":"grammar_syntax_theory_catalog.json","catalog":"theory","schema":"docstream.relative-theory.grammar-syntax-theory/1","bytes":5187,"sha256":"c869f171ae80348fcbb789349617339ba9e919a6c9c12cab4864c287a04ed5fc","record_count":11},
+    {"path":"wordnet_theory_crosswalk.json","catalog":"crosswalk","schema":"docstream.relative-theory.crosswalk/1","bytes":5214,"sha256":"1a8931ff7b067fae65c4c38d01e754ced1352e87ae3c69974f3365f4b61f4001","record_count":10},
+    {"path":"auth18a_sample_analysis.json","catalog":"sample","schema":"docstream.relative-theory.auth18a-sample/1","bytes":4174,"sha256":"d1840300bff396cad961a2edfc6e567a434e1a25185228463dabf86d85196cf5","record_count":13}
+  ]
+}

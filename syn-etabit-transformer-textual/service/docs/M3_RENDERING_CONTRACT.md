@@ -1,0 +1,124 @@
+# Managed visual rendering — M3
+
+Date: 2026-10-29. Version: docstream-cpu 0.2.0.dev3. Renderer: docstream.html/1.
+
+## Agent workflow
+
+The service now provides semantic construction and visual output through
+docstream_render. Existing semantic-only operations retain their M2 meaning.
+
+1. Ingest a structured document using a registered font, or explicitly transform
+   its font to a registered family. Inspect status for current capabilities.
+2. Submit a transformation batch with mode=plan to retain its candidate and
+   addressable logical outputs.
+3. Call docstream_render with candidate_id and commit=false for a preview, or
+   commit=true for a rendered commit. A stream_id can be rendered directly for
+   inspection without advancing any head.
+4. Retrieve the artifact through docstream_artifact or its authenticated download
+   path. Reuse the original request key for a lost response, not for changed work.
+
+The new tool takes a `request` object with request_key; exactly one stream_id or
+candidate_id; commit boolean; and a profile. commit=true requires a candidate.
+The CLI accepts the same unwrapped JSON input through `call docstream_render`.
+No caller-generated Python/HTML/CSS is executed.
+
+## Profile and supported content
+
+Profile schema: docstream.render/1. Formats: png and/or pdf. Additional fields:
+margin_mpt (integer millipoints), show_title (exact boolean), code_font_family,
+locale (en-US/en-GB), and max_height_px. Strict validation rejects unknown fields
+and coercions. Page width/height come from the immutable snapshot. Dimensions and
+preview height are bounded; output files have a 32 MiB bound per artifact.
+
+Supported content is the existing semantic subset: title metadata, paragraphs,
+heading levels, code, flat ordered/unordered list items, and whole-block font,
+size, bold and italic styles. Text is escaped and never treated as active HTML.
+This does not add Markdown parsing, tables, images, inline spans or Word adapters.
+
+The configured Windows font registry contains Arial, Times New Roman and Consolas
+when all four face files are installed. Their bytes are hashed and supplied as
+internal data-font faces. Missing/unregistered requested fonts fail with
+FONT_UNAVAILABLE. The CPU model's inherited Aptos default is not silently aliased
+to Arial; a caller must make a supported font choice explicitly.
+
+The renderer waits for font loading and inspects actual platform-font usage via
+Chromium's protocol. Detected unregistered glyph fallback is rejected. This is
+not a complete worldwide-script shaping/coverage proof; visual QA covers the
+representative Latin-script example. Registered font content changes require
+renderer restart. Fonts are embedded in internal HTML for rendering, not offered
+as standalone downloadable font assets.
+
+## Worker lifecycle and isolation
+
+Playwright 1.64.1 and its matched Chromium revision are installed under the local
+venv and service/.browsers. One warm spawned worker owns Playwright and the browser;
+each render uses a fresh isolated browser context. The service remains the parent
+owner. On Windows a kill-on-close job object contains the worker and descendants.
+
+Document-provided script execution, external page requests and service workers
+are disabled. Packaged code supplies layout and probes. The browser uses software
+rendering flags; there is no application GPU transformation backend.
+
+The parent imposes a 60-second render-result wait. Failed/dead workers can be
+replaced for later requests. Shutdown closes the worker/browser before ASGI
+shutdown-complete is acknowledged; timeout cleanup closes the Windows job and
+terminates an unresponsive worker. It is not a browser-kernel security sandbox.
+
+## Cache identity
+
+The key combines semantic digest, full profile, renderer/template HTML digest,
+Playwright version, Chromium revision/version and executable/engine hashes,
+registered font identities, page settings and locale. Lineage IDs are excluded:
+a new stream with identical semantic payload and rendering settings can reuse an
+existing artifact set. Profile or content changes invalidate the cache.
+
+worker_starts counts worker-process launches. actual_renders counts successful
+browser render jobs; neither is a latency or speedup claim. The demonstration
+retains four font-change outputs with zero reduced property writes and reuses
+the original preview after returning to the exact original style state.
+
+## Publication and rendered commit
+
+Schema version 2 adds render_sets, artifacts, render_artifacts and stream_renders.
+A v1 store is backed up to before-schema-v2.sqlite3 before atomic migration.
+An existing backup destination causes a clear refusal for inspection; it is not
+overwritten. Fresh stores initialize directly at v2. Interrupted pending render
+sets become failed on startup.
+
+Semantic construction is persisted first without advancing a head. Browser work
+runs outside SQL transactions. Generated bytes are written and fsynced to managed
+staging, checked, and atomically published under content-derived names. Ready
+metadata is then committed. Orphan files from interrupted publication are not
+advertised as ready. Damaged managed files are quarantined before replacement.
+
+A final transaction verifies required artifact integrity, associates stream and
+render set, checks candidate head/revision, and commits the head plus receipt.
+Failure before that transaction leaves the head unchanged. A stale candidate can
+retain a ready preview and a conflict receipt. A ready cache can be reused after
+a failed final commit. Existing semantic-only commit remains explicit and does
+not claim a visual result.
+
+Retrieval verifies file size/digest before use. If a previously successful render
+receipt points to missing/damaged bytes, a repeat call reports
+ARTIFACT_UNAVAILABLE without rewriting the original receipt or undoing any
+semantic commit; use a new render key to regenerate/repair the artifact.
+
+## Artifact access
+
+docstream_artifact takes artifact_id, mode=metadata/chunk, offset and length.
+Chunks are bounded base64 data, at most 65,536 bytes before encoding. Metadata
+includes media type, size, SHA-256 and download_path. GET of that path uses the
+same loopback bearer authentication and Host/Origin guard as MCP. It streams
+verified image/png or application/pdf bytes. No request can choose a filesystem
+path; artifact IDs map to controlled managed names.
+
+The thin CLI can call both new tools. Client registration, automatic startup,
+public publishing and remote network service remain outside this stage.
+
+## Evidence boundary
+
+PNG is a service-layout preview. PDF uses Chromium print CSS/page settings.
+Neither establishes how a future DOCX looks in Word. The representative PNG and
+Poppler-rendered PDF were visually inspected; multi-page PDF tests check page
+count and final text. Actual conformance, failure/recovery and network results
+are retained in M3_VALIDATION.md and m3-test-results.json.

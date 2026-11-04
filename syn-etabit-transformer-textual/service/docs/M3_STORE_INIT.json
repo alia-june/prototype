@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "storage_ready": true,
+  "service_version": "0.2.0.dev3",
+  "schema_version": 2,
+  "cpu_schema": "docstream.snapshot/1",
+  "durability": "sqlite",
+  "visual_state": "available",
+  "gpu": false,
+  "limits": {
+    "operations_per_batch": 256,
+    "text_bytes": 1048576,
+    "reply_bytes": 131072,
+    "history_page": 100
+  },
+  "capabilities": [
+    "ingest",
+    "inspect",
+    "plan",
+    "materialize",
+    "semantic_commit",
+    "durable_receipt",
+    "job_inspect",
+    "render",
+    "artifact",
+    "rendered_commit"
+  ],
+  "sqlite_version": "3.53.1",
+  "renderer": {
+    "renderer": "docstream.html/1",
+    "playwright": "1.64.1",
+    "browser_revision": "1248",
+    "browser_version": "156.0.8078.4",
+    "executable_sha256": "7f08161bbeb2853ffe1780a9ded4985087f52efb9725d7d8207aabdd42f7cfb9",
+    "engine_sha256": "40a2c35f157d2c2ab02f6d53b890c656c725fd1640f1ca57085edadf90d39eea"
+  },
+  "registered_fonts": [
+    "Arial",
+    "Consolas",
+    "Times New Roman"
+  ],
+  "worker_starts": 0,
+  "actual_renders": 0,
+  "service_running": false,
+  "documents": 0,
+  "integrity_check": "ok"
+}

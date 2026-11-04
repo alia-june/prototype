@@ -1,0 +1,106 @@
+{
+  "schema": "docstream.relative-theory.sources/1",
+  "records": [
+    {
+      "id": "SRC-WN31-ARCHIVE",
+      "title": "Princeton WordNet 3.1 database-only archive",
+      "authority_class": "PRIMARY_DATA",
+      "access_status": "PARTIAL_TEXT_REVIEWED",
+      "role": "GOVERNING_SOURCE",
+      "locator": "research/wordnet/princeton-3.1/wn3.1.dict.tar.gz",
+      "edition": "3.1",
+      "sha256": "3f7d8be8ef6ecc7167d39b10d66954ec734280b5bdcd57f7d9eafe429d11c22a",
+      "notes": "Exact retained bytes; AUTH-18B uses the already retained AUTH-18A eight-record and nineteen-relation sample rather than rescanning the corpus."
+    },
+    {
+      "id": "SRC-WN-WNDB",
+      "title": "wndb(5WN) - WordNet database file format",
+      "authority_class": "PRIMARY_DOCUMENTATION",
+      "access_status": "FULL_TEXT_REVIEWED",
+      "role": "GOVERNING_SOURCE",
+      "locator": "https://wordnet.princeton.edu/documentation/wndb5wn",
+      "edition": "WordNet reference manual",
+      "notes": "Governs byte offsets, word fields, pointer tuples, lexical versus semantic pointer encoding and gloss boundaries."
+    },
+    {
+      "id": "SRC-WN-WNINPUT",
+      "title": "wninput(5WN) - WordNet lexicographer file syntax",
+      "authority_class": "PRIMARY_DOCUMENTATION",
+      "access_status": "FULL_TEXT_REVIEWED",
+      "role": "GOVERNING_SOURCE",
+      "locator": "https://wordnet.princeton.edu/documentation/wninput5wn",
+      "edition": "WordNet reference manual",
+      "notes": "Governs adjective pointer names, adjective clusters, word/pointer syntax and adjective syntactic markers."
+    },
+    {
+      "id": "SRC-WN-WNGLOSS",
+      "title": "wngloss(7WN) - WordNet glossary and database organization",
+      "authority_class": "PRIMARY_DOCUMENTATION",
+      "access_status": "FULL_TEXT_REVIEWED",
+      "role": "GOVERNING_SOURCE",
+      "locator": "https://wordnet.princeton.edu/documentation/wngloss7wn",
+      "edition": "WordNet reference manual",
+      "notes": "Governs WordNet-specific meanings of head, satellite, pertainym, lexical pointer, semantic pointer and adjective-cluster organization."
+    },
+    {
+      "id": "SRC-WN-LEXNAMES",
+      "title": "lexnames(5WN) - WordNet lexicographer file names",
+      "authority_class": "PRIMARY_DOCUMENTATION",
+      "access_status": "FULL_TEXT_REVIEWED",
+      "role": "SUPPORTING_GOVERNING_SOURCE",
+      "locator": "https://wordnet.princeton.edu/documentation/lexnames5wn",
+      "edition": "WordNet reference manual",
+      "notes": "Identifies adj.all and adj.pert and the syntactic-category classification of lexicographer files."
+    },
+    {
+      "id": "SRC-WN-MILLER-1993",
+      "title": "WORDNET: A Lexical Database for English",
+      "authority_class": "PRIMARY_RESEARCH",
+      "access_status": "METADATA_ONLY",
+      "role": "HISTORICAL_CONTEXT",
+      "locator": "https://aclanthology.org/H93-1103/",
+      "edition": "George A. Miller, HLT 1993",
+      "notes": "Registered as historical design context; not used instead of the exact 3.1 format documentation."
+    },
+    {
+      "id": "SRC-GB-CHOMSKY-1981",
+      "title": "Lectures on Government and Binding: The Pisa Lectures",
+      "authority_class": "PRIMARY_THEORY",
+      "access_status": "PREVIEW_ONLY",
+      "role": "INTENDED_GOVERNING_SOURCE",
+      "locator": "https://search.worldcat.org/title/Lectures-on-government-and-binding/oclc/7721202",
+      "edition": "Noam Chomsky, Foris, 1981, 371 pages",
+      "notes": "Bibliographic identity and publisher preview verified; substantive text required before formal relation rules can be catalogued."
+    },
+    {
+      "id": "SRC-GB-CHOMSKY-1982",
+      "title": "Some Concepts and Consequences of the Theory of Government and Binding",
+      "authority_class": "PRIMARY_THEORY",
+      "access_status": "METADATA_ONLY",
+      "role": "INTENDED_GOVERNING_SOURCE",
+      "locator": "https://mitpress.mit.edu/9780262530422/some-concepts-and-consequences-of-the-theory-of-government-and-binding/",
+      "edition": "Noam Chomsky, MIT Press, 1982",
+      "notes": "Publisher description identifies principles, representations, empty categories and binding; description is not sufficient evidence for formal rules."
+    },
+    {
+      "id": "SRC-GB-LASNIK-URIAGEREKA",
+      "title": "A Course in GB Syntax",
+      "authority_class": "COMPANION_TEXT",
+      "access_status": "METADATA_ONLY",
+      "role": "COMPANION_ONLY",
+      "locator": "https://mitpress.mit.edu/9780262620604/a-course-in-gb-syntax/",
+      "edition": "Howard Lasnik and Juan Uriagereka, MIT Press",
+      "notes": "Publisher description identifies Case, Binding, empty categories, parasitic gaps and ECP coverage; it cannot silently replace the primary texts."
+    },
+    {
+      "id": "SRC-GB-MARANTZ-1981",
+      "title": "On the Nature of Grammatical Relations",
+      "authority_class": "PRIMARY_DERIVATIVE_RESEARCH",
+      "access_status": "METADATA_ONLY",
+      "role": "CONTRAST_SOURCE",
+      "locator": "https://dspace.mit.edu/entities/publication/956e5eba-9634-40ae-91eb-e1c5c936b456",
+      "edition": "Alec Marantz, MIT PhD thesis, 1981",
+      "notes": "Institutional record reviewed. Full printable source is viewable but redistribution is prohibited; not substantively mined in this bounded study."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "M4a formats plus prior CPU/service/rendering/baseline regressions",
+  "approval_date": "2026-10-29",
+  "recorded_utc": "2026-10-29T09:50:13.095141+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sqlite": "3.53.1",
+  "packages": {
+    "docstream-cpu": "0.2.0.dev4",
+    "mcp": "2.3.0",
+    "uvicorn": "0.38.0",
+    "playwright": "1.64.1",
+    "pydantic": "2.14.1",
+    "markdown-it-py": "4.2.0",
+    "python-docx": "1.2.0",
+    "Pillow": "12.3.0",
+    "lxml": "6.1.1"
+  },
+  "tests_run": 117,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "elapsed_seconds": 43.613928,
+  "prior_cpu_generated_sequences": 420,
+  "rich_generated_sequences": 80,
+  "host_configuration_changed": false,
+  "database_schema": 2,
+  "schema_migration_required": false,
+  "source_and_image_store": "existing transactional sources table"
+}

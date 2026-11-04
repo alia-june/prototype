@@ -1,0 +1,7 @@
+# Exact CPU runtime versions verified against the bundled local runtime.
+# Environment record includes inherited packages; this is not a standalone/offline wheel lock.
+pydantic==2.14.1
+pydantic_core==2.50.1
+annotated-types==0.8.0
+typing_extensions==4.16.0
+typing-inspection==0.4.4

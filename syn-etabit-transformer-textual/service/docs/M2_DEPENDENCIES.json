@@ -1,0 +1,157 @@
+[
+  {
+    "package": "setuptools",
+    "version": "84.1.0",
+    "required": "==84.1.0"
+  },
+  {
+    "package": "uvicorn",
+    "version": "0.38.0",
+    "required": "==0.38.0"
+  },
+  {
+    "package": "h11",
+    "version": "0.16.0",
+    "required": ">=0.8"
+  },
+  {
+    "package": "click",
+    "version": "8.5.0",
+    "required": ">=7.0"
+  },
+  {
+    "package": "mcp",
+    "version": "2.3.0",
+    "required": "==2.3.0"
+  },
+  {
+    "package": "typing-inspection",
+    "version": "0.4.4",
+    "required": ">=0.4.1"
+  },
+  {
+    "package": "typing-extensions",
+    "version": "4.16.0",
+    "required": ">=4.15.0"
+  },
+  {
+    "package": "starlette",
+    "version": "1.10.0",
+    "required": ">=0.27"
+  },
+  {
+    "package": "anyio",
+    "version": "4.15.1",
+    "required": "<5,>=4.0.0"
+  },
+  {
+    "package": "typing_extensions",
+    "version": "4.16.0",
+    "required": ">=4.16.0"
+  },
+  {
+    "package": "idna",
+    "version": "3.20",
+    "required": ">=2.8"
+  },
+  {
+    "package": "sse-starlette",
+    "version": "3.6.0",
+    "required": ">=3.0.0"
+  },
+  {
+    "package": "pywin32",
+    "version": "312",
+    "required": ">=311"
+  },
+  {
+    "package": "python-multipart",
+    "version": "0.0.32",
+    "required": ">=0.0.9"
+  },
+  {
+    "package": "pyjwt",
+    "version": "2.15.1",
+    "required": ">=2.10.1"
+  },
+  {
+    "package": "cryptography",
+    "version": "50.0.2",
+    "required": ">=3.4.0"
+  },
+  {
+    "package": "cffi",
+    "version": "2.1.1",
+    "required": ">=2.0.0"
+  },
+  {
+    "package": "pycparser",
+    "version": "3.11",
+    "required": ""
+  },
+  {
+    "package": "pydantic",
+    "version": "2.14.1",
+    "required": ">=2.12.0"
+  },
+  {
+    "package": "pydantic-core",
+    "version": "2.50.1",
+    "required": "==2.50.1"
+  },
+  {
+    "package": "annotated-types",
+    "version": "0.8.0",
+    "required": ">=0.6.0"
+  },
+  {
+    "package": "opentelemetry-api",
+    "version": "1.45.1",
+    "required": ">=1.28.0"
+  },
+  {
+    "package": "mcp-types",
+    "version": "2.3.0",
+    "required": "==2.3.0"
+  },
+  {
+    "package": "jsonschema",
+    "version": "4.26.0",
+    "required": ">=4.20.0"
+  },
+  {
+    "package": "rpds-py",
+    "version": "2026.9.1",
+    "required": ">=0.25.0"
+  },
+  {
+    "package": "referencing",
+    "version": "0.37.0",
+    "required": ">=0.28.4"
+  },
+  {
+    "package": "attrs",
+    "version": "26.1.0",
+    "required": ">=22.2.0"
+  },
+  {
+    "package": "jsonschema-specifications",
+    "version": "2025.9.1",
+    "required": ">=2023.03.6"
+  },
+  {
+    "package": "httpx2",
+    "version": "2.16.0",
+    "required": ">=2.10.0"
+  },
+  {
+    "package": "truststore",
+    "version": "0.10.5",
+    "required": ">=0.10"
+  },
+  {
+    "package": "httpcore2",
+    "version": "2.16.0",
+    "required": "==2.16.0"
+  }
+]

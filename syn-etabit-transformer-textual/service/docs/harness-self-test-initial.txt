@@ -1,0 +1,29 @@
+test_budget_counter_never_executes_above_limit (test_harness.HarnessTests.test_budget_counter_never_executes_above_limit) ... ok
+test_case_files_preserve_surrogates_as_json_data (test_harness.HarnessTests.test_case_files_preserve_surrogates_as_json_data) ... ok
+test_cli_rejects_scope_expansion_before_creating_run (test_harness.HarnessTests.test_cli_rejects_scope_expansion_before_creating_run) ... {"status": "harness_error", "message": "case/request/crash counts exceed approved limits"}
+{"status": "harness_error", "message": "time or retained-byte limit exceeds approved scope"}
+ok
+test_closed_regression_selection_is_the_existing_117 (test_harness.HarnessTests.test_closed_regression_selection_is_the_existing_117) ... ok
+test_failure_is_retained_and_replayable (test_harness.HarnessTests.test_failure_is_retained_and_replayable) ... ok
+test_generator_is_seeded_and_covers_eight_categories (test_harness.HarnessTests.test_generator_is_seeded_and_covers_eight_categories) ... FAIL
+test_interrupted_result_recovers_completed_events (test_harness.HarnessTests.test_interrupted_result_recovers_completed_events) ... ok
+test_owned_process_cleanup_terminates_only_its_child (test_harness.HarnessTests.test_owned_process_cleanup_terminates_only_its_child) ... ok
+test_projection_ignores_only_span_fragmentation_and_inheritance (test_harness.HarnessTests.test_projection_ignores_only_span_fragmentation_and_inheritance) ... ok
+test_replay_is_bounded_and_regression_id_is_closed (test_harness.HarnessTests.test_replay_is_bounded_and_regression_id_is_closed) ... ok
+test_replay_rejects_unknown_kind_and_nondata_fields (test_harness.HarnessTests.test_replay_rejects_unknown_kind_and_nondata_fields) ... ok
+test_shrinker_preserves_the_failure_signature (test_harness.HarnessTests.test_shrinker_preserves_the_failure_signature) ... ok
+test_time_and_byte_cutoffs_are_incomplete (test_harness.HarnessTests.test_time_and_byte_cutoffs_are_incomplete) ... ok
+
+======================================================================
+FAIL: test_generator_is_seeded_and_covers_eight_categories (test_harness.HarnessTests.test_generator_is_seeded_and_covers_eight_categories)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<source-workspace>\service\tests\test_harness.py", line 36, in test_generator_is_seeded_and_covers_eight_categories
+    self.assertEqual(len({v["kind"] for v in first}),7)  # v1/v2/invalid share batch kind
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 6 != 7
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.363s
+
+FAILED (failures=1)

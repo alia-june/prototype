@@ -1,0 +1,7 @@
+**/.docstream/
+**/.venv/
+**/.browsers/
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+

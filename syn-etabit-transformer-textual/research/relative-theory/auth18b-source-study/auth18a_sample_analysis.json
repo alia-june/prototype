@@ -1,0 +1,28 @@
+{
+  "schema": "docstream.relative-theory.auth18a-sample/1",
+  "evidence_root": ".docstream/etabit-map-tests/auth18a-vertical-composition-probe",
+  "evidence_hashes": {
+    "source-records.jsonl": "542d639812dd21764772dc569204e7b7f1abee5f81554b91aa319440f8663042",
+    "relations.jsonl": "6c915f82e1aed8e71b9ab10ea0e6b1237685f583c1b907af267955e447c1fa55"
+  },
+  "records": [
+    {"id":"SAMPLE-SYMBOL-EXCLAMATION","kind":"RELATION_AGGREGATE","symbol":"!","count":2,"links":["WN-REL-ANTONYM"]},
+    {"id":"SAMPLE-SYMBOL-AMPERSAND","kind":"RELATION_AGGREGATE","symbol":"&","count":10,"links":["WN-REL-SIMILAR"]},
+    {"id":"SAMPLE-SYMBOL-BACKSLASH","kind":"RELATION_AGGREGATE","symbol":"\\","count":3,"links":["WN-REL-PERTAINYM"]},
+    {"id":"SAMPLE-SYMBOL-PLUS","kind":"RELATION_AGGREGATE","symbol":"+","count":3,"links":["WN-REL-DERIVATIONAL"]},
+    {"id":"SAMPLE-SYMBOL-SEMICOLON-C","kind":"RELATION_AGGREGATE","symbol":";c","count":1,"links":["WN-REL-DOMAIN-TOPIC"]},
+    {"id":"SAMPLE-NONEXEMPT","kind":"SOURCE_RECORD","source_record_id":"58e1678817d327461773196598691b8c849cfd0fb3a078d705262aae70b85b3f","synset_offset":"02374768","synset_type":"a","words":["nonexempt"],"pointer_count":4,"raw_sha256":"6aba58a1b726af5c55453d0abb227c4fa98bc600441729aedb5cb189fa8382ec","links":["WN-REL-ANTONYM","WN-REL-SIMILAR"]},
+    {"id":"SAMPLE-PRISMATIC","kind":"SOURCE_RECORD","source_record_id":"4e462ed7a946a78d80371c256ef648dd68d0dd3db3f2a18d702f10f1416cd807","synset_offset":"03114015","synset_type":"a","words":["prismatic"],"pointer_count":3,"raw_sha256":"323b80bba52b72ca9b292d791a0bdb88f3c96d1f2e571a48d56bd020f1c60af6","links":["WN-REL-DERIVATIONAL","WN-REL-PERTAINYM"]},
+    {"id":"SAMPLE-ATTENTIONAL","kind":"SOURCE_RECORD","source_record_id":"1b1c483c7a1b3376bdcfff5ec7691f8bc0ff6ddf2130ccde0817a271b647c37d","synset_offset":"02658622","synset_type":"a","words":["attentional"],"pointer_count":2,"raw_sha256":"fe9a1d943f926e09ae5da88070b37dcdc7b0af20fc7e5211bfedd795173c9565","links":["WN-REL-DOMAIN-TOPIC","WN-REL-PERTAINYM"]},
+    {"id":"SAMPLE-HEADED","kind":"SOURCE_RECORD","source_record_id":"383be1c9e9932ed44aede516a31dc97cea2805bf1a3ab51b4541b8f7e8d68bba","synset_offset":"01187145","synset_type":"a","words":["headed"],"pointer_count":5,"raw_sha256":"8e09493924b1d9294849fd3473df1f0181791656f5e1d8e1666a78a9f4b9ac9b","links":["WN-REL-ANTONYM","WN-REL-SIMILAR"]},
+    {"id":"SAMPLE-FIRST-STRING","kind":"SOURCE_RECORD","source_record_id":"38e85e182c993724a71fdc1312e4fde4a2fdb45e2823737f4637c31a86df49a3","synset_offset":"01858852","synset_type":"s","words":["first-string"],"pointer_count":1,"raw_sha256":"0be4219a72f0e9347ce9c27d83269c3c3fe4e613659aeb8c2a5327c4c7257eb8","links":["WN-REL-SIMILAR","WN-STRUCT-SATELLITE"]},
+    {"id":"SAMPLE-NEWFOUND","kind":"SOURCE_RECORD","source_record_id":"c31d56702b010db0ba5c6cbd21b8ed2c7db4b47747619b516707318702361c04","synset_offset":"01646523","synset_type":"s","words":["newfound"],"pointer_count":1,"raw_sha256":"8ceadcb08e99bb9482749195dbce244dd81d6fbc32b628f2a80a946359bad805","links":["WN-REL-SIMILAR","WN-STRUCT-SATELLITE"]},
+    {"id":"SAMPLE-ALL-AROUND","kind":"SOURCE_RECORD","source_record_id":"80bf9e1a3b666cea973d1d21ea6bcce6b8734950ec8139742c879ef9fa88565a","synset_offset":"00528718","synset_type":"s","words":["all-around(a)","all-round(a)","well-rounded"],"pointer_count":1,"raw_sha256":"dcac7300467ddd4481a57182dd0d96566361becba07b7b5a7258b9c40a9a170e","links":["WN-REL-SIMILAR","WN-MARKER-A","WN-STRUCT-SATELLITE"]},
+    {"id":"SAMPLE-ALEURONIC","kind":"SOURCE_RECORD","source_record_id":"6fd3640a1992035695631544917ef618aadfac2044ff05b3a245f495b154130d","synset_offset":"02621430","synset_type":"a","words":["aleuronic"],"pointer_count":2,"raw_sha256":"ef48616a1ec7ec35023f0e86ccf1ee78ad24df9887d783901478adf07d33681d","links":["WN-REL-DERIVATIONAL","WN-REL-PERTAINYM"]}
+  ],
+  "findings": [
+    "All nineteen retained pointers are resolved in the AUTH-18A evidence.",
+    "Eight lexical pointers use non-zero source and target word positions; eleven semantic pointers use 0000.",
+    "The sample tests representation and cross-map inspection, not linguistic completeness or theory decoding."
+  ]
+}

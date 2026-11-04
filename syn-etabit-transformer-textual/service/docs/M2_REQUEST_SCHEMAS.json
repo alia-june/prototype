@@ -1,0 +1,993 @@
+{
+  "IngestRequest": {
+    "$defs": {
+      "Block": {
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Block Id",
+            "type": "string"
+          },
+          "kind": {
+            "default": "paragraph",
+            "enum": [
+              "paragraph",
+              "heading",
+              "code",
+              "list_item"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "heading_level": {
+            "anyOf": [
+              {
+                "maximum": 6,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Heading Level"
+          },
+          "list_kind": {
+            "anyOf": [
+              {
+                "enum": [
+                  "bullet",
+                  "ordered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "List Kind"
+          }
+        },
+        "required": [
+          "block_id"
+        ],
+        "title": "Block",
+        "type": "object"
+      },
+      "Properties": {
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "default": "",
+            "title": "Title",
+            "type": "string"
+          },
+          "font_family": {
+            "default": "Aptos",
+            "maxLength": 256,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Font Family",
+            "type": "string"
+          },
+          "font_size_mpt": {
+            "default": 11000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Font Size Mpt",
+            "type": "integer"
+          },
+          "page_width_mpt": {
+            "default": 612000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Page Width Mpt",
+            "type": "integer"
+          },
+          "page_height_mpt": {
+            "default": 792000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Page Height Mpt",
+            "type": "integer"
+          }
+        },
+        "title": "Properties",
+        "type": "object"
+      },
+      "Snapshot": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_version": {
+            "const": "docstream.snapshot/1",
+            "default": "docstream.snapshot/1",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "properties": {
+            "$ref": "#/$defs/Properties"
+          },
+          "blocks": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Block"
+            },
+            "title": "Blocks",
+            "type": "array"
+          }
+        },
+        "title": "Snapshot",
+        "type": "object"
+      },
+      "Style": {
+        "additionalProperties": false,
+        "properties": {
+          "font_family": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Family"
+          },
+          "font_size_mpt": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0,
+                "maximum": 2000000,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Size Mpt"
+          },
+          "bold": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Bold"
+          },
+          "italic": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Italic"
+          }
+        },
+        "title": "Style",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "text": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Text"
+      },
+      "source_base64": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Source Base64"
+      },
+      "snapshot": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Snapshot"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "title": {
+        "default": "",
+        "title": "Title",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_key"
+    ],
+    "title": "IngestRequest",
+    "type": "object"
+  },
+  "TransformRequest": {
+    "$defs": {
+      "Batch": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_version": {
+            "const": "docstream.batch/1",
+            "default": "docstream.batch/1",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "base_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Base Sha256",
+            "type": "string"
+          },
+          "operations": {
+            "items": {
+              "discriminator": {
+                "mapping": {
+                  "insert_block": "#/$defs/InsertBlock",
+                  "move_block": "#/$defs/MoveBlock",
+                  "remove_block": "#/$defs/RemoveBlock",
+                  "replace_text": "#/$defs/ReplaceText",
+                  "restore_font": "#/$defs/RestoreFont",
+                  "restore_style": "#/$defs/RestoreStyle",
+                  "set_font": "#/$defs/SetFont",
+                  "set_property": "#/$defs/SetProperty",
+                  "set_style": "#/$defs/SetStyle"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/SetProperty"
+                },
+                {
+                  "$ref": "#/$defs/SetStyle"
+                },
+                {
+                  "$ref": "#/$defs/RestoreStyle"
+                },
+                {
+                  "$ref": "#/$defs/SetFont"
+                },
+                {
+                  "$ref": "#/$defs/RestoreFont"
+                },
+                {
+                  "$ref": "#/$defs/ReplaceText"
+                },
+                {
+                  "$ref": "#/$defs/InsertBlock"
+                },
+                {
+                  "$ref": "#/$defs/RemoveBlock"
+                },
+                {
+                  "$ref": "#/$defs/MoveBlock"
+                }
+              ]
+            },
+            "maxItems": 256,
+            "title": "Operations",
+            "type": "array"
+          }
+        },
+        "required": [
+          "base_sha256",
+          "operations"
+        ],
+        "title": "Batch",
+        "type": "object"
+      },
+      "Block": {
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Block Id",
+            "type": "string"
+          },
+          "kind": {
+            "default": "paragraph",
+            "enum": [
+              "paragraph",
+              "heading",
+              "code",
+              "list_item"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "heading_level": {
+            "anyOf": [
+              {
+                "maximum": 6,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Heading Level"
+          },
+          "list_kind": {
+            "anyOf": [
+              {
+                "enum": [
+                  "bullet",
+                  "ordered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "List Kind"
+          }
+        },
+        "required": [
+          "block_id"
+        ],
+        "title": "Block",
+        "type": "object"
+      },
+      "InsertBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "insert_block",
+            "default": "insert_block",
+            "title": "Kind",
+            "type": "string"
+          },
+          "block": {
+            "$ref": "#/$defs/Block"
+          },
+          "after": {
+            "anyOf": [
+              {
+                "maxLength": 128,
+                "minLength": 1,
+                "pattern": "^[A-Za-z0-9_.:-]+$",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "After"
+          }
+        },
+        "required": [
+          "operation_id",
+          "block"
+        ],
+        "title": "InsertBlock",
+        "type": "object"
+      },
+      "MoveBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "move_block",
+            "default": "move_block",
+            "title": "Kind",
+            "type": "string"
+          },
+          "target": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Target",
+            "type": "string"
+          },
+          "after": {
+            "anyOf": [
+              {
+                "maxLength": 128,
+                "minLength": 1,
+                "pattern": "^[A-Za-z0-9_.:-]+$",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "After"
+          }
+        },
+        "required": [
+          "operation_id",
+          "target"
+        ],
+        "title": "MoveBlock",
+        "type": "object"
+      },
+      "RemoveBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "remove_block",
+            "default": "remove_block",
+            "title": "Kind",
+            "type": "string"
+          },
+          "target": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Target",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id",
+          "target"
+        ],
+        "title": "RemoveBlock",
+        "type": "object"
+      },
+      "ReplaceText": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "replace_text",
+            "default": "replace_text",
+            "title": "Kind",
+            "type": "string"
+          },
+          "target": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Target",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          },
+          "expected_text_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Expected Text Sha256",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id",
+          "target",
+          "text",
+          "expected_text_sha256"
+        ],
+        "title": "ReplaceText",
+        "type": "object"
+      },
+      "RestoreFont": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "restore_font",
+            "default": "restore_font",
+            "title": "Kind",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id"
+        ],
+        "title": "RestoreFont",
+        "type": "object"
+      },
+      "RestoreStyle": {
+        "additionalProperties": false,
+        "properties": {
+          "targets": {
+            "items": {
+              "maxLength": 128,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9_.:-]+$",
+              "type": "string"
+            },
+            "title": "Targets",
+            "type": "array"
+          },
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "restore_style",
+            "default": "restore_style",
+            "title": "Kind",
+            "type": "string"
+          }
+        },
+        "required": [
+          "targets",
+          "operation_id"
+        ],
+        "title": "RestoreStyle",
+        "type": "object"
+      },
+      "SetFont": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "set_font",
+            "default": "set_font",
+            "title": "Kind",
+            "type": "string"
+          },
+          "font_family": {
+            "maxLength": 256,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Font Family",
+            "type": "string"
+          },
+          "scope": {
+            "const": "all_text",
+            "default": "all_text",
+            "title": "Scope",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id",
+          "font_family"
+        ],
+        "title": "SetFont",
+        "type": "object"
+      },
+      "SetProperty": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "set_property",
+            "default": "set_property",
+            "title": "Kind",
+            "type": "string"
+          },
+          "property": {
+            "enum": [
+              "title",
+              "font_family",
+              "font_size_mpt",
+              "page_width_mpt",
+              "page_height_mpt"
+            ],
+            "title": "Property",
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "title": "Value"
+          }
+        },
+        "required": [
+          "operation_id",
+          "property",
+          "value"
+        ],
+        "title": "SetProperty",
+        "type": "object"
+      },
+      "SetStyle": {
+        "additionalProperties": false,
+        "properties": {
+          "targets": {
+            "items": {
+              "maxLength": 128,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9_.:-]+$",
+              "type": "string"
+            },
+            "title": "Targets",
+            "type": "array"
+          },
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "set_style",
+            "default": "set_style",
+            "title": "Kind",
+            "type": "string"
+          },
+          "property": {
+            "enum": [
+              "font_family",
+              "font_size_mpt",
+              "bold",
+              "italic"
+            ],
+            "title": "Property",
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          }
+        },
+        "required": [
+          "targets",
+          "operation_id",
+          "property",
+          "value"
+        ],
+        "title": "SetStyle",
+        "type": "object"
+      },
+      "Style": {
+        "additionalProperties": false,
+        "properties": {
+          "font_family": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Family"
+          },
+          "font_size_mpt": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0,
+                "maximum": 2000000,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Size Mpt"
+          },
+          "bold": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Bold"
+          },
+          "italic": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Italic"
+          }
+        },
+        "title": "Style",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "base_stream_id": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Base Stream Id",
+        "type": "string"
+      },
+      "batch": {
+        "$ref": "#/$defs/Batch"
+      },
+      "mode": {
+        "default": "plan",
+        "enum": [
+          "plan",
+          "materialize",
+          "commit"
+        ],
+        "title": "Mode",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_key",
+      "base_stream_id",
+      "batch"
+    ],
+    "title": "TransformRequest",
+    "type": "object"
+  },
+  "CommitRequest": {
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "candidate_id": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Candidate Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_key",
+      "candidate_id"
+    ],
+    "title": "CommitRequest",
+    "type": "object"
+  },
+  "InspectRequest": {
+    "additionalProperties": false,
+    "properties": {
+      "target_id": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Target Id",
+        "type": "string"
+      },
+      "section": {
+        "default": "stream",
+        "enum": [
+          "head",
+          "stream",
+          "history",
+          "plan",
+          "content",
+          "source"
+        ],
+        "title": "Section",
+        "type": "string"
+      },
+      "block_id": {
+        "anyOf": [
+          {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Block Id"
+      },
+      "offset": {
+        "default": 0,
+        "minimum": 0,
+        "title": "Offset",
+        "type": "integer"
+      },
+      "limit": {
+        "default": 50,
+        "maximum": 100,
+        "minimum": 1,
+        "title": "Limit",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "target_id"
+    ],
+    "title": "InspectRequest",
+    "type": "object"
+  }
+}

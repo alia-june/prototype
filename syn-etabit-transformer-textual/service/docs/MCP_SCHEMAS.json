@@ -1,0 +1,1830 @@
+{
+  "IngestRequest": {
+    "$defs": {
+      "Block": {
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Block Id",
+            "type": "string"
+          },
+          "kind": {
+            "default": "paragraph",
+            "enum": [
+              "paragraph",
+              "heading",
+              "code",
+              "list_item"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "heading_level": {
+            "anyOf": [
+              {
+                "maximum": 6,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Heading Level"
+          },
+          "list_kind": {
+            "anyOf": [
+              {
+                "enum": [
+                  "bullet",
+                  "ordered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "List Kind"
+          }
+        },
+        "required": [
+          "block_id"
+        ],
+        "title": "Block",
+        "type": "object"
+      },
+      "CellText": {
+        "additionalProperties": false,
+        "properties": {
+          "runs": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Span"
+            },
+            "title": "Runs",
+            "type": "array"
+          }
+        },
+        "title": "CellText",
+        "type": "object"
+      },
+      "ImageRef": {
+        "additionalProperties": false,
+        "properties": {
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Sha256",
+            "type": "string"
+          },
+          "media_type": {
+            "enum": [
+              "image/png",
+              "image/jpeg"
+            ],
+            "title": "Media Type",
+            "type": "string"
+          },
+          "alt": {
+            "default": "",
+            "title": "Alt",
+            "type": "string"
+          },
+          "width_mpt": {
+            "exclusiveMinimum": 0,
+            "maximum": 1000000,
+            "title": "Width Mpt",
+            "type": "integer"
+          },
+          "height_mpt": {
+            "exclusiveMinimum": 0,
+            "maximum": 1000000,
+            "title": "Height Mpt",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "sha256",
+          "media_type",
+          "width_mpt",
+          "height_mpt"
+        ],
+        "title": "ImageRef",
+        "type": "object"
+      },
+      "Properties": {
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "default": "",
+            "title": "Title",
+            "type": "string"
+          },
+          "font_family": {
+            "default": "Aptos",
+            "maxLength": 256,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Font Family",
+            "type": "string"
+          },
+          "font_size_mpt": {
+            "default": 11000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Font Size Mpt",
+            "type": "integer"
+          },
+          "page_width_mpt": {
+            "default": 612000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Page Width Mpt",
+            "type": "integer"
+          },
+          "page_height_mpt": {
+            "default": 792000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Page Height Mpt",
+            "type": "integer"
+          }
+        },
+        "title": "Properties",
+        "type": "object"
+      },
+      "RichBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Block Id",
+            "type": "string"
+          },
+          "kind": {
+            "default": "paragraph",
+            "enum": [
+              "paragraph",
+              "heading",
+              "code",
+              "list_item",
+              "table",
+              "image"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "heading_level": {
+            "anyOf": [
+              {
+                "maximum": 6,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Heading Level"
+          },
+          "list_kind": {
+            "anyOf": [
+              {
+                "enum": [
+                  "bullet",
+                  "ordered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "List Kind"
+          },
+          "list_depth": {
+            "default": 0,
+            "maximum": 8,
+            "minimum": 0,
+            "title": "List Depth",
+            "type": "integer"
+          },
+          "list_start": {
+            "default": 1,
+            "maximum": 1000000,
+            "minimum": 0,
+            "title": "List Start",
+            "type": "integer"
+          },
+          "runs": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Span"
+            },
+            "title": "Runs",
+            "type": "array"
+          },
+          "rows": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/TableRow"
+            },
+            "maxItems": 1000,
+            "title": "Rows",
+            "type": "array"
+          },
+          "image": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/ImageRef"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "block_id"
+        ],
+        "title": "RichBlock",
+        "type": "object"
+      },
+      "Snapshot": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_version": {
+            "const": "docstream.snapshot/1",
+            "default": "docstream.snapshot/1",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "properties": {
+            "$ref": "#/$defs/Properties"
+          },
+          "blocks": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Block"
+            },
+            "title": "Blocks",
+            "type": "array"
+          }
+        },
+        "title": "Snapshot",
+        "type": "object"
+      },
+      "Snapshot2": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_version": {
+            "const": "docstream.snapshot/2",
+            "default": "docstream.snapshot/2",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "properties": {
+            "$ref": "#/$defs/Properties"
+          },
+          "blocks": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/RichBlock"
+            },
+            "title": "Blocks",
+            "type": "array"
+          }
+        },
+        "title": "Snapshot2",
+        "type": "object"
+      },
+      "Span": {
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "code": {
+            "default": false,
+            "title": "Code",
+            "type": "boolean"
+          },
+          "href": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Href"
+          }
+        },
+        "title": "Span",
+        "type": "object"
+      },
+      "Style": {
+        "additionalProperties": false,
+        "properties": {
+          "font_family": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Family"
+          },
+          "font_size_mpt": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0,
+                "maximum": 2000000,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Size Mpt"
+          },
+          "bold": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Bold"
+          },
+          "italic": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Italic"
+          }
+        },
+        "title": "Style",
+        "type": "object"
+      },
+      "TableCell": {
+        "additionalProperties": false,
+        "properties": {
+          "paragraphs": {
+            "items": {
+              "$ref": "#/$defs/CellText"
+            },
+            "minItems": 1,
+            "title": "Paragraphs",
+            "type": "array"
+          }
+        },
+        "required": [
+          "paragraphs"
+        ],
+        "title": "TableCell",
+        "type": "object"
+      },
+      "TableRow": {
+        "additionalProperties": false,
+        "properties": {
+          "cells": {
+            "items": {
+              "$ref": "#/$defs/TableCell"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "title": "Cells",
+            "type": "array"
+          },
+          "header": {
+            "default": false,
+            "title": "Header",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "cells"
+        ],
+        "title": "TableRow",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "text": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Text"
+      },
+      "source_base64": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Source Base64"
+      },
+      "snapshot": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Snapshot"
+          },
+          {
+            "$ref": "#/$defs/Snapshot2"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Snapshot"
+      },
+      "title": {
+        "default": "",
+        "title": "Title",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_key"
+    ],
+    "title": "IngestRequest",
+    "type": "object"
+  },
+  "TransformRequest": {
+    "$defs": {
+      "Batch": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_version": {
+            "const": "docstream.batch/1",
+            "default": "docstream.batch/1",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "base_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Base Sha256",
+            "type": "string"
+          },
+          "operations": {
+            "items": {
+              "discriminator": {
+                "mapping": {
+                  "insert_block": "#/$defs/InsertBlock",
+                  "move_block": "#/$defs/MoveBlock",
+                  "remove_block": "#/$defs/RemoveBlock",
+                  "replace_block": "#/$defs/ReplaceBlock",
+                  "replace_text": "#/$defs/ReplaceText",
+                  "restore_font": "#/$defs/RestoreFont",
+                  "restore_style": "#/$defs/RestoreStyle",
+                  "set_font": "#/$defs/SetFont",
+                  "set_property": "#/$defs/SetProperty",
+                  "set_style": "#/$defs/SetStyle"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/SetProperty"
+                },
+                {
+                  "$ref": "#/$defs/SetStyle"
+                },
+                {
+                  "$ref": "#/$defs/RestoreStyle"
+                },
+                {
+                  "$ref": "#/$defs/SetFont"
+                },
+                {
+                  "$ref": "#/$defs/RestoreFont"
+                },
+                {
+                  "$ref": "#/$defs/ReplaceText"
+                },
+                {
+                  "$ref": "#/$defs/InsertBlock"
+                },
+                {
+                  "$ref": "#/$defs/RemoveBlock"
+                },
+                {
+                  "$ref": "#/$defs/MoveBlock"
+                },
+                {
+                  "$ref": "#/$defs/ReplaceBlock"
+                }
+              ]
+            },
+            "maxItems": 256,
+            "title": "Operations",
+            "type": "array"
+          }
+        },
+        "required": [
+          "base_sha256",
+          "operations"
+        ],
+        "title": "Batch",
+        "type": "object"
+      },
+      "Block": {
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Block Id",
+            "type": "string"
+          },
+          "kind": {
+            "default": "paragraph",
+            "enum": [
+              "paragraph",
+              "heading",
+              "code",
+              "list_item"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "heading_level": {
+            "anyOf": [
+              {
+                "maximum": 6,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Heading Level"
+          },
+          "list_kind": {
+            "anyOf": [
+              {
+                "enum": [
+                  "bullet",
+                  "ordered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "List Kind"
+          }
+        },
+        "required": [
+          "block_id"
+        ],
+        "title": "Block",
+        "type": "object"
+      },
+      "CellText": {
+        "additionalProperties": false,
+        "properties": {
+          "runs": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Span"
+            },
+            "title": "Runs",
+            "type": "array"
+          }
+        },
+        "title": "CellText",
+        "type": "object"
+      },
+      "ImageRef": {
+        "additionalProperties": false,
+        "properties": {
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Sha256",
+            "type": "string"
+          },
+          "media_type": {
+            "enum": [
+              "image/png",
+              "image/jpeg"
+            ],
+            "title": "Media Type",
+            "type": "string"
+          },
+          "alt": {
+            "default": "",
+            "title": "Alt",
+            "type": "string"
+          },
+          "width_mpt": {
+            "exclusiveMinimum": 0,
+            "maximum": 1000000,
+            "title": "Width Mpt",
+            "type": "integer"
+          },
+          "height_mpt": {
+            "exclusiveMinimum": 0,
+            "maximum": 1000000,
+            "title": "Height Mpt",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "sha256",
+          "media_type",
+          "width_mpt",
+          "height_mpt"
+        ],
+        "title": "ImageRef",
+        "type": "object"
+      },
+      "InsertBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "insert_block",
+            "default": "insert_block",
+            "title": "Kind",
+            "type": "string"
+          },
+          "block": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/Block"
+              },
+              {
+                "$ref": "#/$defs/RichBlock"
+              }
+            ],
+            "title": "Block"
+          },
+          "after": {
+            "anyOf": [
+              {
+                "maxLength": 128,
+                "minLength": 1,
+                "pattern": "^[A-Za-z0-9_.:-]+$",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "After"
+          }
+        },
+        "required": [
+          "operation_id",
+          "block"
+        ],
+        "title": "InsertBlock",
+        "type": "object"
+      },
+      "MoveBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "move_block",
+            "default": "move_block",
+            "title": "Kind",
+            "type": "string"
+          },
+          "target": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Target",
+            "type": "string"
+          },
+          "after": {
+            "anyOf": [
+              {
+                "maxLength": 128,
+                "minLength": 1,
+                "pattern": "^[A-Za-z0-9_.:-]+$",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "After"
+          }
+        },
+        "required": [
+          "operation_id",
+          "target"
+        ],
+        "title": "MoveBlock",
+        "type": "object"
+      },
+      "RemoveBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "remove_block",
+            "default": "remove_block",
+            "title": "Kind",
+            "type": "string"
+          },
+          "target": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Target",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id",
+          "target"
+        ],
+        "title": "RemoveBlock",
+        "type": "object"
+      },
+      "ReplaceBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "replace_block",
+            "default": "replace_block",
+            "title": "Kind",
+            "type": "string"
+          },
+          "target": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Target",
+            "type": "string"
+          },
+          "block": {
+            "$ref": "#/$defs/RichBlock"
+          },
+          "expected_block_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Expected Block Sha256",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id",
+          "target",
+          "block",
+          "expected_block_sha256"
+        ],
+        "title": "ReplaceBlock",
+        "type": "object"
+      },
+      "ReplaceText": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "replace_text",
+            "default": "replace_text",
+            "title": "Kind",
+            "type": "string"
+          },
+          "target": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Target",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          },
+          "expected_text_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Expected Text Sha256",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id",
+          "target",
+          "text",
+          "expected_text_sha256"
+        ],
+        "title": "ReplaceText",
+        "type": "object"
+      },
+      "RestoreFont": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "restore_font",
+            "default": "restore_font",
+            "title": "Kind",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id"
+        ],
+        "title": "RestoreFont",
+        "type": "object"
+      },
+      "RestoreStyle": {
+        "additionalProperties": false,
+        "properties": {
+          "targets": {
+            "items": {
+              "maxLength": 128,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9_.:-]+$",
+              "type": "string"
+            },
+            "title": "Targets",
+            "type": "array"
+          },
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "restore_style",
+            "default": "restore_style",
+            "title": "Kind",
+            "type": "string"
+          }
+        },
+        "required": [
+          "targets",
+          "operation_id"
+        ],
+        "title": "RestoreStyle",
+        "type": "object"
+      },
+      "RichBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Block Id",
+            "type": "string"
+          },
+          "kind": {
+            "default": "paragraph",
+            "enum": [
+              "paragraph",
+              "heading",
+              "code",
+              "list_item",
+              "table",
+              "image"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "heading_level": {
+            "anyOf": [
+              {
+                "maximum": 6,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Heading Level"
+          },
+          "list_kind": {
+            "anyOf": [
+              {
+                "enum": [
+                  "bullet",
+                  "ordered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "List Kind"
+          },
+          "list_depth": {
+            "default": 0,
+            "maximum": 8,
+            "minimum": 0,
+            "title": "List Depth",
+            "type": "integer"
+          },
+          "list_start": {
+            "default": 1,
+            "maximum": 1000000,
+            "minimum": 0,
+            "title": "List Start",
+            "type": "integer"
+          },
+          "runs": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Span"
+            },
+            "title": "Runs",
+            "type": "array"
+          },
+          "rows": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/TableRow"
+            },
+            "maxItems": 1000,
+            "title": "Rows",
+            "type": "array"
+          },
+          "image": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/ImageRef"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "block_id"
+        ],
+        "title": "RichBlock",
+        "type": "object"
+      },
+      "SetFont": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "set_font",
+            "default": "set_font",
+            "title": "Kind",
+            "type": "string"
+          },
+          "font_family": {
+            "maxLength": 256,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Font Family",
+            "type": "string"
+          },
+          "scope": {
+            "const": "all_text",
+            "default": "all_text",
+            "title": "Scope",
+            "type": "string"
+          }
+        },
+        "required": [
+          "operation_id",
+          "font_family"
+        ],
+        "title": "SetFont",
+        "type": "object"
+      },
+      "SetProperty": {
+        "additionalProperties": false,
+        "properties": {
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "set_property",
+            "default": "set_property",
+            "title": "Kind",
+            "type": "string"
+          },
+          "property": {
+            "enum": [
+              "title",
+              "font_family",
+              "font_size_mpt",
+              "page_width_mpt",
+              "page_height_mpt"
+            ],
+            "title": "Property",
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              }
+            ],
+            "title": "Value"
+          }
+        },
+        "required": [
+          "operation_id",
+          "property",
+          "value"
+        ],
+        "title": "SetProperty",
+        "type": "object"
+      },
+      "SetStyle": {
+        "additionalProperties": false,
+        "properties": {
+          "targets": {
+            "items": {
+              "maxLength": 128,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9_.:-]+$",
+              "type": "string"
+            },
+            "title": "Targets",
+            "type": "array"
+          },
+          "operation_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Operation Id",
+            "type": "string"
+          },
+          "version": {
+            "const": 1,
+            "default": 1,
+            "title": "Version",
+            "type": "integer"
+          },
+          "kind": {
+            "const": "set_style",
+            "default": "set_style",
+            "title": "Kind",
+            "type": "string"
+          },
+          "property": {
+            "enum": [
+              "font_family",
+              "font_size_mpt",
+              "bold",
+              "italic"
+            ],
+            "title": "Property",
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Value"
+          }
+        },
+        "required": [
+          "targets",
+          "operation_id",
+          "property",
+          "value"
+        ],
+        "title": "SetStyle",
+        "type": "object"
+      },
+      "Span": {
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "code": {
+            "default": false,
+            "title": "Code",
+            "type": "boolean"
+          },
+          "href": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Href"
+          }
+        },
+        "title": "Span",
+        "type": "object"
+      },
+      "Style": {
+        "additionalProperties": false,
+        "properties": {
+          "font_family": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Family"
+          },
+          "font_size_mpt": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0,
+                "maximum": 2000000,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Size Mpt"
+          },
+          "bold": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Bold"
+          },
+          "italic": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Italic"
+          }
+        },
+        "title": "Style",
+        "type": "object"
+      },
+      "TableCell": {
+        "additionalProperties": false,
+        "properties": {
+          "paragraphs": {
+            "items": {
+              "$ref": "#/$defs/CellText"
+            },
+            "minItems": 1,
+            "title": "Paragraphs",
+            "type": "array"
+          }
+        },
+        "required": [
+          "paragraphs"
+        ],
+        "title": "TableCell",
+        "type": "object"
+      },
+      "TableRow": {
+        "additionalProperties": false,
+        "properties": {
+          "cells": {
+            "items": {
+              "$ref": "#/$defs/TableCell"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "title": "Cells",
+            "type": "array"
+          },
+          "header": {
+            "default": false,
+            "title": "Header",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "cells"
+        ],
+        "title": "TableRow",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "base_stream_id": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Base Stream Id",
+        "type": "string"
+      },
+      "batch": {
+        "$ref": "#/$defs/Batch"
+      },
+      "mode": {
+        "default": "plan",
+        "enum": [
+          "plan",
+          "materialize",
+          "commit"
+        ],
+        "title": "Mode",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_key",
+      "base_stream_id",
+      "batch"
+    ],
+    "title": "TransformRequest",
+    "type": "object"
+  },
+  "CommitRequest": {
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "candidate_id": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Candidate Id",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_key",
+      "candidate_id"
+    ],
+    "title": "CommitRequest",
+    "type": "object"
+  },
+  "InspectRequest": {
+    "additionalProperties": false,
+    "properties": {
+      "target_id": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Target Id",
+        "type": "string"
+      },
+      "section": {
+        "default": "stream",
+        "enum": [
+          "head",
+          "stream",
+          "history",
+          "plan",
+          "content",
+          "source",
+          "structure"
+        ],
+        "title": "Section",
+        "type": "string"
+      },
+      "block_id": {
+        "anyOf": [
+          {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Block Id"
+      },
+      "path": {
+        "default": [],
+        "items": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "title": "Path",
+        "type": "array"
+      },
+      "offset": {
+        "default": 0,
+        "minimum": 0,
+        "title": "Offset",
+        "type": "integer"
+      },
+      "limit": {
+        "default": 50,
+        "maximum": 100,
+        "minimum": 1,
+        "title": "Limit",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "target_id"
+    ],
+    "title": "InspectRequest",
+    "type": "object"
+  },
+  "RenderRequest": {
+    "$defs": {
+      "RenderProfile": {
+        "additionalProperties": false,
+        "properties": {
+          "schema_version": {
+            "const": "docstream.render/1",
+            "default": "docstream.render/1",
+            "title": "Schema Version",
+            "type": "string"
+          },
+          "formats": {
+            "default": [
+              "png",
+              "pdf"
+            ],
+            "items": {
+              "enum": [
+                "png",
+                "pdf"
+              ],
+              "type": "string"
+            },
+            "title": "Formats",
+            "type": "array"
+          },
+          "margin_mpt": {
+            "default": 36000,
+            "maximum": 144000,
+            "minimum": 0,
+            "title": "Margin Mpt",
+            "type": "integer"
+          },
+          "show_title": {
+            "default": true,
+            "title": "Show Title",
+            "type": "boolean"
+          },
+          "code_font_family": {
+            "default": "Consolas",
+            "title": "Code Font Family",
+            "type": "string"
+          },
+          "locale": {
+            "default": "en-US",
+            "enum": [
+              "en-US",
+              "en-GB"
+            ],
+            "title": "Locale",
+            "type": "string"
+          },
+          "max_height_px": {
+            "default": 12000,
+            "maximum": 16000,
+            "minimum": 500,
+            "title": "Max Height Px",
+            "type": "integer"
+          }
+        },
+        "title": "RenderProfile",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "stream_id": {
+        "anyOf": [
+          {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Stream Id"
+      },
+      "candidate_id": {
+        "anyOf": [
+          {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Candidate Id"
+      },
+      "commit": {
+        "default": false,
+        "title": "Commit",
+        "type": "boolean"
+      },
+      "profile": {
+        "$ref": "#/$defs/RenderProfile"
+      }
+    },
+    "required": [
+      "request_key"
+    ],
+    "title": "RenderRequest",
+    "type": "object"
+  },
+  "ArtifactRequest": {
+    "additionalProperties": false,
+    "properties": {
+      "artifact_id": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Artifact Id",
+        "type": "string"
+      },
+      "mode": {
+        "default": "metadata",
+        "enum": [
+          "metadata",
+          "chunk"
+        ],
+        "title": "Mode",
+        "type": "string"
+      },
+      "offset": {
+        "default": 0,
+        "minimum": 0,
+        "title": "Offset",
+        "type": "integer"
+      },
+      "length": {
+        "default": 65536,
+        "maximum": 65536,
+        "minimum": 1,
+        "title": "Length",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "artifact_id"
+    ],
+    "title": "ArtifactRequest",
+    "type": "object"
+  },
+  "ImportRequest": {
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "format": {
+        "enum": [
+          "markdown",
+          "markdown_bundle",
+          "docx"
+        ],
+        "title": "Format",
+        "type": "string"
+      },
+      "data_base64": {
+        "maxLength": 1398104,
+        "title": "Data Base64",
+        "type": "string"
+      },
+      "assets": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "maxProperties": 64,
+        "title": "Assets",
+        "type": "object"
+      },
+      "loss_policy": {
+        "default": "reject",
+        "enum": [
+          "reject",
+          "allow"
+        ],
+        "title": "Loss Policy",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_key",
+      "format",
+      "data_base64"
+    ],
+    "title": "ImportRequest",
+    "type": "object"
+  },
+  "ExportRequest": {
+    "additionalProperties": false,
+    "properties": {
+      "request_key": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Request Key",
+        "type": "string"
+      },
+      "stream_id": {
+        "maxLength": 128,
+        "minLength": 1,
+        "pattern": "^[A-Za-z0-9_.:-]+$",
+        "title": "Stream Id",
+        "type": "string"
+      },
+      "format": {
+        "enum": [
+          "markdown_bundle",
+          "docx"
+        ],
+        "title": "Format",
+        "type": "string"
+      },
+      "loss_policy": {
+        "default": "reject",
+        "enum": [
+          "reject",
+          "allow"
+        ],
+        "title": "Loss Policy",
+        "type": "string"
+      }
+    },
+    "required": [
+      "request_key",
+      "stream_id",
+      "format"
+    ],
+    "title": "ExportRequest",
+    "type": "object"
+  }
+}

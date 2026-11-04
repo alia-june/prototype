@@ -1,0 +1,3936 @@
+{
+  "schema_version": "docstream.source-learning-catalog/2",
+  "catalog_id": "stitched-pipeline-hypervisor",
+  "review_date": "2026-10-29",
+  "timezone": "America/New_York",
+  "title": "Selective learning from the stitched pipeline hypervisor archive",
+  "scope": {
+    "authorization": "AUTH-11: user approved the concrete new-archive catalogue proposal with yes.",
+    "source_boundary": "The 17-file supplied ZIP; prior catalogue used only for explicit learning relationships. Current user requirements are application context.",
+    "method": "Manual static review of all archive files, including test assertions and supplied results. Long JavaScript listings were read without repetitive blank/comment lines; callable browser/ESM common implementation was reviewed once and wrapper differences separately. No supplied code was executed.",
+    "adoption_rule": "Do not wholesale adopt code, architecture, taxonomy or claimed guarantees. Every application is not_adopted.",
+    "evidence_limit": "Static observations and source claims are distinct from assistant interpretations. Predicted failure paths were not reproduced. No independent attestation or benchmark."
+  },
+  "source": {
+    "archive_path": "C:/Users/<local-user>/Downloads/stitched_pipeline_hypervisor_hardened.zip",
+    "archive_sha256": "75e26f23f5b62d3a5379e4fa6c62f1b98382cf8d932df4889f3f3299fe6e3e90",
+    "root_entry": "stitched_pipeline_hypervisor/",
+    "manifest": "SOURCE_MANIFEST.json",
+    "locator_convention": "ZIP-relative paths; 1-based LF-split lines with trailing CR removed and final empty line retained. Excerpts are exact substrings in each declared inclusive range."
+  },
+  "taxonomy": {
+    "status": "Assistant working organization approved for this catalogue; not a universal classification or product schema.",
+    "categories": {
+      "lesson": "A useful principle supported by the source observation.",
+      "anti_lesson": "A conclusion or guarantee that should not be inferred from this source.",
+      "pattern": "A potentially reusable arrangement of responsibilities or behavior.",
+      "antipattern": "An arrangement unsuitable under the stated application conditions.",
+      "structure": "A concrete component, record, interface or relationship.",
+      "edifice": "A larger composition of structures and its operating assumptions.",
+      "mechanism": "How a behavior is arranged or carried out.",
+      "invariant": "A condition a future application would need to maintain.",
+      "failure_mode": "A source-observed gap or a specifically labeled predicted failure.",
+      "trade_off": "A benefit and cost that depend on purpose or environment.",
+      "open_question": "A question unresolved by this static review."
+    },
+    "dispositions": [
+      "reference_only",
+      "candidate_adaptation",
+      "avoid_as_implemented",
+      "requires_validation"
+    ],
+    "evidence_classes": [
+      "source_claim",
+      "static_observation"
+    ],
+    "relation_types": [
+      "complements",
+      "constrains",
+      "constrained_by",
+      "contrasts_with",
+      "depends_on"
+    ]
+  },
+  "application_context": {
+    "authority": "Direct instructions in the current chat; no source-packet or historical TODO grants implementation authority.",
+    "constraints": [
+      "Catalogue lessons and anti-lessons without wholesale adoption.",
+      "Native AI-originated documents are the current working assumption; foreign-document reconstruction need not govern the proposed native core.",
+      "The user describes direct one-to-one references assembled into words, sentences and paragraphs, with per-system maps including HTML and Python.",
+      "Changes produce new streams and retain requested transformations; reduction does not erase their history.",
+      "CPU first; later GPU implementation requires a separate scope.",
+      "Agentic-control integration remains last."
+    ],
+    "unresolved": [
+      "Native unit catalogue schema and reference width.",
+      "Whether words, sentences and paragraphs are separately interned or only assembled ranges.",
+      "Exact codepage contents, return/control semantics and version-binding policy.",
+      "Any implementation or runtime validation of the supplied plugin pipeline."
+    ]
+  },
+  "prior_catalogue": {
+    "catalog_id": "plugin-pipeline-v7",
+    "path": "../plugin-pipeline-v7/learning_catalog.json",
+    "boundary": "Relationships compare learning records, not an asserted ancestry or verified release history. Earlier records are preserved unchanged.",
+    "relationship_types": {
+      "strengthens": "Adds a concrete mechanism relevant to an earlier principle, without proving it complete.",
+      "persists": "The earlier limitation remains relevant in this source.",
+      "qualifies": "New source requires a narrower or more differentiated statement.",
+      "extends": "Adds a related concern or structure."
+    }
+  },
+  "record_contract": {
+    "base": "Version 2 retains the prior evidence/interpretation/application fields and adds prior_catalogue_links.",
+    "prior_link_fields": [
+      "id",
+      "relationship",
+      "note"
+    ],
+    "record_identity": "SHH-nnn is a catalogue record identity, not source-defined identity."
+  },
+  "entries": [
+    {
+      "id": "SHH-001",
+      "title": "Separate the original, current value and transformation history",
+      "categories": [
+        "lesson",
+        "pattern",
+        "structure",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            465,
+            488
+          ],
+          "symbol": "Object.defineProperty(this,\"immutableOriginalRoot\"",
+          "excerpt": "Object.defineProperty(this,\"immutableOriginalRoot\"",
+          "evidence_class": "static_observation",
+          "observation": "The constructor separates a non-writable original root from current and history properties."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            499,
+            514
+          ],
+          "symbol": "this.jsonHistoryBuffer=Object.freeze(",
+          "excerpt": "this.jsonHistoryBuffer=Object.freeze(",
+          "evidence_class": "static_observation",
+          "observation": "The append method stores a new frozen snapshot alongside the prior entries."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "This is a closer example of retained intermediate values than the earlier shared-context-only model. It remains an in-memory document wrapper."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Consider separate immutable payloads, current-head references and transformation records for the native model."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No durable store, content addressing or reduction proof is supplied by this wrapper."
+      ],
+      "validation_needed": [
+        "Original and intermediate values remain inspectable after later transformations."
+      ],
+      "relations": [
+        {
+          "target": "SHH-002",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-003",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-007",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-012",
+          "relationship": "qualifies",
+          "note": "Document payload snapshots now coexist with the mutable context."
+        }
+      ]
+    },
+    {
+      "id": "SHH-002",
+      "title": "A frozen history array does not make its owning reference append-only",
+      "categories": [
+        "anti_lesson",
+        "failure_mode",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            481,
+            488
+          ],
+          "symbol": "writable:true",
+          "excerpt": "writable:true",
+          "evidence_class": "static_observation",
+          "observation": "Current/history fields are writable properties."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1065,
+            1070
+          ],
+          "symbol": "return Reflect.set(targetDocument,propertyKey,propertyValue);",
+          "excerpt": "return Reflect.set(targetDocument,propertyKey,propertyValue);",
+          "evidence_class": "static_observation",
+          "observation": "The proxy delegates writes to existing wrapper properties."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "A caller with the live document can replace the history or current-root pointer. Frozen entries alone do not establish an enforced append-only API."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Make history ownership and allowed head changes explicit; expose inspection views rather than writable storage fields."
+      },
+      "disposition": "avoid_as_implemented",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No live pointer-replacement attempt was executed."
+      ],
+      "validation_needed": [
+        "Replacing history/current pointers through every public access path is rejected where append-only behavior is promised."
+      ],
+      "relations": [
+        {
+          "target": "SHH-011",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-003",
+          "relationship": "persists",
+          "note": "The exact immutability boundary still matters."
+        }
+      ]
+    },
+    {
+      "id": "SHH-003",
+      "title": "Validate an entire history append before publishing any part",
+      "categories": [
+        "antipattern",
+        "failure_mode",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            502,
+            513
+          ],
+          "symbol": "this.currentJsonRoot=frozenNextRoot;",
+          "excerpt": "this.currentJsonRoot=frozenNextRoot;",
+          "evidence_class": "static_observation",
+          "observation": "Current root and history are assigned before metadata cloning."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            512,
+            513
+          ],
+          "symbol": "PipelineSecurityUtility.cloneStrictJsonValue(transformationMetadata||{",
+          "excerpt": "PipelineSecurityUtility.cloneStrictJsonValue(transformationMetadata||{})",
+          "evidence_class": "static_observation",
+          "observation": "Metadata can still fail strict validation after those assignments."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Invalid metadata is a predicted path to a changed current root/history without a matching metadata append. The method has no local rollback around that order."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Prepare and validate the snapshot, metadata and lineage together before publishing one consistent update."
+      },
+      "disposition": "avoid_as_implemented",
+      "application_status": "not_adopted",
+      "limitations": [
+        "This exception path was not executed."
+      ],
+      "validation_needed": [
+        "Rejected metadata leaves current value, history length and metadata length unchanged."
+      ],
+      "relations": [
+        {
+          "target": "SHH-004",
+          "relation": "complements"
+        },
+        {
+          "target": "SHH-051",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-025",
+          "relationship": "extends",
+          "note": "Publication consistency applies inside the history append too."
+        }
+      ]
+    },
+    {
+      "id": "SHH-004",
+      "title": "Protect reserved metadata and define deep immutability",
+      "categories": [
+        "anti_lesson",
+        "structure",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            473,
+            473
+          ],
+          "symbol": "...PipelineSecurityUtility.cloneStrictJsonValue(documentMetadata||{})",
+          "excerpt": "...PipelineSecurityUtility.cloneStrictJsonValue(documentMetadata||{})",
+          "evidence_class": "static_observation",
+          "observation": "Caller metadata is spread after generated index/event/time fields."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            512,
+            513
+          ],
+          "symbol": "const nextHistoryMetadataRecord=Object.freeze({historyIndex:nextHistor",
+          "excerpt": "const nextHistoryMetadataRecord=Object.freeze({historyIndex:nextHistoryIndex",
+          "evidence_class": "static_observation",
+          "observation": "Append metadata is shallow-frozen with caller fields spread last."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Callers can override reserved descriptive fields, and nested metadata is not recursively frozen by the shallow record freeze. Content and its description have different protection."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Reserve authoritative identity/order fields and deep-freeze or isolate retained metadata according to a declared contract."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No metadata override or nested mutation was exercised."
+      ],
+      "validation_needed": [
+        "Reserved keys cannot misstate history order; retained nested metadata cannot be mutated through live references."
+      ],
+      "relations": [],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-003",
+          "relationship": "extends",
+          "note": "Metadata protection needs its own depth and authority contract."
+        }
+      ]
+    },
+    {
+      "id": "SHH-005",
+      "title": "Preserved history needs a resource and sharing model",
+      "categories": [
+        "trade_off",
+        "mechanism",
+        "failure_mode"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            502,
+            513
+          ],
+          "symbol": "...this.jsonHistoryBuffer",
+          "excerpt": "this.jsonHistoryBuffer=Object.freeze([...(Array.isArray(this.jsonHistoryBuffer)",
+          "evidence_class": "static_observation",
+          "observation": "Every append clones a full root and copies the growing history array."
+        },
+        {
+          "file": "stream-plugins.js",
+          "lines": [
+            338,
+            346
+          ],
+          "symbol": "transformedJsonHistory:",
+          "excerpt": "transformedJsonHistory:",
+          "evidence_class": "static_observation",
+          "observation": "Stream output serializes document history together with other state."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Snapshot retention supports inspection but implies growing copy and serialization work. Repeated array copying can accumulate quadratic reference-copy work with history length; no benchmark was run."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Separate logical occurrence retention from payload storage and artifact retention; measure sharing and storage costs before selecting a representation."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No measured memory or timing estimate is claimed."
+      ],
+      "validation_needed": [
+        "Long histories stay within explicit byte/time budgets while retaining addressable occurrences."
+      ],
+      "relations": [
+        {
+          "target": "SHH-054",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-024",
+          "relationship": "extends",
+          "note": "New history buffers add another retention dimension."
+        }
+      ]
+    },
+    {
+      "id": "SHH-006",
+      "title": "Document history is reset when the reader initializes a new pass",
+      "categories": [
+        "anti_lesson",
+        "mechanism",
+        "open_question"
+      ],
+      "source_evidence": [
+        {
+          "file": "stream-plugins.js",
+          "lines": [
+            34,
+            54
+          ],
+          "symbol": "streamProcessingState.revisions=[];",
+          "excerpt": "streamProcessingState.revisions=[];",
+          "evidence_class": "static_observation",
+          "observation": "Reader initialization replaces both document wrappers and resets revision/analysis state."
+        },
+        {
+          "file": "stream-plugins.js",
+          "lines": [
+            138,
+            149
+          ],
+          "symbol": "initializeStreamStateFromJsonData(",
+          "excerpt": "initializeStreamStateFromJsonData(",
+          "evidence_class": "static_observation",
+          "observation": "The stream reader initializes this state on each execution."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "History is scoped to the current document wrapper, not automatically to all cycles of the running service. Re-reading a source starts new wrappers."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Specify source ingestion, new-run creation and continuing transformation history as separate operations."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "A reader may intentionally start a fresh document; the issue is the declared lifetime."
+      ],
+      "validation_needed": [
+        "A sequence spanning requests retains the intended lineage rather than silently restarting it."
+      ],
+      "relations": [
+        {
+          "target": "SHH-001",
+          "relation": "contrasts_with"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-021",
+          "relationship": "extends",
+          "note": "Repeated passes and their input lifetimes need explicit meaning."
+        }
+      ]
+    },
+    {
+      "id": "SHH-007",
+      "title": "A no-content-change occurrence need not require another full payload",
+      "categories": [
+        "lesson",
+        "trade_off",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "stream-plugins.js",
+          "lines": [
+            262,
+            268
+          ],
+          "symbol": "replaceTransformedStreamJsonDocument(pipelineContext,currentTransforme",
+          "excerpt": "replaceTransformedStreamJsonDocument(pipelineContext,currentTransformedPlainJson",
+          "evidence_class": "static_observation",
+          "observation": "The stream dummy appends a transformation snapshot even when content is preserved."
+        },
+        {
+          "file": "stateful-plugins.js",
+          "lines": [
+            207,
+            214
+          ],
+          "symbol": "dataMutation:false",
+          "excerpt": "dataMutation:false",
+          "evidence_class": "static_observation",
+          "observation": "The stateful dummy records diagnostics without the stream snapshot operation."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The two dummy modes distinguish content preservation from the cost of recording it. The source does not deduplicate equal payloads or prove eliminated execution."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Retain requested no-op occurrences and reasons while allowing equal payload/artifact reuse under the native service contract."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "Equal content does not establish equal provenance or presentation profile."
+      ],
+      "validation_needed": [
+        "No-op occurrences remain distinguishable while unnecessary payload copies and rendering can be avoided."
+      ],
+      "relations": [
+        {
+          "target": "SHH-053",
+          "relation": "depends_on"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-036",
+          "relationship": "strengthens",
+          "note": "The source explicitly records a stream revision for unchanged content."
+        }
+      ]
+    },
+    {
+      "id": "SHH-008",
+      "title": "Use explicit clone contracts for data and trusted runtime objects",
+      "categories": [
+        "lesson",
+        "pattern",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            23,
+            49
+          ],
+          "symbol": "return PipelineSecurityUtility.cloneRuntimeSafeValue(valueToClone);",
+          "excerpt": "return PipelineSecurityUtility.cloneRuntimeSafeValue(valueToClone);",
+          "evidence_class": "static_observation",
+          "observation": "The compatibility alias retains runtime-object cloning semantics."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            106,
+            138
+          ],
+          "symbol": "PipelineSecurityUtility.isPlainObject(valueToClone)",
+          "excerpt": "PipelineSecurityUtility.isPlainObject(valueToClone)",
+          "evidence_class": "static_observation",
+          "observation": "The strict path requires plain objects and checks their own descriptors."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Splitting strict data cloning from runtime-object cloning is useful. The legacy JsonSafe name no longer communicates the stricter contract."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Use named, versioned data boundaries; keep executable/runtime objects outside native content records."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "The strict contract intentionally rejects some ordinary JSON object keys such as constructor."
+      ],
+      "validation_needed": [
+        "Every call site selects the intended contract; valid-domain exclusions are documented."
+      ],
+      "relations": [
+        {
+          "target": "SHH-009",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-036",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-028",
+          "relationship": "strengthens",
+          "note": "Strict data cloning is now separate from general runtime cloning."
+        }
+      ]
+    },
+    {
+      "id": "SHH-009",
+      "title": "Array validation must inspect descriptors as well as values",
+      "categories": [
+        "anti_lesson",
+        "failure_mode",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            90,
+            104
+          ],
+          "symbol": "valueToClone[arrayItemIndex]",
+          "excerpt": "valueToClone[arrayItemIndex]",
+          "evidence_class": "static_observation",
+          "observation": "Strict cloning reads array slots directly and returns without inspecting extra own properties."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            124,
+            134
+          ],
+          "symbol": "uses an accessor descriptor",
+          "excerpt": "uses an accessor descriptor",
+          "evidence_class": "static_observation",
+          "observation": "The plain-object branch explicitly rejects accessors, unlike that array loop."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "An accessor on an array index can be invoked, and extra array properties are not checked by this branch. The README descriptor-rejection claim is broader than these inspected checks."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define dense array slots, allowed own keys and descriptor behavior at the native data boundary."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No getter was invoked during this review; arbitrary Proxy objects need separate consideration too."
+      ],
+      "validation_needed": [
+        "Array accessors, symbol/extra keys and non-enumerable slots are accepted or rejected consistently without unintended evaluation."
+      ],
+      "relations": [
+        {
+          "target": "SHH-041",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-028",
+          "relationship": "qualifies",
+          "note": "Stricter object checks do not cover every array shape."
+        }
+      ]
+    },
+    {
+      "id": "SHH-010",
+      "title": "Validate address segments before traversing inherited containers",
+      "categories": [
+        "antipattern",
+        "failure_mode",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1013,
+            1033
+          ],
+          "symbol": ".split(\".\")",
+          "excerpt": ".split(\".\")",
+          "evidence_class": "static_observation",
+          "observation": "The path converter does not reject prototype-related segments."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            655,
+            678
+          ],
+          "symbol": "currentCursor=currentCursor[currentPathPart];",
+          "excerpt": "currentCursor=currentCursor[currentPathPart];",
+          "evidence_class": "static_observation",
+          "observation": "The setter traverses indexed containers and assigns before cloning the final root."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            754,
+            767
+          ],
+          "symbol": "targetObject=targetObject[jsonPathPart];",
+          "excerpt": "targetObject=targetObject[jsonPathPart];",
+          "evidence_class": "static_observation",
+          "observation": "Merge traversal also uses inherited property lookup."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Blocked keys in the final JSON clone do not by themselves protect path traversal. Traversing an inherited prototype container and writing into it is a predicted mutation path before final validation."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Use a defined address grammar, own-property traversal and reserved-segment checks before any write."
+      },
+      "disposition": "avoid_as_implemented",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No prototype mutation or exploit was executed; this is a source-traced concern."
+      ],
+      "validation_needed": [
+        "Reserved/inherited path segments cannot modify shared prototypes; failed writes leave all owned and shared state unchanged."
+      ],
+      "relations": [
+        {
+          "target": "SHH-008",
+          "relation": "depends_on"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-015",
+          "relationship": "extends",
+          "note": "Coordinates also need a safe address-resolution contract."
+        }
+      ]
+    },
+    {
+      "id": "SHH-011",
+      "title": "Convenience proxies must preserve host object invariants",
+      "categories": [
+        "anti_lesson",
+        "structure",
+        "failure_mode"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            476,
+            494
+          ],
+          "symbol": "configurable:false",
+          "excerpt": "configurable:false",
+          "evidence_class": "static_observation",
+          "observation": "The wrapper defines non-configurable own properties."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1094,
+            1100
+          ],
+          "symbol": "return Reflect.ownKeys(targetDocument.currentJsonRoot);",
+          "excerpt": "return Reflect.ownKeys(targetDocument.currentJsonRoot);",
+          "evidence_class": "static_observation",
+          "observation": "The proxy ownKeys result uses document-root keys instead of all target keys."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Omitting non-configurable target keys is a predicted JavaScript Proxy invariant violation for enumeration. Forwarding document fields also collides with wrapper member names."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Prefer explicit native data accessors or validate every reflection operation if a transparent wrapper is retained."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "Object.keys and related reflection operations were not run."
+      ],
+      "validation_needed": [
+        "Enumeration, serialization, member collisions and descriptor queries satisfy the wrapper contract."
+      ],
+      "relations": [
+        {
+          "target": "SHH-002",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-028",
+          "relationship": "extends",
+          "note": "A clone/data wrapper must also obey its host runtime invariants."
+        }
+      ]
+    },
+    {
+      "id": "SHH-012",
+      "title": "Compatibility methods must state changed behavior",
+      "categories": [
+        "anti_lesson",
+        "trade_off",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            558,
+            570
+          ],
+          "symbol": "alsoReplaceOriginalRootIgnored:Boolean(alsoReplaceOriginalRoot)",
+          "excerpt": "alsoReplaceOriginalRootIgnored:Boolean(alsoReplaceOriginalRoot)",
+          "evidence_class": "static_observation",
+          "observation": "A former replacement flag becomes metadata; commitCurrentRootAsOriginalRoot returns without changing state."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Retaining an API name while changing its effect can conceal a compatibility break, even when preserving the original root is desirable."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Use explicit deprecation/outcome records for operations whose old names imply a different effect."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "The archive does not document every historical caller expectation."
+      ],
+      "validation_needed": [
+        "Callers receive a clear result for unsupported legacy effects and cannot infer a commit from a method name."
+      ],
+      "relations": [
+        {
+          "target": "SHH-030",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-026",
+          "relationship": "extends",
+          "note": "Truthful outcomes include compatibility behavior."
+        }
+      ]
+    },
+    {
+      "id": "SHH-013",
+      "title": "Keep current analysis indexes and a state timeline distinct",
+      "categories": [
+        "lesson",
+        "pattern",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1270,
+            1292
+          ],
+          "symbol": "genericStateContainer.timeline.push(pluginStateRecord);",
+          "excerpt": "genericStateContainer.timeline.push(pluginStateRecord);",
+          "evidence_class": "static_observation",
+          "observation": "Generic state stores current per-instance namespace entries plus per-type history and a timeline."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1363,
+            1375
+          ],
+          "symbol": "includeTypeHistory",
+          "excerpt": "includeTypeHistory",
+          "evidence_class": "static_observation",
+          "observation": "Output snapshot policy can omit type history or timeline."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "This separates current lookup from historical occurrences and reduces output hardwiring to particular analysis plugins."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Consider derived analysis records keyed to stream, producer occurrence, analysis kind and definition version."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "The source records mutable shared objects rather than an immutable persistent analysis store."
+      ],
+      "validation_needed": [
+        "Current and historical reads select the intended stream/producer and preserve older analysis values."
+      ],
+      "relations": [
+        {
+          "target": "SHH-014",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-015",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-020",
+          "relationship": "strengthens",
+          "note": "Generic per-instance analysis namespaces extend occurrence-keyed state."
+        }
+      ]
+    },
+    {
+      "id": "SHH-014",
+      "title": "Occurrence keys must include their pipeline and run scope",
+      "categories": [
+        "failure_mode",
+        "invariant",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2395,
+            2398
+          ],
+          "symbol": "this.pluginInstanceCounter+=1;",
+          "excerpt": "this.pluginInstanceCounter+=1;",
+          "evidence_class": "static_observation",
+          "observation": "Each plugin manager uses its own local instance counter."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            93,
+            94
+          ],
+          "symbol": "new PluginManager(pipelineRuntime.debug,pipelineRuntime.registry)",
+          "excerpt": "new PluginManager(pipelineRuntime.debug,pipelineRuntime.registry)",
+          "evidence_class": "static_observation",
+          "observation": "Named pipelines have separate managers but share runtime context."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1281,
+            1289
+          ],
+          "symbol": "genericStateContainer.byInstanceId[ownerInstanceId]",
+          "excerpt": "genericStateContainer.byInstanceId[ownerInstanceId]",
+          "evidence_class": "static_observation",
+          "observation": "Generic state is indexed by instance ID without a pipeline field."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Identical type/counter IDs from separate managers can collide in the shared state bucket. Local uniqueness is narrower than invocation identity."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define producer identity with pipeline, instance, invocation and source-stream scope where required."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "The collision sequence was not executed."
+      ],
+      "validation_needed": [
+        "Same-type first instances in different named pipelines retain separate state and traces."
+      ],
+      "relations": [
+        {
+          "target": "SHH-024",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-001",
+          "relationship": "extends",
+          "note": "Occurrence identity needs a wider scope in a multi-pipeline composition."
+        }
+      ]
+    },
+    {
+      "id": "SHH-015",
+      "title": "Visibility labels do not enforce state disclosure policy",
+      "categories": [
+        "anti_lesson",
+        "invariant",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1260,
+            1278
+          ],
+          "symbol": "visibility:stateVisibility",
+          "excerpt": "visibility:stateVisibility",
+          "evidence_class": "static_observation",
+          "observation": "State records carry a visibility label."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1371,
+            1375
+          ],
+          "symbol": "byInstanceId:PipelineSecurityUtility.cloneStrictJsonValue",
+          "excerpt": "byInstanceId:PipelineSecurityUtility.cloneStrictJsonValue",
+          "evidence_class": "static_observation",
+          "observation": "Snapshot creation clones every instance bucket without filtering visibility."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "A descriptive visibility field is not an access or redaction mechanism. Output consumers need a separate disclosure contract."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Specify which analysis and metadata fields may enter caller results, debug views and observation summaries."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No claim is made that the archive is a multi-user service."
+      ],
+      "validation_needed": [
+        "Non-public state is excluded from each restricted output surface under explicit policy."
+      ],
+      "relations": [
+        {
+          "target": "SHH-022",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-029",
+          "relationship": "extends",
+          "note": "Metadata labels do not isolate authority or disclosure."
+        }
+      ]
+    },
+    {
+      "id": "SHH-016",
+      "title": "Analysis tokens still cannot stand in for native content units",
+      "categories": [
+        "anti_lesson",
+        "mechanism",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1127,
+            1161
+          ],
+          "symbol": "const tokenScanningRegularExpression=/\\b[\\p{L}\\p{N}_'-]+\\b|[^\\s]/gu;",
+          "excerpt": "const tokenScanningRegularExpression=/\\b[\\p{L}\\p{N}_'-]+\\b|[^\\s]/gu;",
+          "evidence_class": "static_observation",
+          "observation": "The scanner omits whitespace, uses string indices/lengths and lowercases frequency keys."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1151,
+            1158
+          ],
+          "symbol": "const tokenFrequencyByLowerCaseValue={};",
+          "excerpt": "const tokenFrequencyByLowerCaseValue={};",
+          "evidence_class": "static_observation",
+          "observation": "Frequency storage remains an ordinary object."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Whitespace/return preservation, UTF-16 coordinate meaning and casefolded derived statistics remain separate concerns from a lossless native reference sequence."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Keep tokenization optional and derived; define native units, returns, coordinates and map versions independently."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "Original text still exists outside the token list; no Unicode cases were run."
+      ],
+      "validation_needed": [
+        "Native round trips preserve all units; analysis coordinates and key domains are explicit."
+      ],
+      "relations": [
+        {
+          "target": "SHH-017",
+          "relation": "complements"
+        },
+        {
+          "target": "SHH-049",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-013",
+          "relationship": "persists",
+          "note": "The tokenizer remains an analysis view."
+        },
+        {
+          "id": "PP7-015",
+          "relationship": "persists",
+          "note": "Index units are still not a native address schema."
+        },
+        {
+          "id": "PP7-016",
+          "relationship": "persists",
+          "note": "Frequency keys still use case folding and ordinary object storage."
+        }
+      ]
+    },
+    {
+      "id": "SHH-017",
+      "title": "Text normalization and falsy-root conversion need declared semantics",
+      "categories": [
+        "anti_lesson",
+        "mechanism",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            389,
+            403
+          ],
+          "symbol": "const trimmedInputText=inputText.trim();",
+          "excerpt": "const trimmedInputText=inputText.trim();",
+          "evidence_class": "static_observation",
+          "observation": "Non-JSON fallback returns trimmed text."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1383,
+            1383
+          ],
+          "symbol": "pipelineContext.data||{}",
+          "excerpt": "pipelineContext.data||{}",
+          "evidence_class": "static_observation",
+          "observation": "Context wrapping substitutes an object for a falsy root."
+        },
+        {
+          "file": "stream-plugins.js",
+          "lines": [
+            114,
+            120
+          ],
+          "symbol": "JSON.stringify(jsonCompatibleValue||{},null,2)",
+          "excerpt": "JSON.stringify(jsonCompatibleValue||{},null,2)",
+          "evidence_class": "static_observation",
+          "observation": "Stream source-text fallback also substitutes for falsy roots."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Strict JSON scalar support is inconsistent with later truthiness defaults, and source text can lose boundary whitespace."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Preserve the native source units exactly and distinguish missing values from null, false, zero and empty strings."
+      },
+      "disposition": "avoid_as_implemented",
+      "application_status": "not_adopted",
+      "limitations": [
+        "These paths have not been run against a scalar corpus."
+      ],
+      "validation_needed": [
+        "Whitespace and every valid scalar receive a documented consistent treatment at all boundaries."
+      ],
+      "relations": [
+        {
+          "target": "SHH-036",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-014",
+          "relationship": "persists",
+          "note": "Trimming remains in input normalization."
+        },
+        {
+          "id": "PP7-017",
+          "relationship": "persists",
+          "note": "Truthiness defaults still collapse valid values."
+        }
+      ]
+    },
+    {
+      "id": "SHH-018",
+      "title": "Observe execution outside the processing stage sequence",
+      "categories": [
+        "lesson",
+        "pattern",
+        "edifice"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1596,
+            1600
+          ],
+          "symbol": "PipelineSecurityUtility.cloneStrictJsonValue(hookEventPayload)",
+          "excerpt": "PipelineSecurityUtility.cloneStrictJsonValue(hookEventPayload)",
+          "evidence_class": "static_observation",
+          "observation": "Hook envelopes are cloned and frozen before dispatch."
+        },
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            181,
+            207
+          ],
+          "symbol": "this.runtime.pipelineExecutionHookBus.registerPipelineExecutionHook({",
+          "excerpt": "this.runtime.pipelineExecutionHookBus.registerPipelineExecutionHook({",
+          "evidence_class": "static_observation",
+          "observation": "The hypervisor subscribes to lifecycle hooks instead of loading as a processing node."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "An observation interface can avoid adding document transformations solely to collect telemetry. It still participates in the same process and execution path."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Consider a versioned observation interface around validated transformation/commit events."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "This is architectural observation, not CPU virtualization or an isolated security monitor."
+      ],
+      "validation_needed": [
+        "Observers cannot rewrite authoritative content through their supplied event values."
+      ],
+      "relations": [
+        {
+          "target": "SHH-019",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-020",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-023",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-030",
+          "relationship": "strengthens",
+          "note": "The source now provides an explicit observation layer."
+        }
+      ]
+    },
+    {
+      "id": "SHH-019",
+      "title": "Out-of-band observation can still block and alter the pass",
+      "categories": [
+        "anti_lesson",
+        "trade_off",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1964,
+            1975
+          ],
+          "symbol": "await hookCallbackReturnValue;",
+          "excerpt": "await hookCallbackReturnValue;",
+          "evidence_class": "static_observation",
+          "observation": "Callbacks execute serially and returned promises are awaited."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1629,
+            1633
+          ],
+          "symbol": "hookExecutionMode",
+          "excerpt": "hookExecutionMode",
+          "evidence_class": "static_observation",
+          "observation": "Registration accepts execution mode metadata; dispatch has no corresponding mode branch."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "An observer is outside the stage list but still on the execution path. The advertised synchronous/asynchronous label does not select separate scheduling, and a never-settling callback has no dispatch deadline here."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define observer scheduling, bounded work, failure and cancellation independently from content transformation."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No slow or non-settling hook was executed."
+      ],
+      "validation_needed": [
+        "Hook deadlines and ordering are enforced; observation cost cannot indefinitely hold a pass."
+      ],
+      "relations": [
+        {
+          "target": "SHH-027",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-018",
+          "relationship": "extends",
+          "note": "Observation callbacks add another unbounded evaluation path."
+        }
+      ]
+    },
+    {
+      "id": "SHH-020",
+      "title": "Retained dispatch records must track their actual completion",
+      "categories": [
+        "failure_mode",
+        "invariant",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1957,
+            1959
+          ],
+          "symbol": "this.appendRetainedHookDispatchRecord(hookDispatchRecord);",
+          "excerpt": "this.appendRetainedHookDispatchRecord(hookDispatchRecord);",
+          "evidence_class": "static_observation",
+          "observation": "A dispatch record is retained before callbacks run."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2007,
+            2010
+          ],
+          "symbol": "hookDispatchRecord.completedAt=new Date().toISOString();",
+          "excerpt": "hookDispatchRecord.completedAt=new Date().toISOString();",
+          "evidence_class": "static_observation",
+          "observation": "Completion updates the local record."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2036,
+            2038
+          ],
+          "symbol": "PipelineSecurityUtility.cloneStrictJsonValue(hookDispatchRecord)",
+          "excerpt": "PipelineSecurityUtility.cloneStrictJsonValue(hookDispatchRecord)",
+          "evidence_class": "static_observation",
+          "observation": "Retention stores a clone rather than the same record."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The retained clone is not updated by later local counter/completion changes. A snapshot can therefore describe a completed dispatch as unfinished with zero outcomes."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Use explicit started/completed events or replace a retained record by identity at completion."
+      },
+      "disposition": "avoid_as_implemented",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No live hook snapshot was collected."
+      ],
+      "validation_needed": [
+        "Returned and retained dispatch outcomes agree after success and each failure policy."
+      ],
+      "relations": [
+        {
+          "target": "SHH-050",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-025",
+          "relationship": "extends",
+          "note": "Evidence consistency applies to dispatch journals too."
+        }
+      ]
+    },
+    {
+      "id": "SHH-021",
+      "title": "Separate observer failure policy from document transaction outcome",
+      "categories": [
+        "lesson",
+        "trade_off",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1551,
+            1554
+          ],
+          "symbol": "FAIL_PIPELINE_EXECUTION:\"fail-pipeline-execution\"",
+          "excerpt": "FAIL_PIPELINE_EXECUTION:\"fail-pipeline-execution\"",
+          "evidence_class": "static_observation",
+          "observation": "Hook policies distinguish continuation, disablement and pass failure."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1992,
+            2001
+          ],
+          "symbol": "throw hookCallbackError;",
+          "excerpt": "throw hookCallbackError;",
+          "evidence_class": "static_observation",
+          "observation": "Fail-pipeline policy propagates an observer exception after recording it."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Explicit failure policy is useful, but a failed observer may run after content or output effects. Propagating an exception alone does not roll back those effects."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Classify mandatory validation, optional telemetry and publication acknowledgements separately, with truthful transaction outcomes."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "The source provides no transaction rollback for arbitrary plugin or sink effects."
+      ],
+      "validation_needed": [
+        "Observer failures before and after publication produce documented state and retry behavior."
+      ],
+      "relations": [
+        {
+          "target": "SHH-051",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-025",
+          "relationship": "extends",
+          "note": "Failure policy must be aligned with publication."
+        },
+        {
+          "id": "PP7-027",
+          "relationship": "extends",
+          "note": "Telemetry success and authoritative completion are distinct."
+        }
+      ]
+    },
+    {
+      "id": "SHH-022",
+      "title": "Reserve event identity fields and define summary disclosure",
+      "categories": [
+        "invariant",
+        "anti_lesson",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1951,
+            1955
+          ],
+          "symbol": "...hookEventPayload",
+          "excerpt": "...hookEventPayload",
+          "evidence_class": "static_observation",
+          "observation": "Caller payload is spread after generated event identity, phase and creation time."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1712,
+            1715
+          ],
+          "symbol": "Object.keys(currentDataPlainObject).slice(0,50)",
+          "excerpt": "Object.keys(currentDataPlainObject).slice(0,50)",
+          "evidence_class": "static_observation",
+          "observation": "A summary includes up to 50 top-level data keys."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1762,
+            1763
+          ],
+          "symbol": "createSafeErrorSummary(pipelineExecutionError)",
+          "excerpt": "createSafeErrorSummary(pipelineExecutionError)",
+          "evidence_class": "static_observation",
+          "observation": "Failure payloads include error summaries, whose helper retains stack text."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Frozen envelopes can still contain caller-overridden reserved fields; compact summaries and stack text are not a complete disclosure policy."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define reserved event fields, redaction rules and bounded summaries as part of the event schema."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "Callbacks are trusted in-process code; this does not claim a demonstrated exfiltration path."
+      ],
+      "validation_needed": [
+        "Payload callers cannot override event identity; sensitive names and errors follow explicit disclosure rules."
+      ],
+      "relations": [
+        {
+          "target": "SHH-004",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-027",
+          "relationship": "extends",
+          "note": "Event identity and redaction need more than timestamps/freeze."
+        }
+      ]
+    },
+    {
+      "id": "SHH-023",
+      "title": "An observational label does not restrict control authority",
+      "categories": [
+        "anti_lesson",
+        "edifice",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            99,
+            100
+          ],
+          "symbol": "this.mode=\"observational\";",
+          "excerpt": "this.mode=\"observational\";",
+          "evidence_class": "static_observation",
+          "observation": "The hypervisor labels its mode observational."
+        },
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            507,
+            522
+          ],
+          "symbol": "return this.runtime.signal(signalName);",
+          "excerpt": "return this.runtime.signal(signalName);",
+          "evidence_class": "static_observation",
+          "observation": "Its public methods can send runtime signals and request execution."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "This component combines observation and a control facade. It is not an isolated monitor or proof of authority separation."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Keep observation capabilities, execution requests and approval authority explicit when agentic integration is eventually designed."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No agentic control is integrated by this review; that remains last."
+      ],
+      "validation_needed": [
+        "A read-only consumer cannot acquire control merely through its inspection object."
+      ],
+      "relations": [
+        {
+          "target": "SHH-050",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-029",
+          "relationship": "persists",
+          "note": "Names and categories do not confine execution authority."
+        }
+      ]
+    },
+    {
+      "id": "SHH-024",
+      "title": "Aggregate metrics without discarding invocation identity",
+      "categories": [
+        "lesson",
+        "structure",
+        "trade_off"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            227,
+            243
+          ],
+          "symbol": "moduleInstanceId:eventPayload",
+          "excerpt": "moduleInstanceId:eventPayload",
+          "evidence_class": "static_observation",
+          "observation": "Recent event records retain pipeline/module identity but omit run/cycle and a separate invocation key."
+        },
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            277,
+            295
+          ],
+          "symbol": "this.moduleTimingByTypeId[moduleTypeId]",
+          "excerpt": "this.moduleTimingByTypeId[moduleTypeId]",
+          "evidence_class": "static_observation",
+          "observation": "Timing and failure counters aggregate by module type."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Type-level summaries are useful but cannot answer which repeated or nested invocation caused an observation once detailed events are evicted."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Retain trace identity separately from aggregate statistics; choose the required run/pipeline/instance/invocation coordinates."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "The source does not promise a durable tracing system."
+      ],
+      "validation_needed": [
+        "Repeated nested invocations can be correlated with their start, finish, error and stream result."
+      ],
+      "relations": [
+        {
+          "target": "SHH-014",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-001",
+          "relationship": "extends",
+          "note": "Processing occurrences need trace-level identity."
+        },
+        {
+          "id": "PP7-027",
+          "relationship": "extends",
+          "note": "Aggregate telemetry has a specific evidence boundary."
+        }
+      ]
+    },
+    {
+      "id": "SHH-025",
+      "title": "Validate dependencies against the actual named pipeline",
+      "categories": [
+        "anti_lesson",
+        "failure_mode",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            190,
+            201
+          ],
+          "symbol": "this.validateExecutablePipelineNodes(executablePipelineNodes);",
+          "excerpt": "this.validateExecutablePipelineNodes(executablePipelineNodes);",
+          "evidence_class": "static_observation",
+          "observation": "Named-pipeline construction calls the shared validator."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2740,
+            2744
+          ],
+          "symbol": "this.pluginManager.getDependencyWarnings();",
+          "excerpt": "this.pluginManager.getDependencyWarnings();",
+          "evidence_class": "static_observation",
+          "observation": "That validator reads the primary manager warnings."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2345,
+            2355
+          ],
+          "symbol": "loadedPluginTypeIds.indexOf(loadedPluginRecord.plugin.typeId)",
+          "excerpt": "loadedPluginTypeIds.indexOf(loadedPluginRecord.plugin.typeId)",
+          "evidence_class": "static_observation",
+          "observation": "Order checks still compare first type occurrences and return warnings."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Structural node checks see the branch nodes, while dependency warning collection still targets the primary manager. Repeated-type and warning-only limitations also remain."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Resolve dependencies for the actual execution plan and producer occurrence, using explicit errors or warnings by contract."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No invalid secondary pipeline was executed."
+      ],
+      "validation_needed": [
+        "Invalid secondary dependencies and repeated consumer instances are assessed against their own plan."
+      ],
+      "relations": [
+        {
+          "target": "SHH-048",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-007",
+          "relationship": "persists",
+          "note": "Warnings are still not execution preconditions."
+        },
+        {
+          "id": "PP7-008",
+          "relationship": "persists",
+          "note": "First-type index comparisons remain."
+        }
+      ]
+    },
+    {
+      "id": "SHH-026",
+      "title": "Centralize multi-dimensional pass budgets and report consumption",
+      "categories": [
+        "lesson",
+        "pattern",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2619,
+            2627
+          ],
+          "symbol": "nodesExecuted:0,branchEntries:0",
+          "excerpt": "nodesExecuted:0,branchEntries:0",
+          "evidence_class": "static_observation",
+          "observation": "Each pass initializes a budget state and exposes a snapshot."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2641,
+            2681
+          ],
+          "symbol": "this.throwExecutionBudgetExceeded(\"maximumBranchEntriesPerPass\"",
+          "excerpt": "this.throwExecutionBudgetExceeded(\"maximumBranchEntriesPerPass\"",
+          "evidence_class": "static_observation",
+          "observation": "Node and branch consumption use named budget-error reasons."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            312,
+            319
+          ],
+          "symbol": "this.recordBranchEntryAgainstBudget(",
+          "excerpt": "this.recordBranchEntryAgainstBudget(",
+          "evidence_class": "static_observation",
+          "observation": "Named-pipeline entry consumes the shared pass branch budget."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "A common budget account is stronger than independent ad hoc caps and supplies useful error context. Its coverage depends on all execution paths participating."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Consider operation, branch, allocation, output and time budgets with explicit scopes and structured outcomes."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "Source defaults are not recommended production values or measured limits."
+      ],
+      "validation_needed": [
+        "Every supported dispatch path consumes the correct account and reports the exhausted dimension."
+      ],
+      "relations": [
+        {
+          "target": "SHH-027",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-028",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-024",
+          "relationship": "strengthens",
+          "note": "The source adds explicit per-pass execution accounting."
+        }
+      ]
+    },
+    {
+      "id": "SHH-027",
+      "title": "A cooperative elapsed check is not an interrupting deadline",
+      "categories": [
+        "anti_lesson",
+        "mechanism",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2646,
+            2655
+          ],
+          "symbol": "const elapsedMilliseconds=Date.now()-this.currentExecutionBudgetState.",
+          "excerpt": "const elapsedMilliseconds=Date.now()-this.currentExecutionBudgetState.startedAtMilliseconds;",
+          "evidence_class": "static_observation",
+          "observation": "Elapsed time is checked when accounting for another node."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            355,
+            361
+          ],
+          "symbol": "await currentPipelineNode.execute(pipelineContext,this);",
+          "excerpt": "await currentPipelineNode.execute(pipelineContext,this);",
+          "evidence_class": "static_observation",
+          "observation": "Node execution and hook callbacks run between accounting points."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "A synchronous long node or unresolved promise can exceed the time limit before another check occurs. Node count, input caps and elapsed checks bound different resources."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Separate cooperative limits from externally enforced worker deadlines where a bounded response is required."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No blocking workload or timeout was run."
+      ],
+      "validation_needed": [
+        "A deliberately stalled operation is terminated or classified within the declared deadline and recovery policy."
+      ],
+      "relations": [
+        {
+          "target": "SHH-034",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-018",
+          "relationship": "persists",
+          "note": "A surrounding counter still cannot interrupt one evaluation."
+        }
+      ]
+    },
+    {
+      "id": "SHH-028",
+      "title": "Foreach children need the same dispatch and observation contract",
+      "categories": [
+        "antipattern",
+        "failure_mode",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            695,
+            705
+          ],
+          "symbol": "await childPlugin.execute(childContext,pipelineRuntime);",
+          "excerpt": "await childPlugin.execute(childContext,pipelineRuntime);",
+          "evidence_class": "static_observation",
+          "observation": "The foreach runner calls a child plugin directly instead of the ordinary node dispatcher."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            630,
+            636
+          ],
+          "symbol": "this.itemMapper(inputItem,",
+          "excerpt": "this.itemMapper(inputItem,",
+          "evidence_class": "static_observation",
+          "observation": "Function mapping also loops internally inside one node."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Child plugin invocations do not automatically receive ordinary node budget consumption or per-child lifecycle hooks. Item limits help but are a separate bound; passing the same runtime also exposes parent state."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Route nested work through an explicit child-dispatch interface that carries budgets, identity, state and observation policy."
+      },
+      "disposition": "avoid_as_implemented",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No child budget bypass or mutation was exercised; plugins may explicitly consume budgets themselves."
+      ],
+      "validation_needed": [
+        "Nested invocations have complete accounting and cannot accidentally operate on parent context/control state."
+      ],
+      "relations": [
+        {
+          "target": "SHH-037",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-024",
+          "relationship": "extends",
+          "note": "Coverage must include internal child work."
+        },
+        {
+          "id": "PP7-029",
+          "relationship": "persists",
+          "note": "A child-context wrapper is not execution containment."
+        }
+      ]
+    },
+    {
+      "id": "SHH-029",
+      "title": "Acquire the pass guard inside a cleanup-protected region",
+      "categories": [
+        "lesson",
+        "failure_mode",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            423,
+            443
+          ],
+          "symbol": "this.isPipelinePassRunning=true;",
+          "excerpt": "this.isPipelinePassRunning=true;",
+          "evidence_class": "static_observation",
+          "observation": "A pass guard is now set before building executable nodes."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            443,
+            472
+          ],
+          "symbol": "const executablePipelineNodes=this.buildExecutablePipelineNodes();",
+          "excerpt": "const executablePipelineNodes=this.buildExecutablePipelineNodes();",
+          "evidence_class": "static_observation",
+          "observation": "Construction occurs before try/finally; finally normally clears the guard."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The guard addresses overlapping passes but a synchronous build/validation exception before try can leave it set. The improvement and its uncovered exit path must both be retained."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Protect guard acquisition, plan validation and cleanup as one lifecycle; return an explicit busy outcome for overlapping requests."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No overlapping or build-failure call was run."
+      ],
+      "validation_needed": [
+        "Every setup failure releases the guard; concurrent requests get a truthful outcome."
+      ],
+      "relations": [
+        {
+          "target": "SHH-030",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-022",
+          "relationship": "qualifies",
+          "note": "A single-flight guard now exists, but its setup region has a gap."
+        }
+      ]
+    },
+    {
+      "id": "SHH-030",
+      "title": "Pause and reset need a generation and continuation contract",
+      "categories": [
+        "open_question",
+        "invariant",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            330,
+            331
+          ],
+          "symbol": "this.state===RuntimeState.PAUSED",
+          "excerpt": "this.state===RuntimeState.PAUSED",
+          "evidence_class": "static_observation",
+          "observation": "Traversal returns its context at pause/stop."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            451,
+            458
+          ],
+          "symbol": "this.state!==RuntimeState.PAUSED",
+          "excerpt": "this.state!==RuntimeState.PAUSED",
+          "evidence_class": "static_observation",
+          "observation": "The patched completion path preserves PAUSED."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2924,
+            2930
+          ],
+          "symbol": "this.context=this.createFreshPipelineContext();",
+          "excerpt": "this.context=this.createFreshPipelineContext();",
+          "evidence_class": "static_observation",
+          "observation": "Reset replaces the context without a generation token."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Pause preservation is improved over the base run method, but runOnce builds from the start rather than a saved continuation. Reset during an awaited node still needs a stale-completion policy."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Specify restart versus resume, frozen input/configuration, cancellation generation and late-result rejection."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "Resume/reset timing cases were not reproduced; the supplied pause test only checks stopping before output."
+      ],
+      "validation_needed": [
+        "Pause/resume avoids accidental repeated effects; reset prevents old completions from replacing the new context."
+      ],
+      "relations": [
+        {
+          "target": "SHH-031",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-023",
+          "relationship": "qualifies",
+          "note": "Patched pause preservation is present; continuation/generation requirements remain."
+        }
+      ]
+    },
+    {
+      "id": "SHH-031",
+      "title": "Nested errors must propagate to the final pass outcome",
+      "categories": [
+        "failure_mode",
+        "invariant",
+        "anti_lesson"
+      ],
+      "source_evidence": [
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            392,
+            403
+          ],
+          "symbol": "this.state=RuntimeState.ERROR;",
+          "excerpt": "this.state=RuntimeState.ERROR;",
+          "evidence_class": "static_observation",
+          "observation": "A node failure records an error and returns context rather than throwing."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            330,
+            331
+          ],
+          "symbol": "this.stopRequested",
+          "excerpt": "this.stopRequested",
+          "evidence_class": "static_observation",
+          "observation": "The recursion entry checks pause/stop but not ERROR."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            462,
+            465
+          ],
+          "symbol": "PipelineExecutionHookPhase.PIPELINE_EXECUTION_FINISHED",
+          "excerpt": "PipelineExecutionHookPhase.PIPELINE_EXECUTION_FINISHED",
+          "evidence_class": "static_observation",
+          "observation": "The outer pass emits finished after traversal returns, including error-state returns."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "A nested branch can return an error-state context to its caller, which may still continue through later nodes. Finished describes control return, not necessarily successful transformation; context.status can also lag the runtime state."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Use one explicit result contract for success, partial effects, failed child work and publication eligibility."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "Nested error continuation and status divergence are source-traced predictions, not runtime results."
+      ],
+      "validation_needed": [
+        "Inner errors suppress unauthorized downstream publication and produce consistent event/state outcomes."
+      ],
+      "relations": [
+        {
+          "target": "SHH-051",
+          "relation": "constrains"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-026",
+          "relationship": "persists",
+          "note": "Multiple state fields and completion labels remain ambiguous."
+        }
+      ]
+    },
+    {
+      "id": "SHH-032",
+      "title": "Prototype patching makes assembly order part of behavior",
+      "categories": [
+        "structure",
+        "antipattern",
+        "edifice"
+      ],
+      "source_evidence": [
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            116,
+            126
+          ],
+          "symbol": "runtimePrototype.hasControlFlowPatch=true;",
+          "excerpt": "runtimePrototype.hasControlFlowPatch=true;",
+          "evidence_class": "static_observation",
+          "observation": "Loading the control-flow file patches a shared runtime prototype once."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            477,
+            481
+          ],
+          "symbol": "patchRuntimePrototypeForControlFlow();",
+          "excerpt": "patchRuntimePrototypeForControlFlow();",
+          "evidence_class": "static_observation",
+          "observation": "The original executor is retained, then patch installation runs at load."
+        },
+        {
+          "file": "index.html",
+          "lines": [
+            205,
+            214
+          ],
+          "symbol": "<script src=\"control-flow-plugins.js\"></script>",
+          "excerpt": "<script src=\"control-flow-plugins.js\"></script>",
+          "evidence_class": "static_observation",
+          "observation": "The page selects a specific script load order."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The stitched runtime is defined by source composition and load order, not solely pipeline-core.js. A review or test of only the base runtime can miss effective behavior."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Prefer explicit runtime extension/composition contracts and capture the implementation/configuration identity used by a plan."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No alternative script order or reload was executed."
+      ],
+      "validation_needed": [
+        "All supported entry points select the same intended runtime semantics without hidden global patch dependence."
+      ],
+      "relations": [
+        {
+          "target": "SHH-052",
+          "relation": "constrains"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-032",
+          "relationship": "extends",
+          "note": "The larger composition now includes runtime replacement behavior."
+        }
+      ]
+    },
+    {
+      "id": "SHH-033",
+      "title": "Signal-driven skipping is distinct from proven transformation reduction",
+      "categories": [
+        "anti_lesson",
+        "mechanism",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            563,
+            578
+          ],
+          "symbol": "Boolean(externalSignalValue)===true",
+          "excerpt": "Boolean(externalSignalValue)===true",
+          "evidence_class": "static_observation",
+          "observation": "A filter converts an external signal to a next-module decision."
+        },
+        {
+          "file": "control-flow-plugins.js",
+          "lines": [
+            365,
+            387
+          ],
+          "symbol": "nextNodeIndex+=1;",
+          "excerpt": "nextNodeIndex+=1;",
+          "evidence_class": "static_observation",
+          "observation": "The executor records and skips the next non-system node."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "A recorded conditional skip is not a proof that two requested transformations cancel or that their dependencies permit omission. It also depends on the current stage adjacency."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Preserve the distinction between future user-selectable bypass and the current requirement to reduce logically redundant work with reasons."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "The user has deferred selective bypass; source capability does not change that decision."
+      ],
+      "validation_needed": [
+        "Any optimization explains its semantic preconditions and retains requested transformation occurrences."
+      ],
+      "relations": [
+        {
+          "target": "SHH-049",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-053",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-006",
+          "relationship": "qualifies",
+          "note": "Inspectable order can also contain signal-dependent skips."
+        },
+        {
+          "id": "PP7-035",
+          "relationship": "persists",
+          "note": "Do not import unrelated behavior because it exists in the archive."
+        }
+      ]
+    },
+    {
+      "id": "SHH-034",
+      "title": "Regex heuristics and input caps are useful but incomplete bounds",
+      "categories": [
+        "lesson",
+        "anti_lesson",
+        "trade_off"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            407,
+            456
+          ],
+          "symbol": "assertRegularExpressionSourceIsSafe",
+          "excerpt": "assertRegularExpressionSourceIsSafe",
+          "evidence_class": "static_observation",
+          "observation": "Regex creation rejects selected nested-group/alternation/wildcard patterns and caps source length."
+        },
+        {
+          "file": "stateful-plugins.js",
+          "lines": [
+            37,
+            54
+          ],
+          "symbol": "sourceText.length>maximumInputLength",
+          "excerpt": "sourceText.length>maximumInputLength",
+          "evidence_class": "static_observation",
+          "observation": "The shared search helper caps input length before constructing a scanner."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            226,
+            228
+          ],
+          "symbol": "regularExpression.test(String(actualValue))",
+          "excerpt": "regularExpression.test(String(actualValue))",
+          "evidence_class": "static_observation",
+          "observation": "The advanced matchesRegex path calls test without that search-helper input cap."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "There are now useful defensive checks, but heuristic rejection is not an exhaustive complexity proof and not every regex caller uses the same caps."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Centralize regex policy if retained; bound every caller and select an execution model with the required worst-case behavior."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No pathological pattern was run; heuristic false positives/negatives are unmeasured."
+      ],
+      "validation_needed": [
+        "Every regex call path follows documented limits and cancellation behavior with representative adversarial cases."
+      ],
+      "relations": [
+        {
+          "target": "SHH-035",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-018",
+          "relationship": "qualifies",
+          "note": "Heuristics and input caps were added but do not guarantee a deadline."
+        }
+      ]
+    },
+    {
+      "id": "SHH-035",
+      "title": "Scanners need coordinate-correct progress and completion labels",
+      "categories": [
+        "anti_lesson",
+        "invariant",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "stateful-plugins.js",
+          "lines": [
+            61,
+            77
+          ],
+          "symbol": "scanningRegularExpression.lastIndex+=1;",
+          "excerpt": "scanningRegularExpression.lastIndex+=1;",
+          "evidence_class": "static_observation",
+          "observation": "Zero-width progress still advances one string unit."
+        },
+        {
+          "file": "stateful-plugins.js",
+          "lines": [
+            72,
+            77
+          ],
+          "symbol": "regexMatchRecords.length>=maximumMatchCount",
+          "excerpt": "regexMatchRecords.length>=maximumMatchCount",
+          "evidence_class": "static_observation",
+          "observation": "A capped scan returns the same result shape without a completion/truncation field."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The match prefix can be mistaken for a complete result, and one-unit advancement still requires Unicode-mode analysis. A returned match count alone is not a completeness claim."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Expose complete/capped/failed state and define coordinates/progress independently of native stream addressing."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "Unicode zero-width scans and cap-boundary cases were not executed."
+      ],
+      "validation_needed": [
+        "Empty matches make correct forward progress and capped results cannot be presented as exhaustive."
+      ],
+      "relations": [
+        {
+          "target": "SHH-016",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-019",
+          "relationship": "persists",
+          "note": "The zero-width and truncation questions remain."
+        }
+      ]
+    },
+    {
+      "id": "SHH-036",
+      "title": "Optional predicate values must survive strict-boundary migration",
+      "categories": [
+        "failure_mode",
+        "anti_lesson",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            163,
+            165
+          ],
+          "symbol": "testOptions.expectedValue:undefined",
+          "excerpt": "testOptions.expectedValue:undefined",
+          "evidence_class": "static_observation",
+          "observation": "Predicate evaluation permits an absent expected value."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            233,
+            238
+          ],
+          "symbol": "expectedValue:cloneJsonSafe(expectedValue)",
+          "excerpt": "expectedValue:cloneJsonSafe(expectedValue)",
+          "evidence_class": "static_observation",
+          "observation": "The returned record unconditionally strict-clones expectedValue and non-sentinel actualValue."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            527,
+            539
+          ],
+          "symbol": "this.expectedValue",
+          "excerpt": "this.expectedValue",
+          "evidence_class": "static_observation",
+          "observation": "The JSON-branch default can leave that value undefined."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Unary/default predicates can compute a result and then fail while constructing their diagnostic record, because undefined is rejected by the strict clone. An absent external signal can similarly reach that boundary."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Represent missing values explicitly and validate configuration by operator; audit callers when a clone contract becomes stricter."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "These advanced predicate defaults were not executed; their supplied test coverage is assessed separately."
+      ],
+      "validation_needed": [
+        "Unary operators and absent signals produce intentional typed outcomes rather than a recording-time exception."
+      ],
+      "relations": [
+        {
+          "target": "SHH-008",
+          "relation": "depends_on"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-017",
+          "relationship": "extends",
+          "note": "Missing and valid values need explicit semantics at analysis boundaries."
+        },
+        {
+          "id": "PP7-028",
+          "relationship": "extends",
+          "note": "Changing clone strictness requires call-site migration."
+        }
+      ]
+    },
+    {
+      "id": "SHH-037",
+      "title": "Packaged operations and arbitrary callbacks have different authority",
+      "categories": [
+        "lesson",
+        "anti_lesson",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            451,
+            512
+          ],
+          "symbol": "Unsupported foreach built-in operation",
+          "excerpt": "Unsupported foreach built-in operation",
+          "evidence_class": "static_observation",
+          "observation": "Built-in item processing uses a finite named operation set."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            632,
+            636
+          ],
+          "symbol": "pipelineContext,pipelineRuntime,plugin:this",
+          "excerpt": "pipelineContext,pipelineRuntime,plugin:this",
+          "evidence_class": "static_observation",
+          "observation": "A custom mapper instead receives full context, runtime and plugin references."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            669,
+            680
+          ],
+          "symbol": "resolveGlobalPath(this.pluginGlobalPath)",
+          "excerpt": "resolveGlobalPath(this.pluginGlobalPath)",
+          "evidence_class": "static_observation",
+          "observation": "Child plugin selection can resolve a global path."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Closed built-ins are a useful service model. A callback or global-name lookup is trusted executable configuration, not ordinary safe request data."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Keep the eventual agent-facing request API closed over packaged validated operations; avoid request-selected code or global callable resolution."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No request-facing agent integration is supplied or enabled by this review."
+      ],
+      "validation_needed": [
+        "Untrusted callers cannot submit callbacks or expand capability through arbitrary global paths."
+      ],
+      "relations": [
+        {
+          "target": "SHH-039",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-029",
+          "relationship": "persists",
+          "note": "Code categories and data wrappers do not isolate execution."
+        }
+      ]
+    },
+    {
+      "id": "SHH-038",
+      "title": "Object conversions need explicit key and type-loss rules",
+      "categories": [
+        "trade_off",
+        "mechanism",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            353,
+            371
+          ],
+          "symbol": "String(arrayItem[0])",
+          "excerpt": "String(arrayItem[0])",
+          "evidence_class": "static_observation",
+          "observation": "Map creation coerces supported input keys to strings."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            394,
+            405
+          ],
+          "symbol": "outputObject[String(key)]",
+          "excerpt": "outputObject[String(key)]",
+          "evidence_class": "static_observation",
+          "observation": "Map-to-object output uses ordinary object assignment."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            423,
+            445
+          ],
+          "symbol": "jsonRepresentation",
+          "excerpt": "jsonRepresentation",
+          "evidence_class": "static_observation",
+          "observation": "Emitters distinguish runtime object values from their JSON representations."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Runtime objects and their interchange representation are different artifacts. String coercion can merge keys, and ordinary object assignment needs a reserved-key policy."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define reversible codecs or report intentional losses for any native/interchange conversion."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No collision or prototype-key case was executed; string-key-only contracts may intentionally constrain the domain."
+      ],
+      "validation_needed": [
+        "Key collisions, ordering and type changes are detected or explicitly accepted."
+      ],
+      "relations": [
+        {
+          "target": "SHH-053",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-009",
+          "relationship": "extends",
+          "note": "Declared data support does not define conversion fidelity."
+        }
+      ]
+    },
+    {
+      "id": "SHH-039",
+      "title": "Reconstruct trusted behavior from registered definitions and state",
+      "categories": [
+        "lesson",
+        "pattern",
+        "edifice"
+      ],
+      "source_evidence": [
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            5,
+            13
+          ],
+          "symbol": "State is cloneable data. Behavior is registered and reconstructed.",
+          "excerpt": "State is cloneable data. Behavior is registered and reconstructed.",
+          "evidence_class": "source_claim",
+          "observation": "The module states a separation between state and registered behavior."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            389,
+            403
+          ],
+          "symbol": "this.execute = factory({",
+          "excerpt": "this.execute = factory({",
+          "evidence_class": "static_observation",
+          "observation": "A registered callable clones constructor/internal data and asks the trusted factory for a function."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            717,
+            746
+          ],
+          "symbol": "seen.set(value, clonedCallable);",
+          "excerpt": "seen.set(value, clonedCallable);",
+          "evidence_class": "static_observation",
+          "observation": "Callable cloning allocates a shell before recursively copying its state."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "This is a useful conceptual separation for reproducible operation definitions. Factory execution still has arbitrary trusted-code effects and is not a sandbox."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Represent transformation kind/version and immutable arguments separately from packaged evaluator behavior."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No callable machinery is adopted; native character/unit lookup is a different responsibility."
+      ],
+      "validation_needed": [
+        "Only approved definitions resolve; reconstructed behavior has defined state and capability boundaries."
+      ],
+      "relations": [
+        {
+          "target": "SHH-040",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-043",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-001",
+          "relationship": "strengthens",
+          "note": "Definition, state and occurrence can be separated explicitly."
+        },
+        {
+          "id": "PP7-029",
+          "relationship": "qualifies",
+          "note": "Registration defines a trust boundary but does not contain factory behavior."
+        }
+      ]
+    },
+    {
+      "id": "SHH-040",
+      "title": "Duplicate rejection and schema labels do not bind behavior versions",
+      "categories": [
+        "anti_lesson",
+        "invariant",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            245,
+            264
+          ],
+          "symbol": "this.rejectDuplicateRegistration = options.rejectDuplicateRegistration",
+          "excerpt": "this.rejectDuplicateRegistration = options.rejectDuplicateRegistration ?? true;",
+          "evidence_class": "static_observation",
+          "observation": "Callable duplicate registration is rejected by default but configurable."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            136,
+            147
+          ],
+          "symbol": "value.kind === CALLABLE_DESCRIPTOR_KIND",
+          "excerpt": "value.kind === CALLABLE_DESCRIPTOR_KIND",
+          "evidence_class": "static_observation",
+          "observation": "Descriptor recognition checks kind/type ID without checking schemaVersion."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            337,
+            352
+          ],
+          "symbol": "descriptor.callableTypeId",
+          "excerpt": "descriptor.callableTypeId",
+          "evidence_class": "static_observation",
+          "observation": "Reconstruction uses the current registry binding and omits descriptor metadata."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2316,
+            2316
+          ],
+          "symbol": "this.entriesByTypeId.set(registryEntry.typeId,registryEntry);",
+          "excerpt": "this.entriesByTypeId.set(registryEntry.typeId,registryEntry);",
+          "evidence_class": "static_observation",
+          "observation": "The separate plugin registry still replaces entries by type."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "There are multiple registration contracts. A callable type name or emitted schemaVersion does not ensure the same historical definition will be reconstructed later."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Bind native maps and transformation definitions to explicit immutable identities and validated schema/version policies."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No cross-version descriptor was rehydrated; duplicate rejection is a real improvement in its own registry."
+      ],
+      "validation_needed": [
+        "Unknown schema versions and changed definitions are rejected or migrated explicitly; old streams retain meaning."
+      ],
+      "relations": [
+        {
+          "target": "SHH-048",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-002",
+          "relationship": "qualifies",
+          "note": "Callable duplicate rejection is stronger, while plugin replacement and version binding remain separate."
+        }
+      ]
+    },
+    {
+      "id": "SHH-041",
+      "title": "A declared clone option must actually control its copy paths",
+      "categories": [
+        "anti_lesson",
+        "failure_mode",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            548,
+            554
+          ],
+          "symbol": "this.allowAccessors = options.allowAccessors ?? true;",
+          "excerpt": "this.allowAccessors = options.allowAccessors ?? true;",
+          "evidence_class": "static_observation",
+          "observation": "The engine stores an accessor-policy option."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            176,
+            197
+          ],
+          "symbol": "Object.defineProperty(targetObject, propertyKey, descriptor);",
+          "excerpt": "Object.defineProperty(targetObject, propertyKey, descriptor);",
+          "evidence_class": "static_observation",
+          "observation": "Descriptor copying preserves accessors without consulting that option."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            929,
+            945
+          ],
+          "symbol": "clonePropertyDescriptors({",
+          "excerpt": "clonePropertyDescriptors({",
+          "evidence_class": "static_observation",
+          "observation": "Ordinary object cloning uses the descriptor helper."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The inspected copy path does not enforce allowAccessors:false. Rejecting raw function values does not also reject getter/setter functions retained inside descriptors."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Use policies whose enforcement is traceable at every relevant branch; keep runtime cloning distinct from strict native data validation."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No accessor object was executed; defaults intentionally permit accessors."
+      ],
+      "validation_needed": [
+        "Setting each public policy option changes the promised behavior or is rejected as unsupported."
+      ],
+      "relations": [
+        {
+          "target": "SHH-008",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-028",
+          "relationship": "persists",
+          "note": "A hardening name or policy field is not proof of enforcement."
+        }
+      ]
+    },
+    {
+      "id": "SHH-042",
+      "title": "Graph cloning must preserve aliasing as well as cycles",
+      "categories": [
+        "anti_lesson",
+        "invariant",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            657,
+            668
+          ],
+          "symbol": "return value.slice(0);",
+          "excerpt": "return value.slice(0);",
+          "evidence_class": "static_observation",
+          "observation": "ArrayBuffer and shared-buffer clones do not register the new buffer in seen here."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            891,
+            905
+          ],
+          "symbol": "const clonedBuffer = this.#cloneValue(value.buffer, seen,",
+          "excerpt": "const clonedBuffer = this.#cloneValue(value.buffer, seen,",
+          "evidence_class": "static_observation",
+          "observation": "Views clone their buffers through that branch."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            1069,
+            1079
+          ],
+          "symbol": "clonedCircularObject.self !== clonedCircularObject",
+          "excerpt": "clonedCircularObject.self !== clonedCircularObject",
+          "evidence_class": "static_observation",
+          "observation": "The included clone self-test checks one ordinary-object cycle."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Two views sharing a source buffer can be reconstructed over separate buffer copies; repeated special-object references also need a consistent alias policy. A cycle test does not establish full graph fidelity."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define which alias relationships are meaningful for any future binary/native storage implementation and test them explicitly."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No shared-buffer clone was executed. This applies to the callable clone engine; the core manual clone has a different buffer-map implementation."
+      ],
+      "validation_needed": [
+        "Shared views, repeated references, offsets and independent mutations preserve the declared graph semantics."
+      ],
+      "relations": [
+        {
+          "target": "SHH-039",
+          "relation": "constrains"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-028",
+          "relationship": "extends",
+          "note": "Clone correctness includes relationships among values, not just individual values."
+        }
+      ]
+    },
+    {
+      "id": "SHH-043",
+      "title": "Cloning a callable reference must not silently change its representation",
+      "categories": [
+        "failure_mode",
+        "structure",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            523,
+            530
+          ],
+          "symbol": "registry.createFromDescriptor(this.descriptor, options)",
+          "excerpt": "registry.createFromDescriptor(this.descriptor, options)",
+          "evidence_class": "static_observation",
+          "observation": "CallableRef.rehydrate expects a descriptor."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            619,
+            625
+          ],
+          "symbol": "this.#cloneRegisteredCallableDescriptor(value, seen, path)",
+          "excerpt": "this.#cloneRegisteredCallableDescriptor(value, seen, path)",
+          "evidence_class": "static_observation",
+          "observation": "Generic clone converts recognized descriptors into runtime callables."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            764,
+            775
+          ],
+          "symbol": "clonedRef.descriptor = this.#cloneValue(value.descriptor",
+          "excerpt": "clonedRef.descriptor = this.#cloneValue(value.descriptor",
+          "evidence_class": "static_observation",
+          "observation": "Cloning a CallableRef sends its descriptor through that same conversion path."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "A cloned reference can receive a runtime callable where its rehydrate method expects descriptor data. Descriptor materialization and data cloning are conflated."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Make inert references, executable reconstruction and serialized descriptors separate explicit operations."
+      },
+      "disposition": "requires_validation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "This sequence was not executed; the supplied callable self-test does not cover CallableRef."
+      ],
+      "validation_needed": [
+        "A cloned reference remains a valid inert reference and rehydrates only at the intended boundary."
+      ],
+      "relations": [
+        {
+          "target": "SHH-039",
+          "relation": "depends_on"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-028",
+          "relationship": "extends",
+          "note": "Copying data should not implicitly change representation or activate behavior."
+        }
+      ]
+    },
+    {
+      "id": "SHH-044",
+      "title": "Twin entry points require parity checks and honest runner evidence",
+      "categories": [
+        "lesson",
+        "structure",
+        "trade_off"
+      ],
+      "source_evidence": [
+        {
+          "file": "deep-clone-callable-registry.browser.js",
+          "lines": [
+            1128,
+            1149
+          ],
+          "symbol": "globalObject.PipelineCallableRegistry=Object.freeze({",
+          "excerpt": "globalObject.PipelineCallableRegistry=Object.freeze({",
+          "evidence_class": "static_observation",
+          "observation": "The browser build publishes a global namespace/CommonJS export."
+        },
+        {
+          "file": "callable-registry/deep_clone_callable_registry_module_hardened.js",
+          "lines": [
+            1094,
+            1110
+          ],
+          "symbol": "export {",
+          "excerpt": "export {",
+          "evidence_class": "static_observation",
+          "observation": "The original module exposes ESM exports."
+        },
+        {
+          "file": "run-self-tests-node.js",
+          "lines": [
+            3,
+            15
+          ],
+          "symbol": "require(\"./deep-clone-callable-registry.browser.js\");",
+          "excerpt": "require(\"./deep-clone-callable-registry.browser.js\");",
+          "evidence_class": "static_observation",
+          "observation": "The main runner selects the browser shim rather than the ESM module."
+        },
+        {
+          "file": "callable-registry/self_test.mjs",
+          "lines": [
+            1,
+            4
+          ],
+          "symbol": "selfTestDeepCloneModule();",
+          "excerpt": "selfTestDeepCloneModule();",
+          "evidence_class": "static_observation",
+          "observation": "A separate ESM runner exists."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Text comparison shows the shared implementation matches, with packaging/example/export differences. One runner loading the shim is not proof that both entry points execute successfully in their intended hosts."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Maintain one implementation source or checked build parity, and validate supported entry points separately when authorized."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No Node, ESM or browser entry point was executed; no package.json is present in the supplied inventory."
+      ],
+      "validation_needed": [
+        "Generated and source variants stay aligned, and each declared host entry point has its own recorded result."
+      ],
+      "relations": [
+        {
+          "target": "SHH-032",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-034",
+          "relationship": "extends",
+          "note": "Artifact packaging and executed validation have separate proof boundaries."
+        }
+      ]
+    },
+    {
+      "id": "SHH-045",
+      "title": "Test names must be read against their actual assertions",
+      "categories": [
+        "lesson",
+        "anti_lesson",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "self-tests.js",
+          "lines": [
+            625,
+            648
+          ],
+          "symbol": "outputSink.lastWrittenObject===null",
+          "excerpt": "outputSink.lastWrittenObject===null",
+          "evidence_class": "static_observation",
+          "observation": "The node-budget test checks both error state/reason and absence of output."
+        },
+        {
+          "file": "self-tests.js",
+          "lines": [
+            387,
+            395
+          ],
+          "symbol": "recordedHookPhaseNames.includes(",
+          "excerpt": "recordedHookPhaseNames.includes(",
+          "evidence_class": "static_observation",
+          "observation": "The lifecycle-order test asserts first/last events and membership rather than the entire sequence."
+        },
+        {
+          "file": "self-tests.js",
+          "lines": [
+            692,
+            708
+          ],
+          "symbol": "const testFunctions=",
+          "excerpt": "const testFunctions=",
+          "evidence_class": "static_observation",
+          "observation": "The runner lists 16 tests with no direct advanced plugin test functions."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Narrow negative assertions are useful. Loading a module or giving a test a broad name does not establish all behaviors, event permutations, elapsed deadlines, concurrency or advanced-plugin correctness."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Keep requirements-to-assertion coverage explicit in future rigid, fuzzy and torture suites."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "This review reads tests without running them; it does not alter the existing Docstream harness."
+      ],
+      "validation_needed": [
+        "Tests cover both success and forbidden side effects at each promised boundary; coverage gaps remain visible."
+      ],
+      "relations": [
+        {
+          "target": "SHH-046",
+          "relation": "constrains"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-034",
+          "relationship": "strengthens",
+          "note": "Source assertions let the supplied evidence be assessed more precisely."
+        }
+      ]
+    },
+    {
+      "id": "SHH-046",
+      "title": "Retain supplied results as dated claims with a provenance boundary",
+      "categories": [
+        "anti_lesson",
+        "invariant",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "SELF_TEST_RESULT.json",
+          "lines": [
+            1,
+            3
+          ],
+          "symbol": "\"passed\": true",
+          "excerpt": "\"passed\": true",
+          "evidence_class": "source_claim",
+          "observation": "The report declares overall success."
+        },
+        {
+          "file": "SELF_TEST_RESULT.json",
+          "lines": [
+            206,
+            206
+          ],
+          "symbol": "\"completedAt\": \"2026-04-26T22:22:23.379Z\"",
+          "excerpt": "\"completedAt\": \"2026-04-26T22:22:23.379Z\"",
+          "evidence_class": "source_claim",
+          "observation": "Its internal completion timestamp predates this October intake."
+        },
+        {
+          "file": "README.md",
+          "lines": [
+            385,
+            396
+          ],
+          "symbol": "Expected result:",
+          "excerpt": "Expected result:",
+          "evidence_class": "source_claim",
+          "observation": "The README also presents an expected success result."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The report contains 16 reported passes, but does not bind them to an archive digest or record a host/runtime identity. Its timestamp is a source claim, not an authenticated execution time."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Preserve supplied reports separately from fresh local runs and independent attestation, with source and implementation identities."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No claim is made that the supplied report is false or that it was produced from this exact archive."
+      ],
+      "validation_needed": [
+        "A future run records tested bytes, environment, command, outcome and retained failures."
+      ],
+      "relations": [
+        {
+          "target": "SHH-045",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-027",
+          "relationship": "persists",
+          "note": "Time and logs alone are not independent attestation."
+        },
+        {
+          "id": "PP7-034",
+          "relationship": "persists",
+          "note": "A packaged passed report is not current validation."
+        }
+      ]
+    },
+    {
+      "id": "SHH-047",
+      "title": "Separate human inspection surfaces from document rendering",
+      "categories": [
+        "lesson",
+        "pattern",
+        "structure"
+      ],
+      "source_evidence": [
+        {
+          "file": "index.html",
+          "lines": [
+            15,
+            21
+          ],
+          "symbol": "data-tab=\"hypervisor\"",
+          "excerpt": "data-tab=\"hypervisor\"",
+          "evidence_class": "static_observation",
+          "observation": "The UI separates running/input/configuration/debug/oversight into tabs."
+        },
+        {
+          "file": "browser-adapters.js",
+          "lines": [
+            62,
+            68
+          ],
+          "symbol": "this.outputPaneElement.textContent=JSON.stringify",
+          "excerpt": "this.outputPaneElement.textContent=JSON.stringify",
+          "evidence_class": "static_observation",
+          "observation": "Output is rendered as text rather than inserted as active HTML."
+        },
+        {
+          "file": "browser-adapters.js",
+          "lines": [
+            25,
+            39
+          ],
+          "symbol": "selectedJsonFile.size>2000000",
+          "excerpt": "selectedJsonFile.size>2000000",
+          "evidence_class": "static_observation",
+          "observation": "The file-reader path has a two-million-byte cap."
+        },
+        {
+          "file": "style.css",
+          "lines": [
+            192,
+            213
+          ],
+          "symbol": "@media(max-width:650px)",
+          "excerpt": "@media(max-width:650px)",
+          "evidence_class": "static_observation",
+          "observation": "Responsive rules change inspection layout without defining document pagination."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Providers/sinks and distinct inspection surfaces remain useful. A file-only size check and JSON display do not establish all input limits, accessibility or document-render fidelity."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Keep core service outputs distinct from optional human inspection; define limits on every request/input path."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No browser layout, keyboard interaction or accessibility behavior was executed."
+      ],
+      "validation_needed": [
+        "All input modes enforce their contracts and inspection layout is visually/interaction tested in a later authorized scope."
+      ],
+      "relations": [
+        {
+          "target": "SHH-049",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-004",
+          "relationship": "strengthens",
+          "note": "Adapter boundaries remain explicit."
+        },
+        {
+          "id": "PP7-030",
+          "relationship": "qualifies",
+          "note": "Tabs separate views, although regex/tests still write into the shared output pane."
+        },
+        {
+          "id": "PP7-031",
+          "relationship": "persists",
+          "note": "Inspector CSS is not a document rendering contract."
+        }
+      ]
+    },
+    {
+      "id": "SHH-048",
+      "title": "Distinguish configured factories, loaded instances and live signals",
+      "categories": [
+        "structure",
+        "invariant",
+        "open_question"
+      ],
+      "source_evidence": [
+        {
+          "file": "application-ui.js",
+          "lines": [
+            161,
+            180
+          ],
+          "symbol": "pluginManager.installPluginFactory(",
+          "excerpt": "pluginManager.installPluginFactory(",
+          "evidence_class": "static_observation",
+          "observation": "Applying branch configuration replaces installed factory definitions."
+        },
+        {
+          "file": "application-ui.js",
+          "lines": [
+            363,
+            374
+          ],
+          "symbol": "this.refreshConfiguredBranchPluginFactories();",
+          "excerpt": "this.refreshConfiguredBranchPluginFactories();",
+          "evidence_class": "static_observation",
+          "observation": "The UI updates signals and branch factories from mutable controls."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            2417,
+            2423
+          ],
+          "symbol": "pluginInstance.instanceId=this.makePluginInstanceId(pluginTypeId);",
+          "excerpt": "pluginInstance.instanceId=this.makePluginInstanceId(pluginTypeId);",
+          "evidence_class": "static_observation",
+          "observation": "Loading constructs an instance whose configuration is then retained in that instance."
+        },
+        {
+          "file": "browser-adapters.js",
+          "lines": [
+            83,
+            84
+          ],
+          "symbol": "this.regexInputElement.value",
+          "excerpt": "this.regexInputElement.value",
+          "evidence_class": "static_observation",
+          "observation": "Regex settings are read live from controls."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Some configuration is captured in loaded instances, while other values are read during execution. An inspector showing current controls may not describe the exact plan being executed."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Capture validated configuration and signal policy in a plan identity; expose pending versus active configuration."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No live reconfiguration race was executed."
+      ],
+      "validation_needed": [
+        "A run is reproducible from its recorded configuration and mid-run changes have an explicit next-run or live-control policy."
+      ],
+      "relations": [
+        {
+          "target": "SHH-029",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-002",
+          "relationship": "extends",
+          "note": "A replaced factory does not automatically update existing occurrences."
+        },
+        {
+          "id": "PP7-027",
+          "relationship": "extends",
+          "note": "Reproducibility needs actual configuration identity."
+        }
+      ]
+    },
+    {
+      "id": "SHH-049",
+      "title": "A processor registry and JSON history are not the native reference core",
+      "categories": [
+        "anti_lesson",
+        "edifice",
+        "open_question"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            463,
+            469
+          ],
+          "symbol": "normalizeJsonCompatibleValue(jsonCompatibleValue",
+          "excerpt": "normalizeJsonCompatibleValue(jsonCompatibleValue",
+          "evidence_class": "static_observation",
+          "observation": "Document authority is represented through JSON-compatible roots and copies."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1127,
+            1145
+          ],
+          "symbol": "tokenizeSourceTextIntoTokenRecords",
+          "excerpt": "tokenizeSourceTextIntoTokenRecords",
+          "evidence_class": "static_observation",
+          "observation": "Text analysis produces string-valued tokens and numeric offsets."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            596,
+            617
+          ],
+          "symbol": "operationName",
+          "excerpt": "operationName",
+          "evidence_class": "static_observation",
+          "observation": "Advanced foreach transforms operate on JSON arrays and named item operations."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Across the 17-file source there is no implementation of the proposed native character/control-unit maps and direct reusable word/sentence/paragraph assemblies. More orchestration does not supply that data model."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Design the native unit catalogue, definition binding, assembly addressing and representation separately, using selected principles only."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "This absence statement is limited to the supplied archive; no reference width, mandatory interning or codepage meaning is prescribed."
+      ],
+      "validation_needed": [
+        "A later design explicitly defines native units and assembly semantics before implementation or migration."
+      ],
+      "relations": [
+        {
+          "target": "SHH-052",
+          "relation": "constrains"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-033",
+          "relationship": "persists",
+          "note": "The native reference data plane remains a distinct design task."
+        }
+      ]
+    },
+    {
+      "id": "SHH-050",
+      "title": "Health is a policy over recent evidence, not an attestation",
+      "categories": [
+        "anti_lesson",
+        "trade_off",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            405,
+            435
+          ],
+          "symbol": "this.alertRecords.slice(-25)",
+          "excerpt": "this.alertRecords.slice(-25)",
+          "evidence_class": "static_observation",
+          "observation": "Health uses runtime error state and the last 25 retained alerts."
+        },
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            359,
+            367
+          ],
+          "symbol": "pipelineCore:Boolean(globalObject.PipelineCore)",
+          "excerpt": "pipelineCore:Boolean(globalObject.PipelineCore)",
+          "evidence_class": "static_observation",
+          "observation": "Namespace availability is tested by object presence."
+        },
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            68,
+            76
+          ],
+          "symbol": "normalizedElapsedMilliseconds",
+          "excerpt": "normalizedElapsedMilliseconds",
+          "evidence_class": "static_observation",
+          "observation": "Timing accepts finite durations and aggregates them; runtime durations are measured using Date.now."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Nominal health means these local checks found no qualifying alert. It does not prove correct processing, executable namespace compatibility, recovery or independent oversight. Count-based recency is not elapsed-time recency."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define health states in terms of observable conditions, coverage, staleness and recovery; retain monotonic duration semantics where needed."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No clock jump or alert-aging scenario was run."
+      ],
+      "validation_needed": [
+        "Missing/stale coverage and recovered errors are represented truthfully without confusing presence with capability."
+      ],
+      "relations": [
+        {
+          "target": "SHH-020",
+          "relation": "constrained_by"
+        },
+        {
+          "target": "SHH-054",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-027",
+          "relationship": "persists",
+          "note": "Local telemetry establishes only its stated observations."
+        }
+      ]
+    },
+    {
+      "id": "SHH-051",
+      "title": "Output assignment, sink success and pass completion are separate events",
+      "categories": [
+        "failure_mode",
+        "invariant",
+        "mechanism"
+      ],
+      "source_evidence": [
+        {
+          "file": "stream-plugins.js",
+          "lines": [
+            342,
+            350
+          ],
+          "symbol": "pipelineContext.output={mode:\"stream-object\"",
+          "excerpt": "pipelineContext.output={mode:\"stream-object\"",
+          "evidence_class": "static_observation",
+          "observation": "Output is assigned and a stream record appended before sink.write, then a diagnostic follows."
+        },
+        {
+          "file": "stateful-plugins.js",
+          "lines": [
+            262,
+            270
+          ],
+          "symbol": "this.outputSink.write(pipelineContext.output.jsonObject);",
+          "excerpt": "this.outputSink.write(pipelineContext.output.jsonObject);",
+          "evidence_class": "static_observation",
+          "observation": "The stateful path follows the same sequence."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "A sink failure can leave output/emission state indicating prepared data while delivery failed. The snapshot also precedes its own output-written diagnostic and later stages."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define prepared, published, committed and inspected outcomes separately; publish a receipt consistent with the final state."
+      },
+      "disposition": "avoid_as_implemented",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No failing sink was executed; external side effects may require their own idempotency contract."
+      ],
+      "validation_needed": [
+        "Sink failure and late-stage failure cannot be mistaken for committed/published success, and retries are explicit."
+      ],
+      "relations": [
+        {
+          "target": "SHH-003",
+          "relation": "complements"
+        },
+        {
+          "target": "SHH-031",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-025",
+          "relationship": "persists",
+          "note": "Publication and evidence still need a consistent transaction boundary."
+        }
+      ]
+    },
+    {
+      "id": "SHH-052",
+      "title": "Edifice: stitched oversight around a mutable execution system",
+      "categories": [
+        "edifice",
+        "structure",
+        "trade_off"
+      ],
+      "source_evidence": [
+        {
+          "file": "README.md",
+          "lines": [
+            206,
+            222
+          ],
+          "symbol": "This build stitches together the uploaded parts:",
+          "excerpt": "This build stitches together the uploaded parts:",
+          "evidence_class": "source_claim",
+          "observation": "The README describes assembling separate source packages."
+        },
+        {
+          "file": "index.html",
+          "lines": [
+            205,
+            214
+          ],
+          "symbol": "<script src=\"pipeline-hypervisor.js\"></script>",
+          "excerpt": "<script src=\"pipeline-hypervisor.js\"></script>",
+          "evidence_class": "static_observation",
+          "observation": "The page composes core, adapters, processing, control, advanced, callable, oversight, tests and UI scripts."
+        },
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            14,
+            33
+          ],
+          "symbol": "return JSON.parse(JSON.stringify(value));",
+          "excerpt": "return JSON.parse(JSON.stringify(value));",
+          "evidence_class": "static_observation",
+          "observation": "Oversight cloning has fallback paths with different value semantics."
+        },
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            464,
+            497
+          ],
+          "symbol": "createSnapshot cloneServices",
+          "excerpt": "cloneServices:{callableRegistryAvailable,callableRegistrySelfTestAvailable}",
+          "evidence_class": "static_observation",
+          "observation": "The oversight snapshot reports callable-registry presence and self-test availability; its clone helper instead selects core/platform/JSON implementations."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The useful larger arrangement is document snapshots plus a mutable orchestration/context layer, hooks, an oversight facade and human inspection. Global composition, fallback contracts and trust assumptions remain part of that arrangement. Callable cloning remains a sibling facility; its presence in the bundle does not mean the core or oversight copy paths use it."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Adapt individual responsibilities through explicit interfaces; retain the CPU service as reference and integrate agentic control only at the final stage."
+      },
+      "disposition": "reference_only",
+      "application_status": "not_adopted",
+      "limitations": [
+        "This review proves no successful stitched boot, durable service, GPU backend or security containment."
+      ],
+      "validation_needed": [
+        "Any later proposal names adopted principles, rejected assumptions, component identities and conformance checks."
+      ],
+      "relations": [
+        {
+          "target": "SHH-049",
+          "relation": "constrained_by"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-032",
+          "relationship": "extends",
+          "note": "The source is a larger browser demonstrator with supervision and history."
+        },
+        {
+          "id": "PP7-035",
+          "relationship": "persists",
+          "note": "Selective learning remains the approved method."
+        }
+      ]
+    },
+    {
+      "id": "SHH-053",
+      "title": "Equality helpers need a declared semantic domain",
+      "categories": [
+        "invariant",
+        "mechanism",
+        "trade_off"
+      ],
+      "source_evidence": [
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            133,
+            148
+          ],
+          "symbol": "stableJsonStringify(leftValue)===stableJsonStringify(rightValue)",
+          "excerpt": "stableJsonStringify(leftValue)===stableJsonStringify(rightValue)",
+          "evidence_class": "static_observation",
+          "observation": "Deep equality sorts object keys and compares JSON serialization."
+        },
+        {
+          "file": "advanced-flow-data-plugins.js",
+          "lines": [
+            194,
+            201
+          ],
+          "symbol": "Object.is(actualValue,expectedValue)",
+          "excerpt": "Object.is(actualValue,expectedValue)",
+          "evidence_class": "static_observation",
+          "observation": "Strict predicates use a different equality operation."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "The source offers useful deterministic key ordering for a JSON comparison, but that is not automatically the semantic equivalence needed for native units, numeric edge cases, style inheritance or artifact reuse."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Define content equality, definition identity, occurrence identity and rendering-profile equality independently before optimizer or cache rules use them."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No numeric or normalization edge cases were tested; this review does not choose the native equality policy."
+      ],
+      "validation_needed": [
+        "Every reduction/cache comparison declares its domain and preserves all distinctions significant to that domain."
+      ],
+      "relations": [
+        {
+          "target": "SHH-007",
+          "relation": "constrains"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-001",
+          "relationship": "extends",
+          "note": "Identity and content equality answer different questions."
+        },
+        {
+          "id": "PP7-036",
+          "relationship": "extends",
+          "note": "A no-op requires a defined content equivalence relation."
+        }
+      ]
+    },
+    {
+      "id": "SHH-054",
+      "title": "Bound record counts, payload bytes and key cardinality separately",
+      "categories": [
+        "lesson",
+        "anti_lesson",
+        "invariant"
+      ],
+      "source_evidence": [
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            239,
+            242
+          ],
+          "symbol": "limitArrayLength(this.eventRecords,this.maxEventRecords);",
+          "excerpt": "limitArrayLength(this.eventRecords,this.maxEventRecords);",
+          "evidence_class": "static_observation",
+          "observation": "Recent event arrays have explicit count caps."
+        },
+        {
+          "file": "pipeline-hypervisor.js",
+          "lines": [
+            125,
+            129
+          ],
+          "symbol": "Object.create(null)",
+          "excerpt": "Object.create(null)",
+          "evidence_class": "static_observation",
+          "observation": "Aggregate metric dictionaries have no per-key cardinality cap in these declarations/use paths."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1289,
+            1290
+          ],
+          "symbol": "genericStateContainer.timeline.push(pluginStateRecord);",
+          "excerpt": "genericStateContainer.timeline.push(pluginStateRecord);",
+          "evidence_class": "static_observation",
+          "observation": "Generic state histories append without a retention cap."
+        },
+        {
+          "file": "pipeline-core.js",
+          "lines": [
+            1432,
+            1460
+          ],
+          "symbol": "pipelineContext.stream.push(timestampedStreamRecord);",
+          "excerpt": "pipelineContext.stream.push(timestampedStreamRecord);",
+          "evidence_class": "static_observation",
+          "observation": "Context diagnostics/errors/stream append independently of debug retention."
+        }
+      ],
+      "interpretation": {
+        "kind": "assistant_inference",
+        "text": "Bounded oversight arrays do not bound total process state. Payload size, number of distinct names, full snapshot history and repeated serialization can dominate count-limited logs."
+      },
+      "application": {
+        "kind": "proposed_application",
+        "text": "Specify retention by purpose and account for bytes, keys and nested values as well as record counts; preserve durable lineage outside ephemeral telemetry limits."
+      },
+      "disposition": "candidate_adaptation",
+      "application_status": "not_adopted",
+      "limitations": [
+        "No memory growth, leak or throughput measurement was performed."
+      ],
+      "validation_needed": [
+        "Long and high-cardinality workloads stay within explicit budgets without erasing authoritative history."
+      ],
+      "relations": [
+        {
+          "target": "SHH-005",
+          "relation": "complements"
+        },
+        {
+          "target": "SHH-026",
+          "relation": "complements"
+        }
+      ],
+      "prior_catalogue_links": [
+        {
+          "id": "PP7-024",
+          "relationship": "qualifies",
+          "note": "Some oversight records are now bounded; whole-system retention is not."
+        }
+      ]
+    }
+  ]
+}

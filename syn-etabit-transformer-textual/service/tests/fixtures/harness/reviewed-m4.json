@@ -1,0 +1,662 @@
+{
+  "schema": "docstream.harness.golden/1",
+  "provenance": "M4_EXAMPLE.json; final one-page PNG/PDF visually reviewed in M4a",
+  "source_store": "<source-workspace>\\.docstream\\m4-validation\\example-0.2.0.dev4",
+  "import_request": {
+    "assets": {
+      "sample.png": "iVBORw0KGgoAAAANSUhEUgAAAWgAAAA8CAIAAADE77fXAAAA1ElEQVR4nO3WMREAIAADMUANxjCFWjQ8czJ3/uvc5w6AYqU1gHAAPzwOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOIBMOYFQPZdABnwhZLvgAAAAASUVORK5CYII="
+    },
+    "data_base64": "IyBEb2N1bWVudCBmb3JtYXQgc2VydmljZQoKVGhpcyBleGFtcGxlIGltcG9ydHMgYSBkb2N1bWVudCBvbmNlIGFuZCBwcm9kdWNlcyByZXVzYWJsZSBleHBvcnRzIGFuZCBwcmV2aWV3cyB0aHJvdWdoIHRoZSBtYWludGFpbmVkIHNlcnZpY2UuCgojIyBTdXBwb3J0ZWQgY29udGVudAoKQSBwYXJhZ3JhcGggcHJlc2VydmVzICoqYm9sZCB0ZXh0KiosICppdGFsaWMgdGV4dCosIGBpbmxpbmUgY29kZWAgYW5kIFthIHJlZmVyZW5jZSBsaW5rXShodHRwczovL2V4YW1wbGUuY29tKS4KCjEuIEltcG9ydCBhIHNvdXJjZSBkb2N1bWVudAogICAtIFJldGFpbiBpdHMgb3JpZ2luYWwgYnl0ZXMKICAgLSBDYXRhbG9nIGl0cyBzdXBwb3J0ZWQgY29udGVudAoyLiBBcHBseSBhbiBvcmRlcmVkIHRyYW5zZm9ybWF0aW9uCjMuIE9idGFpbiBleHBvcnRzIGFuZCBhIHZpc3VhbCBwcmV2aWV3Cgp8IENvbnRlbnQgfCBTZXJ2aWNlIGJlaGF2aW9yIHwKfCAtLS0gfCAtLS0gfAp8IEhlYWRpbmdzIGFuZCB0ZXh0IHwgUHJlc2VydmUgc3RydWN0dXJlIGFuZCBzdXBwb3J0ZWQgZm9ybWF0dGluZyB8CnwgVGFibGVzIGFuZCBpbWFnZXMgfCBSZXRhaW4gb3JkZXJlZCBjZWxscyBhbmQgb3JpZ2luYWwgaW1hZ2UgYnl0ZXMgfAp8IFVuc3VwcG9ydGVkIGZlYXR1cmVzIHwgUmVwb3J0IGNvbnZlcnNpb24gbG9zc2VzIGJlZm9yZSBhY2NlcHRhbmNlIHwKCmBgYAppbXBvcnQgLT4gaW5zcGVjdCAtPiB0cmFuc2Zvcm0gLT4gcmVuZGVyIC0+IGV4cG9ydApgYGAKCiFbQmx1ZSBpbWFnZSBmaXh0dXJlXShzYW1wbGUucG5nKQo=",
+    "format": "markdown",
+    "loss_policy": "reject",
+    "request_key": "m4-source"
+  },
+  "snapshot": {
+    "schema_version": "docstream.snapshot/2",
+    "properties": {
+      "title": "",
+      "font_family": "Arial",
+      "font_size_mpt": 11000,
+      "page_width_mpt": 612000,
+      "page_height_mpt": 792000
+    },
+    "blocks": [
+      {
+        "block_id": "b1",
+        "kind": "heading",
+        "text": "Document format service",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": 1,
+        "list_kind": null,
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "Document format service",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b2",
+        "kind": "paragraph",
+        "text": "This example imports a document once and produces reusable exports and previews through the maintained service.",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": null,
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "This example imports a document once and produces reusable exports and previews through the maintained service.",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b3",
+        "kind": "heading",
+        "text": "Supported content",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": 2,
+        "list_kind": null,
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "Supported content",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b4",
+        "kind": "paragraph",
+        "text": "A paragraph preserves bold text, italic text, inline code and a reference link.",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": null,
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "A paragraph preserves ",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          },
+          {
+            "text": "bold text",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": true,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          },
+          {
+            "text": ", ",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          },
+          {
+            "text": "italic text",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": true
+            },
+            "code": false,
+            "href": null
+          },
+          {
+            "text": ", ",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          },
+          {
+            "text": "inline code",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": true,
+            "href": null
+          },
+          {
+            "text": " and ",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          },
+          {
+            "text": "a reference link",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": "https://example.com"
+          },
+          {
+            "text": ".",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b5",
+        "kind": "list_item",
+        "text": "Import a source document",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": "ordered",
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "Import a source document",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b6",
+        "kind": "list_item",
+        "text": "Retain its original bytes",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": "bullet",
+        "list_depth": 1,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "Retain its original bytes",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b7",
+        "kind": "list_item",
+        "text": "Catalog its supported content",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": "bullet",
+        "list_depth": 1,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "Catalog its supported content",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b8",
+        "kind": "list_item",
+        "text": "Apply an ordered transformation",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": "ordered",
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "Apply an ordered transformation",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b9",
+        "kind": "list_item",
+        "text": "Obtain exports and a visual preview",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": "ordered",
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [
+          {
+            "text": "Obtain exports and a visual preview",
+            "style": {
+              "font_family": null,
+              "font_size_mpt": null,
+              "bold": null,
+              "italic": null
+            },
+            "code": false,
+            "href": null
+          }
+        ],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b10",
+        "kind": "table",
+        "text": "",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": null,
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [],
+        "rows": [
+          {
+            "cells": [
+              {
+                "paragraphs": [
+                  {
+                    "runs": [
+                      {
+                        "text": "Content",
+                        "style": {
+                          "font_family": null,
+                          "font_size_mpt": null,
+                          "bold": null,
+                          "italic": null
+                        },
+                        "code": false,
+                        "href": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "paragraphs": [
+                  {
+                    "runs": [
+                      {
+                        "text": "Service behavior",
+                        "style": {
+                          "font_family": null,
+                          "font_size_mpt": null,
+                          "bold": null,
+                          "italic": null
+                        },
+                        "code": false,
+                        "href": null
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "header": true
+          },
+          {
+            "cells": [
+              {
+                "paragraphs": [
+                  {
+                    "runs": [
+                      {
+                        "text": "Headings and text",
+                        "style": {
+                          "font_family": null,
+                          "font_size_mpt": null,
+                          "bold": null,
+                          "italic": null
+                        },
+                        "code": false,
+                        "href": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "paragraphs": [
+                  {
+                    "runs": [
+                      {
+                        "text": "Preserve structure and supported formatting",
+                        "style": {
+                          "font_family": null,
+                          "font_size_mpt": null,
+                          "bold": null,
+                          "italic": null
+                        },
+                        "code": false,
+                        "href": null
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "header": false
+          },
+          {
+            "cells": [
+              {
+                "paragraphs": [
+                  {
+                    "runs": [
+                      {
+                        "text": "Tables and images",
+                        "style": {
+                          "font_family": null,
+                          "font_size_mpt": null,
+                          "bold": null,
+                          "italic": null
+                        },
+                        "code": false,
+                        "href": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "paragraphs": [
+                  {
+                    "runs": [
+                      {
+                        "text": "Retain ordered cells and original image bytes",
+                        "style": {
+                          "font_family": null,
+                          "font_size_mpt": null,
+                          "bold": null,
+                          "italic": null
+                        },
+                        "code": false,
+                        "href": null
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "header": false
+          },
+          {
+            "cells": [
+              {
+                "paragraphs": [
+                  {
+                    "runs": [
+                      {
+                        "text": "Unsupported features",
+                        "style": {
+                          "font_family": null,
+                          "font_size_mpt": null,
+                          "bold": null,
+                          "italic": null
+                        },
+                        "code": false,
+                        "href": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "paragraphs": [
+                  {
+                    "runs": [
+                      {
+                        "text": "Report conversion losses before acceptance",
+                        "style": {
+                          "font_family": null,
+                          "font_size_mpt": null,
+                          "bold": null,
+                          "italic": null
+                        },
+                        "code": false,
+                        "href": null
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "header": false
+          }
+        ],
+        "image": null
+      },
+      {
+        "block_id": "b11",
+        "kind": "code",
+        "text": "import -> inspect -> transform -> render -> export\n",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": null,
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [],
+        "rows": [],
+        "image": null
+      },
+      {
+        "block_id": "b12",
+        "kind": "image",
+        "text": "",
+        "style": {
+          "font_family": null,
+          "font_size_mpt": null,
+          "bold": null,
+          "italic": null
+        },
+        "heading_level": null,
+        "list_kind": null,
+        "list_depth": 0,
+        "list_start": 1,
+        "runs": [],
+        "rows": [],
+        "image": {
+          "sha256": "c1986b501059b1aecbc17120920bde73d9b64e9659eef2ff399c23a0ea965ca0",
+          "media_type": "image/png",
+          "alt": "Blue image fixture",
+          "width_mpt": 270000,
+          "height_mpt": 45000
+        }
+      }
+    ]
+  },
+  "source_sha256": "690aefc81b8a7151673ae4ba485092534e5202abfe50f4faf16e751e0fc68810",
+  "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+  "renderer_identity": {
+    "renderer": "docstream.html/2",
+    "playwright": "1.64.1",
+    "browser_revision": "1248",
+    "browser_version": "156.0.8078.4",
+    "executable_sha256": "7f08161bbeb2853ffe1780a9ded4985087f52efb9725d7d8207aabdd42f7cfb9",
+    "engine_sha256": "40a2c35f157d2c2ab02f6d53b890c656c725fd1640f1ca57085edadf90d39eea",
+    "fonts": {
+      "Arial": [
+        "5f9f2d8104ad5e69e1be8107224063dc8c36f9e24680b2f9be324244c0b424a1",
+        "3680a1bbffab914f36b27d5fd97b193de5bccfab882c41b41b5f8f99457b4820",
+        "c30c71d614e143c0d4e42aaf04d9a1f50f90b365a2654eb3f2c6598e5655af08",
+        "77a0b63c5f73eb85923f10359e68b8fc768487ae88ad902a1ea21276954e205b"
+      ]
+    },
+    "profile": {
+      "code_font_family": "Consolas",
+      "formats": [
+        "png",
+        "pdf"
+      ],
+      "locale": "en-US",
+      "margin_mpt": 36000,
+      "max_height_px": 12000,
+      "schema_version": "docstream.render/1",
+      "show_title": true
+    },
+    "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+    "html_sha256": "c1857f1ad2dd5d4656ba5f806b71ddfc6b6f5128caed2a3f246fe4e0682b5414"
+  },
+  "png_sha256": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22",
+  "pdf": {
+    "pages": 1,
+    "required_text": [
+      "Document format service",
+      "Supported content",
+      "Import a source document",
+      "Retain its original bytes",
+      "Tables and images",
+      "Unsupported features",
+      "import -> inspect -> transform -> render -> export"
+    ]
+  }
+}

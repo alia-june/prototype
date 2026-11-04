@@ -1,0 +1,13 @@
+{
+  "property_writes": 0,
+  "worker_starts": 1,
+  "actual_renders": 1,
+  "exports": {
+    "docx": "<source-workspace>\\.docstream\\m4-validation\\example-0.2.0.dev4\\artifacts\\a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a.docx",
+    "markdown_bundle": "<source-workspace>\\.docstream\\m4-validation\\example-0.2.0.dev4\\artifacts\\04e0dc11d7604fcd870b8b18b3b3400cf119d105c0649fc8daa61308e1f997bf.zip"
+  },
+  "preview": {
+    "pdf": "<source-workspace>\\.docstream\\m4-validation\\example-0.2.0.dev4\\artifacts\\b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244.pdf",
+    "png": "<source-workspace>\\.docstream\\m4-validation\\example-0.2.0.dev4\\artifacts\\e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22.png"
+  }
+}

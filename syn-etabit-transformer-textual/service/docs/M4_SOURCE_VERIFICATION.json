@@ -1,0 +1,77 @@
+{
+  "archive": "<local-user-home>\\Desktop\\Inbox\\docstream-0.1.0.zip",
+  "sha256": "4acbdb5ee634ede3067fa2ad7c189afbd051365e6714b72ad03159fd4df8bf72",
+  "match": true,
+  "baseline_files": [
+    {
+      "path": "docstream-0.1.0/install.ps1",
+      "sha256": "171a5543dc03bc419972c31e78f1be1513301f3e8bfcecec78bfc39b33231ec3",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/LICENSE",
+      "sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/pyproject.toml",
+      "sha256": "8fd85946af5e47c1eea6d4b6f7811b4799a413107a83322cb89a3ef511126ec1",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/README.md",
+      "sha256": "f88e4a855c6281782f8d43ad5f0a9f31298295a88a810a5bfbe65129c04fa55e",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/render-failure.txt",
+      "sha256": "d7ebb54fe096836082a59a805c357dc821bbab1a3cd9f7ba763a0a503b1911c1",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/start-service.ps1",
+      "sha256": "772bda666ef5f36b8ef01502b421000d809e08f88b94b690103534c681b5e3bd",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/STATUS.md",
+      "sha256": "0badc65f5f1598e4c0bf631c511157431b92c6027b7cb1dd1b7aa6d2ea12908c",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/src/docstream/__init__.py",
+      "sha256": "efa3ba4e72da57612f70aee2513a80d0e47dc41367dc60884ed5e5529e8bc241",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/src/docstream/__main__.py",
+      "sha256": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/src/docstream/cli.py",
+      "sha256": "321835c8a0381b2f2a8b2a5909b94f0564c1d63d4816bdb170ccccea3ae5839f",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/src/docstream/conversion.py",
+      "sha256": "fc52e440dfa1d976346f9586c4ecd9cbc9f57ade7b46b336b27ebb008bc5a875",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/src/docstream/core.py",
+      "sha256": "99c14526d4a633fa7a25515e0be70c81f4a9b0ab59e55eac13e985e1c4f83ade",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/src/docstream/service.py",
+      "sha256": "4d7deda101a5bfd76248018441e69380a5155f8e496e09a6484f2c32de5828ff",
+      "match": true
+    },
+    {
+      "path": "docstream-0.1.0/tests/test_docstream.py",
+      "sha256": "d65ba22cc5d6f4e3d40b3aec5f8327ddd63cf8b50b952eb0ec411b928cfceec7",
+      "match": true
+    }
+  ]
+}

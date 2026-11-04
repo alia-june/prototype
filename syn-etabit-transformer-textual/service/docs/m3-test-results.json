@@ -1,0 +1,24 @@
+{
+  "scope": "M3 rendering plus service/CPU/baseline regressions",
+  "approval_date": "2026-10-29",
+  "recorded_utc": "2026-10-29T08:46:47.357034+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sqlite": "3.53.1",
+  "packages": {
+    "docstream-cpu": "0.2.0.dev3",
+    "mcp": "2.3.0",
+    "uvicorn": "0.38.0",
+    "playwright": "1.64.1",
+    "pydantic": "2.14.1"
+  },
+  "tests_run": 80,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "elapsed_seconds": 36.617828,
+  "cpu_generated_sequences": 420,
+  "worker_lifecycle": "spawned renderer owned by Windows job object; closed by fixtures and ASGI lifespan",
+  "host_configuration_changed": false,
+  "browser": "project-local Chromium"
+}

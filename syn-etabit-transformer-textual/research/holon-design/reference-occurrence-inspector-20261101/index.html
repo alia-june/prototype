@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Offline, read-only inspection of the bounded Strmdocx reference-occurrence pilot.">
+  <title>Reference-Occurrence Inspector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="title-block">
+      <p class="eyebrow">STRMDOCX / REFERENCE MODEL LAB</p>
+      <h1>Reference-Occurrence Inspector</h1>
+      <p class="lede">Inspect one immutable source, its transformation and result through separately addressed occurrences. Change the view—not the history.</p>
+    </div>
+    <div id="overall-status" class="status-card pending" role="status" aria-live="polite">
+      <span class="status-light" aria-hidden="true"></span>
+      <div>
+        <strong id="status-title">Checking snapshot</strong>
+        <small id="status-detail">Resolving references and payload digests</small>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="source-strip" aria-label="Source boundary">
+      <div>
+        <span class="micro-label">DISPLAY PACKET</span>
+        <strong>Resolved, offline, read-only</strong>
+      </div>
+      <div>
+        <span class="micro-label">NATIVE SOURCE</span>
+        <strong>Sibling pilot remains unchanged</strong>
+      </div>
+      <div>
+        <span class="micro-label">NETWORK</span>
+        <strong>None</strong>
+      </div>
+      <button id="show-source" class="text-button" type="button">Source identities</button>
+    </section>
+
+    <section class="metrics" aria-label="Record totals">
+      <article><span id="metric-targets">0</span><small>Targets</small></article>
+      <article><span id="metric-relationships">0</span><small>Relationships</small></article>
+      <article><span id="metric-metadata">0</span><small>Metadata</small></article>
+      <article><span id="metric-occurrences">0</span><small>Occurrences</small></article>
+      <article><span id="metric-views">0</span><small>Views</small></article>
+      <article><span id="metric-findings">—</span><small>Findings</small></article>
+    </section>
+
+    <section class="view-bar" aria-label="Inspection view controls">
+      <div>
+        <p class="micro-label">INSPECTION ORDER</p>
+        <div class="segmented" role="group" aria-label="Choose inspection order">
+          <button type="button" data-mode="view:V0" aria-pressed="true">Chronological</button>
+          <button type="button" data-mode="view:V1" aria-pressed="false">Reverse inspection</button>
+          <button type="button" data-mode="compare" aria-pressed="false">Compare both</button>
+        </div>
+      </div>
+      <p id="view-explanation" class="view-explanation">Source → transformation → result. Array position supplies order in this view only.</p>
+    </section>
+
+    <section class="history-card" aria-labelledby="history-title">
+      <div>
+        <p class="micro-label">HISTORICAL RELATIONSHIP</p>
+        <h2 id="history-title">The relationship does not reverse when the view does.</h2>
+      </div>
+      <div class="equation" aria-label="Source abc plus append exclamation transformation equals result abc exclamation">
+        <button class="entity-token source" type="button" data-record-id="target:B0"><small>B0</small><strong>abc</strong></button>
+        <span class="operator">+</span>
+        <button class="entity-token transform" type="button" data-record-id="target:T1"><small>T1</small><strong>append “!”</strong></button>
+        <span class="operator">=</span>
+        <button class="entity-token result" type="button" data-record-id="target:B1"><small>B1</small><strong>abc!</strong></button>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <aside class="record-index" aria-label="Record index">
+        <div class="panel-heading">
+          <div>
+            <p class="micro-label">REFERENCE INDEX</p>
+            <h2>Records</h2>
+          </div>
+          <span id="record-count" class="count-chip">0</span>
+        </div>
+        <div id="family-filters" class="family-filters" role="group" aria-label="Filter record families">
+          <button type="button" data-family="all" aria-pressed="true">All</button>
+          <button type="button" data-family="target" aria-pressed="false">Targets</button>
+          <button type="button" data-family="relationship" aria-pressed="false">Relations</button>
+          <button type="button" data-family="metadata" aria-pressed="false">Metadata</button>
+          <button type="button" data-family="occurrence" aria-pressed="false">Occurrences</button>
+          <button type="button" data-family="view" aria-pressed="false">Views</button>
+        </div>
+        <div id="record-list" class="record-list"></div>
+      </aside>
+
+      <section class="sequence-panel" aria-labelledby="sequence-title">
+        <div class="panel-heading">
+          <div>
+            <p class="micro-label">SELECTED VIEW</p>
+            <h2 id="sequence-title">Chronological inspection</h2>
+          </div>
+          <span id="sequence-chip" class="count-chip">V0</span>
+        </div>
+        <div id="sequence-content" class="sequence-content" aria-live="polite"></div>
+        <div class="boundary-note">
+          <strong>Order is local to the view.</strong>
+          <span>It does not imply ownership, containment, rollback, deletion or execution.</span>
+        </div>
+      </section>
+
+      <aside class="detail-panel" aria-label="Selected record details">
+        <div class="panel-heading">
+          <div>
+            <p class="micro-label">SELECTED RECORD</p>
+            <h2 id="detail-title">Nothing selected</h2>
+          </div>
+          <span id="detail-kind" class="kind-chip neutral">—</span>
+        </div>
+        <p id="detail-summary" class="detail-summary">Select an occurrence, target, relationship, metadata record or view to inspect it.</p>
+        <div id="digest-status" class="digest-status" hidden></div>
+        <dl id="detail-fields" class="detail-fields"></dl>
+        <div id="reference-links" class="reference-links"></div>
+      </aside>
+    </section>
+
+    <details id="validation-panel" class="validation-panel">
+      <summary>
+        <span><span class="micro-label">MODEL CHECK</span><strong>Validation findings</strong></span>
+        <span id="validation-summary" class="validation-summary">Checking…</span>
+      </summary>
+      <div id="validation-content" class="validation-content"></div>
+    </details>
+  </main>
+
+  <dialog id="source-dialog">
+    <form method="dialog">
+      <div class="dialog-head">
+        <div><p class="micro-label">RESOLVED DISPLAY PACKET</p><h2>Source identities</h2></div>
+        <button class="close-button" value="close" aria-label="Close source identities">×</button>
+      </div>
+      <p>This page carries a display snapshot so it works directly from a local file. The sibling pilot files remain the governing source for this package.</p>
+      <div id="source-identities" class="source-identities"></div>
+      <p class="dialog-limit">Matching bytes and SHA-256 values establish identity for the named files only—not authorship, authority, correctness or trusted time.</p>
+    </form>
+  </dialog>
+
+  <footer>
+    <span>Offline inspection instrument</span>
+    <span>No editing · no execution · no network</span>
+    <span>Reverse inspection is not rollback</span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="inspector-core.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

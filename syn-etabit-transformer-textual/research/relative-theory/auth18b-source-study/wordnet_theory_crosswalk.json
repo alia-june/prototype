@@ -1,0 +1,106 @@
+{
+  "schema": "docstream.relative-theory.crosswalk/1",
+  "study_status": "PARTIAL_GOVERNING_SOURCE_MISSING",
+  "records": [
+    {
+      "id": "XW-LEXICAL-POINTER",
+      "wordnet_id": "WN-STRUCT-LEXICAL-POINTER",
+      "generic_relation_id": "GEN-REL-REFERENCES",
+      "theory_id": null,
+      "mapping_status": "SOURCE_TO_GENERIC_PROPOSAL_ONLY",
+      "rationale": "The source/target word positions can be represented as references while retaining WordNet's own pointer type and tuple.",
+      "loss_guard": "Do not collapse lexical pointers into synset relations.",
+      "links": ["WN-STRUCT-SEMANTIC-POINTER"]
+    },
+    {
+      "id": "XW-SEMANTIC-POINTER",
+      "wordnet_id": "WN-STRUCT-SEMANTIC-POINTER",
+      "generic_relation_id": "GEN-REL-REFERENCES",
+      "theory_id": null,
+      "mapping_status": "SOURCE_TO_GENERIC_PROPOSAL_ONLY",
+      "rationale": "The 0000 tuple can be retained as a synset-to-synset reference without inventing grammatical meaning.",
+      "loss_guard": "Retain the exact pointer symbol; references alone are not its semantics.",
+      "links": ["WN-STRUCT-LEXICAL-POINTER"]
+    },
+    {
+      "id": "XW-ANTONYM",
+      "wordnet_id": "WN-REL-ANTONYM",
+      "generic_relation_id": "GEN-REL-ALTERNATIVE",
+      "theory_id": null,
+      "mapping_status": "NON_EQUIVALENT_PROJECT_PROJECTION",
+      "rationale": "Alternative-to can carry an addressable project edge, but it is deliberately weaker than WordNet antonymy.",
+      "loss_guard": "Never replace the source symbol or label with the generic edge.",
+      "links": ["SAMPLE-SYMBOL-EXCLAMATION"]
+    },
+    {
+      "id": "XW-SIMILAR",
+      "wordnet_id": "WN-REL-SIMILAR",
+      "generic_relation_id": "GEN-REL-RELATED",
+      "theory_id": null,
+      "mapping_status": "PLACEHOLDER_REQUIRES_SPECIALIZATION",
+      "rationale": "The generic edge may support navigation, but WordNet's adjective-cluster organization remains the governing meaning.",
+      "loss_guard": "Do not treat related_to as equivalence, similarity metric or grammatical relation.",
+      "links": ["WN-STRUCT-ADJECTIVE-CLUSTER", "SAMPLE-SYMBOL-AMPERSAND"]
+    },
+    {
+      "id": "XW-PERTAINYM",
+      "wordnet_id": "WN-REL-PERTAINYM",
+      "generic_relation_id": "GEN-REL-REFERENCES",
+      "theory_id": null,
+      "mapping_status": "SOURCE_TO_GENERIC_PROPOSAL_ONLY",
+      "rationale": "A reference can preserve the edge while the source-defined pertainym type remains separately identified.",
+      "loss_guard": "Do not infer morphology, syntax or GB government from a pertainym pointer.",
+      "links": ["WN-STRUCT-PERTAINYM", "SAMPLE-SYMBOL-BACKSLASH"]
+    },
+    {
+      "id": "XW-DERIVATIONAL",
+      "wordnet_id": "WN-REL-DERIVATIONAL",
+      "generic_relation_id": "GEN-REL-DERIVED-FROM",
+      "theory_id": null,
+      "mapping_status": "NON_EQUIVALENT_PROJECT_PROJECTION",
+      "rationale": "The generic provenance relation is directionally useful, but WordNet's derivationally-related relation is not automatically a transformation history.",
+      "loss_guard": "Retain the WordNet relation as source data and do not claim a derivation algorithm.",
+      "links": ["SAMPLE-SYMBOL-PLUS"]
+    },
+    {
+      "id": "XW-DOMAIN-TOPIC",
+      "wordnet_id": "WN-REL-DOMAIN-TOPIC",
+      "generic_relation_id": "GEN-REL-CLASSIFIED-IN",
+      "theory_id": null,
+      "mapping_status": "NON_EQUIVALENT_PROJECT_PROJECTION",
+      "rationale": "A context classification edge may point at the topical synset while retaining the source domain relation.",
+      "loss_guard": "Do not interpret a WordNet topic as a grammar or syntax context.",
+      "links": ["SAMPLE-SYMBOL-SEMICOLON-C"]
+    },
+    {
+      "id": "XW-ADJECTIVE-MARKER-A",
+      "wordnet_id": "WN-MARKER-A",
+      "generic_relation_id": "GEN-REL-ANNOTATED-BY",
+      "theory_id": "THEORY-MAP-SYNTAX",
+      "mapping_status": "SOURCE_MARKER_TO_REPLACEABLE_PROJECT_MAP",
+      "rationale": "The literal source marker can be retained as an annotation and referenced by a selected syntax drive.",
+      "loss_guard": "The project map must not redefine the bytes in the source record or claim a GB rule.",
+      "links": ["SAMPLE-ALL-AROUND"]
+    },
+    {
+      "id": "XW-GB-BINDING-BLOCKED",
+      "wordnet_id": null,
+      "generic_relation_id": "GEN-REL-UNRESOLVED-AGAINST",
+      "theory_id": "THEORY-GB-BINDING",
+      "mapping_status": "BLOCKED_GOVERNING_SOURCE_MISSING",
+      "rationale": "No source-grounded equivalence between a WordNet pointer and GB binding can be established from publisher metadata.",
+      "loss_guard": "Do not construct a binding edge until the governing definition and conditions are reviewed.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "XW-GB-GOVERNMENT-BLOCKED",
+      "wordnet_id": null,
+      "generic_relation_id": "GEN-REL-UNRESOLVED-AGAINST",
+      "theory_id": "THEORY-GB-GOVERNMENT",
+      "mapping_status": "BLOCKED_GOVERNING_SOURCE_MISSING",
+      "rationale": "Government cannot be inferred from source/target direction, containment, order or topical-domain edges.",
+      "loss_guard": "Preserve the unknown rather than naming a project reference government.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    }
+  ]
+}

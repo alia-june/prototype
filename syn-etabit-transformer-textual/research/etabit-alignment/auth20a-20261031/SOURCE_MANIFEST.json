@@ -1,0 +1,66 @@
+{
+  "schema": "strmdocx.etabit-alignment.source-manifest/1",
+  "authorization": "AUTH-20A",
+  "created": "2026-10-31",
+  "timezone": "America/New_York",
+  "output_root": "C:/Users/<local-user>/Documents/Workbench/strmdocx/research/etabit-alignment/auth20a-20261031",
+  "manifest_policy": {
+    "self_included": false,
+    "reason": "A file cannot contain its own ordinary SHA-256 without a recursive definition.",
+    "peer_artifact_count": 8,
+    "total_approved_output_count_including_manifest": 9
+  },
+  "source_archive": {
+    "path": "C:/Users/<local-user>/Downloads/Decomposition_Successor_Handoff_2026-10-31.zip",
+    "bytes": 929111,
+    "sha256": "6c2a8ef329c3e70189f30ab62553c4328e0fe80a785b10371a779d8971c2d5b8",
+    "extracted": false
+  },
+  "registered_sources": [
+    {"id":"S01","bytes":39005,"sha256":"df31932d20657ad7cb4b89711f46492baf4e500f4065021058592e308a2f6976"},
+    {"id":"S02","bytes":11756,"sha256":"0404c8193a1ea8613e912be3b263ffd4e9e3e7d16a6108cb8db7f1f2a46ae9db"},
+    {"id":"S03","bytes":6642,"sha256":"b8a857bcf3d5275e1888e2810b6a13a4561000414e56a24952128cf625fa3741"},
+    {"id":"S04","bytes":4498,"sha256":"e650fc2357b29c27f4112684374a4aa2130af2a585b15054879ed277fc0b5163"},
+    {"id":"S05","bytes":5259,"sha256":"955d4f650f2b44c537435053ddb670781261cccebb5d34890bd498e04ef83879"},
+    {"id":"S06","bytes":4333,"sha256":"b5942f06ccb1be8b4566d66b4a5ddbf93e939cfebdab6f89c4d40af8c00ea461"},
+    {"id":"S07","bytes":1287,"sha256":"1853ff6269346ad891ec7799004fe0fb0744a7d8a16e8a6d338181f55336e272"},
+    {"id":"S08","bytes":1313,"sha256":"05e3d2bde6b7febc1c4cf0ecf19bb7131876cd96481624dd34232e035fc608ca"},
+    {"id":"S09","bytes":2949,"sha256":"2750d00a7501af985c8b2051226c65913a62937166d451b781ab5524e1c304d7"},
+    {"id":"S10","bytes":3821,"sha256":"f831da97cd70619342ba954a9a5e0ed696e959440bfd9242bf9c57ccd7c42132"},
+    {"id":"S11","bytes":4884,"sha256":"6c2ca2c212885a29fe350f4d2ddf273d36ac07363ac17031a2599c69f09f82b8"},
+    {"id":"S12","bytes":3618,"sha256":"6dd30a6ef8fae3d15a292e040b425eb5467ccd2cb773e9e9d22f233afd26a624"},
+    {"id":"S13","bytes":10186,"sha256":"bd2724dbdfa5f1cd3e52d2e7c5fb60c71f4fefe602a215305b0086ad7dcb425d"},
+    {"id":"S14","bytes":28243,"sha256":"12f3267604767b8ea0b51252a795af66477cb8b4130fe8888f691c868b8428d9"},
+    {"id":"S15","bytes":2222,"sha256":"1ffe7b92c402ec5fc95f8b9f97962886bdb1270db30ffc5f8115e1459ba2a9a7"},
+    {"id":"S16","bytes":19995,"sha256":"03b80ff39f6e36c93365a02ccaf109e54f808cca44dfb861301ebc0e00f2880e"},
+    {"id":"S17","bytes":2145,"sha256":"fea8221066392ef75607b84535a6a1d1476b2b84de02089887353c780a30ec38"},
+    {"id":"S18","bytes":3546,"sha256":"6cda39b9d799e95e5e9b72a8f0b760d8d7cf88560171414b98dc6878a7d23abc"},
+    {"id":"S19","bytes":10143,"sha256":"f5b6c615b3d3b793d6b757be02a3d4fa76eec46aef284d1b6b3e5671c9c73396"}
+  ],
+  "peer_artifacts": [
+    {"name":"CONTRADICTIONS_AND_BLOCKERS.md","bytes":9691,"sha256":"b4d815af9b8502306c4bdfa0d746dcd2c40457af41586aa63b0765ab2c510a60"},
+    {"name":"MINIMUM_INTEGRATION_DECISIONS.md","bytes":8139,"sha256":"5378fc74c4bcd5ce7b01dcba39c94244c96db67c80856fcfb2ed4698844f83b6"},
+    {"name":"NAMESPACE_AND_AUTHORITY_BOUNDARIES.md","bytes":9060,"sha256":"8b7de154cd7db1d7b20669f9484b7d4b210c1e7126d1d1d1d54f671b2cebf8cc"},
+    {"name":"source_register.json","bytes":6016,"sha256":"4822fb9979c7941dfd03ee38f3edd642cffde0656b104b341481628e57378e38"},
+    {"name":"SOURCE_REGISTER.md","bytes":6093,"sha256":"d09f2e44153fadaa4770386a474300ab5d3ecbd2f287c3ff8d7cfe9d39804fa5"},
+    {"name":"strmdocx_sf_edabit_crosswalk.json","bytes":14971,"sha256":"846187d024ef5d726698b5b7e3b561966854e0bdf795ccd8e14ce3096e7ceec0"},
+    {"name":"STRMDOCX_SF_EDABIT_CROSSWALK.md","bytes":9834,"sha256":"6a1d57e96ee24f861fe052a7e8780ebe48031566bb65662ffdab5b9e21352b4a"},
+    {"name":"VALIDATION.md","bytes":6346,"sha256":"58caff0147a0dc5cb89c2796712292edf22cbebdba22845769befd44d1e5c829"}
+  ],
+  "validation_summary": {
+    "status": "PASS",
+    "registered_source_count": 19,
+    "crosswalk_record_count": 40,
+    "source_recheck": "19/19 plus archive PASS",
+    "json_parse": "all three final JSON files must pass final delivery check",
+    "terminology_correction": "AUTH-20A-C1 PASS",
+    "obsolete_hyphenated_spelling_files": 0,
+    "retained_legacy_identifier_occurrences": 49,
+    "strmdocx_modified_outside_output_during_interval": 0,
+    "amorphousdrive_modified_during_interval": 0,
+    "archive_extracted": false,
+    "dependencies_installed": false,
+    "services_launched": false
+  },
+  "proof_boundary": "This manifest establishes the listed local bytes and bounded structural checks. It is not source authentication, independent attestation, implementation adoption, storage conformance, security proof, release approval or agentic activation."
+}

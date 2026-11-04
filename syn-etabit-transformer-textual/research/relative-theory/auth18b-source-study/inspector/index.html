@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AUTH-18B Relation Inspector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">DOCSTREAM / AUTH-18B</p>
+      <h1>Relation Inspector</h1>
+      <p class="lede">A read-only view of source records, proposed mappings, evidence gaps and the bounded AUTH-18A sample.</p>
+    </div>
+    <div class="status-card" aria-label="Study status">
+      <span class="status-dot" aria-hidden="true"></span>
+      <div><strong id="study-status">Loading</strong><small>Formal GB rules remain blocked</small></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="metrics" aria-label="Study totals">
+      <article><span id="metric-records">0</span><small>records</small></article>
+      <article><span id="metric-sources">0</span><small>sources</small></article>
+      <article><span id="metric-relations">0</span><small>relation records</small></article>
+      <article><span id="metric-crosswalk">0</span><small>crosswalk entries</small></article>
+    </section>
+
+    <section class="workspace">
+      <aside class="controls" aria-label="Inspection controls">
+        <label for="search">Search</label>
+        <input id="search" type="search" placeholder="ID, term, status, summary…" autocomplete="off">
+        <label for="catalog">Catalog</label>
+        <select id="catalog"><option value="">All catalogs</option></select>
+        <label for="status">Status</label>
+        <select id="status"><option value="">All statuses</option></select>
+        <div class="legend">
+          <h2>Authority boundary</h2>
+          <p><span class="swatch defined"></span>Source-defined</p>
+          <p><span class="swatch proposed"></span>Proposed, not adopted</p>
+          <p><span class="swatch blocked"></span>Blocked or partial</p>
+        </div>
+        <button id="reset" type="button">Reset filters</button>
+      </aside>
+
+      <section class="results" aria-live="polite">
+        <div class="section-head"><h2>Records</h2><span id="result-count">0 shown</span></div>
+        <div id="record-list" class="record-list"></div>
+      </section>
+
+      <aside class="detail" aria-label="Selected record">
+        <p class="eyebrow">SELECTED RECORD</p>
+        <h2 id="detail-title">Choose a record</h2>
+        <p id="detail-summary" class="detail-summary">Select any row to inspect its exact catalog fields and outgoing references.</p>
+        <dl id="detail-fields"></dl>
+        <div id="detail-links" class="link-panel"></div>
+      </aside>
+    </section>
+  </main>
+  <footer>Offline packet • no network requests • content displayed as text</footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

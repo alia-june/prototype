@@ -1,0 +1,534 @@
+{
+  "recorded_utc": "2026-10-29T09:54:05.674863+00:00",
+  "scope": "M4a implementation, contracts, retained validation and representative outputs",
+  "excludes": [
+    "venv",
+    "browser binaries",
+    "mutable SQLite stores",
+    "Python caches",
+    "manifest itself"
+  ],
+  "files": [
+    {
+      "path": ".docstream/m4-validation/example-0.2.0.dev4/artifacts/04e0dc11d7604fcd870b8b18b3b3400cf119d105c0649fc8daa61308e1f997bf.zip",
+      "bytes": 1252,
+      "sha256": "04e0dc11d7604fcd870b8b18b3b3400cf119d105c0649fc8daa61308e1f997bf"
+    },
+    {
+      "path": ".docstream/m4-validation/example-0.2.0.dev4/artifacts/a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a.docx",
+      "bytes": 38317,
+      "sha256": "a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a"
+    },
+    {
+      "path": ".docstream/m4-validation/example-0.2.0.dev4/artifacts/b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244.pdf",
+      "bytes": 54546,
+      "sha256": "b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244"
+    },
+    {
+      "path": ".docstream/m4-validation/example-0.2.0.dev4/artifacts/e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22.png",
+      "bytes": 41403,
+      "sha256": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22"
+    },
+    {
+      "path": "DEVELOPMENT_PLAN.md",
+      "bytes": 35303,
+      "sha256": "6a4ba3e7cfe125d74a21401f580d648cd65365e0da2e860e77c322f0d6021308"
+    },
+    {
+      "path": "PROJECT_DECISIONS.md",
+      "bytes": 14264,
+      "sha256": "6ddb810cb76837d118528697f2ae856eff201f1327e608e9ec0db007cc23c9dd"
+    },
+    {
+      "path": "RESEARCH_NOTES.md",
+      "bytes": 25364,
+      "sha256": "26014477d051cbd84bceee816389e990606095ef9e2ff76336f31df708f090e2"
+    },
+    {
+      "path": "service/docs/BASELINE_MANIFEST.json",
+      "bytes": 3404,
+      "sha256": "518540faa8c83985b3ade89514b3ee1b93180ccd8cbcbff7e0ee9d45c6b2f928"
+    },
+    {
+      "path": "service/docs/CPU_BATCH_SCHEMA.json",
+      "bytes": 14874,
+      "sha256": "8dba0945d3d98e8f0915583eb3fd6cdc9ecfa369c0e5397aecab8d0999ba4778"
+    },
+    {
+      "path": "service/docs/CPU_CONTRACT.md",
+      "bytes": 7923,
+      "sha256": "19484ccd4d6f9f1ac8aea6373db402eddfe9363125166bab858b7fd749a4063d"
+    },
+    {
+      "path": "service/docs/font-example.json",
+      "bytes": 3333,
+      "sha256": "2f3b9f8d3bdfb7325da62bdbc92db0d604b9c0caf32638e749344eabd132e0ac"
+    },
+    {
+      "path": "service/docs/IMPLEMENTATION_MANIFEST.json",
+      "bytes": 3719,
+      "sha256": "00b2b1a33c0760d3be8f1ae69b0a6993faee340280bd580dacc1a12934115ad1"
+    },
+    {
+      "path": "service/docs/M0_M1_VALIDATION.md",
+      "bytes": 5615,
+      "sha256": "4c21d1181d1359e412096056bcb2787586d12c07bd81783e1b9636c9019fe247"
+    },
+    {
+      "path": "service/docs/m2-initial-combined-run.txt",
+      "bytes": 8978,
+      "sha256": "3731a417b7d3048382ffe8bb985aaf39a10c32e5e8cb4f32c75852eae833017a"
+    },
+    {
+      "path": "service/docs/m2-test-output.txt",
+      "bytes": 8507,
+      "sha256": "a3d3fb4c6ff57cd90de2493e79b986894ae5b789fef5f4bfbebdd98578db8471"
+    },
+    {
+      "path": "service/docs/m2-test-results.json",
+      "bytes": 845,
+      "sha256": "4c3707d45048173936fcae989a0e1739dec9a71a7f41d4a0f2763c42d3b5f08f"
+    },
+    {
+      "path": "service/docs/M2_DEPENDENCIES.json",
+      "bytes": 2911,
+      "sha256": "18ca6241f3581b8613c2d3ada7d1c2938568a9c22f6667e7ec6e6f3e3dcc8346"
+    },
+    {
+      "path": "service/docs/M2_IMPLEMENTATION_MANIFEST.json",
+      "bytes": 7031,
+      "sha256": "935cb41f8785d1306298d3489f1481f4122329b197f588d9e693445893135cf7"
+    },
+    {
+      "path": "service/docs/M2_REQUEST_SCHEMAS.json",
+      "bytes": 25247,
+      "sha256": "f5b6b4fc7cdaafca53f309c650552634f88b307cdd07b3f9c74c1e0110060d08"
+    },
+    {
+      "path": "service/docs/M2_SERVICE_CONTRACT.md",
+      "bytes": 7904,
+      "sha256": "7cc37eab87f72628acee1d88395171248eddeff1b1462070087a695403c70597"
+    },
+    {
+      "path": "service/docs/M2_STORE_INIT.json",
+      "bytes": 709,
+      "sha256": "6c453b28c9eddf92a1e479a4853e9d00a59b61a6c09185cee7304cb8936b3347"
+    },
+    {
+      "path": "service/docs/M2_VALIDATION.md",
+      "bytes": 6106,
+      "sha256": "e58ebdefe9b0d840203b61a44017c7d757942fc1381d2321918f3953f7dfbd2c"
+    },
+    {
+      "path": "service/docs/m3-initial-combined-run.txt",
+      "bytes": 10741,
+      "sha256": "55bd182c9e605b201159098e70d61211ccee3b307e61251a43e667c4adb50082"
+    },
+    {
+      "path": "service/docs/m3-qa/pdf-page-1.png",
+      "bytes": 105679,
+      "sha256": "dbd712d36247cfcaea511cbf6c0acd25ec9b0540feda2c76599621ff83ac060f"
+    },
+    {
+      "path": "service/docs/m3-test-output.txt",
+      "bytes": 10417,
+      "sha256": "a5b903002815a6bd290739a7474ad6bf2938b5950f47ed8c12a56c3c5386780e"
+    },
+    {
+      "path": "service/docs/m3-test-results.json",
+      "bytes": 777,
+      "sha256": "5611d922e549acafe6bcad63caf94b31db52e274d9108b9d5fe9764aeac1aed6"
+    },
+    {
+      "path": "service/docs/M3_EXAMPLE.json",
+      "bytes": 9530,
+      "sha256": "06649d13f6b063b41d02958a12b72b971b5f6fcf62a8b5f132df6567cf664ca8"
+    },
+    {
+      "path": "service/docs/M3_IMPLEMENTATION_MANIFEST.json",
+      "bytes": 14909,
+      "sha256": "513334ce4beee49b56355ab31c0cf509a875aa9e70808eae1037cd2cba9c6abd"
+    },
+    {
+      "path": "service/docs/M3_RENDERER_IDENTITY.json",
+      "bytes": 2342,
+      "sha256": "a4014a8b2bed847e347596fd43856e03c16506b76e9f7876e5ded710a3c9a4b0"
+    },
+    {
+      "path": "service/docs/M3_RENDERING_CONTRACT.md",
+      "bytes": 6927,
+      "sha256": "69927a8aff1e0b8c7ff03b0191409904dd5110036f74dfe5bf92eb32f634deb1"
+    },
+    {
+      "path": "service/docs/M3_STORE_INIT.json",
+      "bytes": 1157,
+      "sha256": "3649ec02c2cf85570fa21a30d09dcea55031730593355e59f161f0e590391d5d"
+    },
+    {
+      "path": "service/docs/M3_VALIDATION.md",
+      "bytes": 5910,
+      "sha256": "48978ca86ac042cdc5b7b9a849b9bbd8082935e5a542d94bc863cfabda0e5ae1"
+    },
+    {
+      "path": "service/docs/m4-combined-console.txt",
+      "bytes": 14999,
+      "sha256": "988fb218488681a773fa9d2244aea9c2d81fed165fa16bd71a2fbb307e3b7974"
+    },
+    {
+      "path": "service/docs/m4-docx-final-render-output.txt",
+      "bytes": 101,
+      "sha256": "e7c170acb4b621d2376038db76742c8d4b0cb20fe6b7f8a4fc91f28c4d903328"
+    },
+    {
+      "path": "service/docs/m4-docx-render-output.txt",
+      "bytes": 95,
+      "sha256": "e099e19fff13c63d6ad5d4bc603c9280a8502620f8ad4ff64fee7559259311c7"
+    },
+    {
+      "path": "service/docs/m4-example-final-output.txt",
+      "bytes": 933,
+      "sha256": "2b59f4d148a43baf1b2bc60f7026908b7e225a9b146bcb62cedfad33cd4f1bac"
+    },
+    {
+      "path": "service/docs/m4-example-output.txt",
+      "bytes": 913,
+      "sha256": "7a8ce5d8e7ee42f18fb915e17fe89be15e5b57dc8c8d6e5cef0c4c99dcc61300"
+    },
+    {
+      "path": "service/docs/m4-expanded-format-run.txt",
+      "bytes": 1290,
+      "sha256": "308644d4476285f090889a4b827f35aee7e925e04217737ef5d1852ed16804e2"
+    },
+    {
+      "path": "service/docs/m4-final-combined-console.txt",
+      "bytes": 15829,
+      "sha256": "7194821cb41db9c943839b82b0cbbb1c463d26428d330fa63af355367255f48c"
+    },
+    {
+      "path": "service/docs/m4-final-verification-console.txt",
+      "bytes": 16135,
+      "sha256": "1ceb81a522c30a663efb7d85c3f5bf163f8498e2649f77245cc1fdaebecb3ced"
+    },
+    {
+      "path": "service/docs/m4-format-rerun-2.txt",
+      "bytes": 578,
+      "sha256": "b87fbb362dbd6e5fb5f66cb49222b2acd1b8d6672897a8ab1bcb6b0c435ef089"
+    },
+    {
+      "path": "service/docs/m4-format-rerun-3.txt",
+      "bytes": 1170,
+      "sha256": "f11f18cb045fde88f7773c88da6da83aeb36e17b6f47423afc024d23370d50d0"
+    },
+    {
+      "path": "service/docs/m4-format-rerun.txt",
+      "bytes": 1209,
+      "sha256": "89253ce3a3059fd86c57821a9f6801a27f6aa8503da334f0dd8f2ebff243996d"
+    },
+    {
+      "path": "service/docs/m4-initial-format-run.txt",
+      "bytes": 4901,
+      "sha256": "6b276734cb25327831593322bc6668901a9e8545c6f2c14402d19a43de708c44"
+    },
+    {
+      "path": "service/docs/m4-qa/docx/b37a9dba8ea93eecda13e8fc7c0e870ac1288584dd30300272d9273619148ce7.pdf",
+      "bytes": 79582,
+      "sha256": "6d0c8a1beb572e070d2bcf508e2cdfbf6a48723651246fa4ead5b7e79c7a931a"
+    },
+    {
+      "path": "service/docs/m4-qa/docx/page-1.png",
+      "bytes": 137940,
+      "sha256": "d2ba32c7d88cb5cd162e804cd294c461887d7101209521ab5c8bd96322ae308c"
+    },
+    {
+      "path": "service/docs/m4-qa/docx-final/a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a.pdf",
+      "bytes": 70903,
+      "sha256": "01d909c4953fefae8a431e2a6bcfedac3a70c15b1b1f127c14ab17044fef57c3"
+    },
+    {
+      "path": "service/docs/m4-qa/docx-final/page-1.png",
+      "bytes": 138627,
+      "sha256": "33e2c61c4ef35c22b3e84e1111c3506332501e04ae07d9570a7f617901a5d29d"
+    },
+    {
+      "path": "service/docs/m4-qa/service-pdf/page-1.png",
+      "bytes": 79287,
+      "sha256": "343b283cf567f40dd184edcbe723feecb3f04b53579eff0bb409b1eb855ca92d"
+    },
+    {
+      "path": "service/docs/m4-test-output.txt",
+      "bytes": 15207,
+      "sha256": "4f9a57e0687087f6871bb13965d687b892fb538dcc90c8256b06f263be39c1e6"
+    },
+    {
+      "path": "service/docs/m4-test-results.json",
+      "bytes": 926,
+      "sha256": "8fdd684dc4ad2112880c8566d1674d8aabaafa497a8b8e338adb082df337300c"
+    },
+    {
+      "path": "service/docs/M4_BATCH_SCHEMA.json",
+      "bytes": 21896,
+      "sha256": "c006fa2a9f8e1f5804bd064843456a595432e5971a3728758ba5bde690fd1ed7"
+    },
+    {
+      "path": "service/docs/M4_DEPENDENCIES.json",
+      "bytes": 989,
+      "sha256": "960372e1174ac2e4b673026c9a92cd4e6a0a82e6e9038a87f75683973934bd18"
+    },
+    {
+      "path": "service/docs/M4_EXAMPLE.json",
+      "bytes": 10882,
+      "sha256": "0267b8187299f242a55b3997a636cb10e4320db2e0bd6156bed529966805cba8"
+    },
+    {
+      "path": "service/docs/M4_FORMAT_CONTRACT.md",
+      "bytes": 12206,
+      "sha256": "383ec5d509de726ff41af592502f0739b3514ccdfc53dd1430c00d79fb104d99"
+    },
+    {
+      "path": "service/docs/M4_SNAPSHOT_SCHEMAS.json",
+      "bytes": 14062,
+      "sha256": "33ee6ed45e7f4732c5a97decebed1e5f2491d4f6b8ac30a1c14d1f29fd4d719f"
+    },
+    {
+      "path": "service/docs/M4_SOURCE_VERIFICATION.json",
+      "bytes": 2645,
+      "sha256": "de193833df40217924643de77b59421542f6f84954b8987f1fd4626f75349718"
+    },
+    {
+      "path": "service/docs/M4_VALIDATION.md",
+      "bytes": 8128,
+      "sha256": "cfb6cc14896aaa7345dadb7fca419b8a2fe08e9fe7e0d29c32735e6fc6492abe"
+    },
+    {
+      "path": "service/docs/MCP_SCHEMAS.json",
+      "bytes": 45794,
+      "sha256": "9b1771d72e59dab06477d920177a0ff370de74bdbc4633cc82a4bcd8c9c31fd9"
+    },
+    {
+      "path": "service/docs/test-output.txt",
+      "bytes": 5374,
+      "sha256": "c61fcee2f49cc7bcbf652c3ebe8aaf3e91a8bafe86455a938975a10eaf77eada"
+    },
+    {
+      "path": "service/docs/test-results.json",
+      "bytes": 1290,
+      "sha256": "67ee124abf3363f1e4d401f1eba5eb5de810800a57a334bbdc7ffb5795cb8465"
+    },
+    {
+      "path": "service/examples/font_example.py",
+      "bytes": 1821,
+      "sha256": "124e43e77e2226256272e60339d8dac6c69e03296d813fc5c846ca056a190e34"
+    },
+    {
+      "path": "service/examples/format_example.py",
+      "bytes": 3815,
+      "sha256": "67fe8481f93b6018de24771d749b8cf5e3b3f66e8498eaf03060432fc8d65b46"
+    },
+    {
+      "path": "service/examples/ingest-request.json",
+      "bytes": 146,
+      "sha256": "94a7e547d97f79b466ac42504194d3f05590ffa94c40644322660f37b0d01dac"
+    },
+    {
+      "path": "service/examples/render_example.py",
+      "bytes": 4214,
+      "sha256": "efcf20983b4c390dd6a60f3a63343fe20653db6e3883ba2407add01483e38aac"
+    },
+    {
+      "path": "service/pyproject.toml",
+      "bytes": 611,
+      "sha256": "dd6f956b9b8432e72f2e743a5db5fea89cfe1abb1ad47a0b761fdf7ffc39f13b"
+    },
+    {
+      "path": "service/README.md",
+      "bytes": 4975,
+      "sha256": "363367ca481972d093dcbf662f21127407c33a3315eff10598b7cbb2279a7b32"
+    },
+    {
+      "path": "service/requirements-m3.lock",
+      "bytes": 707,
+      "sha256": "84637b32bb9a8d4cb481197357270a87ffc1d471b9266840888255bd0a241774"
+    },
+    {
+      "path": "service/requirements-m4.lock",
+      "bytes": 794,
+      "sha256": "97edf4f259f109f2d048f38b1ec169540e17749b788b73c1a032da7d60b4a8f1"
+    },
+    {
+      "path": "service/requirements-service.lock",
+      "bytes": 794,
+      "sha256": "97edf4f259f109f2d048f38b1ec169540e17749b788b73c1a032da7d60b4a8f1"
+    },
+    {
+      "path": "service/src/docstream_cpu/__init__.py",
+      "bytes": 732,
+      "sha256": "12bb14336aa4e662fd4fe0cd730e7528fae8170dbf90339c34f268ec9147f327"
+    },
+    {
+      "path": "service/src/docstream_cpu/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "service/src/docstream_cpu/artifacts.py",
+      "bytes": 6997,
+      "sha256": "b97776fe1a56caeb66916a9b67de262c864e642dd66936ea85d61e2c9c08d5e8"
+    },
+    {
+      "path": "service/src/docstream_cpu/assets.py",
+      "bytes": 2233,
+      "sha256": "86713c61144b2a89c616545858710c0803b93f2640a19a8f4ea0cbf2abbdd41c"
+    },
+    {
+      "path": "service/src/docstream_cpu/catalog.py",
+      "bytes": 9885,
+      "sha256": "d2f8117ca858bda3f37375588fe1eeaf149fd993307da766b5c1dc009da58e4a"
+    },
+    {
+      "path": "service/src/docstream_cpu/cli.py",
+      "bytes": 4677,
+      "sha256": "7e32dff0ea0933342828a943bfd9ff8f088977b0ccee85ead756a85c9a67223d"
+    },
+    {
+      "path": "service/src/docstream_cpu/docx_adapter.py",
+      "bytes": 25978,
+      "sha256": "bf73cf31492ac6b78e9bc91b163de87c5bb52ecc9c67d6e372c3c6f21f612fda"
+    },
+    {
+      "path": "service/src/docstream_cpu/errors.py",
+      "bytes": 407,
+      "sha256": "f1d91402af159b813bc1fe7a0f863dc6cc3d536c01394103175ef0a0b58d247a"
+    },
+    {
+      "path": "service/src/docstream_cpu/executor.py",
+      "bytes": 9687,
+      "sha256": "733a3115ba314f3428410026b875e58bdea3cbe79c4a49aed0159c7dbcb133f5"
+    },
+    {
+      "path": "service/src/docstream_cpu/format_common.py",
+      "bytes": 3926,
+      "sha256": "5f5edf9b9696a4656b383a7f1252844fc0c5fbc2d6ec8528202afb3d08602ca7"
+    },
+    {
+      "path": "service/src/docstream_cpu/format_service.py",
+      "bytes": 8193,
+      "sha256": "ceeec2debd4b5be3d207b4f9ef7a78717e3a36c82f0a446470b79ac3109bd34b"
+    },
+    {
+      "path": "service/src/docstream_cpu/markdown_adapter.py",
+      "bytes": 14325,
+      "sha256": "db779b9788900188a7f7c019588d206354b9bc150624f936ec79c3ffb71d618b"
+    },
+    {
+      "path": "service/src/docstream_cpu/mcp_server.py",
+      "bytes": 9656,
+      "sha256": "5347fb41e3f2f45fae9a46dde5b6cafcd717d629d3c29f21cb01fccea8d8ebea"
+    },
+    {
+      "path": "service/src/docstream_cpu/models.py",
+      "bytes": 3443,
+      "sha256": "eb26679926f3ad7b0358c55b21709c556921b42738d0a0be52dedea11cb7b3b7"
+    },
+    {
+      "path": "service/src/docstream_cpu/operations.py",
+      "bytes": 5384,
+      "sha256": "24d1a9f65516140661a3a5e2f246837541e298fc5f4b76abe4d8b81207286c0b"
+    },
+    {
+      "path": "service/src/docstream_cpu/planner.py",
+      "bytes": 7303,
+      "sha256": "e139b205d3f66d8f11635942d182d1c04a627c31ea19bfe9c8ab644baec7ec10"
+    },
+    {
+      "path": "service/src/docstream_cpu/rendering.py",
+      "bytes": 16892,
+      "sha256": "c6ce66b710b8fd6fcbbce2924e8576acc65272b13825a50018480a526906d64c"
+    },
+    {
+      "path": "service/src/docstream_cpu/rich.py",
+      "bytes": 6152,
+      "sha256": "e6372a0ae31a9e60be2bc525826cc954fecd88dfabf52656ed9375bbec569cb3"
+    },
+    {
+      "path": "service/src/docstream_cpu/rich_rendering.py",
+      "bytes": 4443,
+      "sha256": "447740bed85e7c2c84d3bca542989b89ba30d34c9bb87d34c5d2bd42b61c9824"
+    },
+    {
+      "path": "service/src/docstream_cpu/service.py",
+      "bytes": 16740,
+      "sha256": "466243d741ffbe059d32c1c6f429bc79ab3e7bf37fdaf0a17834d6b9939c63c7"
+    },
+    {
+      "path": "service/src/docstream_cpu/storage.py",
+      "bytes": 13165,
+      "sha256": "7ce563ffe7585d36b755f67499afe24d17ab7da971ab8961a8ccdcde6f923142"
+    },
+    {
+      "path": "service/src/docstream_cpu/visual_service.py",
+      "bytes": 10606,
+      "sha256": "fc63fea12eecc673f89ca6a4f6b2f140fc1b8feb7f4a42e0d4bbea27bfd11e24"
+    },
+    {
+      "path": "service/tests/crash_worker.py",
+      "bytes": 420,
+      "sha256": "5d59f886f7eebe07bc339cf63c4b42d951c47dd17f402e136032793692057127"
+    },
+    {
+      "path": "service/tests/run_m2_validation.py",
+      "bytes": 1866,
+      "sha256": "688c17f1ab97b02fa9b70a12648fc83ed58c313c9f9d767394bf859bd3e7ad5e"
+    },
+    {
+      "path": "service/tests/run_m3_validation.py",
+      "bytes": 1840,
+      "sha256": "8c834ed7438a2258a2219bfb3bd29e63e82b2813a5cfae1cdc1ed268467f8bf7"
+    },
+    {
+      "path": "service/tests/run_m4_validation.py",
+      "bytes": 1784,
+      "sha256": "3b9517326c67aa32833913dcd452a7d959a8edd2847044d3b444f596cc880819"
+    },
+    {
+      "path": "service/tests/run_validation.py",
+      "bytes": 2168,
+      "sha256": "6aa98a023b1cc4008296b2f6f9a4d09e396b92145b010c388b607abfa4b0180b"
+    },
+    {
+      "path": "service/tests/test_baseline.py",
+      "bytes": 1060,
+      "sha256": "d19b1520a66d8369eff8dfbb3842a64b59c0e5961cd50d3669e4108e4ecb70de"
+    },
+    {
+      "path": "service/tests/test_cpu.py",
+      "bytes": 21462,
+      "sha256": "6869905bed4caaab4699a0f00f5827bd38d32250ab281e997a1eb3fa28bdab15"
+    },
+    {
+      "path": "service/tests/test_formats.py",
+      "bytes": 26405,
+      "sha256": "f90fa1cdd5f09272c2177129e4a364e26acc5a40f42873a0a58b24c0693609fe"
+    },
+    {
+      "path": "service/tests/test_mcp.py",
+      "bytes": 10497,
+      "sha256": "ff8f27f6633f1556841cde0c10bbc38059b754724d07ead0096491d67406cc4d"
+    },
+    {
+      "path": "service/tests/test_rendering.py",
+      "bytes": 13831,
+      "sha256": "dbedc676eb5b28bf380bae61497982b60e566c0ad07dfac5aa7a57241b4e5e1c"
+    },
+    {
+      "path": "service/tests/test_service.py",
+      "bytes": 11169,
+      "sha256": "9e9b78bb6bed901ac638a27d90ead1e2a2ecd1e198248c1eeef9477d210d62e1"
+    },
+    {
+      "path": "service/tests/write_m4_evidence.py",
+      "bytes": 4517,
+      "sha256": "9ad0f22b2f3e9c0d750c452c4a2128a58d921c923114f249bb63a2140248b685"
+    }
+  ],
+  "file_count": 104
+}

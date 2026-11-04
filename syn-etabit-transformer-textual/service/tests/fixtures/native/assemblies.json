@@ -1,0 +1,20 @@
+{
+  "schema_version": "docstream.native.fixture/1",
+  "profile": "docstream.native.safe-ascii/1",
+  "note": "Labels are fixture lookup names only; no linguistic definitions or lexical parsing.",
+  "definitions": [
+    {"label": "et", "layer": "GLYPH", "children": [101, 116], "expected_hex": "6574"},
+    {"label": "te", "layer": "GLYPH", "children": [116, 101], "expected_hex": "7465"},
+    {"label": "er", "layer": "GLYPH", "children": [101, 114], "expected_hex": "6572"},
+    {"label": "un", "layer": "GLYPH", "children": [117, 110], "expected_hex": "756e"},
+    {"label": "ette", "layer": "COMPONENT", "children": ["et", "te"], "expected_hex": "65747465"},
+    {"label": "hyphen_ette", "layer": "COMPONENT", "children": [45, "et", "te"], "expected_hex": "2d65747465"},
+    {"label": "component_er", "layer": "COMPONENT", "children": ["er"], "expected_hex": "6572"},
+    {"label": "component_un", "layer": "COMPONENT", "children": ["un"], "expected_hex": "756e"},
+    {"label": "marion", "layer": "ROOT", "children": [109, 97, 114, 105, 111, 110], "expected_hex": "6d6172696f6e"},
+    {"label": "marionette", "layer": "WORD", "children": ["marion", "ette"], "expected_hex": "6d6172696f6e65747465"},
+    {"label": "sentence", "layer": "SENTENCE", "children": ["marionette", 32, "marionette", 46], "expected_hex": "6d6172696f6e65747465206d6172696f6e657474652e"},
+    {"label": "paragraph", "layer": "PARAGRAPH", "children": ["sentence", 13, 10], "expected_hex": "6d6172696f6e65747465206d6172696f6e657474652e0d0a"},
+    {"label": "document", "layer": "DOCUMENT", "children": ["paragraph"], "expected_hex": "6d6172696f6e65747465206d6172696f6e657474652e0d0a"}
+  ]
+}

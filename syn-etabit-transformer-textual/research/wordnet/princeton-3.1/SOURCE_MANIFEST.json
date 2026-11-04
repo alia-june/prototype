@@ -1,0 +1,396 @@
+{
+  "schema": "docstream.source-acquisition/1",
+  "source": "Princeton WordNet 3.1 database-only",
+  "authorization": "Direct user instruction: no better download it yourself; acquisition and bounded inspection only, no native ingestion approval",
+  "requested_url": "https://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+  "publisher_listing": "https://wordnetcode.princeton.edu/",
+  "archive": "wn3.1.dict.tar.gz",
+  "bytes": 16358468,
+  "sha256": "3f7d8be8ef6ecc7167d39b10d66954ec734280b5bdcd57f7d9eafe429d11c22a",
+  "recorded_utc": "2026-10-30T17:08:10.044018+00:00",
+  "gzip_full_read_crc_check": "PASS",
+  "uncompressed_tar_bytes": 55128576,
+  "tar_member_count": 69,
+  "members": [
+    {
+      "name": "dict",
+      "bytes": 0,
+      "kind": "directory"
+    },
+    {
+      "name": "dict/sents.vrb",
+      "bytes": 5319,
+      "kind": "file"
+    },
+    {
+      "name": "dict/noun.exc",
+      "bytes": 38301,
+      "kind": "file"
+    },
+    {
+      "name": "dict/verb.Framestext",
+      "bytes": 1125,
+      "kind": "file"
+    },
+    {
+      "name": "dict/index.adj",
+      "bytes": 825353,
+      "kind": "file"
+    },
+    {
+      "name": "dict/data.noun",
+      "bytes": 15325523,
+      "kind": "file"
+    },
+    {
+      "name": "dict/data.verb",
+      "bytes": 2778475,
+      "kind": "file"
+    },
+    {
+      "name": "dict/index.sense",
+      "bytes": 7304224,
+      "kind": "file"
+    },
+    {
+      "name": "dict/data.adv",
+      "bytes": 520168,
+      "kind": "file"
+    },
+    {
+      "name": "dict/adv.exc",
+      "bytes": 85,
+      "kind": "file"
+    },
+    {
+      "name": "dict/index.noun",
+      "bytes": 4792749,
+      "kind": "file"
+    },
+    {
+      "name": "dict/cntlist.rev",
+      "bytes": 911244,
+      "kind": "file"
+    },
+    {
+      "name": "dict/adj.exc",
+      "bytes": 23019,
+      "kind": "file"
+    },
+    {
+      "name": "dict/index.verb",
+      "bytes": 524435,
+      "kind": "file"
+    },
+    {
+      "name": "dict/sentidx.vrb",
+      "bytes": 73166,
+      "kind": "file"
+    },
+    {
+      "name": "dict/cousin.exc",
+      "bytes": 0,
+      "kind": "file"
+    },
+    {
+      "name": "dict/data.adj",
+      "bytes": 3167437,
+      "kind": "file"
+    },
+    {
+      "name": "dict/log.grind.3.1",
+      "bytes": 2511,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles",
+      "bytes": 0,
+      "kind": "directory"
+    },
+    {
+      "name": "dict/dbfiles/adj.all",
+      "bytes": 2034655,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/adj.ppl",
+      "bytes": 7673,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/adv.all",
+      "bytes": 478142,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.emotion",
+      "bytes": 60848,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.communication",
+      "bytes": 288753,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.quantity",
+      "bytes": 152470,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.cognition",
+      "bytes": 132943,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.feeling",
+      "bytes": 63940,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.person",
+      "bytes": 1481893,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/adj.pert",
+      "bytes": 551434,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.cognition",
+      "bytes": 486105,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.substance",
+      "bytes": 394810,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.social",
+      "bytes": 201624,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.food",
+      "bytes": 269371,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/cntlist",
+      "bytes": 911244,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.communication",
+      "bytes": 777725,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.motion",
+      "bytes": 210462,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.artifact",
+      "bytes": 1416396,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.phenomenon",
+      "bytes": 97387,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.animal",
+      "bytes": 933739,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.contact",
+      "bytes": 323481,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.perception",
+      "bytes": 77010,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.stative",
+      "bytes": 126021,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.motive",
+      "bytes": 6111,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.weather",
+      "bytes": 13569,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.body",
+      "bytes": 286123,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.event",
+      "bytes": 157756,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.object",
+      "bytes": 215337,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.Framestext",
+      "bytes": 1125,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.time",
+      "bytes": 137748,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.possession",
+      "bytes": 139144,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.competition",
+      "bytes": 65810,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.change",
+      "bytes": 387190,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.possession",
+      "bytes": 135168,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.location",
+      "bytes": 449694,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.relation",
+      "bytes": 65623,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.state",
+      "bytes": 523910,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.group",
+      "bytes": 397164,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.creation",
+      "bytes": 119022,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.shape",
+      "bytes": 46086,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.plant",
+      "bytes": 1263989,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.consumption",
+      "bytes": 39416,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.Tops",
+      "bytes": 8519,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.attribute",
+      "bytes": 506779,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.act",
+      "bytes": 1011777,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/verb.body",
+      "bytes": 89102,
+      "kind": "file"
+    },
+    {
+      "name": "dict/dbfiles/noun.process",
+      "bytes": 127393,
+      "kind": "file"
+    },
+    {
+      "name": "dict/index.adv",
+      "bytes": 162795,
+      "kind": "file"
+    },
+    {
+      "name": "dict/verb.exc",
+      "bytes": 38033,
+      "kind": "file"
+    },
+    {
+      "name": "dict/cntlist",
+      "bytes": 911244,
+      "kind": "file"
+    }
+  ],
+  "embedded_release_header": "WordNet 3.1 Copyright 2011 by Princeton University",
+  "license_source": "dict/index.noun leading numbered header",
+  "license_copy": "LICENSE.source-header.txt",
+  "license_copy_sha256": "2c49a717fc37fbb8ba153203c93ffc1867b1868e7d24ecf8a93826caddab4398",
+  "samples": {
+    "dict/index.noun": [
+      "'hood n 1 2 @ ; 1 0 08659519",
+      "'s_gravenhage n 1 2 @ #p 1 0 08970180",
+      ".22 n 1 2 @ ~ 1 0 04510146",
+      "0 n 1 1 @ 1 1 13764498",
+      "1 n 1 2 @ ~ 1 1 13764713"
+    ],
+    "dict/noun.exc": [
+      "aardwolves aardwolf",
+      "abaci abacus",
+      "aboideaux aboideau",
+      "aboiteaux aboiteau"
+    ],
+    "dict/verb.exc": [
+      "abetted abet",
+      "abetting abet",
+      "abhorred abhor",
+      "abhorring abhor"
+    ]
+  },
+  "review_boundary": {
+    "full_vocabulary_parsed": false,
+    "corpus_counts_computed": false,
+    "native_records_created": 0,
+    "database_created": false,
+    "bulk_extraction_performed": false,
+    "source_programs_executed": false
+  },
+  "checksum_boundary": "SHA-256 identifies retrieved bytes; no independent publisher checksum or signature was verified",
+  "inspection_note": "Earlier display-only tar prefix piping produced a broken-pipe write error when the consumer stopped. This bounded full gzip read and tar inventory completed successfully; the display error was not used as an integrity result."
+}

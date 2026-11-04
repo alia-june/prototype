@@ -1,0 +1,40 @@
+{
+  "schema": "strmdocx.etabit-alignment.source-register/1",
+  "authorization": "AUTH-20A",
+  "created": "2026-10-31",
+  "timezone": "America/New_York",
+  "source_count": 19,
+  "archive": {
+    "path": "C:/Users/<local-user>/Downloads/Decomposition_Successor_Handoff_2026-10-31.zip",
+    "bytes": 929111,
+    "sha256": "6c2a8ef329c3e70189f30ab62553c4328e0fe80a785b10371a779d8971c2d5b8",
+    "extracted": false
+  },
+  "sources": [
+    {"id":"S01","corpus":"strmdocx","locator":"PROJECT_DECISIONS.md","bytes":39005,"sha256":"df31932d20657ad7cb4b89711f46492baf4e500f4065021058592e308a2f6976","authority":"direct project decisions and authorization record","read_scope":"U-14 through U-20 plus scope boundaries"},
+    {"id":"S02","corpus":"strmdocx","locator":"service/docs/NATIVE_REFERENCE_CONTRACT.md","bytes":11756,"sha256":"0404c8193a1ea8613e912be3b263ffd4e9e3e7d16a6108cb8db7f1f2a46ae9db","authority":"approved implemented contract within its stated profile","read_scope":"full document"},
+    {"id":"S03","corpus":"strmdocx","locator":"service/docs/NATIVE_VOCABULARY_CONTRACT.md","bytes":6642,"sha256":"b8a857bcf3d5275e1888e2810b6a13a4561000414e56a24952128cf625fa3741","authority":"approved pilot contract within AUTH-17","read_scope":"full document"},
+    {"id":"S04","corpus":"strmdocx","locator":"service/docs/NATIVE_VOCABULARY_FINDINGS.md","bytes":4498,"sha256":"e650fc2357b29c27f4112684374a4aa2130af2a585b15054879ed277fc0b5163","authority":"bounded local findings","read_scope":"full document"},
+    {"id":"S05","corpus":"strmdocx","locator":"service/docs/RELATIVE_MAPS_CONTRACT.md","bytes":5259,"sha256":"955d4f650f2b44c537435053ddb670781261cccebb5d34890bd498e04ef83879","authority":"approved mechanical probe contract within AUTH-18A","read_scope":"full document"},
+    {"id":"S06","corpus":"strmdocx","locator":"service/docs/RELATIVE_MAPS_FINDINGS.md","bytes":4333,"sha256":"b5942f06ccb1be8b4566d66b4a5ddbf93e939cfebdab6f89c4d40af8c00ea461","authority":"bounded local findings","read_scope":"full document"},
+    {"id":"S07","corpus":"strmdocx","locator":"research/relative-theory/auth18b-source-study/DECODE_BOUNDARY.md","bytes":1287,"sha256":"1853ff6269346ad891ec7799004fe0fb0744a7d8a16e8a6d338181f55336e272","authority":"approved research boundary","read_scope":"full document"},
+    {"id":"S08","corpus":"strmdocx","locator":"research/relative-theory/auth18b-source-study/CONTRADICTIONS_GAPS_AND_ANTI_LESSONS.md","bytes":1313,"sha256":"05e3d2bde6b7febc1c4cf0ecf19bb7131876cd96481624dd34232e035fc608ca","authority":"approved research findings","read_scope":"full document"},
+    {"id":"S09","corpus":"strmdocx","locator":"service/docs/STRMDOCX_PRODUCT_RETEST_FINDINGS.md","bytes":2949,"sha256":"2750d00a7501af985c8b2051226c65913a62937166d451b781ab5524e1c304d7","authority":"bounded current product observation","read_scope":"full document"},
+    {"id":"S10","corpus":"amorphousdrive","locator":"PROJECT_DIRECTION.md","bytes":3821,"sha256":"f831da97cd70619342ba954a9a5e0ed696e959440bfd9242bf9c57ccd7c42132","authority":"current working direction, not a new specification lock","read_scope":"full document"},
+    {"id":"S11","corpus":"amorphousdrive","locator":"RECONCILIATION_BACKLOG.md","bytes":4884,"sha256":"6c2ca2c212885a29fe350f4d2ddf273d36ac07363ac17031a2599c69f09f82b8","authority":"current open-decision register","read_scope":"full document"},
+    {"id":"S12","corpus":"amorphousdrive","locator":"reviews/RECONCILIATION_RESULT_2026-09-17.md","bytes":3618,"sha256":"6dd30a6ef8fae3d15a292e040b425eb5467ccd2cb773e9e9d22f233afd26a624","authority":"bounded local reconciliation result","read_scope":"full document"},
+    {"id":"S13","corpus":"amorphousdrive","locator":"CONTINUATION_STATE_2026-09-17.json","bytes":10186,"sha256":"bd2724dbdfa5f1cd3e52d2e7c5fb60c71f4fefe602a215305b0086ad7dcb425d","authority":"machine-readable continuation record","read_scope":"full document"},
+    {"id":"S14","corpus":"amorphousdrive","locator":"sf_edabit_workspace_inception/objects/sf_edabit_amorph_data_drive_locked_spec_v0_3.md","bytes":28243,"sha256":"12f3267604767b8ea0b51252a795af66477cb8b4130fe8888f691c868b8428d9","authority":"locked baseline v0.3","read_scope":"sections 0 through 16 and 24 through 31"},
+    {"id":"S15","corpus":"decomposition_handoff_zip","locator":"Decomposition_Successor_Handoff_2026-10-31.zip!/README_START_HERE.md","bytes":2222,"sha256":"1ffe7b92c402ec5fc95f8b9f97962886bdb1270db30ffc5f8115e1459ba2a9a7","authority":"source-qualified handoff orientation","read_scope":"full member"},
+    {"id":"S16","corpus":"decomposition_handoff_zip","locator":"Decomposition_Successor_Handoff_2026-10-31.zip!/handoff/SUCCESSOR_MACHINE_HANDOFF.md","bytes":19995,"sha256":"03b80ff39f6e36c93365a02ccaf109e54f808cca44dfb861301ebc0e00f2880e","authority":"source-qualified architectural research handoff","read_scope":"full member"},
+    {"id":"S17","corpus":"decomposition_handoff_zip","locator":"Decomposition_Successor_Handoff_2026-10-31.zip!/handoff/PRIORITY_WORK_QUEUE.md","bytes":2145,"sha256":"fea8221066392ef75607b84535a6a1d1476b2b84de02089887353c780a30ec38","authority":"historical proposed work ordering, not current authorization","read_scope":"full member"},
+    {"id":"S18","corpus":"decomposition_handoff_zip","locator":"Decomposition_Successor_Handoff_2026-10-31.zip!/metadata/HANDOFF_STATE.json","bytes":3546,"sha256":"6cda39b9d799e95e5e9b72a8f0b760d8d7cf88560171414b98dc6878a7d23abc","authority":"source-qualified machine-readable handoff state","read_scope":"full member"},
+    {"id":"S19","corpus":"decomposition_handoff_zip","locator":"Decomposition_Successor_Handoff_2026-10-31.zip!/reference/COMPLETE_CONVERSATION_DECISION_LEDGER_2026-10-11.json","bytes":10143,"sha256":"f5b6c615b3d3b793d6b757be02a3d4fa76eec46aef284d1b6b3e5671c9c73396","authority":"historical decision and correction ledger with evidence classes","read_scope":"full member"}
+  ],
+  "limits": {
+    "maximum_sources": 20,
+    "actual_sources": 19,
+    "archive_extraction": false,
+    "execution": false
+  }
+}

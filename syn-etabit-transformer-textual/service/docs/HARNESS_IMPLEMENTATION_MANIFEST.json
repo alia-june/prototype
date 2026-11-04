@@ -1,0 +1,141 @@
+{
+  "recorded_utc": "2026-10-29T13:43:07.812695+00:00",
+  "scope": "harness implementation, fixtures, reports, notes and self-test evidence; excludes this manifest",
+  "files": [
+    {
+      "path": "DEVELOPMENT_PLAN.md",
+      "bytes": 35970,
+      "sha256": "58c54d9a87e55e37140e0f9488454fa143bfb8458efe48c7f1ca1ac5e620905c"
+    },
+    {
+      "path": "PROJECT_DECISIONS.md",
+      "bytes": 15953,
+      "sha256": "b6ce542990c5590aad0955c66b05f14ccc5ce45e0ebc8022ba8f4de4821f9be0"
+    },
+    {
+      "path": "RESEARCH_NOTES.md",
+      "bytes": 28182,
+      "sha256": "c70433c44c9bf0c9899f2faa97e877276a930ae19eccbd227f0cae14b39733b3"
+    },
+    {
+      "path": "service/docs/harness-self-test-final.txt",
+      "bytes": 3647,
+      "sha256": "addfa1b603f226538af9f7898cf5c1beee405d1543aa693589150d582afcc827"
+    },
+    {
+      "path": "service/docs/harness-self-test-initial.txt",
+      "bytes": 2736,
+      "sha256": "430202ac7e01f7738120cef0675ea95171c242cd2cb4f677b71e61a83f926c77"
+    },
+    {
+      "path": "service/docs/harness-self-test-output.txt",
+      "bytes": 2521,
+      "sha256": "44c74119efd5155063e83883a1f6078bf4a7d0e9454f17e25f82fa9c02b51a40"
+    },
+    {
+      "path": "service/docs/HARNESS_CONTRACT.md",
+      "bytes": 9938,
+      "sha256": "1651d71eeb80dae4cba511db8dc848dba946936c4ea2dd6a10f0d1939b9eb21b"
+    },
+    {
+      "path": "service/docs/HARNESS_DELIVERY.json",
+      "bytes": 3070,
+      "sha256": "e5e147254000723ca7cb8721634228d614ce99250ff8eb67e866d25049d3dd7b"
+    },
+    {
+      "path": "service/docs/HARNESS_FINDINGS.md",
+      "bytes": 6295,
+      "sha256": "549e4e4cd21be6fce1447aff2fd229a850ec72d98914b768489074ce9db63a96"
+    },
+    {
+      "path": "service/docs/HARNESS_VALIDATION.md",
+      "bytes": 7869,
+      "sha256": "e0909abe0a4fa04edc7c02e089dcaf103ea326f4b69396f6fc5c28bfcd6875ab"
+    },
+    {
+      "path": "service/docs/M4_VALIDATION.md",
+      "bytes": 8581,
+      "sha256": "e55beeedf7646888ae3f4fe0e80a9c5ee378f0e025a210367a8e9d740ead8427"
+    },
+    {
+      "path": "service/README.md",
+      "bytes": 6207,
+      "sha256": "99a4f444a8486381b48e9a953b222a430a9fdaac60ea8da3564a847e668a1149"
+    },
+    {
+      "path": "service/src/docstream_cpu/harness/__init__.py",
+      "bytes": 115,
+      "sha256": "1a7813f8f9aacca6c17741ffedef0c1d26a9ae4008d4b4f23dca9f3fddbc3fff"
+    },
+    {
+      "path": "service/src/docstream_cpu/harness/__main__.py",
+      "bytes": 80,
+      "sha256": "7adb715d3b1f79e5f4412da1481fb55ecaec8e461a6a71c316a66ded23198606"
+    },
+    {
+      "path": "service/src/docstream_cpu/harness/cases.py",
+      "bytes": 7034,
+      "sha256": "d567dda080cab25303c9d8da96c111a0f21abb97d72cabe82fa1174bbb4ad04c"
+    },
+    {
+      "path": "service/src/docstream_cpu/harness/core.py",
+      "bytes": 7811,
+      "sha256": "8a85f920771f08ea09b960bd09be7895a77373cc8dc9b89084036247d2b8f4c9"
+    },
+    {
+      "path": "service/src/docstream_cpu/harness/generate.py",
+      "bytes": 6689,
+      "sha256": "ff9d80da00c64c518f57a0985bfaa2eb42d4a1fae0fcbe3e0e8925576b73b614"
+    },
+    {
+      "path": "service/src/docstream_cpu/harness/runner.py",
+      "bytes": 13563,
+      "sha256": "313b9d44a6349d4bff857cfd88b6abdf63e58138deb6214b49602141a70ae4a9"
+    },
+    {
+      "path": "service/src/docstream_cpu/harness/worker.py",
+      "bytes": 9922,
+      "sha256": "d787bfbd566187892557805b8e2fb19dd8dcfe5c1dc3e547f4da9fc412a36c4f"
+    },
+    {
+      "path": "service/src/docstream_cpu/harness/workloads.py",
+      "bytes": 22996,
+      "sha256": "ffee4e5bd1d17a96ec62332dbb088b9d4c825bcc81bb802c972d7e1c53ea34df"
+    },
+    {
+      "path": "service/tests/confirm_harness_findings.py",
+      "bytes": 2948,
+      "sha256": "0c06bed47e9551b0e6b85539aac7b9f7128f6abe679e169ce8aa85e61427dcb6"
+    },
+    {
+      "path": "service/tests/fixtures/harness/reviewed-m4.json",
+      "bytes": 20189,
+      "sha256": "e34ed8aefba1f1ecbadbd0fae50bb07dd0602093eda9a98399f1041ab152776e"
+    },
+    {
+      "path": "service/tests/fixtures/harness/reviewed-m4.png",
+      "bytes": 41403,
+      "sha256": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22"
+    },
+    {
+      "path": "service/tests/prepare_harness_fixture.py",
+      "bytes": 2711,
+      "sha256": "a38724afbd272247d35e2784eb1209ec187a286c83dedfd6996cc0225ad9135f"
+    },
+    {
+      "path": "service/tests/retain_harness_inputs.py",
+      "bytes": 2572,
+      "sha256": "265e260d0363cda0aedb1ad13fa060ab9cbf8974543fbcac0634910a92aeff52"
+    },
+    {
+      "path": "service/tests/test_harness.py",
+      "bytes": 7859,
+      "sha256": "982da1c9620ef7bec25f22e057134401c5e27118fd7edee55a8d690fbe884ee2"
+    },
+    {
+      "path": "service/tests/write_harness_evidence.py",
+      "bytes": 5403,
+      "sha256": "2c0c8ab0773f872946eccae049ff6e5c5fa3213926b97fb40f4f67b7c4ce7c21"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "import": {
+    "ok": true,
+    "job_id": "job:67f96db144264c59b9ab39bc0ff255f7",
+    "state": "completed",
+    "result": {
+      "document_id": "document:3f03d4c8fb344b20a6e5f930ddfa48ff",
+      "stream_id": "stream:07082481e8f0496ea65602b898e785fb",
+      "revision": 0,
+      "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+      "schema_version": "docstream.snapshot/2",
+      "original_sha256": "690aefc81b8a7151673ae4ba485092534e5202abfe50f4faf16e751e0fc68810",
+      "total_blocks": 12,
+      "assets": [
+        "c1986b501059b1aecbc17120920bde73d9b64e9659eef2ff399c23a0ea965ca0"
+      ],
+      "diagnostics": [],
+      "loss_policy": "reject",
+      "visual_state": "not_rendered"
+    }
+  },
+  "exports": {
+    "docx": {
+      "ok": true,
+      "job_id": "job:577be222837e442d940bde0a13bad0ac",
+      "state": "completed",
+      "result": {
+        "stream_id": "stream:07082481e8f0496ea65602b898e785fb",
+        "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+        "format": "docx",
+        "artifact": {
+          "artifact_id": "artifact:a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a",
+          "sha256": "a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a",
+          "bytes": 38317,
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "download_path": "/artifacts/artifact:a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a",
+          "relative_path": "a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a.docx"
+        },
+        "diagnostics": [],
+        "loss_policy": "reject",
+        "committed": false
+      }
+    },
+    "markdown_bundle": {
+      "ok": true,
+      "job_id": "job:b06018a90a9d44e79513073dfa072acc",
+      "state": "completed",
+      "result": {
+        "stream_id": "stream:07082481e8f0496ea65602b898e785fb",
+        "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+        "format": "markdown_bundle",
+        "artifact": {
+          "artifact_id": "artifact:04e0dc11d7604fcd870b8b18b3b3400cf119d105c0649fc8daa61308e1f997bf",
+          "sha256": "04e0dc11d7604fcd870b8b18b3b3400cf119d105c0649fc8daa61308e1f997bf",
+          "bytes": 1252,
+          "media_type": "application/zip",
+          "download_path": "/artifacts/artifact:04e0dc11d7604fcd870b8b18b3b3400cf119d105c0649fc8daa61308e1f997bf",
+          "relative_path": "04e0dc11d7604fcd870b8b18b3b3400cf119d105c0649fc8daa61308e1f997bf.zip"
+        },
+        "diagnostics": [],
+        "loss_policy": "reject",
+        "committed": false
+      }
+    }
+  },
+  "transform": {
+    "ok": true,
+    "job_id": "job:2c20fdc39a5042278b23f2484b3b4598",
+    "state": "completed",
+    "result": {
+      "candidate_id": "batch:4171bdc30f564179915984546944f8f7",
+      "result_stream_id": "stream:ccff79dd59974b71b4fb09b23a5f149a",
+      "output_stream_ids": [
+        "stream:8504c2b8b1e84312b90174b2c1e981d6",
+        "stream:ccff79dd59974b71b4fb09b23a5f149a"
+      ],
+      "plan_sha256": "066ab088971a2b02bbf90a1c947d58417aa93f6ef96d34e2dba7427778fe6980",
+      "requested_operations": 2,
+      "property_writes": 0,
+      "structural_operations": 0,
+      "reduction_count": 38,
+      "committed": false,
+      "visual_state": "not_rendered"
+    }
+  },
+  "preview": {
+    "ok": true,
+    "job_id": "job:6c21464b9c464f7585b15b5b3cd4a678",
+    "state": "completed",
+    "result": {
+      "stream_id": "stream:07082481e8f0496ea65602b898e785fb",
+      "candidate_id": null,
+      "cache_hit": false,
+      "visual_state": "ready",
+      "committed": false,
+      "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+      "cache_key": "03fbdc704491ac6ac7b5f1c22f50de4097e6e103e350b94ef4c8e6b577de9603",
+      "artifacts": {
+        "pdf": {
+          "artifact_id": "artifact:b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244",
+          "sha256": "b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244",
+          "bytes": 54546,
+          "media_type": "application/pdf",
+          "download_path": "/artifacts/artifact:b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244",
+          "relative_path": "b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244.pdf"
+        },
+        "png": {
+          "artifact_id": "artifact:e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22",
+          "sha256": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22",
+          "bytes": 41403,
+          "media_type": "image/png",
+          "download_path": "/artifacts/artifact:e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22",
+          "relative_path": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22.png"
+        }
+      },
+      "renderer_metadata": {
+        "browser_revision": "1248",
+        "browser_version": "156.0.8078.4",
+        "engine_sha256": "40a2c35f157d2c2ab02f6d53b890c656c725fd1640f1ca57085edadf90d39eea",
+        "executable_sha256": "7f08161bbeb2853ffe1780a9ded4985087f52efb9725d7d8207aabdd42f7cfb9",
+        "font_usage": [
+          {
+            "familyName": "Arial",
+            "glyphCount": 72,
+            "isCustomFont": true,
+            "postScriptName": "Arial-BoldMT"
+          },
+          {
+            "familyName": "Arial",
+            "glyphCount": 548,
+            "isCustomFont": true,
+            "postScriptName": "ArialMT"
+          },
+          {
+            "familyName": "Arial",
+            "glyphCount": 11,
+            "isCustomFont": true,
+            "postScriptName": "Arial-ItalicMT"
+          }
+        ],
+        "fonts": {
+          "Arial": [
+            "5f9f2d8104ad5e69e1be8107224063dc8c36f9e24680b2f9be324244c0b424a1",
+            "3680a1bbffab914f36b27d5fd97b193de5bccfab882c41b41b5f8f99457b4820",
+            "c30c71d614e143c0d4e42aaf04d9a1f50f90b365a2654eb3f2c6598e5655af08",
+            "77a0b63c5f73eb85923f10359e68b8fc768487ae88ad902a1ea21276954e205b"
+          ]
+        },
+        "height_px": 1056,
+        "html_sha256": "c1857f1ad2dd5d4656ba5f806b71ddfc6b6f5128caed2a3f246fe4e0682b5414",
+        "playwright": "1.64.1",
+        "profile": {
+          "code_font_family": "Consolas",
+          "formats": [
+            "png",
+            "pdf"
+          ],
+          "locale": "en-US",
+          "margin_mpt": 36000,
+          "max_height_px": 12000,
+          "schema_version": "docstream.render/1",
+          "show_title": true
+        },
+        "renderer": "docstream.html/2",
+        "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+        "width_px": 816
+      },
+      "actual_renders": 1,
+      "worker_starts": 1
+    }
+  },
+  "rendered_commit": {
+    "ok": true,
+    "job_id": "job:fc916e375e194eed8ca1bfea5e270e97",
+    "state": "completed",
+    "result": {
+      "stream_id": "stream:ccff79dd59974b71b4fb09b23a5f149a",
+      "candidate_id": "batch:4171bdc30f564179915984546944f8f7",
+      "cache_hit": true,
+      "visual_state": "ready",
+      "committed": true,
+      "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+      "cache_key": "03fbdc704491ac6ac7b5f1c22f50de4097e6e103e350b94ef4c8e6b577de9603",
+      "artifacts": {
+        "pdf": {
+          "artifact_id": "artifact:b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244",
+          "sha256": "b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244",
+          "bytes": 54546,
+          "media_type": "application/pdf",
+          "download_path": "/artifacts/artifact:b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244",
+          "relative_path": "b773c40b5c29c75d357577b90fb6688b3bfa87783d0cbe5906739104c16d9244.pdf"
+        },
+        "png": {
+          "artifact_id": "artifact:e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22",
+          "sha256": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22",
+          "bytes": 41403,
+          "media_type": "image/png",
+          "download_path": "/artifacts/artifact:e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22",
+          "relative_path": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22.png"
+        }
+      },
+      "renderer_metadata": {
+        "browser_revision": "1248",
+        "browser_version": "156.0.8078.4",
+        "engine_sha256": "40a2c35f157d2c2ab02f6d53b890c656c725fd1640f1ca57085edadf90d39eea",
+        "executable_sha256": "7f08161bbeb2853ffe1780a9ded4985087f52efb9725d7d8207aabdd42f7cfb9",
+        "font_usage": [
+          {
+            "familyName": "Arial",
+            "glyphCount": 72,
+            "isCustomFont": true,
+            "postScriptName": "Arial-BoldMT"
+          },
+          {
+            "familyName": "Arial",
+            "glyphCount": 548,
+            "isCustomFont": true,
+            "postScriptName": "ArialMT"
+          },
+          {
+            "familyName": "Arial",
+            "glyphCount": 11,
+            "isCustomFont": true,
+            "postScriptName": "Arial-ItalicMT"
+          }
+        ],
+        "fonts": {
+          "Arial": [
+            "5f9f2d8104ad5e69e1be8107224063dc8c36f9e24680b2f9be324244c0b424a1",
+            "3680a1bbffab914f36b27d5fd97b193de5bccfab882c41b41b5f8f99457b4820",
+            "c30c71d614e143c0d4e42aaf04d9a1f50f90b365a2654eb3f2c6598e5655af08",
+            "77a0b63c5f73eb85923f10359e68b8fc768487ae88ad902a1ea21276954e205b"
+          ]
+        },
+        "height_px": 1056,
+        "html_sha256": "c1857f1ad2dd5d4656ba5f806b71ddfc6b6f5128caed2a3f246fe4e0682b5414",
+        "playwright": "1.64.1",
+        "profile": {
+          "code_font_family": "Consolas",
+          "formats": [
+            "png",
+            "pdf"
+          ],
+          "locale": "en-US",
+          "margin_mpt": 36000,
+          "max_height_px": 12000,
+          "schema_version": "docstream.render/1",
+          "show_title": true
+        },
+        "renderer": "docstream.html/2",
+        "semantic_sha256": "3306c0a6493f2d9c0ec06e9f7de4d3fc1b6df0ed8bca7e8ced09348f48f0c63f",
+        "width_px": 816
+      },
+      "actual_renders": 1,
+      "worker_starts": 1,
+      "head": {
+        "document_id": "document:3f03d4c8fb344b20a6e5f930ddfa48ff",
+        "stream_id": "stream:ccff79dd59974b71b4fb09b23a5f149a",
+        "revision": 1
+      }
+    }
+  },
+  "store_root": "<source-workspace>\\.docstream\\m4-validation\\example-0.2.0.dev4",
+  "worker_starts": 1,
+  "actual_renders": 1
+}

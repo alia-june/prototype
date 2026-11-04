@@ -1,0 +1,20 @@
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:51491/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51491/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51491/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51491/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51491/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51491/mcp "HTTP/1.1 200 OK"
+StreamableHTTP session manager shutting down
+======================================================================
+FAIL: test_heading_title_separate (test_formats.DocxTests.test_heading_title_separate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<source-workspace>\service\tests\test_formats.py", line 228, in test_heading_title_separate
+    self.assertFalse(losses.items,losses.items)
+AssertionError: [{'code': 'STYLE_FONT_EFFECT', 'location': 'body:1', 'detail': 'unsupported style font effect spacing'}] is not false : [{'code': 'STYLE_FONT_EFFECT', 'location': 'body:1', 'detail': 'unsupported style font effect spacing'}]
+
+----------------------------------------------------------------------
+Ran 33 tests in 5.592s
+
+FAILED (failures=1)

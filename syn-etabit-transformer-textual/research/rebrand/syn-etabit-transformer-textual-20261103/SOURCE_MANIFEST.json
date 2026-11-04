@@ -1,0 +1,81 @@
+{
+  "manifest_format": "syn-etabit-transformer-textual.rebrand-manifest/1",
+  "artifact": "syn-etabit-transformer-textual-phase1-rebrand-20261103",
+  "created": "2026-11-03",
+  "manifest_excludes_self": true,
+  "production_clearance": {
+    "scope": "Bounded prospective product rebrand, active front-door documentation and descriptive package metadata, compatibility map, validation and provenance manifest",
+    "user_instruction": "rebrand syn-etabit-transformer-textual",
+    "user_approval": "yes bounded",
+    "authorization": "AUTH-20",
+    "excludes": "Workspace, package, module, CLI, protocol, state, database, runtime, adapter, converter, release, GPU and agentic migration"
+  },
+  "modified_outputs": [
+    {
+      "path": "../../../BRAND.md",
+      "before": "absent",
+      "after_bytes": 4273,
+      "after_sha256": "5b092067a3c2ebb08f19e637fc113a9e8c6f9349539a8aa24178accc24f53e5f"
+    },
+    {
+      "path": "../../../DEVELOPMENT_PLAN.md",
+      "before_bytes": 46601,
+      "before_sha256": "b58b9afb812feb15f6aee77c04152ad3f4b68c37447093d47e895c55d304e228",
+      "after_bytes": 47924,
+      "after_sha256": "7e6bb4d830dc695f15bc2885e262cff1c3fa138c4b237feca7d822ed28ccf872"
+    },
+    {
+      "path": "../../../PROJECT_DECISIONS.md",
+      "before_bytes": 39005,
+      "before_sha256": "df31932d20657ad7cb4b89711f46492baf4e500f4065021058592e308a2f6976",
+      "after_bytes": 41388,
+      "after_sha256": "19b5d1e7cb184a26afbeba104ad9c723cf622638981f453a4fcdec64f389c394"
+    },
+    {
+      "path": "../../../service/README.md",
+      "before_bytes": 6207,
+      "before_sha256": "99a4f444a8486381b48e9a953b222a430a9fdaac60ea8da3564a847e668a1149",
+      "after_bytes": 7294,
+      "after_sha256": "1b68c1d9fa2adcdd59a4ffbd45240545d661bc061424e29e110f6a99be3c5aaa"
+    },
+    {
+      "path": "../../../service/pyproject.toml",
+      "before_bytes": 611,
+      "before_sha256": "dd6f956b9b8432e72f2e743a5db5fea89cfe1abb1ad47a0b761fdf7ffc39f13b",
+      "after_bytes": 626,
+      "after_sha256": "bfd60f710d4979fed0d9e608a2ea447a819cf9f923ce1a2fb65c1de652f0710e"
+    }
+  ],
+  "protected_evidence": [
+    {
+      "path": "../../holon-design/reference-occurrence-pilot-20261101/SOURCE_MANIFEST.json",
+      "bytes": 3211,
+      "sha256": "bd1284392c30be255fca72eee9b4c3b580091ac251bb07f37532d66593c8394f",
+      "covered_files_verified": 8
+    },
+    {
+      "path": "../../holon-design/reference-occurrence-inspector-20261101/INSPECTOR_MANIFEST.json",
+      "bytes": 2752,
+      "sha256": "9d1aac3d815c1bdd39fda259ac7125ea6422d370d40cb6699de799875db69b22",
+      "covered_files_verified": 8
+    }
+  ],
+  "files": [
+    {
+      "path": "NAME_AND_COMPATIBILITY_MAP.json",
+      "bytes": 1783,
+      "sha256": "299b19c44dc142ad6adab36923384701d6bd2544950b654f679a8e870a455017"
+    },
+    {
+      "path": "REBRAND_DECISION.md",
+      "bytes": 2962,
+      "sha256": "eca8b5e39b7c920447cbc562b04cdced3347ec98c43762adea361e62fe9fb9ca"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 6988,
+      "sha256": "6d7be0f8539652f42b09a6c08ad772bf96a543e2375740b16661aca773e40981"
+    }
+  ],
+  "proof_limit": "The recorded sizes and SHA-256 values establish byte identity for the named files only. They do not establish legal trademark clearance, authorship, full-workspace immutability, runtime migration, release readiness or independent attestation."
+}

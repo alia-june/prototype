@@ -1,0 +1,8 @@
+Render attempt status: BLOCKED
+Date: 2026-10-27
+Input: qa/sample.docx
+Renderer: bundled documents skill render_docx.py
+Observed error: FileNotFoundError: LibreOffice soffice.exe was not found on PATH
+Discriminator: recursive search of the bundled Codex runtime for soffice.exe
+Discriminator result: no matching executable found
+Consequence: structural DOCX validation passed, but visual page-layout validation was not completed

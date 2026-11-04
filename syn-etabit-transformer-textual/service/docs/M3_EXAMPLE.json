@@ -1,0 +1,229 @@
+{
+  "preview": {
+    "ok": true,
+    "job_id": "job:dcb7b0a475d74c07b559e0758efd470e",
+    "state": "completed",
+    "result": {
+      "stream_id": "stream:3d658f1100c64c0384a860355518b385",
+      "candidate_id": null,
+      "cache_hit": false,
+      "visual_state": "ready",
+      "committed": false,
+      "semantic_sha256": "3adf54cb0b34673f1f5915e592521e0a1d9390eff8348491596fc7993ac98f91",
+      "cache_key": "4ea20e35604832c2278f14a956ab603c6a0e1c4d7e649a27e5f8ec9b95a8c5a0",
+      "artifacts": {
+        "pdf": {
+          "artifact_id": "artifact:c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b",
+          "sha256": "c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b",
+          "bytes": 68493,
+          "media_type": "application/pdf",
+          "download_path": "/artifacts/artifact:c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b",
+          "relative_path": "c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b.pdf"
+        },
+        "png": {
+          "artifact_id": "artifact:2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463",
+          "sha256": "2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463",
+          "bytes": 49676,
+          "media_type": "image/png",
+          "download_path": "/artifacts/artifact:2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463",
+          "relative_path": "2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463.png"
+        }
+      },
+      "renderer_metadata": {
+        "browser_revision": "1248",
+        "browser_version": "156.0.8078.4",
+        "engine_sha256": "40a2c35f157d2c2ab02f6d53b890c656c725fd1640f1ca57085edadf90d39eea",
+        "executable_sha256": "7f08161bbeb2853ffe1780a9ded4985087f52efb9725d7d8207aabdd42f7cfb9",
+        "font_usage": [
+          {
+            "familyName": "Arial",
+            "glyphCount": 92,
+            "isCustomFont": true,
+            "postScriptName": "Arial-BoldMT"
+          },
+          {
+            "familyName": "Arial",
+            "glyphCount": 672,
+            "isCustomFont": true,
+            "postScriptName": "ArialMT"
+          },
+          {
+            "familyName": "Arial",
+            "glyphCount": 82,
+            "isCustomFont": true,
+            "postScriptName": "Arial-ItalicMT"
+          },
+          {
+            "familyName": "Consolas",
+            "glyphCount": 107,
+            "isCustomFont": true,
+            "postScriptName": "Consolas"
+          }
+        ],
+        "fonts": {
+          "Arial": [
+            "5f9f2d8104ad5e69e1be8107224063dc8c36f9e24680b2f9be324244c0b424a1",
+            "3680a1bbffab914f36b27d5fd97b193de5bccfab882c41b41b5f8f99457b4820",
+            "c30c71d614e143c0d4e42aaf04d9a1f50f90b365a2654eb3f2c6598e5655af08",
+            "77a0b63c5f73eb85923f10359e68b8fc768487ae88ad902a1ea21276954e205b"
+          ],
+          "Consolas": [
+            "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+            "7e8de70c92a891722bd3fbd623db005caab2bfe267e5dab5be46b95a44e0c7f1",
+            "0b5b0484cf69ae973bd39380069f141271a4c9299b8885fa2d13f42aadbefef9",
+            "9bc225ec52aa8f4b88b98bb735b1908bd72c9e31a12139fafcc1bd6c86bed3b4"
+          ]
+        },
+        "height_px": 1056,
+        "html_sha256": "1caa543427845effaaf6e33ee3caccea7741526a0d1cd240f3aa19df68ca9699",
+        "playwright": "1.64.1",
+        "profile": {
+          "code_font_family": "Consolas",
+          "formats": [
+            "png",
+            "pdf"
+          ],
+          "locale": "en-US",
+          "margin_mpt": 36000,
+          "max_height_px": 12000,
+          "schema_version": "docstream.render/1",
+          "show_title": true
+        },
+        "renderer": "docstream.html/1",
+        "semantic_sha256": "3adf54cb0b34673f1f5915e592521e0a1d9390eff8348491596fc7993ac98f91",
+        "width_px": 816
+      },
+      "actual_renders": 1,
+      "worker_starts": 1
+    }
+  },
+  "transformation": {
+    "ok": true,
+    "job_id": "job:952287bffbe147978ad51e956767e9d0",
+    "state": "completed",
+    "result": {
+      "candidate_id": "batch:4aa46acb345f4e06b131ae03c2af0031",
+      "result_stream_id": "stream:ccb1240706d94a6789f52c3a3d41c586",
+      "output_stream_ids": [
+        "stream:e78b62bea0c547e79f746ebd92a24e31",
+        "stream:2df056fa32e145eb8aba985d6b0f5759",
+        "stream:64c762ab50684c0caa240d42ef1a4d06",
+        "stream:ccb1240706d94a6789f52c3a3d41c586"
+      ],
+      "plan_sha256": "19624c2d28b0741c7662c7f26d94e6f6816dc8b506b1f66a64f107ddb6ebdbaa",
+      "requested_operations": 4,
+      "property_writes": 0,
+      "structural_operations": 0,
+      "reduction_count": 10,
+      "committed": false,
+      "visual_state": "not_rendered"
+    }
+  },
+  "rendered_commit": {
+    "ok": true,
+    "job_id": "job:2c74f8bdf57c4f0da0da3107c0d41217",
+    "state": "completed",
+    "result": {
+      "stream_id": "stream:ccb1240706d94a6789f52c3a3d41c586",
+      "candidate_id": "batch:4aa46acb345f4e06b131ae03c2af0031",
+      "cache_hit": true,
+      "visual_state": "ready",
+      "committed": true,
+      "semantic_sha256": "3adf54cb0b34673f1f5915e592521e0a1d9390eff8348491596fc7993ac98f91",
+      "cache_key": "4ea20e35604832c2278f14a956ab603c6a0e1c4d7e649a27e5f8ec9b95a8c5a0",
+      "artifacts": {
+        "pdf": {
+          "artifact_id": "artifact:c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b",
+          "sha256": "c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b",
+          "bytes": 68493,
+          "media_type": "application/pdf",
+          "download_path": "/artifacts/artifact:c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b",
+          "relative_path": "c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b.pdf"
+        },
+        "png": {
+          "artifact_id": "artifact:2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463",
+          "sha256": "2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463",
+          "bytes": 49676,
+          "media_type": "image/png",
+          "download_path": "/artifacts/artifact:2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463",
+          "relative_path": "2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463.png"
+        }
+      },
+      "renderer_metadata": {
+        "browser_revision": "1248",
+        "browser_version": "156.0.8078.4",
+        "engine_sha256": "40a2c35f157d2c2ab02f6d53b890c656c725fd1640f1ca57085edadf90d39eea",
+        "executable_sha256": "7f08161bbeb2853ffe1780a9ded4985087f52efb9725d7d8207aabdd42f7cfb9",
+        "font_usage": [
+          {
+            "familyName": "Arial",
+            "glyphCount": 92,
+            "isCustomFont": true,
+            "postScriptName": "Arial-BoldMT"
+          },
+          {
+            "familyName": "Arial",
+            "glyphCount": 672,
+            "isCustomFont": true,
+            "postScriptName": "ArialMT"
+          },
+          {
+            "familyName": "Arial",
+            "glyphCount": 82,
+            "isCustomFont": true,
+            "postScriptName": "Arial-ItalicMT"
+          },
+          {
+            "familyName": "Consolas",
+            "glyphCount": 107,
+            "isCustomFont": true,
+            "postScriptName": "Consolas"
+          }
+        ],
+        "fonts": {
+          "Arial": [
+            "5f9f2d8104ad5e69e1be8107224063dc8c36f9e24680b2f9be324244c0b424a1",
+            "3680a1bbffab914f36b27d5fd97b193de5bccfab882c41b41b5f8f99457b4820",
+            "c30c71d614e143c0d4e42aaf04d9a1f50f90b365a2654eb3f2c6598e5655af08",
+            "77a0b63c5f73eb85923f10359e68b8fc768487ae88ad902a1ea21276954e205b"
+          ],
+          "Consolas": [
+            "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+            "7e8de70c92a891722bd3fbd623db005caab2bfe267e5dab5be46b95a44e0c7f1",
+            "0b5b0484cf69ae973bd39380069f141271a4c9299b8885fa2d13f42aadbefef9",
+            "9bc225ec52aa8f4b88b98bb735b1908bd72c9e31a12139fafcc1bd6c86bed3b4"
+          ]
+        },
+        "height_px": 1056,
+        "html_sha256": "1caa543427845effaaf6e33ee3caccea7741526a0d1cd240f3aa19df68ca9699",
+        "playwright": "1.64.1",
+        "profile": {
+          "code_font_family": "Consolas",
+          "formats": [
+            "png",
+            "pdf"
+          ],
+          "locale": "en-US",
+          "margin_mpt": 36000,
+          "max_height_px": 12000,
+          "schema_version": "docstream.render/1",
+          "show_title": true
+        },
+        "renderer": "docstream.html/1",
+        "semantic_sha256": "3adf54cb0b34673f1f5915e592521e0a1d9390eff8348491596fc7993ac98f91",
+        "width_px": 816
+      },
+      "actual_renders": 1,
+      "worker_starts": 1,
+      "head": {
+        "document_id": "document:6be9858505ec4e1e8f1b021f2ed1499e",
+        "stream_id": "stream:ccb1240706d94a6789f52c3a3d41c586",
+        "revision": 1
+      }
+    }
+  },
+  "artifact_files": {
+    "pdf": "<source-workspace>\\.docstream\\visual-example\\artifacts\\c9b80ad4e5c462c1fcbf3c4912065b7d3321aac74736c86b12bb9b1c08eb969b.pdf",
+    "png": "<source-workspace>\\.docstream\\visual-example\\artifacts\\2130ddb61842c2da9859f898b2bd523f4e2d66905cd0c7da47aeb06419536463.png"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "requested_fonts": [
+    "B",
+    "A",
+    "C",
+    "A"
+  ],
+  "original_font": "A",
+  "result_font": "A",
+  "requested_operations": 4,
+  "logical_outputs": 4,
+  "reference_property_writes": 8,
+  "reduced_property_writes": 0,
+  "same_semantic_digest": true,
+  "distinct_result_stream": true,
+  "stored_payload_count": 1,
+  "visual_state": "not_rendered",
+  "durability": "memory_only",
+  "plan": {
+    "base_sha256": "cf6c5a1fca0fe284353f9affcb9cbc9e8ad379128fbd754f59074097be8d7861",
+    "batch": {
+      "schema_version": "docstream.batch/1",
+      "base_sha256": "cf6c5a1fca0fe284353f9affcb9cbc9e8ad379128fbd754f59074097be8d7861",
+      "operations": [
+        {
+          "operation_id": "font0",
+          "version": 1,
+          "kind": "set_font",
+          "font_family": "B",
+          "scope": "all_text"
+        },
+        {
+          "operation_id": "font1",
+          "version": 1,
+          "kind": "set_font",
+          "font_family": "A",
+          "scope": "all_text"
+        },
+        {
+          "operation_id": "font2",
+          "version": 1,
+          "kind": "set_font",
+          "font_family": "C",
+          "scope": "all_text"
+        },
+        {
+          "operation_id": "font3",
+          "version": 1,
+          "kind": "set_font",
+          "font_family": "A",
+          "scope": "all_text"
+        }
+      ]
+    },
+    "steps": [],
+    "reductions": [
+      {
+        "rule_id": "RED-03",
+        "operation_ids": [
+          "font0",
+          "font1",
+          "font2",
+          "font3"
+        ],
+        "cells": [
+          [
+            "document",
+            "",
+            "font_family"
+          ]
+        ],
+        "reason": "exact assignment state returns to region input"
+      },
+      {
+        "rule_id": "RED-03",
+        "operation_ids": [
+          "font0",
+          "font1",
+          "font2",
+          "font3"
+        ],
+        "cells": [
+          [
+            "block",
+            "body",
+            "font_family"
+          ]
+        ],
+        "reason": "exact assignment state returns to region input"
+      }
+    ],
+    "dependencies": [
+      {
+        "before": "font0",
+        "after": "font1",
+        "reason": "same-property source order"
+      },
+      {
+        "before": "font0",
+        "after": "font1",
+        "reason": "same-property source order"
+      },
+      {
+        "before": "font1",
+        "after": "font2",
+        "reason": "same-property source order"
+      },
+      {
+        "before": "font1",
+        "after": "font2",
+        "reason": "same-property source order"
+      },
+      {
+        "before": "font2",
+        "after": "font3",
+        "reason": "same-property source order"
+      },
+      {
+        "before": "font2",
+        "after": "font3",
+        "reason": "same-property source order"
+      }
+    ],
+    "expected_output_sha256": "cf6c5a1fca0fe284353f9affcb9cbc9e8ad379128fbd754f59074097be8d7861",
+    "optimizer_version": "docstream.cpu.reducer/1",
+    "reserved_block_ids": [
+      "body"
+    ],
+    "plan_sha256": "93a35dca7b98cecd0708bd3537fda5af63b6f6588083931d3bde0f50301086e3",
+    "requested_operations": 4,
+    "property_writes": 0,
+    "structural_operations": 0
+  }
+}

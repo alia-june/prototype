@@ -1,0 +1,97 @@
+{
+  "register_format": "strmdocx-source-register/1",
+  "created": "2026-10-31",
+  "scope": "Approved three-archive Holon, Holoquary, UPTI and UPST mining scope",
+  "production_clearance": {
+    "proposal": "Revised three-archive mining scope, four additional reports, isolated supplied-test reruns and stated exclusions",
+    "user_reply": "yes",
+    "date": "2026-10-31"
+  },
+  "precedence": [
+    "CHAT-CURRENT",
+    "HDH-0930 current decisions",
+    "HDH-0930 consolidated design and open questions",
+    "UPTI-02 candidate boundary and observed implementation",
+    "UPST-01 historical application contract",
+    "UPTI-SF-HIST inactive historical specification",
+    "prior-wrapper historical material"
+  ],
+  "sources": [
+    {
+      "source_id": "CHAT-CURRENT",
+      "kind": "direct_user_decision",
+      "locator": "Current chat, 2026-10-31",
+      "status": "CURRENT_CONTROLLING",
+      "relevant_wording": "everything is by reference",
+      "limits": "The exact reference-record, occurrence, relationship, metadata and storage representations remain unresolved."
+    },
+    {
+      "source_id": "HDH-0930",
+      "kind": "design_handoff_archive",
+      "path": "C:/Users/<local-user>/Desktop/Holon-Design-Handoff-2026-09-30.zip",
+      "sha256": "18ece103876b5e0160305e46de519f46aa998d96bc272fb767c6687a778aab38",
+      "bytes": 42644,
+      "archive_entries": 16,
+      "manifest_covered_entries": 15,
+      "manifest_failures": 0,
+      "status": "PRIMARY_DESIGN_EVIDENCE",
+      "governing_files": [
+        "README.md",
+        "FULL_HOLON_DESIGN.md",
+        "BASIC_CONTINUATION.md",
+        "DECISIONS_AND_OPEN_QUESTIONS.md",
+        "HOLON_DESIGN_RECORD.json",
+        "RESEARCH_NOTES.md",
+        "VALIDATION_NOTES.md"
+      ],
+      "historical_subtree": "prior-wrapper/",
+      "limits": "A consolidation and ledger, not an implementation, complete transcript, completed structure catalog or operating authority."
+    },
+    {
+      "source_id": "UPTI-02",
+      "kind": "candidate_local_handoff_archive",
+      "path": "C:/Users/<local-user>/Desktop/holoquary_upti_handoff_v0_2_candidate.zip",
+      "sha256": "72dca130208f12a4dd226b128ace15db5f153b0c93bcd09c0975f8064abf0d04",
+      "bytes": 53254,
+      "archive_entries": 34,
+      "manifest_covered_entries": 33,
+      "manifest_failures": 0,
+      "status": "CANDIDATE_LOCAL_APPLICATION_BOUNDARY_ONLY",
+      "transport_conformance": "NOT_CLAIMED",
+      "authority": "Assistant-generated proposal; not a canonical lock",
+      "limits": "No UPTI transport, authenticated peer, delivery, external receipt, cryptographic identity or independent attestation."
+    },
+    {
+      "source_id": "UPST-01",
+      "kind": "historical_candidate_application_contract",
+      "path": "C:/Users/<local-user>/Desktop/holoquary_upst_payload_v0_1_contract.zip",
+      "sha256": "a6dcea2906d2d0a05c986818ec437f7baa767530017413cc51ded85363704c2c",
+      "bytes": 16469,
+      "archive_entries": 14,
+      "manifest_covered_entries": 13,
+      "manifest_failures": 0,
+      "status": "HISTORICAL_CANDIDATE",
+      "terminology": "UPST is the preserved older spelling; UPTI is the later correction.",
+      "limits": "Nonrecursive application payload only; not a transport, universal Holon schema or accepted UPTI protocol."
+    },
+    {
+      "source_id": "UPTI-SF-HIST",
+      "kind": "nested_historical_specification",
+      "container": "UPTI-02/reference/UPTI-SF_SPEC_EXPORT_NOT_USED_2026-10-02.zip",
+      "sha256": "c6d5f895b96c128bc33b99e37efcc1a3f4d8385451bcf980d0f16c1eb3afbd33",
+      "archive_entries": 10,
+      "manifest_covered_entries": 9,
+      "manifest_failures": 0,
+      "status": "NOT_USED_INACTIVE_EXCLUDED",
+      "limits": "Specification and historical validation claims only; historical runtime and complete test corpus are absent."
+    },
+    {
+      "source_id": "HQ12-MISSING",
+      "kind": "referenced_but_not_supplied_source",
+      "filename": "holoquary_separated_v1_2_source.zip",
+      "recorded_sha256": "183feda8ab72d4e2d098d4ccd72f20903a45941c487d87103a2d25112378c441",
+      "status": "NOT_INSPECTED_NOT_BUNDLED",
+      "limits": "The digest is a source claim in UPTI-02; no content or independent byte verification was available."
+    }
+  ]
+}

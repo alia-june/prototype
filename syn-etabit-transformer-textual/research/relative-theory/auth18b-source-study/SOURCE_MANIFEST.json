@@ -1,0 +1,113 @@
+{
+  "schema": "docstream.relative-theory.source-manifest/1",
+  "auth": "AUTH-18B",
+  "status": "PARTIAL_GOVERNING_SOURCE_MISSING",
+  "generated": "2026-10-30",
+  "records": [
+    {
+      "path": "auth18a_sample_analysis.json",
+      "bytes": 4174,
+      "sha256": "d1840300bff396cad961a2edfc6e567a434e1a25185228463dabf86d85196cf5"
+    },
+    {
+      "path": "AUTH18A_SAMPLE_ANALYSIS.md",
+      "bytes": 1202,
+      "sha256": "2264236af9d710052f7a1aa8ae981247e74036215f67915f78a74b6610d98ed2"
+    },
+    {
+      "path": "CONTRADICTIONS_GAPS_AND_ANTI_LESSONS.md",
+      "bytes": 1313,
+      "sha256": "05e3d2bde6b7febc1c4cf0ecf19bb7131876cd96481624dd34232e035fc608ca"
+    },
+    {
+      "path": "DECODE_BOUNDARY.md",
+      "bytes": 1287,
+      "sha256": "1853ff6269346ad891ec7799004fe0fb0744a7d8a16e8a6d338181f55336e272"
+    },
+    {
+      "path": "generic_relation_catalog.json",
+      "bytes": 4847,
+      "sha256": "86b995267b212da83f7ab4812b72bbb8a800e8792cac68a861fcc3937b0d700e"
+    },
+    {
+      "path": "GENERIC_RELATION_CATALOG.md",
+      "bytes": 1028,
+      "sha256": "ea13f0d1e3e7df23e092262378d6beba1f32332187a2c9ff9db084441cbb3ef9"
+    },
+    {
+      "path": "grammar_syntax_theory_catalog.json",
+      "bytes": 5187,
+      "sha256": "c869f171ae80348fcbb789349617339ba9e919a6c9c12cab4864c287a04ed5fc"
+    },
+    {
+      "path": "GRAMMAR_SYNTAX_THEORY_CATALOG.md",
+      "bytes": 1108,
+      "sha256": "dbd88cb6ab62d616b27baa4dc1f5da7b35ddd2f75c77e60c3f9c1a75ffdd1beb"
+    },
+    {
+      "path": "inspection_index.json",
+      "bytes": 1534,
+      "sha256": "ff24ac35af2f9c706375588aaf387c21295d355c4fdc89c912e628a1d0564f6f"
+    },
+    {
+      "path": "inspector\\app.js",
+      "bytes": 4426,
+      "sha256": "3c038ef657f16fefef022819d26d7c0676cb69cb0b8b57035498d3ee7e85e05e"
+    },
+    {
+      "path": "inspector\\data.js",
+      "bytes": 32207,
+      "sha256": "8b8dbc62b78ae391d9d400c3db80342346ada2ca88970a6f9e5e6a7289d836b0"
+    },
+    {
+      "path": "inspector\\index.html",
+      "bytes": 2854,
+      "sha256": "d109593f2be55537698a4b2e83566de5ea88e4b5feac347efb3a01656f1c8fda"
+    },
+    {
+      "path": "inspector\\INSPECTOR_MANIFEST.json",
+      "bytes": 698,
+      "sha256": "95828d9d6b9ac8329d7a1e2decc1e54c488ad23f8621b92f8a0047c4ec54cac3"
+    },
+    {
+      "path": "inspector\\styles.css",
+      "bytes": 5296,
+      "sha256": "62127a16eceb932ebdda04c737fec420b5e8fc69bc0b1b071d7f8c42d35259ca"
+    },
+    {
+      "path": "source_register.json",
+      "bytes": 5277,
+      "sha256": "14845ec67dddab08e5de5786a68177249deb938793e22358e51ee8f30f8699b4"
+    },
+    {
+      "path": "SOURCE_REGISTER.md",
+      "bytes": 2020,
+      "sha256": "fb02850ce7b80698e4314b7c134bcf325d7f028aac789813b6cfa0695ae06b1d"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 2542,
+      "sha256": "274c496ca68724e16cc4fe7df987d7253d581eaa5902d871cd8264804a14d8bb"
+    },
+    {
+      "path": "wordnet_relation_catalog.json",
+      "bytes": 7899,
+      "sha256": "fd0247b777ac5f98408ff698ee7a8a491c8d2aad3033860bd1ea1c72d500cf41"
+    },
+    {
+      "path": "WORDNET_RELATION_CATALOG.md",
+      "bytes": 1255,
+      "sha256": "2ae969f9c727ac8dd9d0a3cde5f9e085ef58a6b3d0a688c2e384f599e4c0f3af"
+    },
+    {
+      "path": "wordnet_theory_crosswalk.json",
+      "bytes": 5214,
+      "sha256": "1a8931ff7b067fae65c4c38d01e754ced1352e87ae3c69974f3365f4b61f4001"
+    },
+    {
+      "path": "WORDNET_THEORY_CROSSWALK.md",
+      "bytes": 1109,
+      "sha256": "f833c86237a702c04bc4901fdd1a6e673a902be0d57d5a5f411b8f82bc04fa95"
+    }
+  ]
+}

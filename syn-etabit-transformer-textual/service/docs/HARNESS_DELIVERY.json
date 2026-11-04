@@ -1,0 +1,113 @@
+{
+  "recorded_utc": "2026-10-29T13:43:07.793696+00:00",
+  "harness": "docstream.harness/1",
+  "product": "docstream-cpu 0.2.0.dev4",
+  "harness_scope_status": "delivered",
+  "product_result": "failed",
+  "final_run": "<source-workspace>\\.docstream\\harness-runs\\final-validation",
+  "seed": 20261029,
+  "elapsed_seconds": 171.594,
+  "retained_bytes_including_evidence_manifest": 43504760,
+  "render_submissions": 24,
+  "modes": [
+    {
+      "mode": "rigid",
+      "status": "passed",
+      "counts": {
+        "passed": 119
+      },
+      "coverage_complete": true,
+      "metrics": {
+        "render_calls": 18,
+        "service_calls": 0,
+        "render_budget": 25,
+        "fuzzy_cases_requested": 0
+      },
+      "owned_worker_stopped": true
+    },
+    {
+      "mode": "fuzzy",
+      "status": "failed",
+      "counts": {
+        "passed": 476,
+        "failed": 24
+      },
+      "coverage_complete": true,
+      "metrics": {
+        "render_calls": 0,
+        "service_calls": 0,
+        "render_budget": 7,
+        "fuzzy_cases_requested": 500
+      },
+      "owned_worker_stopped": true
+    },
+    {
+      "mode": "torture",
+      "status": "passed",
+      "counts": {
+        "passed": 5
+      },
+      "coverage_complete": true,
+      "metrics": {
+        "render_calls": 6,
+        "service_calls": 1907,
+        "render_budget": 7,
+        "fuzzy_cases_requested": 0
+      },
+      "owned_worker_stopped": true
+    }
+  ],
+  "case_inputs_hash_verified": 624,
+  "failure_groups": {
+    "round-trip changed supported meaning": 5,
+    "'utf-8' codec can't encode character '\\ud800' in position 29: surrogates not allowed": 9,
+    "conversion raised an unclassified exception": 10
+  },
+  "independent_replay_runs": [
+    {
+      "run": "replay-cr",
+      "status": "failed",
+      "counts": {
+        "failed": 1
+      }
+    },
+    {
+      "run": "replay-nul",
+      "status": "failed",
+      "counts": {
+        "failed": 1
+      }
+    },
+    {
+      "run": "replay-surrogate",
+      "status": "failed",
+      "counts": {
+        "failed": 1
+      }
+    }
+  ],
+  "harness_self_tests": {
+    "run": 19,
+    "passed": 19,
+    "failures": 0,
+    "errors": 0,
+    "log": "harness-self-test-final.txt"
+  },
+  "product_source_modules_unchanged": 22,
+  "source_archive_sha256": "4acbdb5ee634ede3067fa2ad7c189afbd051365e6714b72ad03159fd4df8bf72",
+  "original_baseline_files_unchanged": 14,
+  "evidence_files": 1009,
+  "evidence_manifest": "<source-workspace>\\.docstream\\harness-runs\\final-validation\\EVIDENCE_MANIFEST.json",
+  "source_changes_for_product_fixes": false,
+  "agent_control_configuration_changed": false,
+  "limits": {
+    "seconds": 1200,
+    "retained_bytes": 536870912,
+    "generated_cases": 500,
+    "torture_loop_requests": 1800,
+    "torture_total_service_calls": 2000,
+    "clients": 4,
+    "crash_cycles": 20,
+    "combined_render_calls": 25
+  }
+}

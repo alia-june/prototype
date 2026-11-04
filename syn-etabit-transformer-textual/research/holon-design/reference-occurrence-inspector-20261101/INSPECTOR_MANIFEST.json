@@ -1,0 +1,71 @@
+{
+  "manifest_format": "strmdocx-reference-occurrence-inspector-manifest/1",
+  "artifact": "reference-occurrence-inspector-20261101",
+  "created": "2026-11-01",
+  "offline": true,
+  "network_dependencies": [],
+  "manifest_excludes_self": true,
+  "production_clearance": {
+    "scope": "Nine-file offline read-only reference-occurrence inspector, resolved source snapshot, rigid/fuzzy/torture JavaScript harness, browser QA, validation evidence and self-excluding manifest",
+    "user_reply": "yes",
+    "clearance_date": "2026-11-01",
+    "excludes": "Editing, execution, rollback, cancellation, bypass, persistence, service, network, GPU, WordNet/Etabit, agentic integration and existing Docstream runtime changes"
+  },
+  "governing_sources": [
+    {
+      "role": "machine_contract",
+      "path": "../reference-occurrence-pilot-20261101/reference_occurrence_contract.json",
+      "bytes": 3838,
+      "sha256": "a5a22653b719a9057dbc226751a946fdffb6beb463392ad0f7c9b8a02a126bda"
+    },
+    {
+      "role": "pilot_fixture",
+      "path": "../reference-occurrence-pilot-20261101/reference_occurrence_fixture.json",
+      "bytes": 2569,
+      "sha256": "b605410ead9f1bf40c58b66c397269e9e4ffa6289ca1697b8f4c6f8cc890c7a5"
+    }
+  ],
+  "files": [
+    {
+      "path": "app.js",
+      "bytes": 12154,
+      "sha256": "3556ddf5f5ebe6961f5dcc50834a95f22e7f85135aab7b5d915b6c734a7a053d"
+    },
+    {
+      "path": "data.js",
+      "bytes": 7649,
+      "sha256": "ccf2d6b2f0d104825b69561462c6af10bd8336b85f3db5fd7a395b0b9a0128e5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 7590,
+      "sha256": "24b39e5614c3c43d2d7f6309b122ba42f0d8c9b7a768a989617f324c79864277"
+    },
+    {
+      "path": "inspector-core.js",
+      "bytes": 25648,
+      "sha256": "2380d72176c44858953fa0ffb49d836089c04384f55fda72e92e0c21c59d1d9c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3494,
+      "sha256": "8406ac4608e0b42a626c1d1e6201ffa4d8356edecda71e31646c025b542df8e6"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 15817,
+      "sha256": "2e878a06e8c99deb53c3a3b774c6bc52a61e0acd2c6ea8973889f47080774512"
+    },
+    {
+      "path": "test_inspector.mjs",
+      "bytes": 14222,
+      "sha256": "e963a0c5d04ab2ea4f34b96978cd5acde895bf00711020a2dec7219b5a2fb769"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 10517,
+      "sha256": "3ecc1838b58b9e5cbe9d8503e21c44d8cea333be771e20fc2d5901abb2fcfbeb"
+    }
+  ],
+  "proof_limit": "Sizes and SHA-256 values establish byte identity for the named sources and outputs only. Browser and harness results establish only the stated bounded observations; they do not establish authority, authorship, universal schema adoption, runtime integration, security certification or independent attestation."
+}

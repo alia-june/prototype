@@ -1,0 +1,51 @@
+test_comments_tracked_changes_and_merged_cells_reported (test_formats.DocxTests.test_comments_tracked_changes_and_merged_cells_reported) ... ok
+test_external_image_relationship_is_not_fetched (test_formats.DocxTests.test_external_image_relationship_is_not_fetched) ... ok
+test_font_half_point_rounding_is_reported (test_formats.DocxTests.test_font_half_point_rounding_is_reported) ... ok
+test_heading_title_separate (test_formats.DocxTests.test_heading_title_separate) ... ok
+test_supported_docx_roundtrip (test_formats.DocxTests.test_supported_docx_roundtrip) ... ok
+test_unsupported_run_color_reports_loss (test_formats.DocxTests.test_unsupported_run_color_reports_loss) ... ok
+test_zip_paths_duplicates_entities_and_expansion_rejected (test_formats.DocxTests.test_zip_paths_duplicates_entities_and_expansion_rejected) ... FAIL
+test_real_mcp_import_export_and_authenticated_download (test_formats.FormatNetworkTests.test_real_mcp_import_export_and_authenticated_download) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:56128/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:56128/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:56128/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:56128/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:56128/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:56128/mcp "HTTP/1.1 200 OK"
+StreamableHTTP session manager shutting down
+ok
+test_export_file_failure_is_atomic_and_receipt_durable (test_formats.FormatServiceTests.test_export_file_failure_is_atomic_and_receipt_durable) ... ok
+test_export_retry_bundle_reimport_and_head_unchanged (test_formats.FormatServiceTests.test_export_retry_bundle_reimport_and_head_unchanged) ... ok
+test_import_retry_source_assets_and_restart (test_formats.FormatServiceTests.test_import_retry_source_assets_and_restart) ... ok
+test_loss_reject_then_explicit_allow (test_formats.FormatServiceTests.test_loss_reject_then_explicit_allow) ... ok
+test_missing_export_is_reported_and_new_key_repairs (test_formats.FormatServiceTests.test_missing_export_is_reported_and_new_key_repairs) ... ok
+test_request_key_conflict_and_size_limits (test_formats.FormatServiceTests.test_request_key_conflict_and_size_limits) ... ok
+test_structure_can_navigate_table_cell_runs (test_formats.FormatServiceTests.test_structure_can_navigate_table_cell_runs) ... ok
+test_version_one_persisted_plan_still_loads (test_formats.FormatServiceTests.test_version_one_persisted_plan_still_loads) ... ok
+test_html_quotes_code_metadata_and_missing_images_reported (test_formats.MarkdownTests.test_html_quotes_code_metadata_and_missing_images_reported) ... ok
+test_markdown_bundle_roundtrip_content (test_formats.MarkdownTests.test_markdown_bundle_roundtrip_content) ... ok
+test_markdown_escaping_does_not_create_structure (test_formats.MarkdownTests.test_markdown_escaping_does_not_create_structure) ... ok
+test_nonheader_table_does_not_promote_data (test_formats.MarkdownTests.test_nonheader_table_does_not_promote_data) ... ok
+test_supported_parse_and_source_levels (test_formats.MarkdownTests.test_supported_parse_and_source_levels) ... ok
+test_font_reduction_covers_runs_and_cells_and_restore (test_formats.RichModelTests.test_font_reduction_covers_runs_and_cells_and_restore) ... ok
+test_guarded_rich_replacement (test_formats.RichModelTests.test_guarded_rich_replacement) ... ok
+test_plain_text_cannot_erase_runs (test_formats.RichModelTests.test_plain_text_cannot_erase_runs) ... ok
+test_rich_model_rejects_mismatched_text_and_skipped_nesting (test_formats.RichModelTests.test_rich_model_rejects_mismatched_text_and_skipped_nesting) ... ok
+test_table_header_is_explicit (test_formats.RichModelTests.test_table_header_is_explicit) ... ok
+test_unsafe_links_are_rejected (test_formats.RichModelTests.test_unsafe_links_are_rejected) ... ok
+test_version_one_bytes_and_digest_remain_exact (test_formats.RichModelTests.test_version_one_bytes_and_digest_remain_exact) ... ok
+test_actual_browser_rich_content_and_cached_reuse (test_formats.RichRenderingTests.test_actual_browser_rich_content_and_cached_reuse) ... ok
+
+======================================================================
+FAIL: test_zip_paths_duplicates_entities_and_expansion_rejected (test_formats.DocxTests.test_zip_paths_duplicates_entities_and_expansion_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<source-workspace>\service\tests\test_formats.py", line 227, in test_zip_paths_duplicates_entities_and_expansion_rejected
+    with self.assertRaises(ModelError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ModelError not raised
+
+----------------------------------------------------------------------
+Ran 29 tests in 4.814s
+
+FAILED (failures=1)

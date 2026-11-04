@@ -1,0 +1,27 @@
+{
+  "schema": "docstream.theory-inspector-manifest/1",
+  "offline": true,
+  "network_dependencies": [],
+  "records": [
+    {
+      "path": "index.html",
+      "bytes": 2854,
+      "sha256": "d109593f2be55537698a4b2e83566de5ea88e4b5feac347efb3a01656f1c8fda"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 5296,
+      "sha256": "62127a16eceb932ebdda04c737fec420b5e8fc69bc0b1b071d7f8c42d35259ca"
+    },
+    {
+      "path": "app.js",
+      "bytes": 4426,
+      "sha256": "3c038ef657f16fefef022819d26d7c0676cb69cb0b8b57035498d3ee7e85e05e"
+    },
+    {
+      "path": "data.js",
+      "bytes": 32207,
+      "sha256": "8b8dbc62b78ae391d9d400c3db80342346ada2ca88970a6f9e5e6a7289d836b0"
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "Snapshot": {
+    "$defs": {
+      "Block": {
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Block Id",
+            "type": "string"
+          },
+          "kind": {
+            "default": "paragraph",
+            "enum": [
+              "paragraph",
+              "heading",
+              "code",
+              "list_item"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "heading_level": {
+            "anyOf": [
+              {
+                "maximum": 6,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Heading Level"
+          },
+          "list_kind": {
+            "anyOf": [
+              {
+                "enum": [
+                  "bullet",
+                  "ordered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "List Kind"
+          }
+        },
+        "required": [
+          "block_id"
+        ],
+        "title": "Block",
+        "type": "object"
+      },
+      "Properties": {
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "default": "",
+            "title": "Title",
+            "type": "string"
+          },
+          "font_family": {
+            "default": "Aptos",
+            "maxLength": 256,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Font Family",
+            "type": "string"
+          },
+          "font_size_mpt": {
+            "default": 11000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Font Size Mpt",
+            "type": "integer"
+          },
+          "page_width_mpt": {
+            "default": 612000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Page Width Mpt",
+            "type": "integer"
+          },
+          "page_height_mpt": {
+            "default": 792000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Page Height Mpt",
+            "type": "integer"
+          }
+        },
+        "title": "Properties",
+        "type": "object"
+      },
+      "Style": {
+        "additionalProperties": false,
+        "properties": {
+          "font_family": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Family"
+          },
+          "font_size_mpt": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0,
+                "maximum": 2000000,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Size Mpt"
+          },
+          "bold": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Bold"
+          },
+          "italic": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Italic"
+          }
+        },
+        "title": "Style",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "docstream.snapshot/1",
+        "default": "docstream.snapshot/1",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "properties": {
+        "$ref": "#/$defs/Properties"
+      },
+      "blocks": {
+        "default": [],
+        "items": {
+          "$ref": "#/$defs/Block"
+        },
+        "title": "Blocks",
+        "type": "array"
+      }
+    },
+    "title": "Snapshot",
+    "type": "object"
+  },
+  "Snapshot2": {
+    "$defs": {
+      "CellText": {
+        "additionalProperties": false,
+        "properties": {
+          "runs": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Span"
+            },
+            "title": "Runs",
+            "type": "array"
+          }
+        },
+        "title": "CellText",
+        "type": "object"
+      },
+      "ImageRef": {
+        "additionalProperties": false,
+        "properties": {
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "title": "Sha256",
+            "type": "string"
+          },
+          "media_type": {
+            "enum": [
+              "image/png",
+              "image/jpeg"
+            ],
+            "title": "Media Type",
+            "type": "string"
+          },
+          "alt": {
+            "default": "",
+            "title": "Alt",
+            "type": "string"
+          },
+          "width_mpt": {
+            "exclusiveMinimum": 0,
+            "maximum": 1000000,
+            "title": "Width Mpt",
+            "type": "integer"
+          },
+          "height_mpt": {
+            "exclusiveMinimum": 0,
+            "maximum": 1000000,
+            "title": "Height Mpt",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "sha256",
+          "media_type",
+          "width_mpt",
+          "height_mpt"
+        ],
+        "title": "ImageRef",
+        "type": "object"
+      },
+      "Properties": {
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "default": "",
+            "title": "Title",
+            "type": "string"
+          },
+          "font_family": {
+            "default": "Aptos",
+            "maxLength": 256,
+            "minLength": 1,
+            "pattern": "\\S",
+            "title": "Font Family",
+            "type": "string"
+          },
+          "font_size_mpt": {
+            "default": 11000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Font Size Mpt",
+            "type": "integer"
+          },
+          "page_width_mpt": {
+            "default": 612000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Page Width Mpt",
+            "type": "integer"
+          },
+          "page_height_mpt": {
+            "default": 792000,
+            "exclusiveMinimum": 0,
+            "maximum": 2000000,
+            "title": "Page Height Mpt",
+            "type": "integer"
+          }
+        },
+        "title": "Properties",
+        "type": "object"
+      },
+      "RichBlock": {
+        "additionalProperties": false,
+        "properties": {
+          "block_id": {
+            "maxLength": 128,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_.:-]+$",
+            "title": "Block Id",
+            "type": "string"
+          },
+          "kind": {
+            "default": "paragraph",
+            "enum": [
+              "paragraph",
+              "heading",
+              "code",
+              "list_item",
+              "table",
+              "image"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "heading_level": {
+            "anyOf": [
+              {
+                "maximum": 6,
+                "minimum": 1,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Heading Level"
+          },
+          "list_kind": {
+            "anyOf": [
+              {
+                "enum": [
+                  "bullet",
+                  "ordered"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "List Kind"
+          },
+          "list_depth": {
+            "default": 0,
+            "maximum": 8,
+            "minimum": 0,
+            "title": "List Depth",
+            "type": "integer"
+          },
+          "list_start": {
+            "default": 1,
+            "maximum": 1000000,
+            "minimum": 0,
+            "title": "List Start",
+            "type": "integer"
+          },
+          "runs": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/Span"
+            },
+            "title": "Runs",
+            "type": "array"
+          },
+          "rows": {
+            "default": [],
+            "items": {
+              "$ref": "#/$defs/TableRow"
+            },
+            "maxItems": 1000,
+            "title": "Rows",
+            "type": "array"
+          },
+          "image": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/ImageRef"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "block_id"
+        ],
+        "title": "RichBlock",
+        "type": "object"
+      },
+      "Span": {
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "default": "",
+            "title": "Text",
+            "type": "string"
+          },
+          "style": {
+            "$ref": "#/$defs/Style"
+          },
+          "code": {
+            "default": false,
+            "title": "Code",
+            "type": "boolean"
+          },
+          "href": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Href"
+          }
+        },
+        "title": "Span",
+        "type": "object"
+      },
+      "Style": {
+        "additionalProperties": false,
+        "properties": {
+          "font_family": {
+            "anyOf": [
+              {
+                "maxLength": 256,
+                "minLength": 1,
+                "pattern": "\\S",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Family"
+          },
+          "font_size_mpt": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0,
+                "maximum": 2000000,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Font Size Mpt"
+          },
+          "bold": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Bold"
+          },
+          "italic": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Italic"
+          }
+        },
+        "title": "Style",
+        "type": "object"
+      },
+      "TableCell": {
+        "additionalProperties": false,
+        "properties": {
+          "paragraphs": {
+            "items": {
+              "$ref": "#/$defs/CellText"
+            },
+            "minItems": 1,
+            "title": "Paragraphs",
+            "type": "array"
+          }
+        },
+        "required": [
+          "paragraphs"
+        ],
+        "title": "TableCell",
+        "type": "object"
+      },
+      "TableRow": {
+        "additionalProperties": false,
+        "properties": {
+          "cells": {
+            "items": {
+              "$ref": "#/$defs/TableCell"
+            },
+            "maxItems": 32,
+            "minItems": 1,
+            "title": "Cells",
+            "type": "array"
+          },
+          "header": {
+            "default": false,
+            "title": "Header",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "cells"
+        ],
+        "title": "TableRow",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {
+        "const": "docstream.snapshot/2",
+        "default": "docstream.snapshot/2",
+        "title": "Schema Version",
+        "type": "string"
+      },
+      "properties": {
+        "$ref": "#/$defs/Properties"
+      },
+      "blocks": {
+        "default": [],
+        "items": {
+          "$ref": "#/$defs/RichBlock"
+        },
+        "title": "Blocks",
+        "type": "array"
+      }
+    },
+    "title": "Snapshot2",
+    "type": "object"
+  }
+}

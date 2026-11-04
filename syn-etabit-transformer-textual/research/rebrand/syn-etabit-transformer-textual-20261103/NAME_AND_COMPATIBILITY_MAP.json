@@ -1,0 +1,62 @@
+{
+  "schema": "syn-etabit-transformer-textual.brand-map/1",
+  "effective_date": "2026-11-03",
+  "authorization": "AUTH-20",
+  "canonical_product_name": "syn-etabit-transformer-textual",
+  "display_name": "Syn-Etabit Transformer — Textual",
+  "spelling": {
+    "current": "Etabit",
+    "historical_typo_retention": "Retain Edabit only where it is original evidence"
+  },
+  "unexpanded_tokens": ["syn"],
+  "former_working_names": ["Docstream", "Strmdocx"],
+  "compatibility_identifiers": [
+    {
+      "surface": "workspace_path",
+      "value": "strmdocx",
+      "phase_1_action": "unchanged"
+    },
+    {
+      "surface": "python_distribution",
+      "value": "docstream-cpu",
+      "phase_1_action": "unchanged"
+    },
+    {
+      "surface": "python_namespace",
+      "value": "docstream_cpu",
+      "phase_1_action": "unchanged"
+    },
+    {
+      "surface": "cli_entry_point",
+      "value": "docstream-local",
+      "phase_1_action": "unchanged"
+    },
+    {
+      "surface": "protocol_schema_family",
+      "value": "docstream.*",
+      "phase_1_action": "unchanged"
+    },
+    {
+      "surface": "local_state_directory",
+      "value": ".docstream",
+      "phase_1_action": "unchanged"
+    }
+  ],
+  "architecture_direction": {
+    "content": "Markdown-first",
+    "governance": "JSON-governed by reference",
+    "output_boundary": "Eject -> Transform -> Ejection",
+    "target_artifacts": "Derived final emissions with receipts",
+    "current_runtime_migrated": false
+  },
+  "historical_preservation": {
+    "rewrite_completed_evidence": false,
+    "rewrite_completed_manifests": false,
+    "rewrite_dated_status": false,
+    "rewrite_protocol_fixtures": false
+  },
+  "future_machine_migration": {
+    "status": "not_authorized",
+    "requires_separate_proposal": true
+  }
+}

@@ -1,0 +1,2809 @@
+{
+  "schema": "syn-etabit.repository-export/1",
+  "generated_date": "2026-11-04",
+  "repository": "alia-june/prototype",
+  "visibility": "private",
+  "project_path": "syn-etabit-transformer-textual/",
+  "source_root": "<source-workspace>",
+  "source_candidate_files": 303,
+  "copied_source_files": 301,
+  "excluded_source_files": 2,
+  "export_files_excluding_manifest": 312,
+  "rules": {
+    "third_party_payloads": "excluded",
+    "environments_and_runtime_state": "excluded",
+    "local_absolute_paths": "replaced in repository variants",
+    "integrations": "documented behind barriers; not activated",
+    "source_originals": "unchanged",
+    "manifest_self_entry": "excluded"
+  },
+  "entries": [
+    {
+      "source_path": "AGENTS.md",
+      "export_path": "syn-etabit-transformer-textual/AGENTS.md",
+      "disposition": "repository_variant",
+      "source_bytes": 9159,
+      "source_sha256": "b71d1f4f841dce9d0c5bacc6af54b9b669030cb3f09d97992c17e8664e204f65",
+      "export_bytes": 3284,
+      "export_sha256": "30eaa6fff633740b5f5f32e791e2253c922c4cfc9d4f58ee5ee85f8ca6805583"
+    },
+    {
+      "source_path": "BRAND.md",
+      "export_path": "syn-etabit-transformer-textual/BRAND.md",
+      "disposition": "repository_variant",
+      "source_bytes": 4273,
+      "source_sha256": "5b092067a3c2ebb08f19e637fc113a9e8c6f9349539a8aa24178accc24f53e5f",
+      "export_bytes": 4249,
+      "export_sha256": "b8ad774a4a3e980d0f87c3de14744f57a6b2bcc941a0d8478ab54c29e9a3e233"
+    },
+    {
+      "source_path": "Cat_Mosaic_32x32_Grid_Guide.png",
+      "disposition": "excluded_unclassified_visual",
+      "source_bytes": 9522,
+      "source_sha256": "f10f90bed81ea8ffaf98d14d03e0732d2aa49468874b7031c2e4e89841d9b964"
+    },
+    {
+      "source_path": "DEVELOPMENT_PLAN.md",
+      "export_path": "syn-etabit-transformer-textual/DEVELOPMENT_PLAN.md",
+      "disposition": "repository_variant",
+      "source_bytes": 47924,
+      "source_sha256": "7e6bb4d830dc695f15bc2885e262cff1c3fa138c4b237feca7d822ed28ccf872",
+      "export_bytes": 47792,
+      "export_sha256": "6a6d04a6c9a402be09b63fda822b6fdedc3b31c67c8479e1151e6ab4d0d4587b"
+    },
+    {
+      "source_path": "PROJECT_ASSESSMENT.md",
+      "export_path": "syn-etabit-transformer-textual/PROJECT_ASSESSMENT.md",
+      "disposition": "repository_variant",
+      "source_bytes": 31686,
+      "source_sha256": "9572f2902b3248ab1fde25e71c1bfdcce91e55da8a8ffa7c6c78e108ebb52ad0",
+      "export_bytes": 31648,
+      "export_sha256": "a810d956caf86c990a1d945ba90acd691c1fd51d7d99397a16beba9f8e4c925e"
+    },
+    {
+      "source_path": "PROJECT_CATALOG.md",
+      "export_path": "syn-etabit-transformer-textual/PROJECT_CATALOG.md",
+      "disposition": "repository_variant",
+      "source_bytes": 13019,
+      "source_sha256": "6ffe268c764421d6443a235c996e275030c2385e01279dc92ceac5662dc2c01c",
+      "export_bytes": 12981,
+      "export_sha256": "927891fbfbd0edd7cced3c2af245656b588dfe99cbbf4d5c3816b22fc8ff0245"
+    },
+    {
+      "source_path": "PROJECT_DECISIONS.md",
+      "export_path": "syn-etabit-transformer-textual/PROJECT_DECISIONS.md",
+      "disposition": "repository_variant",
+      "source_bytes": 41388,
+      "source_sha256": "19b5d1e7cb184a26afbeba104ad9c723cf622638981f453a4fcdec64f389c394",
+      "export_bytes": 42720,
+      "export_sha256": "7c3ee9bc91fde832b86005f9fad9a2ac69d1730b62149b5285e7ad5974907152"
+    },
+    {
+      "source_path": "RESEARCH_NOTES.md",
+      "export_path": "syn-etabit-transformer-textual/RESEARCH_NOTES.md",
+      "disposition": "exact_copy",
+      "source_bytes": 63124,
+      "source_sha256": "75326cc60392bfa809e391ce8778f25a07424bf0f88b13494b6b74db5d574222",
+      "export_bytes": 63124,
+      "export_sha256": "75326cc60392bfa809e391ce8778f25a07424bf0f88b13494b6b74db5d574222"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/CONTRADICTIONS_AND_BLOCKERS.md",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/CONTRADICTIONS_AND_BLOCKERS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 9691,
+      "source_sha256": "b4d815af9b8502306c4bdfa0d746dcd2c40457af41586aa63b0765ab2c510a60",
+      "export_bytes": 9691,
+      "export_sha256": "b4d815af9b8502306c4bdfa0d746dcd2c40457af41586aa63b0765ab2c510a60"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/MINIMUM_INTEGRATION_DECISIONS.md",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/MINIMUM_INTEGRATION_DECISIONS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 8139,
+      "source_sha256": "5378fc74c4bcd5ce7b01dcba39c94244c96db67c80856fcfb2ed4698844f83b6",
+      "export_bytes": 8139,
+      "export_sha256": "5378fc74c4bcd5ce7b01dcba39c94244c96db67c80856fcfb2ed4698844f83b6"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/NAMESPACE_AND_AUTHORITY_BOUNDARIES.md",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/NAMESPACE_AND_AUTHORITY_BOUNDARIES.md",
+      "disposition": "exact_copy",
+      "source_bytes": 9060,
+      "source_sha256": "8b7de154cd7db1d7b20669f9484b7d4b210c1e7126d1d1d1d54f671b2cebf8cc",
+      "export_bytes": 9060,
+      "export_sha256": "8b7de154cd7db1d7b20669f9484b7d4b210c1e7126d1d1d1d54f671b2cebf8cc"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/SOURCE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/SOURCE_MANIFEST.json",
+      "disposition": "repository_variant",
+      "source_bytes": 4780,
+      "source_sha256": "c0e1f476be00914ec591069aa1cf3131c7486b8759a94f67d91f025f0ee67f65",
+      "export_bytes": 4778,
+      "export_sha256": "5b8ed941b841dd737d0beb89015e3d0934a57c953f6e2c3d805a2702df174924"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/source_register.json",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/source_register.json",
+      "disposition": "repository_variant",
+      "source_bytes": 6016,
+      "source_sha256": "4822fb9979c7941dfd03ee38f3edd642cffde0656b104b341481628e57378e38",
+      "export_bytes": 6015,
+      "export_sha256": "836067b26a133b2582ddb7b416f700c8381aec270614594efd43cc9fa275e239"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/SOURCE_REGISTER.md",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/SOURCE_REGISTER.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6093,
+      "source_sha256": "d09f2e44153fadaa4770386a474300ab5d3ecbd2f287c3ff8d7cfe9d39804fa5",
+      "export_bytes": 6093,
+      "export_sha256": "d09f2e44153fadaa4770386a474300ab5d3ecbd2f287c3ff8d7cfe9d39804fa5"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/strmdocx_sf_edabit_crosswalk.json",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/strmdocx_sf_edabit_crosswalk.json",
+      "disposition": "exact_copy",
+      "source_bytes": 14971,
+      "source_sha256": "846187d024ef5d726698b5b7e3b561966854e0bdf795ccd8e14ce3096e7ceec0",
+      "export_bytes": 14971,
+      "export_sha256": "846187d024ef5d726698b5b7e3b561966854e0bdf795ccd8e14ce3096e7ceec0"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/STRMDOCX_SF_EDABIT_CROSSWALK.md",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/STRMDOCX_SF_EDABIT_CROSSWALK.md",
+      "disposition": "exact_copy",
+      "source_bytes": 9834,
+      "source_sha256": "6a1d57e96ee24f861fe052a7e8780ebe48031566bb65662ffdab5b9e21352b4a",
+      "export_bytes": 9834,
+      "export_sha256": "6a1d57e96ee24f861fe052a7e8780ebe48031566bb65662ffdab5b9e21352b4a"
+    },
+    {
+      "source_path": "research/etabit-alignment/auth20a-20261031/VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/research/etabit-alignment/auth20a-20261031/VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6346,
+      "source_sha256": "58caff0147a0dc5cb89c2796712292edf22cbebdba22845769befd44d1e5c829",
+      "export_bytes": 6346,
+      "export_sha256": "58caff0147a0dc5cb89c2796712292edf22cbebdba22845769befd44d1e5c829"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/DECISIONS_CONFLICTS_AND_OPEN_QUESTIONS.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/DECISIONS_CONFLICTS_AND_OPEN_QUESTIONS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6015,
+      "source_sha256": "34d502267b5a65763eee10bd69f8c88ecc3dde3c6b1488fa18787509856a7916",
+      "export_bytes": 6015,
+      "export_sha256": "34d502267b5a65763eee10bd69f8c88ecc3dde3c6b1488fa18787509856a7916"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/holon_mining_catalog.json",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/holon_mining_catalog.json",
+      "disposition": "exact_copy",
+      "source_bytes": 32660,
+      "source_sha256": "d7128a0a655e74d4b82401208ed75f976570e6bab283d850cc31ff9959ef659c",
+      "export_bytes": 32660,
+      "export_sha256": "d7128a0a655e74d4b82401208ed75f976570e6bab283d850cc31ff9959ef659c"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/HOLON_MINING_CATALOG.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/HOLON_MINING_CATALOG.md",
+      "disposition": "exact_copy",
+      "source_bytes": 5600,
+      "source_sha256": "42ee8bf8fadf40c8765034bbe94ff12b341a4eae63ad6539a06709cd8182261b",
+      "export_bytes": 5600,
+      "export_sha256": "42ee8bf8fadf40c8765034bbe94ff12b341a4eae63ad6539a06709cd8182261b"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/PATTERNS_ANTI_PATTERNS_AND_ANTI_LESSONS.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/PATTERNS_ANTI_PATTERNS_AND_ANTI_LESSONS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6153,
+      "source_sha256": "f484e2fd7c04aea8a0529d96e0ef9ac9b7a6f62659ae6606a07856c440ebfeb7",
+      "export_bytes": 6153,
+      "export_sha256": "f484e2fd7c04aea8a0529d96e0ef9ac9b7a6f62659ae6606a07856c440ebfeb7"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/PAYLOAD_AND_REFERENCE_BOUNDARY.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/PAYLOAD_AND_REFERENCE_BOUNDARY.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4232,
+      "source_sha256": "9f8e16236c8dae6216d9cb112dd6f9c9f5c17a68146fabbcd4b8a45e09950403",
+      "export_bytes": 4232,
+      "export_sha256": "9f8e16236c8dae6216d9cb112dd6f9c9f5c17a68146fabbcd4b8a45e09950403"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/REFERENCE_MODEL.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/REFERENCE_MODEL.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6480,
+      "source_sha256": "6feb508080748a4edcfe75442dd036b5a45897a764744e719614372d46e05883",
+      "export_bytes": 6480,
+      "export_sha256": "6feb508080748a4edcfe75442dd036b5a45897a764744e719614372d46e05883"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/SOURCE_LINEAGE_AND_DUPLICATION.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/SOURCE_LINEAGE_AND_DUPLICATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 2709,
+      "source_sha256": "53ac5d2d03bc49d8712283aa9ba2887b6133a8a30beb4d1b5d2ff81bdd3b8e81",
+      "export_bytes": 2709,
+      "export_sha256": "53ac5d2d03bc49d8712283aa9ba2887b6133a8a30beb4d1b5d2ff81bdd3b8e81"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/SOURCE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/SOURCE_MANIFEST.json",
+      "disposition": "repository_variant",
+      "source_bytes": 3873,
+      "source_sha256": "284e75db127e1b62bae3f61814cbf0d707defea7b671f0b80b388799b493ec5c",
+      "export_bytes": 3870,
+      "export_sha256": "62efba82b3cc0ab19d54f215f29a716ecf954df3a0b31d11d5644efe4887adc3"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/source_register.json",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/source_register.json",
+      "disposition": "repository_variant",
+      "source_bytes": 4246,
+      "source_sha256": "40a1c0902153fc83ae85fb295d09ba5432771b88f84bb0a7bc985ce4d62bf2b0",
+      "export_bytes": 4243,
+      "export_sha256": "3cb29664fbe431b2b97f36a11cf1bbf585ec29a86e87d213482a0c9cb2b72cfe"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/SOURCE_REGISTER.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/SOURCE_REGISTER.md",
+      "disposition": "exact_copy",
+      "source_bytes": 5596,
+      "source_sha256": "fcba0a00b76e7f6a8cdbfb5e865ceec95c72077f6a34035ccbb42dc77ef6e3eb",
+      "export_bytes": 5596,
+      "export_sha256": "fcba0a00b76e7f6a8cdbfb5e865ceec95c72077f6a34035ccbb42dc77ef6e3eb"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/STRMDOCX_HOLON_CROSSWALK.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/STRMDOCX_HOLON_CROSSWALK.md",
+      "disposition": "exact_copy",
+      "source_bytes": 5512,
+      "source_sha256": "a78fc7eeefd890814ba0f0d8208ccd39562e4466fcca75e84388503870a93dad",
+      "export_bytes": 5512,
+      "export_sha256": "a78fc7eeefd890814ba0f0d8208ccd39562e4466fcca75e84388503870a93dad"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/STRUCTURES_AND_EDIFICES.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/STRUCTURES_AND_EDIFICES.md",
+      "disposition": "exact_copy",
+      "source_bytes": 5152,
+      "source_sha256": "043647dd488ff295d43869a5eff2ef69a151c7563f39d7f48a10047d5d9c35e6",
+      "export_bytes": 5152,
+      "export_sha256": "043647dd488ff295d43869a5eff2ef69a151c7563f39d7f48a10047d5d9c35e6"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/TEST_EVIDENCE_AND_PROOF_LIMITS.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/TEST_EVIDENCE_AND_PROOF_LIMITS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3418,
+      "source_sha256": "1834732e844183a02e546e2f629dc87c40a1d7f1dfaa7ac2e10b39f34c7b6cdf",
+      "export_bytes": 3418,
+      "export_sha256": "1834732e844183a02e546e2f629dc87c40a1d7f1dfaa7ac2e10b39f34c7b6cdf"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/UPTI_UPST_CANDIDATE_ASSESSMENT.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/UPTI_UPST_CANDIDATE_ASSESSMENT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4304,
+      "source_sha256": "9d50e29f6fad50f5c20db3ab4cead9f3d1d1ac494130646f8f80310e3b153696",
+      "export_bytes": 4304,
+      "export_sha256": "9d50e29f6fad50f5c20db3ab4cead9f3d1d1ac494130646f8f80310e3b153696"
+    },
+    {
+      "source_path": "research/holon-design/handoff-20260930-mining-20261031/VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/handoff-20260930-mining-20261031/VALIDATION.md",
+      "disposition": "repository_variant",
+      "source_bytes": 5084,
+      "source_sha256": "2c2374e7d0969e17b2b01ae8061d493d6b87b74147385c0855fb5e4ba3dac6af",
+      "export_bytes": 5079,
+      "export_sha256": "a4303947c30848a08ccc7460b74b10a2bbcdd525adbf11c15ef08bfeefd69adf"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/app.js",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/app.js",
+      "disposition": "exact_copy",
+      "source_bytes": 12154,
+      "source_sha256": "3556ddf5f5ebe6961f5dcc50834a95f22e7f85135aab7b5d915b6c734a7a053d",
+      "export_bytes": 12154,
+      "export_sha256": "3556ddf5f5ebe6961f5dcc50834a95f22e7f85135aab7b5d915b6c734a7a053d"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/data.js",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/data.js",
+      "disposition": "exact_copy",
+      "source_bytes": 7649,
+      "source_sha256": "ccf2d6b2f0d104825b69561462c6af10bd8336b85f3db5fd7a395b0b9a0128e5",
+      "export_bytes": 7649,
+      "export_sha256": "ccf2d6b2f0d104825b69561462c6af10bd8336b85f3db5fd7a395b0b9a0128e5"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/index.html",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/index.html",
+      "disposition": "exact_copy",
+      "source_bytes": 7590,
+      "source_sha256": "24b39e5614c3c43d2d7f6309b122ba42f0d8c9b7a768a989617f324c79864277",
+      "export_bytes": 7590,
+      "export_sha256": "24b39e5614c3c43d2d7f6309b122ba42f0d8c9b7a768a989617f324c79864277"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/INSPECTOR_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/INSPECTOR_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 2752,
+      "source_sha256": "9d1aac3d815c1bdd39fda259ac7125ea6422d370d40cb6699de799875db69b22",
+      "export_bytes": 2752,
+      "export_sha256": "9d1aac3d815c1bdd39fda259ac7125ea6422d370d40cb6699de799875db69b22"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/inspector-core.js",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/inspector-core.js",
+      "disposition": "exact_copy",
+      "source_bytes": 25648,
+      "source_sha256": "2380d72176c44858953fa0ffb49d836089c04384f55fda72e92e0c21c59d1d9c",
+      "export_bytes": 25648,
+      "export_sha256": "2380d72176c44858953fa0ffb49d836089c04384f55fda72e92e0c21c59d1d9c"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/README.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/README.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3494,
+      "source_sha256": "8406ac4608e0b42a626c1d1e6201ffa4d8356edecda71e31646c025b542df8e6",
+      "export_bytes": 3494,
+      "export_sha256": "8406ac4608e0b42a626c1d1e6201ffa4d8356edecda71e31646c025b542df8e6"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/styles.css",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/styles.css",
+      "disposition": "exact_copy",
+      "source_bytes": 15817,
+      "source_sha256": "2e878a06e8c99deb53c3a3b774c6bc52a61e0acd2c6ea8973889f47080774512",
+      "export_bytes": 15817,
+      "export_sha256": "2e878a06e8c99deb53c3a3b774c6bc52a61e0acd2c6ea8973889f47080774512"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/test_inspector.mjs",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/test_inspector.mjs",
+      "disposition": "exact_copy",
+      "source_bytes": 14222,
+      "source_sha256": "e963a0c5d04ab2ea4f34b96978cd5acde895bf00711020a2dec7219b5a2fb769",
+      "export_bytes": 14222,
+      "export_sha256": "e963a0c5d04ab2ea4f34b96978cd5acde895bf00711020a2dec7219b5a2fb769"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-inspector-20261101/VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-inspector-20261101/VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 10517,
+      "source_sha256": "3ecc1838b58b9e5cbe9d8503e21c44d8cea333be771e20fc2d5901abb2fcfbeb",
+      "export_bytes": 10517,
+      "export_sha256": "3ecc1838b58b9e5cbe9d8503e21c44d8cea333be771e20fc2d5901abb2fcfbeb"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/reference_occurrence_contract.json",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/reference_occurrence_contract.json",
+      "disposition": "exact_copy",
+      "source_bytes": 3838,
+      "source_sha256": "a5a22653b719a9057dbc226751a946fdffb6beb463392ad0f7c9b8a02a126bda",
+      "export_bytes": 3838,
+      "export_sha256": "a5a22653b719a9057dbc226751a946fdffb6beb463392ad0f7c9b8a02a126bda"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/REFERENCE_OCCURRENCE_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/REFERENCE_OCCURRENCE_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3988,
+      "source_sha256": "81cda4d5ed79143aee78aa42ec1bcb0f6e88eed355bcf6d24c55baa51614ecc3",
+      "export_bytes": 3988,
+      "export_sha256": "81cda4d5ed79143aee78aa42ec1bcb0f6e88eed355bcf6d24c55baa51614ecc3"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/REFERENCE_OCCURRENCE_DECISION.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/REFERENCE_OCCURRENCE_DECISION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4691,
+      "source_sha256": "3e1837b87a29e24b31558aa3047b031407f8056855ff27cc0c89f3c63f575e18",
+      "export_bytes": 4691,
+      "export_sha256": "3e1837b87a29e24b31558aa3047b031407f8056855ff27cc0c89f3c63f575e18"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/reference_occurrence_fixture.json",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/reference_occurrence_fixture.json",
+      "disposition": "exact_copy",
+      "source_bytes": 2569,
+      "source_sha256": "b605410ead9f1bf40c58b66c397269e9e4ffa6289ca1697b8f4c6f8cc890c7a5",
+      "export_bytes": 2569,
+      "export_sha256": "b605410ead9f1bf40c58b66c397269e9e4ffa6289ca1697b8f4c6f8cc890c7a5"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/REFERENCE_VIEWS.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/REFERENCE_VIEWS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1987,
+      "source_sha256": "f765ac6b3be4fdc1eef856451aa00eb6d1b8a038d84e3b6ba1cd90f38bbee86a",
+      "export_bytes": 1987,
+      "export_sha256": "f765ac6b3be4fdc1eef856451aa00eb6d1b8a038d84e3b6ba1cd90f38bbee86a"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/SOURCE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/SOURCE_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 3211,
+      "source_sha256": "bd1284392c30be255fca72eee9b4c3b580091ac251bb07f37532d66593c8394f",
+      "export_bytes": 3211,
+      "export_sha256": "bd1284392c30be255fca72eee9b4c3b580091ac251bb07f37532d66593c8394f"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/test_reference_occurrence.py",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/test_reference_occurrence.py",
+      "disposition": "exact_copy",
+      "source_bytes": 17210,
+      "source_sha256": "5c35e5b3fa03637ea59f0a2a42a7a779f1723135f3888e689335fd6e032894c6",
+      "export_bytes": 17210,
+      "export_sha256": "5c35e5b3fa03637ea59f0a2a42a7a779f1723135f3888e689335fd6e032894c6"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/validate_reference_occurrence.py",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/validate_reference_occurrence.py",
+      "disposition": "exact_copy",
+      "source_bytes": 23943,
+      "source_sha256": "a4be157b0d076c743f6edaf2a6f91f5025afd96e685e2b8c7a6761fd8198859e",
+      "export_bytes": 23943,
+      "export_sha256": "a4be157b0d076c743f6edaf2a6f91f5025afd96e685e2b8c7a6761fd8198859e"
+    },
+    {
+      "source_path": "research/holon-design/reference-occurrence-pilot-20261101/VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/research/holon-design/reference-occurrence-pilot-20261101/VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 7859,
+      "source_sha256": "db54b4a286361cc86d5f948ce197b0ce0088650a771c04f895fa0d85374ac811",
+      "export_bytes": 7859,
+      "export_sha256": "db54b4a286361cc86d5f948ce197b0ce0088650a771c04f895fa0d85374ac811"
+    },
+    {
+      "source_path": "research/plugin-pipeline-v7/learning_catalog.json",
+      "export_path": "syn-etabit-transformer-textual/research/plugin-pipeline-v7/learning_catalog.json",
+      "disposition": "repository_variant",
+      "source_bytes": 64299,
+      "source_sha256": "e261e1ae8be57497f2be90817d612f4b65635804614a0228a8ccd007f35aa113",
+      "export_bytes": 64298,
+      "export_sha256": "6dada108a451cc18acc977e641c002a61588abd91ffc1c79c659a35fc2a9e20c"
+    },
+    {
+      "source_path": "research/plugin-pipeline-v7/LEARNING_CATALOG.md",
+      "export_path": "syn-etabit-transformer-textual/research/plugin-pipeline-v7/LEARNING_CATALOG.md",
+      "disposition": "repository_variant",
+      "source_bytes": 65715,
+      "source_sha256": "3e15bfa5864cf415319a55b3bff5b0271dac07eb2671c8d4e128bcfd8af02889",
+      "export_bytes": 65714,
+      "export_sha256": "d4454250a27872e12ccadd103a9ae973a138fb69907b5f19b6584873682b14a3"
+    },
+    {
+      "source_path": "research/plugin-pipeline-v7/SOURCE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/plugin-pipeline-v7/SOURCE_MANIFEST.json",
+      "disposition": "repository_variant",
+      "source_bytes": 13626,
+      "source_sha256": "ce04cebf3ba74569086a68649b965052e96fb7aec0f537e39f0a2664a3e210d6",
+      "export_bytes": 13619,
+      "export_sha256": "bfe23351d9b725e5ccd56b2fc81fb28c25f924f2da94a8612489a5719345af6a"
+    },
+    {
+      "source_path": "research/rebrand/syn-etabit-transformer-textual-20261103/NAME_AND_COMPATIBILITY_MAP.json",
+      "export_path": "syn-etabit-transformer-textual/research/rebrand/syn-etabit-transformer-textual-20261103/NAME_AND_COMPATIBILITY_MAP.json",
+      "disposition": "exact_copy",
+      "source_bytes": 1783,
+      "source_sha256": "299b19c44dc142ad6adab36923384701d6bd2544950b654f679a8e870a455017",
+      "export_bytes": 1783,
+      "export_sha256": "299b19c44dc142ad6adab36923384701d6bd2544950b654f679a8e870a455017"
+    },
+    {
+      "source_path": "research/rebrand/syn-etabit-transformer-textual-20261103/REBRAND_DECISION.md",
+      "export_path": "syn-etabit-transformer-textual/research/rebrand/syn-etabit-transformer-textual-20261103/REBRAND_DECISION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 2962,
+      "source_sha256": "eca8b5e39b7c920447cbc562b04cdced3347ec98c43762adea361e62fe9fb9ca",
+      "export_bytes": 2962,
+      "export_sha256": "eca8b5e39b7c920447cbc562b04cdced3347ec98c43762adea361e62fe9fb9ca"
+    },
+    {
+      "source_path": "research/rebrand/syn-etabit-transformer-textual-20261103/SOURCE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/rebrand/syn-etabit-transformer-textual-20261103/SOURCE_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 3365,
+      "source_sha256": "011abcd7c20fc21745f471324e31df8e5e0e948355a548210b73edd60007f887",
+      "export_bytes": 3365,
+      "export_sha256": "011abcd7c20fc21745f471324e31df8e5e0e948355a548210b73edd60007f887"
+    },
+    {
+      "source_path": "research/rebrand/syn-etabit-transformer-textual-20261103/VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/research/rebrand/syn-etabit-transformer-textual-20261103/VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6988,
+      "source_sha256": "6d7be0f8539652f42b09a6c08ad772bf96a543e2375740b16661aca773e40981",
+      "export_bytes": 6988,
+      "export_sha256": "6d7be0f8539652f42b09a6c08ad772bf96a543e2375740b16661aca773e40981"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/auth18a_sample_analysis.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/auth18a_sample_analysis.json",
+      "disposition": "exact_copy",
+      "source_bytes": 4174,
+      "source_sha256": "d1840300bff396cad961a2edfc6e567a434e1a25185228463dabf86d85196cf5",
+      "export_bytes": 4174,
+      "export_sha256": "d1840300bff396cad961a2edfc6e567a434e1a25185228463dabf86d85196cf5"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/AUTH18A_SAMPLE_ANALYSIS.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/AUTH18A_SAMPLE_ANALYSIS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1202,
+      "source_sha256": "2264236af9d710052f7a1aa8ae981247e74036215f67915f78a74b6610d98ed2",
+      "export_bytes": 1202,
+      "export_sha256": "2264236af9d710052f7a1aa8ae981247e74036215f67915f78a74b6610d98ed2"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/CONTRADICTIONS_GAPS_AND_ANTI_LESSONS.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/CONTRADICTIONS_GAPS_AND_ANTI_LESSONS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1313,
+      "source_sha256": "05e3d2bde6b7febc1c4cf0ecf19bb7131876cd96481624dd34232e035fc608ca",
+      "export_bytes": 1313,
+      "export_sha256": "05e3d2bde6b7febc1c4cf0ecf19bb7131876cd96481624dd34232e035fc608ca"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/DECODE_BOUNDARY.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/DECODE_BOUNDARY.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1287,
+      "source_sha256": "1853ff6269346ad891ec7799004fe0fb0744a7d8a16e8a6d338181f55336e272",
+      "export_bytes": 1287,
+      "export_sha256": "1853ff6269346ad891ec7799004fe0fb0744a7d8a16e8a6d338181f55336e272"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/generic_relation_catalog.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/generic_relation_catalog.json",
+      "disposition": "exact_copy",
+      "source_bytes": 4847,
+      "source_sha256": "86b995267b212da83f7ab4812b72bbb8a800e8792cac68a861fcc3937b0d700e",
+      "export_bytes": 4847,
+      "export_sha256": "86b995267b212da83f7ab4812b72bbb8a800e8792cac68a861fcc3937b0d700e"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/GENERIC_RELATION_CATALOG.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/GENERIC_RELATION_CATALOG.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1028,
+      "source_sha256": "ea13f0d1e3e7df23e092262378d6beba1f32332187a2c9ff9db084441cbb3ef9",
+      "export_bytes": 1028,
+      "export_sha256": "ea13f0d1e3e7df23e092262378d6beba1f32332187a2c9ff9db084441cbb3ef9"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/grammar_syntax_theory_catalog.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/grammar_syntax_theory_catalog.json",
+      "disposition": "exact_copy",
+      "source_bytes": 5187,
+      "source_sha256": "c869f171ae80348fcbb789349617339ba9e919a6c9c12cab4864c287a04ed5fc",
+      "export_bytes": 5187,
+      "export_sha256": "c869f171ae80348fcbb789349617339ba9e919a6c9c12cab4864c287a04ed5fc"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/GRAMMAR_SYNTAX_THEORY_CATALOG.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/GRAMMAR_SYNTAX_THEORY_CATALOG.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1108,
+      "source_sha256": "dbd88cb6ab62d616b27baa4dc1f5da7b35ddd2f75c77e60c3f9c1a75ffdd1beb",
+      "export_bytes": 1108,
+      "export_sha256": "dbd88cb6ab62d616b27baa4dc1f5da7b35ddd2f75c77e60c3f9c1a75ffdd1beb"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/inspection_index.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/inspection_index.json",
+      "disposition": "exact_copy",
+      "source_bytes": 1534,
+      "source_sha256": "ff24ac35af2f9c706375588aaf387c21295d355c4fdc89c912e628a1d0564f6f",
+      "export_bytes": 1534,
+      "export_sha256": "ff24ac35af2f9c706375588aaf387c21295d355c4fdc89c912e628a1d0564f6f"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/inspector/app.js",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/inspector/app.js",
+      "disposition": "exact_copy",
+      "source_bytes": 4426,
+      "source_sha256": "3c038ef657f16fefef022819d26d7c0676cb69cb0b8b57035498d3ee7e85e05e",
+      "export_bytes": 4426,
+      "export_sha256": "3c038ef657f16fefef022819d26d7c0676cb69cb0b8b57035498d3ee7e85e05e"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/inspector/data.js",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/inspector/data.js",
+      "disposition": "exact_copy",
+      "source_bytes": 32207,
+      "source_sha256": "8b8dbc62b78ae391d9d400c3db80342346ada2ca88970a6f9e5e6a7289d836b0",
+      "export_bytes": 32207,
+      "export_sha256": "8b8dbc62b78ae391d9d400c3db80342346ada2ca88970a6f9e5e6a7289d836b0"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/inspector/index.html",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/inspector/index.html",
+      "disposition": "exact_copy",
+      "source_bytes": 2854,
+      "source_sha256": "d109593f2be55537698a4b2e83566de5ea88e4b5feac347efb3a01656f1c8fda",
+      "export_bytes": 2854,
+      "export_sha256": "d109593f2be55537698a4b2e83566de5ea88e4b5feac347efb3a01656f1c8fda"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/inspector/INSPECTOR_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/inspector/INSPECTOR_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 698,
+      "source_sha256": "95828d9d6b9ac8329d7a1e2decc1e54c488ad23f8621b92f8a0047c4ec54cac3",
+      "export_bytes": 698,
+      "export_sha256": "95828d9d6b9ac8329d7a1e2decc1e54c488ad23f8621b92f8a0047c4ec54cac3"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/inspector/styles.css",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/inspector/styles.css",
+      "disposition": "exact_copy",
+      "source_bytes": 5296,
+      "source_sha256": "62127a16eceb932ebdda04c737fec420b5e8fc69bc0b1b071d7f8c42d35259ca",
+      "export_bytes": 5296,
+      "export_sha256": "62127a16eceb932ebdda04c737fec420b5e8fc69bc0b1b071d7f8c42d35259ca"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/SOURCE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/SOURCE_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 3543,
+      "source_sha256": "530844ad0e6a1dadb622b13907f836c5ff4f14e222d26d3ba22621e4b005c004",
+      "export_bytes": 3543,
+      "export_sha256": "530844ad0e6a1dadb622b13907f836c5ff4f14e222d26d3ba22621e4b005c004"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/source_register.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/source_register.json",
+      "disposition": "exact_copy",
+      "source_bytes": 5277,
+      "source_sha256": "14845ec67dddab08e5de5786a68177249deb938793e22358e51ee8f30f8699b4",
+      "export_bytes": 5277,
+      "export_sha256": "14845ec67dddab08e5de5786a68177249deb938793e22358e51ee8f30f8699b4"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/SOURCE_REGISTER.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/SOURCE_REGISTER.md",
+      "disposition": "exact_copy",
+      "source_bytes": 2020,
+      "source_sha256": "fb02850ce7b80698e4314b7c134bcf325d7f028aac789813b6cfa0695ae06b1d",
+      "export_bytes": 2020,
+      "export_sha256": "fb02850ce7b80698e4314b7c134bcf325d7f028aac789813b6cfa0695ae06b1d"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 2542,
+      "source_sha256": "274c496ca68724e16cc4fe7df987d7253d581eaa5902d871cd8264804a14d8bb",
+      "export_bytes": 2542,
+      "export_sha256": "274c496ca68724e16cc4fe7df987d7253d581eaa5902d871cd8264804a14d8bb"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/wordnet_relation_catalog.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/wordnet_relation_catalog.json",
+      "disposition": "exact_copy",
+      "source_bytes": 7899,
+      "source_sha256": "fd0247b777ac5f98408ff698ee7a8a491c8d2aad3033860bd1ea1c72d500cf41",
+      "export_bytes": 7899,
+      "export_sha256": "fd0247b777ac5f98408ff698ee7a8a491c8d2aad3033860bd1ea1c72d500cf41"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/WORDNET_RELATION_CATALOG.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/WORDNET_RELATION_CATALOG.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1255,
+      "source_sha256": "2ae969f9c727ac8dd9d0a3cde5f9e085ef58a6b3d0a688c2e384f599e4c0f3af",
+      "export_bytes": 1255,
+      "export_sha256": "2ae969f9c727ac8dd9d0a3cde5f9e085ef58a6b3d0a688c2e384f599e4c0f3af"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/wordnet_theory_crosswalk.json",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/wordnet_theory_crosswalk.json",
+      "disposition": "exact_copy",
+      "source_bytes": 5214,
+      "source_sha256": "1a8931ff7b067fae65c4c38d01e754ced1352e87ae3c69974f3365f4b61f4001",
+      "export_bytes": 5214,
+      "export_sha256": "1a8931ff7b067fae65c4c38d01e754ced1352e87ae3c69974f3365f4b61f4001"
+    },
+    {
+      "source_path": "research/relative-theory/auth18b-source-study/WORDNET_THEORY_CROSSWALK.md",
+      "export_path": "syn-etabit-transformer-textual/research/relative-theory/auth18b-source-study/WORDNET_THEORY_CROSSWALK.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1109,
+      "source_sha256": "f833c86237a702c04bc4901fdd1a6e673a902be0d57d5a5f411b8f82bc04fa95",
+      "export_bytes": 1109,
+      "export_sha256": "f833c86237a702c04bc4901fdd1a6e673a902be0d57d5a5f411b8f82bc04fa95"
+    },
+    {
+      "source_path": "research/stitched-pipeline-hypervisor/learning_catalog.json",
+      "export_path": "syn-etabit-transformer-textual/research/stitched-pipeline-hypervisor/learning_catalog.json",
+      "disposition": "repository_variant",
+      "source_bytes": 146757,
+      "source_sha256": "acbaa173b1a9b46634a32975ac7858a63467bb633bd9f1a869e8776d1da29143",
+      "export_bytes": 146756,
+      "export_sha256": "c66fa173c111a2136183d5765ebeb279c26384a098751406084d8167fe3a47fc"
+    },
+    {
+      "source_path": "research/stitched-pipeline-hypervisor/LEARNING_CATALOG.md",
+      "export_path": "syn-etabit-transformer-textual/research/stitched-pipeline-hypervisor/LEARNING_CATALOG.md",
+      "disposition": "repository_variant",
+      "source_bytes": 112233,
+      "source_sha256": "34b593b464bb991c819907e66101d2cf6dd8eae47c1dc86d299a1cbc61ba0652",
+      "export_bytes": 112232,
+      "export_sha256": "7c2f4ed592231aaafe5f2a8d887c847c74dae08063675fee77315f61a9602c73"
+    },
+    {
+      "source_path": "research/stitched-pipeline-hypervisor/SOURCE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/stitched-pipeline-hypervisor/SOURCE_MANIFEST.json",
+      "disposition": "repository_variant",
+      "source_bytes": 19322,
+      "source_sha256": "8fa8dabcad73fc0f5519fe0fbf37bc95b348b036458e19d02937511c56973793",
+      "export_bytes": 19321,
+      "export_sha256": "9cf8e9f29abb25cfa7637cff398a26f39b20568f5658c4e49ed38ed9d19bca1b"
+    },
+    {
+      "source_path": "research/wordnet/princeton-3.1/LICENSE.source-header.txt",
+      "export_path": "syn-etabit-transformer-textual/research/wordnet/princeton-3.1/LICENSE.source-header.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 1740,
+      "source_sha256": "2c49a717fc37fbb8ba153203c93ffc1867b1868e7d24ecf8a93826caddab4398",
+      "export_bytes": 1740,
+      "export_sha256": "2c49a717fc37fbb8ba153203c93ffc1867b1868e7d24ecf8a93826caddab4398"
+    },
+    {
+      "source_path": "research/wordnet/princeton-3.1/README.md",
+      "export_path": "syn-etabit-transformer-textual/research/wordnet/princeton-3.1/README.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3091,
+      "source_sha256": "d2790ae1275dc4564697b78d1be80a18503eb8044d81ce38fca1f345ed60061c",
+      "export_bytes": 3091,
+      "export_sha256": "d2790ae1275dc4564697b78d1be80a18503eb8044d81ce38fca1f345ed60061c"
+    },
+    {
+      "source_path": "research/wordnet/princeton-3.1/SOURCE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/research/wordnet/princeton-3.1/SOURCE_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 9105,
+      "source_sha256": "9515605ca43ecf8d66588cca00a3d8f08d03f05486f33d5f32eaf76b11befeac",
+      "export_bytes": 9105,
+      "export_sha256": "9515605ca43ecf8d66588cca00a3d8f08d03f05486f33d5f32eaf76b11befeac"
+    },
+    {
+      "source_path": "research/wordnet/princeton-3.1/wn3.1.dict.tar.gz",
+      "disposition": "excluded_third_party_payload",
+      "source_bytes": 16358468,
+      "source_sha256": "3f7d8be8ef6ecc7167d39b10d66954ec734280b5bdcd57f7d9eafe429d11c22a"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/install.ps1",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/install.ps1",
+      "disposition": "exact_copy",
+      "source_bytes": 606,
+      "source_sha256": "171a5543dc03bc419972c31e78f1be1513301f3e8bfcecec78bfc39b33231ec3",
+      "export_bytes": 606,
+      "export_sha256": "171a5543dc03bc419972c31e78f1be1513301f3e8bfcecec78bfc39b33231ec3"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/LICENSE",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/LICENSE",
+      "disposition": "exact_copy",
+      "source_bytes": 1056,
+      "source_sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+      "export_bytes": 1056,
+      "export_sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/pyproject.toml",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/pyproject.toml",
+      "disposition": "exact_copy",
+      "source_bytes": 485,
+      "source_sha256": "8fd85946af5e47c1eea6d4b6f7811b4799a413107a83322cb89a3ef511126ec1",
+      "export_bytes": 485,
+      "export_sha256": "8fd85946af5e47c1eea6d4b6f7811b4799a413107a83322cb89a3ef511126ec1"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/README.md",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/README.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3950,
+      "source_sha256": "f88e4a855c6281782f8d43ad5f0a9f31298295a88a810a5bfbe65129c04fa55e",
+      "export_bytes": 3950,
+      "export_sha256": "f88e4a855c6281782f8d43ad5f0a9f31298295a88a810a5bfbe65129c04fa55e"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/render-failure.txt",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/render-failure.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 428,
+      "source_sha256": "d7ebb54fe096836082a59a805c357dc821bbab1a3cd9f7ba763a0a503b1911c1",
+      "export_bytes": 428,
+      "export_sha256": "d7ebb54fe096836082a59a805c357dc821bbab1a3cd9f7ba763a0a503b1911c1"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/src/docstream/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/src/docstream/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 78,
+      "source_sha256": "efa3ba4e72da57612f70aee2513a80d0e47dc41367dc60884ed5e5529e8bc241",
+      "export_bytes": 78,
+      "export_sha256": "efa3ba4e72da57612f70aee2513a80d0e47dc41367dc60884ed5e5529e8bc241"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/src/docstream/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/src/docstream/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 49,
+      "source_sha256": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7",
+      "export_bytes": 49,
+      "export_sha256": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/src/docstream/cli.py",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/src/docstream/cli.py",
+      "disposition": "exact_copy",
+      "source_bytes": 5761,
+      "source_sha256": "321835c8a0381b2f2a8b2a5909b94f0564c1d63d4816bdb170ccccea3ae5839f",
+      "export_bytes": 5761,
+      "export_sha256": "321835c8a0381b2f2a8b2a5909b94f0564c1d63d4816bdb170ccccea3ae5839f"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/src/docstream/conversion.py",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/src/docstream/conversion.py",
+      "disposition": "exact_copy",
+      "source_bytes": 13672,
+      "source_sha256": "fc52e440dfa1d976346f9586c4ecd9cbc9f57ade7b46b336b27ebb008bc5a875",
+      "export_bytes": 13672,
+      "export_sha256": "fc52e440dfa1d976346f9586c4ecd9cbc9f57ade7b46b336b27ebb008bc5a875"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/src/docstream/core.py",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/src/docstream/core.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6705,
+      "source_sha256": "99c14526d4a633fa7a25515e0be70c81f4a9b0ab59e55eac13e985e1c4f83ade",
+      "export_bytes": 6705,
+      "export_sha256": "99c14526d4a633fa7a25515e0be70c81f4a9b0ab59e55eac13e985e1c4f83ade"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/src/docstream/service.py",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/src/docstream/service.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6029,
+      "source_sha256": "4d7deda101a5bfd76248018441e69380a5155f8e496e09a6484f2c32de5828ff",
+      "export_bytes": 6029,
+      "export_sha256": "4d7deda101a5bfd76248018441e69380a5155f8e496e09a6484f2c32de5828ff"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/start-service.ps1",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/start-service.ps1",
+      "disposition": "exact_copy",
+      "source_bytes": 788,
+      "source_sha256": "772bda666ef5f36b8ef01502b421000d809e08f88b94b690103534c681b5e3bd",
+      "export_bytes": 788,
+      "export_sha256": "772bda666ef5f36b8ef01502b421000d809e08f88b94b690103534c681b5e3bd"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/STATUS.md",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/STATUS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3885,
+      "source_sha256": "0badc65f5f1598e4c0bf631c511157431b92c6027b7cb1dd1b7aa6d2ea12908c",
+      "export_bytes": 3885,
+      "export_sha256": "0badc65f5f1598e4c0bf631c511157431b92c6027b7cb1dd1b7aa6d2ea12908c"
+    },
+    {
+      "source_path": "service/baseline/docstream-0.1.0/tests/test_docstream.py",
+      "export_path": "syn-etabit-transformer-textual/service/baseline/docstream-0.1.0/tests/test_docstream.py",
+      "disposition": "exact_copy",
+      "source_bytes": 5469,
+      "source_sha256": "d65ba22cc5d6f4e3d40b3aec5f8327ddd63cf8b50b952eb0ec411b928cfceec7",
+      "export_bytes": 5469,
+      "export_sha256": "d65ba22cc5d6f4e3d40b3aec5f8327ddd63cf8b50b952eb0ec411b928cfceec7"
+    },
+    {
+      "source_path": "service/docs/BASELINE_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/BASELINE_MANIFEST.json",
+      "disposition": "repository_variant",
+      "source_bytes": 3404,
+      "source_sha256": "518540faa8c83985b3ade89514b3ee1b93180ccd8cbcbff7e0ee9d45c6b2f928",
+      "export_bytes": 3397,
+      "export_sha256": "6bd45d194489b534c4da48285718364ccc2a765c8d381e86a9ffeea82ee9f9e1"
+    },
+    {
+      "source_path": "service/docs/CPU_BATCH_SCHEMA.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/CPU_BATCH_SCHEMA.json",
+      "disposition": "exact_copy",
+      "source_bytes": 14874,
+      "source_sha256": "8dba0945d3d98e8f0915583eb3fd6cdc9ecfa369c0e5397aecab8d0999ba4778",
+      "export_bytes": 14874,
+      "export_sha256": "8dba0945d3d98e8f0915583eb3fd6cdc9ecfa369c0e5397aecab8d0999ba4778"
+    },
+    {
+      "source_path": "service/docs/CPU_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/CPU_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 7923,
+      "source_sha256": "19484ccd4d6f9f1ac8aea6373db402eddfe9363125166bab858b7fd749a4063d",
+      "export_bytes": 7923,
+      "export_sha256": "19484ccd4d6f9f1ac8aea6373db402eddfe9363125166bab858b7fd749a4063d"
+    },
+    {
+      "source_path": "service/docs/font-example.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/font-example.json",
+      "disposition": "exact_copy",
+      "source_bytes": 3333,
+      "source_sha256": "2f3b9f8d3bdfb7325da62bdbc92db0d604b9c0caf32638e749344eabd132e0ac",
+      "export_bytes": 3333,
+      "export_sha256": "2f3b9f8d3bdfb7325da62bdbc92db0d604b9c0caf32638e749344eabd132e0ac"
+    },
+    {
+      "source_path": "service/docs/FORMAT_HARDENING_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/FORMAT_HARDENING_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 7221,
+      "source_sha256": "7425eb9345cff8b120be30798b87c5d70a4af1fbd603b7077327de84037022cd",
+      "export_bytes": 7221,
+      "export_sha256": "7425eb9345cff8b120be30798b87c5d70a4af1fbd603b7077327de84037022cd"
+    },
+    {
+      "source_path": "service/docs/FORMAT_HARDENING_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/FORMAT_HARDENING_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6442,
+      "source_sha256": "fc17ea36267570d08dcd8c353567f2610449458a5fa51f4ffbde01de932ebf46",
+      "export_bytes": 6442,
+      "export_sha256": "fc17ea36267570d08dcd8c353567f2610449458a5fa51f4ffbde01de932ebf46"
+    },
+    {
+      "source_path": "service/docs/FORMAT_HARDENING_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/FORMAT_HARDENING_VALIDATION.md",
+      "disposition": "repository_variant",
+      "source_bytes": 10046,
+      "source_sha256": "c994a73c0722e74536694feac99857e5e5ac1bd851bf7eca1f234458ae6e9bab",
+      "export_bytes": 10013,
+      "export_sha256": "7ff9f34812b25556ce7b63c5e60faac2cf52fc9fe62ed8e9a71c4da9c3cea113"
+    },
+    {
+      "source_path": "service/docs/HARNESS_CLEANUP_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_CLEANUP_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6366,
+      "source_sha256": "05244949e325eb65ccb93af9adfb00881a68dcb1c503ab509c71ac199c355c93",
+      "export_bytes": 6366,
+      "export_sha256": "05244949e325eb65ccb93af9adfb00881a68dcb1c503ab509c71ac199c355c93"
+    },
+    {
+      "source_path": "service/docs/HARNESS_CLEANUP_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_CLEANUP_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4944,
+      "source_sha256": "5c26d9df2c85c3a08f3773e199cee0d055185c74f996138eb4c619159531f8bb",
+      "export_bytes": 4944,
+      "export_sha256": "5c26d9df2c85c3a08f3773e199cee0d055185c74f996138eb4c619159531f8bb"
+    },
+    {
+      "source_path": "service/docs/HARNESS_CLEANUP_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_CLEANUP_VALIDATION.md",
+      "disposition": "repository_variant",
+      "source_bytes": 7632,
+      "source_sha256": "8db64059eb1887ff49747a6d57be2c3b97b2b557fb7ab5daf2c4fa5989a915eb",
+      "export_bytes": 7599,
+      "export_sha256": "22f24c7d43cb45b373a4c55b30451709d444e95e5dc211c2e0232efa6d8bdb35"
+    },
+    {
+      "source_path": "service/docs/HARNESS_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 9938,
+      "source_sha256": "1651d71eeb80dae4cba511db8dc848dba946936c4ea2dd6a10f0d1939b9eb21b",
+      "export_bytes": 9938,
+      "export_sha256": "1651d71eeb80dae4cba511db8dc848dba946936c4ea2dd6a10f0d1939b9eb21b"
+    },
+    {
+      "source_path": "service/docs/HARNESS_DELIVERY.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_DELIVERY.json",
+      "disposition": "repository_variant",
+      "source_bytes": 3070,
+      "source_sha256": "e5e147254000723ca7cb8721634228d614ce99250ff8eb67e866d25049d3dd7b",
+      "export_bytes": 2994,
+      "export_sha256": "3de313509178d83a06551f6cf2d6b0ae0c5282dcba87c71381f3c7047eea5cd2"
+    },
+    {
+      "source_path": "service/docs/HARNESS_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6295,
+      "source_sha256": "549e4e4cd21be6fce1447aff2fd229a850ec72d98914b768489074ce9db63a96",
+      "export_bytes": 6295,
+      "export_sha256": "549e4e4cd21be6fce1447aff2fd229a850ec72d98914b768489074ce9db63a96"
+    },
+    {
+      "source_path": "service/docs/HARNESS_IMPLEMENTATION_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_IMPLEMENTATION_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 4961,
+      "source_sha256": "06f3a9f415ef0b23082adf85c4398b51b433bb6e1ae8976d02ce791483f95e30",
+      "export_bytes": 4961,
+      "export_sha256": "06f3a9f415ef0b23082adf85c4398b51b433bb6e1ae8976d02ce791483f95e30"
+    },
+    {
+      "source_path": "service/docs/HARNESS_META_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_META_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3830,
+      "source_sha256": "269a8cef0e671af2a9dc9945b6004d5602b8672e3ca95199a3a589c45fc9d4cc",
+      "export_bytes": 3830,
+      "export_sha256": "269a8cef0e671af2a9dc9945b6004d5602b8672e3ca95199a3a589c45fc9d4cc"
+    },
+    {
+      "source_path": "service/docs/HARNESS_META_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_META_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4097,
+      "source_sha256": "9f10fdadc290e470027936492f6923d164681381b2453742f15f75de01f6e6b1",
+      "export_bytes": 4097,
+      "export_sha256": "9f10fdadc290e470027936492f6923d164681381b2453742f15f75de01f6e6b1"
+    },
+    {
+      "source_path": "service/docs/HARNESS_META_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_META_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3648,
+      "source_sha256": "7d6988acaa698590d115009c262be5889108bd03192a642f6ceede04145b6597",
+      "export_bytes": 3648,
+      "export_sha256": "7d6988acaa698590d115009c262be5889108bd03192a642f6ceede04145b6597"
+    },
+    {
+      "source_path": "service/docs/HARNESS_REPAIR_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_REPAIR_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4560,
+      "source_sha256": "329169c228300d515a57bc6e5ab1b6d1c8c44e3082362f006307ffdbec5e1e08",
+      "export_bytes": 4560,
+      "export_sha256": "329169c228300d515a57bc6e5ab1b6d1c8c44e3082362f006307ffdbec5e1e08"
+    },
+    {
+      "source_path": "service/docs/HARNESS_REPAIR_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_REPAIR_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4453,
+      "source_sha256": "5e22ed4c925de35222e56c41a4de7e70b416b5a3e6ce37e12008a09d3a914170",
+      "export_bytes": 4453,
+      "export_sha256": "5e22ed4c925de35222e56c41a4de7e70b416b5a3e6ce37e12008a09d3a914170"
+    },
+    {
+      "source_path": "service/docs/HARNESS_REPAIR_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_REPAIR_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4555,
+      "source_sha256": "af56ff0a55ea24cf52a0bbcc2e5646153ac35a9b52e70ca84b68bc387eae7395",
+      "export_bytes": 4555,
+      "export_sha256": "af56ff0a55ea24cf52a0bbcc2e5646153ac35a9b52e70ca84b68bc387eae7395"
+    },
+    {
+      "source_path": "service/docs/HARNESS_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/HARNESS_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 7869,
+      "source_sha256": "e0909abe0a4fa04edc7c02e089dcaf103ea326f4b69396f6fc5c28bfcd6875ab",
+      "export_bytes": 7869,
+      "export_sha256": "e0909abe0a4fa04edc7c02e089dcaf103ea326f4b69396f6fc5c28bfcd6875ab"
+    },
+    {
+      "source_path": "service/docs/harness-self-test-final.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/harness-self-test-final.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 3647,
+      "source_sha256": "addfa1b603f226538af9f7898cf5c1beee405d1543aa693589150d582afcc827",
+      "export_bytes": 3533,
+      "export_sha256": "8c049b3c9090c2435c52f3bc9341c1e00064ae0546c0e1d6c4b522cf48f99bf7"
+    },
+    {
+      "source_path": "service/docs/harness-self-test-initial.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/harness-self-test-initial.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 2736,
+      "source_sha256": "430202ac7e01f7738120cef0675ea95171c242cd2cb4f677b71e61a83f926c77",
+      "export_bytes": 2703,
+      "export_sha256": "064d3912dae5dea45daaead0ce061d9af9dcad0611f2c0f88e9a7b19362d6a1e"
+    },
+    {
+      "source_path": "service/docs/harness-self-test-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/harness-self-test-output.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 2521,
+      "source_sha256": "44c74119efd5155063e83883a1f6078bf4a7d0e9454f17e25f82fa9c02b51a40",
+      "export_bytes": 2521,
+      "export_sha256": "44c74119efd5155063e83883a1f6078bf4a7d0e9454f17e25f82fa9c02b51a40"
+    },
+    {
+      "source_path": "service/docs/IMPLEMENTATION_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/IMPLEMENTATION_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 3719,
+      "source_sha256": "00b2b1a33c0760d3be8f1ae69b0a6993faee340280bd580dacc1a12934115ad1",
+      "export_bytes": 3719,
+      "export_sha256": "00b2b1a33c0760d3be8f1ae69b0a6993faee340280bd580dacc1a12934115ad1"
+    },
+    {
+      "source_path": "service/docs/M0_M1_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M0_M1_VALIDATION.md",
+      "disposition": "repository_variant",
+      "source_bytes": 5615,
+      "source_sha256": "4c21d1181d1359e412096056bcb2787586d12c07bd81783e1b9636c9019fe247",
+      "export_bytes": 5605,
+      "export_sha256": "1dd94ddf105bc1c7ad73fb7fea51bb4fce480a2ab05489d6163ab4d91433b6a5"
+    },
+    {
+      "source_path": "service/docs/M2_DEPENDENCIES.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M2_DEPENDENCIES.json",
+      "disposition": "exact_copy",
+      "source_bytes": 2911,
+      "source_sha256": "18ca6241f3581b8613c2d3ada7d1c2938568a9c22f6667e7ec6e6f3e3dcc8346",
+      "export_bytes": 2911,
+      "export_sha256": "18ca6241f3581b8613c2d3ada7d1c2938568a9c22f6667e7ec6e6f3e3dcc8346"
+    },
+    {
+      "source_path": "service/docs/M2_IMPLEMENTATION_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M2_IMPLEMENTATION_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 7031,
+      "source_sha256": "935cb41f8785d1306298d3489f1481f4122329b197f588d9e693445893135cf7",
+      "export_bytes": 7031,
+      "export_sha256": "935cb41f8785d1306298d3489f1481f4122329b197f588d9e693445893135cf7"
+    },
+    {
+      "source_path": "service/docs/M2_REQUEST_SCHEMAS.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M2_REQUEST_SCHEMAS.json",
+      "disposition": "exact_copy",
+      "source_bytes": 25247,
+      "source_sha256": "f5b6b4fc7cdaafca53f309c650552634f88b307cdd07b3f9c74c1e0110060d08",
+      "export_bytes": 25247,
+      "export_sha256": "f5b6b4fc7cdaafca53f309c650552634f88b307cdd07b3f9c74c1e0110060d08"
+    },
+    {
+      "source_path": "service/docs/M2_SERVICE_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M2_SERVICE_CONTRACT.md",
+      "disposition": "repository_variant",
+      "source_bytes": 7904,
+      "source_sha256": "7cc37eab87f72628acee1d88395171248eddeff1b1462070087a695403c70597",
+      "export_bytes": 7871,
+      "export_sha256": "9993aebd42c98c8459cdffc0d6ec0b5dc5fead8f606fbc0ee831c4638dbf84cb"
+    },
+    {
+      "source_path": "service/docs/M2_STORE_INIT.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M2_STORE_INIT.json",
+      "disposition": "repository_variant",
+      "source_bytes": 709,
+      "source_sha256": "6c453b28c9eddf92a1e479a4853e9d00a59b61a6c09185cee7304cb8936b3347",
+      "export_bytes": 671,
+      "export_sha256": "a2d72ec44a85bf8991460bb076a03ff5ecba0f5a6c60dc332cde196a633de3e4"
+    },
+    {
+      "source_path": "service/docs/M2_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M2_VALIDATION.md",
+      "disposition": "repository_variant",
+      "source_bytes": 6106,
+      "source_sha256": "e58ebdefe9b0d840203b61a44017c7d757942fc1381d2321918f3953f7dfbd2c",
+      "export_bytes": 6073,
+      "export_sha256": "f7182d4fa8e0f2efdeecd420e15098a534690e6d488ebe95af50a40a41a7a011"
+    },
+    {
+      "source_path": "service/docs/m2-initial-combined-run.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m2-initial-combined-run.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 8978,
+      "source_sha256": "3731a417b7d3048382ffe8bb985aaf39a10c32e5e8cb4f32c75852eae833017a",
+      "export_bytes": 8945,
+      "export_sha256": "4cd47c76b4edce51150079ce19395b2fd3414b7227b0dfb12466866303f7c6f7"
+    },
+    {
+      "source_path": "service/docs/m2-test-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m2-test-output.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 8507,
+      "source_sha256": "a3d3fb4c6ff57cd90de2493e79b986894ae5b789fef5f4bfbebdd98578db8471",
+      "export_bytes": 8507,
+      "export_sha256": "a3d3fb4c6ff57cd90de2493e79b986894ae5b789fef5f4bfbebdd98578db8471"
+    },
+    {
+      "source_path": "service/docs/m2-test-results.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m2-test-results.json",
+      "disposition": "exact_copy",
+      "source_bytes": 845,
+      "source_sha256": "4c3707d45048173936fcae989a0e1739dec9a71a7f41d4a0f2763c42d3b5f08f",
+      "export_bytes": 845,
+      "export_sha256": "4c3707d45048173936fcae989a0e1739dec9a71a7f41d4a0f2763c42d3b5f08f"
+    },
+    {
+      "source_path": "service/docs/M3_EXAMPLE.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M3_EXAMPLE.json",
+      "disposition": "repository_variant",
+      "source_bytes": 9530,
+      "source_sha256": "06649d13f6b063b41d02958a12b72b971b5f6fcf62a8b5f132df6567cf664ca8",
+      "export_bytes": 9454,
+      "export_sha256": "34704812d1f5e78dfa8eae6330af96e756125377c7aa0e336a30035e563992a8"
+    },
+    {
+      "source_path": "service/docs/M3_IMPLEMENTATION_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M3_IMPLEMENTATION_MANIFEST.json",
+      "disposition": "repository_variant",
+      "source_bytes": 14909,
+      "source_sha256": "513334ce4beee49b56355ab31c0cf509a875aa9e70808eae1037cd2cba9c6abd",
+      "export_bytes": 12553,
+      "export_sha256": "ac83312becdf6c93df850be0ab87ac46f47a12e9141577dff19b5f62608300a7"
+    },
+    {
+      "source_path": "service/docs/M3_RENDERER_IDENTITY.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M3_RENDERER_IDENTITY.json",
+      "disposition": "exact_copy",
+      "source_bytes": 2342,
+      "source_sha256": "a4014a8b2bed847e347596fd43856e03c16506b76e9f7876e5ded710a3c9a4b0",
+      "export_bytes": 2342,
+      "export_sha256": "a4014a8b2bed847e347596fd43856e03c16506b76e9f7876e5ded710a3c9a4b0"
+    },
+    {
+      "source_path": "service/docs/M3_RENDERING_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M3_RENDERING_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6927,
+      "source_sha256": "69927a8aff1e0b8c7ff03b0191409904dd5110036f74dfe5bf92eb32f634deb1",
+      "export_bytes": 6927,
+      "export_sha256": "69927a8aff1e0b8c7ff03b0191409904dd5110036f74dfe5bf92eb32f634deb1"
+    },
+    {
+      "source_path": "service/docs/M3_STORE_INIT.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M3_STORE_INIT.json",
+      "disposition": "exact_copy",
+      "source_bytes": 1157,
+      "source_sha256": "3649ec02c2cf85570fa21a30d09dcea55031730593355e59f161f0e590391d5d",
+      "export_bytes": 1157,
+      "export_sha256": "3649ec02c2cf85570fa21a30d09dcea55031730593355e59f161f0e590391d5d"
+    },
+    {
+      "source_path": "service/docs/M3_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M3_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 5910,
+      "source_sha256": "48978ca86ac042cdc5b7b9a849b9bbd8082935e5a542d94bc863cfabda0e5ae1",
+      "export_bytes": 5910,
+      "export_sha256": "48978ca86ac042cdc5b7b9a849b9bbd8082935e5a542d94bc863cfabda0e5ae1"
+    },
+    {
+      "source_path": "service/docs/m3-initial-combined-run.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m3-initial-combined-run.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 10741,
+      "source_sha256": "55bd182c9e605b201159098e70d61211ccee3b307e61251a43e667c4adb50082",
+      "export_bytes": 10708,
+      "export_sha256": "8d62b6e909c66e664cdfc257e0679b871d165cad7367eb05b6156787eff555b3"
+    },
+    {
+      "source_path": "service/docs/m3-qa/pdf-page-1.png",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m3-qa/pdf-page-1.png",
+      "disposition": "exact_copy",
+      "source_bytes": 105679,
+      "source_sha256": "dbd712d36247cfcaea511cbf6c0acd25ec9b0540feda2c76599621ff83ac060f",
+      "export_bytes": 105679,
+      "export_sha256": "dbd712d36247cfcaea511cbf6c0acd25ec9b0540feda2c76599621ff83ac060f"
+    },
+    {
+      "source_path": "service/docs/m3-test-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m3-test-output.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 10417,
+      "source_sha256": "a5b903002815a6bd290739a7474ad6bf2938b5950f47ed8c12a56c3c5386780e",
+      "export_bytes": 10417,
+      "export_sha256": "a5b903002815a6bd290739a7474ad6bf2938b5950f47ed8c12a56c3c5386780e"
+    },
+    {
+      "source_path": "service/docs/m3-test-results.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m3-test-results.json",
+      "disposition": "exact_copy",
+      "source_bytes": 777,
+      "source_sha256": "5611d922e549acafe6bcad63caf94b31db52e274d9108b9d5fe9764aeac1aed6",
+      "export_bytes": 777,
+      "export_sha256": "5611d922e549acafe6bcad63caf94b31db52e274d9108b9d5fe9764aeac1aed6"
+    },
+    {
+      "source_path": "service/docs/M4_BATCH_SCHEMA.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M4_BATCH_SCHEMA.json",
+      "disposition": "exact_copy",
+      "source_bytes": 21896,
+      "source_sha256": "c006fa2a9f8e1f5804bd064843456a595432e5971a3728758ba5bde690fd1ed7",
+      "export_bytes": 21896,
+      "export_sha256": "c006fa2a9f8e1f5804bd064843456a595432e5971a3728758ba5bde690fd1ed7"
+    },
+    {
+      "source_path": "service/docs/M4_DEPENDENCIES.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M4_DEPENDENCIES.json",
+      "disposition": "exact_copy",
+      "source_bytes": 989,
+      "source_sha256": "960372e1174ac2e4b673026c9a92cd4e6a0a82e6e9038a87f75683973934bd18",
+      "export_bytes": 989,
+      "export_sha256": "960372e1174ac2e4b673026c9a92cd4e6a0a82e6e9038a87f75683973934bd18"
+    },
+    {
+      "source_path": "service/docs/M4_EXAMPLE.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M4_EXAMPLE.json",
+      "disposition": "repository_variant",
+      "source_bytes": 10882,
+      "source_sha256": "0267b8187299f242a55b3997a636cb10e4320db2e0bd6156bed529966805cba8",
+      "export_bytes": 10844,
+      "export_sha256": "7ecca8e0f1c10cd2d9b1f4d61c5636e38cfdd4666e59bad9ece96304a18cfb2a"
+    },
+    {
+      "source_path": "service/docs/M4_FORMAT_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M4_FORMAT_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 12206,
+      "source_sha256": "383ec5d509de726ff41af592502f0739b3514ccdfc53dd1430c00d79fb104d99",
+      "export_bytes": 12206,
+      "export_sha256": "383ec5d509de726ff41af592502f0739b3514ccdfc53dd1430c00d79fb104d99"
+    },
+    {
+      "source_path": "service/docs/M4_IMPLEMENTATION_MANIFEST.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M4_IMPLEMENTATION_MANIFEST.json",
+      "disposition": "exact_copy",
+      "source_bytes": 18922,
+      "source_sha256": "737736338245ef6ea479daebaade34e93a25191c3a8a1df857649d19c79147fc",
+      "export_bytes": 18922,
+      "export_sha256": "737736338245ef6ea479daebaade34e93a25191c3a8a1df857649d19c79147fc"
+    },
+    {
+      "source_path": "service/docs/M4_SNAPSHOT_SCHEMAS.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M4_SNAPSHOT_SCHEMAS.json",
+      "disposition": "exact_copy",
+      "source_bytes": 14062,
+      "source_sha256": "33ee6ed45e7f4732c5a97decebed1e5f2491d4f6b8ac30a1c14d1f29fd4d719f",
+      "export_bytes": 14062,
+      "export_sha256": "33ee6ed45e7f4732c5a97decebed1e5f2491d4f6b8ac30a1c14d1f29fd4d719f"
+    },
+    {
+      "source_path": "service/docs/M4_SOURCE_VERIFICATION.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M4_SOURCE_VERIFICATION.json",
+      "disposition": "repository_variant",
+      "source_bytes": 2645,
+      "source_sha256": "de193833df40217924643de77b59421542f6f84954b8987f1fd4626f75349718",
+      "export_bytes": 2638,
+      "export_sha256": "66b5b5e27744d2fc7a3cae66e9873d78e528c6406d70e0fa22bb31f067c6d21e"
+    },
+    {
+      "source_path": "service/docs/M4_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/M4_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 8581,
+      "source_sha256": "e55beeedf7646888ae3f4fe0e80a9c5ee378f0e025a210367a8e9d740ead8427",
+      "export_bytes": 8581,
+      "export_sha256": "e55beeedf7646888ae3f4fe0e80a9c5ee378f0e025a210367a8e9d740ead8427"
+    },
+    {
+      "source_path": "service/docs/m4-combined-console.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-combined-console.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 14999,
+      "source_sha256": "988fb218488681a773fa9d2244aea9c2d81fed165fa16bd71a2fbb307e3b7974",
+      "export_bytes": 14999,
+      "export_sha256": "988fb218488681a773fa9d2244aea9c2d81fed165fa16bd71a2fbb307e3b7974"
+    },
+    {
+      "source_path": "service/docs/m4-docx-final-render-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-docx-final-render-output.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 101,
+      "source_sha256": "e7c170acb4b621d2376038db76742c8d4b0cb20fe6b7f8a4fc91f28c4d903328",
+      "export_bytes": 68,
+      "export_sha256": "1dd5912ffc60d88366a5d0cba7b930d9b4442a847aa8daca6f0cb550acee22b8"
+    },
+    {
+      "source_path": "service/docs/m4-docx-render-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-docx-render-output.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 95,
+      "source_sha256": "e099e19fff13c63d6ad5d4bc603c9280a8502620f8ad4ff64fee7559259311c7",
+      "export_bytes": 62,
+      "export_sha256": "0e5a5f905a891f83a6f8b33457497b3f53df76025577d955e92ee54cfe1dd6ae"
+    },
+    {
+      "source_path": "service/docs/m4-example-final-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-example-final-output.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 933,
+      "source_sha256": "2b59f4d148a43baf1b2bc60f7026908b7e225a9b146bcb62cedfad33cd4f1bac",
+      "export_bytes": 781,
+      "export_sha256": "34ff11f989771f650c30c250857e74e7d78dc9f74495c71f8e89c46304cbc72f"
+    },
+    {
+      "source_path": "service/docs/m4-example-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-example-output.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 913,
+      "source_sha256": "7a8ce5d8e7ee42f18fb915e17fe89be15e5b57dc8c8d6e5cef0c4c99dcc61300",
+      "export_bytes": 761,
+      "export_sha256": "95fe5fcf10fba1add22326e3f7f39bbd3fdd34636154d7404f0a9cb3350084d9"
+    },
+    {
+      "source_path": "service/docs/m4-expanded-format-run.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-expanded-format-run.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 1290,
+      "source_sha256": "308644d4476285f090889a4b827f35aee7e925e04217737ef5d1852ed16804e2",
+      "export_bytes": 1257,
+      "export_sha256": "8ba1bac28dd3307b3aa55a90ff7fa651209c795678fe2cffc439504ad240d8d5"
+    },
+    {
+      "source_path": "service/docs/m4-final-combined-console.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-final-combined-console.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 15829,
+      "source_sha256": "7194821cb41db9c943839b82b0cbbb1c463d26428d330fa63af355367255f48c",
+      "export_bytes": 15829,
+      "export_sha256": "7194821cb41db9c943839b82b0cbbb1c463d26428d330fa63af355367255f48c"
+    },
+    {
+      "source_path": "service/docs/m4-final-verification-console.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-final-verification-console.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 16135,
+      "source_sha256": "1ceb81a522c30a663efb7d85c3f5bf163f8498e2649f77245cc1fdaebecb3ced",
+      "export_bytes": 16135,
+      "export_sha256": "1ceb81a522c30a663efb7d85c3f5bf163f8498e2649f77245cc1fdaebecb3ced"
+    },
+    {
+      "source_path": "service/docs/m4-format-rerun-2.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-format-rerun-2.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 578,
+      "source_sha256": "b87fbb362dbd6e5fb5f66cb49222b2acd1b8d6672897a8ab1bcb6b0c435ef089",
+      "export_bytes": 578,
+      "export_sha256": "b87fbb362dbd6e5fb5f66cb49222b2acd1b8d6672897a8ab1bcb6b0c435ef089"
+    },
+    {
+      "source_path": "service/docs/m4-format-rerun-3.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-format-rerun-3.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 1170,
+      "source_sha256": "f11f18cb045fde88f7773c88da6da83aeb36e17b6f47423afc024d23370d50d0",
+      "export_bytes": 1137,
+      "export_sha256": "87dce94077a9aa8dee03198ae02c9b7671055e41d9ae446772a48c5343fedcc0"
+    },
+    {
+      "source_path": "service/docs/m4-format-rerun.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-format-rerun.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 1209,
+      "source_sha256": "89253ce3a3059fd86c57821a9f6801a27f6aa8503da334f0dd8f2ebff243996d",
+      "export_bytes": 1176,
+      "export_sha256": "4089dfff5bb858e3d038e0423069a9a1054a50ff61681d9ff4c3c92823b05046"
+    },
+    {
+      "source_path": "service/docs/m4-initial-format-run.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-initial-format-run.txt",
+      "disposition": "repository_variant",
+      "source_bytes": 4901,
+      "source_sha256": "6b276734cb25327831593322bc6668901a9e8545c6f2c14402d19a43de708c44",
+      "export_bytes": 4868,
+      "export_sha256": "84db13c68b06958006e4203615cecdd42a54f2c69d5ebf4f3f78a71107c9af3d"
+    },
+    {
+      "source_path": "service/docs/m4-qa/docx-final/a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a.pdf",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-qa/docx-final/a3d34ba023410c351d5dd887c1a2d4e5308c4b81347673d885855049cc31068a.pdf",
+      "disposition": "exact_copy",
+      "source_bytes": 70903,
+      "source_sha256": "01d909c4953fefae8a431e2a6bcfedac3a70c15b1b1f127c14ab17044fef57c3",
+      "export_bytes": 70903,
+      "export_sha256": "01d909c4953fefae8a431e2a6bcfedac3a70c15b1b1f127c14ab17044fef57c3"
+    },
+    {
+      "source_path": "service/docs/m4-qa/docx-final/page-1.png",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-qa/docx-final/page-1.png",
+      "disposition": "exact_copy",
+      "source_bytes": 138627,
+      "source_sha256": "33e2c61c4ef35c22b3e84e1111c3506332501e04ae07d9570a7f617901a5d29d",
+      "export_bytes": 138627,
+      "export_sha256": "33e2c61c4ef35c22b3e84e1111c3506332501e04ae07d9570a7f617901a5d29d"
+    },
+    {
+      "source_path": "service/docs/m4-qa/docx/b37a9dba8ea93eecda13e8fc7c0e870ac1288584dd30300272d9273619148ce7.pdf",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-qa/docx/b37a9dba8ea93eecda13e8fc7c0e870ac1288584dd30300272d9273619148ce7.pdf",
+      "disposition": "exact_copy",
+      "source_bytes": 79582,
+      "source_sha256": "6d0c8a1beb572e070d2bcf508e2cdfbf6a48723651246fa4ead5b7e79c7a931a",
+      "export_bytes": 79582,
+      "export_sha256": "6d0c8a1beb572e070d2bcf508e2cdfbf6a48723651246fa4ead5b7e79c7a931a"
+    },
+    {
+      "source_path": "service/docs/m4-qa/docx/page-1.png",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-qa/docx/page-1.png",
+      "disposition": "exact_copy",
+      "source_bytes": 137940,
+      "source_sha256": "d2ba32c7d88cb5cd162e804cd294c461887d7101209521ab5c8bd96322ae308c",
+      "export_bytes": 137940,
+      "export_sha256": "d2ba32c7d88cb5cd162e804cd294c461887d7101209521ab5c8bd96322ae308c"
+    },
+    {
+      "source_path": "service/docs/m4-qa/service-pdf/page-1.png",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-qa/service-pdf/page-1.png",
+      "disposition": "exact_copy",
+      "source_bytes": 79287,
+      "source_sha256": "343b283cf567f40dd184edcbe723feecb3f04b53579eff0bb409b1eb855ca92d",
+      "export_bytes": 79287,
+      "export_sha256": "343b283cf567f40dd184edcbe723feecb3f04b53579eff0bb409b1eb855ca92d"
+    },
+    {
+      "source_path": "service/docs/m4-test-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-test-output.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 15207,
+      "source_sha256": "4f9a57e0687087f6871bb13965d687b892fb538dcc90c8256b06f263be39c1e6",
+      "export_bytes": 15207,
+      "export_sha256": "4f9a57e0687087f6871bb13965d687b892fb538dcc90c8256b06f263be39c1e6"
+    },
+    {
+      "source_path": "service/docs/m4-test-results.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/m4-test-results.json",
+      "disposition": "exact_copy",
+      "source_bytes": 926,
+      "source_sha256": "8fdd684dc4ad2112880c8566d1674d8aabaafa497a8b8e338adb082df337300c",
+      "export_bytes": 926,
+      "export_sha256": "8fdd684dc4ad2112880c8566d1674d8aabaafa497a8b8e338adb082df337300c"
+    },
+    {
+      "source_path": "service/docs/MCP_SCHEMAS.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/MCP_SCHEMAS.json",
+      "disposition": "exact_copy",
+      "source_bytes": 45794,
+      "source_sha256": "9b1771d72e59dab06477d920177a0ff370de74bdbc4633cc82a4bcd8c9c31fd9",
+      "export_bytes": 45794,
+      "export_sha256": "9b1771d72e59dab06477d920177a0ff370de74bdbc4633cc82a4bcd8c9c31fd9"
+    },
+    {
+      "source_path": "service/docs/NATIVE_HARNESS_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_HARNESS_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 10283,
+      "source_sha256": "ef5294e5ad23798808030429265d2b0bb4219051852029fdd1ec96ed5518156f",
+      "export_bytes": 10283,
+      "export_sha256": "ef5294e5ad23798808030429265d2b0bb4219051852029fdd1ec96ed5518156f"
+    },
+    {
+      "source_path": "service/docs/NATIVE_HARNESS_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_HARNESS_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 2714,
+      "source_sha256": "e59d5623e3c609b32aacd7e248cc841c7f0ec5826fe5340720b39b599ac4927a",
+      "export_bytes": 2714,
+      "export_sha256": "e59d5623e3c609b32aacd7e248cc841c7f0ec5826fe5340720b39b599ac4927a"
+    },
+    {
+      "source_path": "service/docs/NATIVE_HARNESS_META_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_HARNESS_META_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6326,
+      "source_sha256": "3765d9f2e06242b6e9a761050d3f869484f6f2b51d703ab62bc634b9aec17314",
+      "export_bytes": 6326,
+      "export_sha256": "3765d9f2e06242b6e9a761050d3f869484f6f2b51d703ab62bc634b9aec17314"
+    },
+    {
+      "source_path": "service/docs/NATIVE_HARNESS_META_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_HARNESS_META_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 5559,
+      "source_sha256": "e991d00e1f4201bdddd928cd4383eeef597adccbdeecac392b6de905009d6749",
+      "export_bytes": 5559,
+      "export_sha256": "e991d00e1f4201bdddd928cd4383eeef597adccbdeecac392b6de905009d6749"
+    },
+    {
+      "source_path": "service/docs/NATIVE_HARNESS_META_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_HARNESS_META_VALIDATION.md",
+      "disposition": "repository_variant",
+      "source_bytes": 10239,
+      "source_sha256": "1bae80ff0f25848e98322548808b2ba7a82bae31119f0f73764e4303b208e06f",
+      "export_bytes": 10206,
+      "export_sha256": "ca0d321d38496b5d2949066fca4e5cece670a69f9851f659a72e57187a935d3c"
+    },
+    {
+      "source_path": "service/docs/NATIVE_HARNESS_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_HARNESS_VALIDATION.md",
+      "disposition": "repository_variant",
+      "source_bytes": 30187,
+      "source_sha256": "89d57e666123169e8cf4d0e0749af33a5ae88e58ca204311b58fc8871f663489",
+      "export_bytes": 30186,
+      "export_sha256": "88144750b223ef3ff09edf19402e26c5d7e2f98f82672ded875881f74630885b"
+    },
+    {
+      "source_path": "service/docs/NATIVE_REFERENCE_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_REFERENCE_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 11756,
+      "source_sha256": "0404c8193a1ea8613e912be3b263ffd4e9e3e7d16a6108cb8db7f1f2a46ae9db",
+      "export_bytes": 11756,
+      "export_sha256": "0404c8193a1ea8613e912be3b263ffd4e9e3e7d16a6108cb8db7f1f2a46ae9db"
+    },
+    {
+      "source_path": "service/docs/NATIVE_REFERENCE_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_REFERENCE_VALIDATION.md",
+      "disposition": "repository_variant",
+      "source_bytes": 23844,
+      "source_sha256": "c062aa300db40697c92409cfcd69b3189e171aff45febfc7392f3a810f1c6f32",
+      "export_bytes": 23842,
+      "export_sha256": "4168786ca537bc32fa1679a83a2d3725cfa149132e4325c14f3333cac2085525"
+    },
+    {
+      "source_path": "service/docs/NATIVE_VOCABULARY_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_VOCABULARY_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6642,
+      "source_sha256": "b8a857bcf3d5275e1888e2810b6a13a4561000414e56a24952128cf625fa3741",
+      "export_bytes": 6642,
+      "export_sha256": "b8a857bcf3d5275e1888e2810b6a13a4561000414e56a24952128cf625fa3741"
+    },
+    {
+      "source_path": "service/docs/NATIVE_VOCABULARY_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_VOCABULARY_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4498,
+      "source_sha256": "e650fc2357b29c27f4112684374a4aa2130af2a585b15054879ed277fc0b5163",
+      "export_bytes": 4498,
+      "export_sha256": "e650fc2357b29c27f4112684374a4aa2130af2a585b15054879ed277fc0b5163"
+    },
+    {
+      "source_path": "service/docs/NATIVE_VOCABULARY_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/NATIVE_VOCABULARY_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6010,
+      "source_sha256": "2d7dbde4d1920868e5326fdae9d2fd873c2ed9707f640da14c87c9b0a3b2e6cd",
+      "export_bytes": 6010,
+      "export_sha256": "2d7dbde4d1920868e5326fdae9d2fd873c2ed9707f640da14c87c9b0a3b2e6cd"
+    },
+    {
+      "source_path": "service/docs/RELATIVE_MAPS_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/RELATIVE_MAPS_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 5259,
+      "source_sha256": "955d4f650f2b44c537435053ddb670781261cccebb5d34890bd498e04ef83879",
+      "export_bytes": 5259,
+      "export_sha256": "955d4f650f2b44c537435053ddb670781261cccebb5d34890bd498e04ef83879"
+    },
+    {
+      "source_path": "service/docs/RELATIVE_MAPS_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/RELATIVE_MAPS_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 4333,
+      "source_sha256": "b5942f06ccb1be8b4566d66b4a5ddbf93e939cfebdab6f89c4d40af8c00ea461",
+      "export_bytes": 4333,
+      "export_sha256": "b5942f06ccb1be8b4566d66b4a5ddbf93e939cfebdab6f89c4d40af8c00ea461"
+    },
+    {
+      "source_path": "service/docs/RELATIVE_MAPS_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/RELATIVE_MAPS_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 6014,
+      "source_sha256": "92464cbcd392b799e1404aa2ca075bedb4332663944faa25aa5455a9c6d66530",
+      "export_bytes": 6014,
+      "export_sha256": "92464cbcd392b799e1404aa2ca075bedb4332663944faa25aa5455a9c6d66530"
+    },
+    {
+      "source_path": "service/docs/STRMDOCX_PRODUCT_RETEST_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/STRMDOCX_PRODUCT_RETEST_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 2755,
+      "source_sha256": "f02b7dabc111b5c58c8d44a2c82b33ff06b9d716a39dd85342d39b8d1a654162",
+      "export_bytes": 2755,
+      "export_sha256": "f02b7dabc111b5c58c8d44a2c82b33ff06b9d716a39dd85342d39b8d1a654162"
+    },
+    {
+      "source_path": "service/docs/STRMDOCX_PRODUCT_RETEST_FINDINGS.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/STRMDOCX_PRODUCT_RETEST_FINDINGS.md",
+      "disposition": "exact_copy",
+      "source_bytes": 2949,
+      "source_sha256": "2750d00a7501af985c8b2051226c65913a62937166d451b781ab5524e1c304d7",
+      "export_bytes": 2949,
+      "export_sha256": "2750d00a7501af985c8b2051226c65913a62937166d451b781ab5524e1c304d7"
+    },
+    {
+      "source_path": "service/docs/STRMDOCX_PRODUCT_RETEST_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/STRMDOCX_PRODUCT_RETEST_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 3579,
+      "source_sha256": "8c0f58ef718ba8f3673c9ad64d3adc2d0f0d6879b60d8cd43482c23dd0ca703a",
+      "export_bytes": 3579,
+      "export_sha256": "8c0f58ef718ba8f3673c9ad64d3adc2d0f0d6879b60d8cd43482c23dd0ca703a"
+    },
+    {
+      "source_path": "service/docs/test-output.txt",
+      "export_path": "syn-etabit-transformer-textual/service/docs/test-output.txt",
+      "disposition": "exact_copy",
+      "source_bytes": 5374,
+      "source_sha256": "c61fcee2f49cc7bcbf652c3ebe8aaf3e91a8bafe86455a938975a10eaf77eada",
+      "export_bytes": 5374,
+      "export_sha256": "c61fcee2f49cc7bcbf652c3ebe8aaf3e91a8bafe86455a938975a10eaf77eada"
+    },
+    {
+      "source_path": "service/docs/test-results.json",
+      "export_path": "syn-etabit-transformer-textual/service/docs/test-results.json",
+      "disposition": "repository_variant",
+      "source_bytes": 1290,
+      "source_sha256": "67ee124abf3363f1e4d401f1eba5eb5de810800a57a334bbdc7ffb5795cb8465",
+      "export_bytes": 1245,
+      "export_sha256": "68739169320b9944da19b0ecc9acaebf65ff54aec92c5fdc3827df16365b7fa6"
+    },
+    {
+      "source_path": "service/docs/THEORY_INSPECTOR_CONTRACT.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/THEORY_INSPECTOR_CONTRACT.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1482,
+      "source_sha256": "c0e1f41ae1befca4baa6f142d8cae237fc4c5c7d26fc2f75141817c1eafeaef2",
+      "export_bytes": 1482,
+      "export_sha256": "c0e1f41ae1befca4baa6f142d8cae237fc4c5c7d26fc2f75141817c1eafeaef2"
+    },
+    {
+      "source_path": "service/docs/THEORY_INSPECTOR_VALIDATION.md",
+      "export_path": "syn-etabit-transformer-textual/service/docs/THEORY_INSPECTOR_VALIDATION.md",
+      "disposition": "exact_copy",
+      "source_bytes": 1494,
+      "source_sha256": "9f01418626eb79972feb2224fdc25f12acb8ff8a91019691cc0456c24a15169a",
+      "export_bytes": 1494,
+      "export_sha256": "9f01418626eb79972feb2224fdc25f12acb8ff8a91019691cc0456c24a15169a"
+    },
+    {
+      "source_path": "service/examples/font_example.py",
+      "export_path": "syn-etabit-transformer-textual/service/examples/font_example.py",
+      "disposition": "exact_copy",
+      "source_bytes": 1821,
+      "source_sha256": "124e43e77e2226256272e60339d8dac6c69e03296d813fc5c846ca056a190e34",
+      "export_bytes": 1821,
+      "export_sha256": "124e43e77e2226256272e60339d8dac6c69e03296d813fc5c846ca056a190e34"
+    },
+    {
+      "source_path": "service/examples/format_example.py",
+      "export_path": "syn-etabit-transformer-textual/service/examples/format_example.py",
+      "disposition": "exact_copy",
+      "source_bytes": 3815,
+      "source_sha256": "67fe8481f93b6018de24771d749b8cf5e3b3f66e8498eaf03060432fc8d65b46",
+      "export_bytes": 3815,
+      "export_sha256": "67fe8481f93b6018de24771d749b8cf5e3b3f66e8498eaf03060432fc8d65b46"
+    },
+    {
+      "source_path": "service/examples/ingest-request.json",
+      "export_path": "syn-etabit-transformer-textual/service/examples/ingest-request.json",
+      "disposition": "exact_copy",
+      "source_bytes": 146,
+      "source_sha256": "94a7e547d97f79b466ac42504194d3f05590ffa94c40644322660f37b0d01dac",
+      "export_bytes": 146,
+      "export_sha256": "94a7e547d97f79b466ac42504194d3f05590ffa94c40644322660f37b0d01dac"
+    },
+    {
+      "source_path": "service/examples/render_example.py",
+      "export_path": "syn-etabit-transformer-textual/service/examples/render_example.py",
+      "disposition": "exact_copy",
+      "source_bytes": 4214,
+      "source_sha256": "efcf20983b4c390dd6a60f3a63343fe20653db6e3883ba2407add01483e38aac",
+      "export_bytes": 4214,
+      "export_sha256": "efcf20983b4c390dd6a60f3a63343fe20653db6e3883ba2407add01483e38aac"
+    },
+    {
+      "source_path": "service/pyproject.toml",
+      "export_path": "syn-etabit-transformer-textual/service/pyproject.toml",
+      "disposition": "exact_copy",
+      "source_bytes": 626,
+      "source_sha256": "bfd60f710d4979fed0d9e608a2ea447a819cf9f923ce1a2fb65c1de652f0710e",
+      "export_bytes": 626,
+      "export_sha256": "bfd60f710d4979fed0d9e608a2ea447a819cf9f923ce1a2fb65c1de652f0710e"
+    },
+    {
+      "source_path": "service/README.md",
+      "export_path": "syn-etabit-transformer-textual/service/README.md",
+      "disposition": "repository_variant",
+      "source_bytes": 7294,
+      "source_sha256": "1b68c1d9fa2adcdd59a4ffbd45240545d661bc061424e29e110f6a99be3c5aaa",
+      "export_bytes": 7319,
+      "export_sha256": "19d5ffe52211f2b13b118013c9fe45efd080add966bb9dca82591e76f1ffbac3"
+    },
+    {
+      "source_path": "service/requirements-cpu.lock",
+      "export_path": "syn-etabit-transformer-textual/service/requirements-cpu.lock",
+      "disposition": "exact_copy",
+      "source_bytes": 281,
+      "source_sha256": "b5053694bd2d2389ddf5a384225c13580c981da73e04d96f30de2c52def94461",
+      "export_bytes": 281,
+      "export_sha256": "b5053694bd2d2389ddf5a384225c13580c981da73e04d96f30de2c52def94461"
+    },
+    {
+      "source_path": "service/requirements-m2.lock",
+      "export_path": "syn-etabit-transformer-textual/service/requirements-m2.lock",
+      "disposition": "exact_copy",
+      "source_bytes": 740,
+      "source_sha256": "cf2a5e071cafdb34764afebe90b2945816721c7751deea1c58de9eef88eb2aca",
+      "export_bytes": 740,
+      "export_sha256": "cf2a5e071cafdb34764afebe90b2945816721c7751deea1c58de9eef88eb2aca"
+    },
+    {
+      "source_path": "service/requirements-m3.lock",
+      "export_path": "syn-etabit-transformer-textual/service/requirements-m3.lock",
+      "disposition": "exact_copy",
+      "source_bytes": 707,
+      "source_sha256": "84637b32bb9a8d4cb481197357270a87ffc1d471b9266840888255bd0a241774",
+      "export_bytes": 707,
+      "export_sha256": "84637b32bb9a8d4cb481197357270a87ffc1d471b9266840888255bd0a241774"
+    },
+    {
+      "source_path": "service/requirements-m4.lock",
+      "export_path": "syn-etabit-transformer-textual/service/requirements-m4.lock",
+      "disposition": "exact_copy",
+      "source_bytes": 794,
+      "source_sha256": "97edf4f259f109f2d048f38b1ec169540e17749b788b73c1a032da7d60b4a8f1",
+      "export_bytes": 794,
+      "export_sha256": "97edf4f259f109f2d048f38b1ec169540e17749b788b73c1a032da7d60b4a8f1"
+    },
+    {
+      "source_path": "service/requirements-service.lock",
+      "export_path": "syn-etabit-transformer-textual/service/requirements-service.lock",
+      "disposition": "exact_copy",
+      "source_bytes": 794,
+      "source_sha256": "97edf4f259f109f2d048f38b1ec169540e17749b788b73c1a032da7d60b4a8f1",
+      "export_bytes": 794,
+      "export_sha256": "97edf4f259f109f2d048f38b1ec169540e17749b788b73c1a032da7d60b4a8f1"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 732,
+      "source_sha256": "12bb14336aa4e662fd4fe0cd730e7528fae8170dbf90339c34f268ec9147f327",
+      "export_bytes": 732,
+      "export_sha256": "12bb14336aa4e662fd4fe0cd730e7528fae8170dbf90339c34f268ec9147f327"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 48,
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "export_bytes": 48,
+      "export_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/artifacts.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/artifacts.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6997,
+      "source_sha256": "b97776fe1a56caeb66916a9b67de262c864e642dd66936ea85d61e2c9c08d5e8",
+      "export_bytes": 6997,
+      "export_sha256": "b97776fe1a56caeb66916a9b67de262c864e642dd66936ea85d61e2c9c08d5e8"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/assets.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/assets.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2233,
+      "source_sha256": "86713c61144b2a89c616545858710c0803b93f2640a19a8f4ea0cbf2abbdd41c",
+      "export_bytes": 2233,
+      "export_sha256": "86713c61144b2a89c616545858710c0803b93f2640a19a8f4ea0cbf2abbdd41c"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/catalog.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/catalog.py",
+      "disposition": "exact_copy",
+      "source_bytes": 9885,
+      "source_sha256": "d2f8117ca858bda3f37375588fe1eeaf149fd993307da766b5c1dc009da58e4a",
+      "export_bytes": 9885,
+      "export_sha256": "d2f8117ca858bda3f37375588fe1eeaf149fd993307da766b5c1dc009da58e4a"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/cli.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/cli.py",
+      "disposition": "exact_copy",
+      "source_bytes": 4677,
+      "source_sha256": "7e32dff0ea0933342828a943bfd9ff8f088977b0ccee85ead756a85c9a67223d",
+      "export_bytes": 4677,
+      "export_sha256": "7e32dff0ea0933342828a943bfd9ff8f088977b0ccee85ead756a85c9a67223d"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/docx_adapter.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/docx_adapter.py",
+      "disposition": "exact_copy",
+      "source_bytes": 27644,
+      "source_sha256": "316483ea7f66ca9dd561a8dd0c809495e7d12b86e3b3556f87ef59a7dc780cca",
+      "export_bytes": 27644,
+      "export_sha256": "316483ea7f66ca9dd561a8dd0c809495e7d12b86e3b3556f87ef59a7dc780cca"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/errors.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/errors.py",
+      "disposition": "exact_copy",
+      "source_bytes": 407,
+      "source_sha256": "f1d91402af159b813bc1fe7a0f863dc6cc3d536c01394103175ef0a0b58d247a",
+      "export_bytes": 407,
+      "export_sha256": "f1d91402af159b813bc1fe7a0f863dc6cc3d536c01394103175ef0a0b58d247a"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/executor.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/executor.py",
+      "disposition": "exact_copy",
+      "source_bytes": 9687,
+      "source_sha256": "733a3115ba314f3428410026b875e58bdea3cbe79c4a49aed0159c7dbcb133f5",
+      "export_bytes": 9687,
+      "export_sha256": "733a3115ba314f3428410026b875e58bdea3cbe79c4a49aed0159c7dbcb133f5"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/format_common.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/format_common.py",
+      "disposition": "exact_copy",
+      "source_bytes": 3926,
+      "source_sha256": "5f5edf9b9696a4656b383a7f1252844fc0c5fbc2d6ec8528202afb3d08602ca7",
+      "export_bytes": 3926,
+      "export_sha256": "5f5edf9b9696a4656b383a7f1252844fc0c5fbc2d6ec8528202afb3d08602ca7"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/format_service.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/format_service.py",
+      "disposition": "exact_copy",
+      "source_bytes": 8193,
+      "source_sha256": "ceeec2debd4b5be3d207b4f9ef7a78717e3a36c82f0a446470b79ac3109bd34b",
+      "export_bytes": 8193,
+      "export_sha256": "ceeec2debd4b5be3d207b4f9ef7a78717e3a36c82f0a446470b79ac3109bd34b"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness_meta/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness_meta/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 172,
+      "source_sha256": "f503901403f0905a48f52a499dd6469301a5b44514586e8ee69c453f414bb086",
+      "export_bytes": 172,
+      "export_sha256": "f503901403f0905a48f52a499dd6469301a5b44514586e8ee69c453f414bb086"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness_meta/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness_meta/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 82,
+      "source_sha256": "3371e5aefb63db9d4dbf67dcf569ab0f9f9435e3611e63d907de91f7ba9ced77",
+      "export_bytes": 82,
+      "export_sha256": "3371e5aefb63db9d4dbf67dcf569ab0f9f9435e3611e63d907de91f7ba9ced77"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness_meta/audit.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness_meta/audit.py",
+      "disposition": "exact_copy",
+      "source_bytes": 8145,
+      "source_sha256": "bb8450d1b1ffb1f06d7b0da4a9224bbbc64352ef2471625409a055ff7a39a5b7",
+      "export_bytes": 8145,
+      "export_sha256": "bb8450d1b1ffb1f06d7b0da4a9224bbbc64352ef2471625409a055ff7a39a5b7"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness_meta/cases.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness_meta/cases.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2624,
+      "source_sha256": "f6fbdf2d60789a7c3c72f673db51f95e477e8e7e0e0aa735e193e806630330e6",
+      "export_bytes": 2624,
+      "export_sha256": "f6fbdf2d60789a7c3c72f673db51f95e477e8e7e0e0aa735e193e806630330e6"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness_meta/checks.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness_meta/checks.py",
+      "disposition": "exact_copy",
+      "source_bytes": 15513,
+      "source_sha256": "36f74df656254d0e3b7e7be1f25bd75dfefd4885336deba2ffbf44cf9e319a08",
+      "export_bytes": 15513,
+      "export_sha256": "36f74df656254d0e3b7e7be1f25bd75dfefd4885336deba2ffbf44cf9e319a08"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness_meta/runner.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness_meta/runner.py",
+      "disposition": "exact_copy",
+      "source_bytes": 11936,
+      "source_sha256": "62e0a95b7b8b373917450ffbaeac57bc5066974fefef9bd2cb3752c74d9a6f77",
+      "export_bytes": 11936,
+      "export_sha256": "62e0a95b7b8b373917450ffbaeac57bc5066974fefef9bd2cb3752c74d9a6f77"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 117,
+      "source_sha256": "6acd39d2512dcadf49589840605019f9cc13b5cea1fe3f3806a2c31bbf8d44b7",
+      "export_bytes": 117,
+      "export_sha256": "6acd39d2512dcadf49589840605019f9cc13b5cea1fe3f3806a2c31bbf8d44b7"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 80,
+      "source_sha256": "7adb715d3b1f79e5f4412da1481fb55ecaec8e461a6a71c316a66ded23198606",
+      "export_bytes": 80,
+      "export_sha256": "7adb715d3b1f79e5f4412da1481fb55ecaec8e461a6a71c316a66ded23198606"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness/cases.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness/cases.py",
+      "disposition": "exact_copy",
+      "source_bytes": 8887,
+      "source_sha256": "112262520b476521031288f33196ba077495479d733ca04a947e6e2241fd6552",
+      "export_bytes": 8887,
+      "export_sha256": "112262520b476521031288f33196ba077495479d733ca04a947e6e2241fd6552"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness/core.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness/core.py",
+      "disposition": "exact_copy",
+      "source_bytes": 7811,
+      "source_sha256": "8a85f920771f08ea09b960bd09be7895a77373cc8dc9b89084036247d2b8f4c9",
+      "export_bytes": 7811,
+      "export_sha256": "8a85f920771f08ea09b960bd09be7895a77373cc8dc9b89084036247d2b8f4c9"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness/generate.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness/generate.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6931,
+      "source_sha256": "26a0ab7a88336b7194736e719c036e48e3fdf961665c6bb8dceaa7dfa8bce573",
+      "export_bytes": 6931,
+      "export_sha256": "26a0ab7a88336b7194736e719c036e48e3fdf961665c6bb8dceaa7dfa8bce573"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness/runner.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness/runner.py",
+      "disposition": "exact_copy",
+      "source_bytes": 23676,
+      "source_sha256": "b54229f09f6243833d4c73148992078cfb0e54c5da1ee798073e7d7691d7934d",
+      "export_bytes": 23676,
+      "export_sha256": "b54229f09f6243833d4c73148992078cfb0e54c5da1ee798073e7d7691d7934d"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness/worker.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness/worker.py",
+      "disposition": "exact_copy",
+      "source_bytes": 9922,
+      "source_sha256": "d787bfbd566187892557805b8e2fb19dd8dcfe5c1dc3e547f4da9fc412a36c4f",
+      "export_bytes": 9922,
+      "export_sha256": "d787bfbd566187892557805b8e2fb19dd8dcfe5c1dc3e547f4da9fc412a36c4f"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/harness/workloads.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/harness/workloads.py",
+      "disposition": "exact_copy",
+      "source_bytes": 22996,
+      "source_sha256": "ffee4e5bd1d17a96ec62332dbb088b9d4c825bcc81bb802c972d7e1c53ea34df",
+      "export_bytes": 22996,
+      "export_sha256": "ffee4e5bd1d17a96ec62332dbb088b9d4c825bcc81bb802c972d7e1c53ea34df"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/markdown_adapter.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/markdown_adapter.py",
+      "disposition": "exact_copy",
+      "source_bytes": 14325,
+      "source_sha256": "db779b9788900188a7f7c019588d206354b9bc150624f936ec79c3ffb71d618b",
+      "export_bytes": 14325,
+      "export_sha256": "db779b9788900188a7f7c019588d206354b9bc150624f936ec79c3ffb71d618b"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/mcp_server.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/mcp_server.py",
+      "disposition": "exact_copy",
+      "source_bytes": 9656,
+      "source_sha256": "5347fb41e3f2f45fae9a46dde5b6cafcd717d629d3c29f21cb01fccea8d8ebea",
+      "export_bytes": 9656,
+      "export_sha256": "5347fb41e3f2f45fae9a46dde5b6cafcd717d629d3c29f21cb01fccea8d8ebea"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/models.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/models.py",
+      "disposition": "exact_copy",
+      "source_bytes": 3443,
+      "source_sha256": "eb26679926f3ad7b0358c55b21709c556921b42738d0a0be52dedea11cb7b3b7",
+      "export_bytes": 3443,
+      "export_sha256": "eb26679926f3ad7b0358c55b21709c556921b42738d0a0be52dedea11cb7b3b7"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness_meta/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness_meta/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 131,
+      "source_sha256": "a3515c3b732a2e4a8d1093e7929bac9d9d77101c1ebb0a0974a1691bb0ae732d",
+      "export_bytes": 131,
+      "export_sha256": "a3515c3b732a2e4a8d1093e7929bac9d9d77101c1ebb0a0974a1691bb0ae732d"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness_meta/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness_meta/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 51,
+      "source_sha256": "74fff10eb2bd330c92909b27a5a9ae84f41b3f268a5c04f51f849276919f19c6",
+      "export_bytes": 51,
+      "export_sha256": "74fff10eb2bd330c92909b27a5a9ae84f41b3f268a5c04f51f849276919f19c6"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness_meta/checks.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness_meta/checks.py",
+      "disposition": "exact_copy",
+      "source_bytes": 20603,
+      "source_sha256": "460b794568962eca2269145464a70ca8cceb30b49a244a1ee751060f8ba1e115",
+      "export_bytes": 20603,
+      "export_sha256": "460b794568962eca2269145464a70ca8cceb30b49a244a1ee751060f8ba1e115"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness_meta/runner.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness_meta/runner.py",
+      "disposition": "exact_copy",
+      "source_bytes": 12962,
+      "source_sha256": "e22e093a94f17547e575d7fd0c7cc3350d0099075a9b5f2abafa6ed1a6f25a3e",
+      "export_bytes": 12962,
+      "export_sha256": "e22e093a94f17547e575d7fd0c7cc3350d0099075a9b5f2abafa6ed1a6f25a3e"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 127,
+      "source_sha256": "98a8ebb7b5479f93cb170c03f397be49e423a92449c63a735cba58a2f79372fb",
+      "export_bytes": 127,
+      "export_sha256": "98a8ebb7b5479f93cb170c03f397be49e423a92449c63a735cba58a2f79372fb"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 82,
+      "source_sha256": "3371e5aefb63db9d4dbf67dcf569ab0f9f9435e3611e63d907de91f7ba9ced77",
+      "export_bytes": 82,
+      "export_sha256": "3371e5aefb63db9d4dbf67dcf569ab0f9f9435e3611e63d907de91f7ba9ced77"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness/audit.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness/audit.py",
+      "disposition": "exact_copy",
+      "source_bytes": 8883,
+      "source_sha256": "15a4ebfd972690a9addab9ea6e9ceab7f20b7939be7ee4401d4b2fbc45ddef25",
+      "export_bytes": 8883,
+      "export_sha256": "15a4ebfd972690a9addab9ea6e9ceab7f20b7939be7ee4401d4b2fbc45ddef25"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness/cases.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness/cases.py",
+      "disposition": "exact_copy",
+      "source_bytes": 8344,
+      "source_sha256": "362a098a10ba8551cf0e078deedf7295b3792cca1c08d868de9198a1ce240e2d",
+      "export_bytes": 8344,
+      "export_sha256": "362a098a10ba8551cf0e078deedf7295b3792cca1c08d868de9198a1ce240e2d"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness/core.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness/core.py",
+      "disposition": "exact_copy",
+      "source_bytes": 10750,
+      "source_sha256": "c6aff4157c5f0ec3b7fd1fbc8a50ff2d357cad6aab699d2177d9d765d8ca8ccf",
+      "export_bytes": 10750,
+      "export_sha256": "c6aff4157c5f0ec3b7fd1fbc8a50ff2d357cad6aab699d2177d9d765d8ca8ccf"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness/runner.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness/runner.py",
+      "disposition": "exact_copy",
+      "source_bytes": 10599,
+      "source_sha256": "5a0a684e4e3f963e17a224b3d478669df05b291d085155a572a92e68d8a174d3",
+      "export_bytes": 10599,
+      "export_sha256": "5a0a684e4e3f963e17a224b3d478669df05b291d085155a572a92e68d8a174d3"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness/worker.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness/worker.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2703,
+      "source_sha256": "ba551486df27ab0fc2d090ccb60e5d22c2e74e156fc67a964115d2f1ae97c597",
+      "export_bytes": 2703,
+      "export_sha256": "ba551486df27ab0fc2d090ccb60e5d22c2e74e156fc67a964115d2f1ae97c597"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_harness/workloads.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_harness/workloads.py",
+      "disposition": "exact_copy",
+      "source_bytes": 18686,
+      "source_sha256": "166334008b503abacf4587fccf8ce57eda4d9cbb7dc98ac5fdefd52748b3bfce",
+      "export_bytes": 18686,
+      "export_sha256": "166334008b503abacf4587fccf8ce57eda4d9cbb7dc98ac5fdefd52748b3bfce"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_vocabulary/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_vocabulary/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 1163,
+      "source_sha256": "6ca16d1557379959e354db656fe22b2103387d0a734c93050a737605ea28d3ac",
+      "export_bytes": 1163,
+      "export_sha256": "6ca16d1557379959e354db656fe22b2103387d0a734c93050a737605ea28d3ac"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_vocabulary/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_vocabulary/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 4003,
+      "source_sha256": "8ea337c67d9df11705e922e4c3a12db689460cefbb0d7c9d28d6521406505426",
+      "export_bytes": 4003,
+      "export_sha256": "8ea337c67d9df11705e922e4c3a12db689460cefbb0d7c9d28d6521406505426"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_vocabulary/artifacts.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_vocabulary/artifacts.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6037,
+      "source_sha256": "9f80727da94f8815f0375475d11e5830bae4f57c5a7191a2a007e0273f60ecef",
+      "export_bytes": 6037,
+      "export_sha256": "9f80727da94f8815f0375475d11e5830bae4f57c5a7191a2a007e0273f60ecef"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_vocabulary/pilot.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_vocabulary/pilot.py",
+      "disposition": "exact_copy",
+      "source_bytes": 14700,
+      "source_sha256": "734834af9a093550314bdc6435855892bc0b5086a3fd900e4973a6f942c9710f",
+      "export_bytes": 14700,
+      "export_sha256": "734834af9a093550314bdc6435855892bc0b5086a3fd900e4973a6f942c9710f"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native_vocabulary/values.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native_vocabulary/values.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6228,
+      "source_sha256": "2e31d60f40d3427fc231b484cc6e713d1b780b678715c21f4ea2fdde1b8f20d3",
+      "export_bytes": 6228,
+      "export_sha256": "2e31d60f40d3427fc231b484cc6e713d1b780b678715c21f4ea2fdde1b8f20d3"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 586,
+      "source_sha256": "c637ba0a89477abd5b2e14576051cac9fe444a1ab44ff8862d95f380d86062cc",
+      "export_bytes": 586,
+      "export_sha256": "c637ba0a89477abd5b2e14576051cac9fe444a1ab44ff8862d95f380d86062cc"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native/model.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native/model.py",
+      "disposition": "exact_copy",
+      "source_bytes": 13383,
+      "source_sha256": "3dd8733f24d1ac3a0dbf3f29f7721003d6e065896f9c45140d061714dfd4a7ff",
+      "export_bytes": 13383,
+      "export_sha256": "3dd8733f24d1ac3a0dbf3f29f7721003d6e065896f9c45140d061714dfd4a7ff"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/native/values.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/native/values.py",
+      "disposition": "exact_copy",
+      "source_bytes": 7201,
+      "source_sha256": "9f90988e19df662fd73ec72197342634f385712b804664138c6a24e01df0a787",
+      "export_bytes": 7201,
+      "export_sha256": "9f90988e19df662fd73ec72197342634f385712b804664138c6a24e01df0a787"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/operations.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/operations.py",
+      "disposition": "exact_copy",
+      "source_bytes": 5384,
+      "source_sha256": "24d1a9f65516140661a3a5e2f246837541e298fc5f4b76abe4d8b81207286c0b",
+      "export_bytes": 5384,
+      "export_sha256": "24d1a9f65516140661a3a5e2f246837541e298fc5f4b76abe4d8b81207286c0b"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/planner.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/planner.py",
+      "disposition": "exact_copy",
+      "source_bytes": 7303,
+      "source_sha256": "e139b205d3f66d8f11635942d182d1c04a627c31ea19bfe9c8ab644baec7ec10",
+      "export_bytes": 7303,
+      "export_sha256": "e139b205d3f66d8f11635942d182d1c04a627c31ea19bfe9c8ab644baec7ec10"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/relative_maps/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/relative_maps/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 997,
+      "source_sha256": "8fa51d7a38db1463945c382cfba87b324dd42e2547fb39a37fa920f911fe9f2f",
+      "export_bytes": 997,
+      "export_sha256": "8fa51d7a38db1463945c382cfba87b324dd42e2547fb39a37fa920f911fe9f2f"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/relative_maps/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/relative_maps/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2814,
+      "source_sha256": "4dec1005df79788007cbd3af40e3d0dfb7ad4c7e688d7139fc6e4e9c847d6ca5",
+      "export_bytes": 2814,
+      "export_sha256": "4dec1005df79788007cbd3af40e3d0dfb7ad4c7e688d7139fc6e4e9c847d6ca5"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/relative_maps/artifacts.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/relative_maps/artifacts.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6128,
+      "source_sha256": "626005f706013639b70bf2b1a38d9bcce9d9fb9b630bae59ac4cc5fd5fc4c0fd",
+      "export_bytes": 6128,
+      "export_sha256": "626005f706013639b70bf2b1a38d9bcce9d9fb9b630bae59ac4cc5fd5fc4c0fd"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/relative_maps/model.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/relative_maps/model.py",
+      "disposition": "exact_copy",
+      "source_bytes": 9282,
+      "source_sha256": "c38d5eacf286a190863952478be9462bc511a941e61b3ae3cdbd72b56c733b0c",
+      "export_bytes": 9282,
+      "export_sha256": "c38d5eacf286a190863952478be9462bc511a941e61b3ae3cdbd72b56c733b0c"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/relative_maps/probe.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/relative_maps/probe.py",
+      "disposition": "exact_copy",
+      "source_bytes": 12495,
+      "source_sha256": "86ffa5c5cf60326999c5942cc50f27cb3126550e6df5dab59808baea60611256",
+      "export_bytes": 12495,
+      "export_sha256": "86ffa5c5cf60326999c5942cc50f27cb3126550e6df5dab59808baea60611256"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/relative_maps/values.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/relative_maps/values.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6401,
+      "source_sha256": "bda5f5ae9d6081055f4d58c1a3d850f3880136493a60676d89574f736f1926dd",
+      "export_bytes": 6401,
+      "export_sha256": "bda5f5ae9d6081055f4d58c1a3d850f3880136493a60676d89574f736f1926dd"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/relative_maps/wordnet_pull.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/relative_maps/wordnet_pull.py",
+      "disposition": "exact_copy",
+      "source_bytes": 11965,
+      "source_sha256": "784e23f02031c0b16398d7f6381911771fa4a8d69644ea7c88d188f8c7cb3b1c",
+      "export_bytes": 11965,
+      "export_sha256": "784e23f02031c0b16398d7f6381911771fa4a8d69644ea7c88d188f8c7cb3b1c"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/rendering.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/rendering.py",
+      "disposition": "exact_copy",
+      "source_bytes": 16892,
+      "source_sha256": "c6ce66b710b8fd6fcbbce2924e8576acc65272b13825a50018480a526906d64c",
+      "export_bytes": 16892,
+      "export_sha256": "c6ce66b710b8fd6fcbbce2924e8576acc65272b13825a50018480a526906d64c"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/rich_rendering.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/rich_rendering.py",
+      "disposition": "exact_copy",
+      "source_bytes": 4443,
+      "source_sha256": "447740bed85e7c2c84d3bca542989b89ba30d34c9bb87d34c5d2bd42b61c9824",
+      "export_bytes": 4443,
+      "export_sha256": "447740bed85e7c2c84d3bca542989b89ba30d34c9bb87d34c5d2bd42b61c9824"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/rich.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/rich.py",
+      "disposition": "exact_copy",
+      "source_bytes": 6152,
+      "source_sha256": "e6372a0ae31a9e60be2bc525826cc954fecd88dfabf52656ed9375bbec569cb3",
+      "export_bytes": 6152,
+      "export_sha256": "e6372a0ae31a9e60be2bc525826cc954fecd88dfabf52656ed9375bbec569cb3"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/service.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/service.py",
+      "disposition": "exact_copy",
+      "source_bytes": 17924,
+      "source_sha256": "da3e3aa3305381ff927229f4f2cff13ac10b336c2d4bada4e04ddbe3a156b007",
+      "export_bytes": 17924,
+      "export_sha256": "da3e3aa3305381ff927229f4f2cff13ac10b336c2d4bada4e04ddbe3a156b007"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/storage.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/storage.py",
+      "disposition": "exact_copy",
+      "source_bytes": 13165,
+      "source_sha256": "7ce563ffe7585d36b755f67499afe24d17ab7da971ab8961a8ccdcde6f923142",
+      "export_bytes": 13165,
+      "export_sha256": "7ce563ffe7585d36b755f67499afe24d17ab7da971ab8961a8ccdcde6f923142"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/theory_inspector/__init__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/theory_inspector/__init__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 223,
+      "source_sha256": "d3d1105aac07e8f3bff1a3a1a48d5bbcb1f3ee79311ddf13a7e3965fd39c18fd",
+      "export_bytes": 223,
+      "export_sha256": "d3d1105aac07e8f3bff1a3a1a48d5bbcb1f3ee79311ddf13a7e3965fd39c18fd"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/theory_inspector/__main__.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/theory_inspector/__main__.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2934,
+      "source_sha256": "80e6fbb4b903ad5cb42a59dbc28fed4b9222a47eba1be33e84e3fb75ab826533",
+      "export_bytes": 2934,
+      "export_sha256": "80e6fbb4b903ad5cb42a59dbc28fed4b9222a47eba1be33e84e3fb75ab826533"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/theory_inspector/core.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/theory_inspector/core.py",
+      "disposition": "exact_copy",
+      "source_bytes": 13191,
+      "source_sha256": "eb58327a09a6db9a8f5bd1f911d276f5b690a5e45fc8fcff21c789607a21e35e",
+      "export_bytes": 13191,
+      "export_sha256": "eb58327a09a6db9a8f5bd1f911d276f5b690a5e45fc8fcff21c789607a21e35e"
+    },
+    {
+      "source_path": "service/src/docstream_cpu/visual_service.py",
+      "export_path": "syn-etabit-transformer-textual/service/src/docstream_cpu/visual_service.py",
+      "disposition": "exact_copy",
+      "source_bytes": 10606,
+      "source_sha256": "fc63fea12eecc673f89ca6a4f6b2f140fc1b8feb7f4a42e0d4bbea27bfd11e24",
+      "export_bytes": 10606,
+      "export_sha256": "fc63fea12eecc673f89ca6a4f6b2f140fc1b8feb7f4a42e0d4bbea27bfd11e24"
+    },
+    {
+      "source_path": "service/tests/confirm_harness_findings.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/confirm_harness_findings.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2948,
+      "source_sha256": "0c06bed47e9551b0e6b85539aac7b9f7128f6abe679e169ce8aa85e61427dcb6",
+      "export_bytes": 2948,
+      "export_sha256": "0c06bed47e9551b0e6b85539aac7b9f7128f6abe679e169ce8aa85e61427dcb6"
+    },
+    {
+      "source_path": "service/tests/crash_worker.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/crash_worker.py",
+      "disposition": "exact_copy",
+      "source_bytes": 420,
+      "source_sha256": "5d59f886f7eebe07bc339cf63c4b42d951c47dd17f402e136032793692057127",
+      "export_bytes": 420,
+      "export_sha256": "5d59f886f7eebe07bc339cf63c4b42d951c47dd17f402e136032793692057127"
+    },
+    {
+      "source_path": "service/tests/fixtures/harness_meta/contract.json",
+      "export_path": "syn-etabit-transformer-textual/service/tests/fixtures/harness_meta/contract.json",
+      "disposition": "exact_copy",
+      "source_bytes": 1309,
+      "source_sha256": "6452e18c651dedcbd69021255971366ebd3dec8802f5200d6394b8f16d09422f",
+      "export_bytes": 1309,
+      "export_sha256": "6452e18c651dedcbd69021255971366ebd3dec8802f5200d6394b8f16d09422f"
+    },
+    {
+      "source_path": "service/tests/fixtures/harness/reviewed-m4.json",
+      "export_path": "syn-etabit-transformer-textual/service/tests/fixtures/harness/reviewed-m4.json",
+      "disposition": "repository_variant",
+      "source_bytes": 20189,
+      "source_sha256": "e34ed8aefba1f1ecbadbd0fae50bb07dd0602093eda9a98399f1041ab152776e",
+      "export_bytes": 20151,
+      "export_sha256": "a77c537d16395cb1cdce295b6932c1690600548d0c4fe3e01431faa6e8777189"
+    },
+    {
+      "source_path": "service/tests/fixtures/harness/reviewed-m4.png",
+      "export_path": "syn-etabit-transformer-textual/service/tests/fixtures/harness/reviewed-m4.png",
+      "disposition": "exact_copy",
+      "source_bytes": 41403,
+      "source_sha256": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22",
+      "export_bytes": 41403,
+      "export_sha256": "e200597428a67f4c1e406b55f52b66e82d2e54f6bdaccc64c59a3a9e77888e22"
+    },
+    {
+      "source_path": "service/tests/fixtures/native_harness_meta/contract.json",
+      "export_path": "syn-etabit-transformer-textual/service/tests/fixtures/native_harness_meta/contract.json",
+      "disposition": "exact_copy",
+      "source_bytes": 1057,
+      "source_sha256": "e8c59b0382c974946956f4b2a373c60d20dfb4d2768e014dfb2f21bbd9f5d300",
+      "export_bytes": 1057,
+      "export_sha256": "e8c59b0382c974946956f4b2a373c60d20dfb4d2768e014dfb2f21bbd9f5d300"
+    },
+    {
+      "source_path": "service/tests/fixtures/native_harness/fixed-cases.json",
+      "export_path": "syn-etabit-transformer-textual/service/tests/fixtures/native_harness/fixed-cases.json",
+      "disposition": "exact_copy",
+      "source_bytes": 6363,
+      "source_sha256": "a254b1d2037b346da1c4c9c6a11d173d11250752e57478ed106ff3cebcd980bc",
+      "export_bytes": 6363,
+      "export_sha256": "a254b1d2037b346da1c4c9c6a11d173d11250752e57478ed106ff3cebcd980bc"
+    },
+    {
+      "source_path": "service/tests/fixtures/native/assemblies.json",
+      "export_path": "syn-etabit-transformer-textual/service/tests/fixtures/native/assemblies.json",
+      "disposition": "exact_copy",
+      "source_bytes": 1664,
+      "source_sha256": "55dfd5412298223d8973280452fb356066aee9477236677b4e3c0b1ea7e02b97",
+      "export_bytes": 1664,
+      "export_sha256": "55dfd5412298223d8973280452fb356066aee9477236677b4e3c0b1ea7e02b97"
+    },
+    {
+      "source_path": "service/tests/prepare_harness_fixture.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/prepare_harness_fixture.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2711,
+      "source_sha256": "a38724afbd272247d35e2784eb1209ec187a286c83dedfd6996cc0225ad9135f",
+      "export_bytes": 2711,
+      "export_sha256": "a38724afbd272247d35e2784eb1209ec187a286c83dedfd6996cc0225ad9135f"
+    },
+    {
+      "source_path": "service/tests/retain_harness_inputs.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/retain_harness_inputs.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2572,
+      "source_sha256": "265e260d0363cda0aedb1ad13fa060ab9cbf8974543fbcac0634910a92aeff52",
+      "export_bytes": 2572,
+      "export_sha256": "265e260d0363cda0aedb1ad13fa060ab9cbf8974543fbcac0634910a92aeff52"
+    },
+    {
+      "source_path": "service/tests/run_m2_validation.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/run_m2_validation.py",
+      "disposition": "exact_copy",
+      "source_bytes": 1866,
+      "source_sha256": "688c17f1ab97b02fa9b70a12648fc83ed58c313c9f9d767394bf859bd3e7ad5e",
+      "export_bytes": 1866,
+      "export_sha256": "688c17f1ab97b02fa9b70a12648fc83ed58c313c9f9d767394bf859bd3e7ad5e"
+    },
+    {
+      "source_path": "service/tests/run_m3_validation.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/run_m3_validation.py",
+      "disposition": "exact_copy",
+      "source_bytes": 1840,
+      "source_sha256": "8c834ed7438a2258a2219bfb3bd29e63e82b2813a5cfae1cdc1ed268467f8bf7",
+      "export_bytes": 1840,
+      "export_sha256": "8c834ed7438a2258a2219bfb3bd29e63e82b2813a5cfae1cdc1ed268467f8bf7"
+    },
+    {
+      "source_path": "service/tests/run_m4_validation.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/run_m4_validation.py",
+      "disposition": "exact_copy",
+      "source_bytes": 1784,
+      "source_sha256": "3b9517326c67aa32833913dcd452a7d959a8edd2847044d3b444f596cc880819",
+      "export_bytes": 1784,
+      "export_sha256": "3b9517326c67aa32833913dcd452a7d959a8edd2847044d3b444f596cc880819"
+    },
+    {
+      "source_path": "service/tests/run_validation.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/run_validation.py",
+      "disposition": "exact_copy",
+      "source_bytes": 2168,
+      "source_sha256": "6aa98a023b1cc4008296b2f6f9a4d09e396b92145b010c388b607abfa4b0180b",
+      "export_bytes": 2168,
+      "export_sha256": "6aa98a023b1cc4008296b2f6f9a4d09e396b92145b010c388b607abfa4b0180b"
+    },
+    {
+      "source_path": "service/tests/test_baseline.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_baseline.py",
+      "disposition": "exact_copy",
+      "source_bytes": 1060,
+      "source_sha256": "d19b1520a66d8369eff8dfbb3842a64b59c0e5961cd50d3669e4108e4ecb70de",
+      "export_bytes": 1060,
+      "export_sha256": "d19b1520a66d8369eff8dfbb3842a64b59c0e5961cd50d3669e4108e4ecb70de"
+    },
+    {
+      "source_path": "service/tests/test_cpu.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_cpu.py",
+      "disposition": "exact_copy",
+      "source_bytes": 21462,
+      "source_sha256": "6869905bed4caaab4699a0f00f5827bd38d32250ab281e997a1eb3fa28bdab15",
+      "export_bytes": 21462,
+      "export_sha256": "6869905bed4caaab4699a0f00f5827bd38d32250ab281e997a1eb3fa28bdab15"
+    },
+    {
+      "source_path": "service/tests/test_format_hardening.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_format_hardening.py",
+      "disposition": "exact_copy",
+      "source_bytes": 13900,
+      "source_sha256": "bfd1b1437501f1684aa07a84926f970fa127a032d22d9965d3252c69cb38988d",
+      "export_bytes": 13900,
+      "export_sha256": "bfd1b1437501f1684aa07a84926f970fa127a032d22d9965d3252c69cb38988d"
+    },
+    {
+      "source_path": "service/tests/test_formats.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_formats.py",
+      "disposition": "exact_copy",
+      "source_bytes": 26405,
+      "source_sha256": "f90fa1cdd5f09272c2177129e4a364e26acc5a40f42873a0a58b24c0693609fe",
+      "export_bytes": 26405,
+      "export_sha256": "f90fa1cdd5f09272c2177129e4a364e26acc5a40f42873a0a58b24c0693609fe"
+    },
+    {
+      "source_path": "service/tests/test_harness_cleanup.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_harness_cleanup.py",
+      "disposition": "exact_copy",
+      "source_bytes": 11845,
+      "source_sha256": "5b1a24e7047786ddf80ad4ceddb0cb2287ea254ae26eb2b7767b88556e12bd4d",
+      "export_bytes": 11845,
+      "export_sha256": "5b1a24e7047786ddf80ad4ceddb0cb2287ea254ae26eb2b7767b88556e12bd4d"
+    },
+    {
+      "source_path": "service/tests/test_harness_meta.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_harness_meta.py",
+      "disposition": "exact_copy",
+      "source_bytes": 5618,
+      "source_sha256": "c57381f793098bcdf11e13339ef9e883a609a119ae1802f6b633bbbd24f03916",
+      "export_bytes": 5618,
+      "export_sha256": "c57381f793098bcdf11e13339ef9e883a609a119ae1802f6b633bbbd24f03916"
+    },
+    {
+      "source_path": "service/tests/test_harness.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_harness.py",
+      "disposition": "exact_copy",
+      "source_bytes": 8640,
+      "source_sha256": "a3a25a771afa4750f1165a453dfff681837c9e3acb3f2081bd4671cacccc20f8",
+      "export_bytes": 8640,
+      "export_sha256": "a3a25a771afa4750f1165a453dfff681837c9e3acb3f2081bd4671cacccc20f8"
+    },
+    {
+      "source_path": "service/tests/test_mcp.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_mcp.py",
+      "disposition": "exact_copy",
+      "source_bytes": 10497,
+      "source_sha256": "ff8f27f6633f1556841cde0c10bbc38059b754724d07ead0096491d67406cc4d",
+      "export_bytes": 10497,
+      "export_sha256": "ff8f27f6633f1556841cde0c10bbc38059b754724d07ead0096491d67406cc4d"
+    },
+    {
+      "source_path": "service/tests/test_native_harness_meta.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_native_harness_meta.py",
+      "disposition": "exact_copy",
+      "source_bytes": 4593,
+      "source_sha256": "8503e8830234ab34a62276f4ba8b8e39de6ec10f2b0f283c853c27a08fbbe595",
+      "export_bytes": 4593,
+      "export_sha256": "8503e8830234ab34a62276f4ba8b8e39de6ec10f2b0f283c853c27a08fbbe595"
+    },
+    {
+      "source_path": "service/tests/test_native_harness.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_native_harness.py",
+      "disposition": "exact_copy",
+      "source_bytes": 11384,
+      "source_sha256": "2333e7b570a25f8c4ea8ccefabe8f0778f7ecd8b3bdbfdb705d5e3926286dfed",
+      "export_bytes": 11384,
+      "export_sha256": "2333e7b570a25f8c4ea8ccefabe8f0778f7ecd8b3bdbfdb705d5e3926286dfed"
+    },
+    {
+      "source_path": "service/tests/test_native_vocabulary.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_native_vocabulary.py",
+      "disposition": "exact_copy",
+      "source_bytes": 12867,
+      "source_sha256": "c0f97c2e0cac496fa6ed7dd6fcf9e6acf01cf71a74318247309e340e5f25f3eb",
+      "export_bytes": 12867,
+      "export_sha256": "c0f97c2e0cac496fa6ed7dd6fcf9e6acf01cf71a74318247309e340e5f25f3eb"
+    },
+    {
+      "source_path": "service/tests/test_native.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_native.py",
+      "disposition": "exact_copy",
+      "source_bytes": 21647,
+      "source_sha256": "2ab6fa288a80c0a983f563d565bd07ccc3d387bfa5935082df78ddba59332848",
+      "export_bytes": 21647,
+      "export_sha256": "2ab6fa288a80c0a983f563d565bd07ccc3d387bfa5935082df78ddba59332848"
+    },
+    {
+      "source_path": "service/tests/test_relative_maps.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_relative_maps.py",
+      "disposition": "exact_copy",
+      "source_bytes": 14378,
+      "source_sha256": "19d8545695b21249e6aaebece79e78cec95ddbb11126bacdb735c07351537b06",
+      "export_bytes": 14378,
+      "export_sha256": "19d8545695b21249e6aaebece79e78cec95ddbb11126bacdb735c07351537b06"
+    },
+    {
+      "source_path": "service/tests/test_rendering.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_rendering.py",
+      "disposition": "exact_copy",
+      "source_bytes": 13831,
+      "source_sha256": "dbedc676eb5b28bf380bae61497982b60e566c0ad07dfac5aa7a57241b4e5e1c",
+      "export_bytes": 13831,
+      "export_sha256": "dbedc676eb5b28bf380bae61497982b60e566c0ad07dfac5aa7a57241b4e5e1c"
+    },
+    {
+      "source_path": "service/tests/test_service.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_service.py",
+      "disposition": "exact_copy",
+      "source_bytes": 11169,
+      "source_sha256": "9e9b78bb6bed901ac638a27d90ead1e2a2ecd1e198248c1eeef9477d210d62e1",
+      "export_bytes": 11169,
+      "export_sha256": "9e9b78bb6bed901ac638a27d90ead1e2a2ecd1e198248c1eeef9477d210d62e1"
+    },
+    {
+      "source_path": "service/tests/test_theory_inspector.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/test_theory_inspector.py",
+      "disposition": "exact_copy",
+      "source_bytes": 9545,
+      "source_sha256": "e686d2a52a7767ae722346c9cdadf34d54f931c0cbe9d1080d43ba6de942c253",
+      "export_bytes": 9545,
+      "export_sha256": "e686d2a52a7767ae722346c9cdadf34d54f931c0cbe9d1080d43ba6de942c253"
+    },
+    {
+      "source_path": "service/tests/write_harness_evidence.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/write_harness_evidence.py",
+      "disposition": "exact_copy",
+      "source_bytes": 5403,
+      "source_sha256": "2c0c8ab0773f872946eccae049ff6e5c5fa3213926b97fb40f4f67b7c4ce7c21",
+      "export_bytes": 5403,
+      "export_sha256": "2c0c8ab0773f872946eccae049ff6e5c5fa3213926b97fb40f4f67b7c4ce7c21"
+    },
+    {
+      "source_path": "service/tests/write_m4_evidence.py",
+      "export_path": "syn-etabit-transformer-textual/service/tests/write_m4_evidence.py",
+      "disposition": "exact_copy",
+      "source_bytes": 4517,
+      "source_sha256": "9ad0f22b2f3e9c0d750c452c4a2128a58d921c923114f249bb63a2140248b685",
+      "export_bytes": 4517,
+      "export_sha256": "9ad0f22b2f3e9c0d750c452c4a2128a58d921c923114f249bb63a2140248b685"
+    },
+    {
+      "export_path": ".gitignore",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 83,
+      "export_sha256": "69a35e19d9c8c34ac82dfd3e9950b4ad6c322d62e5efc19a666f55be52fc6ed7"
+    },
+    {
+      "export_path": "EXPORT_VALIDATION.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 4363,
+      "export_sha256": "9cf39f28b7925e7a8ecc7bf8eac7b3b4eae84282311678ec58acc1cffe2b2699"
+    },
+    {
+      "export_path": "README.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 686,
+      "export_sha256": "b6ba07532a4f82dd74d6edc5796801c77e3d197af5f2cacc9a0d482a69d3949d"
+    },
+    {
+      "export_path": "syn-etabit-transformer-textual/docs/integrations/AGENTIC_CONTROL.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 797,
+      "export_sha256": "a6735ca960ec34c4f421eacf34b233801a65a6427f63fa0da52df9d7ac6365ae"
+    },
+    {
+      "export_path": "syn-etabit-transformer-textual/docs/integrations/EXTERNAL_DOCUMENT_CONVERSION.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 1113,
+      "export_sha256": "3a95cd58c8ba780164267d79f30e8d9419c489ba8a43c40dc401273a8a54ecd1"
+    },
+    {
+      "export_path": "syn-etabit-transformer-textual/docs/integrations/GPU_BACKEND.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 846,
+      "export_sha256": "a6f94a4434eab5c3626a56f9de8daa9db1d7d0a017dc2e76748fca83ba1fb283"
+    },
+    {
+      "export_path": "syn-etabit-transformer-textual/docs/integrations/INTEGRATION_GATE.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 1628,
+      "export_sha256": "b1c81d9164c37c9bf241af43113ff58fc929ec6f8010c904a8c20a2e86fdeb94"
+    },
+    {
+      "export_path": "syn-etabit-transformer-textual/docs/integrations/WORDNET.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 1900,
+      "export_sha256": "a0f2e8460a00465ebee4b994b77de2672e5849e74925e7314eb1c8bd1039079d"
+    },
+    {
+      "export_path": "syn-etabit-transformer-textual/INTEGRATIONS.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 1212,
+      "export_sha256": "734d8f33e72ea65e6ab1b9778b2c73a563805d9322987ea24418c7a904382825"
+    },
+    {
+      "export_path": "syn-etabit-transformer-textual/README.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 2712,
+      "export_sha256": "73d7eb90b1d06dc784fa2c4a8fb9b95f921d06ab7b46f88de2ba0ef1207ca7ae"
+    },
+    {
+      "export_path": "syn-etabit-transformer-textual/REPOSITORY_EXPORT.md",
+      "disposition": "generated_repository_evidence_or_guidance",
+      "export_bytes": 1873,
+      "export_sha256": "276b76ba63f64f987c1e101f89d6f3a7a99488e85d13a7609a9e3966093ef008"
+    }
+  ]
+}

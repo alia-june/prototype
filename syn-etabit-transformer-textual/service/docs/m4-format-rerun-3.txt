@@ -1,0 +1,21 @@
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:49164/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:49164/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:49164/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:49164/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:49164/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:49164/mcp "HTTP/1.1 200 OK"
+StreamableHTTP session manager shutting down
+======================================================================
+FAIL: test_request_key_conflict_and_size_limits (test_formats.FormatServiceTests.test_request_key_conflict_and_size_limits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<source-workspace>\service\tests\test_formats.py", line 330, in test_request_key_conflict_and_size_limits
+    with self.assertRaises(ModelError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ModelError not raised
+
+----------------------------------------------------------------------
+Ran 29 tests in 5.400s
+
+FAILED (failures=1)

@@ -1,0 +1,27 @@
+{
+  "scope": "M2 service plus CPU and baseline regressions",
+  "approval_date": "2026-10-29",
+  "recorded_utc": "2026-10-29T08:19:54.843101+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sqlite": "3.53.1",
+  "packages": {
+    "docstream-cpu": "0.2.0.dev2",
+    "mcp": "2.3.0",
+    "mcp-types": "2.3.0",
+    "uvicorn": "0.38.0",
+    "pydantic": "2.14.1",
+    "anyio": "4.15.1",
+    "starlette": "1.10.0",
+    "httpx2": "2.16.0"
+  },
+  "tests_run": 66,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true,
+  "elapsed_seconds": 16.039606,
+  "cpu_generated_sequences": 420,
+  "test_listeners": "ephemeral loopback; shut down by fixtures; foreground subprocesses terminated and checked",
+  "host_configuration_changed": false,
+  "browser_renderer_run": false
+}

@@ -1,0 +1,456 @@
+{
+  "schema_version": "docstream.source-learning-catalog/1",
+  "catalog_id": "plugin-pipeline-v7",
+  "review_date": "2026-10-29",
+  "timezone": "America/New_York",
+  "title": "Source learning from Modular Recursive Plugin Pipeline v7",
+  "scope": {
+    "authorization": "AUTH-10: user replied go to the concrete catalogue proposal",
+    "source_boundary": "The nine-file ZIP only; current Docstream requirements are application context, not evidence of source implementation.",
+    "method": "Manual static review with selected exact excerpts and file/line locators. No source evaluation, browser execution, dependency installation, integration or product correction.",
+    "adoption_rule": "Catalogue inclusion is not adoption. Do not wholesale lift code, classes, taxonomies, architecture, claimed guarantees or assumptions.",
+    "application_status": "All application statements are proposals and remain not_adopted.",
+    "evidence_limit": "Static inspection establishes code structure and branches; predicted runtime effects remain untested. Hashes establish byte identity only."
+  },
+  "source": {
+    "archive_path": "C:/Users/<local-user>/Downloads/modular_recursive_plugin_pipeline_v7_insertable_regex.zip",
+    "archive_sha256": "25b0e2e84a4465d07afe3f621f24cbdeb18767d02b1cccbed383732452a5f95b",
+    "root_entry": "modular_recursive_plugin_pipeline_v7_insertable_regex/",
+    "manifest": "SOURCE_MANIFEST.json",
+    "locator_convention": "Files are relative to root_entry inside the ZIP, not extracted workspace files. Lines are 1-based LF splits with terminal CR removed and the final empty line retained. Excerpts are exact substrings within the cited range."
+  },
+  "taxonomy": {
+    "status": "Assistant working organization approved for this catalogue; not a universal classification or product schema.",
+    "categories": {
+      "lesson": "A useful principle supported by the source observation.",
+      "anti_lesson": "A conclusion or guarantee that should not be inferred from this source.",
+      "pattern": "A potentially reusable arrangement of responsibilities or behavior.",
+      "antipattern": "An arrangement unsuitable under the stated application conditions.",
+      "structure": "A concrete component, record, interface or relationship.",
+      "edifice": "A larger composition of structures and its operating assumptions.",
+      "mechanism": "How a behavior is arranged or carried out.",
+      "invariant": "A condition a future application would need to maintain.",
+      "failure_mode": "A source-observed gap or a specifically labeled predicted failure.",
+      "trade_off": "A benefit and cost that depend on purpose or environment.",
+      "open_question": "A question unresolved by this static review."
+    },
+    "dispositions": ["reference_only", "candidate_adaptation", "avoid_as_implemented", "requires_validation"],
+    "evidence_classes": ["source_claim", "static_observation"],
+    "relation_types": ["complements", "constrains", "constrained_by", "contrasts_with", "depends_on"]
+  },
+  "application_context": {
+    "authority": "Direct instructions in the current chat; no source-packet or historical TODO grants implementation authority.",
+    "constraints": [
+      "Catalogue lessons and anti-lessons without wholesale adoption.",
+      "Native AI-originated documents are the current working assumption; foreign-document reconstruction need not govern the proposed native core.",
+      "The user describes direct one-to-one references assembled into words, sentences and paragraphs, with per-system maps including HTML and Python.",
+      "Changes produce new streams and retain requested transformations; reduction does not erase their history.",
+      "CPU first; later GPU implementation requires a separate scope.",
+      "Agentic-control integration remains last."
+    ],
+    "unresolved": [
+      "Native unit catalogue schema and reference width.",
+      "Whether words, sentences and paragraphs are separately interned or only assembled ranges.",
+      "Exact codepage contents, return/control semantics and version-binding policy.",
+      "Any implementation or runtime validation of the supplied plugin pipeline."
+    ]
+  },
+  "entries": [
+    {
+      "id": "PP7-001", "title": "Separate definitions from occurrences",
+      "categories": ["lesson", "pattern", "structure", "invariant"],
+      "source_evidence": [{"file":"pipeline.js","lines":[197,241],"symbol":"RegistryEntry and PipelineNode","excerpt":"this.instanceId=instanceId||typeId;","evidence_class":"static_observation","observation":"Registry metadata uses typeId while runtime nodes also carry instanceId; loaded instances receive distinct counter-based IDs."},{"file":"pipeline.js","lines":[368,384],"symbol":"PluginManager.load","excerpt":"plugin.instanceId=this.makeInstanceId(typeId);","evidence_class":"static_observation","observation":"A loaded instance is distinguished from its installed type."}],
+      "interpretation": {"kind":"assistant_inference","text":"A reusable definition and an occurrence are different identities. The source demonstrates this for processors, not characters or native assembly objects."},
+      "application": {"kind":"proposed_application","text":"Define native unit identity, assembly occurrence identity and processing occurrence identity separately. Reuse the principle after specifying their own contracts."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["The local counter does not establish durable identity across sessions.","Plugin identity is not automatically a native character reference."],
+      "validation_needed":["Repeated definitions remain distinguishable from repeated occurrences.","Restart and reference-resolution rules are explicit."],
+      "relations":[{"target":"PP7-002","relation":"constrained_by"}]
+    },
+    {
+      "id":"PP7-002", "title":"A registry key does not freeze a definition",
+      "categories":["anti_lesson","antipattern","failure_mode","invariant"],
+      "source_evidence":[{"file":"pipeline.js","lines":[292,308],"symbol":"PluginRegistry.register","excerpt":"this.entries.set(entry.typeId,entry);","evidence_class":"static_observation","observation":"Registering an existing typeId replaces the registry entry without a version check."},{"file":"pipeline.js","lines":[350,366],"symbol":"PluginManager.install","excerpt":"this.installed.set(prototypePlugin.typeId,{","evidence_class":"static_observation","observation":"An installed factory is also stored by the replaceable type key."}],
+      "interpretation":{"kind":"assistant_inference","text":"A repeated name can select a changed definition. The registry alone does not provide the stable meanings needed to withstand redefinition."},
+      "application":{"kind":"proposed_application","text":"Consider immutable definition identities and explicit version/content binding for native maps. A new definition would need a deliberate new binding rather than silent replacement."},
+      "disposition":"avoid_as_implemented", "application_status":"not_adopted",
+      "limitations":["The archive does not promise a persistent versioned registry.","The particular version/hash policy remains undecided."],
+      "validation_needed":["A redefinition cannot reinterpret a prior assembly.","Conflicting registration is rejected or explicitly versioned."],
+      "relations":[{"target":"PP7-001","relation":"constrains"},{"target":"PP7-003","relation":"complements"}]
+    },
+    {
+      "id":"PP7-003", "title":"Frozen metadata has a specific boundary",
+      "categories":["lesson","structure","anti_lesson"],
+      "source_evidence":[{"file":"pipeline.js","lines":[197,227],"symbol":"RegistryEntry and PipelineNode constructors","excerpt":"Object.freeze(this);","evidence_class":"static_observation","observation":"RegistryEntry freezes itself and its declared arrays; ordinary PipelineNode instances remain mutable apart from those arrays."}],
+      "interpretation":{"kind":"assistant_inference","text":"Metadata immutability is useful but does not freeze the plugin implementation, runtime instance, context or registry binding."},
+      "application":{"kind":"proposed_application","text":"Describe exactly which native values are immutable, and keep that guarantee separate from registry replacement and execution state."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["A freeze operation is not a complete persistence or authority policy."],
+      "validation_needed":["Mutations at each promised immutable boundary are rejected.","Execution configuration is captured separately from mutable UI state."],
+      "relations":[{"target":"PP7-002","relation":"complements"},{"target":"PP7-012","relation":"contrasts_with"}]
+    },
+    {
+      "id":"PP7-004", "title":"Keep environment adapters separate from processing",
+      "categories":["lesson","pattern","structure"],
+      "source_evidence":[{"file":"adapters.js","lines":[6,48],"symbol":"BrowserReaderProvider, BrowserOutputSink, BrowserRegexProvider","excerpt":"class BrowserReaderProvider{","evidence_class":"static_observation","observation":"Browser elements are wrapped in provider/sink objects."},{"file":"plugins.js","lines":[11,43],"symbol":"StandardReaderPlugin","excerpt":"const envelope=await this.readerProvider.read();","evidence_class":"static_observation","observation":"The reader plugin receives a provider rather than reading DOM elements directly."}],
+      "interpretation":{"kind":"assistant_inference","text":"The boundary lets processing logic be considered separately from the browser interface."},
+      "application":{"kind":"proposed_application","text":"Use explicit interfaces for native input, reference resolution and publication, with their own typed contracts. Keep a future inspector outside authoritative processing logic."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["The supplied adapters are browser-specific.","A provider interface alone does not validate its data."],
+      "validation_needed":["Substituting an input/output mechanism preserves the declared semantic result.","Invalid adapter envelopes are rejected consistently."],
+      "relations":[{"target":"PP7-009","relation":"constrained_by"},{"target":"PP7-032","relation":"complements"}]
+    },
+    {
+      "id":"PP7-005", "title":"Explicit entry and terminal sentinels clarify a pass",
+      "categories":["pattern","structure","invariant","trade_off"],
+      "source_evidence":[{"file":"pipeline.js","lines":[243,282],"symbol":"StartNode and StopNode","excerpt":"typeId:\"system.stop\",","evidence_class":"static_observation","observation":"START and STOP are fixed system nodes with diagnostic behavior."},{"file":"pipeline.js","lines":[473,487],"symbol":"buildPipelineNodes and validatePipeline","excerpt":"const nodes=[new StartNode(),...this.pluginManager.getLoadedPlugins(),new StopNode()];","evidence_class":"static_observation","observation":"A pass is bracketed and checked for unique instance IDs and valid interior node types."}],
+      "interpretation":{"kind":"assistant_inference","text":"Visible boundaries make a planned pass easier to inspect. The StopNode terminates traversal of that pass; it is not the runtime STOP signal or a durable commit."},
+      "application":{"kind":"proposed_application","text":"Give future assembly/execution plans explicit boundaries and terminal outcomes without conflating traversal completion, publication and commit."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["The sentinel is not a transaction boundary.","Per-character dispatch should not be inferred from processor sentinels."],
+      "validation_needed":["A failed or interrupted pass cannot claim a successful terminal outcome."],
+      "relations":[{"target":"PP7-025","relation":"constrains"},{"target":"PP7-026","relation":"complements"}]
+    },
+    {
+      "id":"PP7-006", "title":"An inspectable ordered stage list is an assembly structure",
+      "categories":["lesson","pattern","structure","trade_off"],
+      "source_evidence":[{"file":"pipeline.js","lines":[372,402],"symbol":"PluginManager.load, unload and move","excerpt":"this.loaded.splice(index,0,{plugin});","evidence_class":"static_observation","observation":"Loaded stage occurrences can be inserted, removed and moved."},{"file":"ui.js","lines":[191,208],"symbol":"renderLoadedPlugins","excerpt":"for(const plugin of this.runtime.pluginManager.getLoadedPluginRecords()){","evidence_class":"static_observation","observation":"The UI displays ordered occurrence identities and declared metadata."}],
+      "interpretation":{"kind":"assistant_inference","text":"Ordering can be represented and inspected as data. This list assembles processors; it does not represent word or paragraph composition."},
+      "application":{"kind":"proposed_application","text":"Make a future processing plan inspectable before execution, and snapshot its exact ordered identities/configuration. Keep native content assembly as a separate structure."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["The current list is live mutable state.","Changing visible order is not proof that the order is valid."],
+      "validation_needed":["Reordering creates an explicit plan revision.","A running plan remains bound to its captured definition."],
+      "relations":[{"target":"PP7-007","relation":"constrained_by"},{"target":"PP7-033","relation":"contrasts_with"}]
+    },
+    {
+      "id":"PP7-007", "title":"Dependency warnings are not execution preconditions",
+      "categories":["antipattern","anti_lesson","failure_mode","invariant"],
+      "source_evidence":[{"file":"pipeline.js","lines":[313,336],"symbol":"PluginRegistry.validateLoadedOrder","excerpt":"return warnings;","evidence_class":"static_observation","observation":"Missing and misordered dependencies are returned as warnings."},{"file":"pipeline.js","lines":[478,489],"symbol":"validatePipeline","excerpt":"if(warnings.length) this.debug.log(\"warn\",\"Pipeline dependency warnings detected.\",{warnings});","evidence_class":"static_observation","observation":"Pipeline validation logs dependency warnings without rejecting execution."}],
+      "interpretation":{"kind":"assistant_inference","text":"A processor may run without a producer it declared necessary. Diagnostics alone do not establish valid dataflow."},
+      "application":{"kind":"proposed_application","text":"Define which dependencies are mandatory, validate them before authoritative execution, and report an invalid plan rather than silently using stale/default state."},
+      "disposition":"avoid_as_implemented", "application_status":"not_adopted",
+      "limitations":["Warning-only behavior can be suitable for a permissive demonstrator.","The native dependency contract is not defined by this archive."],
+      "validation_needed":["Remove or reorder a required stage and verify a declared rejection before mutation/publication."],
+      "relations":[{"target":"PP7-008","relation":"complements"},{"target":"PP7-009","relation":"complements"}]
+    },
+    {
+      "id":"PP7-008", "title":"Repeated types require occurrence-aware dependency checks",
+      "categories":["failure_mode","structure","open_question"],
+      "source_evidence":[{"file":"pipeline.js","lines":[313,332],"symbol":"validateLoadedOrder","excerpt":"typeIds.indexOf(requiredTypeId)>typeIds.indexOf(record.plugin.typeId)","evidence_class":"static_observation","observation":"Dependency ordering compares the first occurrence of each type rather than the current record's position."}],
+      "interpretation":{"kind":"assistant_inference","text":"With repeated dependent types, a later instance can be assessed against an earlier instance's position. The code does not specify which producer occurrence supplies which consumer."},
+      "application":{"kind":"proposed_application","text":"Bind repeated processors to explicit predecessor/output occurrences or a declared selection rule. Do not infer dataflow solely from matching type names."},
+      "disposition":"requires_validation", "application_status":"not_adopted",
+      "limitations":["The problematic runtime sequence has not been executed.","Different dependency semantics may intentionally require an early producer."],
+      "validation_needed":["Exercise repeated producers/consumers on both sides of a required stage and compare with the declared occurrence-binding rule."],
+      "relations":[{"target":"PP7-001","relation":"depends_on"},{"target":"PP7-007","relation":"complements"}]
+    },
+    {
+      "id":"PP7-009", "title":"Declared support labels do not establish a data contract",
+      "categories":["anti_lesson","structure","invariant"],
+      "source_evidence":[{"file":"pipeline.js","lines":[197,210],"symbol":"RegistryEntry","excerpt":"this.supports=Object.freeze([...supports]);","evidence_class":"static_observation","observation":"Support metadata is a string list."},{"file":"pipeline.js","lines":[491,504],"symbol":"executeRecursive","excerpt":"const nextContext=await node.execute(context,this);","evidence_class":"static_observation","observation":"Execution invokes a node without validating declared input/output shapes or checking a support label against context data."}],
+      "interpretation":{"kind":"assistant_inference","text":"A JSON/universal label is useful discovery metadata but not a schema, semantic guarantee or native codepage contract."},
+      "application":{"kind":"proposed_application","text":"Specify accepted native structures, produced structures, map versions and failure behavior for each coarse processing operation."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["Individual supplied plugins perform some local checks.","No universal type system should be inferred from enum names."],
+      "validation_needed":["Mismatched inputs and invalid outputs fail at their declared boundary."],
+      "relations":[{"target":"PP7-028","relation":"constrained_by"},{"target":"PP7-007","relation":"complements"}]
+    },
+    {
+      "id":"PP7-010", "title":"Discovery metadata and activation are different operations",
+      "categories":["lesson","mechanism","trade_off","failure_mode"],
+      "source_evidence":[{"file":"pipeline.js","lines":[350,365],"symbol":"PluginManager.install","excerpt":"const prototypePlugin=new factory(...args);","evidence_class":"static_observation","observation":"Installation constructs a real plugin to obtain its metadata."},{"file":"pipeline.js","lines":[372,381],"symbol":"PluginManager.load","excerpt":"const plugin=new record.factory(...record.args);","evidence_class":"static_observation","observation":"Loading constructs another instance."}],
+      "interpretation":{"kind":"assistant_inference","text":"A constructor may be invoked during discovery and again during activation. Future constructor side effects would therefore run at both stages; the supplied examples do not demonstrate harmful effects."},
+      "application":{"kind":"proposed_application","text":"Consider inert definition records for discovery and explicit activation of an execution occurrence. Keep native unit lookup free of processor startup."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["The example constructors mostly initialize metadata and validate arguments.","No external plugin was installed or executed in this review."],
+      "validation_needed":["Listing definitions performs no hidden I/O or execution.","Activation side effects occur only at the declared boundary."],
+      "relations":[{"target":"PP7-029","relation":"complements"},{"target":"PP7-033","relation":"constrains"}]
+    },
+    {
+      "id":"PP7-011", "title":"Linear recursive traversal is not hierarchical content assembly",
+      "categories":["anti_lesson","mechanism","edifice"],
+      "source_evidence":[{"file":"pipeline.js","lines":[491,504],"symbol":"RecursivePipelineRuntime.executeRecursive","excerpt":"return this.executeRecursive(nodes,index+1,nextContext);","evidence_class":"static_observation","observation":"Recursion advances through a flat node array."},{"file":"README.md","lines":[22,38],"symbol":"Runtime shape and default pipeline","excerpt":"→ loaded plugin instances","evidence_class":"source_claim","observation":"The README describes a start/plugins/stop runtime shape."}],
+      "interpretation":{"kind":"assistant_inference","text":"The word recursive does not establish reusable child assemblies, graph references, word/sentence composition or memoized substructure."},
+      "application":{"kind":"proposed_application","text":"Define native assembly explicitly with its own unit/child relationships and cycle rules. Use processing traversal only for processing traversal."},
+      "disposition":"reference_only", "application_status":"not_adopted",
+      "limitations":["This is not a claim that the source intended to implement a native document graph."],
+      "validation_needed":["A future hierarchical assembler preserves ordered children, shared definitions and the declared cycle/depth policy."],
+      "relations":[{"target":"PP7-006","relation":"contrasts_with"},{"target":"PP7-033","relation":"complements"}]
+    },
+    {
+      "id":"PP7-012", "title":"Shared mutable context changes the history model",
+      "categories":["antipattern","structure","trade_off","invariant"],
+      "source_evidence":[{"file":"pipeline.js","lines":[458,471],"symbol":"createFreshContext","excerpt":"tokenizerState:{},","evidence_class":"static_observation","observation":"A run owns a mutable object with data, derived states, output, stream, diagnostics and errors."},{"file":"plugins.js","lines":[105,110],"symbol":"WordCountPlugin.execute","excerpt":"context.data._pluginWordCount=wordCount;","evidence_class":"static_observation","observation":"A processor writes its result into the input data object."}],
+      "interpretation":{"kind":"assistant_inference","text":"Later stages can overwrite content or derived state. This differs from immutable input/output values and addressable historical transformations."},
+      "application":{"kind":"proposed_application","text":"Preserve immutable native inputs and explicit resulting assemblies. Keep derived measurements separate from authoritative content and bind them to an input identity."},
+      "disposition":"avoid_as_implemented", "application_status":"not_adopted",
+      "limitations":["Mutable context is convenient for a small browser demo.","Cloned output snapshots do not provide a complete durable lineage model."],
+      "validation_needed":["Earlier assemblies remain byte/semantically unchanged after later operations.","Derived analysis cannot alter its source content."],
+      "relations":[{"target":"PP7-003","relation":"contrasts_with"},{"target":"PP7-024","relation":"complements"}]
+    },
+    {
+      "id":"PP7-013", "title":"Analysis tokens are not a complete native document stream",
+      "categories":["anti_lesson","mechanism","invariant"],
+      "source_evidence":[{"file":"plugins.js","lines":[58,85],"symbol":"StatefulTokenizerPlugin.execute","excerpt":"const regex=/\\b[\\p{L}\\p{N}_'-]+\\b|[^\\s]/gu;","evidence_class":"static_observation","observation":"The matcher collects word/symbol tokens and omits whitespace from its token list."}],
+      "interpretation":{"kind":"assistant_inference","text":"Tokens may support analysis while failing to encode spaces, returns and all native units as ordered entries. Original text is still available in context; the token list alone is not established as lossless."},
+      "application":{"kind":"proposed_application","text":"Keep every required native unit/control reference in authoritative assemblies. Derive analytical token views separately when useful."},
+      "disposition":"avoid_as_implemented", "application_status":"not_adopted",
+      "limitations":["The archive describes tokenization for analysis rather than a lossless codec.","Native return semantics remain an explicit design question."],
+      "validation_needed":["Reconstruct text/control structure from native references without consulting discarded whitespace.","Analysis leaves the original assembly unchanged."],
+      "relations":[{"target":"PP7-014","relation":"complements"},{"target":"PP7-015","relation":"complements"},{"target":"PP7-033","relation":"constrains"}]
+    },
+    {
+      "id":"PP7-014", "title":"Convenience normalization can alter source content",
+      "categories":["antipattern","mechanism","failure_mode"],
+      "source_evidence":[{"file":"pipeline.js","lines":[165,170],"symbol":"SecurityUtil.normalizeTextToJson","excerpt":"const trimmed=text.trim();","evidence_class":"static_observation","observation":"Plain-text input is trimmed before JSON detection or wrapping as text."}],
+      "interpretation":{"kind":"assistant_inference","text":"Leading/trailing whitespace can be removed and JSON-looking text can be reinterpreted as a value. These are meaningful transformations if input is authoritative text."},
+      "application":{"kind":"proposed_application","text":"Make the input kind explicit. Preserve native content and record any requested normalization as a transformation with a defined policy."},
+      "disposition":"avoid_as_implemented", "application_status":"not_adopted",
+      "limitations":["Trimming can be an intentional UI convenience; it is unsuitable as an implicit native-source rule."],
+      "validation_needed":["Leading/trailing spaces, blank content and JSON-looking literal text retain their intended identities."],
+      "relations":[{"target":"PP7-013","relation":"complements"},{"target":"PP7-017","relation":"complements"}]
+    },
+    {
+      "id":"PP7-015", "title":"Coordinates need an explicit meaning",
+      "categories":["structure","invariant","open_question"],
+      "source_evidence":[{"file":"plugins.js","lines":[66,74],"symbol":"Token records","excerpt":"end:match.index+value.length,","evidence_class":"static_observation","observation":"Token start/end use JavaScript string positions and lengths; no coordinate-unit contract accompanies the fields."},{"file":"regex-plugin.js","lines":[47,52],"symbol":"Regex match records","excerpt":"index:match.index,","evidence_class":"static_observation","observation":"Regex results also expose string positions."}],
+      "interpretation":{"kind":"assistant_inference","text":"A numeric offset cannot automatically be treated as a native unit reference, displayed character index or stable historical target."},
+      "application":{"kind":"proposed_application","text":"Declare coordinate units and their input-version binding wherever text ranges coexist with native references."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["No Unicode position conversion was executed in this review.","The future native coordinate scheme is not chosen here."],
+      "validation_needed":["Combining sequences, supplementary characters and edits preserve declared addressing behavior."],
+      "relations":[{"target":"PP7-001","relation":"complements"},{"target":"PP7-013","relation":"constrains"}]
+    },
+    {
+      "id":"PP7-016", "title":"Derived frequency indexes have their own rules and key domain",
+      "categories":["lesson","mechanism","trade_off","failure_mode"],
+      "source_evidence":[{"file":"plugins.js","lines":[76,80],"symbol":"Token frequencies","excerpt":"const key=token.value.toLowerCase();","evidence_class":"static_observation","observation":"Frequency keys are folded to lowercase and stored in a normal object accumulator."}],
+      "interpretation":{"kind":"assistant_inference","text":"Case-insensitive statistics do not define canonical character identity. User-derived keys such as inherited object-property names also need deliberate dictionary semantics."},
+      "application":{"kind":"proposed_application","text":"Bind derived indexes to an assembly and explicit analysis policy. Use a key representation that handles every permitted native value without inherited-property ambiguity."},
+      "disposition":"requires_validation", "application_status":"not_adopted",
+      "limitations":["The original token.value retains its case.","Prototype-key effects are predicted from the accumulator structure, not runtime-tested exploits."],
+      "validation_needed":["Mixed case remains distinct in authoritative content.","Keys such as constructor and __proto__ are handled as ordinary data under the declared counting policy."],
+      "relations":[{"target":"PP7-012","relation":"constrains"},{"target":"PP7-028","relation":"complements"}]
+    },
+    {
+      "id":"PP7-017", "title":"Valid falsy values require consistent boundary treatment",
+      "categories":["failure_mode","mechanism","invariant"],
+      "source_evidence":[{"file":"plugins.js","lines":[58,61],"symbol":"Tokenizer source selection","excerpt":": JSON.stringify(context.data||{},null,2);","evidence_class":"static_observation","observation":"The fallback substitutes an empty object for falsy data."},{"file":"plugins.js","lines":[105,109],"symbol":"WordCountPlugin.execute","excerpt":"if(!context.data||typeof context.data!==\"object\") context.data={};","evidence_class":"static_observation","observation":"Counting replaces non-object/falsy content with an object before adding its result."},{"file":"plugins.js","lines":[29,35],"symbol":"Reader modes","excerpt":"data=SecurityUtil.safeJsonParse(value,\"JSON file content\");","evidence_class":"static_observation","observation":"The file/text JSON parsing paths are not limited to object roots by a subsequent plain-object check."}],
+      "interpretation":{"kind":"assistant_inference","text":"Input modes and downstream assumptions disagree for values such as false, zero or null. Absence and a legitimate value should have different rules."},
+      "application":{"kind":"proposed_application","text":"Define the accepted native envelope and preserve every valid value. Reject unsupported shapes explicitly instead of silently replacing them."},
+      "disposition":"requires_validation", "application_status":"not_adopted",
+      "limitations":["This review did not execute the affected JSON inputs."],
+      "validation_needed":["All input modes agree on object/primitive acceptance.","Valid zero/false/empty values are not confused with missing data."],
+      "relations":[{"target":"PP7-009","relation":"constrains"},{"target":"PP7-014","relation":"complements"}]
+    },
+    {
+      "id":"PP7-018", "title":"Result caps do not bound a single regex evaluation",
+      "categories":["anti_lesson","failure_mode","invariant"],
+      "source_evidence":[{"file":"pipeline.js","lines":[173,178],"symbol":"createSafeRegex","excerpt":"if(source.length>500) throw new RangeError(\"Regex source too long.\");","evidence_class":"static_observation","observation":"The helper validates length and flags before creating a native RegExp."},{"file":"regex-plugin.js","lines":[38,60],"symbol":"runRegex","excerpt":"while((match=scanRegex.exec(sourceText))!==null){","evidence_class":"static_observation","observation":"Execution is synchronous; the match cap is checked only after exec returns."}],
+      "interpretation":{"kind":"assistant_inference","text":"The name safe and the match-count limit do not establish a runtime deadline or interrupt a slow evaluation."},
+      "application":{"kind":"proposed_application","text":"If regex analysis is retained, specify input/pattern limits and a genuinely enforceable execution budget. Keep it optional around native assemblies."},
+      "disposition":"avoid_as_implemented", "application_status":"not_adopted",
+      "limitations":["No pathological expression was executed.","Actual engine behavior must be measured within an approved worker/timeout scope."],
+      "validation_needed":["A slow expression terminates within its deadline without blocking authoritative service work."],
+      "relations":[{"target":"PP7-019","relation":"complements"},{"target":"PP7-023","relation":"complements"}]
+    },
+    {
+      "id":"PP7-019", "title":"Bounded scanners need correct progress and honest completion",
+      "categories":["mechanism","invariant","open_question","trade_off"],
+      "source_evidence":[{"file":"regex-plugin.js","lines":[47,70],"symbol":"runRegex scan loop and result","excerpt":"scanRegex.lastIndex+=1;","evidence_class":"static_observation","observation":"Zero-length matches manually advance the index; scans stop at maxMatches, but the result has no truncated/completion field."}],
+      "interpretation":{"kind":"assistant_inference","text":"A scanner must both make valid progress in its coordinate model and distinguish a complete result from a capped prefix."},
+      "application":{"kind":"proposed_application","text":"Declare continuation/completion and coordinate rules for analytical scans. Do not let a capped analysis masquerade as complete assembly knowledge."},
+      "disposition":"requires_validation", "application_status":"not_adopted",
+      "limitations":["Unicode zero-width cases were not executed.","The match cap itself is a useful resource mechanism."],
+      "validation_needed":["Test empty matches, supplementary characters and exact-cap versus over-cap scans.","A partial result advertises its completeness state."],
+      "relations":[{"target":"PP7-015","relation":"depends_on"},{"target":"PP7-018","relation":"complements"}]
+    },
+    {
+      "id":"PP7-020", "title":"Analysis can be keyed by its processing occurrence",
+      "categories":["pattern","structure","lesson"],
+      "source_evidence":[{"file":"regex-plugin.js","lines":[75,87],"symbol":"RegexPipelinePlugin.execute","excerpt":"context.regexState[this.instanceId]=result;","evidence_class":"static_observation","observation":"Each loaded regex instance receives its own result slot."},{"file":"regex-plugin.js","lines":[63,72],"symbol":"Regex result","excerpt":"executedAt:new Date().toISOString()","evidence_class":"static_observation","observation":"Results retain pattern/flags, source length, match data and execution time."}],
+      "interpretation":{"kind":"assistant_inference","text":"Distinct analysis occurrences can coexist. An occurrence ID and timestamp alone do not bind the result to immutable content or prove replay equivalence."},
+      "application":{"kind":"proposed_application","text":"Address derived analysis by occurrence plus exact input identity, definition/configuration identity and declared result status."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["This state is session-local and mutable.","Regex analysis is not a native unit definition."],
+      "validation_needed":["Two analyses preserve their own identities and cannot be attached to the wrong assembly revision."],
+      "relations":[{"target":"PP7-001","relation":"depends_on"},{"target":"PP7-027","relation":"constrained_by"}]
+    },
+    {
+      "id":"PP7-021", "title":"Periodic polling and change-driven work have different costs",
+      "categories":["trade_off","mechanism","pattern","open_question"],
+      "source_evidence":[{"file":"pipeline.js","lines":[447,456],"symbol":"Runtime initialization","excerpt":"this.cycleDelayMs=300;","evidence_class":"static_observation","observation":"The runtime uses a fixed delay."},{"file":"pipeline.js","lines":[540,555],"symbol":"startLoop","excerpt":"this.loopHandle=setTimeout(loop,this.cycleDelayMs);","evidence_class":"static_observation","observation":"While running, each loop schedules another pass without an input-change test."}],
+      "interpretation":{"kind":"assistant_inference","text":"A repeating demo is easy to observe but may redo tokenization/search/publication for unchanged input. The source has no demonstrated content/profile cache or operation reduction."},
+      "application":{"kind":"proposed_application","text":"Choose explicit batch/change boundaries and reuse results whose inputs and processing definitions are unchanged. Measure polling separately if a future source actually requires it."},
+      "disposition":"reference_only", "application_status":"not_adopted",
+      "limitations":["The 300 ms value is not a measured latency requirement.","No performance benchmark was run."],
+      "validation_needed":["Unchanged inputs avoid unnecessary construction/rendering.","A changed dependency invalidates only the results it actually affects."],
+      "relations":[{"target":"PP7-024","relation":"complements"},{"target":"PP7-034","relation":"constrained_by"}]
+    },
+    {
+      "id":"PP7-022", "title":"A visible run state is not a single-flight guard",
+      "categories":["antipattern","failure_mode","invariant"],
+      "source_evidence":[{"file":"pipeline.js","lines":[519,529],"symbol":"runOnce","excerpt":"this.state=RuntimeState.RUNNING;","evidence_class":"static_observation","observation":"runOnce sets state but does not reject or serialize an already running call."},{"file":"ui.js","lines":[88,91],"symbol":"Run Once button handler","excerpt":"await this.runtime.runOnce();","evidence_class":"static_observation","observation":"The UI handler invokes the same runtime; it has no per-run exclusion flag."}],
+      "interpretation":{"kind":"assistant_inference","text":"Overlapping calls can interleave when a stage awaits, because shared context and lifecycle state are reused. Actual overlap has not been exercised."},
+      "application":{"kind":"proposed_application","text":"Specify owner/queue/concurrency behavior and bind each accepted execution to a unique immutable plan and request outcome."},
+      "disposition":"requires_validation", "application_status":"not_adopted",
+      "limitations":["Synchronous stages do not yield to another button handler during their own body.","No concurrency test was run against this archive."],
+      "validation_needed":["Submit concurrent runs around an asynchronous reader and confirm declared serialization or explicit rejection."],
+      "relations":[{"target":"PP7-012","relation":"depends_on"},{"target":"PP7-023","relation":"complements"}]
+    },
+    {
+      "id":"PP7-023", "title":"Lifecycle signals need completion-generation rules",
+      "categories":["mechanism","failure_mode","invariant","anti_lesson"],
+      "source_evidence":[{"file":"pipeline.js","lines":[491,504],"symbol":"executeRecursive","excerpt":"if(index>=nodes.length||this.state===RuntimeState.PAUSED||this.stopRequested) return context;","evidence_class":"static_observation","observation":"Pause/stop are checked between nodes."},{"file":"pipeline.js","lines":[529,532],"symbol":"runOnce completion","excerpt":"this.context=await this.executeRecursive(nodes,0,this.context);","evidence_class":"static_observation","observation":"The returned context is assigned after awaited work; completion returns state to running unless error/stop conditions apply."},{"file":"pipeline.js","lines":[572,580],"symbol":"PAUSE, RESUME and RESET handling","excerpt":"this.context=this.createFreshContext();","evidence_class":"static_observation","observation":"Reset replaces context without invalidating an in-flight completion generation."}],
+      "interpretation":{"kind":"assistant_inference","text":"A late completion can conflict with a pause/reset request. Cooperative signal checks also cannot interrupt a synchronous long-running node."},
+      "application":{"kind":"proposed_application","text":"Define legal state transitions, execution generations and cancellation points. Reject stale completion and use owned workers where interruption must be enforceable."},
+      "disposition":"requires_validation", "application_status":"not_adopted",
+      "limitations":["Timing-dependent pause/reset effects remain predicted, not reproduced.","A terminal sentinel is distinct from cancellation of a running operation."],
+      "validation_needed":["Pause/reset during an awaited node cannot resurrect old state.","Stop and timeout have bounded, truthful outcomes."],
+      "relations":[{"target":"PP7-005","relation":"contrasts_with"},{"target":"PP7-018","relation":"complements"},{"target":"PP7-022","relation":"depends_on"}]
+    },
+    {
+      "id":"PP7-024", "title":"Bound all retained run state rather than only the debug log",
+      "categories":["antipattern","structure","failure_mode","trade_off"],
+      "source_evidence":[{"file":"pipeline.js","lines":[182,194],"symbol":"DebugLogger","excerpt":"if(this.entries.length>this.maxEntries) this.entries.shift();","evidence_class":"static_observation","observation":"The debug log has a retention count."},{"file":"plugins.js","lines":[129,146],"symbol":"StandardOutputPlugin.execute","excerpt":"context.stream.push({type:\"json-line\",value:JSON.stringify(output),emittedAt:new Date().toISOString()});","evidence_class":"static_observation","observation":"Stream entries and diagnostics accumulate without an equivalent byte/count bound; output includes the growing diagnostics array."}],
+      "interpretation":{"kind":"assistant_inference","text":"A bounded debug log does not bound total retained state. Repeated serialized diagnostic histories can amplify storage growth across passes."},
+      "application":{"kind":"proposed_application","text":"Specify retention, backpressure and durable history independently. Use stable references for repeated material rather than incidental copies of a growing diagnostic history."},
+      "disposition":"avoid_as_implemented", "application_status":"not_adopted",
+      "limitations":["No long-duration memory or storage measurements were taken.","Diagnostic history is different from authoritative transformation history."],
+      "validation_needed":["A bounded soak accounts for all retained collections and bytes.","History preservation and resource caps have an explicit compatibility policy."],
+      "relations":[{"target":"PP7-012","relation":"complements"},{"target":"PP7-021","relation":"constrains"},{"target":"PP7-027","relation":"complements"}]
+    },
+    {
+      "id":"PP7-025", "title":"Publication and its evidence require a consistent boundary",
+      "categories":["lesson","mechanism","invariant","open_question"],
+      "source_evidence":[{"file":"plugins.js","lines":[129,147],"symbol":"StandardOutputPlugin.execute","excerpt":"this.outputSink.write(context.output.jsonObject);","evidence_class":"static_observation","observation":"The plugin builds/clones output and calls the sink before appending its output-written diagnostic."},{"file":"adapters.js","lines":[27,35],"symbol":"BrowserOutputSink.write","excerpt":"this.lastObject=SecurityUtil.deepClone(objectValue);","evidence_class":"static_observation","observation":"The supplied sink copies and displays output in memory."}],
+      "interpretation":{"kind":"assistant_inference","text":"The emitted snapshot does not include that pass's later output-written diagnostic. A successful browser display does not establish a durable artifact or an atomic head/receipt transition."},
+      "application":{"kind":"proposed_application","text":"Keep construction, publication, verification and commit outcomes distinct, and make the evidence correspond to the exact boundary it claims."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["The source is an in-memory display, not a durable storage service.","No crash/restart publication test was run."],
+      "validation_needed":["Failure around publication cannot claim ready output or advance a guarded head.","Diagnostics identify whether they describe intent, completion or verified persistence."],
+      "relations":[{"target":"PP7-005","relation":"constrained_by"},{"target":"PP7-026","relation":"complements"},{"target":"PP7-027","relation":"complements"}]
+    },
+    {
+      "id":"PP7-026", "title":"Multiple state fields need one truthful outcome contract",
+      "categories":["failure_mode","structure","invariant"],
+      "source_evidence":[{"file":"pipeline.js","lines":[505,516],"symbol":"executeRecursive error handling","excerpt":"this.state=RuntimeState.ERROR;","evidence_class":"static_observation","observation":"The catch block appends an error and changes runtime.state without assigning context.status."},{"file":"pipeline.js","lines":[519,536],"symbol":"runOnce status updates","excerpt":"if(this.state!==RuntimeState.ERROR&&!this.stopRequested){","evidence_class":"static_observation","observation":"The usual context.status update is skipped on the error path."}],
+      "interpretation":{"kind":"assistant_inference","text":"Runtime state and context status can disagree after a failure. If output is not reached, a UI may also retain an earlier successful display."},
+      "application":{"kind":"proposed_application","text":"Define an authoritative terminal outcome and bind displayed artifacts/status to the specific execution occurrence. Keep prior successful output identifiable as prior output."},
+      "disposition":"requires_validation", "application_status":"not_adopted",
+      "limitations":["This is a predicted state-consistency issue from static branches, not an executed UI defect."],
+      "validation_needed":["A failing stage produces consistent runtime, result, receipt and displayed-output state."],
+      "relations":[{"target":"PP7-023","relation":"complements"},{"target":"PP7-025","relation":"complements"}]
+    },
+    {
+      "id":"PP7-027", "title":"Telemetry, repeatability and attestation are separate claims",
+      "categories":["anti_lesson","structure","invariant","trade_off"],
+      "source_evidence":[{"file":"pipeline.js","lines":[188,194],"symbol":"DebugLogger.log","excerpt":"time:new Date().toISOString()","evidence_class":"static_observation","observation":"Logs contain timestamps and cloned metadata."},{"file":"pipeline.js","lines":[458,470],"symbol":"createFreshContext","excerpt":"runId:(crypto&&crypto.randomUUID)?crypto.randomUUID():\"run-\"+Date.now()+\"-\"+Math.random(),","evidence_class":"static_observation","observation":"Run identity is generated in memory; the archive has no durable receipt or sealed-plan mechanism."}],
+      "interpretation":{"kind":"assistant_inference","text":"A readable log helps diagnose a run but does not prove input identity, deterministic semantics, durable completion or independent attestation."},
+      "application":{"kind":"proposed_application","text":"Bind evidence to input/definition/plan/result identities and distinguish deterministic payload from execution telemetry. Keep proof claims within their measured boundary."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["Hashing or UUIDs alone would not establish authority or truth.","The archive is not claimed to be an attestation system."],
+      "validation_needed":["Replay compares the promised deterministic material while retaining separate timing/run metadata."],
+      "relations":[{"target":"PP7-020","relation":"constrains"},{"target":"PP7-024","relation":"complements"},{"target":"PP7-034","relation":"complements"}]
+    },
+    {
+      "id":"PP7-028", "title":"Copying and naming checks do not establish an immutable safe boundary",
+      "categories":["anti_lesson","mechanism","structure","open_question"],
+      "source_evidence":[{"file":"README.md","lines":[7,12],"symbol":"deepClone claims","excerpt":"Incorporated hardened `SecurityUtil.deepClone()`:","evidence_class":"source_claim","observation":"The README describes hardened cloning with multiple supported types and explicit rejections."},{"file":"pipeline.js","lines":[9,21],"symbol":"SecurityUtil.deepClone","excerpt":"return this.deepCloneManual(value,new WeakMap());","evidence_class":"static_observation","observation":"A built-in clone is tried before a manual fallback."},{"file":"pipeline.js","lines":[118,150],"symbol":"Manual object clone and assertPlainObject","excerpt":"const clonedObject=Object.create(Object.getPrototypeOf(value));","evidence_class":"static_observation","observation":"Fallback retains prototypes/property descriptors; assertPlainObject only rejects null, non-objects and arrays."}],
+      "interpretation":{"kind":"assistant_inference","text":"A clone can isolate some mutation while retaining mutable objects, prototypes and accessor behavior. A helper called plain or hardened does not by itself establish a strict data schema or execution containment."},
+      "application":{"kind":"proposed_application","text":"Prefer explicit allowed native value shapes and immutable ownership rules. Adopt only the copy behavior that an actual boundary requires, with declared graph/host-type semantics."},
+      "disposition":"reference_only", "application_status":"not_adopted",
+      "limitations":["No malicious object or host value was executed.","JSON-parsed data and live plugin objects have different risk/semantic domains."],
+      "validation_needed":["Check accessors, prototypes, unsupported objects and consistent behavior across clone paths.","Validate shapes rather than relying on helper names."],
+      "relations":[{"target":"PP7-003","relation":"constrains"},{"target":"PP7-009","relation":"constrains"},{"target":"PP7-029","relation":"complements"}]
+    },
+    {
+      "id":"PP7-029", "title":"Plugin categories do not isolate execution authority",
+      "categories":["anti_lesson","edifice","structure","trade_off"],
+      "source_evidence":[{"file":"pipeline.js","lines":[4,7],"symbol":"NodeType labels","excerpt":"EXTERNAL_PLUGIN:\"external-plugin\"","evidence_class":"static_observation","observation":"An external-plugin category is declared."},{"file":"pipeline.js","lines":[350,365],"symbol":"install","excerpt":"const prototypePlugin=new factory(...args);","evidence_class":"static_observation","observation":"Factories are called as JavaScript constructors in the same environment."},{"file":"pipeline.js","lines":[491,504],"symbol":"Node execution","excerpt":"const nextContext=await node.execute(context,this);","evidence_class":"static_observation","observation":"Plugins receive the runtime and shared context; no separate execution boundary is created."}],
+      "interpretation":{"kind":"assistant_inference","text":"The provided model suits trusted packaged processors. A category label does not make arbitrary extensions contained or safe to activate."},
+      "application":{"kind":"proposed_application","text":"Declare processor authority and trust separately from catalogue metadata. A future extension boundary would need its own explicit design and approval."},
+      "disposition":"reference_only", "application_status":"not_adopted",
+      "limitations":["There is no demonstrated arbitrary-file upload or dynamic remote plugin installer in the supplied UI.","No containment test was attempted."],
+      "validation_needed":["Document exactly which operations each installed processor may perform and how those limits are enforced."],
+      "relations":[{"target":"PP7-010","relation":"complements"},{"target":"PP7-028","relation":"complements"},{"target":"PP7-032","relation":"constrains"}]
+    },
+    {
+      "id":"PP7-030", "title":"Inspection views can stay separate from authoritative output",
+      "categories":["lesson","pattern","mechanism","trade_off"],
+      "source_evidence":[{"file":"adapters.js","lines":[27,35],"symbol":"BrowserOutputSink.write","excerpt":"this.outputPane.textContent=JSON.stringify(this.lastObject,null,2);","evidence_class":"static_observation","observation":"The browser displays serialized data as text."},{"file":"ui.js","lines":[123,128],"symbol":"Out-of-band regex button","excerpt":"const result=regexPlugin.executeOutOfBand(this.runtime.context);","evidence_class":"static_observation","observation":"A separate analysis action writes the output pane without executing the configured pipeline."}],
+      "interpretation":{"kind":"assistant_inference","text":"A read/analysis view can be useful independently of a pipeline run. Sharing one pane also needs clear provenance so an inspection result is not mistaken for committed content."},
+      "application":{"kind":"proposed_application","text":"Offer version-bound inspections with explicit result kinds and input identities. Keep displaying diagnostic text separate from interpreting native HTML constructs."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["textContent use is a local display mechanism, not proof of a whole-application security boundary.","The out-of-band result is not catalogued durably."],
+      "validation_needed":["Inspection never advances a content head and remains labeled with its source revision and purpose."],
+      "relations":[{"target":"PP7-020","relation":"complements"},{"target":"PP7-025","relation":"constrained_by"},{"target":"PP7-031","relation":"complements"}]
+    },
+    {
+      "id":"PP7-031", "title":"An inspector's presentation is not a document renderer contract",
+      "categories":["structure","trade_off","anti_lesson"],
+      "source_evidence":[{"file":"index.html","lines":[70,86],"symbol":"Status/output/debug panes","excerpt":"<h2>Debug / Registry</h2>","evidence_class":"static_observation","observation":"The page provides status and textual output/debug panes."},{"file":"style.css","lines":[1,1],"symbol":"Responsive layout and fonts","excerpt":"@media(max-width:980px)","evidence_class":"static_observation","observation":"The stylesheet supplies responsive grid changes and environment-selected UI/monospace font stacks."}],
+      "interpretation":{"kind":"assistant_inference","text":"The layout can inspire an inspection interface, but it does not establish pinned document fonts, pagination, pixel equivalence or native rendering definitions."},
+      "application":{"kind":"proposed_application","text":"Keep a future inspector's ergonomics separate from the reproducible rendering profile and authoritative native data model."},
+      "disposition":"reference_only", "application_status":"not_adopted",
+      "limitations":["The UI was not opened or visually assessed in this review.","CSS appearance is not an acceptance requirement for Docstream."],
+      "validation_needed":["If an inspector is proposed later, assess usability separately from document rendering fidelity."],
+      "relations":[{"target":"PP7-030","relation":"complements"},{"target":"PP7-032","relation":"complements"}]
+    },
+    {
+      "id":"PP7-032", "title":"Edifice: a packaged browser pipeline demonstrator",
+      "categories":["edifice","structure","pattern","trade_off"],
+      "source_evidence":[{"file":"index.html","lines":[91,96],"symbol":"Script composition","excerpt":"<script src=\"pipeline.js\"></script>","evidence_class":"static_observation","observation":"Six classic scripts compose the core, adapters, plugins and UI in a fixed order."},{"file":"ui.js","lines":[11,34],"symbol":"PipelineApp construction","excerpt":"this.runtime=new global.PipelineCore.RecursivePipelineRuntime({debug:this.debug});","evidence_class":"static_observation","observation":"The application creates browser providers, a runtime, an installed catalogue and a default stage list."},{"file":"ui.js","lines":[50,72],"symbol":"Default composition","excerpt":"this.runtime.pluginManager.load(this.ids.tokenizer,1);","evidence_class":"static_observation","observation":"The default list reads, tokenizes, searches, passes through, counts and outputs."}],
+      "interpretation":{"kind":"assistant_inference","text":"Its whole composition is a locally packaged, inspectable processing demonstration with mutable in-memory state. Useful component arrangements do not transfer every operating assumption."},
+      "application":{"kind":"proposed_application","text":"Use the edifice as a comparative design reference. Select boundaries and identity lessons individually against Docstream's native, immutable and durable requirements."},
+      "disposition":"reference_only", "application_status":"not_adopted",
+      "limitations":["The archive's README instruction to open a browser is source material, not authorization; it was not followed.","This review establishes no successful boot or runtime behavior."],
+      "validation_needed":["Any future adoption proposal identifies the precise component, required adaptation and acceptance boundary."],
+      "relations":[{"target":"PP7-004","relation":"depends_on"},{"target":"PP7-011","relation":"constrained_by"},{"target":"PP7-029","relation":"constrained_by"},{"target":"PP7-035","relation":"complements"}]
+    },
+    {
+      "id":"PP7-033", "title":"Edifice boundary: the native reference data plane is still a separate design",
+      "categories":["edifice","structure","anti_lesson","open_question"],
+      "source_evidence":[{"file":"pipeline.js","lines":[458,471],"symbol":"Context data structures","excerpt":"data:{},","evidence_class":"static_observation","observation":"The context has generic data and analysis state rather than declared native unit/reference/assembly records."},{"file":"plugins.js","lines":[58,85],"symbol":"Token data model","excerpt":"tokens,","evidence_class":"static_observation","observation":"The supplied analytical model consists of strings, positions, token classes and frequencies."}],
+      "interpretation":{"kind":"assistant_inference","text":"Across the nine reviewed files, no module implements the user's direct native character/unit catalogue, location resolver and reusable word/sentence/paragraph assemblies. A processor registry cannot stand in for that data plane."},
+      "application":{"kind":"proposed_application","text":"Design native units/references/assemblies explicitly. Process those structures at coarse stages; character resolution should remain a data operation with a declared identity contract."},
+      "disposition":"reference_only", "application_status":"not_adopted",
+      "limitations":["This absence statement is limited to the supplied archive.","It does not prescribe reference width, mandatory word interning or per-language semantics."],
+      "validation_needed":["A later native-core proposal identifies primitive definitions, resolver behavior, assembly ordering and representation binding."],
+      "relations":[{"target":"PP7-001","relation":"depends_on"},{"target":"PP7-006","relation":"contrasts_with"},{"target":"PP7-011","relation":"complements"},{"target":"PP7-013","relation":"constrained_by"}]
+    },
+    {
+      "id":"PP7-034", "title":"A version label and README claims are not validation evidence",
+      "categories":["anti_lesson","invariant","open_question"],
+      "source_evidence":[{"file":"README.md","lines":[1,20],"symbol":"Version and hardening description","excerpt":"# Modular Recursive Plugin Pipeline v7","evidence_class":"source_claim","observation":"The README labels the package v7 and describes hardened cloning and an insertable regex plugin."},{"file":"README.md","lines":[3,3],"symbol":"Usage instruction","excerpt":"Open `index.html` directly in a browser.","evidence_class":"source_claim","observation":"The supplied usage instruction is not a retained successful execution record."}],
+      "interpretation":{"kind":"assistant_inference","text":"The archive inventory contains nine files and no packaged test suite or validation report. Static findings and named capabilities must not be presented as tested guarantees."},
+      "application":{"kind":"proposed_application","text":"Keep source claim, static evidence, predicted effect, approved adaptation and executed validation distinct. Validate only a separately authorized concrete adaptation."},
+      "disposition":"reference_only", "application_status":"not_adopted",
+      "limitations":["Tests or reports may exist elsewhere; this catalogue does not establish their absence globally.","The review has not run the source through Docstream's harness."],
+      "validation_needed":["Any future runtime claim has retained inputs, outcomes, failure cases and environment identity."],
+      "relations":[{"target":"PP7-018","relation":"constrains"},{"target":"PP7-027","relation":"complements"},{"target":"PP7-032","relation":"constrains"}]
+    },
+    {
+      "id":"PP7-035", "title":"Selective adaptation is a traceable design operation",
+      "categories":["lesson","pattern","edifice","invariant"],
+      "source_evidence":[{"file":"pipeline.js","lines":[197,241],"symbol":"Definition/occurrence structures","excerpt":"class RegistryEntry{","evidence_class":"static_observation","observation":"The source provides a reusable definition/occurrence distinction."},{"file":"adapters.js","lines":[6,48],"symbol":"Provider and sink boundaries","excerpt":"class BrowserOutputSink{","evidence_class":"static_observation","observation":"Environment boundaries are explicit components."},{"file":"pipeline.js","lines":[313,336],"symbol":"Dependency warning behavior","excerpt":"return warnings;","evidence_class":"static_observation","observation":"The same composition also contains behavior that does not meet a strict execution contract."}],
+      "interpretation":{"kind":"assistant_inference","text":"Useful ideas and unsuitable assumptions coexist in the same source. Preserving that distinction is more informative than accepting or rejecting the whole package."},
+      "application":{"kind":"proposed_application","text":"For any future adaptation, name the catalogue entries used, new requirements, rejected assumptions, exact component boundaries and validation. Write the resulting design for this project rather than copying a class tree or default pipeline."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["This record is a method for future proposals, not approval to implement them.","No source classes, plugin defaults or UI have been integrated."],
+      "validation_needed":["A design decision traces to evidence while stating what changed and what was deliberately not adopted.","Existing immutable/durable behavior remains within its own acceptance requirements."],
+      "relations":[{"target":"PP7-001","relation":"depends_on"},{"target":"PP7-004","relation":"depends_on"},{"target":"PP7-007","relation":"constrained_by"},{"target":"PP7-032","relation":"complements"},{"target":"PP7-033","relation":"constrained_by"}]
+    },
+    {
+      "id":"PP7-036", "title":"A no-content-change stage can still be an observable occurrence",
+      "categories":["lesson","pattern","mechanism","invariant"],
+      "source_evidence":[{"file":"dummy-plugin.js","lines":[32,43],"symbol":"PassThroughDummyPlugin.execute","excerpt":"dataMutation:false,","evidence_class":"source_claim","observation":"The plugin's own diagnostic declares no data mutation."},{"file":"dummy-plugin.js","lines":[32,43],"symbol":"PassThroughDummyPlugin.execute body","excerpt":"return context;","evidence_class":"static_observation","observation":"The body appends diagnostics, logs a pass-through event and returns the same context, with no direct assignment to context.data."}],
+      "interpretation":{"kind":"assistant_inference","text":"No-op is relative to authoritative content. A stage can preserve content while still having an occurrence, diagnostics and resource cost; its self-description is not an independent guarantee."},
+      "application":{"kind":"proposed_application","text":"Retain requested transformation occurrences even when content is unchanged or execution is reduced away. Check semantic equality separately from lineage and telemetry."},
+      "disposition":"candidate_adaptation", "application_status":"not_adopted",
+      "limitations":["The shared context still changes through diagnostics.","The archive does not provide a durable no-op lineage or conformance test."],
+      "validation_needed":["A declared no-op preserves native content and retains a distinguishable occurrence.","Instrumentation changes do not masquerade as document changes."],
+      "relations":[{"target":"PP7-001","relation":"depends_on"},{"target":"PP7-012","relation":"constrained_by"},{"target":"PP7-020","relation":"complements"}]
+    }
+  ]
+}

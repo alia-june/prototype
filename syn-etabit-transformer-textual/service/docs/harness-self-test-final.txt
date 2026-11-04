@@ -1,0 +1,31 @@
+test_budget_counter_never_executes_above_limit (test_harness.HarnessTests.test_budget_counter_never_executes_above_limit) ... ok
+test_case_files_preserve_surrogates_as_json_data (test_harness.HarnessTests.test_case_files_preserve_surrogates_as_json_data) ... ok
+test_cli_rejects_scope_expansion_before_creating_run (test_harness.HarnessTests.test_cli_rejects_scope_expansion_before_creating_run) ... {"status": "harness_error", "message": "case/request/crash counts exceed approved limits"}
+{"status": "harness_error", "message": "time or retained-byte limit exceeds approved scope"}
+ok
+test_closed_regression_selection_is_the_existing_117 (test_harness.HarnessTests.test_closed_regression_selection_is_the_existing_117) ... ok
+test_failure_is_retained_and_replayable (test_harness.HarnessTests.test_failure_is_retained_and_replayable) ... ok
+test_generator_is_seeded_and_covers_eight_categories (test_harness.HarnessTests.test_generator_is_seeded_and_covers_eight_categories) ... ok
+test_interrupted_result_recovers_completed_events (test_harness.HarnessTests.test_interrupted_result_recovers_completed_events) ... ok
+test_interruption_does_not_hide_an_earlier_failure (test_harness.HarnessTests.test_interruption_does_not_hide_an_earlier_failure) ... ok
+test_owned_process_cleanup_terminates_only_its_child (test_harness.HarnessTests.test_owned_process_cleanup_terminates_only_its_child) ... ok
+test_passing_case_input_is_also_retained (test_harness.HarnessTests.test_passing_case_input_is_also_retained) ... ok
+test_preserved_baseline_alias_is_replayable (test_harness.HarnessTests.test_preserved_baseline_alias_is_replayable) ... ok
+test_projection_ignores_only_span_fragmentation_and_inheritance (test_harness.HarnessTests.test_projection_ignores_only_span_fragmentation_and_inheritance) ... ok
+test_replay_is_bounded_and_regression_id_is_closed (test_harness.HarnessTests.test_replay_is_bounded_and_regression_id_is_closed) ... ok
+test_replay_mode_cannot_bypass_torture_accounting (test_harness.HarnessTests.test_replay_mode_cannot_bypass_torture_accounting) ... {"status": "harness_error", "message": "replay case belongs to mode torture"}
+ok
+test_replay_rejects_unknown_kind_and_nondata_fields (test_harness.HarnessTests.test_replay_rejects_unknown_kind_and_nondata_fields) ... ok
+test_shrinker_preserves_the_failure_signature (test_harness.HarnessTests.test_shrinker_preserves_the_failure_signature) ... ok
+{"event": "mode_started", "mode": "fuzzy", "run": "<source-workspace>\\.docstream\\harness-runs\\harness-selftest-fseutnr1\\runs\\deadline"}
+{"event": "mode_finished", "mode": "fuzzy", "status": "incomplete", "counts": {}, "render_calls": 0}
+{"status": "incomplete", "report": "<source-workspace>\\.docstream\\harness-runs\\harness-selftest-fseutnr1\\runs\\deadline\\REPORT.md", "summary": "<source-workspace>\\.docstream\\harness-runs\\harness-selftest-fseutnr1\\runs\\deadline\\summary.json"}
+test_supervisor_deadline_produces_incomplete_and_stops_child (test_harness.HarnessTests.test_supervisor_deadline_produces_incomplete_and_stops_child) ... ok
+test_time_and_byte_cutoffs_are_incomplete (test_harness.HarnessTests.test_time_and_byte_cutoffs_are_incomplete) ... ok
+test_unknown_cli_option_is_a_configuration_error (test_harness.HarnessTests.test_unknown_cli_option_is_a_configuration_error) ... {"status": "harness_error", "message": "unrecognized arguments: --unknown-option"}
+ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.201s
+
+OK

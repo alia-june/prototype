@@ -1,0 +1,21 @@
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:50861/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:50861/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:50861/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:50861/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:50861/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:50861/mcp "HTTP/1.1 200 OK"
+StreamableHTTP session manager shutting down
+======================================================================
+FAIL: test_zip_paths_duplicates_entities_and_expansion_rejected (test_formats.DocxTests.test_zip_paths_duplicates_entities_and_expansion_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<source-workspace>\service\tests\test_formats.py", line 236, in test_zip_paths_duplicates_entities_and_expansion_rejected
+    with self.assertRaises(ModelError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ModelError not raised
+
+----------------------------------------------------------------------
+Ran 29 tests in 5.105s
+
+FAILED (failures=1)

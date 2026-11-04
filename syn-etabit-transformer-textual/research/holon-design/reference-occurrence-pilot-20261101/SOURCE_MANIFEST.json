@@ -1,0 +1,82 @@
+{
+  "manifest_format": "strmdocx-reference-occurrence-manifest/1",
+  "artifact": "reference-occurrence-pilot-20261101",
+  "created": "2026-11-01",
+  "manifest_excludes_self": true,
+  "production_clearance": {
+    "scope": "Bounded occurrence/reference-holon fixture, contract, views, strict validator, rigid test, deterministic fuzzy-error test, bounded torture test, validation evidence and manifest",
+    "user_reply": "yes",
+    "clearance_date": "2026-11-01",
+    "excludes": "Transport, database, GPU, WordNet, sentinel system, general transformation algebra, agentic integration and existing Strmdocx runtime changes"
+  },
+  "governing_basis": [
+    {
+      "path": "../handoff-20260930-mining-20261031/REFERENCE_MODEL.md",
+      "bytes": 6480,
+      "sha256": "6feb508080748a4edcfe75442dd036b5a45897a764744e719614372d46e05883"
+    },
+    {
+      "path": "../handoff-20260930-mining-20261031/DECISIONS_CONFLICTS_AND_OPEN_QUESTIONS.md",
+      "bytes": 6015,
+      "sha256": "34d502267b5a65763eee10bd69f8c88ecc3dde3c6b1488fa18787509856a7916"
+    },
+    {
+      "path": "../handoff-20260930-mining-20261031/PAYLOAD_AND_REFERENCE_BOUNDARY.md",
+      "bytes": 4232,
+      "sha256": "9f8e16236c8dae6216d9cb112dd6f9c9f5c17a68146fabbcd4b8a45e09950403"
+    },
+    {
+      "path": "../handoff-20260930-mining-20261031/STRMDOCX_HOLON_CROSSWALK.md",
+      "bytes": 5512,
+      "sha256": "a78fc7eeefd890814ba0f0d8208ccd39562e4466fcca75e84388503870a93dad"
+    },
+    {
+      "path": "../handoff-20260930-mining-20261031/VALIDATION.md",
+      "bytes": 5084,
+      "sha256": "2c2374e7d0969e17b2b01ae8061d493d6b87b74147385c0855fb5e4ba3dac6af"
+    }
+  ],
+  "files": [
+    {
+      "path": "reference_occurrence_contract.json",
+      "bytes": 3838,
+      "sha256": "a5a22653b719a9057dbc226751a946fdffb6beb463392ad0f7c9b8a02a126bda"
+    },
+    {
+      "path": "REFERENCE_OCCURRENCE_CONTRACT.md",
+      "bytes": 3988,
+      "sha256": "81cda4d5ed79143aee78aa42ec1bcb0f6e88eed355bcf6d24c55baa51614ecc3"
+    },
+    {
+      "path": "REFERENCE_OCCURRENCE_DECISION.md",
+      "bytes": 4691,
+      "sha256": "3e1837b87a29e24b31558aa3047b031407f8056855ff27cc0c89f3c63f575e18"
+    },
+    {
+      "path": "reference_occurrence_fixture.json",
+      "bytes": 2569,
+      "sha256": "b605410ead9f1bf40c58b66c397269e9e4ffa6289ca1697b8f4c6f8cc890c7a5"
+    },
+    {
+      "path": "REFERENCE_VIEWS.md",
+      "bytes": 1987,
+      "sha256": "f765ac6b3be4fdc1eef856451aa00eb6d1b8a038d84e3b6ba1cd90f38bbee86a"
+    },
+    {
+      "path": "test_reference_occurrence.py",
+      "bytes": 17210,
+      "sha256": "5c35e5b3fa03637ea59f0a2a42a7a779f1723135f3888e689335fd6e032894c6"
+    },
+    {
+      "path": "validate_reference_occurrence.py",
+      "bytes": 23943,
+      "sha256": "a4be157b0d076c743f6edaf2a6f91f5025afd96e685e2b8c7a6761fd8198859e"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 7859,
+      "sha256": "db54b4a286361cc86d5f948ce197b0ce0088650a771c04f895fa0d85374ac811"
+    }
+  ],
+  "proof_limit": "SHA-256 and size establish byte identity for the named basis and outputs only; they do not establish authorship, semantic correctness, authority, adoption, protocol conformance, runtime integration or independent attestation."
+}

@@ -1,0 +1,96 @@
+{
+  "format": "strmdocx-reference-occurrence/0.1-pilot",
+  "pilot_id": "pilot:reference-occurrence:001",
+  "targets": [
+    {
+      "id": "target:B0",
+      "kind": "target",
+      "role": "immutable_text_block",
+      "payload": {
+        "encoding": "utf-8",
+        "text": "abc"
+      },
+      "payload_sha256": "990307a424d0be4cf3bd865183686d80324f8f087716a50793defc349fe9b9fb"
+    },
+    {
+      "id": "target:T1",
+      "kind": "target",
+      "role": "transformation",
+      "payload": {
+        "operation": "append_text",
+        "argument": "!",
+        "input_ref": "target:B0",
+        "result_ref": "target:B1",
+        "scope_ref": "metadata:M1"
+      },
+      "payload_sha256": "2d31bbe940783a0dd811a1fe49b20b249c85fe32367211c035199620c2ae1999"
+    },
+    {
+      "id": "target:B1",
+      "kind": "target",
+      "role": "immutable_text_block",
+      "payload": {
+        "encoding": "utf-8",
+        "text": "abc!"
+      },
+      "payload_sha256": "a222f66a099dbe4758ed8ae19171491e51350e83f867979e294d1a61a7701c4d"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "relationship:R1",
+      "kind": "relationship",
+      "meaning": "transforms_input_to_result",
+      "operation_ref": "target:T1",
+      "input_ref": "target:B0",
+      "result_ref": "target:B1"
+    }
+  ],
+  "metadata": [
+    {
+      "id": "metadata:M1",
+      "kind": "metadata",
+      "scope": "whole_block",
+      "provenance": "Approved bounded reference-occurrence pilot fixture, 2026-11-01"
+    }
+  ],
+  "occurrences": [
+    {
+      "id": "occurrence:O0",
+      "kind": "occurrence",
+      "target_ref": "target:B0",
+      "relationship_ref": "relationship:R1",
+      "metadata_ref": "metadata:M1"
+    },
+    {
+      "id": "occurrence:O1",
+      "kind": "occurrence",
+      "target_ref": "target:T1",
+      "relationship_ref": "relationship:R1",
+      "metadata_ref": "metadata:M1"
+    },
+    {
+      "id": "occurrence:O2",
+      "kind": "occurrence",
+      "target_ref": "target:B1",
+      "relationship_ref": "relationship:R1",
+      "metadata_ref": "metadata:M1"
+    }
+  ],
+  "views": [
+    {
+      "id": "view:V0",
+      "kind": "view",
+      "purpose": "chronological_inspection",
+      "order_semantics": "source_transformation_result",
+      "occurrence_refs": ["occurrence:O0", "occurrence:O1", "occurrence:O2"]
+    },
+    {
+      "id": "view:V1",
+      "kind": "view",
+      "purpose": "reverse_inspection",
+      "order_semantics": "result_transformation_source_without_mutation",
+      "occurrence_refs": ["occurrence:O2", "occurrence:O1", "occurrence:O0"]
+    }
+  ]
+}

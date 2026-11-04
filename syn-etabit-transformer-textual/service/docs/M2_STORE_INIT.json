@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "storage_ready": true,
+  "service_version": "0.2.0.dev2",
+  "schema_version": 1,
+  "cpu_schema": "docstream.snapshot/1",
+  "durability": "sqlite",
+  "visual_state": "unavailable",
+  "gpu": false,
+  "limits": {
+    "operations_per_batch": 256,
+    "text_bytes": 1048576,
+    "reply_bytes": 131072,
+    "history_page": 100
+  },
+  "capabilities": [
+    "ingest",
+    "inspect",
+    "plan",
+    "materialize",
+    "semantic_commit",
+    "durable_receipt",
+    "job_inspect"
+  ],
+  "sqlite_version": "3.53.1",
+  "service_running": false,
+  "root": "<source-workspace>\\.docstream",
+  "documents": 0,
+  "integrity_check": "ok"
+}

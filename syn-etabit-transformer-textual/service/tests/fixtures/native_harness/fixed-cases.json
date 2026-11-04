@@ -1,0 +1,360 @@
+{
+  "schema": "docstream.native-harness.fixed/1",
+  "basis": "Reviewed safe-ascii/1 rejection rules and explicit publication/identity probes. Expected outcomes never learned from current product output.",
+  "errors": [
+    {
+      "recipe": "symbol_high",
+      "variant": 0
+    },
+    {
+      "recipe": "symbol_high",
+      "variant": 1
+    },
+    {
+      "recipe": "symbol_high",
+      "variant": 2
+    },
+    {
+      "recipe": "symbol_high",
+      "variant": 3
+    },
+    {
+      "recipe": "symbol_negative",
+      "variant": 0
+    },
+    {
+      "recipe": "symbol_negative",
+      "variant": 1
+    },
+    {
+      "recipe": "symbol_negative",
+      "variant": 2
+    },
+    {
+      "recipe": "symbol_negative",
+      "variant": 3
+    },
+    {
+      "recipe": "symbol_bool",
+      "variant": 0
+    },
+    {
+      "recipe": "symbol_bool",
+      "variant": 1
+    },
+    {
+      "recipe": "symbol_bool",
+      "variant": 2
+    },
+    {
+      "recipe": "symbol_bool",
+      "variant": 3
+    },
+    {
+      "recipe": "symbol_wrong",
+      "variant": 0
+    },
+    {
+      "recipe": "symbol_wrong",
+      "variant": 1
+    },
+    {
+      "recipe": "symbol_wrong",
+      "variant": 2
+    },
+    {
+      "recipe": "symbol_wrong",
+      "variant": 3
+    },
+    {
+      "recipe": "literal_unicode",
+      "variant": 0
+    },
+    {
+      "recipe": "literal_unicode",
+      "variant": 1
+    },
+    {
+      "recipe": "literal_unicode",
+      "variant": 2
+    },
+    {
+      "recipe": "literal_unicode",
+      "variant": 3
+    },
+    {
+      "recipe": "literal_highbyte",
+      "variant": 0
+    },
+    {
+      "recipe": "literal_highbyte",
+      "variant": 1
+    },
+    {
+      "recipe": "literal_highbyte",
+      "variant": 2
+    },
+    {
+      "recipe": "literal_highbyte",
+      "variant": 3
+    },
+    {
+      "recipe": "literal_mutable",
+      "variant": 0
+    },
+    {
+      "recipe": "literal_mutable",
+      "variant": 1
+    },
+    {
+      "recipe": "literal_mutable",
+      "variant": 2
+    },
+    {
+      "recipe": "literal_mutable",
+      "variant": 3
+    },
+    {
+      "recipe": "literal_long",
+      "variant": 0
+    },
+    {
+      "recipe": "literal_long",
+      "variant": 1
+    },
+    {
+      "recipe": "literal_long",
+      "variant": 2
+    },
+    {
+      "recipe": "literal_long",
+      "variant": 3
+    },
+    {
+      "recipe": "operation_id",
+      "variant": 0
+    },
+    {
+      "recipe": "operation_id",
+      "variant": 1
+    },
+    {
+      "recipe": "operation_id",
+      "variant": 2
+    },
+    {
+      "recipe": "operation_id",
+      "variant": 3
+    },
+    {
+      "recipe": "edit_type",
+      "variant": 0
+    },
+    {
+      "recipe": "edit_type",
+      "variant": 1
+    },
+    {
+      "recipe": "edit_type",
+      "variant": 2
+    },
+    {
+      "recipe": "edit_type",
+      "variant": 3
+    },
+    {
+      "recipe": "path_type",
+      "variant": 0
+    },
+    {
+      "recipe": "path_type",
+      "variant": 1
+    },
+    {
+      "recipe": "path_type",
+      "variant": 2
+    },
+    {
+      "recipe": "path_type",
+      "variant": 3
+    },
+    {
+      "recipe": "edit_shape",
+      "variant": 0
+    },
+    {
+      "recipe": "edit_shape",
+      "variant": 1
+    },
+    {
+      "recipe": "edit_shape",
+      "variant": 2
+    },
+    {
+      "recipe": "edit_shape",
+      "variant": 3
+    },
+    {
+      "recipe": "define_type",
+      "variant": 0
+    },
+    {
+      "recipe": "define_type",
+      "variant": 1
+    },
+    {
+      "recipe": "define_type",
+      "variant": 2
+    },
+    {
+      "recipe": "define_type",
+      "variant": 3
+    },
+    {
+      "recipe": "reference_missing",
+      "variant": 0
+    },
+    {
+      "recipe": "reference_missing",
+      "variant": 1
+    },
+    {
+      "recipe": "reference_missing",
+      "variant": 2
+    },
+    {
+      "recipe": "reference_missing",
+      "variant": 3
+    },
+    {
+      "recipe": "reference_layer",
+      "variant": 0
+    },
+    {
+      "recipe": "reference_layer",
+      "variant": 1
+    },
+    {
+      "recipe": "reference_layer",
+      "variant": 2
+    },
+    {
+      "recipe": "reference_layer",
+      "variant": 3
+    },
+    {
+      "recipe": "duplicate_batch",
+      "variant": 0
+    },
+    {
+      "recipe": "duplicate_batch",
+      "variant": 1
+    },
+    {
+      "recipe": "duplicate_batch",
+      "variant": 2
+    },
+    {
+      "recipe": "duplicate_batch",
+      "variant": 3
+    },
+    {
+      "recipe": "batch_container",
+      "variant": 0
+    },
+    {
+      "recipe": "batch_container",
+      "variant": 1
+    },
+    {
+      "recipe": "batch_container",
+      "variant": 2
+    },
+    {
+      "recipe": "batch_container",
+      "variant": 3
+    },
+    {
+      "recipe": "late_range",
+      "variant": 0
+    },
+    {
+      "recipe": "late_range",
+      "variant": 1
+    },
+    {
+      "recipe": "late_range",
+      "variant": 2
+    },
+    {
+      "recipe": "late_range",
+      "variant": 3
+    },
+    {
+      "recipe": "late_path",
+      "variant": 0
+    },
+    {
+      "recipe": "late_path",
+      "variant": 1
+    },
+    {
+      "recipe": "late_path",
+      "variant": 2
+    },
+    {
+      "recipe": "late_path",
+      "variant": 3
+    },
+    {
+      "recipe": "resource",
+      "variant": 0
+    },
+    {
+      "recipe": "resource",
+      "variant": 1
+    },
+    {
+      "recipe": "resource",
+      "variant": 2
+    },
+    {
+      "recipe": "resource",
+      "variant": 3
+    },
+    {
+      "recipe": "resource",
+      "variant": 4
+    },
+    {
+      "recipe": "resource",
+      "variant": 5
+    },
+    {
+      "recipe": "resource",
+      "variant": 6
+    },
+    {
+      "recipe": "resource",
+      "variant": 7
+    }
+  ],
+  "probes": [
+    "all_ascii",
+    "meaning_free_literals",
+    "public_immutability",
+    "detached_records",
+    "shared_occurrence",
+    "identity_and_history",
+    "empty_noop",
+    "request_identity",
+    "fault_publish_1",
+    "fault_publish_2",
+    "fault_publish_3",
+    "fault_publish_4",
+    "fault_publish_5",
+    "fault_define_1",
+    "fault_define_2",
+    "fault_define_3"
+  ]
+}

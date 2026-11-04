@@ -1,0 +1,116 @@
+{
+  "schema": "docstream.relative-theory.grammar-syntax-theory/1",
+  "study_status": "PARTIAL_GOVERNING_SOURCE_MISSING",
+  "records": [
+    {
+      "id": "THEORY-GB-GOVERNMENT",
+      "term": "government",
+      "layer": "THEORY",
+      "source_id": "SRC-GB-CHOMSKY-1981",
+      "access_basis": "PREVIEW_AND_BIBLIOGRAPHIC_IDENTITY_ONLY",
+      "status": "TERM_REGISTERED_RULES_BLOCKED",
+      "summary": "Registered as a central Government-and-Binding topic; no formal definition, conditions or derived relation are asserted from the available preview.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "THEORY-GB-BINDING",
+      "term": "binding theory",
+      "layer": "THEORY",
+      "source_id": "SRC-GB-CHOMSKY-1982",
+      "access_basis": "PUBLISHER_DESCRIPTION_ONLY",
+      "status": "TOPIC_CONFIRMED_RULES_BLOCKED",
+      "summary": "The publisher description confirms binding theory as subject matter, but it does not govern a formal binding relation or domain rule.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "THEORY-GB-CASE",
+      "term": "Case theory",
+      "layer": "THEORY",
+      "source_id": "SRC-GB-LASNIK-URIAGEREKA",
+      "access_basis": "COMPANION_PUBLISHER_DESCRIPTION_ONLY",
+      "status": "COMPANION_TOPIC_ONLY",
+      "summary": "A companion publisher description lists Case; the record cannot replace a primary definition or establish computational rules.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "THEORY-GB-EMPTY-CATEGORIES",
+      "term": "empty categories",
+      "layer": "SYNTAX_THEORY",
+      "source_id": "SRC-GB-CHOMSKY-1982",
+      "access_basis": "PUBLISHER_DESCRIPTION_ONLY",
+      "status": "TOPIC_CONFIRMED_RULES_BLOCKED",
+      "summary": "Topic presence is source-described; inventory, licensing and representation rules remain uncatalogued.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "THEORY-GB-ECP",
+      "term": "Empty Category Principle",
+      "layer": "SYNTAX_THEORY",
+      "source_id": "SRC-GB-LASNIK-URIAGEREKA",
+      "access_basis": "COMPANION_PUBLISHER_DESCRIPTION_ONLY",
+      "status": "COMPANION_TOPIC_ONLY",
+      "summary": "The companion description names ECP coverage; its formulation and relation to other modules are not available in the reviewed governing sources.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "THEORY-GB-REPRESENTATIONS",
+      "term": "systems of representation",
+      "layer": "ARCHITECTURE",
+      "source_id": "SRC-GB-CHOMSKY-1982",
+      "access_basis": "PUBLISHER_DESCRIPTION_ONLY",
+      "status": "TOPIC_CONFIRMED_RULES_BLOCKED",
+      "summary": "The publisher description reports a shift toward systems of representation; the study does not infer particular levels, mappings or constraints.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "THEORY-GB-PRINCIPLES",
+      "term": "principles and parameters orientation",
+      "layer": "ARCHITECTURE",
+      "source_id": "SRC-GB-CHOMSKY-1982",
+      "access_basis": "PUBLISHER_DESCRIPTION_ONLY",
+      "status": "TOPIC_CONFIRMED_RULES_BLOCKED",
+      "summary": "Only the broad principles-oriented framing is registered. No parameter inventory or operational constraint is derived.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "THEORY-GB-GRAMMATICAL-RELATIONS",
+      "term": "grammatical relations",
+      "layer": "GRAMMAR_THEORY",
+      "source_id": "SRC-GB-MARANTZ-1981",
+      "access_basis": "INSTITUTIONAL_METADATA_ONLY",
+      "status": "CONTRAST_SOURCE_NOT_MINED",
+      "summary": "The institutional record establishes a potentially relevant contrast source, not a relation definition adopted by this project.",
+      "links": ["GAP-GB-PRIMARY-TEXT"]
+    },
+    {
+      "id": "THEORY-MAP-GRAMMAR",
+      "term": "grammar drive",
+      "layer": "PROJECT_PROJECTION",
+      "source_id": null,
+      "access_basis": "USER_DESIGN_DIRECTION",
+      "status": "PROJECT_CONCEPT_NOT_LINGUISTIC_RULE",
+      "summary": "A replaceable map role for grammatical information; it does not make any theory record canonical.",
+      "links": ["GEN-REL-SELECTED-IN-CONTEXT", "GEN-REL-REPLACES-IN-CONTEXT"]
+    },
+    {
+      "id": "THEORY-MAP-SYNTAX",
+      "term": "syntax drive",
+      "layer": "PROJECT_PROJECTION",
+      "source_id": null,
+      "access_basis": "USER_DESIGN_DIRECTION",
+      "status": "PROJECT_CONCEPT_NOT_LINGUISTIC_RULE",
+      "summary": "A separate replaceable map role for syntactic information; source markers can be referenced without embedding their interpretation in native symbols.",
+      "links": ["GEN-REL-SELECTED-IN-CONTEXT", "GEN-REL-REPLACES-IN-CONTEXT"]
+    },
+    {
+      "id": "GAP-GB-PRIMARY-TEXT",
+      "term": "governing primary theory text unavailable",
+      "layer": "EVIDENCE_GAP",
+      "source_id": "SRC-GB-CHOMSKY-1981",
+      "access_basis": "BOUNDED_SOURCE_SEARCH",
+      "status": "OPEN_BLOCKER",
+      "summary": "Substantive primary text sufficient to define formal GB relations was not available in the bounded study. Formal parsing or decoding rules remain prohibited.",
+      "links": ["SRC-GB-CHOMSKY-1981", "SRC-GB-CHOMSKY-1982"]
+    }
+  ]
+}

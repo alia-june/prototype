@@ -1,0 +1,30 @@
+{
+  "schema": "docstream.harness-meta.contract/1",
+  "seed": 20261031,
+  "fuzzy_cases": 1000,
+  "fuzzy_distribution": {"invalid": 800, "control": 200},
+  "hardening": [
+    "clean_control", "strict_duplicate_json", "truncated_json", "oversized_json",
+    "wrong_schema", "wrong_run_id", "wrong_overall_status", "missing_modes",
+    "duplicate_mode", "missing_worker_stopped", "wrong_worker_type", "missing_cleanup",
+    "cleanup_status_pending", "cleanup_mismatch", "job_claim_without_zero", "wrong_counts",
+    "duplicate_case", "missing_input", "tampered_input", "escaped_input",
+    "missing_events", "contradictory_event", "passed_without_coverage", "product_changed",
+    "failure_precedence", "incomplete_precedence", "source_identity_guard",
+    "non_overwrite", "configuration_bounds", "input_retained_before_actor"
+  ],
+  "torture": [
+    "deadline_summary_cycles", "aggregate_order_cycles", "full_discovery_cycles",
+    "parallel_packet_audits", "long_unfinished_journal", "sticky_failure_recovery",
+    "isolated_evidence_roots", "exclusive_log_observation"
+  ],
+  "limits": {
+    "seconds": 900,
+    "retained_bytes": 536870912,
+    "total_meta_cases": 2000,
+    "owned_termination_cycles": 24,
+    "concurrent_target_runs": 4,
+    "full_discovery_runs": 3,
+    "long_journal_records": 2000
+  }
+}

@@ -1,0 +1,12 @@
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:51863/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51863/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51863/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51863/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51863/mcp "HTTP/1.1 200 OK"
+HTTP Request: POST http://127.0.0.1:51863/mcp "HTTP/1.1 200 OK"
+StreamableHTTP session manager shutting down
+----------------------------------------------------------------------
+Ran 29 tests in 5.307s
+
+OK

@@ -1,0 +1,43 @@
+{
+  "scope": "M0-M1 CPU model; no HTTP server or renderer started",
+  "date": "2026-10-29",
+  "timezone": "America/New_York",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "<source-workspace>\\service\\.venv\\Scripts\\python.exe",
+  "base_prefix": "<local-user-home>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "environment": "project venv inheriting bundled runtime site-packages; editable package",
+  "packages": {
+    "docstream-cpu": "0.2.0.dev1",
+    "pydantic": "2.14.1",
+    "pydantic_core": "2.50.1",
+    "annotated-types": "0.8.0",
+    "typing_extensions": "4.16.0",
+    "typing-inspection": "0.4.4",
+    "python-docx": "1.2.0",
+    "setuptools": "84.1.0",
+    "pip": "25.0.1"
+  },
+  "tests_run": 41,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 1.215401,
+  "successful": true,
+  "generated_cases": {
+    "assignment": 300,
+    "structural": 60,
+    "invalid": 60
+  },
+  "seeds": [
+    20261029,
+    12345,
+    98765
+  ],
+  "baseline": {
+    "included": 6,
+    "excluded": [
+      "test_http_edit_endpoint (service startup deferred)"
+    ]
+  }
+}

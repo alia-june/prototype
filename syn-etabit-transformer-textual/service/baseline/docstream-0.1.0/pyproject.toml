@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docstream-cli"
+version = "0.1.0"
+description = "Markdown-first command-line document editor and local document service"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["python-docx>=1.2,<2"]
+license = {text = "MIT"}
+authors = [{name = "Generated for local use"}]
+
+[project.scripts]
+docstream = "docstream.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
