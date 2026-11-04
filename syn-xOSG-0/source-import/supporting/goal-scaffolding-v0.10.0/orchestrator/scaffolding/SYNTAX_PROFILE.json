@@ -2,5 +2,18 @@
   "profile_id": "xosg-symbolic-envelope-v1",
   "relation_token": "->",
   "payload_delimiter": "::",
-  "wrapper_selectors": {"core-access": {"wrapper": "core-access", "privilege_effect": "NONE"}}
+  "mode_labels": {
+    "simulated": {
+      "meaning": "theoretical/simulated request envelope",
+      "authority_effect": "NONE"
+    }
+  },
+  "wrapper_selectors": {
+    "core-access": {
+      "wrapper": "core-access",
+      "meaning": "apply xOSG-0 controlled prompt scaffolding",
+      "privilege_effect": "NONE",
+      "authority_effect": "NONE"
+    }
+  }
 }
