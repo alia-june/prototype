@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["NOTES", "TODO", "ERROR-LOG", "AGENDA", "ROADMAP"],
+  "additionalProperties": false,
+  "properties": {
+    "NOTES": {"type": "array"},
+    "TODO": {"type": "array"},
+    "ERROR-LOG": {"type": "array"},
+    "AGENDA": {"type": "array"},
+    "ROADMAP": {"type": "array"}
+  }
+}
