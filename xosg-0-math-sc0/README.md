@@ -4,6 +4,46 @@ Runnable three-runtime reference implementation of the xOSG-0 Straight Computati
 
 This module remains intentionally restricted to numerical/straight computation. Abstract logic, sets, relations, predicates, and abstract-object reasoning remain deferred to a different machine/module.
 
+## Theoretical use cases
+
+These are research and architecture cases, not claims that v0.8.0 is production-qualified for each domain.
+
+### Verified computation for AI-operated systems
+
+An AI or agent can delegate arithmetic and numerical work to a deterministic computation substrate instead of treating language-model reasoning as the calculator. The LLM remains an interpreter or last-resort inference layer, while exact, interval, native, and reference backends retain computational authority.
+
+### Heterogeneous computation without semantic drift
+
+The same mathematical contract can be executed through Python, native C/C++, vectorized libraries, open-compute runtimes, or later GPU backends while preserving one operation definition and one verification boundary. Faster hardware may accelerate a computation without silently redefining its semantics.
+
+### Numerically accountable scientific workflows
+
+A scientific or engineering workflow can retain not only a numerical value but also its backend, precision mode, verification state, conditioning diagnostics, error evidence, and replay fingerprint. This supports later inspection of how a result was produced and whether it remained numerically stable.
+
+### Exact and bounded computation
+
+Exact rational arithmetic and interval arithmetic can be selected when a floating-point approximation is insufficient. Theoretical applications include bounded numerical reasoning, conservative parameter propagation, reproducible reference calculations, and workflows where an enclosure is more useful than an apparently precise scalar.
+
+### Independent computational verification
+
+One backend can generate a result while another checks it. Native linear algebra can be compared with a reference implementation; solve and inverse operations can be checked by residuals; accelerator output can later be differentially tested against CPU/reference behavior.
+
+### Capability-aware portable execution
+
+A host can expose which runtimes, numerical libraries, compilers, native kernels, and accelerator paths are actually available. A controller can then choose an admitted backend based on capability, workload, and precision requirements instead of assuming every machine has the same environment.
+
+### Fail-closed numerical services
+
+Known contracted operations can reject invalid domains, singular systems, excessive resource demands, malformed shapes, non-finite inputs, or unsupported precision instead of routing around deterministic failure with a guessed answer.
+
+### Reproducible numerical experiments
+
+Versioned operation contracts, deterministic request fingerprints, backend provenance, and replay metadata can make numerical experiments easier to reproduce across machines and over time.
+
+### Reference substrate for higher mathematical systems
+
+SC-0 can serve as the deterministic numerical layer beneath later mathematical modules. Symbolic logic, sets, relations, predicates, and abstract objects remain deliberately outside this module and can consume SC-0 as a numerical service without merging their semantics into the straight-computation core.
+
 ## v0.8 milestone
 
 v0.8 pushes the numerical core to the current environment wall:
