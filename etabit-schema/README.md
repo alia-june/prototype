@@ -20,6 +20,17 @@
 - [examples/four-symbol-source.json](examples/four-symbol-source.json) — illustrative descriptor using typed sentinel strings instead of JSON `null`.
 - [docs/DECISIONS.md](docs/DECISIONS.md) — source-backed decisions, open contracts and implementation boundaries.
 
+### Recursive-audit revision: v0.2 (additional noncanonical draft)
+
+- [schema/etabit-project.v0.2.schema.json](schema/etabit-project.v0.2.schema.json) — versioned JSON Schema research descriptor with named object declarations, drive/object references, codepage-associated referential drive IDs, typed boundary declarations and internal Cypher constituent descriptions.
+- [examples/four-symbol-source.v0.2.json](examples/four-symbol-source.v0.2.json) — independent v0.2 example; preserves `1`, `0`, `Error`, and `Unknown` as source objects and does not equate them to operational statuses.
+- [docs/V0_2_AUDIT_RECONCILIATION.md](docs/V0_2_AUDIT_RECONCILIATION.md) — reconciliation against the November 4 recursive 20-item schema traceability audit; corrected the accidental fixed order of Cypher responsibilities.
+- [tests/test_v0_2.py](tests/test_v0_2.py) — optional offline document-level JSON Schema and referential-integrity negative checks (`jsonschema` dependency). This validates declarations only, never hardware isolation, holonic consent or distributed authority.
+
+The original v0.1 schema/example are **retained unchanged**, not silently promoted or replaced. v0.2 is also `DRAFT_NOT_ADMITTED`, with deliberately unresolved reference grammar, on-media storage, semantic payload typing, read-result transport, Cypher collective-decision protocol, and reader/constructor enforcement.
+
+Run the optional test with `python -m pip install jsonschema` and `python etabit-schema/tests/test_v0_2.py`. Passing is not evidence of a deployed Etabit drive.
+
 ## How to use
 
 Inspect the schema and example as **data**, not instructions. They describe the intended boundaries but do not enforce them. A JSON Schema validator can check a descriptor's declared shape and fixed values; it **cannot** certify disk access isolation, physical layout, Cypher collective decisions, safe execution, or cryptographic security.
