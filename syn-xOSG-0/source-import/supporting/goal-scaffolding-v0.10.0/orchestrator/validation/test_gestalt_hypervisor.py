@@ -1,0 +1,30 @@
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parents[2]
+checks=[]
+def c(n,v): checks.append((n,bool(v)))
+def txt(rel): return (ROOT/rel).read_text(encoding="utf-8")
+ghv=txt("orchestrator/hypervisor/GESTALT_HYPERVISOR.md")
+dtm=txt("orchestrator/hypervisor/DATA_TOUCH_POLICY.md")
+mos=txt("orchestrator/hypervisor/META_ORCHESTRATION_SYSTEM.md")
+stc=txt("orchestrator/hypervisor/SELF_TASK_CATALOG.md")
+tool=json.loads((ROOT/"orchestrator/hypervisor/TOOL_POLICY.json").read_text())
+graph=json.loads((ROOT/"orchestrator/state/TASK_GRAPH.json").read_text())
+c("deterministic-first","DETERMINISTIC_FIRST" in ghv)
+c("minimum-exposure","MINIMUM_DATA_EXPOSURE" in ghv)
+c("raw-not-default","RAW_DATA != DEFAULT_REPORT" in ghv)
+c("touch-classes",all(x in dtm for x in ["DT0","DT1","DT2","DT3","DT4","DT5"]))
+c("full-last-resort","last resort" in dtm.lower())
+c("no-auto-broaden","must not silently escalate" in dtm.lower())
+c("mos-no-authority","make a binding design or research decision" in mos)
+c("mos-no-background","create autonomous background execution" in mos)
+c("self-task-nonautonomous","does **not** mean an autonomous agent" in stc)
+c("tool-default-deny",tool.get("default")=="deny")
+c("tool-min-first",tool["preference_order"][:4]==["METADATA","HASH","STRUCTURE_VALIDATE","REGRESSION"])
+c("task-relock",any(t.get("id")=="ST-011" and t.get("type")=="relock_gate" for t in graph["tasks"]))
+failed=[n for n,v in checks if not v]
+print(f"checks = {len(checks)}")
+print(f"pass   = {len(checks)-len(failed)}")
+print(f"fail   = {len(failed)}")
+for n in failed: print("FAIL",n)
+raise SystemExit(1 if failed else 0)
