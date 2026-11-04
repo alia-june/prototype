@@ -27,13 +27,14 @@
 
 ## Overview
 
-This repository contains five related prototype families exploring a common question:
+This repository contains six related prototype families exploring a common question:
 
 > **How can complex AI-assisted systems remain inspectable when execution, authority, verification, provenance, and failure are distributed across multiple layers?**
 
 | Project | Core question | Current direction |
 | --- | --- | --- |
 | **[xOSG-0](syn-xOSG-0/README.md)** | How can a human-directed AI/software system grow through explicit authority, state, testing, and reduction? | ES-xOSG-7 → bare-metal → v0.2 → v0.3 → v0.4 → Seed |
+| **[Code-Lexigraph](code-lexigraph/README.md)** | How can programming meanings, requirements, construction rules, code roles, and evidence remain connected as code is reconstructed? | Bounded Python rehydration with bidirectional traces and a restricted construction grammar |
 | **[Etabit Schema](etabit-schema/README.md)** | How can multi-drive referential construction and distributed authority be described without granting execution authority? | Draft JSON Schema, source/reference examples, and explicit unresolved contracts |
 | **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** | How can documents remain reference-native, non-destructive, inspectable, and transformable across formats? | Markdown-first, JSON-governed document transformation with a retained CPU compatibility service |
 | **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** | How can raw enumerated values remain free of identity and metadata while external relations and compositions build coherent structures? | Locked v0.3 with open identity, bitmap, topology, and recursion contracts |
@@ -56,15 +57,15 @@ These are separate research systems, not one finished product. Each keeps its ow
                 │                             │
              xOSG-0                     bounded services
       orchestration / control          /                \
-                │                    /                    \
-                │        Syn-Etabit Transformer        MATH.SC-0
-                │        document semantics            computation
-                │              │                           │
-                │       immutable states            deterministic backends
-                │       transformations             exact / interval / native
-                │       receipts + recovery         verification + evidence
-                │              │                           │
-                └──────── provenance / gates / explicit failure ────────┘
+                │             /           |              \
+                │    Code-Lexigraph   Syn-Etabit       MATH.SC-0
+                │    code semantics   document model   computation
+                │          │              │                 │
+                │    reconstruction   immutable states  deterministic backends
+                │    traces + maps    transformations   exact / interval / native
+                │    bounded checks   receipts          verification + evidence
+                │          │              │                 │
+                └──── provenance / gates / explicit failure ────────────┘
 ```
 
 This is a conceptual map, not a dependency graph.
@@ -96,6 +97,33 @@ Seed
 Research themes include layered human/operator authority, explicit workflow state, deterministic offload, provenance-aware transitions, fail-closed behavior, fuzzy/adversarial pressure, and extracting a minimum justified kernel only after developmental evidence exists.
 
 The documented v0.4 fuzzy stage records **107 / 107 bounded cases passing with no crashes or timeouts**. The source ledger also preserves historical uncertainty: reconstructed evidence is not silently relabeled as recovered original source.
+
+---
+
+## Code-Lexigraph — reconstructable programming knowledge
+
+**[Open project →](code-lexigraph/README.md)** · **[Design contract →](code-lexigraph/docs/DESIGN.md)** · **[Validation →](code-lexigraph/docs/VALIDATION.md)**
+
+Code-Lexigraph tests whether programming meanings, requirements, construction
+rules, code roles, and evidence can remain connected while a declared graph is
+rehydrated into source code. The current prototype reconstructs one bounded
+safe-fall-through Python profile through a restricted grammar rather than an
+unconstrained code generator.
+
+```text
+meaning → requirement → contract → construction → code → evidence
+   ↑                                                       │
+   └──────────────── inspectable reverse trace ────────────┘
+```
+
+The retained example contains 29 graph entries, 43 relationships, 22
+construction records, eight direct code mappings, and two supporting
+declarations. Its repository replay records **19 / 19 tests passing** across
+construction, behavior, refusal, and command-line integration checks.
+
+Those checks qualify only the declared example and tested interpreter. They do
+not establish formal semantic proof, general code synthesis, arbitrary-input
+hardening, universal sentinel semantics, or guarantees about external effects.
 
 ---
 
@@ -217,6 +245,12 @@ The emphasis is not on claiming these problems are solved. The emphasis is on ma
 ```text
 prototype/
 │
+├── code-lexigraph/             meaning-to-code reconstruction prototype
+│   ├── code_lexigraph/         dependency-free Python implementation
+│   ├── examples/               retained bundle and reference program
+│   ├── tests/                  construction, behavior, and CLI checks
+│   └── docs/                   design, provenance, validation, open decisions
+│
 ├── syn-xOSG-0/
 │   ├── growth/                 canonical developmental spine
 │   ├── docs/                   source and boundary records
@@ -252,10 +286,11 @@ prototype/
 ## Start here
 
 1. **[xOSG-0](syn-xOSG-0/README.md)** — developmental and authority model.
-2. **[Etabit Schema](etabit-schema/README.md)** — multi-drive construction and distributed-authority schema research.
-3. **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** — strict raw substrate and open successor contracts.
-4. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
-5. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
+2. **[Code-Lexigraph](code-lexigraph/README.md)** — bidirectional meaning-to-code reconstruction.
+3. **[Etabit Schema](etabit-schema/README.md)** — multi-drive construction and distributed-authority schema research.
+4. **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** — strict raw substrate and open successor contracts.
+5. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
+6. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
 
 Read each project's validation, source-boundary, and integration documents before treating test results as broader acceptance.
 
