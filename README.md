@@ -27,7 +27,7 @@
 
 ## Overview
 
-This repository contains four related prototype families exploring a common question:
+This repository contains five related prototype families exploring a common question:
 
 > **How can complex AI-assisted systems remain inspectable when execution, authority, verification, provenance, and failure are distributed across multiple layers?**
 
@@ -253,11 +253,11 @@ prototype/
 
 1. **[xOSG-0](syn-xOSG-0/README.md)** — developmental and authority model.
 2. **[Etabit Schema](etabit-schema/README.md)** — multi-drive construction and distributed-authority schema research.
-3. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
-4. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
-4. Read each project's validation, source-boundary, and integration documents before treating test results as broader acceptance.
+3. **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** — strict raw substrate and open successor contracts.
+4. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
+5. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
 
-- **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** — strict raw substrate and open successor contracts.
+Read each project's validation, source-boundary, and integration documents before treating test results as broader acceptance.
 
 ---
 
