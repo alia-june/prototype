@@ -2,7 +2,7 @@
 
 Runnable three-runtime reference implementation of the xOSG-0 Straight Computation Core.
 
-This machine remains intentionally restricted to numerical/straight computation. Abstract logic, sets, relations, predicates, and abstract-object reasoning remain deferred to a different machine/module.
+This module remains intentionally restricted to numerical/straight computation. Abstract logic, sets, relations, predicates, and abstract-object reasoning remain deferred to a different machine/module.
 
 ## v0.8 milestone
 
