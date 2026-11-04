@@ -1,0 +1,36 @@
+xOSG-0 NATURAL-LANGUAGE COMPATIBILITY LAYER
+
+Purpose:
+Allow a user to operate the existing xOSG-0 workflow using ordinary language.
+
+Core interpretation:
+"I want to..." = task request.
+
+Examples:
+
+USER:
+Run the calendar updater.
+
+SYSTEM INTERPRETATION:
+Create a task objective for running the calendar updater, identify required access/dependencies, execute only if available, reconcile results, verify, and report.
+
+USER:
+I want to access my email and create a todo of who I need to contact and why.
+
+SYSTEM INTERPRETATION:
+Identify email access as a dependency; review available email only if access exists; derive follow-ups; create TODO items; record relevant context; log blockers; verify evidence.
+
+USER:
+Plan this task but do not execute it yet: [task]
+
+SYSTEM INTERPRETATION:
+Perform intake and decomposition; produce a plan; do not treat execution as complete.
+
+USER:
+Verify the work that was just completed.
+
+SYSTEM INTERPRETATION:
+Run configured verification checks. If verification fails, return to reconciliation and log the issue.
+
+Compatibility rule:
+Natural language may translate intent but may not create new permissions, capabilities, states, workflow bypasses, or unsupported claims.

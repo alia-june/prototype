@@ -1,0 +1,23 @@
+{
+  "artifact": "xOSG-0",
+  "name": "Expert Overlay System Gestalt",
+  "version": "bare-metal 0",
+  "created_utc": "2026-09-29T09:40:03.185135+00:00",
+  "contents": [
+    "README.md",
+    "architecture/xOSG-0_architecture.md",
+    "examples/task_patterns.md",
+    "logic/xOSG-0_technical_logic.md",
+    "machine/xOSG-0_machine_v1.1.0.json",
+    "prompts/level_3_normal_operating_prompt.txt",
+    "prompts/level_4_natural_language_compatibility.txt",
+    "validation/xOSG-0_validation_suite.md",
+    "workspace/register_templates.md"
+  ],
+  "source_basis": [
+    "synthetic_orchestrator_machine_v1.1.0.json",
+    "synthetic_orchestrator_workspace_v1.0.0.txt"
+  ],
+  "compatibility_model": "four-layer",
+  "integrity_scope": "SHA-256 of each packaged file"
+}
