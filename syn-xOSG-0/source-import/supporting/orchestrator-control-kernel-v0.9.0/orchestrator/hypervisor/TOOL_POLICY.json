@@ -2,5 +2,31 @@
   "schema": "xosg.tool-policy.v1",
   "hypervisor": "GHV-001",
   "default": "deny",
-  "preference_order": ["METADATA","HASH","STRUCTURE_VALIDATE","REGRESSION","BOUNDED_PROBE","SEMANTIC_INSPECTION"]
+  "preference_order": [
+    "METADATA",
+    "HASH",
+    "STRUCTURE_VALIDATE",
+    "REGRESSION",
+    "BOUNDED_PROBE",
+    "SEMANTIC_INSPECTION",
+    "EXTERNAL_RESEARCH",
+    "EXTERNAL_SIDE_EFFECT"
+  ],
+  "classes": {
+    "METADATA": {"max_data_touch": "DT1", "side_effect": "NONE"},
+    "HASH": {"max_data_touch": "DT2", "side_effect": "NONE"},
+    "STRUCTURE_VALIDATE": {"max_data_touch": "DT3", "side_effect": "NONE"},
+    "REGRESSION": {"max_data_touch": "DT3", "side_effect": "LOCAL_TEST_ONLY"},
+    "BOUNDED_PROBE": {"max_data_touch": "DT4", "side_effect": "NONE"},
+    "SEMANTIC_INSPECTION": {"max_data_touch": "DT5", "side_effect": "NONE"},
+    "EXTERNAL_RESEARCH": {"max_data_touch": "DT5", "side_effect": "NETWORK_READ", "operator_scope_required": true},
+    "EXTERNAL_SIDE_EFFECT": {"max_data_touch": "DT5", "side_effect": "EXTERNAL_MUTATION", "operator_scope_required": true, "zero_sentinel_required": true}
+  },
+  "invariants": [
+    "NO_AUTHORITY_ESCALATION",
+    "NO_TOOL_SCOPE_ESCALATION",
+    "MINIMUM_SUFFICIENT_DATA_TOUCH",
+    "RAW_DATA_NOT_DEFAULT_OUTPUT",
+    "ZERO_SENTINEL_FINAL_GUARD"
+  ]
 }
