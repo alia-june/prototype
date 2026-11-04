@@ -6,7 +6,7 @@ It enforces the artifact's explicit state, register, provenance, and
 verification conventions without modifying the host model or privileges.
 """
 from __future__ import annotations
-import argparse, json
+import argparse, json, hashlib, os, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -70,6 +70,21 @@ def task(text):
     print("task accepted: INTAKE -> DECOMPOSE")
     print("No external action was executed.")
 
+def validate():
+    state=load(STATE,None); regs=load(REG,None)
+    errors=[]
+    if not state: errors.append("runtime_state.json missing")
+    if not regs: errors.append("registers.json missing")
+    if regs and set(regs)!=set(REGISTERS): errors.append("register set mismatch")
+    if state and state.get("verification",{}).get("status")=="PASS" and state.get("state") not in ("VERIFY","DELIVER","LOG"):
+        errors.append("verification PASS in incompatible state")
+    # machine JSON parse check
+    try: json.load(open(ROOT/"machine/xOSG-0_machine_v1.1.0.json",encoding="utf-8"))
+    except Exception as e: errors.append(f"machine configuration invalid: {e}")
+    print("VALID" if not errors else "INVALID")
+    for e in errors: print(" -",e)
+    return 0 if not errors else 1
+
 def status():
     state=load(STATE,{"state":"UNINITIALIZED"})
     regs=load(REG,{k:[] for k in REGISTERS})
@@ -81,10 +96,12 @@ def main():
     s.add_parser("init")
     s.add_parser("status")
     t=s.add_parser("task"); t.add_argument("text")
+    s.add_parser("validate")
     a=p.parse_args()
     if a.cmd=="init": init()
     elif a.cmd=="status": status()
     elif a.cmd=="task": task(a.text)
+    elif a.cmd=="validate": raise SystemExit(validate())
 
 if __name__=="__main__":
     main()
