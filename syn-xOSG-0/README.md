@@ -1,304 +1,314 @@
-# xOSG-0 v0.4.0
+# xOSG-0 — Growing a Seed
 
 **Expert Overlay System Gestalt — Bare-Metal 0**
 
-![Version](https://img.shields.io/badge/version-0.4.0-blue)
 ![Stage](https://img.shields.io/badge/stage-prototype-orange)
-![Validation](https://img.shields.io/badge/fuzzy%20suite-107%2F107%20pass-brightgreen)
+![Method](https://img.shields.io/badge/method-seed%20growth-blue)
+![Principle](https://img.shields.io/badge/principle-test%20before%20promotion-green)
 
-xOSG-0 is a human-directed orchestration and workflow-control substrate for explicit state, task decomposition, verification, provenance, persistence, and bounded failure handling.
+xOSG-0 is a research project about a specific systems question:
 
-Version **0.4.0** is the loose/fuzzy-hardening release. Its central question is not only whether the normal workflow succeeds, but whether malformed, ambiguous, interrupted, or partially valid conditions fail in controlled and inspectable ways.
+> **How can a very small, coherent control seed be grown into a larger orchestration system without losing its original invariants?**
 
-> **Prototype status:** this repository path is a staging location. Nothing in this README implies production deployment, privilege escalation, autonomous authority, or modification of an underlying model.
+The repository is therefore organized to show **growth**, not merely a sequence of releases.
+
+A seed begins small. It is exposed to use, failure, ambiguity, and pressure. New structure is added only when the seed cannot safely express or survive something it now needs to do.
+
+> **Prototype status:** this repository is a staging and research environment. It does not imply deployment authority, hidden agents, privilege escalation, or modification of an underlying model.
 
 ## Theoretical applications
 
-xOSG-0 is intended first as a research substrate for studying how complex human-directed AI and software workflows can remain inspectable when authority, state, uncertainty, failure, and verification are distributed across multiple layers.
+The seed-growth method can be studied as a model for:
 
-Potential theoretical applications include:
+- layered authority and governance systems;
+- human-directed AI orchestration;
+- bounded autonomy;
+- capability and permission separation;
+- provenance-aware computation;
+- fail-closed workflow design;
+- deterministic offload from probabilistic systems;
+- adversarial and fuzzy development;
+- heterogeneous-system composition;
+- multi-instance coordination;
+- control-plane separation;
+- machine-readable capability envelopes;
+- learning systems that accumulate rules without silently replacing their foundation.
 
-- **Layered authority models** — studying how policy, workflow, runtime, and human decision authority can coexist without collapsing into a single implicit controller.
-- **Human-led machine orchestration** — exploring systems where models assist with decomposition, synthesis, and coordination while the human operator retains binding decision agency.
-- **Compatibility of heterogeneous systems** — testing how components with different assumptions, interfaces, capabilities, or failure modes can interact without requiring them to become identical.
-- **Bounded autonomy research** — examining how useful machine initiative can exist inside explicit state, transition, verification, and authority constraints.
-- **Fail-closed AI workflows** — modeling systems that expose uncertainty, malformed state, and incomplete evidence instead of converting ambiguity into apparent success.
-- **Provenance-aware computation** — studying how outputs can carry enough execution history, evidence, and state context to support later inspection and attestation.
-- **Stateful reasoning environments** — exploring whether persistent registers, explicit transitions, and durable workflow state improve continuity over prompt-only orchestration.
-- **Adversarial workflow testing** — using fuzzing, malformed persistence, contradictory state, timing anomalies, and near-valid inputs to probe the behavior of orchestration systems.
-- **Synthetic expert overlays** — investigating layered expert instructions and machine descriptions that reinforce one another without claiming to alter the underlying model.
-- **Deterministic offload** — identifying which validation, transition, policy, and persistence checks can be moved from probabilistic reasoning into deterministic mechanisms.
-- **Multi-instance coordination** — modeling interactions among distinct AI instances or software machines while preserving local identity, authority boundaries, and provenance.
-- **Control-plane separation** — exploring architectures where execution, verification, policy, and authorization are deliberately separated rather than fused into one process.
-- **Inspectable failure semantics** — treating rejection, invalidity, corruption, and blocked states as first-class outcomes rather than exceptional edge cases.
-- **Experimental governance kernels** — providing a sandbox for researching monotonic restrictions, production gates, explicit release authority, and other governance structures before any production implementation.
-- **Machine-readable capability envelopes** — studying universal descriptions of what a program, model, or service can safely do before it is composed into a larger workflow.
+The central research idea is not that a finished architecture should be designed all at once. It is that a sufficiently coherent seed can **grow structure in response to evidence**.
 
-These are research directions, not claims that v0.4.0 already implements a formal solution to each problem.
+## The seed
 
-## Core workflow
+The early xOSG-0 seed contained only a few essential ideas:
 
 ```text
-INTAKE
+MACHINE DESCRIPTION
+        ↓
+TECHNICAL LOGIC
+        ↓
+OPERATING PROMPT
+        ↓
+NATURAL-LANGUAGE COMPATIBILITY
+```
+
+with five persistent conceptual registers:
+
+```text
+NOTES
+TODO
+ERROR-LOG
+AGENDA
+ROADMAP
+```
+
+and one critical execution distinction:
+
+```text
+REQUEST != COMPLETION
+```
+
+That is enough to begin.
+
+A useful seed should be:
+
+- **small** enough to understand;
+- **explicit** enough to inspect;
+- **coherent** enough to constrain later additions;
+- **testable** enough to be challenged;
+- **incomplete** enough that real use can reveal what must grow next.
+
+## How the seed grows
+
+xOSG-0 uses an evidence-driven growth loop:
+
+```text
+SEED
   ↓
-DECOMPOSE
+ACTUALIZE
   ↓
-ASSIGN
+USE
   ↓
-EXECUTE
+BREAK / FUZZ / CONTRADICT
   ↓
-RECONCILE
+OBSERVE FAILURE
   ↓
-VERIFY
+EXTRACT LESSON
   ↓
-DELIVER
+FORM INVARIANT
   ↓
-LOG
+ADD MINIMUM STRUCTURE
+  ↓
+REGRESSION TEST
+  ↓
+PROMOTE ONLY WHEN JUSTIFIED
+  ↓
+NEW SEED SURFACE
 ```
 
-Supporting states include `IDLE` and `BLOCKED`.
+The output of one growth cycle becomes the input surface for the next.
 
-The fundamental execution invariant is:
+### Growth rule
 
 ```text
-requested_action != completed_action
+NEW_STRUCTURE requires:
+    observed_need
+    + explicit_invariant
+    + failure_model
+    + implementation_or_procedure
+    + negative_test
+    + regression_evidence
 ```
 
-A request, parsed instruction, or accepted objective is not treated as completed execution. Completion requires valid state progression, evidence, and verification.
+A feature is not added merely because it is interesting.
 
-## Architecture
+## Growth rings in this repository
+
+The uploaded project artifacts show several distinct growth rings.
+
+### 0 — Bare seed
+
+**Problem:** create a minimal orchestration overlay that is readable by both machine and human.
+
+**Added:** machine description, technical logic, operating prompt, compatibility layer, registers, verification concept.
+
+**Evidence:** original bare-metal artifact.
+
+### 1 — Actualization
+
+**Pressure:** the seed was mostly declarative; state existed conceptually but not operationally.
+
+**Added:** persistent runtime state, register persistence, CLI behavior, runtime schema, explicit requested-vs-completed action semantics.
+
+**Evidence:** bare-metal actualized artifact.
+
+### 2 — Adversarial pressure
+
+**Pressure:** normal-path tests were insufficient.
+
+**Method:** loose and fuzzy input, malformed JSON, null structures, Unicode noise, repeated operations, corruption.
+
+**Observed failures:** nullable verification crashes and raw JSON parser failures.
+
+**Growth:** defensive load boundaries, controlled invalidity, regression targets.
+
+**Evidence:** fuzzy-suite artifact and reports.
+
+### 3 — Learning layer
+
+**Pressure:** individual fixes were accumulating faster than architectural understanding.
+
+**Added:** a pre-decomposition learning stack:
 
 ```text
-┌──────────────────────────────────────────────┐
-│ 6. Validation                               │
-│    deterministic tests + loose/fuzzy tests  │
-├──────────────────────────────────────────────┤
-│ 5. Stateful Runtime                         │
-│    state + registers + locking + recovery   │
-├──────────────────────────────────────────────┤
-│ 4. Natural-Language Compatibility Layer     │
-│    novice/plain-language interaction        │
-├──────────────────────────────────────────────┤
-│ 3. Operating Prompt                         │
-│    direct technical operating instructions  │
-├──────────────────────────────────────────────┤
-│ 2. Technical Instrumentation                │
-│    invariants + transition rules + bounds   │
-├──────────────────────────────────────────────┤
-│ 1. Machine Description                      │
-│    identity + capabilities + constraints    │
-└──────────────────────────────────────────────┘
+ERROR LOGS
+  ↓
+LESSONS
+  ↓
+PATTERNS / ANTIPATTERNS
+  ↓
+LOGIC
+  ↓
+META-LOGIC
+  ↓
+ANALYSIS
+  ↓
+META-ANALYSIS
 ```
 
-The layers reinforce one another. Higher layers make the system easier to use; lower layers retain the operative constraints.
+The important step here is that failures stop being isolated bugs and become material for disciplined learning.
 
-## Persistent working registers
+**Evidence:** operator learning-layer package.
 
-xOSG-0 maintains five primary registers:
+### 4 — Operator kernel
 
-- `NOTES` — observations, findings, context, and decisions.
-- `TODO` — outstanding work.
-- `ERROR-LOG` — failures, anomalies, and rejected operations.
-- `AGENDA` — immediate operational priorities.
-- `ROADMAP` — longer-term development and sequencing.
+**Pressure:** the system needed a disciplined way to distinguish observation, inference, proposal, execution, and promotion.
 
-## Hardened persistence
+**Added:**
 
-The v0.4.0 runtime treats state and register updates as one logical transaction:
+- epistemic state;
+- action-state transitions;
+- specification / implementation / test / evidence separation;
+- mutation records;
+- failure-learning discipline;
+- explicit phase and production gates.
+
+**Evidence:** operator-kernel preproduction package.
+
+### 5 — Operator / Orchestrator separation
+
+**Pressure:** orchestration authority could otherwise blur into decision authority.
+
+**Added:** explicit role separation:
 
 ```text
-prepare mutation
-      ↓
-transaction journal
-      ↓
-atomic state write
-      ↓
-atomic register write
-      ↓
-commit
-      ↓
-journal removal
+OPERATOR     = binding decision agency
+ORCHESTRATOR = instrumentation and coordination
 ```
 
-A valid interrupted transaction can be recovered. Malformed or unverifiable persistence is rejected rather than silently trusted.
+along with Rule-0 security layers and production-gate semantics.
 
-## Fail-closed behavior
+**Evidence:** operator/orchestrator kernel production release.
 
-The preferred failure rule is:
+### 6 — Deterministic offload
+
+**Pressure:** too much validation and attestation still required semantic model contact.
+
+**Added:** deterministic-first orchestration, Gestalt Hypervisor, minimum-sufficient tasks, hashing/attestation, task graph, minimized evidence return.
 
 ```text
-uncertain state → reject or report
+OPERATOR DECISION
+ -> ORCHESTRATOR INTENT
+ -> DETERMINISTIC TASK
+ -> MINIMIZED EVIDENCE
+ -> SYNTHESIS
+ -> SENTINEL
+ -> REPORT
 ```
 
-not:
+**Evidence:** orchestrator control-kernel v0.9.0.
+
+### 7 — Goal scaffolding
+
+**Pressure:** compact symbolic goals needed context without allowing symbols to acquire accidental authority.
+
+**Added:** deterministic goal scaffolding, descriptor registries, opaque-token semantics, exact payload preservation.
+
+Critical invariants include:
 
 ```text
-uncertain state → silently continue
+TOKEN_SPELLING != TOKEN_SEMANTICS
+CORE_ACCESS != PRIVILEGE
+WRAPPING != EXECUTION
+DESCRIPTOR != PERMISSION
+PAYLOAD_AFTER == PAYLOAD_BEFORE
 ```
 
-The hardening model covers conditions including:
+**Evidence:** goal-scaffolding v0.10.0.
 
-- corrupted or truncated JSON;
-- malformed nested structures;
-- invalid verification records;
-- illegal state transitions;
-- oversized inputs;
-- lock contention and stale locks;
-- transaction-journal corruption;
-- protected-path symlinks;
-- unusual Unicode and control characters.
+## What this demonstrates
 
-## Loose / fuzzy validation
+The system did not grow by starting with a giant architecture diagram.
 
-v0.4.0 deliberately tests inputs that are not clean or conventionally valid.
+It grew by repeatedly asking:
 
-Coverage includes ambiguous natural language, null values, malformed JSON, truncation, unusual whitespace, Unicode, combining and bidirectional characters, shell-like and path-like strings, markup-like input, boundary-sized values, randomized operation sequences, transaction interruption, and locking anomalies.
+1. **What can the seed already express?**
+2. **Where does it fail under real pressure?**
+3. **What is the smallest missing primitive?**
+4. **Can that primitive be stated as an invariant?**
+5. **Can we test its absence and its presence?**
+6. **Does the new structure preserve the seed beneath it?**
 
-The harness distinguishes:
+That is the method this repository is intended to expose.
+
+## Seed preservation
+
+Growth is not replacement.
+
+A later layer may add structure, but it should not silently erase the seed's earlier constraints.
+
+Conceptually:
 
 ```text
-PASS
-CONTROLLED_REJECTION
-FAIL
-CRASH
-TIMEOUT
+SEED_0
+  ⊂ SEED_1
+  ⊂ SEED_2
+  ⊂ ...
 ```
 
-Rejecting malformed input may be correct. Crashing or hanging is not.
+where each new ring should preserve justified invariants from the prior ring unless an explicit, evidenced redesign retires them.
 
-### v0.4.0 validation snapshot
+This is **developmental inheritance**, not blind backward compatibility.
 
-```text
-Loose/fuzzy cases:       107
-Passed:                  107
-Failures:                  0
-Crashes:                   0
-Timeouts:                  0
-
-CLI smoke test:          PASS
-Python compilation:      PASS
-Journal recovery:        PASS
-Lock-bound behavior:     PASS
-Corrupt JSON handling:   PASS
-Unicode/noise handling:  PASS
-```
-
-Earlier fuzzing exposed nullable-verification crashes and raw parser exceptions. Those failure classes were hardened and converted into regression cases.
-
-## Installation
-
-The prototype reference runtime targets Python.
-
-```bash
-git clone https://github.com/alia-june/prototype.git
-cd prototype/syn-xOSG-0
-```
-
-When the runtime files are present, initialize and validate with:
-
-```bash
-python runtime/xosg.py init
-python runtime/xosg.py status
-python runtime/xosg.py validate
-```
-
-Run deterministic tests:
-
-```bash
-python -m unittest discover -s tests
-```
-
-Run loose/fuzzy validation:
-
-```bash
-python tests/fuzzy_harness.py
-```
-
-> The `syn-xOSG-0` directory is being staged incrementally. Commands become executable as the corresponding runtime and test files are populated.
-
-## Planned repository map
+## Repository map
 
 ```text
 syn-xOSG-0/
 ├── README.md
-├── CHANGELOG.md
-├── machine/
-├── architecture/
-├── prompts/
-├── runtime/
-├── schemas/
-├── state/
-├── tests/
-├── validation/
-└── manifests/
+├── growth/
+│   ├── README.md
+│   ├── 00-seed/
+│   ├── 01-actualization/
+│   ├── 02-adversarial-pressure/
+│   ├── 03-learning-layer/
+│   ├── 04-operator-kernel/
+│   ├── 05-operator-orchestrator/
+│   ├── 06-deterministic-offload/
+│   └── 07-goal-scaffolding/
+├── docs/
+│   └── PROVENANCE.md
+└── history/
+    └── ...
 ```
 
-As those components are staged, this README will link directly to the technical documentation, test harness, validation reports, and release artifacts.
+**growth/** explains how one structure caused the next.
 
-## Design principles
+**history/** preserves recoverable historical source and evidence.
 
-```text
-No implied execution.
-No implied privilege.
-No implied verification.
-No silent corruption recovery.
-No fabricated success.
-No unbounded mutation.
-```
+The two are deliberately different.
 
-xOSG-0 is designed to expose uncertainty and invalidity rather than conceal them.
+## Start with the seed
 
-## Version lineage
+Do not begin by copying the final system.
 
-```text
-v0.1.x  Declarative specification
-   ↓
-v0.2.0  Stateful runtime
-   ↓
-v0.3.x  Deterministic testing and hardening
-   ↓
-v0.4.0  Loose/fuzzy hardening and boundary validation
-```
+Begin with the smallest coherent seed, then reproduce the pressures that caused it to grow.
 
-## Scope
-
-xOSG-0 v0.4.0 is a development reference implementation. It is not a secure operating system, cryptographic trust framework, production capability-security kernel, or autonomous multi-agent authority.
-
-Its purpose is narrower: provide a disciplined orchestration substrate with explicit state, bounded behavior, inspectable provenance, and controlled failure semantics.
-
-## Development cycle
-
-```text
-define
-  ↓
-implement
-  ↓
-test
-  ↓
-break
-  ↓
-observe
-  ↓
-harden
-  ↓
-regress
-  ↓
-fuzz again
-```
-
-A discovered failure should become either a stronger invariant or a permanent regression test.
-
----
-
-**xOSG-0 v0.4.0**  
-**Expert Overlay System Gestalt — Bare-Metal 0**
-
-Primary focus:
-
-```text
-bounded behavior
-explicit failure
-preserved provenance
-controlled state
-no fabricated success
-```
+See **[growth/README.md](growth/README.md)** for the step-by-step development path.
