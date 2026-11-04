@@ -27,14 +27,14 @@
 
 ## Overview
 
-This repository contains three related prototype families exploring a common question:
+This repository contains four related prototype families exploring a common question:
 
 > **How can complex AI-assisted systems remain inspectable when execution, authority, verification, provenance, and failure are distributed across multiple layers?**
 
 | Project | Core question | Current direction |
 | --- | --- | --- |
 | **[xOSG-0](syn-xOSG-0/README.md)** | How can a human-directed AI/software system grow through explicit authority, state, testing, and reduction? | ES-xOSG-7 → bare-metal → v0.2 → v0.3 → v0.4 → Seed |
-| **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** | How can documents remain reference-native, non-destructive, inspectable, and transformable across formats? | Markdown-first, JSON-governed document transformation with a retained CPU compatibility service |
+| **[Etabit Schema](etabit-schema/README.md)** | How can multi-drive referential construction and distributed authority be described without granting execution authority? | Draft JSON Schema, source/reference examples, and explicit unresolved contracts |\n| **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** | How can documents remain reference-native, non-destructive, inspectable, and transformable across formats? | Markdown-first, JSON-governed document transformation with a retained CPU compatibility service |
 | **[MATH.SC-0](xosg-0-math-sc0/README.md)** | How can AI-operated numerical work be delegated to deterministic computation instead of language-model inference? | Exact, interval, Python, native C/C++, and heterogeneous numerical execution with independent verification |
 
 These are separate research systems, not one finished product. Each keeps its own contracts, evidence, compatibility boundaries, validation status, integration gates, and release decisions.
@@ -211,7 +211,7 @@ prototype/
 │   ├── history/                retained development evidence
 │   └── supporting/             supporting kernels and mechanisms
 │
-├── syn-etabit-transformer-textual/
+├── etabit-schema/              standalone Etabit architectural schema research\n│   ├── schema/                draft research descriptor schema\n│   ├── examples/              illustrative four-symbol source\n│   └── docs/                  decisions and open contracts\n│\n├── syn-etabit-transformer-textual/
 │   ├── service/                retained CPU compatibility implementation
 │   ├── docs/                   contracts, validation, findings, integrations
 │   └── ...                     transformation and research artifacts
@@ -230,8 +230,8 @@ prototype/
 ## Start here
 
 1. **[xOSG-0](syn-xOSG-0/README.md)** — developmental and authority model.
-2. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
-3. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
+2. **[Etabit Schema](etabit-schema/README.md)** — multi-drive construction and distributed-authority schema research.\n3. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
+4. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
 4. Read each project's validation, source-boundary, and integration documents before treating test results as broader acceptance.
 
 ---
