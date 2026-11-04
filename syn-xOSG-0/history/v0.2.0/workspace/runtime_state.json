@@ -1,0 +1,12 @@
+{
+  "system": "xOSG-0",
+  "artifact_revision": "0.2.0",
+  "state": "IDLE",
+  "task": null,
+  "verification": {
+    "status": "NOT_RUN",
+    "checks": []
+  },
+  "last_transition": null,
+  "history": []
+}
