@@ -30,6 +30,14 @@ No numeric codepage IDs, Etabit bitcodes, byte layouts, physical addressing, vot
 
 [Syn-Etabit Transformer — Textual](../syn-etabit-transformer-textual/README.md) already documents a reference-addressed document/map model and a bounded CPU implementation. This schema project is **separate** and describes the wider Etabit drive architecture. The related implementation is not evidence of a deployed general Etabit drive, an `eo-drive`, or a Cypher Disk.
 
+## Relation to sf-AmorphDataDrive
+
+[sf-AmorphDataDrive](../sf-amorph-data-drive/README.md) is a separate strict raw-substrate architecture and candidate Etabit source/substrate profile. The relationship is not admitted integration.
+
+Etabit does not relax sf-AmorphDataDrive D0: identity, metadata, datatype, encoding, attestation, reconstruction, filesystem, partition, and composition remain outside raw D0. Arbitrary-object sources, out-of-band meta disks, generic IDs, and Cypher authority do not automatically map to D0, member sf-UUID, or the ID/data/metadata direction.
+
+Integration requires a reviewed cross-map for identity, references, bitmap order and multiplicity, metadata separation, authority, refusal, recursion, recovery, and attestation. See the [candidate relationship record](../sf-amorph-data-drive/docs/ETABIT_RELATION.md).
+
 ## Evidence and next work
 
 The immediate evidence comes from the archived **Decomposition / AE / Etabit successor handoff (2026-10-31)** and the underlying October 2026 user decisions. The next research task is a formal typed-reference contract separating source symbols, reference-resolution outcomes, operational faults, and effect authority; keep constructor/reader access boundaries explicit. Do not introduce native execution or modify original historical source packages as part of this schema work.

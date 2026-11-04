@@ -34,7 +34,9 @@ This repository contains four related prototype families exploring a common ques
 | Project | Core question | Current direction |
 | --- | --- | --- |
 | **[xOSG-0](syn-xOSG-0/README.md)** | How can a human-directed AI/software system grow through explicit authority, state, testing, and reduction? | ES-xOSG-7 → bare-metal → v0.2 → v0.3 → v0.4 → Seed |
-| **[Etabit Schema](etabit-schema/README.md)** | How can multi-drive referential construction and distributed authority be described without granting execution authority? | Draft JSON Schema, source/reference examples, and explicit unresolved contracts |\n| **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** | How can documents remain reference-native, non-destructive, inspectable, and transformable across formats? | Markdown-first, JSON-governed document transformation with a retained CPU compatibility service |
+| **[Etabit Schema](etabit-schema/README.md)** | How can multi-drive referential construction and distributed authority be described without granting execution authority? | Draft JSON Schema, source/reference examples, and explicit unresolved contracts |
+| **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** | How can documents remain reference-native, non-destructive, inspectable, and transformable across formats? | Markdown-first, JSON-governed document transformation with a retained CPU compatibility service |
+| **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** | How can raw enumerated values remain free of identity and metadata while external relations and compositions build coherent structures? | Locked v0.3 with open identity, bitmap, topology, and recursion contracts |
 | **[MATH.SC-0](xosg-0-math-sc0/README.md)** | How can AI-operated numerical work be delegated to deterministic computation instead of language-model inference? | Exact, interval, Python, native C/C++, and heterogeneous numerical execution with independent verification |
 
 These are separate research systems, not one finished product. Each keeps its own contracts, evidence, compatibility boundaries, validation status, integration gates, and release decisions.
@@ -94,6 +96,16 @@ Seed
 Research themes include layered human/operator authority, explicit workflow state, deterministic offload, provenance-aware transitions, fail-closed behavior, fuzzy/adversarial pressure, and extracting a minimum justified kernel only after developmental evidence exists.
 
 The documented v0.4 fuzzy stage records **107 / 107 bounded cases passing with no crashes or timeouts**. The source ledger also preserves historical uncertainty: reconstructed evidence is not silently relabeled as recovered original source.
+
+---
+
+## sf-AmorphDataDrive — strict raw-substrate architecture
+
+**[Open project →](sf-amorph-data-drive/README.md)** · **[Locked v0.3 →](sf-amorph-data-drive/specifications/sf_edabit_amorph_data_drive_locked_spec_v0_3.md)** · **[Relation to Etabit →](sf-amorph-data-drive/docs/ETABIT_RELATION.md)**
+
+sf-AmorphDataDrive separates raw existence, relation/interpretation, and composition/coherence. Locked v0.3 prohibits identity and metadata on raw D0. Current successor direction introduces member sf-UUID, touple-to-gestalt/gesple construction, and recursive ID/data/metadata integration while leaving identity, topology, bitmap, width, and recursion contracts open.
+
+It is related to Etabit as a possible strict substrate profile; no integration is admitted.
 
 ---
 
@@ -211,7 +223,17 @@ prototype/
 │   ├── history/                retained development evidence
 │   └── supporting/             supporting kernels and mechanisms
 │
-├── etabit-schema/              standalone Etabit architectural schema research\n│   ├── schema/                draft research descriptor schema\n│   ├── examples/              illustrative four-symbol source\n│   └── docs/                  decisions and open contracts\n│\n├── syn-etabit-transformer-textual/
+├── etabit-schema/              standalone Etabit architectural schema research
+│   ├── schema/                draft research descriptor schema
+│   ├── examples/              illustrative four-symbol source
+│   └── docs/                  decisions and open contracts
+│
+├── sf-amorph-data-drive/       strict raw-substrate architecture
+│   ├── specifications/         locked v0.2/v0.3 baselines
+│   ├── docs/                   direction and boundaries
+│   └── evidence/               review summaries
+│
+├── syn-etabit-transformer-textual/
 │   ├── service/                retained CPU compatibility implementation
 │   ├── docs/                   contracts, validation, findings, integrations
 │   └── ...                     transformation and research artifacts
@@ -230,9 +252,12 @@ prototype/
 ## Start here
 
 1. **[xOSG-0](syn-xOSG-0/README.md)** — developmental and authority model.
-2. **[Etabit Schema](etabit-schema/README.md)** — multi-drive construction and distributed-authority schema research.\n3. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
+2. **[Etabit Schema](etabit-schema/README.md)** — multi-drive construction and distributed-authority schema research.
+3. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
 4. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
 4. Read each project's validation, source-boundary, and integration documents before treating test results as broader acceptance.
+
+- **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** — strict raw substrate and open successor contracts.
 
 ---
 

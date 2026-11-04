@@ -1,0 +1,70 @@
+{
+  "object_type": "sf-AmorphDataDrive-public-export-manifest",
+  "version": "1",
+  "date": "2026-11-04",
+  "repository": "alia-june/prototype",
+  "base_commit": "f5a5303a280c447158ef1318a39a404bc26254c0",
+  "status": "NON_PRODUCTION_RESEARCH_EXPORT",
+  "files": [
+    {
+      "path": "docs/CURRENT_DIRECTION.md",
+      "bytes": 1794,
+      "sha256": "4419ffc3a4e57bb58f3f57ec47875711e6bb88733b7b95e172016f91b8acd58d",
+      "source_copy": false
+    },
+    {
+      "path": "docs/ETABIT_RELATION.md",
+      "bytes": 1947,
+      "sha256": "021b085448bdd735c9041ae348334c45039ca09376a12bf8628742a4bba9cb74",
+      "source_copy": false
+    },
+    {
+      "path": "docs/OPEN_DECISIONS.md",
+      "bytes": 1506,
+      "sha256": "63c8c3ef6d44042b65e9be4d20ee4d1cbb56b0c13b4db2736330c45cd30ccb0b",
+      "source_copy": false
+    },
+    {
+      "path": "docs/SOURCE_BOUNDARY.md",
+      "bytes": 1202,
+      "sha256": "2c0f58e61b381af23ff9dac8a2532ff4590101d71801589e57fa4ecf3ce26d6b",
+      "source_copy": false
+    },
+    {
+      "path": "evidence/COHERENCE_SUMMARY.md",
+      "bytes": 895,
+      "sha256": "f09f0fe3959220e0d72c1c2204d24d058c02dd6546a54c2b68c36a8d99135980",
+      "source_copy": false
+    },
+    {
+      "path": "evidence/RECONCILIATION_SUMMARY.md",
+      "bytes": 927,
+      "sha256": "a31b540c21278b13fab61e33db6b7220493da4dfb4a146d9d26de3265734b3ee",
+      "source_copy": false
+    },
+    {
+      "path": "handoff/HANDOFF_PUBLIC_2026-11-04.md",
+      "bytes": 1191,
+      "sha256": "2ccfa8b5c80623967bcac7f906b20266c38a86e01c64299f5653853ecf876970",
+      "source_copy": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 2544,
+      "sha256": "aeb254e4293766bfd8fb416da9bd34cb47f68a10a038c7fc90c5a7486b64902c",
+      "source_copy": false
+    },
+    {
+      "path": "specifications/sf_edabit_amorph_data_drive_locked_spec_v0_2.md",
+      "bytes": 15606,
+      "sha256": "db79b9575e746a9c99b8893878ea6c89474ae3cfc7b46104ff35fa225faa1320",
+      "source_copy": true
+    },
+    {
+      "path": "specifications/sf_edabit_amorph_data_drive_locked_spec_v0_3.md",
+      "bytes": 28243,
+      "sha256": "12f3267604767b8ea0b51252a795af66477cb8b4130fe8888f691c868b8428d9",
+      "source_copy": true
+    }
+  ]
+}
