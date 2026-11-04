@@ -248,10 +248,6 @@ Each project retains its own decisions, contracts, compatibility boundaries, evi
 
 ---
 
-## Suggested repository topics
-
-`ai-orchestration` · `human-in-the-loop` · `deterministic-computing` · `numerical-computing` · `document-transformation` · `provenance` · `fuzz-testing` · `fail-closed` · `python` · `javascript` · `cpp`
-
 <div align="center">
 
 ---
