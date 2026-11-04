@@ -1,0 +1,6 @@
+{
+  "schema": "xosg.tool-policy.v1",
+  "hypervisor": "GHV-001",
+  "default": "deny",
+  "preference_order": ["METADATA","HASH","STRUCTURE_VALIDATE","REGRESSION","BOUNDED_PROBE","SEMANTIC_INSPECTION"]
+}
