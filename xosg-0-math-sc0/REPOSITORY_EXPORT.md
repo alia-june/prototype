@@ -1,6 +1,6 @@
-# Repository export boundary
+# Repository source boundary
 
-This directory is a staged source export of xOSG-0 `MATH.SC-0` v0.8.0.
+This directory contains the source export of xOSG-0 `MATH.SC-0` v0.8.0.
 
 It is **not a production release**. The module retains its own validation status, authority model, compatibility boundaries, evidence, and production gate.
 
