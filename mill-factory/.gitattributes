@@ -1,0 +1,7 @@
+.gitattributes text eol=lf
+*.ps1 text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.tmpl text eol=lf
+MANIFEST.sha256 text eol=lf

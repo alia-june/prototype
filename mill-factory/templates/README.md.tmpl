@@ -1,0 +1,41 @@
+# {{TITLE}}
+
+Batch: `{{BATCH_ID}}`
+Created: {{DATE}}
+Truth state: `GENERATED_SYNTHESIS`
+Decision: `HOLD`
+
+## Scope
+
+{{SCOPE}}
+
+## Source basis
+
+Populate `SOURCE_INVENTORY.csv` before claiming a frozen source basis. Record
+source facts without improving or reconciling them.
+
+## Candidate
+
+Keep new implementation under `candidate/`. Material copied into `package/`
+must remain traceable to source or candidate hashes.
+
+## Validation
+
+Use `VALIDATION_PLAN.csv` to state each claim, discriminator, method, and
+evidence path before recording the result. Static, compiler, package, and live
+results are separate gates.
+
+## Live gate
+
+Record complete runtime observations in `LIVE_RESULTS.csv`. Missing evidence is
+`PENDING` or `UNKNOWN`, never an implicit pass.
+
+## Decision
+
+The initial decision is `HOLD`. Promotion requires every required gate to pass
+and explicit authorization recorded through the factory decision tool.
+
+## Rollback
+
+See `ROLLBACK.md`. A valid rollback must name the known-good baseline, what can
+and cannot be reconstructed, the rollback operation, and post-rollback checks.

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "truth_state": "GENERATED_SYNTHESIS",
+  "authority": "WORKING_CONTRACT",
+  "rules": {
+    "no_silent_coercion": true,
+    "unknown_sentinel_fails_closed": true,
+    "cannot_null_scope": "__CANNOT_NULL__ is valid only at a field or boundary that explicitly declares it; the boundary must resolve the value or fail."
+  },
+  "sentinels": [
+    {
+      "sentinel_id": "PENDING_DEFINITION",
+      "family": "knowledge",
+      "condition": "A required definition has not been supplied or accepted.",
+      "consequence": "Preserve the gap; do not invent a default.",
+      "terminal": false
+    },
+    {
+      "sentinel_id": "UNKNOWN",
+      "family": "knowledge",
+      "condition": "Evidence is absent or inconclusive.",
+      "consequence": "Do not assert the value as fact.",
+      "terminal": false
+    },
+    {
+      "sentinel_id": "NOT_APPLICABLE",
+      "family": "domain",
+      "condition": "The field or operation does not apply in the declared scope.",
+      "consequence": "Skip only the inapplicable operation and retain the reason.",
+      "terminal": false
+    },
+    {
+      "sentinel_id": "BLOCKED",
+      "family": "workflow",
+      "condition": "A declared dependency or authority is unavailable.",
+      "consequence": "Stop the dependent transition and record the blocker.",
+      "terminal": false
+    },
+    {
+      "sentinel_id": "INTEGRITY_FAILURE",
+      "family": "safety",
+      "condition": "A sealed digest, manifest, journal, or contract does not verify.",
+      "consequence": "Fail closed and quarantine the affected work.",
+      "terminal": true
+    },
+    {
+      "sentinel_id": "OWNERSHIP_AMBIGUOUS",
+      "family": "safety",
+      "condition": "The active owner of a process, resource, or transition cannot be established.",
+      "consequence": "Do not duplicate execution or mutate the resource.",
+      "terminal": true
+    },
+    {
+      "sentinel_id": "BUDGET_EXHAUSTED",
+      "family": "safety",
+      "condition": "A finite attempt, time, or recovery budget is exhausted.",
+      "consequence": "Stop autonomous recovery and surface a problem.",
+      "terminal": true
+    },
+    {
+      "sentinel_id": "TERMINAL_FINISHED",
+      "family": "terminal",
+      "condition": "Declared completion checks and artifact assertions have passed.",
+      "consequence": "Emit terminal success with evidence references.",
+      "terminal": true
+    },
+    {
+      "sentinel_id": "TERMINAL_PROBLEM",
+      "family": "terminal",
+      "condition": "The run cannot safely continue within its declared authority.",
+      "consequence": "Emit a terminal problem with retained evidence.",
+      "terminal": true
+    },
+    {
+      "sentinel_id": "__CANNOT_NULL__",
+      "family": "boundary",
+      "condition": "A declared non-null boundary has not yet received a valid value.",
+      "consequence": "Resolve before crossing the boundary or fail validation.",
+      "terminal": false
+    }
+  ]
+}
