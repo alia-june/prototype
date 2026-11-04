@@ -1,0 +1,6 @@
+{
+  "profile_id": "xosg-symbolic-envelope-v1",
+  "relation_token": "->",
+  "payload_delimiter": "::",
+  "wrapper_selectors": {"core-access": {"wrapper": "core-access", "privilege_effect": "NONE"}}
+}
