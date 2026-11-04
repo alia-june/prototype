@@ -8,7 +8,7 @@
 ![Method](https://img.shields.io/badge/method-evidence--first-2f81f7)
 ![Authority](https://img.shields.io/badge/authority-human--led-6f42c1)
 ![Failure](https://img.shields.io/badge/failure-fail--closed-b23c17)
-![Repository](https://img.shields.io/badge/repository-private-lightgrey)
+![Repository](https://img.shields.io/badge/repository-private-lightgrey)/voyeur friendly 
 
 **A private research container for systems that keep semantics, execution, authority, provenance, and verification visibly separate.**
 
