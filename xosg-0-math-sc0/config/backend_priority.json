@@ -1,0 +1,37 @@
+{
+  "schema": "xOSG-0/MATH.SC-0/backend-policy/v0.7",
+  "global_priority": [
+    "deterministic_local",
+    "web",
+    "llm_fallback"
+  ],
+  "deterministic_local_priority": [
+    "exact",
+    "high_precision",
+    "interval",
+    "accelerator",
+    "open_compute",
+    "native",
+    "numpy",
+    "cpu"
+  ],
+  "runtime_roles": {
+    "javascript": "global control and external-fallback boundary",
+    "python": "deterministic numerical integration and verification",
+    "c_cpp": "compiled native kernels"
+  },
+  "rules": {
+    "llm_must_be_last": true,
+    "llm_results_are_non_authoritative": true,
+    "web_precedes_llm": true,
+    "web_is_fallback_not_default_calculator": true,
+    "external_fallbacks_disabled_inside_python_worker": true,
+    "native_has_no_external_fallback_capability": true,
+    "native_results_cross_verify_when_reference_supported": true,
+    "accelerator_requires_cost_benefit": true,
+    "exact_preferred_when_representable": true,
+    "web_results_require_source_provenance_in_production": true,
+    "interval_requires_explicit_mode": true,
+    "calibration_cannot_reorder_authority": true
+  }
+}

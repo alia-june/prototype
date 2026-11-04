@@ -1,0 +1,463 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "xOSG-0/MATH.SC-0/operation-contracts/v0.6",
+  "contract_version": "0.6.0",
+  "protocol_version": "0.6",
+  "numeric_domains": [
+    "exact_rational",
+    "real_float64",
+    "high_precision_real",
+    "closed_rational_interval",
+    "directed_rounding_interval"
+  ],
+  "resource_limits": {
+    "max_scalar_count": 1000000,
+    "max_rank": 2,
+    "max_vector_length": 1000000,
+    "max_matrix_rows": 4096,
+    "max_matrix_cols": 4096,
+    "max_precision_digits": 4096,
+    "max_tolerance": 1.0,
+    "max_result_scalar_count": 1000000,
+    "max_estimated_operations": 100000000,
+    "max_numeric_string_chars": 10000,
+    "max_exact_power_exponent": 100000,
+    "max_interval_endpoint_bits": 1000000
+  },
+  "exception_policy": {
+    "nonfinite_input": "reject",
+    "nonfinite_local_output": "reject",
+    "division_by_zero": "fail",
+    "domain_error": "fail",
+    "shape_error": "fail",
+    "resource_limit": "fail_before_dispatch"
+  },
+  "operations": {
+    "add": {
+      "operation_id": "math.sc0.add.v1",
+      "arity": [
+        2
+      ],
+      "signature": "same_shape_binary",
+      "ranks": [
+        0,
+        1,
+        2
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "sub": {
+      "operation_id": "math.sc0.sub.v1",
+      "arity": [
+        2
+      ],
+      "signature": "same_shape_binary",
+      "ranks": [
+        0,
+        1,
+        2
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "mul": {
+      "operation_id": "math.sc0.mul.v1",
+      "arity": [
+        2
+      ],
+      "signature": "same_shape_binary",
+      "ranks": [
+        0,
+        1,
+        2
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "div": {
+      "operation_id": "math.sc0.div.v1",
+      "arity": [
+        2
+      ],
+      "signature": "scalar_binary",
+      "ranks": [
+        0
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "constraints": [
+        "nonzero_operand_1"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "pow": {
+      "operation_id": "math.sc0.pow.v1",
+      "arity": [
+        2
+      ],
+      "signature": "scalar_binary",
+      "ranks": [
+        0
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "sqrt": {
+      "operation_id": "math.sc0.sqrt.v1",
+      "arity": [
+        1
+      ],
+      "signature": "scalar_unary",
+      "ranks": [
+        0
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "constraints": [
+        "operand_0_nonnegative"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "directed_rounding_binary_enclosure"
+    },
+    "exp": {
+      "operation_id": "math.sc0.exp.v1",
+      "arity": [
+        1
+      ],
+      "signature": "scalar_unary",
+      "ranks": [
+        0
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "directed_rounding_binary_enclosure"
+    },
+    "log": {
+      "operation_id": "math.sc0.log.v1",
+      "arity": [
+        1,
+        2
+      ],
+      "signature": "log_scalar",
+      "ranks": [
+        0
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "constraints": [
+        "operand_0_positive",
+        "log_base_valid_if_present"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "directed_rounding_binary_enclosure"
+    },
+    "sin": {
+      "operation_id": "math.sc0.sin.v1",
+      "arity": [
+        1
+      ],
+      "signature": "scalar_unary",
+      "ranks": [
+        0
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "directed_rounding_binary_enclosure"
+    },
+    "cos": {
+      "operation_id": "math.sc0.cos.v1",
+      "arity": [
+        1
+      ],
+      "signature": "scalar_unary",
+      "ranks": [
+        0
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "directed_rounding_binary_enclosure"
+    },
+    "tan": {
+      "operation_id": "math.sc0.tan.v1",
+      "arity": [
+        1
+      ],
+      "signature": "scalar_unary",
+      "ranks": [
+        0
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "verification": "required_local",
+      "interval_semantics": "directed_rounding_binary_enclosure"
+    },
+    "sum": {
+      "operation_id": "math.sc0.sum.v1",
+      "arity": [
+        1
+      ],
+      "signature": "vector_reduction",
+      "ranks": [
+        1
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision",
+        "interval"
+      ],
+      "min_length": 0,
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "product": {
+      "operation_id": "math.sc0.product.v1",
+      "arity": [
+        1
+      ],
+      "signature": "vector_reduction",
+      "ranks": [
+        1
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "interval"
+      ],
+      "min_length": 0,
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "mean": {
+      "operation_id": "math.sc0.mean.v1",
+      "arity": [
+        1
+      ],
+      "signature": "vector_reduction",
+      "ranks": [
+        1
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "interval"
+      ],
+      "min_length": 1,
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "min": {
+      "operation_id": "math.sc0.min.v1",
+      "arity": [
+        1
+      ],
+      "signature": "vector_reduction",
+      "ranks": [
+        1
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "interval"
+      ],
+      "min_length": 1,
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "max": {
+      "operation_id": "math.sc0.max.v1",
+      "arity": [
+        1
+      ],
+      "signature": "vector_reduction",
+      "ranks": [
+        1
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "interval"
+      ],
+      "min_length": 1,
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "norm": {
+      "operation_id": "math.sc0.norm.v1",
+      "arity": [
+        1
+      ],
+      "signature": "vector_reduction",
+      "ranks": [
+        1
+      ],
+      "modes": [
+        "auto",
+        "float64"
+      ],
+      "min_length": 0,
+      "verification": "required_local"
+    },
+    "dot": {
+      "operation_id": "math.sc0.dot.v1",
+      "arity": [
+        2
+      ],
+      "signature": "vector_binary_same_length",
+      "ranks": [
+        1
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "interval"
+      ],
+      "min_length": 0,
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "matmul": {
+      "operation_id": "math.sc0.matmul.v1",
+      "arity": [
+        2
+      ],
+      "signature": "matrix_multiply",
+      "ranks": [
+        2
+      ],
+      "modes": [
+        "auto",
+        "float64",
+        "interval"
+      ],
+      "min_rows": 1,
+      "min_cols": 1,
+      "verification": "required_local",
+      "interval_semantics": "closed_rational_enclosure"
+    },
+    "det": {
+      "operation_id": "math.sc0.det.v1",
+      "arity": [
+        1
+      ],
+      "signature": "square_matrix_unary",
+      "ranks": [
+        2
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision"
+      ],
+      "verification": "required_local"
+    },
+    "solve": {
+      "operation_id": "math.sc0.solve.v1",
+      "arity": [
+        2
+      ],
+      "signature": "linear_solve",
+      "ranks": [
+        2,
+        1
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision"
+      ],
+      "verification": "required_local"
+    },
+    "inverse": {
+      "operation_id": "math.sc0.inverse.v1",
+      "arity": [
+        1
+      ],
+      "signature": "square_matrix_unary",
+      "ranks": [
+        2
+      ],
+      "modes": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision"
+      ],
+      "verification": "required_local"
+    }
+  },
+  "numeric_semantics": {
+    "float64_rounding": "nearest_even_runtime_default",
+    "overflow": "reject_nonfinite_output",
+    "underflow": "runtime_subnormal_or_zero_then_verify",
+    "nan": "reject",
+    "infinity": "reject",
+    "complex_results": "not_supported_in_v0.4"
+  }
+}

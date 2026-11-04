@@ -1,0 +1,58 @@
+xOSG-0 MATH.SC-0 v0.8.0 — BUILD / TEST REPORT
+
+Scope
+-----
+Straight numerical computation only. Abstract logic, sets, relations, predicates,
+and abstract-object work are deferred to a different machine/module.
+
+Release interfaces
+------------------
+Module:                 0.8.0
+Protocol:               0.6
+Operation contract:     0.6.0
+Numerical evidence:     0.2.0
+Capability protocol:    0.3.0
+Replay format:          0.1.0
+Benchmark format:       0.1.0
+Native ABI:             xOSG-0/MATH.SC-0/native-0.8.0
+Retained browser UI:    0.5.0
+
+Verification
+------------
+Python tests:                           58/58 PASS
+JavaScript/integration tests:           23/23 PASS
+C/C++ native self-test:                       PASS
+AddressSanitizer native self-test:             PASS
+UndefinedBehaviorSanitizer native self-test:   PASS
+Seeded interval-containment suite:             PASS
+Seeded native LU differential suite:           PASS
+Exact metamorphic identity suite:              PASS
+JS -> Python -> C/C++ native LU:                PASS
+JS -> Python -> directed interval:              PASS
+
+v0.8 additions
+--------------
+- Directed-rounding interval sqrt/exp/log/sin/cos/tan via mpmath libmp.
+- Exact rational determinant, solve, and inverse.
+- NumPy/Python float64 determinant, solve, and inverse.
+- C++ determinant/solve/inverse kernels with partial pivoting.
+- Residual verification for solve/inverse; NumPy determinant cross-check for CPU reference.
+- Matrix condition-number and backward-error diagnostics.
+- Known contracted local failures are terminal and cannot fall through to web/LLM.
+- Numeric-string, exact-power, and interval-materialization resource guards.
+- Seeded containment, differential, and metamorphic hardening tests.
+
+Authority order
+---------------
+deterministic local -> web -> LLM last resort
+
+Local deterministic order
+-------------------------
+exact -> high_precision -> interval -> accelerator -> open_compute -> native -> numpy -> cpu
+
+Current environment wall
+------------------------
+- libmpfr.so.6 is present but mpfr.h is absent.
+- libOpenCL.so.1 is present but OpenCL headers are absent.
+- Torch is CPU-only; CUDA/MPS/XPU are unavailable.
+- Therefore an independent compiled MPFR transcendental oracle and real GPU/open-compute runtime certification cannot be completed honestly on this host.

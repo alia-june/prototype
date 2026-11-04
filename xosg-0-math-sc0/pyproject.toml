@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xosg-math-sc0"
+version = "0.8.0"
+description = "xOSG-0 Mathematics Straight Computation Core distributed reference implementation"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+vector = ["numpy>=1.24"]
+high_precision = ["mpmath>=1.2"]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

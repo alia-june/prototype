@@ -1,0 +1,15 @@
+{
+  "name": "@xosg/math-sc0-control-plane",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "probe": "node src/runtime-probe.mjs",
+    "web": "node web/server.mjs",
+    "test:web": "node --test web/test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$id": "xOSG-0/MATH.SC-0/failure-codes/v0.6",
+  "version": "0.6.0",
+  "codes": {
+    "CONTRACT_VALIDATION_FAILED": "Request violates a known operation or resource contract.",
+    "NO_BACKEND_COMPLETED": "No permitted backend completed the operation.",
+    "NONFINITE_OUTPUT_REJECTED": "A deterministic local backend produced NaN or infinity and the contract rejected it.",
+    "WORKER_BOUNDARY_FAILURE": "The Python worker boundary could not decode, validate, or execute the request.",
+    "CONTROL_PLANE_BOUNDARY_FAILURE": "The JavaScript CLI/control boundary could not process the request.",
+    "INTERVAL_DOMAIN_REJECTED": "Interval request violates enclosure-domain requirements such as a divisor containing zero.",
+    "CONTRACTED_LOCAL_EXECUTION_FAILED": "A known contracted operation was attempted by deterministic local backends and failed; external web/LLM fallback is intentionally blocked."
+  }
+}
