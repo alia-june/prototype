@@ -47,3 +47,11 @@ This draft is grounded in the Decomposition handoff dated 2026-10-31 and prior u
 ## Next qualification
 
 First define the smallest CPU-only typed-source and typed-reference resolution model, then independent negative/property tests covering unknown objects, failed reads, refusal, and indirect metadata disclosure. Do not reclassify a passing structural check as secure hardware authority.
+
+## November 4 recursive-audit schema update: v0.2 draft
+
+The [recursive-audit reconciliation](V0_2_AUDIT_RECONCILIATION.md) has now been committed alongside `etabit-project.v0.2.schema.json`, its example, and candidate negative tests. **v0.1 remains unchanged**; v0.2 is **DRAFT_NOT_ADMITTED**.
+
+The new descriptive fields address identified gaps in typed *declarations* for arbitrary source objects, codepage-to-referential-drive association, explicit reference endpoints, separate four-symbol/operation-result boundaries, and possible Cypher constituent descriptions. The five Cypher responsibilities are now represented as an order-insensitive five-member set rather than a fixed-priority sequence.
+
+These are draft field designs, not accepted wire types, parser APIs, storage formats, authorization protocols, or a guarantee that an authority boundary is enforced. Numeric IDs, physical layout, semantic calculus, collective voting, refusal mechanics, and an `eo-drive` reader/recovery protocol remain unresolved. Any validation is constrained to declared shapes and candidate local graph relationships.
