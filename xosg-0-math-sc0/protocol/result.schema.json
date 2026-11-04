@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "xOSG-0/MATH.SC-0/result/v0.6",
+  "title": "MATH.SC-0 Compute Result v0.6",
+  "type": "object",
+  "required": [
+    "value",
+    "status",
+    "backend",
+    "verified"
+  ],
+  "properties": {
+    "value": {},
+    "status": {
+      "enum": [
+        "computed",
+        "verified",
+        "externally_verified",
+        "web_sourced",
+        "llm_inferred",
+        "unverified",
+        "failed"
+      ]
+    },
+    "backend": {
+      "type": "string"
+    },
+    "algorithm": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "exact": {
+      "type": "boolean"
+    },
+    "tolerance": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "error_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "authority": {
+      "type": "string"
+    },
+    "control_plane": {
+      "type": "string"
+    }
+  }
+}

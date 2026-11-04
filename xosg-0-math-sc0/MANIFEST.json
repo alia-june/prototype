@@ -1,0 +1,77 @@
+{
+  "system": "xOSG-0",
+  "module": "MATH.SC-0",
+  "version": "0.8.0",
+  "protocol_version": "0.6",
+  "operation_contract_version": "0.6.0",
+  "numerical_evidence_version": "0.2.0",
+  "capability_protocol_version": "0.3.0",
+  "replay_version": "0.1.0",
+  "benchmark_version": "0.1.0",
+  "scope": "straight numerical computation only; abstract logic/set/relation/predicate work deferred to another machine",
+  "architecture": "three-runtime deterministic numerical stack with exact arithmetic, directed-rounding intervals, native LU linear algebra, verification, web fallback, and LLM-last-resort",
+  "planes": {
+    "javascript": "first contract gate, orchestration, authority boundary and external fallback control",
+    "python": "second contract gate, exact/high-precision/interval computation, verification, numerical evidence and native bindings",
+    "c_cpp": "compiled float64 scalar/vector/matrix and LU kernels behind C ABI",
+    "browser_javascript": "v0.5.0 UI retained/frozen"
+  },
+  "global_backend_order": ["deterministic_local", "web", "llm_fallback"],
+  "deterministic_local_order": ["exact", "high_precision", "interval", "accelerator", "open_compute", "native", "numpy", "cpu"],
+  "authority_invariants": [
+    "known invalid requests fail before dispatch",
+    "known contracted operations that fail local deterministic execution do not escalate to web or LLM",
+    "web cannot preempt deterministic local computation",
+    "LLM is the final fallback and cannot self-verify",
+    "calibration cannot reorder policy authority",
+    "numerical evidence cannot promote verification status"
+  ],
+  "interval_arithmetic": {
+    "algebraic_endpoints": "exact Fraction",
+    "transcendental_backend": "mpmath libmp directed floor/ceiling rounding",
+    "transcendental_evidence_label": "backend_directed_rounding",
+    "operations": ["add", "sub", "mul", "div", "pow_integer", "sqrt", "exp", "log", "sin", "cos", "tan", "sum", "product", "mean", "min", "max", "dot", "matmul"]
+  },
+  "linear_algebra": {
+    "operations": ["det", "solve", "inverse"],
+    "exact": "Fraction-based Gaussian/Gauss-Jordan elimination",
+    "native": "C++ partial-pivoting LU/Gaussian elimination",
+    "verification": ["solve residual", "inverse identity residual", "determinant heterogeneous reference where applicable"],
+    "diagnostics": ["condition number", "relative backward error", "forward-error proxy"]
+  },
+  "resource_guards": [
+    "scalar/rank/vector/matrix limits",
+    "estimated operation ceiling",
+    "precision ceiling",
+    "numeric string length ceiling",
+    "exact/interval power exponent ceiling",
+    "interval endpoint materialization bit ceiling"
+  ],
+  "native_implementation": {
+    "version": "xOSG-0/MATH.SC-0/native-0.8.0",
+    "abi": "native/include/sc0_native.h",
+    "python_bridge": "ctypes"
+  },
+  "front_end": {"version": "0.5.0", "status": "retained/frozen", "path": "js/web"},
+  "current_environment_wall": {
+    "mpfr_runtime": true,
+    "mpfr_development_headers": false,
+    "opencl_runtime": true,
+    "opencl_development_headers": false,
+    "cuda": false,
+    "mps": false,
+    "xpu": false,
+    "consequence": "independent compiled MPFR transcendental oracle and real accelerator certification unavailable on this host"
+  },
+  "release_tests": {
+    "python": "58/58 passed",
+    "javascript_control_frontend_integration": "23/23 passed",
+    "native_selftest": "passed",
+    "asan_ubsan_native": "passed",
+    "seeded_interval_containment": "passed",
+    "seeded_native_lu_differential": "passed",
+    "exact_metamorphic": "passed",
+    "cross_runtime_native_lu": "passed",
+    "cross_runtime_directed_interval": "passed"
+  }
+}

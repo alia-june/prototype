@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "xOSG-0/MATH.SC-0/request/v0.6",
+  "title": "MATH.SC-0 Compute Request v0.6",
+  "type": "object",
+  "required": [
+    "operation",
+    "operands"
+  ],
+  "properties": {
+    "protocol_version": {
+      "const": "0.6"
+    },
+    "contract_version": {
+      "const": "0.6.0"
+    },
+    "operation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operands": {
+      "type": "array"
+    },
+    "mode": {
+      "enum": [
+        "auto",
+        "exact",
+        "float64",
+        "high_precision",
+        "interval"
+      ]
+    },
+    "precision": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4096
+    },
+    "tolerance": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "deterministic": {
+      "type": "boolean"
+    },
+    "allow_web": {
+      "type": "boolean"
+    },
+    "allow_llm": {
+      "type": "boolean"
+    },
+    "metadata": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

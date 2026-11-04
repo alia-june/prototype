@@ -5,3 +5,5 @@
 **/.pytest_cache/
 **/*.pyc
 
+xosg-0-math-sc0/build/
+xosg-0-math-sc0/config/backend_calibration.json
