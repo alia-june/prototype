@@ -1,0 +1,55 @@
+=== operator/validation/test_meta_layer_regression.py ===
+checks=23 pass=23 fail=0
+STATUS=PASS
+
+=== operator/validation/test_operational_regression.py ===
+checks=18 pass=18 fail=0
+STATUS=PASS
+
+=== operator/validation/test_operator_orchestrator_boundary.py ===
+checks = 18
+pass   = 18
+fail   = 0
+STATUS=PASS
+
+=== operator/validation/test_production_adversarial.py ===
+checks = 28
+pass   = 28
+fail   = 0
+STATUS=PASS
+
+=== operator/validation/test_production_readiness.py ===
+checks = 13
+pass   = 13
+fail   = 0
+STATUS=PASS
+
+=== operator/validation/test_rule0_subzero_regression.py ===
+checks = 38
+pass   = 38
+fail   = 0
+STATUS=PASS
+
+=== operator/validation/test_zero_flight_runtime.py ===
+checks = 7
+pass   = 7
+fail   = 0
+STATUS=PASS
+
+=== orchestrator/validation/test_gestalt_hypervisor.py ===
+checks = 12
+pass   = 12
+fail   = 0
+STATUS=PASS
+
+=== orchestrator/validation/test_minimal_touch_model.py ===
+checks = 8
+pass   = 8
+fail   = 0
+STATUS=PASS
+
+=== orchestrator/validation/test_prompt_scaffolding.py ===
+checks=12 pass=12 fail=0
+STATUS=PASS
+
+files=10 pass=10 fail=0
