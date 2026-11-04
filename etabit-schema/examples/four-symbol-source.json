@@ -1,0 +1,132 @@
+{
+  "schema_id": "etabit.research-project.v0.1",
+  "admission_status": "DRAFT_NOT_ADMITTED",
+  "system": {
+    "ae_cryptography": "Amorphous Experience Cryptography",
+    "ae_external_memory": "Amorphous Experience External Memory",
+    "construction": "Etabit",
+    "result": "Experience Orchestration Drive"
+  },
+  "drives": [
+    {
+      "id": "source:four-symbol",
+      "kind": "source",
+      "object_domain": "four-symbol example; not the limit of Etabit source payloads",
+      "representation_status": "SENTINEL_UNRESOLVED",
+      "source_symbols": [
+        {
+          "surface": "1",
+          "identity_status": "SOURCE_SYMBOL_ONLY",
+          "numeric_code": "SENTINEL_UNASSIGNED"
+        },
+        {
+          "surface": "0",
+          "identity_status": "SOURCE_SYMBOL_ONLY",
+          "numeric_code": "SENTINEL_UNASSIGNED"
+        },
+        {
+          "surface": "Error",
+          "identity_status": "SOURCE_SYMBOL_ONLY_NOT_IO_ERROR",
+          "numeric_code": "SENTINEL_UNASSIGNED"
+        },
+        {
+          "surface": "Unknown",
+          "identity_status": "SOURCE_SYMBOL_ONLY_NOT_UNRESOLVED_REFERENCE",
+          "numeric_code": "SENTINEL_UNASSIGNED"
+        }
+      ]
+    },
+    {
+      "id": "reference:composition",
+      "kind": "referential",
+      "object_domain": "bitmap/referential assembly (illustrative)",
+      "representation_status": "SENTINEL_UNRESOLVED",
+      "source_symbols": []
+    }
+  ],
+  "references": [
+    {
+      "from_drive": "reference:composition",
+      "to_drive": "source:four-symbol",
+      "relationship": "CONSTRUCTS_FROM_REFERENCES",
+      "grammar_status": "SENTINEL_UNRESOLVED"
+    }
+  ],
+  "out_of_band_meta_disks": [
+    {
+      "id": "meta:source:four-symbol",
+      "for_drive": "source:four-symbol",
+      "constructor_access": "SCOPED_ONLY",
+      "reader_access": "DENIED",
+      "auto_disclose": false
+    }
+  ],
+  "cypher_disk": {
+    "authority_within_self_distributed": true,
+    "decides": [
+      "metadata_format",
+      "drive_meta_associations",
+      "constructor_protocol",
+      "disclosure_controls",
+      "write_authority"
+    ],
+    "collective_protocol": "SENTINEL_UNRESOLVED",
+    "physical_mechanism": "SENTINEL_UNRESOLVED_CERAMIC_MECHANICAL_POSSIBLE"
+  },
+  "holonic_cooperation": {
+    "right_to_refuse": true,
+    "refusal_cannot_be_bypassed": true,
+    "refusal_protocol": "SENTINEL_UNRESOLVED"
+  },
+  "codepages": [
+    {
+      "id": "codepage:disabled-example",
+      "process_namespace": "SENTINEL_UNASSIGNED",
+      "mapping_status": "SENTINEL_UNRESOLVED",
+      "execution_semantics": "DISABLED_TEXT_ONLY"
+    }
+  ],
+  "roles": {
+    "constructor_meta_access": "SCOPED_ONLY",
+    "reader_meta_access": "DENIED",
+    "meta_to_reader_implicit_disclosure": false
+  },
+  "security": {
+    "default_deny": true,
+    "references_grant_authority": false,
+    "codepage_grants_execution": false,
+    "source_symbol_is_read_status": false,
+    "runtime_activated": false
+  },
+  "sources": [
+    {
+      "name": "Decomposition_Successor_Handoff_2026-10-31.md",
+      "evidence_class": "HISTORICAL_SOURCE",
+      "claim_scope": "design summary; derived handoff, not a verbatim platform export"
+    },
+    {
+      "name": "2026-10-10/11 Etabit user corrections (conversation)",
+      "evidence_class": "DIRECT_USER",
+      "claim_scope": "multi-drive, four symbols, OOB meta, internal Cypher distribution, holonic refusal, ae/eo definitions"
+    },
+    {
+      "name": "syn-etabit-transformer-textual/README.md",
+      "evidence_class": "REPOSITORY_IMPLEMENTATION",
+      "claim_scope": "related map-based CPU/document implementation; not general Etabit substrate verification"
+    }
+  ],
+  "open_contracts": [
+    "on-media format",
+    "reference/bitmap grammar",
+    "cross-drive object identities",
+    "read result vs stored symbol type encoding",
+    "symbol code assignments",
+    "codepage translator admission",
+    "cypher constituent decision protocol",
+    "meta-disk physical association",
+    "constructor protocol and indirect disclosure",
+    "holonic refusal enforcement",
+    "write authority and recovery",
+    "eo-drive persistent format"
+  ]
+}
