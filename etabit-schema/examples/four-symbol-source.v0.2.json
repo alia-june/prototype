@@ -1,0 +1,175 @@
+{
+  "schema_id": "etabit.research-project.v0.2",
+  "admission_status": "DRAFT_NOT_ADMITTED",
+  "system": {
+    "ae_cryptography": "Amorphous Experience Cryptography",
+    "ae_external_memory": "Amorphous Experience External Memory",
+    "construction": "Etabit",
+    "result": "Experience Orchestration Drive"
+  },
+  "drives": [
+    {
+      "id": "drive:four-symbol",
+      "roles": [
+        "source"
+      ],
+      "object_domain": "illustrative four-symbol domain (not universal source-object limitation)",
+      "physical_mapping": "SENTINEL_UNRESOLVED",
+      "objects": [
+        {
+          "id": "symbol:1",
+          "classification": "DECLARED_SYMBOL",
+          "display_surface": "1",
+          "payload_type": "SYMBOLIC_OBJECT",
+          "payload_status": "DESCRIPTOR_ONLY",
+          "numeric_encoding": "SENTINEL_UNASSIGNED",
+          "provenance_status": "DIRECT_USER_SYMBOL_CHOICE"
+        },
+        {
+          "id": "symbol:0",
+          "classification": "DECLARED_SYMBOL",
+          "display_surface": "0",
+          "payload_type": "SYMBOLIC_OBJECT",
+          "payload_status": "DESCRIPTOR_ONLY",
+          "numeric_encoding": "SENTINEL_UNASSIGNED",
+          "provenance_status": "DIRECT_USER_SYMBOL_CHOICE"
+        },
+        {
+          "id": "symbol:Error",
+          "classification": "DECLARED_SYMBOL",
+          "display_surface": "Error",
+          "payload_type": "SYMBOLIC_OBJECT",
+          "payload_status": "DESCRIPTOR_ONLY",
+          "numeric_encoding": "SENTINEL_UNASSIGNED",
+          "provenance_status": "DIRECT_USER_SYMBOL_CHOICE"
+        },
+        {
+          "id": "symbol:Unknown",
+          "classification": "DECLARED_SYMBOL",
+          "display_surface": "Unknown",
+          "payload_type": "SYMBOLIC_OBJECT",
+          "payload_status": "DESCRIPTOR_ONLY",
+          "numeric_encoding": "SENTINEL_UNASSIGNED",
+          "provenance_status": "DIRECT_USER_SYMBOL_CHOICE"
+        }
+      ]
+    },
+    {
+      "id": "drive:composition",
+      "roles": [
+        "referential"
+      ],
+      "object_domain": "illustrative bitmap/referential composition",
+      "physical_mapping": "SENTINEL_UNRESOLVED",
+      "objects": []
+    },
+    {
+      "id": "drive:codepage-reference",
+      "roles": [
+        "referential"
+      ],
+      "object_domain": "codepage-associated referential drive example; mapping unspecified",
+      "physical_mapping": "SENTINEL_UNRESOLVED",
+      "objects": []
+    }
+  ],
+  "references": [
+    {
+      "id": "relation:component-source",
+      "from_drive": "drive:composition",
+      "to_drive": "drive:four-symbol",
+      "target_object_id": "symbol:1",
+      "relationship": "REFERS_TO_DECLARED_SOURCE_OBJECT",
+      "reference_grammar": "SENTINEL_UNRESOLVED",
+      "ordering": "SENTINEL_UNRESOLVED",
+      "multiplicity": "SENTINEL_UNRESOLVED",
+      "cycle_policy": "SENTINEL_UNRESOLVED"
+    }
+  ],
+  "out_of_band_meta_disks": [
+    {
+      "id": "meta:four-symbol",
+      "for_drive": "drive:four-symbol",
+      "constructor_access": "SCOPED_ONLY",
+      "reader_access": "DENIED",
+      "automatic_disclosure": false,
+      "representation_status": "SENTINEL_UNRESOLVED"
+    }
+  ],
+  "codepages": [
+    {
+      "id": "codepage:disabled",
+      "process_namespace": "SENTINEL_UNASSIGNED",
+      "referential_drive_ids": [
+        "drive:codepage-reference"
+      ],
+      "mapping_status": "SENTINEL_UNRESOLVED",
+      "translation_admission": "SENTINEL_UNRESOLVED",
+      "execution_permission": false
+    }
+  ],
+  "cypher_disk": {
+    "authority_within_self_distributed": true,
+    "responsibilities": [
+      "write_authority",
+      "disclosure_controls",
+      "constructor_protocol",
+      "drive_meta_associations",
+      "metadata_format"
+    ],
+    "constituents": [],
+    "collective_decision_protocol": "SENTINEL_UNRESOLVED",
+    "physical_mechanism_selected": false,
+    "possible_physical_mechanisms": [
+      "CERAMIC_MECHANICAL_POSSIBILITY_NOT_SELECTED"
+    ]
+  },
+  "holonic_cooperation": {
+    "right_to_refuse": true,
+    "refusal_bypass_permitted": false,
+    "refusal_protocol": "SENTINEL_UNRESOLVED",
+    "revocation_protocol": "SENTINEL_UNRESOLVED"
+  },
+  "result_boundaries": {
+    "stored_error_is_io_error": false,
+    "stored_unknown_is_unresolved_reference": false,
+    "four_symbol_logic": "SENTINEL_UNRESOLVED",
+    "read_result_encoding": "SENTINEL_UNRESOLVED"
+  },
+  "security": {
+    "default_deny": true,
+    "source_references_grant_authority": false,
+    "codepages_grant_execution": false,
+    "reader_meta_access": "DENIED",
+    "unreviewed_meta_disclosure_allowed": false,
+    "runtime_activated": false
+  },
+  "source_register": [
+    {
+      "name": "Decomposition recursive audit 2026-11-04",
+      "evidence_class": "DERIVED_ANALYSIS",
+      "claim_scope": "schema traceability gap analysis; no executable runtime verification"
+    },
+    {
+      "name": "Decomposition direct user decisions 2026-10-10/11",
+      "evidence_class": "DIRECT_USER",
+      "claim_scope": "multi-drive architecture, four symbol example, cypher distribution, out-of-band metadata, holonic refusal, AE/EO names"
+    },
+    {
+      "name": "syn-etabit-transformer-textual/README.md",
+      "evidence_class": "REPOSITORY_IMPLEMENTATION",
+      "claim_scope": "related reference-native textual model, not implementation of general Etabit or Cypher"
+    }
+  ],
+  "open_contracts": [
+    "on-media format",
+    "referential grammar and target existence",
+    "source object payload encoding",
+    "operation read/result status encoding",
+    "Cypher distributed decision protocol",
+    "constructor metadata noninterference",
+    "holonic consent enforcement",
+    "eo-drive reader and recovery interface",
+    "codepage translation admission"
+  ]
+}
