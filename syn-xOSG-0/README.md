@@ -1,201 +1,209 @@
-# xOSG-0 — From ES-xOSG-7 to Seed
+# xOSG-0 — ES-xOSG-7 to Seed
 
 **Expert Overlay System Gestalt — Bare-Metal 0**
 
 ![Stage](https://img.shields.io/badge/stage-prototype-orange)
-![Method](https://img.shields.io/badge/method-genesis%20to%20seed-blue)
-![Principle](https://img.shields.io/badge/principle-evidence%20driven-green)
+![Path](https://img.shields.io/badge/path-ES--xOSG--7%20%E2%86%92%20Seed-blue)
+![Method](https://img.shields.io/badge/method-versioned%20growth-green)
 
-xOSG-0 is a research project about how a complex experimental system can be reduced, disciplined, tested, and distilled into a compact reusable seed.
+xOSG-0 documents a developmental path from an earlier experimental system, **ES-xOSG-7**, through the xOSG-0 bare-metal line, ending in a distilled **Seed**.
 
-The developmental direction in this repository is:
+The canonical spine is:
 
 ```text
 ES-xOSG-7
-   ↓
-ACTUALIZATION
-   ↓
-ADVERSARIAL PRESSURE
-   ↓
-LEARNING LAYER
-   ↓
-OPERATOR KERNEL
-   ↓
-OPERATOR / ORCHESTRATOR SEPARATION
-   ↓
-DETERMINISTIC OFFLOAD
-   ↓
-GOAL SCAFFOLDING
-   ↓
-SEED
+    ↓
+xOSG-0 bare-metal 0
+    ↓
+xOSG-0 v0.2 — actualized
+    ↓
+xOSG-0 v0.3 — deterministic testing + hardening
+    ↓
+xOSG-0 v0.4 — loose/fuzzy hardening
+    ↓
+Seed
 ```
 
-**ES-xOSG-7 is the genesis. Seed is the result.**
+That is the development story this repository is meant to show.
 
-The repository is therefore not organized around "a seed that grows." It demonstrates how an initially larger, exploratory gestalt can be subjected to pressure, decomposition, formalization, control, and reduction until a smaller coherent seed can be extracted.
-
-> **Prototype status:** this repository is a staging and research environment. Nothing here implies deployment authority, hidden agents, privilege escalation, or modification of an underlying model.
+> **Prototype status:** this is a staging and research repository. No production authority is implied.
 
 ## Theoretical applications
 
-This genesis-to-seed method can be studied as a model for:
+The sequence is useful as a research model for:
 
-- reducing exploratory AI architectures into compact control kernels;
-- extracting invariants from large experimental systems;
-- human-directed orchestration;
-- bounded autonomy;
-- provenance-aware computation;
+- reducing a broad experimental AI/orchestration system into a smaller reusable kernel;
+- learning architecture from successive failures rather than designing every control up front;
+- explicit human/operator authority;
+- bounded orchestration;
+- provenance-aware state;
 - fail-closed workflow design;
-- deterministic offload from probabilistic systems;
-- adversarial and fuzzy development;
-- operator/orchestrator separation;
-- machine-readable capability envelopes;
-- governance systems that become simpler as their invariants become clearer.
+- deterministic offload;
+- fuzz-driven hardening;
+- extracting a seed only after the system has survived several generations of testing.
 
-The core proposition is:
+## 1. ES-xOSG-7 — genesis
 
-> **A seed should be earned by reduction, not assumed at the beginning.**
+ES-xOSG-7 is the predecessor and genesis condition.
 
-## Genesis: ES-xOSG-7
+It is the broad experimental source from which the xOSG-0 line is derived.
 
-ES-xOSG-7 is treated here as the developmental origin point.
+The point of the repository is **not** to call ES-xOSG-7 the seed. It is the larger antecedent system whose useful structure is progressively reduced and formalized.
 
-The repository does not infer undocumented semantics from the name itself. Its role in this structure is explicit:
+## 2. xOSG-0 bare-metal 0
 
-```text
-ES-xOSG-7 = GENESIS
-```
+The first xOSG-0 stage strips the predecessor down into a compact explicit overlay.
 
-It is the starting gestalt from which later layers, controls, distinctions, and invariants are progressively discovered and extracted.
-
-The genesis may contain more structure, ambiguity, redundancy, experimental behavior, and unresolved assumptions than the final seed. That is acceptable. Its purpose is generative.
-
-## Developmental method
-
-The system moves from genesis toward seed through repeated reduction:
+Core structure:
 
 ```text
-GENESIS
-  ↓
-EXPOSE TO USE
-  ↓
-OBSERVE PRESSURE
-  ↓
-BREAK / FUZZ / CONTRADICT
-  ↓
-LOG FAILURE
-  ↓
-EXTRACT LESSON
-  ↓
-FORM INVARIANT
-  ↓
-SEPARATE AUTHORITY
-  ↓
-OFFLOAD DETERMINISTIC STRUCTURE
-  ↓
-REMOVE ACCIDENTAL COMPLEXITY
-  ↓
-DISTILL SEED
+MACHINE DESCRIPTION
+        ↓
+TECHNICAL LOGIC
+        ↓
+OPERATING PROMPT
+        ↓
+NATURAL-LANGUAGE COMPATIBILITY
 ```
 
-The important direction is **convergence**.
-
-Each stage should reduce ambiguity, implicit authority, unnecessary semantic dependence, or uncontrolled behavior.
-
-## Developmental rings
-
-### 00 — ES-xOSG-7 Genesis
-
-Starting gestalt.
-
-Purpose: provide the rich experimental surface from which the rest of the system can be learned.
-
-### 01 — Actualization
-
-Convert conceptual behavior into inspectable runtime state, registers, schemas, and executable boundaries.
-
-### 02 — Adversarial Pressure
-
-Attack assumptions with malformed, ambiguous, fuzzy, corrupted, and near-valid input.
-
-### 03 — Learning Layer
-
-Convert failures into lessons, patterns, anti-patterns, logic, meta-logic, analysis, and meta-analysis.
-
-### 04 — Operator Kernel
-
-Separate observation, inference, proposal, execution, verification, mutation, and promotion.
-
-### 05 — Operator / Orchestrator Separation
-
-Separate binding human decision agency from orchestration machinery.
-
-### 06 — Deterministic Offload
-
-Move deterministic validation, inventory, hashing, attestation, and orchestration out of semantic reasoning where possible.
-
-### 07 — Goal Scaffolding
-
-Permit compact symbolic goals while keeping token meaning, privilege, permission, and execution separate.
-
-### 08 — Seed
-
-Distill the surviving invariants and minimum mechanisms into the smallest coherent reusable kernel.
-
-The final seed is not the whole historical system.
-
-It is the **minimal structure that survived the entire developmental process**.
-
-## What belongs in the final seed?
-
-A component belongs in Seed only if it has survived the reduction process.
-
-Candidate seed material should satisfy:
+with the five working registers:
 
 ```text
-REQUIRED
-AND EXPLICIT
-AND TESTABLE
-AND BOUNDED
-AND NON-REDUNDANT
-AND PROVENANCE-TRACEABLE
+NOTES
+TODO
+ERROR-LOG
+AGENDA
+ROADMAP
 ```
 
-The final seed should contain only what is necessary to recreate the next system safely.
-
-Possible classes include:
-
-- core identity and capability boundaries;
-- operator/orchestrator distinction;
-- explicit state and evidence semantics;
-- fail-closed rules;
-- deterministic validation interfaces;
-- provenance requirements;
-- production-gate semantics;
-- opaque-token / descriptor rules;
-- minimal working registers;
-- regression requirements.
-
-Everything else is history, scaffolding, evidence, or derived implementation.
-
-## Reduction rule
-
-The developmental rule is:
+and the critical distinction:
 
 ```text
-GENESIS
-- ambiguity
-- accidental coupling
-- duplicate authority
-- untested assumptions
-+ evidence
-+ invariants
-+ tests
-+ explicit boundaries
-= SEED
+REQUEST != COMPLETION
 ```
 
-This is the central demonstration.
+This is the first **bare-metal reduction**, not the final Seed.
+
+## 3. xOSG-0 v0.2 — actualized
+
+v0.2 turns the bare-metal description into inspectable runtime behavior.
+
+Added:
+
+- persistent runtime state;
+- persistent registers;
+- runtime schema;
+- CLI operations;
+- explicit workflow transitions;
+- provenance and change-control conventions.
+
+The system is now executable enough to be challenged.
+
+## 4. xOSG-0 v0.3 — deterministic testing and hardening
+
+v0.3 subjects the actualized runtime to disciplined deterministic testing.
+
+Growth here comes from finding structural weaknesses in:
+
+- state transitions;
+- persistence;
+- verification;
+- recovery;
+- locking;
+- corruption handling;
+- boundary conditions.
+
+The principle becomes:
+
+```text
+failure found
+  → invariant stated
+  → implementation hardened
+  → regression added
+```
+
+## 5. xOSG-0 v0.4 — loose/fuzzy hardening
+
+v0.4 deliberately stops assuming clean input.
+
+The runtime is pressured with:
+
+- malformed JSON;
+- truncation;
+- nullable structures;
+- Unicode noise;
+- ambiguous text;
+- path-like and shell-like strings;
+- repeated and randomized operation sequences;
+- transaction and lock anomalies.
+
+This stage asks a stronger question than "does it work?":
+
+> **Does it fail in a bounded, inspectable way when the environment is wrong?**
+
+The documented v0.4 fuzzy stage reached:
+
+```text
+Loose/fuzzy cases: 107
+Passed:            107
+Failures:            0
+Crashes:             0
+Timeouts:            0
+```
+
+## 6. Seed
+
+Only **after v0.4** do we extract Seed.
+
+Seed is not a historical version number and not a copy of the whole system.
+
+It is the smallest coherent package that survives the entire path:
+
+```text
+ES-xOSG-7
+  → bare-metal reduction
+  → actualization
+  → deterministic hardening
+  → fuzzy hardening
+  → SEED
+```
+
+A component belongs in Seed only if it is:
+
+- necessary;
+- explicit;
+- bounded;
+- testable;
+- provenance-traceable;
+- non-redundant;
+- supported by the developmental evidence.
+
+Conceptually:
+
+```text
+SEED =
+    surviving invariants
+  + minimum mechanisms
+  + explicit boundaries
+  + regression obligations
+```
+
+## Supporting development
+
+The uploaded operator kernel, operator/orchestrator kernel, learning layer, deterministic control kernel, and goal-scaffolding packages are **supporting development artifacts**.
+
+They help explain how particular controls emerged and may feed the v0.3/v0.4 line, but they do not replace the canonical version spine.
+
+The canonical story remains:
+
+```text
+ES-xOSG-7
+ -> xOSG-0 bare-metal
+ -> v0.2
+ -> v0.3
+ -> v0.4
+ -> Seed
+```
 
 ## Repository map
 
@@ -204,33 +212,16 @@ syn-xOSG-0/
 ├── README.md
 ├── growth/
 │   ├── README.md
-│   ├── 00-es-xosg-7-genesis/
-│   ├── 01-actualization/
-│   ├── 02-adversarial-pressure/
-│   ├── 03-learning-layer/
-│   ├── 04-operator-kernel/
-│   ├── 05-operator-orchestrator/
-│   ├── 06-deterministic-offload/
-│   ├── 07-goal-scaffolding/
-│   └── 08-seed/
+│   └── spine/
+│       ├── 00-es-xosg-7/
+│       ├── 01-xosg-0-baremetal/
+│       ├── 02-xosg-0-v0.2/
+│       ├── 03-xosg-0-v0.3/
+│       ├── 04-xosg-0-v0.4/
+│       └── 05-seed/
 ├── docs/
-│   └── PROVENANCE.md
-└── history/
-    └── ...
+├── history/
+└── supporting/
 ```
 
-**growth/** explains why each developmental stage exists.
-
-**history/** preserves recoverable historical source and evidence.
-
-**08-seed/** is where the minimum reusable kernel is eventually distilled.
-
-## End state
-
-The repository should end with a question:
-
-> After everything learned from ES-xOSG-7, what is the smallest coherent system that still preserves the necessary invariants?
-
-That answer is **Seed**.
-
-See **[growth/README.md](growth/README.md)** for the developmental path.
+See **[growth/README.md](growth/README.md)** for the canonical developmental spine.
