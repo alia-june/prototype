@@ -1,0 +1,85 @@
+{
+  "schema": "xosg.task-graph.v1",
+  "graph_id": "TG-DET-001",
+  "objective": "Build, validate, attest, package, and relock the goal-scaffolding production revision",
+  "execution": "synchronous_bounded",
+  "tasks": [
+    {
+      "id": "ST-001",
+      "type": "inventory",
+      "depends_on": []
+    },
+    {
+      "id": "ST-002",
+      "type": "hash",
+      "depends_on": [
+        "ST-001"
+      ]
+    },
+    {
+      "id": "ST-003",
+      "type": "merkle",
+      "depends_on": [
+        "ST-002"
+      ]
+    },
+    {
+      "id": "ST-004",
+      "type": "structure",
+      "depends_on": [
+        "ST-001"
+      ]
+    },
+    {
+      "id": "ST-005",
+      "type": "regression",
+      "depends_on": [
+        "ST-004"
+      ]
+    },
+    {
+      "id": "ST-006",
+      "type": "tool_policy",
+      "depends_on": [
+        "ST-004"
+      ]
+    },
+    {
+      "id": "ST-007",
+      "type": "gate_probe",
+      "depends_on": []
+    },
+    {
+      "id": "ST-008",
+      "type": "attest",
+      "depends_on": [
+        "ST-002",
+        "ST-003",
+        "ST-005",
+        "ST-006",
+        "ST-007"
+      ]
+    },
+    {
+      "id": "ST-009",
+      "type": "package",
+      "depends_on": [
+        "ST-011"
+      ]
+    },
+    {
+      "id": "ST-010",
+      "type": "archive_verify",
+      "depends_on": [
+        "ST-009"
+      ]
+    },
+    {
+      "id": "ST-011",
+      "type": "relock_gate",
+      "depends_on": [
+        "ST-008"
+      ]
+    }
+  ]
+}
