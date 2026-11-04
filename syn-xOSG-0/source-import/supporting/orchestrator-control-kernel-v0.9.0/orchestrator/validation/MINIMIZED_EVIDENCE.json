@@ -1,0 +1,14 @@
+{
+  "schema": "xosg.minimized-evidence.v1",
+  "data_touch": {"model_default": "DT0-DT3", "semantic_full_content": false},
+  "inventory": {"files": 85, "bytes": 224341},
+  "tree_merkle_sha256": "a7e0b38c1e0aaa890b531d7d17f8ab7651bc6a69336d4e71fbb0a3e3e688875d",
+  "structure": {"pass": true, "required": 10, "missing": []},
+  "json_validation": [
+    {"path":"orchestrator/hypervisor/TOOL_POLICY.json","pass":true},
+    {"path":"orchestrator/state/TASK_GRAPH.json","pass":true}
+  ],
+  "regression_totals": {"suites":9,"checks":165,"passed":124,"failed":0},
+  "gate": {"pass":true,"checks":2},
+  "pass": true
+}
