@@ -1,0 +1,525 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alia-june/prototype/blob/main/etabit-schema/schema/etabit-project.v0.2.schema.json",
+  "title": "Etabit research descriptor v0.2 — noncanonical",
+  "description": "Draft architecture descriptor, not an on-media format, collective authority implementation, reader, parser or cryptographic validation. Field shapes are proposed; invariant values represent user decisions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "admission_status",
+    "system",
+    "drives",
+    "references",
+    "out_of_band_meta_disks",
+    "codepages",
+    "cypher_disk",
+    "holonic_cooperation",
+    "result_boundaries",
+    "security",
+    "source_register",
+    "open_contracts"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "etabit.research-project.v0.2"
+    },
+    "admission_status": {
+      "const": "DRAFT_NOT_ADMITTED"
+    },
+    "system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ae_cryptography",
+        "ae_external_memory",
+        "construction",
+        "result"
+      ],
+      "properties": {
+        "ae_cryptography": {
+          "const": "Amorphous Experience Cryptography"
+        },
+        "ae_external_memory": {
+          "const": "Amorphous Experience External Memory"
+        },
+        "construction": {
+          "const": "Etabit"
+        },
+        "result": {
+          "const": "Experience Orchestration Drive"
+        }
+      }
+    },
+    "drives": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/drive"
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    },
+    "out_of_band_meta_disks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/meta_disk"
+      }
+    },
+    "codepages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/codepage"
+      }
+    },
+    "cypher_disk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority_within_self_distributed",
+        "responsibilities",
+        "constituents",
+        "collective_decision_protocol",
+        "physical_mechanism_selected",
+        "possible_physical_mechanisms"
+      ],
+      "properties": {
+        "authority_within_self_distributed": {
+          "const": true
+        },
+        "responsibilities": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 5,
+          "maxItems": 5,
+          "items": {
+            "enum": [
+              "metadata_format",
+              "drive_meta_associations",
+              "constructor_protocol",
+              "disclosure_controls",
+              "write_authority"
+            ]
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "metadata_format"
+              }
+            },
+            {
+              "contains": {
+                "const": "drive_meta_associations"
+              }
+            },
+            {
+              "contains": {
+                "const": "constructor_protocol"
+              }
+            },
+            {
+              "contains": {
+                "const": "disclosure_controls"
+              }
+            },
+            {
+              "contains": {
+                "const": "write_authority"
+              }
+            }
+          ]
+        },
+        "constituents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/constituent"
+          }
+        },
+        "collective_decision_protocol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "physical_mechanism_selected": {
+          "const": false
+        },
+        "possible_physical_mechanisms": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "holonic_cooperation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "right_to_refuse",
+        "refusal_bypass_permitted",
+        "refusal_protocol",
+        "revocation_protocol"
+      ],
+      "properties": {
+        "right_to_refuse": {
+          "const": true
+        },
+        "refusal_bypass_permitted": {
+          "const": false
+        },
+        "refusal_protocol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revocation_protocol": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "result_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stored_error_is_io_error",
+        "stored_unknown_is_unresolved_reference",
+        "four_symbol_logic",
+        "read_result_encoding"
+      ],
+      "properties": {
+        "stored_error_is_io_error": {
+          "const": false
+        },
+        "stored_unknown_is_unresolved_reference": {
+          "const": false
+        },
+        "four_symbol_logic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "read_result_encoding": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "default_deny",
+        "source_references_grant_authority",
+        "codepages_grant_execution",
+        "reader_meta_access",
+        "unreviewed_meta_disclosure_allowed",
+        "runtime_activated"
+      ],
+      "properties": {
+        "default_deny": {
+          "const": true
+        },
+        "source_references_grant_authority": {
+          "const": false
+        },
+        "codepages_grant_execution": {
+          "const": false
+        },
+        "reader_meta_access": {
+          "const": "DENIED"
+        },
+        "unreviewed_meta_disclosure_allowed": {
+          "const": false
+        },
+        "runtime_activated": {
+          "const": false
+        }
+      }
+    },
+    "source_register": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "open_contracts": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "drive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "roles",
+        "object_domain",
+        "objects",
+        "physical_mapping"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "roles": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "source",
+              "referential"
+            ]
+          }
+        },
+        "object_domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "objects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/declared_object"
+          }
+        },
+        "physical_mapping": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "declared_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "classification",
+        "display_surface",
+        "payload_type",
+        "payload_status",
+        "numeric_encoding",
+        "provenance_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "classification": {
+          "enum": [
+            "DECLARED_SYMBOL",
+            "ARBITRARY_OBJECT",
+            "SENTINEL_UNRESOLVED"
+          ]
+        },
+        "display_surface": {
+          "type": "string",
+          "minLength": 1
+        },
+        "payload_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "payload_status": {
+          "const": "DESCRIPTOR_ONLY"
+        },
+        "numeric_encoding": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance_status": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "from_drive",
+        "to_drive",
+        "target_object_id",
+        "relationship",
+        "reference_grammar",
+        "ordering",
+        "multiplicity",
+        "cycle_policy"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "from_drive": {
+          "type": "string",
+          "minLength": 1
+        },
+        "to_drive": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relationship": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reference_grammar": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ordering": {
+          "type": "string",
+          "minLength": 1
+        },
+        "multiplicity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cycle_policy": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "meta_disk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "for_drive",
+        "constructor_access",
+        "reader_access",
+        "automatic_disclosure",
+        "representation_status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "for_drive": {
+          "type": "string",
+          "minLength": 1
+        },
+        "constructor_access": {
+          "const": "SCOPED_ONLY"
+        },
+        "reader_access": {
+          "const": "DENIED"
+        },
+        "automatic_disclosure": {
+          "const": false
+        },
+        "representation_status": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "codepage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "process_namespace",
+        "referential_drive_ids",
+        "mapping_status",
+        "translation_admission",
+        "execution_permission"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "process_namespace": {
+          "type": "string",
+          "minLength": 1
+        },
+        "referential_drive_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "mapping_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "translation_admission": {
+          "type": "string",
+          "minLength": 1
+        },
+        "execution_permission": {
+          "const": false
+        }
+      }
+    },
+    "constituent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "decision_participation",
+        "cooperation_state"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision_participation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cooperation_state": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "evidence_class",
+        "claim_scope"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_class": {
+          "enum": [
+            "DIRECT_USER",
+            "HISTORICAL_SOURCE",
+            "DERIVED_ANALYSIS",
+            "REPOSITORY_IMPLEMENTATION",
+            "REPORTED_TEST"
+          ]
+        },
+        "claim_scope": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
