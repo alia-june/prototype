@@ -1,69 +1,48 @@
-# ES-xOSG-7 → Seed
+# Canonical Growth Spine
 
-This directory documents the developmental path from **ES-xOSG-7 genesis** to **Seed**.
-
-It is not a release chronology.
-
-It is a reduction and extraction process.
+This directory describes the primary development path.
 
 ```text
-00 ES-xOSG-7 GENESIS
-        ↓
-01 ACTUALIZATION
-        ↓
-02 ADVERSARIAL PRESSURE
-        ↓
-03 LEARNING LAYER
-        ↓
-04 OPERATOR KERNEL
-        ↓
-05 OPERATOR / ORCHESTRATOR
-        ↓
-06 DETERMINISTIC OFFLOAD
-        ↓
-07 GOAL SCAFFOLDING
-        ↓
-08 SEED
+ES-xOSG-7
+    ↓
+xOSG-0 bare-metal 0
+    ↓
+xOSG-0 v0.2
+    ↓
+xOSG-0 v0.3
+    ↓
+xOSG-0 v0.4
+    ↓
+Seed
 ```
 
-## Direction
+The sequence is both chronological and developmental.
 
-The process begins broad and exploratory.
+## Rule
 
-It ends small and reusable.
+Do not replace this spine with subsystem chronology.
+
+Learning-layer, operator-kernel, operator/orchestrator, deterministic-offload, and goal-scaffolding artifacts are supporting branches and mechanisms. They may explain how a particular version evolved, but they are not the top-level lineage.
+
+## Stage questions
+
+Each stage should answer four things:
+
+1. **Inherited system** — What did this stage receive?
+2. **Pressure** — What limitation forced change?
+3. **Addition/reduction** — What changed?
+4. **Carry-forward** — What survived into the next version?
+
+## End condition
+
+Seed is extracted only after the v0.4 loose/fuzzy hardening stage.
 
 ```text
-GENESIS = generative complexity
-SEED    = distilled necessity
+Seed != genesis
+Seed != full archive
+Seed != release bundle
+
+Seed = minimum justified kernel after the developmental path
 ```
 
-The purpose of the intermediate stages is to discover which structures are necessary, which are accidental, and which can be converted into explicit invariants.
-
-## Development contract
-
-Each stage should answer:
-
-1. **Inherited condition** — What exists at this point?
-2. **Pressure** — What limitation or ambiguity became visible?
-3. **Evidence** — What demonstrates the pressure?
-4. **Extraction** — What lesson or invariant was derived?
-5. **Mechanism** — What minimum structure was added or separated?
-6. **Reduction** — What ambiguity or coupling was removed?
-7. **Test** — How was the new structure challenged?
-8. **Carry-forward** — What survives into the next stage?
-
-## Final criterion
-
-The final Seed should not be a compressed copy of ES-xOSG-7.
-
-It should be the minimal kernel that can explain and reproduce the justified structure discovered during the path.
-
-```text
-SEED =
-    surviving invariants
-  + minimum mechanisms
-  + explicit boundaries
-  + regression obligations
-```
-
-Everything else remains evidence, history, or optional scaffolding.
+See `growth/spine/` for the canonical stages.
