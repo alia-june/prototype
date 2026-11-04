@@ -1,93 +1,69 @@
-# Growing an xOSG Seed
+# ES-xOSG-7 → Seed
 
-This directory is the developmental spine of the repository.
+This directory documents the developmental path from **ES-xOSG-7 genesis** to **Seed**.
 
-It answers a different question from `history/`.
+It is not a release chronology.
 
-- `history/` asks: **What artifacts existed?**
-- `growth/` asks: **Why did the next structure become necessary?**
-
-## The method
-
-A seed grows when evidence creates pressure that the existing structure cannot safely absorb.
+It is a reduction and extraction process.
 
 ```text
-CURRENT SEED
-    ↓
-EXPOSE TO PRESSURE
-    ↓
-OBSERVE FAILURE OR LIMIT
-    ↓
-CLASSIFY THE FAILURE
-    ↓
-EXTRACT A LESSON
-    ↓
-STATE A NEW INVARIANT
-    ↓
-BUILD THE MINIMUM MECHANISM
-    ↓
-NEGATIVE TEST
-    ↓
-REGRESSION TEST
-    ↓
-PROMOTE OR REJECT
+00 ES-xOSG-7 GENESIS
+        ↓
+01 ACTUALIZATION
+        ↓
+02 ADVERSARIAL PRESSURE
+        ↓
+03 LEARNING LAYER
+        ↓
+04 OPERATOR KERNEL
+        ↓
+05 OPERATOR / ORCHESTRATOR
+        ↓
+06 DETERMINISTIC OFFLOAD
+        ↓
+07 GOAL SCAFFOLDING
+        ↓
+08 SEED
 ```
 
-This is deliberately different from feature accumulation.
+## Direction
 
-## Growth contract
+The process begins broad and exploratory.
 
-A proposed growth ring should answer all of these questions:
-
-1. **Pressure** — What happened that the current seed could not safely handle?
-2. **Evidence** — What observation, failure, or test demonstrates the pressure?
-3. **Invariant** — What must become true?
-4. **Minimum mechanism** — What is the least new structure needed?
-5. **Boundary** — What authority or capability must the mechanism *not* acquire?
-6. **Negative test** — How do we prove the old failure is still detectable?
-7. **Regression** — How do we prevent recurrence?
-8. **Promotion** — Who decides that this ring becomes part of the next seed?
-
-## Growth rings
-
-### 00 — Seed
-Minimal machine description, logical instrumentation, operating prompt, compatibility layer, registers, verification boundary.
-
-### 01 — Actualization
-Turn declarative state into inspectable persistent state.
-
-### 02 — Adversarial pressure
-Attack assumptions with malformed, ambiguous, fuzzy, and corrupted input.
-
-### 03 — Learning layer
-Convert failures into lessons, patterns, anti-patterns, logic, meta-logic, analysis, and meta-analysis.
-
-### 04 — Operator kernel
-Separate observation, derivation, inference, proposal, execution, verification, and promotion.
-
-### 05 — Operator / Orchestrator
-Separate binding human decision agency from orchestration machinery.
-
-### 06 — Deterministic offload
-Move repeatable validation and attestation out of semantic reasoning where possible.
-
-### 07 — Goal scaffolding
-Allow compact notation while preventing token spelling from acquiring implicit semantics or privilege.
-
-## The important property
-
-The useful product of a growth cycle is not merely a new file or feature.
-
-It is:
+It ends small and reusable.
 
 ```text
-old seed
-+ explained pressure
-+ observed evidence
-+ new invariant
-+ bounded mechanism
-+ regression evidence
-= next seed
+GENESIS = generative complexity
+SEED    = distilled necessity
 ```
 
-That equation is the core demonstration this repository is building.
+The purpose of the intermediate stages is to discover which structures are necessary, which are accidental, and which can be converted into explicit invariants.
+
+## Development contract
+
+Each stage should answer:
+
+1. **Inherited condition** — What exists at this point?
+2. **Pressure** — What limitation or ambiguity became visible?
+3. **Evidence** — What demonstrates the pressure?
+4. **Extraction** — What lesson or invariant was derived?
+5. **Mechanism** — What minimum structure was added or separated?
+6. **Reduction** — What ambiguity or coupling was removed?
+7. **Test** — How was the new structure challenged?
+8. **Carry-forward** — What survives into the next stage?
+
+## Final criterion
+
+The final Seed should not be a compressed copy of ES-xOSG-7.
+
+It should be the minimal kernel that can explain and reproduce the justified structure discovered during the path.
+
+```text
+SEED =
+    surviving invariants
+  + minimum mechanisms
+  + explicit boundaries
+  + regression obligations
+```
+
+Everything else remains evidence, history, or optional scaffolding.
