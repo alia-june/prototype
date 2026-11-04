@@ -1,0 +1,330 @@
+{
+  "format": "code-lexigraph-rehydration/0.1",
+  "status": "one-example construction test; editorial blueprint and mappings",
+  "graph": {
+    "format": "code-lexigraph-example/0.1",
+    "status": "one-case editorial construction; user-approved example scope",
+    "source_basis": {
+      "document": "HUMAN_ATOMIZATION.md",
+      "records": [
+        {
+          "id": "U0068",
+          "role": "scoped user commitment",
+          "statement": "Error and exception states are valid sentinel states.",
+          "qualification": "Execution control depends on surrounding structure and applicable contract."
+        },
+        {
+          "id": "U0069",
+          "role": "scoped user commitment",
+          "statement": "Safe fall-through requires the required JSON state to survive an exception.",
+          "qualification": "Required survivor remains a project decision."
+        },
+        {"id":"U0070","role":"scoped user commitment","statement":"The surrounding system handles the exception; that responsibility is not assigned to the JSON handler."},
+        {"id":"U0117","role":"open question","statement":"The required survivor and interrupted-mutation policy remain open."}
+      ]
+    },
+    "relation_meanings": {
+      "uses_definition": "Uses this meaning; does not derive the source commitment from that definition.",
+      "binds": "Supplies a local referent or execution scope for the definition.",
+      "requires": "Makes the target an obligation in this contract.",
+      "permits": "Retains the target category under the declared profile.",
+      "scoped_by": "Applies only within this profile.",
+      "intended_to_satisfy": "Records an implementation or method intention; evidence is separate.",
+      "depends_on": "Lists a stated premise; further conditions remain in the claim.",
+      "represents": "Provides a code representation of this meaning.",
+      "encodes": "Provides a local representation for the target category.",
+      "contains": "Structurally contains this source-code element.",
+      "calls": "Contains a syntactic call to this function.",
+      "guards": "An ERROR gate value prevents reaching the target in this example.",
+      "passes_value_to": "Passes the decoded mutable working object into the operation.",
+      "routes_Exception_to": "An ordinary Exception from the operation reaches this system handler.",
+      "propagates_Exception_to": "An ordinary Exception from decoding reaches this system handler.",
+      "respects_role_boundary": "The decoder has no local exception handler; the system owns the response.",
+      "exposes_survivor_for": "Returns the exact selected survivor reference under this profile.",
+      "observed_case_for": "Supports only this named observed case under L01, not all executions.",
+      "reads_sentinel_from": "References an enum member declared by this local sentinel vocabulary.",
+      "intended_to_realize": "Associates this implementation with the stated method; observed cases remain separate."
+    },
+    "code_block": "python-example",
+    "nodes": [
+      {"id":"D01","kind":"definition","text":"State: information identified by the applicable contract."},
+      {"id":"D02","kind":"definition","text":"Operation: work that can read or change working state."},
+      {"id":"D03","kind":"definition","text":"Exception: an execution event transferred to an applicable exception response."},
+      {"id":"D04","kind":"definition","text":"Boundary: declared execution extent across which a property is required."},
+      {"id":"D05","kind":"definition","text":"Survival: availability of the contract-selected state across the required boundary."},
+      {"id":"D06","kind":"definition","text":"Responsibility: a contract's assignment of a behavior to a role."},
+      {"id":"D07","kind":"definition","text":"Sentinel: a distinguished value or state with a declared interpretation."},
+      {"id":"D08","kind":"definition","text":"Contract: scoped requirements, bindings and permitted behavior."},
+      {"id":"P01","kind":"commitment","text":"The required JSON state must survive an exception.","source":"U0069"},
+      {"id":"P02","kind":"commitment","text":"The surrounding system owns exception handling.","source":"U0070"},
+      {"id":"P03","kind":"commitment","text":"Exception-handling responsibility is not assigned to the JSON handler.","source":"U0070"},
+      {"id":"P04","kind":"commitment","text":"Error is a valid sentinel-state category.","source":"U0068"},
+      {"id":"P05","kind":"commitment","text":"Exception is a valid sentinel-state category.","source":"U0068"},
+      {
+        "id": "L01",
+        "kind": "example_profile",
+        "text": "S is the exact caller-supplied valid JSON text; T extends from entry into system_run through its return. The caller retains S. Working state is parsed separately. Input gates are READY or ERROR. ERROR skips decoding and operation. COMPLETE reports normal return. EXCEPTION reports an ordinary Exception caught by system_run. The response requirement is catching and returning the declared report. Partial working state and external effects have no preservation guarantee here.",
+        "basis": ["U0068","U0069","U0070","U0117"]
+      },
+      {
+        "id": "K01",
+        "kind": "contract",
+        "text": "For L01, preserve S across T and assign exception response to the system, with declared error/exception representations.",
+        "requirements": ["P01","P02","P03"],
+        "permitted_categories": ["P04","P05"],
+        "profile": "L01"
+      },
+      {
+        "id": "M01",
+        "kind": "method",
+        "text": "Bind S and T; preserve S separately; apply the gate; decode and invoke only on READY; respond to ordinary exceptions in the system; assess preservation and response separately.",
+        "paths": {"blocked":["C04","C08"],"normal":["C05","C06","C08"],"exception":{"from":["C05","C06"],"via":["C07","C08"]}},
+        "profile": "L01"
+      },
+      {
+        "id": "A01",
+        "kind": "conditional_claim",
+        "text": "If an applicable contract requires survival of S across T and adequate evidence establishes loss of that same S across that same T, its preservation obligation is unmet.",
+        "premises": ["P01"],
+        "status": "reviewable argument; no formal proof",
+        "uses_definitions": ["D04","D05","D08"],
+        "conditions": [
+          "The preservation contract applies to the examined operation.",
+          "The selected survivor S and required boundary T are identified.",
+          "Adequate evidence establishes loss of that same S across that same T."
+        ],
+        "conclusion": "That contract's preservation obligation is unmet."
+      },
+      {"id":"C01","kind":"code","selector":"ClassDef:State","line":5},
+      {"id":"C02","kind":"code","selector":"FunctionDef:decode_working_json","line":12},
+      {"id":"C03","kind":"code","selector":"FunctionDef:system_run","line":24},
+      {"id":"C04","kind":"code","selector":"system_run/If:gate is State.ERROR","line":26},
+      {"id":"C05","kind":"code","selector":"system_run/Assign:working","line":30},
+      {"id":"C06","kind":"code","selector":"system_run/Call:operation","line":31},
+      {"id":"C07","kind":"code","selector":"system_run/ExceptHandler:Exception","line":33},
+      {"id":"C08","kind":"code","selector":"FunctionDef:make_report","line":16},
+      {
+        "id": "E01",
+        "kind": "observation",
+        "case": "successful nested mutation",
+        "status": "pass",
+        "working_value": 2,
+        "survivor_value": 1,
+        "same_survivor_object": true,
+        "system_report_state": "complete"
+      },
+      {
+        "id": "E02",
+        "kind": "observation",
+        "case": "nested mutation then RuntimeError",
+        "status": "pass",
+        "working_value_before_exception": 99,
+        "survivor_value_after_system_response": 1,
+        "same_survivor_object": true,
+        "system_report_state": "exception",
+        "system_response": "RuntimeError"
+      },
+      {
+        "id": "E03",
+        "kind": "observation",
+        "case": "ERROR gate blocks decoding and operation",
+        "status": "pass",
+        "decode_calls": 0,
+        "operation_calls": 0,
+        "same_survivor_object": true,
+        "system_report_state": "error"
+      },
+      {
+        "id": "E04",
+        "kind": "observation",
+        "case": "separate calls receive independent nested working trees",
+        "status": "pass",
+        "independent_outer_objects": true,
+        "independent_nested_containers": true,
+        "second_working_value_after_first_mutation": 1,
+        "same_survivor_object": true
+      }
+    ],
+    "edges": [
+      {"id":"R01","from":"P01","relation":"uses_definition","to":"D01"},
+      {"id":"R02","from":"P01","relation":"uses_definition","to":"D03"},
+      {"id":"R03","from":"P01","relation":"uses_definition","to":"D05"},
+      {"id":"R04","from":"P02","relation":"uses_definition","to":"D06"},
+      {"id":"R05","from":"P03","relation":"uses_definition","to":"D06"},
+      {"id":"R06","from":"P04","relation":"uses_definition","to":"D07"},
+      {"id":"R07","from":"P05","relation":"uses_definition","to":"D07"},
+      {"id":"R08","from":"L01","relation":"binds","to":"D02"},
+      {"id":"R09","from":"L01","relation":"binds","to":"D04"},
+      {"id":"R10","from":"K01","relation":"uses_definition","to":"D08"},
+      {"id":"R11","from":"K01","relation":"requires","to":"P01"},
+      {"id":"R12","from":"K01","relation":"requires","to":"P02"},
+      {"id":"R13","from":"K01","relation":"requires","to":"P03"},
+      {"id":"R14","from":"K01","relation":"permits","to":"P04"},
+      {"id":"R15","from":"K01","relation":"permits","to":"P05"},
+      {"id":"R16","from":"K01","relation":"scoped_by","to":"L01"},
+      {"id":"R17","from":"M01","relation":"intended_to_satisfy","to":"K01"},
+      {"id":"R18","from":"A01","relation":"depends_on","to":"P01"},
+      {"id":"R19","from":"C03","relation":"intended_to_satisfy","to":"K01"},
+      {"id":"R20","from":"C01","relation":"represents","to":"D07"},
+      {"id":"R21","from":"C01","relation":"encodes","to":"P04"},
+      {"id":"R22","from":"C01","relation":"encodes","to":"P05"},
+      {"id":"R23","from":"C03","relation":"contains","to":"C04"},
+      {"id":"R24","from":"C03","relation":"contains","to":"C05"},
+      {"id":"R25","from":"C03","relation":"contains","to":"C06"},
+      {"id":"R26","from":"C03","relation":"contains","to":"C07"},
+      {"id":"R27","from":"C03","relation":"calls","to":"C02"},
+      {"id":"R28","from":"C03","relation":"calls","to":"C08"},
+      {"id":"R29","from":"C04","relation":"guards","to":"C05"},
+      {"id":"R30","from":"C04","relation":"guards","to":"C06"},
+      {"id":"R31","from":"C05","relation":"passes_value_to","to":"C06"},
+      {"id":"R32","from":"C06","relation":"routes_Exception_to","to":"C07"},
+      {"id":"R33","from":"C02","relation":"propagates_Exception_to","to":"C07"},
+      {"id":"R34","from":"C07","relation":"intended_to_satisfy","to":"P02"},
+      {"id":"R35","from":"C02","relation":"respects_role_boundary","to":"P03"},
+      {"id":"R36","from":"C08","relation":"exposes_survivor_for","to":"L01"},
+      {"id":"R37","from":"E01","relation":"observed_case_for","to":"K01"},
+      {"id":"R38","from":"E02","relation":"observed_case_for","to":"K01"},
+      {"id":"R39","from":"E03","relation":"observed_case_for","to":"K01"},
+      {"id":"R40","from":"E04","relation":"observed_case_for","to":"K01"},
+      {"id":"R41","from":"C04","relation":"reads_sentinel_from","to":"C01"},
+      {"id":"R42","from":"C07","relation":"reads_sentinel_from","to":"C01"},
+      {"id":"R43","from":"C03","relation":"intended_to_realize","to":"M01"}
+    ],
+    "evidence_scope": "Four finite in-process observations; report fields are checked against independently retained input and working-state observations.",
+    "open_decisions": ["Project-wide survivor policy","Project-wide sentinel encoding and conversion","Crash/process-termination survival","External-effect policy","Universal reference/version policy"],
+    "limits": [
+      "Candidate graph vocabulary for this example only.",
+      "No formal proof, corpus-wide extraction, or universal code generator.",
+      "This example retains input text; it does not guarantee preservation of the interrupted working tree."
+    ],
+    "validation": {
+      "python": "3.14.3",
+      "code_lines": 34,
+      "node_count": 29,
+      "edge_count": 43,
+      "source_records": 4,
+      "observed_cases": 4,
+      "checks": [
+        "four runtime observations",
+        "eight code selectors resolve",
+        "listed call relationships match syntax",
+        "guard precedes decode and operation",
+        "decoder contains no local exception handler",
+        "unique IDs and valid relation types/endpoints",
+        "no isolated nodes",
+        "composite references resolve",
+        "JSON serialization round-trip",
+        "sentinel references resolve to enum members",
+        "all relationships appear in both forward and reverse indexes"
+      ]
+    }
+  },
+  "graph_locations": "Code selectors and line numbers in graph refer to the preserved reference; generated spans are returned separately.",
+  "profile": "L01",
+  "bindings": {
+    "survivor": {"status":"selected","representation":"caller_json_text","parameter":"required_json"},
+    "boundary": {"status":"selected","value":"system_entry_to_return"},
+    "working": {"status":"selected","representation":"parsed_json_tree"}
+  },
+  "grammar": {
+    "statements": ["from_import","import","class","function","assign","return","if","raise","expression","try"],
+    "expressions": {
+      "name": "Python identifier",
+      "bound": "Selected binding path; this edition supports survivor.parameter",
+      "literal": "String literal",
+      "attr": "Attribute expression",
+      "call": "Callable expression and ordered argument list",
+      "dict": "Ordered list of string-key and expression pairs",
+      "is": "Identity comparison",
+      "is_not": "Negated identity comparison"
+    },
+    "order": "Module, body, argument, parameter and dictionary-pair arrays preserve declared order.",
+    "handler": "The try statement has one explicit ordinary-Exception handler.",
+    "absence": "A missing or unresolved necessary binding prevents dependent construction."
+  },
+  "module": [
+    {"id":"B01","op":"from_import","module":"enum","name":"Enum"},
+    {"id":"B02","op":"import","name":"json"},
+    {
+      "id": "B03",
+      "op": "class",
+      "name": "State",
+      "bases": ["Enum"],
+      "body": [
+        {"id":"B04","op":"assign","name":"READY","value":["literal","ready"]},
+        {"id":"B05","op":"assign","name":"ERROR","value":["literal","error"]},
+        {"id":"B06","op":"assign","name":"EXCEPTION","value":["literal","exception"]},
+        {"id":"B07","op":"assign","name":"COMPLETE","value":["literal","complete"]}
+      ]
+    },
+    {
+      "id": "B08",
+      "op": "function",
+      "name": "decode_working_json",
+      "parameters": [{"binding":"survivor.parameter"}],
+      "body": [{"id":"B09","op":"return","value":["call",["attr",["name","json"],"loads"],[["bound","survivor.parameter"]]]}]
+    },
+    {
+      "id": "B10",
+      "op": "function",
+      "name": "make_report",
+      "parameters": ["state",{"binding":"survivor.parameter"},"response"],
+      "body": [{"id":"B11","op":"return","value":["dict",[["state",["attr",["name","state"],"value"]],["survivor",["bound","survivor.parameter"]],["response",["name","response"]]]]}]
+    },
+    {
+      "id": "B12",
+      "op": "function",
+      "name": "system_run",
+      "parameters": [{"binding":"survivor.parameter"},"gate","operation"],
+      "body": [
+        {
+          "id": "B13",
+          "op": "try",
+          "body": [
+            {
+              "id": "B14",
+              "op": "if",
+              "test": ["is",["name","gate"],["attr",["name","State"],"ERROR"]],
+              "body": [{"id":"B15","op":"return","value":["call",["name","make_report"],[["attr",["name","State"],"ERROR"],["bound","survivor.parameter"],["literal","operation skipped"]]]}]
+            },
+            {
+              "id": "B16",
+              "op": "if",
+              "test": ["is_not",["name","gate"],["attr",["name","State"],"READY"]],
+              "body": [{"id":"B17","op":"raise","value":["call",["name","ValueError"],[["literal","input gate must be READY or ERROR"]]]}]
+            },
+            {"id":"B18","op":"assign","name":"working","value":["call",["name","decode_working_json"],[["bound","survivor.parameter"]]]},
+            {"id":"B19","op":"expression","value":["call",["name","operation"],[["name","working"]]]},
+            {"id":"B20","op":"return","value":["call",["name","make_report"],[["attr",["name","State"],"COMPLETE"],["bound","survivor.parameter"],["literal","operation completed"]]]}
+          ],
+          "handler": {
+            "id": "B21",
+            "type": "Exception",
+            "name": "exc",
+            "body": [
+              {
+                "id": "B22",
+                "op": "return",
+                "value": ["call",["name","make_report"],[["attr",["name","State"],"EXCEPTION"],["bound","survivor.parameter"],["attr",["call",["name","type"],[["name","exc"]]],"__name__"]]]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "construction_links": [
+    {"blueprint":"B03","code":"C01","meanings":["D07","P04","P05","L01"]},
+    {"blueprint":"B08","code":"C02","meanings":["P03","L01"]},
+    {"blueprint":"B10","code":"C08","meanings":["P01","L01"]},
+    {"blueprint":"B12","code":"C03","meanings":["K01","M01","P01","P02","P03","L01"]},
+    {"blueprint":"B14","code":"C04","meanings":["P04","L01"]},
+    {"blueprint":"B18","code":"C05","meanings":["D01","D02","L01"]},
+    {"blueprint":"B19","code":"C06","meanings":["D02","L01"]},
+    {"blueprint":"B21","code":"C07","meanings":["P02","P05","L01"]}
+  ],
+  "supporting_declarations": [
+    {"blueprint":"B01","supports":["C01"],"dependency":"enum.Enum"},
+    {"blueprint":"B02","supports":["C02"],"dependency":"json.loads"}
+  ]
+}
