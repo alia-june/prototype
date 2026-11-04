@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "system",
+    "artifact_revision",
+    "state",
+    "verification"
+  ],
+  "properties": {
+    "system": {
+      "const": "xOSG-0"
+    },
+    "artifact_revision": {
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "IDLE",
+        "INTAKE",
+        "DECOMPOSE",
+        "ASSIGN",
+        "EXECUTE",
+        "RECONCILE",
+        "VERIFY",
+        "DELIVER",
+        "LOG",
+        "BLOCKED"
+      ]
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "NOT_RUN",
+            "PASS",
+            "FAIL"
+          ]
+        }
+      }
+    }
+  }
+}
