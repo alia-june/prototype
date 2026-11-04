@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["system", "artifact_revision", "state", "task", "verification", "history"],
+  "properties": {
+    "system": {"const": "xOSG-0"},
+    "artifact_revision": {"type": "string"},
+    "state": {"enum": ["IDLE", "INTAKE", "DECOMPOSE", "ASSIGN", "EXECUTE", "RECONCILE", "VERIFY", "DELIVER", "LOG", "BLOCKED"]},
+    "task": {"type": ["object", "null"]},
+    "verification": {
+      "type": "object",
+      "required": ["status", "checks"],
+      "properties": {
+        "status": {"enum": ["NOT_RUN", "PASS", "FAIL"]},
+        "checks": {"type": "array"}
+      }
+    },
+    "history": {"type": "array", "maxItems": 512}
+  }
+}
