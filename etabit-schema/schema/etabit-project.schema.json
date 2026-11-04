@@ -1,0 +1,372 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alia-june/prototype/blob/main/etabit-schema/schema/etabit-project.schema.json",
+  "title": "Etabit research project descriptor — provisional v0.1",
+  "description": "Schema for documenting Etabit design candidates and decisions; NOT an on-media format, parser, interpreter, authority grant, or approved runtime contract. No numerical bitcodes or Cypher collective mechanism assigned.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_id",
+    "admission_status",
+    "system",
+    "drives",
+    "references",
+    "out_of_band_meta_disks",
+    "cypher_disk",
+    "holonic_cooperation",
+    "codepages",
+    "roles",
+    "security",
+    "sources",
+    "open_contracts"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "etabit.research-project.v0.1"
+    },
+    "admission_status": {
+      "const": "DRAFT_NOT_ADMITTED"
+    },
+    "system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ae_cryptography",
+        "ae_external_memory",
+        "construction",
+        "result"
+      ],
+      "properties": {
+        "ae_cryptography": {
+          "const": "Amorphous Experience Cryptography"
+        },
+        "ae_external_memory": {
+          "const": "Amorphous Experience External Memory"
+        },
+        "construction": {
+          "const": "Etabit"
+        },
+        "result": {
+          "const": "Experience Orchestration Drive"
+        }
+      }
+    },
+    "drives": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/drive"
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    },
+    "out_of_band_meta_disks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/meta_disk"
+      }
+    },
+    "cypher_disk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authority_within_self_distributed",
+        "decides",
+        "collective_protocol",
+        "physical_mechanism"
+      ],
+      "properties": {
+        "authority_within_self_distributed": {
+          "const": true
+        },
+        "decides": {
+          "const": [
+            "metadata_format",
+            "drive_meta_associations",
+            "constructor_protocol",
+            "disclosure_controls",
+            "write_authority"
+          ]
+        },
+        "collective_protocol": {
+          "type": "string",
+          "minLength": 1
+        },
+        "physical_mechanism": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "holonic_cooperation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "right_to_refuse",
+        "refusal_cannot_be_bypassed",
+        "refusal_protocol"
+      ],
+      "properties": {
+        "right_to_refuse": {
+          "const": true
+        },
+        "refusal_cannot_be_bypassed": {
+          "const": true
+        },
+        "refusal_protocol": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "codepages": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/codepage"
+      }
+    },
+    "roles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "constructor_meta_access",
+        "reader_meta_access",
+        "meta_to_reader_implicit_disclosure"
+      ],
+      "properties": {
+        "constructor_meta_access": {
+          "const": "SCOPED_ONLY"
+        },
+        "reader_meta_access": {
+          "const": "DENIED"
+        },
+        "meta_to_reader_implicit_disclosure": {
+          "const": false
+        }
+      }
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "default_deny",
+        "references_grant_authority",
+        "codepage_grants_execution",
+        "source_symbol_is_read_status",
+        "runtime_activated"
+      ],
+      "properties": {
+        "default_deny": {
+          "const": true
+        },
+        "references_grant_authority": {
+          "const": false
+        },
+        "codepage_grants_execution": {
+          "const": false
+        },
+        "source_symbol_is_read_status": {
+          "const": false
+        },
+        "runtime_activated": {
+          "const": false
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "open_contracts": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$defs": {
+    "drive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "object_domain",
+        "representation_status",
+        "source_symbols"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "source",
+            "referential"
+          ]
+        },
+        "object_domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "representation_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_symbols": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/symbol"
+          }
+        }
+      }
+    },
+    "symbol": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "surface",
+        "identity_status",
+        "numeric_code"
+      ],
+      "properties": {
+        "surface": {
+          "type": "string"
+        },
+        "identity_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "numeric_code": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "from_drive",
+        "to_drive",
+        "relationship",
+        "grammar_status"
+      ],
+      "properties": {
+        "from_drive": {
+          "type": "string",
+          "minLength": 1
+        },
+        "to_drive": {
+          "type": "string",
+          "minLength": 1
+        },
+        "relationship": {
+          "type": "string",
+          "minLength": 1
+        },
+        "grammar_status": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "meta_disk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "for_drive",
+        "constructor_access",
+        "reader_access",
+        "auto_disclose"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "for_drive": {
+          "type": "string",
+          "minLength": 1
+        },
+        "constructor_access": {
+          "const": "SCOPED_ONLY"
+        },
+        "reader_access": {
+          "const": "DENIED"
+        },
+        "auto_disclose": {
+          "const": false
+        }
+      }
+    },
+    "codepage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "process_namespace",
+        "mapping_status",
+        "execution_semantics"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "process_namespace": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mapping_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "execution_semantics": {
+          "enum": [
+            "DISABLED_TEXT_ONLY",
+            "SEPARATELY_ADMITTED",
+            "SENTINEL_UNRESOLVED"
+          ]
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "evidence_class",
+        "claim_scope"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_class": {
+          "enum": [
+            "DIRECT_USER",
+            "HISTORICAL_SOURCE",
+            "DERIVED_ANALYSIS",
+            "REPOSITORY_IMPLEMENTATION",
+            "REPORTED_TEST"
+          ]
+        },
+        "claim_scope": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
