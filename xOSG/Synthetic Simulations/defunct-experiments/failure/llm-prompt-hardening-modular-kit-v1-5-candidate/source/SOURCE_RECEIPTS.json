@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source_archive": {
+    "name": "llm_prompt_hardening_modular_kit_v1_5_candidate.zip",
+    "sha256": "d88d0740cd50011f3ec05c6645329d3c6a766755b0aa7a6b005335cede13ffe6"
+  },
+  "omitted_payloads": [
+    {"path": "parent/llm_prompt_hardening_modular_kit_v1_1.zip", "sha256": "1372efdb6afe0f2d5fadb0ee69c8ed609a3246bb32c84dae57191726f3eb3945", "reason": "recursive parent archive"},
+    {"path": "parent/llm_prompt_hardening_modular_kit_v1_2.zip", "sha256": "71424277b9b45b60a8b49210fa7dba2d7736eecc07d686a5b0b760991c4b51b3", "reason": "recursive parent archive"},
+    {"path": "parent/llm_prompt_hardening_modular_kit_v1_3.zip", "sha256": "c16fc3dec99775b89ad623a03a9bcef770d10c133f325a05f1eacff1e894664d", "reason": "recursive parent archive"},
+    {"path": "parent/llm_prompt_hardening_modular_kit_v1_4_candidate.zip", "sha256": "3f5d3f7275ec707502d8ec49e24466367b7cee773f991e6e9d6f048382442008", "reason": "recursive immediate-parent archive"},
+    {"path": "parent/llm_weak_memory_hardening_full_runtime_bare_metal_v0_4.md", "sha256": "d8d8f1078e986234de2863e4e4e0fd7c3ee70eabe9d739e56ca50763ce39d154", "reason": "historical parent payload"},
+    {"path": "sources/CONTROLLED_STATE_TRANSITION_SYNTHESIS_2026-09-15.docx", "sha256": "206600b00440c1e4b7ffa9682eede57c8d4a6657b97ed4bead3b7bb9753865a2", "reason": "supplied binary source"},
+    {"path": "sources/AGE_GATE_SOURCE_RECORD.md", "sha256": "4d17f110e0b8fbdb0a17eda5051bbe00336b577ab353a5b269d9998a1d768cb8", "reason": "generated source record superseded by consolidated receipts"},
+    {"path": "sources/BEST_PRACTICES_SOURCE_RECORD.md", "sha256": "bc219341cbcef3142978316f324168f1540c1bba56f2e9558e380f5d370b9695", "reason": "generated source record superseded by consolidated receipts"},
+    {"path": "sources/ENCRYPTED_UNLOCK_SECURITY_SOURCE_RECORD.md", "sha256": "f981cd05bbe46f236853ebb398d1c656c9d41125407f86f1367927364ff42e08", "reason": "generated source record superseded by consolidated receipts"},
+    {"path": "sources/SOURCE_RECORD.md", "sha256": "3bbcbf6ba6049d3c9215008c306a937d980d0a4ada10f1fbabbef059f3c0007d", "reason": "generated source record superseded by consolidated receipts"},
+    {"path": "sources/age_appropriate_difficult_question_gate_adjunct_v0_1.md", "sha256": "b53cde87a648bbbe0fe98e8350a5b4b4565907bcca05944974947277fe61b50c", "reason": "supplied source payload"},
+    {"path": "sources/age_appropriate_gate_deep_implementation_research_2026-09-16.md", "sha256": "bbbeb5c8d1b61aa18d7fb8e4186c0ef7c0f1c919cf2033ae77509d24fe0a9118", "reason": "research source payload"},
+    {"path": "sources/candidate_1_3_full_prompt_active_2026-09-16.md", "sha256": "b2dcc8b3b015c63bbcd9a5e4cf76a47f48d26d2148ec50d0ae4ba591e8f4e4ff", "reason": "generated historical prompt build"},
+    {"path": "sources/llm_prompt_hardening_modular_kit_v1_4_online_assertion_validation_2026-09-16.md", "sha256": "efefacb5dfb69fe3ed35417e456209424b5d9005f3dd82b963d9156aa0102b49", "reason": "external validation payload"},
+    {"path": "vendor/ENGINE_SOURCE_RECORD.md", "sha256": "9c81282ac5b554119a5a4ac9caff49d90a0eb6bfbd6d6299798f1ac902b7e5f8", "reason": "generated source record superseded by consolidated receipts"},
+    {"path": "vendor/heuristic_offload_engine_v0_2.zip", "sha256": "80873db6b59c889a54acee28a520abe432afd35fd2c8d5483f394e65d37fedee", "reason": "optional separately licensed vendor archive"}
+  ]
+}
+

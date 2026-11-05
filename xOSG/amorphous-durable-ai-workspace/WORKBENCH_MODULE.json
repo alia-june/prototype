@@ -1,0 +1,26 @@
+{
+  "id": "durable-workspace",
+  "name": "Durable Workspace Development Kit",
+  "version": "0.1.1",
+  "classification": "infrastructure-module-candidate",
+  "runtime_component": true,
+  "semantic_authority": false,
+  "governance_authority": false,
+  "persistence_authority": "bounded-to-configured-workspace-root",
+  "entrypoint": "durable_workspace.cli:main",
+  "protocol": "local-python-cli-api",
+  "capabilities": [
+    "transactional-record-persistence",
+    "hash-chained-journal",
+    "three-representation-snapshots",
+    "snapshot-verification",
+    "quorum-recovery"
+  ],
+  "prohibited_inferences": [
+    "persisted-means-canonical",
+    "persisted-means-approved",
+    "latest-means-authoritative",
+    "sqlite-means-authoritative"
+  ],
+  "admission_status": "candidate-not-automatically-registered"
+}

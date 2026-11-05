@@ -27,12 +27,13 @@
 
 ## Overview
 
-This repository contains seven related prototype families exploring a common question:
+This repository contains eight related prototype families exploring a common question:
 
 > **How can complex AI-assisted systems remain inspectable when execution, authority, verification, provenance, and failure are distributed across multiple layers?**
 
 | Project | Core question | Current direction |
 | --- | --- | --- |
+| **[xOSG instrumentation](xOSG/README.md)** | How can AI project state, tool interfaces, and control-plane experiments remain durable and inspectable? | DWSK R4 source, Naked Shell identity, and Synthetic Simulations documentation with retained failed source |
 | **[xOSG-0](syn-xOSG-0/README.md)** | How can a human-directed AI/software system grow through explicit authority, state, testing, and reduction? | ES-xOSG-7 → bare-metal → v0.2 → v0.3 → v0.4 → Seed |
 | **[Mill Factory](mill-factory/README.md)** | How can experimental source, candidates, evidence, gates, and promotion decisions remain inspectable and non-overwriting? | Portable PowerShell batch factory with fail-closed promotion and ten bounded controls |
 | **[Code-Lexigraph](code-lexigraph/README.md)** | How can programming meanings, requirements, construction rules, code roles, and evidence remain connected as code is reconstructed? | Bounded Python rehydration with bidirectional traces and a restricted construction grammar |
@@ -73,6 +74,14 @@ This is a conceptual map, not a dependency graph.
 ---
 
 # Project constellation
+
+## xOSG instrumentation — durable state and inspectable experiments
+
+**[Open family →](xOSG/README.md)** · **[DWSK kit →](xOSG/amorphous-durable-ai-workspace/README.md)** · **[Migration and evidence →](xOSG/MIGRATION.md)**
+
+xOSG, **expert Overlay System Gestalt**, brings together durable project storage, a staged shell identity, and bounded AI control-plane research. DWSK supplies local transactional records, a hash-chained journal, verified checkpoints, and quorum recovery. Naked Shell remains identity-only. Synthetic Simulations documents a private control-plane prototype and preserves a sanitized failed experiment as failed.
+
+The OpenSurface migration retains the merged DWSK R4 repairs. Its fresh migration checks cover the fixed Windows unit/self-check suites; they do not reproduce the full fault campaign, publish the private simulation runtime, integrate a conversation logger, or grant agent authority. This family remains distinct from the developmental xOSG-0 research line below.
 
 ## xOSG-0 — developmental orchestration spine
 
@@ -270,7 +279,12 @@ The emphasis is not on claiming these problems are solved. The emphasis is on ma
 ## Repository map
 
 ```text
-prototype/
+xOSG-prototype/
+│
+├── xOSG/                      AI instrumentation family migrated from OpenSurface
+│   ├── amorphous-durable-ai-workspace/  DWSK source and development checks
+│   ├── Naked Shell/            staged identity
+│   └── Synthetic Simulations/  bounded documentation and failed source
 │
 ├── mill-factory/               evidence-bearing batch factory
 │   ├── templates/              ledgers, contracts, decision, and rollback forms
@@ -323,6 +337,8 @@ prototype/
 5. **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** — strict raw substrate and open successor contracts.
 6. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
 7. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
+
+8. **[xOSG instrumentation](xOSG/README.md)** — durable workspace kit, shell identity, and simulation records.
 
 Read each project's validation, source-boundary, and integration documents before treating test results as broader acceptance.
 

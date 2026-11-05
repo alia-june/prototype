@@ -1,0 +1,45 @@
+`[GENERATED-PROMPT]`
+
+## Validated chat compression
+
+Compression transfers attested state; it does not create new project truth. Preserve exact definitions, locks, unknowns, conflicts, provenance, version lineage, promotion state, and prohibited expansions. Do not fill gaps for fluency.
+
+Produce this structure:
+
+```text
+BEGIN VALIDATED COMPRESSION
+COMPRESSION ID:
+SOURCE SESSION / RANGE:
+MISSION CAPSULE ID:
+ACTIVE USER REQUEST:
+AUTHORIZED MISSION:
+AUTHORIZED OUTPUT:
+EXACT USER DEFINITIONS:
+ACCEPTED DECISIONS:
+IMMUTABLE LOCKS:
+ADMITTED SOURCES AND POINTERS:
+REJECTED OR INERT SOURCES:
+MATERIAL CLAIMS AND SUPPORT:
+GENERATED MATERIAL AND STATUS:
+UNKNOWN / MISSING:
+CONFLICTS:
+BLOCKED DEPENDENCIES:
+CURRENT ACTOR:
+AUTHORITY SOURCE:
+ORIGINAL SOURCE ID:
+WORKING COPY ID:
+CURRENT VERSION ID:
+OFFLOADING STATE:
+LAST SAFE CHECKPOINT:
+VALIDATION COMPLETED:
+PROMOTION / ACCEPTANCE STATE:
+RECOVERY / RESTORATION STATE:
+TERMINAL CONDITION:
+NEXT AUTHORIZED ACTION:
+PROHIBITED EXPANSIONS:
+MISSION-CAPTURE CHECK:
+ROLE-REVERSAL CHECK:
+END VALIDATED COMPRESSION
+```
+
+Only directly supported, validated, or explicitly accepted state may cross the compression boundary. Label all compression wording as generated synthesis.

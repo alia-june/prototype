@@ -1,0 +1,45 @@
+{
+  "record_schema": "opensurface.synthetic-simulations.failure-record.v1",
+  "disposition": "failed-defunct",
+  "disposition_authority": "user",
+  "disposition_date": "2026-11-01",
+  "artifact": {
+    "filename": "llm_prompt_hardening_modular_kit_v1_5_candidate.zip",
+    "sha256": "D88D0740CD50011F3EC05C6645329D3C6A766755B0AA7A6B005335CEDE13FFE6",
+    "size_bytes": 7543174,
+    "member_count": 79,
+    "uncompressed_bytes": 8004827,
+    "prepared_date": "2026-09-16"
+  },
+  "intake": {
+    "date": "2026-11-01",
+    "zip_crc": "pass",
+    "unsafe_paths": 0,
+    "manifest_listed_members": 78,
+    "manifest_missing": 0,
+    "manifest_mismatches": 0,
+    "manifest_unlisted_members_excluding_manifest": 0
+  },
+  "fresh_test": {
+    "platform": "Windows",
+    "python": "3.14.4",
+    "command": "python -B -W error -m unittest discover -s tests -v",
+    "total": 43,
+    "passed": 42,
+    "failed": 1,
+    "failure": "test_existing_build_requires_explicit_replace",
+    "expected_mode": "0644",
+    "observed_mode": "0666"
+  },
+  "publication": {
+    "intent": "publish-cleaned-defunct-experiment",
+    "source_included": true,
+    "raw_archive_included": false,
+    "package_license_grant_found_in_original": false,
+    "publication_license": "MIT",
+    "publication_license_authority": "explicit-user-direction",
+    "publication_license_date": "2026-11-01",
+    "repository_visibility": "private",
+    "state": "sanitized-source-published-private-repository"
+  }
+}

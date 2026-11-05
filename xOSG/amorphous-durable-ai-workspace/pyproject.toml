@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "durable-workspace-development-kit"
+version = "0.1.1"
+description = "Durable AI workspace storage with transactional journaling, verified snapshots and quorum recovery"
+readme = "README.md"
+keywords = ["ai", "agent-workspace", "durable-storage", "journaling", "checkpoint", "recovery"]
+requires-python = ">=3.11"
+
+[project.scripts]
+dwsk = "durable_workspace.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
