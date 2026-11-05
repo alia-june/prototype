@@ -27,13 +27,14 @@
 
 ## Overview
 
-This repository contains six related prototype families exploring a common question:
+This repository contains seven related prototype families exploring a common question:
 
 > **How can complex AI-assisted systems remain inspectable when execution, authority, verification, provenance, and failure are distributed across multiple layers?**
 
 | Project | Core question | Current direction |
 | --- | --- | --- |
 | **[xOSG-0](syn-xOSG-0/README.md)** | How can a human-directed AI/software system grow through explicit authority, state, testing, and reduction? | ES-xOSG-7 → bare-metal → v0.2 → v0.3 → v0.4 → Seed |
+| **[Mill Factory](mill-factory/README.md)** | How can experimental source, candidates, evidence, gates, and promotion decisions remain inspectable and non-overwriting? | Portable PowerShell batch factory with fail-closed promotion and ten bounded controls |
 | **[Code-Lexigraph](code-lexigraph/README.md)** | How can programming meanings, requirements, construction rules, code roles, and evidence remain connected as code is reconstructed? | Bounded Python rehydration with bidirectional traces and a restricted construction grammar |
 | **[Etabit Schema](etabit-schema/README.md)** | How can multi-drive referential construction and distributed authority be described without granting execution authority? | Draft JSON Schema, source/reference examples, and explicit unresolved contracts |
 | **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** | How can documents remain reference-native, non-destructive, inspectable, and transformable across formats? | Markdown-first, JSON-governed document transformation with a retained CPU compatibility service |
@@ -53,19 +54,18 @@ These are separate research systems, not one finished product. Each keeps its ow
                                │
                       explicit decision authority
                                │
-                ┌──────────────┴──────────────┐
-                │                             │
-             xOSG-0                     bounded services
-      orchestration / control          /                \
-                │             /           |              \
-                │    Code-Lexigraph   Syn-Etabit       MATH.SC-0
-                │    code semantics   document model   computation
-                │          │              │                 │
-                │    reconstruction   immutable states  deterministic backends
-                │    traces + maps    transformations   exact / interval / native
-                │    bounded checks   receipts          verification + evidence
-                │          │              │                 │
-                └──── provenance / gates / explicit failure ────────────┘
+          ┌────────────┬──────────────┴──────────────┐
+          │            │                             │
+       xOSG-0      Mill Factory                bounded services
+ orchestration     evidence batches           /       |        \
+   / control       gates + decisions          /        |         \
+          │            │              Code-Lexigraph Syn-Etabit MATH.SC-0
+          │            │              code semantics  documents   computation
+          │            │                    │             │          │
+          │            │              reconstruction transformations verification
+          │            │              traces + maps    receipts    + evidence
+          │            │                    │             │          │
+          └──────── provenance / gates / explicit failure ────────────┘
 ```
 
 This is a conceptual map, not a dependency graph.
@@ -97,6 +97,33 @@ Seed
 Research themes include layered human/operator authority, explicit workflow state, deterministic offload, provenance-aware transitions, fail-closed behavior, fuzzy/adversarial pressure, and extracting a minimum justified kernel only after developmental evidence exists.
 
 The documented v0.4 fuzzy stage records **107 / 107 bounded cases passing with no crashes or timeouts**. The source ledger also preserves historical uncertainty: reconstructed evidence is not silently relabeled as recovered original source.
+
+---
+
+## Mill Factory — evidence-bearing work batches
+
+**[Open project →](mill-factory/README.md)** · **[Validation →](mill-factory/VALIDATION.md)** · **[Provenance →](mill-factory/PROVENANCE.md)**
+
+Mill Factory creates dated, non-overwriting experimental batches that keep
+source, generated candidates, validation evidence, packaging, live results,
+and promotion decisions separate.
+
+```text
+intake → source freeze → candidate → static → compiler → package → live
+                                                                   │
+                                                                   v
+                                              hold / revise / reject / promote
+```
+
+Every batch begins at `HOLD` with pending gates. Non-pending gate results
+require in-batch evidence, promotion requires all gates to pass plus explicit
+approval evidence, and promoted batches become immutable.
+
+The standalone repository replay records **10 / 10 bounded controls passing**,
+including portable default output, tamper detection, unresolved-reference
+refusal, premature-promotion refusal, fully gated promotion, and
+post-promotion immutability. These controls establish factory behavior only;
+they do not validate the semantic or runtime claims of a particular batch.
 
 ---
 
@@ -245,6 +272,10 @@ The emphasis is not on claiming these problems are solved. The emphasis is on ma
 ```text
 prototype/
 │
+├── mill-factory/               evidence-bearing batch factory
+│   ├── templates/              ledgers, contracts, decision, and rollback forms
+│   └── tests/                  positive and negative factory controls
+│
 ├── code-lexigraph/             meaning-to-code reconstruction prototype
 │   ├── code_lexigraph/         dependency-free Python implementation
 │   ├── examples/               retained bundle and reference program
@@ -286,11 +317,12 @@ prototype/
 ## Start here
 
 1. **[xOSG-0](syn-xOSG-0/README.md)** — developmental and authority model.
-2. **[Code-Lexigraph](code-lexigraph/README.md)** — bidirectional meaning-to-code reconstruction.
-3. **[Etabit Schema](etabit-schema/README.md)** — multi-drive construction and distributed-authority schema research.
-4. **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** — strict raw substrate and open successor contracts.
-5. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
-6. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
+2. **[Mill Factory](mill-factory/README.md)** — evidence-bearing batches and fail-closed promotion.
+3. **[Code-Lexigraph](code-lexigraph/README.md)** — bidirectional meaning-to-code reconstruction.
+4. **[Etabit Schema](etabit-schema/README.md)** — multi-drive construction and distributed-authority schema research.
+5. **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** — strict raw substrate and open successor contracts.
+6. **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** — reference-native document model.
+7. **[MATH.SC-0](xosg-0-math-sc0/README.md)** — deterministic computation architecture.
 
 Read each project's validation, source-boundary, and integration documents before treating test results as broader acceptance.
 

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "truth_state": "GENERATED_SYNTHESIS",
+  "authority": "WORKING_CONTRACT",
+  "allowed_reference_types": [
+    "CONTINUING",
+    "VERSION_PINNED"
+  ],
+  "allowed_resolution_states": [
+    "PENDING_DEFINITION",
+    "RESOLVED",
+    "MISSING",
+    "AMBIGUOUS",
+    "CONFLICT",
+    "STALE"
+  ],
+  "rules": {
+    "identity_is_not_authority": true,
+    "version_pinned_requires_digest": true,
+    "resolved_requires_interpretation_context": true
+  },
+  "references": []
+}
