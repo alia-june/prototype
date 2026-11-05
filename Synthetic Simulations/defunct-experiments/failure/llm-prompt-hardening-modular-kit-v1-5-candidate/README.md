@@ -2,7 +2,7 @@
 
 **Disposition: failed and defunct**
 
-> **Public relocation — 2026-11-05:** the sanitized record and source are now public under explicit migration approval. The private-publication statements below, `artifact.json`, and the source publication reports retain their original historical context. The source subtree is byte-preserved, including its manifest, known defect, and unresolved or contradictory historical statements. Current licensing and publication disposition are explained in the [migration record](../../../../MIGRATION.md).
+> **Public relocation — 2026-11-05:** the sanitized record and source are now public under explicit migration approval. The private-publication statements below, `artifact.json`, and the source publication reports retain their original historical context. The source subtree is byte-preserved, including its manifest, known defect, and unresolved or contradictory historical statements. Current licensing and publication disposition are explained in the [migration record](../../../../docs/xosg/MIGRATION.md).
 
 This is a sanitized failure record and source publication for
 `llm_prompt_hardening_modular_kit_v1_5_candidate.zip`. It preserves the
@@ -30,7 +30,7 @@ private.
 | Sanitized source import | Published under MIT on 2026-11-01 |
 
 The original bytes remain in private project custody. The raw archive is not
-part of the OpenSurface tree; [`source/`](source/) is the cleaned publication
+part of the OpenSurface tree; [`source/`](source) is the cleaned publication
 layout rather than the recursive intake bundle.
 
 ## What Was Observed
@@ -114,7 +114,7 @@ The repository publication intentionally excludes:
   are replaced by publication-scoped records. Historical generated audits are
   retained and clearly labeled.
 
-The sanitized [`source/`](source/) directory includes the assembler,
+The sanitized [`source/`](source) directory includes the assembler,
 configuration, modules, templates, heuristics, behavioral vectors, substantive
 tests, historical generated audits, omission receipts, sanitation report, and
 its own verified manifest. Embedded instructions from the candidate were

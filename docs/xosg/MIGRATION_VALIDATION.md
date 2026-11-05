@@ -30,3 +30,11 @@ The defunct experiment remains failed. Its original Windows intake result is 42/
 The source cleanup candidate retains all 36 non-xOSG files, with six navigation/licensing/provenance/validation/validator edits. Its repository validator passes 17/17. Camera Obscura shader identities and the 11-entry shader inventory are unchanged. This structural check does not requalify live shader behavior.
 
 Public remote readback and the later OpenSurface cleanup are recorded in the separate local closure record after publication. A passing local check alone is not evidence that either remote operation has completed.
+
+## Root layout qualification — 2026-11-05
+
+The three project directories now sit at the repository root and the shared records at `docs/xosg/`. All executable source and the entire 58-file sanitized failed-source subtree retain their pre-layout bytes. Documentation links, the DWSK source-install command and dependent inventory are adjusted; original migration paths and digests remain historical, with current mapping added to the manifest.
+
+Fresh checks at the root-level location passed 17 unit tests and seven self-checks in each actual ordinary and optimized Python mode: 48 checks total. Named sets, exact counts and owned cleanup were verified. OpenSurface forwarding-link updates passed its 17 repository checks. The combined execution took 9.638 seconds within 300 seconds. These are local bounded source checks; they do not reproduce the full R4 or failed-experiment campaigns or create a binary release.
+
+Relative links, both source inventories, publication privacy patterns, original copyright/license bytes and final Git tree preservation are checked before upload. Remote PR/merge readback is recorded separately in the private closure packet. Prior migration counts above describe that earlier layout.

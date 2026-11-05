@@ -35,7 +35,7 @@ The runtime has no third-party dependencies. Source installation uses setuptools
 From the alia-june/xOSG-prototype repository root, in PowerShell:
 
 ```powershell
-cd xOSG/amorphous-durable-ai-workspace
+cd amorphous-durable-ai-workspace
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install .
 $dwskPython = (Resolve-Path .\.venv\Scripts\python.exe).Path
@@ -225,7 +225,7 @@ Hashes and agreement establish the stated consistency checks, not authorship or 
 
 The adopted runtime, checker and repaired process helpers passed the complete 244-case R4 qualification across ordinary and optimized Python: 24 recovery, 32 value-admission, 16 worker-lifecycle, 26 checker-control, 17 unit and seven self-check cases per mode. The added development runner separately passed the existing 17 units and seven self-checks in both modes (48 overlapping checks). These counts overlap and are not independent campaigns.
 
-The recovery controls include real owned interruptions and competing workers, plus finite injected database/filesystem failures. Qualified executable bytes were verified against the review tree. The complete raw records remain outside the repository; the bounded result is recorded in [VALIDATION_REPORT.md](VALIDATION_REPORT.md) and the repository [validation ledger](../MIGRATION_VALIDATION.md).
+The recovery controls include real owned interruptions and competing workers, plus finite injected database/filesystem failures. Qualified executable bytes were verified against the review tree. The complete raw records remain outside the repository; the bounded result is recorded in [VALIDATION_REPORT.md](VALIDATION_REPORT.md) and the repository [validation ledger](../docs/xosg/MIGRATION_VALIDATION.md).
 
 These are source checks, not rebuilt-wheel checks. The runtime remains standard-library-only; owned development execution is Windows-qualified. Physical power-loss durability, hostile filesystem races, external-tool coordination and application/logger integration are outside the claim.
 
@@ -254,12 +254,12 @@ Read the [source-validation basis](VALIDATION_REPORT.md) and [installed build re
 
 | Location | Contents |
 | --- | --- |
-| [src/durable_workspace/](src/durable_workspace/) | Workspace implementation, canonical profile, formats, and CLI |
-| [tests/](tests/) | Included unit and readiness checks |
+| [src/durable_workspace/](src/durable_workspace) | Workspace implementation, canonical profile, formats, and CLI |
+| [tests/](tests) | Included unit and readiness checks |
 | [validate.py](validate.py) | Included self-validation program |
-| [examples/](examples/) | Small Python API example |
-| [schemas/](schemas/) | Snapshot manifest schema |
-| [templates/workspace-control/](templates/workspace-control/) | Starting files for STATE, TODO, LOG, ERROR_LOG, DECISIONS, and workspace metadata |
+| [examples/](examples) | Small Python API example |
+| [schemas/](schemas) | Snapshot manifest schema |
+| [templates/workspace-control/](templates/workspace-control) | Starting files for STATE, TODO, LOG, ERROR_LOG, DECISIONS, and workspace metadata |
 | [MODULE_BOUNDARY.md](MODULE_BOUNDARY.md) | Persistence boundary |
 | [DEVELOPMENT_GUIDANCE.md](DEVELOPMENT_GUIDANCE.md) | Integration and source-preservation guidance |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
@@ -279,4 +279,4 @@ From the project directory, after source installation:
 
 Keep databases, snapshots, raw logs, and temporary environments outside the source export. Record source-validation results separately from installed-package checks and preserve failures when reviewing a later successful run.
 
-Licensing and attribution continue under the preserved OpenSurface [MIT license and copyright notice](../LICENSE). The [migration record](../MIGRATION.md) records source lineage and the original aggregate license annotation. Preserve applicable notices when redistributing source.
+Licensing and attribution continue under the preserved OpenSurface [MIT license and copyright notice](../docs/xosg/LICENSE). The [migration record](../docs/xosg/MIGRATION.md) records source lineage and the original aggregate license annotation. Preserve applicable notices when redistributing source.
