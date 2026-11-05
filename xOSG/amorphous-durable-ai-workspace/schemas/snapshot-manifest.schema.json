@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:dwsk:snapshot-manifest:1",
+  "type": "object",
+  "required": ["format", "generation", "created_at", "logical_digest", "representations"],
+  "properties": {
+    "format": {"const": "DWSK-SNAPSHOT-1"},
+    "generation": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "minLength": 1},
+    "logical_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "representations": {
+      "type": "object",
+      "required": ["sqlite", "jsonl", "xml"],
+      "additionalProperties": false,
+      "properties": {
+        "sqlite": {"$ref": "#/$defs/rep"},
+        "jsonl": {"$ref": "#/$defs/rep"},
+        "xml": {"$ref": "#/$defs/rep"}
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "rep": {
+      "type": "object",
+      "required": ["file", "sha256", "size"],
+      "properties": {
+        "file": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "size": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    }
+  }
+}

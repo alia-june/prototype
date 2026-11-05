@@ -1,0 +1,27 @@
+{
+  "package": "durable-workspace-development-kit",
+  "version": "0.1.1",
+  "status": "PASS",
+  "python_requirement": ">=3.11",
+  "tested_python": "3.14",
+  "tested_os": "Windows",
+  "source_sdist_rebuild_payload_identical": true,
+  "artifacts": [
+    {
+      "filename": "durable_workspace_development_kit-0.1.1-py3-none-any.whl",
+      "size": 14969,
+      "sha256": "b200272e8710f3ff1c6f3fe6862772109d0939a114ba49a5c9d46cce1f2d2065"
+    },
+    {
+      "filename": "durable_workspace_development_kit-0.1.1.tar.gz",
+      "size": 27773,
+      "sha256": "05ae7f3265fae0f8ae06b5d837ad05584157ff1ad54350c31a19602650aa4fba"
+    },
+    {
+      "filename": "durable-workspace-development-kit-0.1.1-source.zip",
+      "size": 37597,
+      "sha256": "68e3a00da7af6f896ca1c9eeb1975eebc6dd08954677a6e88299ad3687e468fd"
+    }
+  ],
+  "publication_performed": false
+}
