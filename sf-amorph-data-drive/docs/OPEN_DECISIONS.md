@@ -2,7 +2,7 @@
 
 These decisions block a complete successor architecture or implementation.
 
-1. **sf-UUID contract** — format, width, issuance, uniqueness, duplicates, collisions, copy identity, replacement identity, and matching without drive UUIDs.
+1. **sf-UUID contract — proposed, not closed.** The [v0.1 member identity proposal](../contracts/SF_UUID_IDENTITY_CONTRACT_v0.1_PROPOSED.md) defines a review candidate for format, width, issuance, admission-domain checks, duplicates, collisions, copy identity, replacement identity, generation continuity, and matching without drive UUIDs. It remains open until explicit owner acceptance or lock. Physical topology, bitmap mapping, attestation/authority mechanisms, optional drive identity, and any future 64-bit mapping remain outside it.
 2. **Storage topology** — ID, data, and metadata drive roles and their relationship to D0/D1/D2 at every recursive level.
 3. **Bitmap grammar** — mapping, order, repetition, multiplicity, conflicts, malformed references, bounds, and deterministic reconstruction.
 4. **x/y width contract** — units, ranges, packing, padding, alignment, canonical form, exceptional values, and record ownership.

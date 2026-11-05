@@ -3,6 +3,8 @@
 Date transcribed for public export: 2026-11-04  
 Status: working direction; not a new specification lock.
 
+Review update: 2026-11-05. The [sf-UUID member identity contract v0.1](../contracts/SF_UUID_IDENTITY_CONTRACT_v0.1_PROPOSED.md) is the current bounded proposal for member identity. It is not accepted or locked by publication.
+
 ## Baseline
 
 Locked v0.3 remains the current supplied baseline. Locked v0.2 remains historical. No v0.4 exists.
@@ -13,7 +15,7 @@ The baseline separates D0 raw existence, D1 relation/interpretation, and D2 comp
 
 | Topic | Current direction | Open boundary |
 | --- | --- | --- |
-| Member identifier | sf-UUID is needed now. | Format, width, issuance, scope, collision/duplicate handling, and copy/replacement matching. |
+| Member identifier | sf-UUID is needed now; v0.1 proposes a 128-bit RFC 9562 UUIDv4 profile and member-identity continuity rules. | Proposal awaits owner acceptance or lock; topology, bitmap, attestation, and authority mechanisms remain separate. |
 | Separate 64-bit identifier | Possible later addition. | Not a mandatory current second key; no current mapping requirement. |
 | Drive sf-UUID | Optional and discouraged. | Matching must not require universal drive UUIDs. |
 | Touple / gestalt / gesple | May carry identity, value/width information, datatype, and data. | Identity transition and record structure. |
