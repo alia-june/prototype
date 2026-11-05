@@ -1,0 +1,1868 @@
+{
+  "schema": "XOSG-MIGRATION-1",
+  "date": "2026-11-05",
+  "source_repository": "dastardlyrat/OpenSurface",
+  "source_commit": "276957db0f374edf6fc02b6919e2ec42c8960290",
+  "source_file_count": 100,
+  "files": [
+    {
+      "path": "xOSG/Naked Shell/README.md",
+      "size": 617,
+      "git_blob": "396adafc5dbe4021fc2b4970b712e59081912383",
+      "sha256": "503383f6374abfe3ed19348fb88b66c78cb7b1f5b1f7ffe62a99ebcffd6e344d",
+      "destination_sha256": "503383f6374abfe3ed19348fb88b66c78cb7b1f5b1f7ffe62a99ebcffd6e344d",
+      "destination_git_blob": "396adafc5dbe4021fc2b4970b712e59081912383",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/README.md",
+      "size": 1069,
+      "git_blob": "169f22cae092182ded7e99426c483fe8373bfbcf",
+      "sha256": "9c702feb88a0db4dc0026ccdd9c3f242b7d66d3afef3a30840c8a559c0b30c3a",
+      "destination_sha256": "96a463a369b32022d20a90aabdb5f73093259f676af1fd554380d6d0d9cefa21",
+      "destination_git_blob": "726c39d7ed4c6af61075837073e6adaef64436db",
+      "byte_preserved": false,
+      "change_reason": "Relocation/current-publication documentation or dependent checksum inventory only"
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/README.md",
+      "size": 14120,
+      "git_blob": "0387949092a95a1e1c38bdc62d5239faada0455c",
+      "sha256": "3878595581ef1a98f25a11a667c3dad7adc4d4ed45d3afcb075e99b79a370953",
+      "destination_sha256": "e56fc3f44fe8cfa6b6486efe4ed9fc3d884173d8c4682ded285a9014c49c5d08",
+      "destination_git_blob": "c80564424e2eab20b15ca93ce843c25adc06f1c0",
+      "byte_preserved": false,
+      "change_reason": "Relocation/current-publication documentation or dependent checksum inventory only"
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/README.md",
+      "size": 6298,
+      "git_blob": "dce240e6a4a2ab71324a12170235da3bf5df43af",
+      "sha256": "4bbd438b5a7d6725b3c152ed9798951424702c0c0a3fe1c567498f82c6d33aa0",
+      "destination_sha256": "33a84576a9d375cc291b1b251492f49d78abcc7859b90b177f18d1e3e74c77d5",
+      "destination_git_blob": "e250fc1ae082d8bc9e20775561171575a45c2294",
+      "byte_preserved": false,
+      "change_reason": "Relocation/current-publication documentation or dependent checksum inventory only"
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/artifact.json",
+      "size": 1470,
+      "git_blob": "2a39e436fe7c13a681e0c2b62809db3e030042d4",
+      "sha256": "c7cd0fc120a82de300ed4b784057058bd1379f2229761b2f6b917dc83a6de4fa",
+      "destination_sha256": "c7cd0fc120a82de300ed4b784057058bd1379f2229761b2f6b917dc83a6de4fa",
+      "destination_git_blob": "2a39e436fe7c13a681e0c2b62809db3e030042d4",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/CHANGELOG.md",
+      "size": 4911,
+      "git_blob": "3347196e125a378c5260446906d262e3153b00dd",
+      "sha256": "d1d88184f4414dee472ab29ef3889cdb124b1ae63e46302c721c3013d75a772b",
+      "destination_sha256": "d1d88184f4414dee472ab29ef3889cdb124b1ae63e46302c721c3013d75a772b",
+      "destination_git_blob": "3347196e125a378c5260446906d262e3153b00dd",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/LICENSE",
+      "size": 1099,
+      "git_blob": "49be9aaccb5c46a5580d4d45d657be6da3a2eab6",
+      "sha256": "7bfea4871f65e305755e00fa0955234bc1114d349889e1876609e5b4e3ca8c71",
+      "destination_sha256": "7bfea4871f65e305755e00fa0955234bc1114d349889e1876609e5b4e3ca8c71",
+      "destination_git_blob": "49be9aaccb5c46a5580d4d45d657be6da3a2eab6",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/MANIFEST.sha256",
+      "size": 5571,
+      "git_blob": "38df978fe7c5c9778a40e0cb60bd509ad143dc41",
+      "sha256": "f353969b477e875e93373bc5c8e362ee240d0afa620867b1b79619f16f57cf8c",
+      "destination_sha256": "f353969b477e875e93373bc5c8e362ee240d0afa620867b1b79619f16f57cf8c",
+      "destination_git_blob": "38df978fe7c5c9778a40e0cb60bd509ad143dc41",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/PROVENANCE.md",
+      "size": 1438,
+      "git_blob": "0a131ec9396f2f67ead8bea30b9040b9f09fa094",
+      "sha256": "1cf7c9f587e28970cfa5ef3b08cffd2f6d01169a596de93937f79a9bec94159c",
+      "destination_sha256": "1cf7c9f587e28970cfa5ef3b08cffd2f6d01169a596de93937f79a9bec94159c",
+      "destination_git_blob": "0a131ec9396f2f67ead8bea30b9040b9f09fa094",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/PUBLICATION_GATE.md",
+      "size": 1254,
+      "git_blob": "cea6daf5ebd6144afd2798c6a86950686ae15a61",
+      "sha256": "5202c256c279e5fd04e2bc5a63ca0f4ca7a3c78693b809638291f5edcba0ef1c",
+      "destination_sha256": "5202c256c279e5fd04e2bc5a63ca0f4ca7a3c78693b809638291f5edcba0ef1c",
+      "destination_git_blob": "cea6daf5ebd6144afd2798c6a86950686ae15a61",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/README.md",
+      "size": 2676,
+      "git_blob": "f6e912b60ef2663fb06a520421a4e2dd2fa47023",
+      "sha256": "4caeb49319d337004836b1ba0a01981c0f659256728ecd9e8ae4f047a800277a",
+      "destination_sha256": "4caeb49319d337004836b1ba0a01981c0f659256728ecd9e8ae4f047a800277a",
+      "destination_git_blob": "f6e912b60ef2663fb06a520421a4e2dd2fa47023",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SANITIZATION_REPORT.md",
+      "size": 1670,
+      "git_blob": "766220d04899778400e7aa73e058e9ea4e05b73f",
+      "sha256": "61e6a7c3834552942995addf39aa4dcb64b99f5b80f767615212b2d6671cc756",
+      "destination_sha256": "61e6a7c3834552942995addf39aa4dcb64b99f5b80f767615212b2d6671cc756",
+      "destination_git_blob": "766220d04899778400e7aa73e058e9ea4e05b73f",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SELECTOR_PROMPT.md",
+      "size": 3672,
+      "git_blob": "d72c7a08525462c2d54ed4302d1dec2a300ebbec",
+      "sha256": "e078a28c1a1f5e4de4098f20b401705d8a3d1a943d24c186f2fe5dac4a94bf10",
+      "destination_sha256": "e078a28c1a1f5e4de4098f20b401705d8a3d1a943d24c186f2fe5dac4a94bf10",
+      "destination_git_blob": "d72c7a08525462c2d54ed4302d1dec2a300ebbec",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SOURCE_RECEIPTS.json",
+      "size": 3405,
+      "git_blob": "bea17aa62597a5cbea454743441111a417de383e",
+      "sha256": "ebd53a574c90b370e8a4336b9215d0118387883eaf151518b85336b704739252",
+      "destination_sha256": "ebd53a574c90b370e8a4336b9215d0118387883eaf151518b85336b704739252",
+      "destination_git_blob": "bea17aa62597a5cbea454743441111a417de383e",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/THIRD_PARTY_NOTICES.md",
+      "size": 1486,
+      "git_blob": "b93d003235c9242d59b97a1a9e8c321fc17ff704",
+      "sha256": "a012ce1ad1a27af19ea325917028a1d823d4bedcb259612e2164c7e7db75d928",
+      "destination_sha256": "a012ce1ad1a27af19ea325917028a1d823d4bedcb259612e2164c7e7db75d928",
+      "destination_git_blob": "b93d003235c9242d59b97a1a9e8c321fc17ff704",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/VALIDATION.md",
+      "size": 1439,
+      "git_blob": "0fb63d9ff3e3e4caa0147ded0cd37d1c623e9529",
+      "sha256": "934f3812ef508f0bfe4e59b916eb439be343423b8feccf77f54a9d61df715070",
+      "destination_sha256": "934f3812ef508f0bfe4e59b916eb439be343423b8feccf77f54a9d61df715070",
+      "destination_git_blob": "0fb63d9ff3e3e4caa0147ded0cd37d1c623e9529",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/VARIABLES.md",
+      "size": 6785,
+      "git_blob": "0377a654d4b7da672feeeae4ef73a0ca08c2d8bc",
+      "sha256": "c884a2dca34ef1b71f5c46495ccc0cd3aa63925a7fc4144b478c526aaba2fb2e",
+      "destination_sha256": "c884a2dca34ef1b71f5c46495ccc0cd3aa63925a7fc4144b478c526aaba2fb2e",
+      "destination_git_blob": "0377a654d4b7da672feeeae4ef73a0ca08c2d8bc",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/assembler.py",
+      "size": 16992,
+      "git_blob": "31f58ea2973847d0b38d8acb3b7ef2bc4bd658b3",
+      "sha256": "9cfcc53fd2048d75c5fd4f59e8678152afe7c83bddac77e454d97f5bc5dbcbbe",
+      "destination_sha256": "9cfcc53fd2048d75c5fd4f59e8678152afe7c83bddac77e454d97f5bc5dbcbbe",
+      "destination_git_blob": "31f58ea2973847d0b38d8acb3b7ef2bc4bd658b3",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/builds/README.md",
+      "size": 197,
+      "git_blob": "f87978fdca0c71792b4f3d66dc74bafc7cd8731a",
+      "sha256": "1e8e79eca3e3dc066c4d8225cf7d69473c1c9ce8aa8de54181b2b80b04c42954",
+      "destination_sha256": "1e8e79eca3e3dc066c4d8225cf7d69473c1c9ce8aa8de54181b2b80b04c42954",
+      "destination_git_blob": "f87978fdca0c71792b4f3d66dc74bafc7cd8731a",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/config.json",
+      "size": 11332,
+      "git_blob": "1b3bdeb2e690c9c72d9d33f03ff4b46c58c5c34b",
+      "sha256": "d99e0ad6f99aca69ac189e8582bb6a3c46941c97187de07640660b39d07665a9",
+      "destination_sha256": "d99e0ad6f99aca69ac189e8582bb6a3c46941c97187de07640660b39d07665a9",
+      "destination_git_blob": "1b3bdeb2e690c9c72d9d33f03ff4b46c58c5c34b",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/AGE_GATE_APPLICATION_AUDIT.md",
+      "size": 1730,
+      "git_blob": "d501c71f3dd093f2a21004beb2ed2937cbc92b07",
+      "sha256": "f4c5954986f8ee8cd3afb7d39237bc9a896b1c4f4056ca7580b5ac7ac1599e3a",
+      "destination_sha256": "f4c5954986f8ee8cd3afb7d39237bc9a896b1c4f4056ca7580b5ac7ac1599e3a",
+      "destination_git_blob": "d501c71f3dd093f2a21004beb2ed2937cbc92b07",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/AUDIT_v1_0_TO_v1_1.md",
+      "size": 2426,
+      "git_blob": "88a6a34a14db865ab96eb6248dbe3bb6f269ef8a",
+      "sha256": "ea6e62c434536a3184c6086aa37d41d5bc4be89d14e5b29615261d742bd33e38",
+      "destination_sha256": "ea6e62c434536a3184c6086aa37d41d5bc4be89d14e5b29615261d742bd33e38",
+      "destination_git_blob": "88a6a34a14db865ab96eb6248dbe3bb6f269ef8a",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/BEST_PRACTICES_APPLICATION_AUDIT.md",
+      "size": 4087,
+      "git_blob": "50f3a06890ff6d6aaa18e3c2586cd0c84a785889",
+      "sha256": "5587a81d920e4356557a73587c8f655793c8a9a48de7a6346f2799148d1f5773",
+      "destination_sha256": "5587a81d920e4356557a73587c8f655793c8a9a48de7a6346f2799148d1f5773",
+      "destination_git_blob": "50f3a06890ff6d6aaa18e3c2586cd0c84a785889",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/ENGINE_INTEGRATION_AUDIT.md",
+      "size": 2031,
+      "git_blob": "c0614a41e4cdb63f70e923ec2a61ea589baed07d",
+      "sha256": "e13f1baa43c9d4ae85add56ca5147b539e618ff798064d4b5555255ac8b98017",
+      "destination_sha256": "e13f1baa43c9d4ae85add56ca5147b539e618ff798064d4b5555255ac8b98017",
+      "destination_git_blob": "c0614a41e4cdb63f70e923ec2a61ea589baed07d",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/README.md",
+      "size": 319,
+      "git_blob": "03215de7f5c455e473ed07e3d2cf75502a71a83a",
+      "sha256": "2157c0b8f78c5706a3944738d9255a508a43a1e8e56a1a421d223a169ebc9232",
+      "destination_sha256": "2157c0b8f78c5706a3944738d9255a508a43a1e8e56a1a421d223a169ebc9232",
+      "destination_git_blob": "03215de7f5c455e473ed07e3d2cf75502a71a83a",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/SOURCE_APPLICATION_AUDIT.md",
+      "size": 2054,
+      "git_blob": "f7afb54e593e21c82fa713456a36016d38b6ccf9",
+      "sha256": "d7e4e0f50928d6b867569827be2312c4a594ca9d98731e28c98062ab9e551d40",
+      "destination_sha256": "d7e4e0f50928d6b867569827be2312c4a594ca9d98731e28c98062ab9e551d40",
+      "destination_git_blob": "f7afb54e593e21c82fa713456a36016d38b6ccf9",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/age_gate_selection.md",
+      "size": 2432,
+      "git_blob": "d4c30e01070aca1d0b1fe715c2b6355453994b24",
+      "sha256": "f41bd12c5ea91d112609d55e81c3c53ea61c97a3ee471e85445d9cb30547e264",
+      "destination_sha256": "f41bd12c5ea91d112609d55e81c3c53ea61c97a3ee471e85445d9cb30547e264",
+      "destination_git_blob": "d4c30e01070aca1d0b1fe715c2b6355453994b24",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/external_engine_integration.md",
+      "size": 4055,
+      "git_blob": "6234b03aaa522ac9d8ff17d04eac73928f69ab8d",
+      "sha256": "fdeb2bb30c2afdce84324c6e1b3957158ffddde37f87960ccbf455a491f6588c",
+      "destination_sha256": "fdeb2bb30c2afdce84324c6e1b3957158ffddde37f87960ccbf455a491f6588c",
+      "destination_git_blob": "6234b03aaa522ac9d8ff17d04eac73928f69ab8d",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/offloading_heuristics.md",
+      "size": 6135,
+      "git_blob": "3563cef93255c17c76e5e9f85016eab9adf2cdfc",
+      "sha256": "2b85cf12b8c6b6e6e403cdabcc6405bba9265eba19e0f11c1bbf6d4f4f6f9517",
+      "destination_sha256": "2b85cf12b8c6b6e6e403cdabcc6405bba9265eba19e0f11c1bbf6d4f4f6f9517",
+      "destination_git_blob": "3563cef93255c17c76e5e9f85016eab9adf2cdfc",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/selection_matrix.md",
+      "size": 3990,
+      "git_blob": "66f56805227dedd479a6ae2a10cd07de912d2b4a",
+      "sha256": "5edd98ba0d7dab1bf7022b31c4edcadccc3fbc7850625a39ece811d524ead78a",
+      "destination_sha256": "5edd98ba0d7dab1bf7022b31c4edcadccc3fbc7850625a39ece811d524ead78a",
+      "destination_git_blob": "66f56805227dedd479a6ae2a10cd07de912d2b4a",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/state_transition_selection.md",
+      "size": 2240,
+      "git_blob": "8951c5d54027fb2f94af28e7258aa9557d38998b",
+      "sha256": "51fbd64cd9cdfbe02ced8b08e0c7a684dd8c949e49d15b27a032b8980821bb37",
+      "destination_sha256": "51fbd64cd9cdfbe02ced8b08e0c7a684dd8c949e49d15b27a032b8980821bb37",
+      "destination_git_blob": "8951c5d54027fb2f94af28e7258aa9557d38998b",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/00_resident_kernel.md",
+      "size": 3069,
+      "git_blob": "c1fe92f7355dcebd8e63d7d8837f610b93036e8c",
+      "sha256": "36f81cf0f649529feb0ce65f5edb24256e3fa9b0ec90eae2d03fd0917e766e91",
+      "destination_sha256": "36f81cf0f649529feb0ce65f5edb24256e3fa9b0ec90eae2d03fd0917e766e91",
+      "destination_git_blob": "c1fe92f7355dcebd8e63d7d8837f610b93036e8c",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/01_source_and_generation.md",
+      "size": 1818,
+      "git_blob": "837d7072d9c85140cc57e821558b1b901969fc29",
+      "sha256": "0521ae1e6b4b148a2d0db15b6dcd73fa4dea0627e4b597f59732fe2a669da6c4",
+      "destination_sha256": "0521ae1e6b4b148a2d0db15b6dcd73fa4dea0627e4b597f59732fe2a669da6c4",
+      "destination_git_blob": "837d7072d9c85140cc57e821558b1b901969fc29",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/02_memory_claims.md",
+      "size": 1398,
+      "git_blob": "fe6477e62a7423bed3d6f1f5dc612d3f08962c32",
+      "sha256": "3e8cc28c84fffde09465e26f73f9d0227498835c69c443df5b76eae9516556a0",
+      "destination_sha256": "3e8cc28c84fffde09465e26f73f9d0227498835c69c443df5b76eae9516556a0",
+      "destination_git_blob": "fe6477e62a7423bed3d6f1f5dc612d3f08962c32",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/03_mission_actor.md",
+      "size": 1472,
+      "git_blob": "f1e35d0e1ad052d89634323ae06e16d50fbe930a",
+      "sha256": "55f7d292c813142a1561c68f5b05c9ceb42d121cbfdc0b7279336e684b9a9e6c",
+      "destination_sha256": "55f7d292c813142a1561c68f5b05c9ceb42d121cbfdc0b7279336e684b9a9e6c",
+      "destination_git_blob": "f1e35d0e1ad052d89634323ae06e16d50fbe930a",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/04_compression.md",
+      "size": 1210,
+      "git_blob": "fa54885bcd4cba3156cef0e5d4553ca9f41e6b01",
+      "sha256": "a5bf9e0d1c781d010a10a77ccc7e80834c29c68287553c700c936599c1899784",
+      "destination_sha256": "a5bf9e0d1c781d010a10a77ccc7e80834c29c68287553c700c936599c1899784",
+      "destination_git_blob": "fa54885bcd4cba3156cef0e5d4553ca9f41e6b01",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/05_handoff.md",
+      "size": 1333,
+      "git_blob": "e99992a9c0d9ba181cd56656bf958478088c874b",
+      "sha256": "a93c7836941598093e90147ef373d02f3b9fd550488be54138fff1559bcd32b5",
+      "destination_sha256": "a93c7836941598093e90147ef373d02f3b9fd550488be54138fff1559bcd32b5",
+      "destination_git_blob": "e99992a9c0d9ba181cd56656bf958478088c874b",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/06_copy_version.md",
+      "size": 1458,
+      "git_blob": "347ba28d1f492e973bc03bd91d6b9515e9e32a78",
+      "sha256": "027c1c7fa07a8622d0644346a1b1c27708b716cafe848a38497ee823bce83ad2",
+      "destination_sha256": "027c1c7fa07a8622d0644346a1b1c27708b716cafe848a38497ee823bce83ad2",
+      "destination_git_blob": "347ba28d1f492e973bc03bd91d6b9515e9e32a78",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/07_research.md",
+      "size": 875,
+      "git_blob": "00d148003aad7d170133387b3a34d21fb4eb63ac",
+      "sha256": "8813ff1cc56abdceb3d4aa34c0ec3d7b579d6eadd62acd31568bcc92cecefff6",
+      "destination_sha256": "8813ff1cc56abdceb3d4aa34c0ec3d7b579d6eadd62acd31568bcc92cecefff6",
+      "destination_git_blob": "00d148003aad7d170133387b3a34d21fb4eb63ac",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/08_action_authority.md",
+      "size": 1163,
+      "git_blob": "ff91dfb68305f07fcc47d4b20b43a43cf42f37ea",
+      "sha256": "bc20a6afcf2d59b4a596ae266951f5ca7ed3c1c994f5fd7fb0de481a73b04842",
+      "destination_sha256": "bc20a6afcf2d59b4a596ae266951f5ca7ed3c1c994f5fd7fb0de481a73b04842",
+      "destination_git_blob": "ff91dfb68305f07fcc47d4b20b43a43cf42f37ea",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/09_egress_validation.md",
+      "size": 1626,
+      "git_blob": "0e84210bb36a7cb1d93a9877f8ea5466d753e964",
+      "sha256": "3e24a3cbffaaebc4c8712336a1b5b0d2ad43dfddfe2eb1e91acfaee5a513d5fc",
+      "destination_sha256": "3e24a3cbffaaebc4c8712336a1b5b0d2ad43dfddfe2eb1e91acfaee5a513d5fc",
+      "destination_git_blob": "0e84210bb36a7cb1d93a9877f8ea5466d753e964",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/10_bare_metal.md",
+      "size": 2082,
+      "git_blob": "758113014e3577a64824183a1eba775dd62e8082",
+      "sha256": "1a8e4548d163b37f2cc640ab1884a44a325689242d74e6affee8b08ce3b53f77",
+      "destination_sha256": "1a8e4548d163b37f2cc640ab1884a44a325689242d74e6affee8b08ce3b53f77",
+      "destination_git_blob": "758113014e3577a64824183a1eba775dd62e8082",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/11_offloading.md",
+      "size": 3910,
+      "git_blob": "52e0e092e878be2f7fc753a2adba89d2590db991",
+      "sha256": "e2c187fd08cb909c072e8e0ea755ca1ab617356d018b28bc7f6ec637ca0da450",
+      "destination_sha256": "e2c187fd08cb909c072e8e0ea755ca1ab617356d018b28bc7f6ec637ca0da450",
+      "destination_git_blob": "52e0e092e878be2f7fc753a2adba89d2590db991",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/12_external_engine.md",
+      "size": 4026,
+      "git_blob": "bfa1a6c9b60f730b38d725721b16aa63b7f9f195",
+      "sha256": "62e34f3d14efbb56a88a3228685349b601e942ed3e21c4cd098dba3737517e8c",
+      "destination_sha256": "62e34f3d14efbb56a88a3228685349b601e942ed3e21c4cd098dba3737517e8c",
+      "destination_git_blob": "bfa1a6c9b60f730b38d725721b16aa63b7f9f195",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/13_controlled_state_transition.md",
+      "size": 7491,
+      "git_blob": "5c4d86b5869b418db4aeb7d2dd3df82c467d374b",
+      "sha256": "20dd6e29af74424c85ac938aa50e76d2a45cc4edef00fac9597f4591bb196ce2",
+      "destination_sha256": "20dd6e29af74424c85ac938aa50e76d2a45cc4edef00fac9597f4591bb196ce2",
+      "destination_git_blob": "5c4d86b5869b418db4aeb7d2dd3df82c467d374b",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/14_age_appropriate_gate.md",
+      "size": 13925,
+      "git_blob": "35b931aa876f4de70fa3618fe0ccb286093e339f",
+      "sha256": "4accd98d20604ddfd097bb7e3b306e8acc07725f69addf6f7f6be26c0e3fa996",
+      "destination_sha256": "4accd98d20604ddfd097bb7e3b306e8acc07725f69addf6f7f6be26c0e3fa996",
+      "destination_git_blob": "35b931aa876f4de70fa3618fe0ccb286093e339f",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/15_age_gate_deployment_assurance.md",
+      "size": 12206,
+      "git_blob": "58ba1df7ee04968eb432e67b63e2ddbb75c97f33",
+      "sha256": "caf92222432ffc6cf46ee78b63a3f80cca65e24edf216318afdb8d0d57ee4941",
+      "destination_sha256": "caf92222432ffc6cf46ee78b63a3f80cca65e24edf216318afdb8d0d57ee4941",
+      "destination_git_blob": "58ba1df7ee04968eb432e67b63e2ddbb75c97f33",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/16_encrypted_unlock_control.md",
+      "size": 6829,
+      "git_blob": "ea2a3ec635626de263afa6c2a9200306a657bcc8",
+      "sha256": "f8588acd7e62fc355e5ec05dbee6c4a3ea2ed6b26e54315898f9c7aa44a9c73b",
+      "destination_sha256": "f8588acd7e62fc355e5ec05dbee6c4a3ea2ed6b26e54315898f9c7aa44a9c73b",
+      "destination_git_blob": "ea2a3ec635626de263afa6c2a9200306a657bcc8",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_deployment_assurance.md",
+      "size": 1924,
+      "git_blob": "6d0f8b4ba826547e5f3414f3aaf1b9b87e17c836",
+      "sha256": "6603126bdfb481d218956932799aeb10de06e183a0ab8fa9df8e3079284bccd9",
+      "destination_sha256": "6603126bdfb481d218956932799aeb10de06e183a0ab8fa9df8e3079284bccd9",
+      "destination_git_blob": "6d0f8b4ba826547e5f3414f3aaf1b9b87e17c836",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_record.md",
+      "size": 2098,
+      "git_blob": "afdf094409eacf99eceb370caf9e96cf2ea51c75",
+      "sha256": "88f2a5c488455fa05a0b815cfe7714552bc0a17561037fa466f81281a6f5df5e",
+      "destination_sha256": "88f2a5c488455fa05a0b815cfe7714552bc0a17561037fa466f81281a6f5df5e",
+      "destination_git_blob": "afdf094409eacf99eceb370caf9e96cf2ea51c75",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_unlock_receipt.md",
+      "size": 1016,
+      "git_blob": "d2feeb8c4acbd7aced8dec1673615ed968e13109",
+      "sha256": "9d9d32f4362efd2afb1da8b8c25eff1a88fd67e308183980aadc2d4cf23ca94c",
+      "destination_sha256": "9d9d32f4362efd2afb1da8b8c25eff1a88fd67e308183980aadc2d4cf23ca94c",
+      "destination_git_blob": "d2feeb8c4acbd7aced8dec1673615ed968e13109",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/claim_source_ledger.md",
+      "size": 600,
+      "git_blob": "733941d60205611d95ff4946e3d308ac33a4af16",
+      "sha256": "fa48d01909db27c166ec5253bdb51123295eb28444a9ea28750d63e8f3bbde64",
+      "destination_sha256": "fa48d01909db27c166ec5253bdb51123295eb28444a9ea28750d63e8f3bbde64",
+      "destination_git_blob": "733941d60205611d95ff4946e3d308ac33a4af16",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/compression_handoff.md",
+      "size": 1317,
+      "git_blob": "0539928e6ff651f6c72be83fc08aa5eae543e36e",
+      "sha256": "ceea474da5f22effc454a0870f7f87b5632a7c8dfb47da575f35113a279ed35a",
+      "destination_sha256": "ceea474da5f22effc454a0870f7f87b5632a7c8dfb47da575f35113a279ed35a",
+      "destination_git_blob": "0539928e6ff651f6c72be83fc08aa5eae543e36e",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/degraded_continuation_packet.md",
+      "size": 951,
+      "git_blob": "14acc7e02235bf30259d541fe525df659056a5d7",
+      "sha256": "44378581813463a4fd5753f15d19ad0224b53276625c70cd8192a274b7d85eca",
+      "destination_sha256": "44378581813463a4fd5753f15d19ad0224b53276625c70cd8192a274b7d85eca",
+      "destination_git_blob": "14acc7e02235bf30259d541fe525df659056a5d7",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/mission_capsule.md",
+      "size": 712,
+      "git_blob": "46d88afb80c3e1bc5429a869d56396f89cf35119",
+      "sha256": "57c90c54d6cd0627b8a980fd8eb0f3ba0489bc09db6676908456dde601fadbf4",
+      "destination_sha256": "57c90c54d6cd0627b8a980fd8eb0f3ba0489bc09db6676908456dde601fadbf4",
+      "destination_git_blob": "46d88afb80c3e1bc5429a869d56396f89cf35119",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/offload_engine_contract_mapping.md",
+      "size": 1609,
+      "git_blob": "72d20ab94de62dbbbe7bc3f24a70611734b2b4ba",
+      "sha256": "6170ba027ecb0f6739a1df9bb11815f80c863e2bdc90c35e5f88f9240d1e3cd0",
+      "destination_sha256": "6170ba027ecb0f6739a1df9bb11815f80c863e2bdc90c35e5f88f9240d1e3cd0",
+      "destination_git_blob": "72d20ab94de62dbbbe7bc3f24a70611734b2b4ba",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/shard_contract.md",
+      "size": 625,
+      "git_blob": "4173af83d44a8bbbb24d1ac57c0996d9c5969f88",
+      "sha256": "fbf92691f5e75cb2ee905f7fc1231bac68db68e7c63741c827de470f2d6e884e",
+      "destination_sha256": "fbf92691f5e75cb2ee905f7fc1231bac68db68e7c63741c827de470f2d6e884e",
+      "destination_git_blob": "4173af83d44a8bbbb24d1ac57c0996d9c5969f88",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/state_transition_contract.md",
+      "size": 1390,
+      "git_blob": "e8fa24b50a5bd7e68552f918ae35c3ef0e06ca28",
+      "sha256": "e211170f88b84343c26b8b5d33dc67c017ebaf03a0294b69e01da0a535a36cef",
+      "destination_sha256": "e211170f88b84343c26b8b5d33dc67c017ebaf03a0294b69e01da0a535a36cef",
+      "destination_git_blob": "e8fa24b50a5bd7e68552f918ae35c3ef0e06ca28",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/transition_invariant_ledger.md",
+      "size": 1250,
+      "git_blob": "af07d2bd3288e549baf66755514baa816fb268c5",
+      "sha256": "9a4ddf8d0052084f3fc791e09570d591314e82b714774bccc8d72b789c2f44e9",
+      "destination_sha256": "9a4ddf8d0052084f3fc791e09570d591314e82b714774bccc8d72b789c2f44e9",
+      "destination_git_blob": "af07d2bd3288e549baf66755514baa816fb268c5",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/version_action_ledger.md",
+      "size": 805,
+      "git_blob": "220a6474c14ea9a0f66c1ab951dc83459e0059aa",
+      "sha256": "c9125a731fd430aa632e2853c4572cc3b0803d4fecabe4f4b5025e14f73f6f90",
+      "destination_sha256": "c9125a731fd430aa632e2853c4572cc3b0803d4fecabe4f4b5025e14f73f6f90",
+      "destination_git_blob": "220a6474c14ea9a0f66c1ab951dc83459e0059aa",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/behavioral_test_vectors.md",
+      "size": 10154,
+      "git_blob": "7dbd6022cfdea047f690cc8e4ae8d397f57feaca",
+      "sha256": "87bf9e094f2fc15846932e140a7d792a8684e575d7ab6eb3200d4495f3156ff5",
+      "destination_sha256": "87bf9e094f2fc15846932e140a7d792a8684e575d7ab6eb3200d4495f3156ff5",
+      "destination_git_blob": "7dbd6022cfdea047f690cc8e4ae8d397f57feaca",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/test_kit.py",
+      "size": 18845,
+      "git_blob": "b83ab52a320e623404ea40ce5347080f01da017f",
+      "sha256": "7e9eab8fa2cc1b9f017341b002b140c159694d2fdfd7172d7551d044fe3e1b06",
+      "destination_sha256": "7e9eab8fa2cc1b9f017341b002b140c159694d2fdfd7172d7551d044fe3e1b06",
+      "destination_git_blob": "b83ab52a320e623404ea40ce5347080f01da017f",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/test_publication_surface.py",
+      "size": 1505,
+      "git_blob": "75f40004b7f08b9267ff939e535a8b5479884959",
+      "sha256": "ca17ef0b3dca9c179d1a65e57b4db4a38f6850ee3a0cde38a734ccc422e7d363",
+      "destination_sha256": "ca17ef0b3dca9c179d1a65e57b4db4a38f6850ee3a0cde38a734ccc422e7d363",
+      "destination_git_blob": "75f40004b7f08b9267ff939e535a8b5479884959",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/.gitignore",
+      "size": 175,
+      "git_blob": "90d823e0289f51462738d24b822289d8b5706e63",
+      "sha256": "d5b9aa3dfb379d136addbba9914802e9ed9d94947a3fde985401c780472aea20",
+      "destination_sha256": "d5b9aa3dfb379d136addbba9914802e9ed9d94947a3fde985401c780472aea20",
+      "destination_git_blob": "90d823e0289f51462738d24b822289d8b5706e63",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/BUILD_REPORT.md",
+      "size": 5293,
+      "git_blob": "6eb6d697554e08442f99e3586f287d9c97af2cea",
+      "sha256": "9b1d58c19c1df432f7e9dc206c0a3b2aa21804934de82fde4907dfaef51d7cf0",
+      "destination_sha256": "9b1d58c19c1df432f7e9dc206c0a3b2aa21804934de82fde4907dfaef51d7cf0",
+      "destination_git_blob": "6eb6d697554e08442f99e3586f287d9c97af2cea",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/CHANGELOG.md",
+      "size": 1366,
+      "git_blob": "9b2ea8dbe0cbc7e944542aa762aeaff31958a375",
+      "sha256": "4cc8053d91f495395eec903139b89626bd903ac33403ba7189c727b40ee1d6cb",
+      "destination_sha256": "4cc8053d91f495395eec903139b89626bd903ac33403ba7189c727b40ee1d6cb",
+      "destination_git_blob": "9b2ea8dbe0cbc7e944542aa762aeaff31958a375",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/DEVELOPMENT_GUIDANCE.md",
+      "size": 1743,
+      "git_blob": "e45e40f48401ecbe48048304a1e0aea0fc0366cd",
+      "sha256": "ca014af7aa7503560f262d770320291fa17fbca15640837efc84d99f2ba249dc",
+      "destination_sha256": "ca014af7aa7503560f262d770320291fa17fbca15640837efc84d99f2ba249dc",
+      "destination_git_blob": "e45e40f48401ecbe48048304a1e0aea0fc0366cd",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/DURABILITY_CONTRACT.md",
+      "size": 9672,
+      "git_blob": "4434a7e5ddd23532c6055d4966f0fcfc76874db8",
+      "sha256": "513cacd59274d7d208e646c34968325c181df05576eb630fc601c938d172dce1",
+      "destination_sha256": "513cacd59274d7d208e646c34968325c181df05576eb630fc601c938d172dce1",
+      "destination_git_blob": "4434a7e5ddd23532c6055d4966f0fcfc76874db8",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/MANIFEST.in",
+      "size": 273,
+      "git_blob": "ba7df23d1f812a06b3634b3e81ac1b550d9ce64e",
+      "sha256": "2ebfa6f03864ca18d8d9e240f4a688fc7da8a1b1e5db889f94e5e15c34cc1444",
+      "destination_sha256": "2ebfa6f03864ca18d8d9e240f4a688fc7da8a1b1e5db889f94e5e15c34cc1444",
+      "destination_git_blob": "ba7df23d1f812a06b3634b3e81ac1b550d9ce64e",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/MINING_PROVENANCE.md",
+      "size": 703,
+      "git_blob": "e47654c45d9e7b3035f33754abc57f055daff759",
+      "sha256": "16933e2c29dcf8fabce29bfb06667109183cb92c507e96aa798bd4f7656bb03b",
+      "destination_sha256": "16933e2c29dcf8fabce29bfb06667109183cb92c507e96aa798bd4f7656bb03b",
+      "destination_git_blob": "e47654c45d9e7b3035f33754abc57f055daff759",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/MODULE_BOUNDARY.md",
+      "size": 734,
+      "git_blob": "1647e202f820fc1b3f7bb2927a58ca1f09e1f218",
+      "sha256": "ac09ef967febe4a2919c5d4659d1d62718de72256c88c5f1f461a11f3183ca3a",
+      "destination_sha256": "ac09ef967febe4a2919c5d4659d1d62718de72256c88c5f1f461a11f3183ca3a",
+      "destination_git_blob": "1647e202f820fc1b3f7bb2927a58ca1f09e1f218",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/README.md",
+      "size": 19803,
+      "git_blob": "d38e43e53914fea7099d8816cfbeea9559e4d7c3",
+      "sha256": "fdfba5765d8a61f5b6553b1c03235d3c604428a3687937f18e86a78929232192",
+      "destination_sha256": "8e46db3b7ca411937df01e179324f8919a0acfaf3764e6267f18f54f547715b3",
+      "destination_git_blob": "b5a8dc0a062fd9f3e8a7288c2265de9b243586db",
+      "byte_preserved": false,
+      "change_reason": "Relocation/current-publication documentation or dependent checksum inventory only"
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/RECOVERY_PLAYBOOK.md",
+      "size": 1905,
+      "git_blob": "0a4a6aedc60acd3c8dc9ed45fc549cbe5e2baa6e",
+      "sha256": "a8c8eb7f2d9120b4ae2552fe31d7de91154940a34612a0a1e4f2b2ed36d26ddb",
+      "destination_sha256": "a8c8eb7f2d9120b4ae2552fe31d7de91154940a34612a0a1e4f2b2ed36d26ddb",
+      "destination_git_blob": "0a4a6aedc60acd3c8dc9ed45fc549cbe5e2baa6e",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/SOURCE_SHA256SUMS",
+      "size": 3342,
+      "git_blob": "5a0572dc783beddc286731e46e458040fd4ff7a5",
+      "sha256": "8b622faeb1521cb9b1e0e9ad58a9b87c386d1c052c6effdcd8f458393febcbfd",
+      "destination_sha256": "d2ac9fe44c56710a87ce756e7e6096af20c2050b2a48dfbec605fcd2d1095d74",
+      "destination_git_blob": "054bea26731b0f52037f99a03792aa9e0d41c694",
+      "byte_preserved": false,
+      "change_reason": "Relocation/current-publication documentation or dependent checksum inventory only"
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/VALIDATION_REPORT.md",
+      "size": 3458,
+      "git_blob": "dd6dd7aa5a88987d9d6dbc0c744c5dd41c58ba17",
+      "sha256": "bc8a14433d5332e1305b83ba81ad77f9da0f5103c9a6e456830c7111964b35e4",
+      "destination_sha256": "bc8a14433d5332e1305b83ba81ad77f9da0f5103c9a6e456830c7111964b35e4",
+      "destination_git_blob": "dd6dd7aa5a88987d9d6dbc0c744c5dd41c58ba17",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/WORKBENCH_MODULE.json",
+      "size": 812,
+      "git_blob": "5485ee2f0ccf7357bcf295e2c12076d2b6be6ea1",
+      "sha256": "7f74aa386f81d064daf02537e2ae8b707366b09c444d79a4bca3d9e4b266b9b8",
+      "destination_sha256": "7f74aa386f81d064daf02537e2ae8b707366b09c444d79a4bca3d9e4b266b9b8",
+      "destination_git_blob": "5485ee2f0ccf7357bcf295e2c12076d2b6be6ea1",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/docs/HISTORICAL_VALIDATION_0.1.0.md",
+      "size": 1558,
+      "git_blob": "ef9b5ca2ad426966b1b476d50dc4e2ad7a7bac58",
+      "sha256": "047704ba52dc9a6d9c8bbba415f3d772343a07028bea83d14386bdc6508aeaa0",
+      "destination_sha256": "047704ba52dc9a6d9c8bbba415f3d772343a07028bea83d14386bdc6508aeaa0",
+      "destination_git_blob": "ef9b5ca2ad426966b1b476d50dc4e2ad7a7bac58",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/docs/build/ARTIFACTS.json",
+      "size": 856,
+      "git_blob": "edcd9249f2315915a82968366723f078fa92ff72",
+      "sha256": "300c14f0018c2bb6b0370a6e8992c336fad87d488ed2a53a13c8861742e3c1f9",
+      "destination_sha256": "300c14f0018c2bb6b0370a6e8992c336fad87d488ed2a53a13c8861742e3c1f9",
+      "destination_git_blob": "edcd9249f2315915a82968366723f078fa92ff72",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/docs/build/SHA256SUMS",
+      "size": 516,
+      "git_blob": "333ba02fdc18a1fe38093307b5d2e92fa04fb563",
+      "sha256": "8121b87c70395f4e4117f8fde012e9361b534951d340d6347659908df2fd7306",
+      "destination_sha256": "8121b87c70395f4e4117f8fde012e9361b534951d340d6347659908df2fd7306",
+      "destination_git_blob": "333ba02fdc18a1fe38093307b5d2e92fa04fb563",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/examples/demo.py",
+      "size": 492,
+      "git_blob": "a60b53dee7891c9f403017d8a99238f2d35d44b3",
+      "sha256": "1980cc1cb3909eec2125c222252022a1d7a7cc9ec2df4054285bbb47dbef6d2d",
+      "destination_sha256": "1980cc1cb3909eec2125c222252022a1d7a7cc9ec2df4054285bbb47dbef6d2d",
+      "destination_git_blob": "a60b53dee7891c9f403017d8a99238f2d35d44b3",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/pyproject.toml",
+      "size": 566,
+      "git_blob": "207b305d674a31933b0aff59593c59439433e4f6",
+      "sha256": "68619e1bbdcb699d882873424ccc139f1bc5726acab2af21c03c5acf09d8ebad",
+      "destination_sha256": "68619e1bbdcb699d882873424ccc139f1bc5726acab2af21c03c5acf09d8ebad",
+      "destination_git_blob": "207b305d674a31933b0aff59593c59439433e4f6",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/schemas/snapshot-manifest.schema.json",
+      "size": 1114,
+      "git_blob": "bb40aef6ecd7640bf6c3de44fb00816569bc16c3",
+      "sha256": "498c3e83b2af3ab8489ee43f4fe6962ed4d426f84c0c07a30950a8a08b8c7427",
+      "destination_sha256": "498c3e83b2af3ab8489ee43f4fe6962ed4d426f84c0c07a30950a8a08b8c7427",
+      "destination_git_blob": "bb40aef6ecd7640bf6c3de44fb00816569bc16c3",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/__init__.py",
+      "size": 233,
+      "git_blob": "dce5470b1d01b35cac94f8f983b8ad339bcd014c",
+      "sha256": "4b6ee32aab29749c11188467d8d72faa671aa21eb2d8dfd686269a94e8dc9743",
+      "destination_sha256": "4b6ee32aab29749c11188467d8d72faa671aa21eb2d8dfd686269a94e8dc9743",
+      "destination_git_blob": "dce5470b1d01b35cac94f8f983b8ad339bcd014c",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/canonical.py",
+      "size": 2569,
+      "git_blob": "ef51356c6de7d3c6897df4566002e1112fc9a90a",
+      "sha256": "69fab97f2b838a2f51b0704fdc270c130a020e2a13b437f0e8a62b50a4fc14c2",
+      "destination_sha256": "69fab97f2b838a2f51b0704fdc270c130a020e2a13b437f0e8a62b50a4fc14c2",
+      "destination_git_blob": "ef51356c6de7d3c6897df4566002e1112fc9a90a",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/cli.py",
+      "size": 2330,
+      "git_blob": "7bf59add789f31a4bbe55b017b0a7b5add60dc7f",
+      "sha256": "3bfd5d0caefab7200c54e9c4370df6353628f0aa6da01f6dee986d61e7277087",
+      "destination_sha256": "3bfd5d0caefab7200c54e9c4370df6353628f0aa6da01f6dee986d61e7277087",
+      "destination_git_blob": "7bf59add789f31a4bbe55b017b0a7b5add60dc7f",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/formats.py",
+      "size": 8151,
+      "git_blob": "54020bffdfa5f2291488c0c90d1baffee030aa9c",
+      "sha256": "c2511d79b0120d64e1e84566cd38b04e195f0a5c1f986c202b5e496f16f35010",
+      "destination_sha256": "c2511d79b0120d64e1e84566cd38b04e195f0a5c1f986c202b5e496f16f35010",
+      "destination_git_blob": "54020bffdfa5f2291488c0c90d1baffee030aa9c",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/workspace.py",
+      "size": 34547,
+      "git_blob": "000743be3a8c2de5137a7dd2bd4f6778d98d57af",
+      "sha256": "8da2d9ea03f4b47caeea503f9ac1f1e63bc282f3ae9f7ae392e3c29b3be0ba61",
+      "destination_sha256": "8da2d9ea03f4b47caeea503f9ac1f1e63bc282f3ae9f7ae392e3c29b3be0ba61",
+      "destination_git_blob": "000743be3a8c2de5137a7dd2bd4f6778d98d57af",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/DECISIONS.md",
+      "size": 105,
+      "git_blob": "131d9575fc471eeffdea5a6ade5a65b6e7e3fdc4",
+      "sha256": "9f2dfb414cdd162075660a4e846e4b00187c380d6b5b6f1915fe1cb0aaeb2ec9",
+      "destination_sha256": "9f2dfb414cdd162075660a4e846e4b00187c380d6b5b6f1915fe1cb0aaeb2ec9",
+      "destination_git_blob": "131d9575fc471eeffdea5a6ade5a65b6e7e3fdc4",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/ERROR_LOG.md",
+      "size": 83,
+      "git_blob": "3e4a3d75c34b516997b29721592f0d1b106623f1",
+      "sha256": "b6523d731cf7af4e4cc50be873d450586de9b7a14f7d6b2976b3258f11685d47",
+      "destination_sha256": "b6523d731cf7af4e4cc50be873d450586de9b7a14f7d6b2976b3258f11685d47",
+      "destination_git_blob": "3e4a3d75c34b516997b29721592f0d1b106623f1",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/LOG.md",
+      "size": 92,
+      "git_blob": "91be7da9e4326cc44e3af79c51733bdbaf706b2f",
+      "sha256": "8882712e082d9ab748c8f5bf36a4735e5a1c2a5cd37d4bce31853c6ddc9e51d3",
+      "destination_sha256": "8882712e082d9ab748c8f5bf36a4735e5a1c2a5cd37d4bce31853c6ddc9e51d3",
+      "destination_git_blob": "91be7da9e4326cc44e3af79c51733bdbaf706b2f",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/STATE.md",
+      "size": 148,
+      "git_blob": "355855323f9abe85c83822d556ce0a38803fb8b0",
+      "sha256": "47b61a28d56c0451f6fa2c1497af99f143fc0bb4a2f98d8efe34926174034af9",
+      "destination_sha256": "47b61a28d56c0451f6fa2c1497af99f143fc0bb4a2f98d8efe34926174034af9",
+      "destination_git_blob": "355855323f9abe85c83822d556ce0a38803fb8b0",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/TODO.md",
+      "size": 83,
+      "git_blob": "61016490a4771694df26f4abdaa88ed2ee881af7",
+      "sha256": "bd85d0b135d6cf9c23035bb3421426d7467df7be1f930ac0aab4f66fbfb4edb7",
+      "destination_sha256": "bd85d0b135d6cf9c23035bb3421426d7467df7be1f930ac0aab4f66fbfb4edb7",
+      "destination_git_blob": "61016490a4771694df26f4abdaa88ed2ee881af7",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/WORKSPACE.json",
+      "size": 192,
+      "git_blob": "1a868c2cc431c495fbc77f83d98f478b19bd11c2",
+      "sha256": "4278b2011373533bcb79a7340c42e0590fc7afba2539f704fd2f7534120b5e1a",
+      "destination_sha256": "4278b2011373533bcb79a7340c42e0590fc7afba2539f704fd2f7534120b5e1a",
+      "destination_git_blob": "1a868c2cc431c495fbc77f83d98f478b19bd11c2",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/tests/test_durable_workspace.py",
+      "size": 3167,
+      "git_blob": "ce97be56c0311e22d65c7dd956b1941ba7c6417a",
+      "sha256": "2d1faac35517ab11e68fc1f0d1ae58bad8909283622e5f8d316f7d83023dc9d5",
+      "destination_sha256": "2d1faac35517ab11e68fc1f0d1ae58bad8909283622e5f8d316f7d83023dc9d5",
+      "destination_git_blob": "ce97be56c0311e22d65c7dd956b1941ba7c6417a",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/tests/test_lattice_readiness.py",
+      "size": 13647,
+      "git_blob": "a694d594c03c6adf52bfba05d9232a002ab28f85",
+      "sha256": "97ce327c0aeb4daf221d1156cf3c914f576a5bf55bee92860863a9e7f8facdcd",
+      "destination_sha256": "97ce327c0aeb4daf221d1156cf3c914f576a5bf55bee92860863a9e7f8facdcd",
+      "destination_git_blob": "a694d594c03c6adf52bfba05d9232a002ab28f85",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/tools/validation/README.md",
+      "size": 1334,
+      "git_blob": "c2fa86428407eec71d210a14c8f8292d5b0559b0",
+      "sha256": "5d054b7fc940ffd3be91de3d25ae44da2a04e51a57f8cdce604aa3adbefcde6f",
+      "destination_sha256": "5d054b7fc940ffd3be91de3d25ae44da2a04e51a57f8cdce604aa3adbefcde6f",
+      "destination_git_blob": "c2fa86428407eec71d210a14c8f8292d5b0559b0",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/tools/validation/harness_support.py",
+      "size": 16157,
+      "git_blob": "208ab5ac7dd85deb67ff017ee0308e14c6d2d265",
+      "sha256": "aa90bce13c36bc58af30cf4e2b29c6d56251a4182d5e5e4f3b86b10b3d32dd29",
+      "destination_sha256": "aa90bce13c36bc58af30cf4e2b29c6d56251a4182d5e5e4f3b86b10b3d32dd29",
+      "destination_git_blob": "208ab5ac7dd85deb67ff017ee0308e14c6d2d265",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/tools/validation/owned_job.py",
+      "size": 10733,
+      "git_blob": "3900a405173607d49d934e49a762ee61995d781b",
+      "sha256": "5e126aff8b362dbe63533bd6f4c9929d6bd95974cd523bc8b68866674dfe81a9",
+      "destination_sha256": "5e126aff8b362dbe63533bd6f4c9929d6bd95974cd523bc8b68866674dfe81a9",
+      "destination_git_blob": "3900a405173607d49d934e49a762ee61995d781b",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/tools/validation/run_checks.py",
+      "size": 5572,
+      "git_blob": "567dde5a9f00441acad8a3ea47b90a2855e8ac3e",
+      "sha256": "5295d098b75adea71f5863aee3888183288629186228fbd15d961d523ef9678b",
+      "destination_sha256": "5295d098b75adea71f5863aee3888183288629186228fbd15d961d523ef9678b",
+      "destination_git_blob": "567dde5a9f00441acad8a3ea47b90a2855e8ac3e",
+      "byte_preserved": true,
+      "change_reason": null
+    },
+    {
+      "path": "xOSG/amorphous-durable-ai-workspace/validate.py",
+      "size": 5009,
+      "git_blob": "9e2d2f4497b543be627d96d85111850e881a0214",
+      "sha256": "f551fb8a33fae57862037aa5befa0b8f6cda9b16511ede6cd69f5452683bb60f",
+      "destination_sha256": "f551fb8a33fae57862037aa5befa0b8f6cda9b16511ede6cd69f5452683bb60f",
+      "destination_git_blob": "9e2d2f4497b543be627d96d85111850e881a0214",
+      "byte_preserved": true,
+      "change_reason": null
+    }
+  ],
+  "added_support_files": [
+    "xOSG/LICENSE",
+    "xOSG/MIGRATION.md",
+    "xOSG/MIGRATION_MANIFEST.json",
+    "xOSG/MIGRATION_VALIDATION.md"
+  ],
+  "self_hash_excluded": true,
+  "root_layout": {
+    "date": "2026-11-05",
+    "base_commit": "feaf2a09573ee86c158f3e966ca1e1ed5b322b3e",
+    "shared_records": "docs/xosg/",
+    "projects": [
+      "amorphous-durable-ai-workspace",
+      "Naked Shell",
+      "Synthetic Simulations"
+    ],
+    "historical_fields_note": "Original paths and original migration destination digests above are preserved as historical. This mapping identifies the root-level current layout.",
+    "current_files": [
+      {
+        "previous_path": "README.md",
+        "current_path": "README.md",
+        "previous_git_blob": "e7e2448191b42747aebffcacf18ca93da87eb52d",
+        "git_blob": "b8b787359ea66480716007ef419686af20494fe3",
+        "sha256": "c4b4ce3b34b064308ef8a2b4001e280c298e81568352d76e927bf0eb2f193a27",
+        "byte_preserved": false
+      },
+      {
+        "previous_path": "xOSG/LICENSE",
+        "current_path": "docs/xosg/LICENSE",
+        "previous_git_blob": "7bb067c52e932a329b6843e57335442ccc5893ce",
+        "git_blob": "7bb067c52e932a329b6843e57335442ccc5893ce",
+        "sha256": "c2ce610232935d07cfe561e39258a976b55bc5312f669472d1f0e8bd37fa270d",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/MIGRATION.md",
+        "current_path": "docs/xosg/MIGRATION.md",
+        "previous_git_blob": "6526eb40f2762f6ec7c3a63b6b79392ee1bc3092",
+        "git_blob": "2318513e32d3ac83d76bab6c769841fabfc0faaa",
+        "sha256": "6b5c6361bc62c1978e889062dac74c0ad47c9035b962fc6ccc56862b18253723",
+        "byte_preserved": false
+      },
+      {
+        "previous_path": "xOSG/MIGRATION_MANIFEST.json",
+        "current_path": "docs/xosg/MIGRATION_MANIFEST.json",
+        "previous_git_blob": "fecf7c7b81ce6a3f784f12f3471c4ec8582ed908",
+        "self_hash_excluded": true
+      },
+      {
+        "previous_path": "xOSG/MIGRATION_VALIDATION.md",
+        "current_path": "docs/xosg/MIGRATION_VALIDATION.md",
+        "previous_git_blob": "09d80589e481d10f3f109f34c29747a8d0b6fb98",
+        "git_blob": "fa5ea8e462b7cdd73881a183074e2c59a0bd6e4d",
+        "sha256": "6ae7d6cde45bb97bc57ce4359cc66e9534d087961e0a23a8d4d1f249afbe0f28",
+        "byte_preserved": false
+      },
+      {
+        "previous_path": "xOSG/Naked Shell/README.md",
+        "current_path": "Naked Shell/README.md",
+        "previous_git_blob": "396adafc5dbe4021fc2b4970b712e59081912383",
+        "git_blob": "396adafc5dbe4021fc2b4970b712e59081912383",
+        "sha256": "503383f6374abfe3ed19348fb88b66c78cb7b1f5b1f7ffe62a99ebcffd6e344d",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/README.md",
+        "current_path": "docs/xosg/README.md",
+        "previous_git_blob": "726c39d7ed4c6af61075837073e6adaef64436db",
+        "git_blob": "f31d26565fb4014a1eba839bfbb8b134d8f9cb9e",
+        "sha256": "bc039fecc3274f4741a69adb2e1d87538d262a8d70279d4c82cf18c8d4c3e1eb",
+        "byte_preserved": false
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/README.md",
+        "current_path": "Synthetic Simulations/README.md",
+        "previous_git_blob": "c80564424e2eab20b15ca93ce843c25adc06f1c0",
+        "git_blob": "474fac91213d0a5e2136cfa1c7598c9407b9eac0",
+        "sha256": "e5e1b78cc340a0f09cd4a883dd58e5bf1919b6a7a7b11b09c03bf96c93e3a299",
+        "byte_preserved": false
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/README.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/README.md",
+        "previous_git_blob": "e250fc1ae082d8bc9e20775561171575a45c2294",
+        "git_blob": "fcaf4a797e49dbe099b74bda8c63ac564d4b0ab4",
+        "sha256": "0603b6e01b8f29580fc5af218b8158f1ce881e4cf7a35f9e95dff8842ec62f1e",
+        "byte_preserved": false
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/artifact.json",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/artifact.json",
+        "previous_git_blob": "2a39e436fe7c13a681e0c2b62809db3e030042d4",
+        "git_blob": "2a39e436fe7c13a681e0c2b62809db3e030042d4",
+        "sha256": "c7cd0fc120a82de300ed4b784057058bd1379f2229761b2f6b917dc83a6de4fa",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/CHANGELOG.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/CHANGELOG.md",
+        "previous_git_blob": "3347196e125a378c5260446906d262e3153b00dd",
+        "git_blob": "3347196e125a378c5260446906d262e3153b00dd",
+        "sha256": "d1d88184f4414dee472ab29ef3889cdb124b1ae63e46302c721c3013d75a772b",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/LICENSE",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/LICENSE",
+        "previous_git_blob": "49be9aaccb5c46a5580d4d45d657be6da3a2eab6",
+        "git_blob": "49be9aaccb5c46a5580d4d45d657be6da3a2eab6",
+        "sha256": "7bfea4871f65e305755e00fa0955234bc1114d349889e1876609e5b4e3ca8c71",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/MANIFEST.sha256",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/MANIFEST.sha256",
+        "previous_git_blob": "38df978fe7c5c9778a40e0cb60bd509ad143dc41",
+        "git_blob": "38df978fe7c5c9778a40e0cb60bd509ad143dc41",
+        "sha256": "f353969b477e875e93373bc5c8e362ee240d0afa620867b1b79619f16f57cf8c",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/PROVENANCE.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/PROVENANCE.md",
+        "previous_git_blob": "0a131ec9396f2f67ead8bea30b9040b9f09fa094",
+        "git_blob": "0a131ec9396f2f67ead8bea30b9040b9f09fa094",
+        "sha256": "1cf7c9f587e28970cfa5ef3b08cffd2f6d01169a596de93937f79a9bec94159c",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/PUBLICATION_GATE.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/PUBLICATION_GATE.md",
+        "previous_git_blob": "cea6daf5ebd6144afd2798c6a86950686ae15a61",
+        "git_blob": "cea6daf5ebd6144afd2798c6a86950686ae15a61",
+        "sha256": "5202c256c279e5fd04e2bc5a63ca0f4ca7a3c78693b809638291f5edcba0ef1c",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/README.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/README.md",
+        "previous_git_blob": "f6e912b60ef2663fb06a520421a4e2dd2fa47023",
+        "git_blob": "f6e912b60ef2663fb06a520421a4e2dd2fa47023",
+        "sha256": "4caeb49319d337004836b1ba0a01981c0f659256728ecd9e8ae4f047a800277a",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SANITIZATION_REPORT.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SANITIZATION_REPORT.md",
+        "previous_git_blob": "766220d04899778400e7aa73e058e9ea4e05b73f",
+        "git_blob": "766220d04899778400e7aa73e058e9ea4e05b73f",
+        "sha256": "61e6a7c3834552942995addf39aa4dcb64b99f5b80f767615212b2d6671cc756",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SELECTOR_PROMPT.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SELECTOR_PROMPT.md",
+        "previous_git_blob": "d72c7a08525462c2d54ed4302d1dec2a300ebbec",
+        "git_blob": "d72c7a08525462c2d54ed4302d1dec2a300ebbec",
+        "sha256": "e078a28c1a1f5e4de4098f20b401705d8a3d1a943d24c186f2fe5dac4a94bf10",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SOURCE_RECEIPTS.json",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/SOURCE_RECEIPTS.json",
+        "previous_git_blob": "bea17aa62597a5cbea454743441111a417de383e",
+        "git_blob": "bea17aa62597a5cbea454743441111a417de383e",
+        "sha256": "ebd53a574c90b370e8a4336b9215d0118387883eaf151518b85336b704739252",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/THIRD_PARTY_NOTICES.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/THIRD_PARTY_NOTICES.md",
+        "previous_git_blob": "b93d003235c9242d59b97a1a9e8c321fc17ff704",
+        "git_blob": "b93d003235c9242d59b97a1a9e8c321fc17ff704",
+        "sha256": "a012ce1ad1a27af19ea325917028a1d823d4bedcb259612e2164c7e7db75d928",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/VALIDATION.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/VALIDATION.md",
+        "previous_git_blob": "0fb63d9ff3e3e4caa0147ded0cd37d1c623e9529",
+        "git_blob": "0fb63d9ff3e3e4caa0147ded0cd37d1c623e9529",
+        "sha256": "934f3812ef508f0bfe4e59b916eb439be343423b8feccf77f54a9d61df715070",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/VARIABLES.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/VARIABLES.md",
+        "previous_git_blob": "0377a654d4b7da672feeeae4ef73a0ca08c2d8bc",
+        "git_blob": "0377a654d4b7da672feeeae4ef73a0ca08c2d8bc",
+        "sha256": "c884a2dca34ef1b71f5c46495ccc0cd3aa63925a7fc4144b478c526aaba2fb2e",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/assembler.py",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/assembler.py",
+        "previous_git_blob": "31f58ea2973847d0b38d8acb3b7ef2bc4bd658b3",
+        "git_blob": "31f58ea2973847d0b38d8acb3b7ef2bc4bd658b3",
+        "sha256": "9cfcc53fd2048d75c5fd4f59e8678152afe7c83bddac77e454d97f5bc5dbcbbe",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/builds/README.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/builds/README.md",
+        "previous_git_blob": "f87978fdca0c71792b4f3d66dc74bafc7cd8731a",
+        "git_blob": "f87978fdca0c71792b4f3d66dc74bafc7cd8731a",
+        "sha256": "1e8e79eca3e3dc066c4d8225cf7d69473c1c9ce8aa8de54181b2b80b04c42954",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/config.json",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/config.json",
+        "previous_git_blob": "1b3bdeb2e690c9c72d9d33f03ff4b46c58c5c34b",
+        "git_blob": "1b3bdeb2e690c9c72d9d33f03ff4b46c58c5c34b",
+        "sha256": "d99e0ad6f99aca69ac189e8582bb6a3c46941c97187de07640660b39d07665a9",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/AGE_GATE_APPLICATION_AUDIT.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/AGE_GATE_APPLICATION_AUDIT.md",
+        "previous_git_blob": "d501c71f3dd093f2a21004beb2ed2937cbc92b07",
+        "git_blob": "d501c71f3dd093f2a21004beb2ed2937cbc92b07",
+        "sha256": "f4c5954986f8ee8cd3afb7d39237bc9a896b1c4f4056ca7580b5ac7ac1599e3a",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/AUDIT_v1_0_TO_v1_1.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/AUDIT_v1_0_TO_v1_1.md",
+        "previous_git_blob": "88a6a34a14db865ab96eb6248dbe3bb6f269ef8a",
+        "git_blob": "88a6a34a14db865ab96eb6248dbe3bb6f269ef8a",
+        "sha256": "ea6e62c434536a3184c6086aa37d41d5bc4be89d14e5b29615261d742bd33e38",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/BEST_PRACTICES_APPLICATION_AUDIT.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/BEST_PRACTICES_APPLICATION_AUDIT.md",
+        "previous_git_blob": "50f3a06890ff6d6aaa18e3c2586cd0c84a785889",
+        "git_blob": "50f3a06890ff6d6aaa18e3c2586cd0c84a785889",
+        "sha256": "5587a81d920e4356557a73587c8f655793c8a9a48de7a6346f2799148d1f5773",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/ENGINE_INTEGRATION_AUDIT.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/ENGINE_INTEGRATION_AUDIT.md",
+        "previous_git_blob": "c0614a41e4cdb63f70e923ec2a61ea589baed07d",
+        "git_blob": "c0614a41e4cdb63f70e923ec2a61ea589baed07d",
+        "sha256": "e13f1baa43c9d4ae85add56ca5147b539e618ff798064d4b5555255ac8b98017",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/README.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/README.md",
+        "previous_git_blob": "03215de7f5c455e473ed07e3d2cf75502a71a83a",
+        "git_blob": "03215de7f5c455e473ed07e3d2cf75502a71a83a",
+        "sha256": "2157c0b8f78c5706a3944738d9255a508a43a1e8e56a1a421d223a169ebc9232",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/SOURCE_APPLICATION_AUDIT.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/docs/historical/SOURCE_APPLICATION_AUDIT.md",
+        "previous_git_blob": "f7afb54e593e21c82fa713456a36016d38b6ccf9",
+        "git_blob": "f7afb54e593e21c82fa713456a36016d38b6ccf9",
+        "sha256": "d7e4e0f50928d6b867569827be2312c4a594ca9d98731e28c98062ab9e551d40",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/age_gate_selection.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/age_gate_selection.md",
+        "previous_git_blob": "d4c30e01070aca1d0b1fe715c2b6355453994b24",
+        "git_blob": "d4c30e01070aca1d0b1fe715c2b6355453994b24",
+        "sha256": "f41bd12c5ea91d112609d55e81c3c53ea61c97a3ee471e85445d9cb30547e264",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/external_engine_integration.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/external_engine_integration.md",
+        "previous_git_blob": "6234b03aaa522ac9d8ff17d04eac73928f69ab8d",
+        "git_blob": "6234b03aaa522ac9d8ff17d04eac73928f69ab8d",
+        "sha256": "fdeb2bb30c2afdce84324c6e1b3957158ffddde37f87960ccbf455a491f6588c",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/offloading_heuristics.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/offloading_heuristics.md",
+        "previous_git_blob": "3563cef93255c17c76e5e9f85016eab9adf2cdfc",
+        "git_blob": "3563cef93255c17c76e5e9f85016eab9adf2cdfc",
+        "sha256": "2b85cf12b8c6b6e6e403cdabcc6405bba9265eba19e0f11c1bbf6d4f4f6f9517",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/selection_matrix.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/selection_matrix.md",
+        "previous_git_blob": "66f56805227dedd479a6ae2a10cd07de912d2b4a",
+        "git_blob": "66f56805227dedd479a6ae2a10cd07de912d2b4a",
+        "sha256": "5edd98ba0d7dab1bf7022b31c4edcadccc3fbc7850625a39ece811d524ead78a",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/state_transition_selection.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/heuristics/state_transition_selection.md",
+        "previous_git_blob": "8951c5d54027fb2f94af28e7258aa9557d38998b",
+        "git_blob": "8951c5d54027fb2f94af28e7258aa9557d38998b",
+        "sha256": "51fbd64cd9cdfbe02ced8b08e0c7a684dd8c949e49d15b27a032b8980821bb37",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/00_resident_kernel.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/00_resident_kernel.md",
+        "previous_git_blob": "c1fe92f7355dcebd8e63d7d8837f610b93036e8c",
+        "git_blob": "c1fe92f7355dcebd8e63d7d8837f610b93036e8c",
+        "sha256": "36f81cf0f649529feb0ce65f5edb24256e3fa9b0ec90eae2d03fd0917e766e91",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/01_source_and_generation.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/01_source_and_generation.md",
+        "previous_git_blob": "837d7072d9c85140cc57e821558b1b901969fc29",
+        "git_blob": "837d7072d9c85140cc57e821558b1b901969fc29",
+        "sha256": "0521ae1e6b4b148a2d0db15b6dcd73fa4dea0627e4b597f59732fe2a669da6c4",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/02_memory_claims.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/02_memory_claims.md",
+        "previous_git_blob": "fe6477e62a7423bed3d6f1f5dc612d3f08962c32",
+        "git_blob": "fe6477e62a7423bed3d6f1f5dc612d3f08962c32",
+        "sha256": "3e8cc28c84fffde09465e26f73f9d0227498835c69c443df5b76eae9516556a0",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/03_mission_actor.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/03_mission_actor.md",
+        "previous_git_blob": "f1e35d0e1ad052d89634323ae06e16d50fbe930a",
+        "git_blob": "f1e35d0e1ad052d89634323ae06e16d50fbe930a",
+        "sha256": "55f7d292c813142a1561c68f5b05c9ceb42d121cbfdc0b7279336e684b9a9e6c",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/04_compression.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/04_compression.md",
+        "previous_git_blob": "fa54885bcd4cba3156cef0e5d4553ca9f41e6b01",
+        "git_blob": "fa54885bcd4cba3156cef0e5d4553ca9f41e6b01",
+        "sha256": "a5bf9e0d1c781d010a10a77ccc7e80834c29c68287553c700c936599c1899784",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/05_handoff.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/05_handoff.md",
+        "previous_git_blob": "e99992a9c0d9ba181cd56656bf958478088c874b",
+        "git_blob": "e99992a9c0d9ba181cd56656bf958478088c874b",
+        "sha256": "a93c7836941598093e90147ef373d02f3b9fd550488be54138fff1559bcd32b5",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/06_copy_version.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/06_copy_version.md",
+        "previous_git_blob": "347ba28d1f492e973bc03bd91d6b9515e9e32a78",
+        "git_blob": "347ba28d1f492e973bc03bd91d6b9515e9e32a78",
+        "sha256": "027c1c7fa07a8622d0644346a1b1c27708b716cafe848a38497ee823bce83ad2",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/07_research.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/07_research.md",
+        "previous_git_blob": "00d148003aad7d170133387b3a34d21fb4eb63ac",
+        "git_blob": "00d148003aad7d170133387b3a34d21fb4eb63ac",
+        "sha256": "8813ff1cc56abdceb3d4aa34c0ec3d7b579d6eadd62acd31568bcc92cecefff6",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/08_action_authority.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/08_action_authority.md",
+        "previous_git_blob": "ff91dfb68305f07fcc47d4b20b43a43cf42f37ea",
+        "git_blob": "ff91dfb68305f07fcc47d4b20b43a43cf42f37ea",
+        "sha256": "bc20a6afcf2d59b4a596ae266951f5ca7ed3c1c994f5fd7fb0de481a73b04842",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/09_egress_validation.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/09_egress_validation.md",
+        "previous_git_blob": "0e84210bb36a7cb1d93a9877f8ea5466d753e964",
+        "git_blob": "0e84210bb36a7cb1d93a9877f8ea5466d753e964",
+        "sha256": "3e24a3cbffaaebc4c8712336a1b5b0d2ad43dfddfe2eb1e91acfaee5a513d5fc",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/10_bare_metal.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/10_bare_metal.md",
+        "previous_git_blob": "758113014e3577a64824183a1eba775dd62e8082",
+        "git_blob": "758113014e3577a64824183a1eba775dd62e8082",
+        "sha256": "1a8e4548d163b37f2cc640ab1884a44a325689242d74e6affee8b08ce3b53f77",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/11_offloading.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/11_offloading.md",
+        "previous_git_blob": "52e0e092e878be2f7fc753a2adba89d2590db991",
+        "git_blob": "52e0e092e878be2f7fc753a2adba89d2590db991",
+        "sha256": "e2c187fd08cb909c072e8e0ea755ca1ab617356d018b28bc7f6ec637ca0da450",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/12_external_engine.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/12_external_engine.md",
+        "previous_git_blob": "bfa1a6c9b60f730b38d725721b16aa63b7f9f195",
+        "git_blob": "bfa1a6c9b60f730b38d725721b16aa63b7f9f195",
+        "sha256": "62e34f3d14efbb56a88a3228685349b601e942ed3e21c4cd098dba3737517e8c",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/13_controlled_state_transition.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/13_controlled_state_transition.md",
+        "previous_git_blob": "5c4d86b5869b418db4aeb7d2dd3df82c467d374b",
+        "git_blob": "5c4d86b5869b418db4aeb7d2dd3df82c467d374b",
+        "sha256": "20dd6e29af74424c85ac938aa50e76d2a45cc4edef00fac9597f4591bb196ce2",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/14_age_appropriate_gate.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/14_age_appropriate_gate.md",
+        "previous_git_blob": "35b931aa876f4de70fa3618fe0ccb286093e339f",
+        "git_blob": "35b931aa876f4de70fa3618fe0ccb286093e339f",
+        "sha256": "4accd98d20604ddfd097bb7e3b306e8acc07725f69addf6f7f6be26c0e3fa996",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/15_age_gate_deployment_assurance.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/15_age_gate_deployment_assurance.md",
+        "previous_git_blob": "58ba1df7ee04968eb432e67b63e2ddbb75c97f33",
+        "git_blob": "58ba1df7ee04968eb432e67b63e2ddbb75c97f33",
+        "sha256": "caf92222432ffc6cf46ee78b63a3f80cca65e24edf216318afdb8d0d57ee4941",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/16_encrypted_unlock_control.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/modules/16_encrypted_unlock_control.md",
+        "previous_git_blob": "ea2a3ec635626de263afa6c2a9200306a657bcc8",
+        "git_blob": "ea2a3ec635626de263afa6c2a9200306a657bcc8",
+        "sha256": "f8588acd7e62fc355e5ec05dbee6c4a3ea2ed6b26e54315898f9c7aa44a9c73b",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_deployment_assurance.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_deployment_assurance.md",
+        "previous_git_blob": "6d0f8b4ba826547e5f3414f3aaf1b9b87e17c836",
+        "git_blob": "6d0f8b4ba826547e5f3414f3aaf1b9b87e17c836",
+        "sha256": "6603126bdfb481d218956932799aeb10de06e183a0ab8fa9df8e3079284bccd9",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_record.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_record.md",
+        "previous_git_blob": "afdf094409eacf99eceb370caf9e96cf2ea51c75",
+        "git_blob": "afdf094409eacf99eceb370caf9e96cf2ea51c75",
+        "sha256": "88f2a5c488455fa05a0b815cfe7714552bc0a17561037fa466f81281a6f5df5e",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_unlock_receipt.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/age_gate_unlock_receipt.md",
+        "previous_git_blob": "d2feeb8c4acbd7aced8dec1673615ed968e13109",
+        "git_blob": "d2feeb8c4acbd7aced8dec1673615ed968e13109",
+        "sha256": "9d9d32f4362efd2afb1da8b8c25eff1a88fd67e308183980aadc2d4cf23ca94c",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/claim_source_ledger.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/claim_source_ledger.md",
+        "previous_git_blob": "733941d60205611d95ff4946e3d308ac33a4af16",
+        "git_blob": "733941d60205611d95ff4946e3d308ac33a4af16",
+        "sha256": "fa48d01909db27c166ec5253bdb51123295eb28444a9ea28750d63e8f3bbde64",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/compression_handoff.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/compression_handoff.md",
+        "previous_git_blob": "0539928e6ff651f6c72be83fc08aa5eae543e36e",
+        "git_blob": "0539928e6ff651f6c72be83fc08aa5eae543e36e",
+        "sha256": "ceea474da5f22effc454a0870f7f87b5632a7c8dfb47da575f35113a279ed35a",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/degraded_continuation_packet.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/degraded_continuation_packet.md",
+        "previous_git_blob": "14acc7e02235bf30259d541fe525df659056a5d7",
+        "git_blob": "14acc7e02235bf30259d541fe525df659056a5d7",
+        "sha256": "44378581813463a4fd5753f15d19ad0224b53276625c70cd8192a274b7d85eca",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/mission_capsule.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/mission_capsule.md",
+        "previous_git_blob": "46d88afb80c3e1bc5429a869d56396f89cf35119",
+        "git_blob": "46d88afb80c3e1bc5429a869d56396f89cf35119",
+        "sha256": "57c90c54d6cd0627b8a980fd8eb0f3ba0489bc09db6676908456dde601fadbf4",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/offload_engine_contract_mapping.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/offload_engine_contract_mapping.md",
+        "previous_git_blob": "72d20ab94de62dbbbe7bc3f24a70611734b2b4ba",
+        "git_blob": "72d20ab94de62dbbbe7bc3f24a70611734b2b4ba",
+        "sha256": "6170ba027ecb0f6739a1df9bb11815f80c863e2bdc90c35e5f88f9240d1e3cd0",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/shard_contract.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/shard_contract.md",
+        "previous_git_blob": "4173af83d44a8bbbb24d1ac57c0996d9c5969f88",
+        "git_blob": "4173af83d44a8bbbb24d1ac57c0996d9c5969f88",
+        "sha256": "fbf92691f5e75cb2ee905f7fc1231bac68db68e7c63741c827de470f2d6e884e",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/state_transition_contract.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/state_transition_contract.md",
+        "previous_git_blob": "e8fa24b50a5bd7e68552f918ae35c3ef0e06ca28",
+        "git_blob": "e8fa24b50a5bd7e68552f918ae35c3ef0e06ca28",
+        "sha256": "e211170f88b84343c26b8b5d33dc67c017ebaf03a0294b69e01da0a535a36cef",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/transition_invariant_ledger.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/transition_invariant_ledger.md",
+        "previous_git_blob": "af07d2bd3288e549baf66755514baa816fb268c5",
+        "git_blob": "af07d2bd3288e549baf66755514baa816fb268c5",
+        "sha256": "9a4ddf8d0052084f3fc791e09570d591314e82b714774bccc8d72b789c2f44e9",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/version_action_ledger.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/templates/version_action_ledger.md",
+        "previous_git_blob": "220a6474c14ea9a0f66c1ab951dc83459e0059aa",
+        "git_blob": "220a6474c14ea9a0f66c1ab951dc83459e0059aa",
+        "sha256": "c9125a731fd430aa632e2853c4572cc3b0803d4fecabe4f4b5025e14f73f6f90",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/behavioral_test_vectors.md",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/behavioral_test_vectors.md",
+        "previous_git_blob": "7dbd6022cfdea047f690cc8e4ae8d397f57feaca",
+        "git_blob": "7dbd6022cfdea047f690cc8e4ae8d397f57feaca",
+        "sha256": "87bf9e094f2fc15846932e140a7d792a8684e575d7ab6eb3200d4495f3156ff5",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/test_kit.py",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/test_kit.py",
+        "previous_git_blob": "b83ab52a320e623404ea40ce5347080f01da017f",
+        "git_blob": "b83ab52a320e623404ea40ce5347080f01da017f",
+        "sha256": "7e9eab8fa2cc1b9f017341b002b140c159694d2fdfd7172d7551d044fe3e1b06",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/test_publication_surface.py",
+        "current_path": "Synthetic Simulations/defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/source/tests/test_publication_surface.py",
+        "previous_git_blob": "75f40004b7f08b9267ff939e535a8b5479884959",
+        "git_blob": "75f40004b7f08b9267ff939e535a8b5479884959",
+        "sha256": "ca17ef0b3dca9c179d1a65e57b4db4a38f6850ee3a0cde38a734ccc422e7d363",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/.gitignore",
+        "current_path": "amorphous-durable-ai-workspace/.gitignore",
+        "previous_git_blob": "90d823e0289f51462738d24b822289d8b5706e63",
+        "git_blob": "90d823e0289f51462738d24b822289d8b5706e63",
+        "sha256": "d5b9aa3dfb379d136addbba9914802e9ed9d94947a3fde985401c780472aea20",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/BUILD_REPORT.md",
+        "current_path": "amorphous-durable-ai-workspace/BUILD_REPORT.md",
+        "previous_git_blob": "6eb6d697554e08442f99e3586f287d9c97af2cea",
+        "git_blob": "6eb6d697554e08442f99e3586f287d9c97af2cea",
+        "sha256": "9b1d58c19c1df432f7e9dc206c0a3b2aa21804934de82fde4907dfaef51d7cf0",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/CHANGELOG.md",
+        "current_path": "amorphous-durable-ai-workspace/CHANGELOG.md",
+        "previous_git_blob": "9b2ea8dbe0cbc7e944542aa762aeaff31958a375",
+        "git_blob": "9b2ea8dbe0cbc7e944542aa762aeaff31958a375",
+        "sha256": "4cc8053d91f495395eec903139b89626bd903ac33403ba7189c727b40ee1d6cb",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/DEVELOPMENT_GUIDANCE.md",
+        "current_path": "amorphous-durable-ai-workspace/DEVELOPMENT_GUIDANCE.md",
+        "previous_git_blob": "e45e40f48401ecbe48048304a1e0aea0fc0366cd",
+        "git_blob": "e45e40f48401ecbe48048304a1e0aea0fc0366cd",
+        "sha256": "ca014af7aa7503560f262d770320291fa17fbca15640837efc84d99f2ba249dc",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/DURABILITY_CONTRACT.md",
+        "current_path": "amorphous-durable-ai-workspace/DURABILITY_CONTRACT.md",
+        "previous_git_blob": "4434a7e5ddd23532c6055d4966f0fcfc76874db8",
+        "git_blob": "4434a7e5ddd23532c6055d4966f0fcfc76874db8",
+        "sha256": "513cacd59274d7d208e646c34968325c181df05576eb630fc601c938d172dce1",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/MANIFEST.in",
+        "current_path": "amorphous-durable-ai-workspace/MANIFEST.in",
+        "previous_git_blob": "ba7df23d1f812a06b3634b3e81ac1b550d9ce64e",
+        "git_blob": "ba7df23d1f812a06b3634b3e81ac1b550d9ce64e",
+        "sha256": "2ebfa6f03864ca18d8d9e240f4a688fc7da8a1b1e5db889f94e5e15c34cc1444",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/MINING_PROVENANCE.md",
+        "current_path": "amorphous-durable-ai-workspace/MINING_PROVENANCE.md",
+        "previous_git_blob": "e47654c45d9e7b3035f33754abc57f055daff759",
+        "git_blob": "e47654c45d9e7b3035f33754abc57f055daff759",
+        "sha256": "16933e2c29dcf8fabce29bfb06667109183cb92c507e96aa798bd4f7656bb03b",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/MODULE_BOUNDARY.md",
+        "current_path": "amorphous-durable-ai-workspace/MODULE_BOUNDARY.md",
+        "previous_git_blob": "1647e202f820fc1b3f7bb2927a58ca1f09e1f218",
+        "git_blob": "1647e202f820fc1b3f7bb2927a58ca1f09e1f218",
+        "sha256": "ac09ef967febe4a2919c5d4659d1d62718de72256c88c5f1f461a11f3183ca3a",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/README.md",
+        "current_path": "amorphous-durable-ai-workspace/README.md",
+        "previous_git_blob": "b5a8dc0a062fd9f3e8a7288c2265de9b243586db",
+        "git_blob": "ce637163dbe2b77cfd01f6514b2ee22003f80dda",
+        "sha256": "053cb669699da37d5e80d7f5bf8897f1c1787f18e2ad4130bc31c00d56fbd2de",
+        "byte_preserved": false
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/RECOVERY_PLAYBOOK.md",
+        "current_path": "amorphous-durable-ai-workspace/RECOVERY_PLAYBOOK.md",
+        "previous_git_blob": "0a4a6aedc60acd3c8dc9ed45fc549cbe5e2baa6e",
+        "git_blob": "0a4a6aedc60acd3c8dc9ed45fc549cbe5e2baa6e",
+        "sha256": "a8c8eb7f2d9120b4ae2552fe31d7de91154940a34612a0a1e4f2b2ed36d26ddb",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/SOURCE_SHA256SUMS",
+        "current_path": "amorphous-durable-ai-workspace/SOURCE_SHA256SUMS",
+        "previous_git_blob": "054bea26731b0f52037f99a03792aa9e0d41c694",
+        "git_blob": "a2b7ac3c703560ce996b337d6856b7d6bb4995e9",
+        "sha256": "8fef7a3d6bc1ad036c60a818ee0c5156ea5677a0e6ebb6e0e8378ff4feae0e93",
+        "byte_preserved": false
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/VALIDATION_REPORT.md",
+        "current_path": "amorphous-durable-ai-workspace/VALIDATION_REPORT.md",
+        "previous_git_blob": "dd6dd7aa5a88987d9d6dbc0c744c5dd41c58ba17",
+        "git_blob": "dd6dd7aa5a88987d9d6dbc0c744c5dd41c58ba17",
+        "sha256": "bc8a14433d5332e1305b83ba81ad77f9da0f5103c9a6e456830c7111964b35e4",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/WORKBENCH_MODULE.json",
+        "current_path": "amorphous-durable-ai-workspace/WORKBENCH_MODULE.json",
+        "previous_git_blob": "5485ee2f0ccf7357bcf295e2c12076d2b6be6ea1",
+        "git_blob": "5485ee2f0ccf7357bcf295e2c12076d2b6be6ea1",
+        "sha256": "7f74aa386f81d064daf02537e2ae8b707366b09c444d79a4bca3d9e4b266b9b8",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/docs/HISTORICAL_VALIDATION_0.1.0.md",
+        "current_path": "amorphous-durable-ai-workspace/docs/HISTORICAL_VALIDATION_0.1.0.md",
+        "previous_git_blob": "ef9b5ca2ad426966b1b476d50dc4e2ad7a7bac58",
+        "git_blob": "ef9b5ca2ad426966b1b476d50dc4e2ad7a7bac58",
+        "sha256": "047704ba52dc9a6d9c8bbba415f3d772343a07028bea83d14386bdc6508aeaa0",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/docs/build/ARTIFACTS.json",
+        "current_path": "amorphous-durable-ai-workspace/docs/build/ARTIFACTS.json",
+        "previous_git_blob": "edcd9249f2315915a82968366723f078fa92ff72",
+        "git_blob": "edcd9249f2315915a82968366723f078fa92ff72",
+        "sha256": "300c14f0018c2bb6b0370a6e8992c336fad87d488ed2a53a13c8861742e3c1f9",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/docs/build/SHA256SUMS",
+        "current_path": "amorphous-durable-ai-workspace/docs/build/SHA256SUMS",
+        "previous_git_blob": "333ba02fdc18a1fe38093307b5d2e92fa04fb563",
+        "git_blob": "333ba02fdc18a1fe38093307b5d2e92fa04fb563",
+        "sha256": "8121b87c70395f4e4117f8fde012e9361b534951d340d6347659908df2fd7306",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/examples/demo.py",
+        "current_path": "amorphous-durable-ai-workspace/examples/demo.py",
+        "previous_git_blob": "a60b53dee7891c9f403017d8a99238f2d35d44b3",
+        "git_blob": "a60b53dee7891c9f403017d8a99238f2d35d44b3",
+        "sha256": "1980cc1cb3909eec2125c222252022a1d7a7cc9ec2df4054285bbb47dbef6d2d",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/pyproject.toml",
+        "current_path": "amorphous-durable-ai-workspace/pyproject.toml",
+        "previous_git_blob": "207b305d674a31933b0aff59593c59439433e4f6",
+        "git_blob": "207b305d674a31933b0aff59593c59439433e4f6",
+        "sha256": "68619e1bbdcb699d882873424ccc139f1bc5726acab2af21c03c5acf09d8ebad",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/schemas/snapshot-manifest.schema.json",
+        "current_path": "amorphous-durable-ai-workspace/schemas/snapshot-manifest.schema.json",
+        "previous_git_blob": "bb40aef6ecd7640bf6c3de44fb00816569bc16c3",
+        "git_blob": "bb40aef6ecd7640bf6c3de44fb00816569bc16c3",
+        "sha256": "498c3e83b2af3ab8489ee43f4fe6962ed4d426f84c0c07a30950a8a08b8c7427",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/__init__.py",
+        "current_path": "amorphous-durable-ai-workspace/src/durable_workspace/__init__.py",
+        "previous_git_blob": "dce5470b1d01b35cac94f8f983b8ad339bcd014c",
+        "git_blob": "dce5470b1d01b35cac94f8f983b8ad339bcd014c",
+        "sha256": "4b6ee32aab29749c11188467d8d72faa671aa21eb2d8dfd686269a94e8dc9743",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/canonical.py",
+        "current_path": "amorphous-durable-ai-workspace/src/durable_workspace/canonical.py",
+        "previous_git_blob": "ef51356c6de7d3c6897df4566002e1112fc9a90a",
+        "git_blob": "ef51356c6de7d3c6897df4566002e1112fc9a90a",
+        "sha256": "69fab97f2b838a2f51b0704fdc270c130a020e2a13b437f0e8a62b50a4fc14c2",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/cli.py",
+        "current_path": "amorphous-durable-ai-workspace/src/durable_workspace/cli.py",
+        "previous_git_blob": "7bf59add789f31a4bbe55b017b0a7b5add60dc7f",
+        "git_blob": "7bf59add789f31a4bbe55b017b0a7b5add60dc7f",
+        "sha256": "3bfd5d0caefab7200c54e9c4370df6353628f0aa6da01f6dee986d61e7277087",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/formats.py",
+        "current_path": "amorphous-durable-ai-workspace/src/durable_workspace/formats.py",
+        "previous_git_blob": "54020bffdfa5f2291488c0c90d1baffee030aa9c",
+        "git_blob": "54020bffdfa5f2291488c0c90d1baffee030aa9c",
+        "sha256": "c2511d79b0120d64e1e84566cd38b04e195f0a5c1f986c202b5e496f16f35010",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/src/durable_workspace/workspace.py",
+        "current_path": "amorphous-durable-ai-workspace/src/durable_workspace/workspace.py",
+        "previous_git_blob": "000743be3a8c2de5137a7dd2bd4f6778d98d57af",
+        "git_blob": "000743be3a8c2de5137a7dd2bd4f6778d98d57af",
+        "sha256": "8da2d9ea03f4b47caeea503f9ac1f1e63bc282f3ae9f7ae392e3c29b3be0ba61",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/DECISIONS.md",
+        "current_path": "amorphous-durable-ai-workspace/templates/workspace-control/DECISIONS.md",
+        "previous_git_blob": "131d9575fc471eeffdea5a6ade5a65b6e7e3fdc4",
+        "git_blob": "131d9575fc471eeffdea5a6ade5a65b6e7e3fdc4",
+        "sha256": "9f2dfb414cdd162075660a4e846e4b00187c380d6b5b6f1915fe1cb0aaeb2ec9",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/ERROR_LOG.md",
+        "current_path": "amorphous-durable-ai-workspace/templates/workspace-control/ERROR_LOG.md",
+        "previous_git_blob": "3e4a3d75c34b516997b29721592f0d1b106623f1",
+        "git_blob": "3e4a3d75c34b516997b29721592f0d1b106623f1",
+        "sha256": "b6523d731cf7af4e4cc50be873d450586de9b7a14f7d6b2976b3258f11685d47",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/LOG.md",
+        "current_path": "amorphous-durable-ai-workspace/templates/workspace-control/LOG.md",
+        "previous_git_blob": "91be7da9e4326cc44e3af79c51733bdbaf706b2f",
+        "git_blob": "91be7da9e4326cc44e3af79c51733bdbaf706b2f",
+        "sha256": "8882712e082d9ab748c8f5bf36a4735e5a1c2a5cd37d4bce31853c6ddc9e51d3",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/STATE.md",
+        "current_path": "amorphous-durable-ai-workspace/templates/workspace-control/STATE.md",
+        "previous_git_blob": "355855323f9abe85c83822d556ce0a38803fb8b0",
+        "git_blob": "355855323f9abe85c83822d556ce0a38803fb8b0",
+        "sha256": "47b61a28d56c0451f6fa2c1497af99f143fc0bb4a2f98d8efe34926174034af9",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/TODO.md",
+        "current_path": "amorphous-durable-ai-workspace/templates/workspace-control/TODO.md",
+        "previous_git_blob": "61016490a4771694df26f4abdaa88ed2ee881af7",
+        "git_blob": "61016490a4771694df26f4abdaa88ed2ee881af7",
+        "sha256": "bd85d0b135d6cf9c23035bb3421426d7467df7be1f930ac0aab4f66fbfb4edb7",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/templates/workspace-control/WORKSPACE.json",
+        "current_path": "amorphous-durable-ai-workspace/templates/workspace-control/WORKSPACE.json",
+        "previous_git_blob": "1a868c2cc431c495fbc77f83d98f478b19bd11c2",
+        "git_blob": "1a868c2cc431c495fbc77f83d98f478b19bd11c2",
+        "sha256": "4278b2011373533bcb79a7340c42e0590fc7afba2539f704fd2f7534120b5e1a",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/tests/test_durable_workspace.py",
+        "current_path": "amorphous-durable-ai-workspace/tests/test_durable_workspace.py",
+        "previous_git_blob": "ce97be56c0311e22d65c7dd956b1941ba7c6417a",
+        "git_blob": "ce97be56c0311e22d65c7dd956b1941ba7c6417a",
+        "sha256": "2d1faac35517ab11e68fc1f0d1ae58bad8909283622e5f8d316f7d83023dc9d5",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/tests/test_lattice_readiness.py",
+        "current_path": "amorphous-durable-ai-workspace/tests/test_lattice_readiness.py",
+        "previous_git_blob": "a694d594c03c6adf52bfba05d9232a002ab28f85",
+        "git_blob": "a694d594c03c6adf52bfba05d9232a002ab28f85",
+        "sha256": "97ce327c0aeb4daf221d1156cf3c914f576a5bf55bee92860863a9e7f8facdcd",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/tools/validation/README.md",
+        "current_path": "amorphous-durable-ai-workspace/tools/validation/README.md",
+        "previous_git_blob": "c2fa86428407eec71d210a14c8f8292d5b0559b0",
+        "git_blob": "c2fa86428407eec71d210a14c8f8292d5b0559b0",
+        "sha256": "5d054b7fc940ffd3be91de3d25ae44da2a04e51a57f8cdce604aa3adbefcde6f",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/tools/validation/harness_support.py",
+        "current_path": "amorphous-durable-ai-workspace/tools/validation/harness_support.py",
+        "previous_git_blob": "208ab5ac7dd85deb67ff017ee0308e14c6d2d265",
+        "git_blob": "208ab5ac7dd85deb67ff017ee0308e14c6d2d265",
+        "sha256": "aa90bce13c36bc58af30cf4e2b29c6d56251a4182d5e5e4f3b86b10b3d32dd29",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/tools/validation/owned_job.py",
+        "current_path": "amorphous-durable-ai-workspace/tools/validation/owned_job.py",
+        "previous_git_blob": "3900a405173607d49d934e49a762ee61995d781b",
+        "git_blob": "3900a405173607d49d934e49a762ee61995d781b",
+        "sha256": "5e126aff8b362dbe63533bd6f4c9929d6bd95974cd523bc8b68866674dfe81a9",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/tools/validation/run_checks.py",
+        "current_path": "amorphous-durable-ai-workspace/tools/validation/run_checks.py",
+        "previous_git_blob": "567dde5a9f00441acad8a3ea47b90a2855e8ac3e",
+        "git_blob": "567dde5a9f00441acad8a3ea47b90a2855e8ac3e",
+        "sha256": "5295d098b75adea71f5863aee3888183288629186228fbd15d961d523ef9678b",
+        "byte_preserved": true
+      },
+      {
+        "previous_path": "xOSG/amorphous-durable-ai-workspace/validate.py",
+        "current_path": "amorphous-durable-ai-workspace/validate.py",
+        "previous_git_blob": "9e2d2f4497b543be627d96d85111850e881a0214",
+        "git_blob": "9e2d2f4497b543be627d96d85111850e881a0214",
+        "sha256": "f551fb8a33fae57862037aa5befa0b8f6cda9b16511ede6cd69f5452683bb60f",
+        "byte_preserved": true
+      }
+    ],
+    "self_hash_excluded": true
+  }
+}

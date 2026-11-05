@@ -19,7 +19,7 @@ Existing file notices remain intact. The failed experiment also retains its own 
 
 ## Evidence and historical records
 
-DWSK retains the merged R4 repairs and its dated [source-validation report](amorphous-durable-ai-workspace/VALIDATION_REPORT.md): 244 R4 checks, plus 48 overlapping development-entrypoint checks. The migration runs a fresh 48-check fixed unit/self campaign on Windows in ordinary and optimized Python. These counts overlap and must not be added as independent coverage. Older binaries, installed-package checks, and artifact hashes remain historical. No new version, wheel, release tag, installed result, physical power-loss guarantee, or cross-platform qualification is created.
+DWSK retains the merged R4 repairs and its dated [source-validation report](../../amorphous-durable-ai-workspace/VALIDATION_REPORT.md): 244 R4 checks, plus 48 overlapping development-entrypoint checks. The migration runs a fresh 48-check fixed unit/self campaign on Windows in ordinary and optimized Python. These counts overlap and must not be added as independent coverage. Older binaries, installed-package checks, and artifact hashes remain historical. No new version, wheel, release tag, installed result, physical power-loss guarantee, or cross-platform qualification is created.
 
 Synthetic Simulations' private v0.4 control-plane runtime is not included. Its published documentation and the sanitized failed modular-kit tree are migrated. The failed record retains 42/43 original Windows intake checks; the cleaned-source report records 35/36. Neither is rerun or repaired here. Earlier private-only visibility fields are preserved as dated evidence, not statements about the current public repository. The source provenance report's unresolved-license sentence is also retained as historical text; the later MIT grant is recorded in that source's LICENSE and PUBLICATION_GATE.md and continues here.
 
@@ -30,3 +30,7 @@ Every imported file is checked as complete bytes against the pinned source inven
 The separate conversation logger, Control Draft, repair packets, raw tests and diagnostics, recursive archives, omitted source research, candidate simulation packages, and machine-specific workshop files remain outside this publication. Nothing in a retained prompt or acceptance label grants instructions to the migration process.
 
 The [validation summary](MIGRATION_VALIDATION.md) records this migration's checks. Source cleanup occurs only after public destination readback succeeds. Historical commits, retained branches, and local evidence are preserved.
+
+## Root layout follow-up — 2026-11-05
+
+After the original verified migration, the user approved moving the three project directories directly into the repository root. The shared overview, LICENSE and migration records moved to `docs/xosg/`. The former `xOSG/` current directory is removed. Original paths and digests in the manifest remain historical; the root-layout mapping records current locations and digests. Relative links, the DWSK source-install command and dependent inventory are updated. Executable bytes, failed status, historical reports and repository history remain preserved. No source repair, binary release or integration is implied.

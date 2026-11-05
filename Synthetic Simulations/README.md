@@ -1,6 +1,6 @@
 # Synthetic Simulations
 
-> **Public relocation — 2026-11-05:** this bounded documentation and the existing sanitized failed-experiment tree were migrated from private OpenSurface by explicit approval. The private control-plane implementation and quarantined candidate packages are not included. Earlier private-publication descriptions below and inside the retained source are historical; see the [migration record](../MIGRATION.md). Failure classifications and test limitations are unchanged.
+> **Public relocation — 2026-11-05:** this bounded documentation and the existing sanitized failed-experiment tree were migrated from private OpenSurface by explicit approval. The private control-plane implementation and quarantined candidate packages are not included. Earlier private-publication descriptions below and inside the retained source are historical; see the [migration record](../docs/xosg/MIGRATION.md). Failure classifications and test limitations are unchanged.
 
 **Inspectable rehearsal for bounded AI control planes**
 
@@ -57,7 +57,7 @@ remain outside the storefront.
 
 Current record:
 
-- [LLM Prompt Hardening Modular Kit Candidate 1.5](defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate/) - user-designated failed experiment with sanitized source originally admitted under MIT in private OpenSurface and now publicly relocated; archive integrity passed, but a fresh Windows run passed 42/43 tests and reproduced a POSIX-mode portability defect.
+- [LLM Prompt Hardening Modular Kit Candidate 1.5](defunct-experiments/failure/llm-prompt-hardening-modular-kit-v1-5-candidate) - user-designated failed experiment with sanitized source originally admitted under MIT in private OpenSurface and now publicly relocated; archive integrity passed, but a fresh Windows run passed 42/43 tests and reproduced a POSIX-mode portability defect.
 
 ## Why Simulate
 
