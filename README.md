@@ -83,15 +83,23 @@ This is a conceptual map, not a dependency graph.
 
 **[Open family →](docs/xosg/README.md)** · **[Tool instrumentation →](Instrumentation/README.md)** · **[DWSK kit →](amorphous-durable-ai-workspace/README.md)** · **[Migration and evidence →](docs/xosg/MIGRATION.md)**
 
-> **Instrumentation entry point — required before use:** begin with
-> [Instrumentation/README.md](Instrumentation/README.md), then read
-> [the how-to](Instrumentation/HOW_TO_USE.md) and the README for the one
-> controller you intend to use. Do this before copying a command, preparing an
-> authority assertion, or treating a test result as permission to operate.
+> **Instrumentation starts with how to instrument a tool:** begin with
+> [Instrumentation/README.md](Instrumentation/README.md). It is the required
+> tool-by-tool method for inspecting a real interface and designing only the
+> instrumentation it needs. Read the downstream how-to only after a specific,
+> approved controller exists for the tool in question.
 
 xOSG, **expert Overlay System Gestalt**, brings together durable project storage, a staged shell identity, and bounded AI control-plane research. DWSK supplies local transactional records, a hash-chained journal, verified checkpoints, and quorum recovery. Naked Shell remains identity-only. Synthetic Simulations documents a private control-plane prototype and preserves a sanitized failed experiment as failed.
 
-The separate [Instrumentation](Instrumentation/README.md) package publishes three narrow deterministic controllers around existing Mill Factory interfaces: creation, verification, and gate recording. They bind a bounded request to an authority assertion and observed source identity, retain receipts, and keep uncertain outcomes visible. They are experimental local tooling—not a universal orchestrator, a generic tool protocol, a promotion authority, or proof that all AI/system cost has been removed.
+The separate [Instrumentation](Instrumentation/README.md) package documents a
+tool-by-tool method for moving justified mechanical work out of an LLM prompt.
+Its three Mill controllers—creation, verification, and gate recording—are
+worked examples, not the starting assumption or a generic wrapper. Each binds
+a bounded request to an authority assertion and observed source identity,
+retains receipts, and keeps uncertain outcomes visible. The package is
+experimental local tooling—not a universal orchestrator, a generic tool
+protocol, a promotion authority, or proof that all AI/system cost has been
+removed.
 
 The OpenSurface migration retains the merged DWSK R4 repairs. Its fresh migration checks cover the fixed Windows unit/self-check suites; they do not reproduce the full fault campaign, publish the private simulation runtime, integrate a conversation logger, or grant agent authority. This family remains distinct from the developmental xOSG-0 research line below.
 

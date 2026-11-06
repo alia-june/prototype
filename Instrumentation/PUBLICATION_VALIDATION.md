@@ -42,8 +42,9 @@ licensed, or contextual material exists beyond the bounded patterns.
 
 ## Documentation follow-up boundary
 
-A later documentation-only follow-up makes the package entry point and required
-reading explicit. It also records that this is an ongoing tool-by-tool example:
-future controllers must be fit for the particular declared tool rather than
-forced through a generic wrapper. That clarification changes no controller or
-test behavior and adds no claim that currently uninspected tools are covered.
+Later documentation-only follow-ups make the package hierarchy explicit. The
+main page is now the how-to-instrument method; existing-controller use is a
+downstream guide. The method records that this is an ongoing tool-by-tool
+example: future controllers must be fit for the particular declared tool rather
+than forced through a generic wrapper. These clarifications change no controller
+or test behavior and add no claim that currently uninspected tools are covered.

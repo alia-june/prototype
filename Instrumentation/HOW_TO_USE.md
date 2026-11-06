@@ -1,4 +1,10 @@
-# How to use the deterministic Mill controller tooling
+# How to use an existing fitted controller
+
+## This is not the entry point
+
+This guide is secondary. Begin with [How to instrument a tool](README.md).
+Use this document only when that method has already produced an approved,
+validated controller for the particular declared tool you need.
 
 ## What this guide is for
 
@@ -14,11 +20,10 @@ scope, authority assertion, evidence, and any decision after a receipt.
 ## Required reading before a command exists
 
 Before preparing a request, authority assertion, state directory, or command,
-read the package [entry point](README.md), [Validation](VALIDATION.md),
-[Provenance](PROVENANCE.md), and the README for the selected controller. This
-is required because each controller is deliberately fit to one declared tool;
-the examples are not a generic permission slip or a substitute for inspecting
-the tool you intend to operate.
+read the method entry point, [Validation](VALIDATION.md), [Provenance](PROVENANCE.md),
+and the README for the selected controller. This is required because a
+controller is fit to one declared tool; the examples are not a generic
+permission slip or a substitute for inspecting the tool you intend to operate.
 
 ## Choose one operation
 
@@ -30,9 +35,9 @@ the tool you intend to operate.
 
 Do not combine these into a general workflow.  Complete, review, and retain
 the receipt for one operation before beginning another authorized operation.
-The ongoing example will examine further tools one by one. Until a tool has
-been separately inspected, proposed, approved, and validated, this package
-does not provide a controller for it.
+The ongoing method will examine further tools one by one. Until a tool has been
+separately inspected, proposed, approved, and validated, this package does not
+provide a controller for it.
 
 ## Before invoking a controller
 
