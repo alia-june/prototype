@@ -48,3 +48,9 @@ downstream guide. The method records that this is an ongoing tool-by-tool
 example: future controllers must be fit for the particular declared tool rather
 than forced through a generic wrapper. These clarifications change no controller
 or test behavior and add no claim that currently uninspected tools are covered.
+
+The root README now leads with the same method in compact form: one real tool,
+inspection of its actual boundary, a fitted deterministic mechanism only where
+justified, scoped approval, retained validation, and separate treatment for the
+next tool. The root warning distinguishes possible avoided repeated LLM work
+from a claim of proven total credit savings.

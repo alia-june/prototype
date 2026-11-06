@@ -1,6 +1,30 @@
 <div align="center">
 
-# Warning Until Instrumentation these tools will over consume credits used by a LLM :: Instrumentation How-To to Follow
+# How to Instrument a Tool
+
+> **Start here.** Before asking an LLM to repeatedly operate a tool, inspect
+> that tool and decide whether its repeatable mechanical work can be moved into
+> a small deterministic mechanism. Until that work is instrumented and
+> validated, repeated prompt-led operation can consume unnecessary model
+> context, time, and credits. Instrumentation is not proof of total savings; it
+> transfers work into an explicitly bounded mechanism that must itself be
+> inspected and maintained.
+
+1. Begin with **one real declared tool**, not an abstract orchestrator.
+2. Inspect its actual inputs, writes, authority, evidence, failures, recovery
+   limits, dependencies, and source identity.
+3. Keep human intent, acceptance, evidence truth, and recovery decisions with
+   the human; isolate only the repeatable mechanical burden.
+4. Build a controller that is **fit for this tool**—idiosyncratic when the
+   tool's state, evidence, or authority boundary is idiosyncratic.
+5. Obtain scoped approval, validate against the unchanged tool, retain the
+   evidence and failures, then move to the next tool separately.
+
+Read the full method: **[How to Instrument a Tool](Instrumentation/README.md)**.
+The current Mill controllers are worked examples of this method, not a generic
+wrapper or a universal orchestration protocol. The downstream
+[existing-controller guide](Instrumentation/HOW_TO_USE.md) applies only after a
+specific controller has already been inspected, approved, and validated.
 
 
 
