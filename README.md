@@ -10,21 +10,18 @@
 > transfers work into an explicitly bounded mechanism that must itself be
 > inspected and maintained.
 
-1. Begin with **one real declared tool**, not an abstract orchestrator.
-2. Inspect its actual inputs, writes, authority, evidence, failures, recovery
+1. First establish a [living tooling workspace](Instrumentation/WORKSPACE_HOW_TO.md): purpose, operating rules, source/evidence separation, and the boundary between using a tool and changing the environment.
+2. Begin with **one real declared tool**, not an abstract orchestrator.
+3. Inspect its actual inputs, writes, authority, evidence, failures, recovery
    limits, dependencies, and source identity.
-3. Keep human intent, acceptance, evidence truth, and recovery decisions with
+4. Keep human intent, acceptance, evidence truth, and recovery decisions with
    the human; isolate only the repeatable mechanical burden.
-4. Build a controller that is **fit for this tool**—idiosyncratic when the
+5. Build a controller that is **fit for this tool**—idiosyncratic when the
    tool's state, evidence, or authority boundary is idiosyncratic.
-5. Obtain scoped approval, validate against the unchanged tool, retain the
+6. Obtain scoped approval, validate against the unchanged tool, retain the
    evidence and failures, then move to the next tool separately.
 
-Read the full method: **[How to Instrument a Tool](Instrumentation/README.md)**.
-The current Mill controllers are worked examples of this method, not a generic
-wrapper or a universal orchestration protocol. The downstream
-[existing-controller guide](Instrumentation/HOW_TO_USE.md) applies only after a
-specific controller has already been inspected, approved, and validated.
+Read the setup guide first: **[How to grow a living tooling workspace](Instrumentation/WORKSPACE_HOW_TO.md)**. Then read the full method: **[How to Instrument a Tool](Instrumentation/README.md)**. The current Mill controllers are worked examples of this method, not a generic wrapper or a universal orchestration protocol. The downstream [existing-controller guide](Instrumentation/HOW_TO_USE.md) applies only after a specific controller has already been inspected, approved, and validated.
 
 
 
