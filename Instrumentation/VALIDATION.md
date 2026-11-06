@@ -4,6 +4,19 @@ This document summarizes retained local validation evidence for the public
 controller sources.  It does not publish raw local runtime directories,
 controller SQLite state, copied batch contents, or full process streams.
 
+## Ongoing coverage is deliberately incomplete
+
+The three published controllers are an ongoing, tool-by-tool example—not a
+claim that every Mill or xOSG tool has been instrumented. The current evidence
+does not admit an uninspected tool into this package. Each later tool needs its
+own source inspection, explicit workload and development scope, fit-for-purpose
+controller design, validation, and evidence boundary.
+
+The design is intentionally idiosyncratic where tools differ. Shared ideas such
+as authority binding, source identity, receipts, and visible uncertainty do not
+justify a single generic request schema, writer policy, recovery action, or
+test suite for tools with different state transitions and evidence conditions.
+
 ## Evidence summary
 
 | Controller | Retained local validation | What the result establishes | What remains outside the result |

@@ -11,6 +11,15 @@ This guide is not approval to create a batch, record a gate, or treat a result
 as accepted.  The workload owner remains responsible for the intended outcome,
 scope, authority assertion, evidence, and any decision after a receipt.
 
+## Required reading before a command exists
+
+Before preparing a request, authority assertion, state directory, or command,
+read the package [entry point](README.md), [Validation](VALIDATION.md),
+[Provenance](PROVENANCE.md), and the README for the selected controller. This
+is required because each controller is deliberately fit to one declared tool;
+the examples are not a generic permission slip or a substitute for inspecting
+the tool you intend to operate.
+
 ## Choose one operation
 
 | Need | Controller | Existing Mill action |
@@ -21,6 +30,9 @@ scope, authority assertion, evidence, and any decision after a receipt.
 
 Do not combine these into a general workflow.  Complete, review, and retain
 the receipt for one operation before beginning another authorized operation.
+The ongoing example will examine further tools one by one. Until a tool has
+been separately inspected, proposed, approved, and validated, this package
+does not provide a controller for it.
 
 ## Before invoking a controller
 

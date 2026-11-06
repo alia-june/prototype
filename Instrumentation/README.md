@@ -11,6 +11,23 @@ Mill interface, and retains a receipt.  It does not create authority, decide
 whether evidence is true, promote a batch, repair a failed operation, or
 coordinate arbitrary tools.
 
+## Required entry point — read this before use
+
+This document is the required entry point for this package. Before copying a
+command, preparing a request or authority assertion, or invoking any controller,
+you must:
+
+1. read this entry point and [How to use the tooling](HOW_TO_USE.md);
+2. read [Validation](VALIDATION.md) and
+   [Provenance](PROVENANCE.md) so that test scope and source boundaries remain
+   visible; and
+3. read the README for the one controller you intend to use.
+
+Do not infer permission from an example, a schema, a successful test, a
+controller receipt, or this package's presence in the repository. The
+controller checks a supplied authority assertion; it does not create the
+human decision that makes a workload allowed.
+
 ## Tools
 
 | Controller | Existing Mill interface | Narrow operation | Current public evidence boundary |
@@ -34,6 +51,33 @@ performs batch creation, verification, or gate recording.
 4. Use one controller only within a separately authorized workload.  A request
    is not completion, and a structurally valid receipt is not semantic or
    promotion acceptance.
+
+## Ongoing tool-by-tool example, not a generic wrapper
+
+This package is an ongoing example of how a larger set of declared tools may
+be examined and, where justified, given deterministic assistance. Its current
+coverage is only three Mill interfaces: batch creation, structural verification,
+and gate recording. It does **not** yet cover every Mill tool, every xOSG tool,
+decision recording, promotion, recovery, scheduling, or a general orchestration
+protocol.
+
+Each possible next tool must be handled in its own sequence:
+
+1. inspect its actual declared interface, inputs, writes, evidence, failure
+   behavior, and source identity;
+2. identify the specific repeated mechanical burden that should move out of an
+   LLM prompt;
+3. propose a controller that is fit for that particular tool and obtain scoped
+   approval before implementation;
+4. validate the controller against that tool's declared behavior; and
+5. publish only evidence and claims supported by the resulting scope.
+
+Tooling should be idiosyncratic when the tool is idiosyncratic. A creator,
+validator, gate writer, importer, decision writer, or numerical worker can
+share a few safety ideas without sharing the same request shape, authority
+ceiling, state model, evidence condition, lease rule, recovery boundary, or
+test suite. Do not flatten those differences into a generic wrapper merely to
+make the package look uniform.
 
 ## Shared boundaries
 
