@@ -28,6 +28,7 @@ batches, or independent review.
 | Verification controller | Unit suite against the sibling compatible Mill Factory and retained reference batch | 14 / 14 passed |
 | Gate controller | Basic integration harness against a fresh copied reference batch | 12 / 12 passed |
 | ES-xOSG-0 example | Six synthetic receipt-envelope classifications; unknown-tool and insufficient-receipt refusals; static source check for declared network, LLM, subprocess, and write-capable calls | 5 / 5 tests passed; all six fixture runs returned `execution: not_performed` and `authority: human_decision_required` |
+| Living tooling workspace guide | Public adaptation of the local setup/operating method; root and Instrumentation entry-point mapping; relative-link and publication-boundary checks | Required sections, public-path exclusion, both README routes, and affected relative Markdown links passed |
 
 The gate harness output is retained outside this public export.  Its result
 establishes the declared basic integration cases only; it does not establish
@@ -65,3 +66,12 @@ the repository's historical xOSG-0 growth spine. Its source, fixtures, unit
 test, and package manifest are subject to the same bounded publication checks
 as the surrounding documentation. The completed command result is recorded in
 the local implementation report before this branch is committed.
+
+## Living tooling workspace guide addition
+
+`WORKSPACE_HOW_TO.md` is a public setup and operating guide for a workspace
+that will begin tool-by-tool work and grow through explicit decisions. It is
+adapted from a local guide, but it excludes local paths, local run evidence,
+historical approvals, and any claim that it exports a runtime, Seed package, or
+universal orchestration system. Its root and Instrumentation README links were
+checked with the other review-branch publication checks.

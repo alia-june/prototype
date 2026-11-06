@@ -9,6 +9,8 @@ The goal is modest: transfer a specific, repetitive operational burden out of
 an LLM prompt without hiding the tool's authority, evidence, state changes,
 failures, or recovery limits. A tool should remain visible in its own terms.
 
+Before choosing a first tool, read [How to grow a living tooling workspace](WORKSPACE_HOW_TO.md). It explains how to establish the purpose, working rules, evidence locations, and use-versus-environment-growth boundary that make this method usable. It is a setup guide, not a generic runtime or a substitute for the tool-specific method below.
+
 ## The method
 
 ### 1. Begin with one declared tool
