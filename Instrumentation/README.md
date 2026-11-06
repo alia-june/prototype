@@ -1,99 +1,115 @@
-# Instrumentation — deterministic Mill controller tooling
+# How to instrument a tool
 
-This package contains three small local controllers that move repetitive,
-mechanical Mill Factory operation out of an LLM prompt and into inspectable
-code.  They are published as a bounded research artifact inside the wider xOSG
-instrumentation family.
+This is the entry point for Instrumentation. It explains how to examine one
+real tool and, only where justified, build narrowly fitted deterministic support
+around it. It is **not** a generic controller recipe and it is not primarily a
+guide for running the three controllers currently published below.
 
-Each controller is deliberately narrow.  It accepts one request, checks a
-separate authority assertion, records what it observed, calls one unchanged
-Mill interface, and retains a receipt.  It does not create authority, decide
-whether evidence is true, promote a batch, repair a failed operation, or
-coordinate arbitrary tools.
+The goal is modest: transfer a specific, repetitive operational burden out of
+an LLM prompt without hiding the tool's authority, evidence, state changes,
+failures, or recovery limits. A tool should remain visible in its own terms.
 
-## Required entry point — read this before use
+## The method
 
-This document is the required entry point for this package. Before copying a
-command, preparing a request or authority assertion, or invoking any controller,
-you must:
+### 1. Begin with one declared tool
 
-1. read this entry point and [How to use the tooling](HOW_TO_USE.md);
-2. read [Validation](VALIDATION.md) and
-   [Provenance](PROVENANCE.md) so that test scope and source boundaries remain
-   visible; and
-3. read the README for the one controller you intend to use.
+Name the actual interface to examine. Read its source, README, tests, schemas,
+and any governing report before designing a wrapper. Identify the tool's real:
 
-Do not infer permission from an example, a schema, a successful test, a
-controller receipt, or this package's presence in the repository. The
-controller checks a supplied authority assertion; it does not create the
-human decision that makes a workload allowed.
+- required and optional inputs, defaults, and path rules;
+- outputs and all files, records, or state it can write;
+- dependencies and pinned source identity;
+- authority checks and evidence requirements;
+- failure, partial-write, retry, and recovery behavior; and
+- existing structural or independent validation.
 
-## Tools
+Do not start from “we need an orchestrator.” Start from the particular work
+that this one tool repeatedly requires a person or LLM to reconstruct.
 
-| Controller | Existing Mill interface | Narrow operation | Current public evidence boundary |
+### 2. Map the burden before moving it
+
+Write down which decisions must remain human and which mechanical transitions
+can be made deterministic. A useful map keeps these facts separate:
+
+| Keep with a human | Candidate deterministic work | Never infer from a successful run |
+| --- | --- | --- |
+| Intended outcome, scope, authority, acceptance, and recovery decision | Parsing bound input, comparing identities, resolving a declared path, acquiring a lease, launching one declared command, retaining a receipt | Truth of evidence, semantic correctness, external acceptance, promotion, or permission for the next action |
+
+If the needed action is vague, requires judging meaning, or has no bounded
+source/authority condition, leave it outside the controller.
+
+### 3. Design for this tool, not for an imagined common protocol
+
+Make the controller fit the tool's actual behavior. A creator, validator, gate
+writer, importer, decision writer, numerical worker, and document transformer
+may share ideas such as source identity, separate authority, receipts, and
+visible uncertainty. They do not automatically share a request schema, state
+model, evidence condition, lease target, writer policy, recovery rule, or test
+suite.
+
+Idiosyncratic tooling is often the correct result. Do not flatten real
+differences into a generic wrapper merely to make the system look uniform.
+
+### 4. Propose the smallest controller
+
+Before implementation, define the exact unchanged tool interface, inputs and
+authority binding, permitted paths, state/lease behavior, records to retain,
+failure boundary, outputs, and validation. Obtain explicit approval for that
+bounded scope. A controller is not permission to alter the underlying tool,
+install a dependency, add a generic runtime, or widen a small example into a
+whole workflow.
+
+### 5. Validate and retain the boundary
+
+Run the agreed basic cases first. Then decide separately whether hardening,
+fuzzing, contention, recovery-edge work, an LLM comparison, or publication is
+justified. Retain failures and corrections rather than overwriting them. Report
+what each run establishes and what it does not establish.
+
+### 6. Publish only a reviewable claim
+
+Public source should exclude runtime state, copied workloads, raw authority
+instances, user paths, generated bytecode, unreviewed logs, and sensitive
+material. Publish a how-to, provenance, validation boundary, and manifest that
+make the source and limitations usable without pretending the export is a
+complete local workspace.
+
+## Current worked examples
+
+The method is ongoing. The currently published examples cover only three Mill
+Factory interfaces:
+
+| Worked example | Existing Mill interface | What it demonstrates | Current boundary |
 | --- | --- | --- | --- |
-| [Creation](mill-controllers/creation/README.md) | `New-MillBatch.ps1` | Create one new HOLD batch at an authorized destination. | Basic validation and controller-specific hardening are retained; direct invocation can bypass its lease. |
-| [Verification](mill-controllers/verification/README.md) | `Test-MillBatch.ps1` | Structurally validate one authorized batch. | Basic validation, controller-specific hardening, and a bounded controller/LLM comparison are retained. |
-| [Gate recording](mill-controllers/gate/README.md) | `Set-MillGate.ps1` | Record one bound gate state with bound in-batch evidence when required. | Twelve basic integration cases and independent structural checks are retained; no hardening or LLM comparison is claimed. |
+| [Creation](mill-controllers/creation/README.md) | `New-MillBatch.ps1` | A fitted controller can create one authorized HOLD batch and retain the outcome. | Basic validation and controller-specific hardening are retained; direct invocation can bypass its lease. |
+| [Verification](mill-controllers/verification/README.md) | `Test-MillBatch.ps1` | A fitted controller can validate one authorized batch and retain the result. | Basic validation, controller-specific hardening, and a bounded comparison are retained. |
+| [Gate recording](mill-controllers/gate/README.md) | `Set-MillGate.ps1` | A fitted controller can bind evidence and record one gate state while observing partial-write boundaries. | Twelve basic cases are retained; no hardening or LLM comparison is claimed. |
 
-The controllers use the Python standard library and an existing PowerShell
-launcher.  They require a compatible local checkout of the existing
-[Mill Factory](../mill-factory/README.md); Mill Factory remains the tool that
-performs batch creation, verification, or gate recording.
+These examples do not cover every Mill tool, every xOSG tool, decision writing,
+promotion, recovery, scheduling, a shared orchestrator, or a bare-metal shell.
+Each later tool begins again at step 1.
 
-## Start here
+## When a fitted controller already exists
 
-1. Read [How to use the tooling](HOW_TO_USE.md) before invoking a controller.
-2. Read [Validation](VALIDATION.md) to distinguish tested behavior from claims
-   this package does not make.
-3. Read [Provenance and publication boundary](PROVENANCE.md) for source
-   identities, exclusion rules, and local-evidence limits.
-4. Use one controller only within a separately authorized workload.  A request
-   is not completion, and a structurally valid receipt is not semantic or
-   promotion acceptance.
+Only after the method above has produced an approved controller for the tool
+you actually need should you read [How to use an existing controller](HOW_TO_USE.md).
+Then read the applicable controller README, [Validation](VALIDATION.md), and
+[Provenance](PROVENANCE.md). A request, example, receipt, structural pass, or
+this repository's presence never substitutes for human authority.
 
-## Ongoing tool-by-tool example, not a generic wrapper
+## Shared safety language
 
-This package is an ongoing example of how a larger set of declared tools may
-be examined and, where justified, given deterministic assistance. Its current
-coverage is only three Mill interfaces: batch creation, structural verification,
-and gate recording. It does **not** yet cover every Mill tool, every xOSG tool,
-decision recording, promotion, recovery, scheduling, or a general orchestration
-protocol.
+- An authority JSON object is an asserted input. A controller may compare it to
+  a request and source identity; it does not grant authority.
+- A SHA-256 digest demonstrates byte identity of its named input. It does not
+  establish truth, ownership, approval, compatibility, or meaning.
+- A receipt should separate admission, process outcome, reported result,
+  observed state, structural validation, retained state, and next permitted
+  action.
+- `partial_or_unknown` is a retained result, not permission to retry, delete,
+  repair, promote, or improvise recovery.
 
-Each possible next tool must be handled in its own sequence:
-
-1. inspect its actual declared interface, inputs, writes, evidence, failure
-   behavior, and source identity;
-2. identify the specific repeated mechanical burden that should move out of an
-   LLM prompt;
-3. propose a controller that is fit for that particular tool and obtain scoped
-   approval before implementation;
-4. validate the controller against that tool's declared behavior; and
-5. publish only evidence and claims supported by the resulting scope.
-
-Tooling should be idiosyncratic when the tool is idiosyncratic. A creator,
-validator, gate writer, importer, decision writer, or numerical worker can
-share a few safety ideas without sharing the same request shape, authority
-ceiling, state model, evidence condition, lease rule, recovery boundary, or
-test suite. Do not flatten those differences into a generic wrapper merely to
-make the package look uniform.
-
-## Shared boundaries
-
-- An authority JSON object is an asserted input.  The controller checks whether
-  it binds to the request and declared source identity; it does not grant that
-  authority.
-- A SHA-256 digest establishes byte identity for the observed input or source.
-  It does not establish truth, ownership, approval, compatibility, or meaning.
-- A receipt separates admission, launched process, reported result, observed
-  state, structural validation, retained state, and the next permitted action.
-- `partial_or_unknown` is a retained result, not a reason to retry, delete,
-  promote, or improvise recovery.
-- These tools have no network service, automatic startup behavior, scheduler,
-  agent registration, shared orchestrator, hypervisor, or bare-metal runtime.
-
-The public source intentionally excludes local run directories, copied batches,
-SQLite controller state, generated bytecode, raw process streams, and other
-runtime evidence.  Those exclusions make this a reviewable tooling export, not
-a full reconstruction of a local workspace.
+The current examples use the Python standard library and an existing PowerShell
+launcher around a compatible [Mill Factory](../mill-factory/README.md) checkout.
+They have no network service, automatic startup behavior, scheduler, agent
+registration, shared orchestrator, hypervisor, or bare-metal runtime.

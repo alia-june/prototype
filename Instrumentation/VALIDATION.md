@@ -6,16 +6,16 @@ controller SQLite state, copied batch contents, or full process streams.
 
 ## Ongoing coverage is deliberately incomplete
 
-The three published controllers are an ongoing, tool-by-tool example—not a
-claim that every Mill or xOSG tool has been instrumented. The current evidence
-does not admit an uninspected tool into this package. Each later tool needs its
-own source inspection, explicit workload and development scope, fit-for-purpose
-controller design, validation, and evidence boundary.
+These results support the current worked examples in [How to instrument a
+tool](README.md). They do not claim that every Mill or xOSG tool has been
+instrumented. Each later tool begins with its own source inspection, explicit
+workload and development scope, fit-for-purpose controller design, validation,
+and evidence boundary.
 
-The design is intentionally idiosyncratic where tools differ. Shared ideas such
-as authority binding, source identity, receipts, and visible uncertainty do not
-justify a single generic request schema, writer policy, recovery action, or
-test suite for tools with different state transitions and evidence conditions.
+The design remains idiosyncratic where tools differ. Shared ideas such as
+authority binding, source identity, receipts, and visible uncertainty do not
+justify one generic request schema, writer policy, recovery action, or test
+suite for tools with different state transitions and evidence conditions.
 
 ## Evidence summary
 
