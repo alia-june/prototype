@@ -1,5 +1,7 @@
 <div align="center">
 
+# Warning Until Instrumentation these tools will over consume credits used by a LLM Instrumentation How-To to Follow
+
 # prototype
 
 ### Human-led systems for bounded orchestration, reference-native documents, and deterministic computation
