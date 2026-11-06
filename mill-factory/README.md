@@ -50,6 +50,21 @@ unaccepted, or unsuitable for production. The ledgers preserve that distinction.
 - Immutable promoted batches.
 - Positive and negative controls for tamper detection and promotion logic.
 
+## Instrumented working examples
+
+Mill Factory remains the unchanged evidence-bearing tool layer. The optional
+[Instrumentation method](../Instrumentation/README.md) documents fitted,
+external controllers around three declared Mill interfaces: batch creation,
+structural verification, and gate recording. Those controllers do not alter
+Mill's authority, evidence requirements, promotion rules, or direct-use
+behavior; their receipts are not Mill acceptance, semantic proof, or promotion.
+
+The non-executing [ES-xOSG-0 working example](../Instrumentation/es-xosg-0/README.md)
+shows how explicit controller receipt facts can be classified by deterministic
+expert-system rules while leaving the next real decision with a human. It does
+not invoke Mill, write a batch, record a gate, promote, retry, or make an
+uninspected Mill tool generic.
+
 ## Quick start
 
 Requirements: PowerShell 7 or newer.

@@ -1,0 +1,14 @@
+{
+  "envelope_schema": "es-xosg-0/receipt-envelope/v1",
+  "tool_kind": "mill.creation",
+  "receipt": {
+    "receipt_version": 1,
+    "admission": "permitted",
+    "creation_reported": "true",
+    "artifact_verification": "pass",
+    "retained_state": "none_observed",
+    "authority": "promotion_pending",
+    "next_permitted_action": "none",
+    "problems": []
+  }
+}

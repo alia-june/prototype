@@ -34,6 +34,10 @@ re-execution.  SHA-256 values demonstrate byte identity of their named inputs;
 they do not establish author identity, authority, truth, legal rights, or
 semantic compatibility.
 
+The separate [ES-xOSG-0 working example](es-xosg-0/README.md) is a new public
+Instrumentation artifact, not a recovered xOSG-0 historical package. Its
+synthetic fixtures demonstrate only the explicitly documented receipt adapters.
+
 ## Relationship to the repository
 
 The controller package is co-located with [Mill Factory](../mill-factory/README.md)

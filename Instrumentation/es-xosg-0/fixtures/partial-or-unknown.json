@@ -1,0 +1,14 @@
+{
+  "envelope_schema": "es-xosg-0/receipt-envelope/v1",
+  "tool_kind": "mill.gate",
+  "receipt": {
+    "receipt_schema": "mill-gate-controller/v1",
+    "admission": "permitted",
+    "gate_write_reported": "unknown",
+    "structural_validation": "unknown",
+    "retained_state": "partial_or_unknown",
+    "authority": "assertion_accepted_for_gate_write_only",
+    "next_permitted_action": "await_recovery_authority",
+    "problems": ["gate writer did not produce a reliable structured result"]
+  }
+}

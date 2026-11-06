@@ -1,0 +1,14 @@
+{
+  "envelope_schema": "es-xosg-0/receipt-envelope/v1",
+  "tool_kind": "mill.creation",
+  "receipt": {
+    "receipt_version": 1,
+    "admission": "not_permitted",
+    "creation_reported": "unknown",
+    "artifact_verification": "not_run",
+    "retained_state": "none_observed",
+    "authority": "create_only",
+    "next_permitted_action": "request_facts",
+    "problems": ["authority request digest does not match"]
+  }
+}
