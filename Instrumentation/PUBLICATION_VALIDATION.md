@@ -2,10 +2,11 @@
 
 ## Export boundary
 
-This record covers the public `Instrumentation/` package and the one root
-`README.md` link/update prepared on the review branch.  It does not replace the
-retained local controller receipts, raw process output, copied test batches, or
-independent review.
+This record covers the public `Instrumentation/` package, the root `README.md`
+link/update prepared on an earlier review branch, and the bounded
+`mill-factory/README.md` contextual update added with ES-xOSG-0. It does not
+replace retained local controller receipts, raw process output, copied test
+batches, or independent review.
 
 ## Source and compatibility checks
 
@@ -26,6 +27,7 @@ independent review.
 | Creation controller | Unit suite against the sibling compatible Mill Factory | 13 / 13 passed |
 | Verification controller | Unit suite against the sibling compatible Mill Factory and retained reference batch | 14 / 14 passed |
 | Gate controller | Basic integration harness against a fresh copied reference batch | 12 / 12 passed |
+| ES-xOSG-0 example | Six synthetic receipt-envelope classifications; unknown-tool and insufficient-receipt refusals; static source check for declared network, LLM, subprocess, and write-capable calls | 5 / 5 tests passed; all six fixture runs returned `execution: not_performed` and `authority: human_decision_required` |
 
 The gate harness output is retained outside this public export.  Its result
 establishes the declared basic integration cases only; it does not establish
@@ -54,3 +56,12 @@ inspection of its actual boundary, a fitted deterministic mechanism only where
 justified, scoped approval, retained validation, and separate treatment for the
 next tool. The root warning distinguishes possible avoided repeated LLM work
 from a claim of proven total credit savings.
+
+## ES-xOSG-0 review-branch addition
+
+The `es-xosg-0/` package is a self-contained, non-executing working example
+under `Instrumentation/`. It is new, synthetic, and deliberately not part of
+the repository's historical xOSG-0 growth spine. Its source, fixtures, unit
+test, and package manifest are subject to the same bounded publication checks
+as the surrounding documentation. The completed command result is recorded in
+the local implementation report before this branch is committed.

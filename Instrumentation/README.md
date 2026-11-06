@@ -89,6 +89,15 @@ These examples do not cover every Mill tool, every xOSG tool, decision writing,
 promotion, recovery, scheduling, a shared orchestrator, or a bare-metal shell.
 Each later tool begins again at step 1.
 
+## Expert-system-enabled working example
+
+[ES-xOSG-0](es-xosg-0/README.md) is a non-executing Instrumentation-layer
+working example. It consumes only explicit tool-specific controller receipt
+facts and returns a bounded human-facing state. It is generic only at the rule
+core; its receipt adapters remain fitted to creation, verification, and gate
+recording. It does not invoke controllers, write Mill state, grant authority,
+or become a canonical xOSG-0 stage.
+
 ## When a fitted controller already exists
 
 Only after the method above has produced an approved controller for the tool

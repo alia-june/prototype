@@ -1,0 +1,14 @@
+{
+  "envelope_schema": "es-xosg-0/receipt-envelope/v1",
+  "tool_kind": "mill.gate",
+  "receipt": {
+    "receipt_schema": "mill-gate-controller/v1",
+    "admission": "permitted",
+    "gate_write_reported": "true",
+    "structural_validation": "PASS",
+    "retained_state": "receipt_retained",
+    "authority": "assertion_accepted_for_gate_write_only",
+    "next_permitted_action": "await_user_review",
+    "problems": []
+  }
+}

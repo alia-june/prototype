@@ -1,0 +1,14 @@
+{
+  "envelope_schema": "es-xosg-0/receipt-envelope/v1",
+  "tool_kind": "mill.verification",
+  "receipt": {
+    "receipt_schema": "mill-batch-verification-controller/v1",
+    "admission": "permitted",
+    "process": {"launched": true, "exit_code": 0, "timed_out": false},
+    "validator": {"reported_result": "PASS"},
+    "retained_state": "receipt_retained",
+    "authority": "assertion_accepted_for_verification_only",
+    "next_permitted_action": "await_user_review",
+    "problems": []
+  }
+}

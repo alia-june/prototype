@@ -1,0 +1,14 @@
+{
+  "envelope_schema": "es-xosg-0/receipt-envelope/v1",
+  "tool_kind": "mill.verification",
+  "receipt": {
+    "receipt_schema": "mill-batch-verification-controller/v1",
+    "admission": "permitted",
+    "process": {"launched": true, "exit_code": 1, "timed_out": false},
+    "validator": {"reported_result": "FAIL"},
+    "retained_state": "receipt_retained",
+    "authority": "assertion_accepted_for_verification_only",
+    "next_permitted_action": "review_validator_failures",
+    "problems": ["structural validation found a recorded failure"]
+  }
+}
