@@ -37,7 +37,7 @@ This repository contains eight related prototype families exploring a common que
 
 | Project | Core question | Current direction |
 | --- | --- | --- |
-| **[xOSG instrumentation](docs/xosg/README.md)** | How can AI project state, tool interfaces, and control-plane experiments remain durable and inspectable? | DWSK R4 source, Naked Shell identity, and Synthetic Simulations documentation with retained failed source |
+| **[xOSG instrumentation](docs/xosg/README.md)** | How can AI project state, tool interfaces, and control-plane experiments remain durable and inspectable? | DWSK R4 source, Naked Shell identity, Synthetic Simulations documentation, and bounded deterministic Mill-controller tooling |
 | **[xOSG-0](syn-xOSG-0/README.md)** | How can a human-directed AI/software system grow through explicit authority, state, testing, and reduction? | ES-xOSG-7 → bare-metal → v0.2 → v0.3 → v0.4 → Seed |
 | **[Mill Factory](mill-factory/README.md)** | How can experimental source, candidates, evidence, gates, and promotion decisions remain inspectable and non-overwriting? | Portable PowerShell batch factory with fail-closed promotion and ten bounded controls |
 | **[Code-Lexigraph](code-lexigraph/README.md)** | How can programming meanings, requirements, construction rules, code roles, and evidence remain connected as code is reconstructed? | Bounded Python rehydration with bidirectional traces and a restricted construction grammar |
@@ -81,9 +81,11 @@ This is a conceptual map, not a dependency graph.
 
 ## xOSG instrumentation — durable state and inspectable experiments
 
-**[Open family →](docs/xosg/README.md)** · **[DWSK kit →](amorphous-durable-ai-workspace/README.md)** · **[Migration and evidence →](docs/xosg/MIGRATION.md)**
+**[Open family →](docs/xosg/README.md)** · **[Tool instrumentation →](Instrumentation/README.md)** · **[DWSK kit →](amorphous-durable-ai-workspace/README.md)** · **[Migration and evidence →](docs/xosg/MIGRATION.md)**
 
 xOSG, **expert Overlay System Gestalt**, brings together durable project storage, a staged shell identity, and bounded AI control-plane research. DWSK supplies local transactional records, a hash-chained journal, verified checkpoints, and quorum recovery. Naked Shell remains identity-only. Synthetic Simulations documents a private control-plane prototype and preserves a sanitized failed experiment as failed.
+
+The separate [Instrumentation](Instrumentation/README.md) package publishes three narrow deterministic controllers around existing Mill Factory interfaces: creation, verification, and gate recording. They bind a bounded request to an authority assertion and observed source identity, retain receipts, and keep uncertain outcomes visible. They are experimental local tooling—not a universal orchestrator, a generic tool protocol, a promotion authority, or proof that all AI/system cost has been removed.
 
 The OpenSurface migration retains the merged DWSK R4 repairs. Its fresh migration checks cover the fixed Windows unit/self-check suites; they do not reproduce the full fault campaign, publish the private simulation runtime, integrate a conversation logger, or grant agent authority. This family remains distinct from the developmental xOSG-0 research line below.
 

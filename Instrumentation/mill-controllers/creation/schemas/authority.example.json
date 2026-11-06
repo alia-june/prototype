@@ -1,0 +1,9 @@
+{
+  "authority_id": "replace-with-scope-reference",
+  "authorized_by": "replace-with-human-or-harness-record",
+  "request_digest": "sha256-of-the-exact-request-object",
+  "tool_identity_sha256": "sha256-of-the-controller-reported-source-identity",
+  "allowed_output_roots": [
+    "C:\\replace-with-approved-root\\mill"
+  ]
+}

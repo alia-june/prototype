@@ -1,0 +1,10 @@
+{
+  "request_id": "example-20261105-001",
+  "slug": "example",
+  "title": "Example controlled Mill batch",
+  "scope": "Demonstrate one controller-owned batch creation.",
+  "date": "2026-11-05",
+  "workspace_root": "C:\\replace-with-approved-root",
+  "output_root": "C:\\replace-with-approved-root\\mill",
+  "owner": "UNASSIGNED"
+}

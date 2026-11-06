@@ -1,0 +1,9 @@
+{
+  "authority_id": "example-local-verification-boundary",
+  "authorized_by": "named-local-operator",
+  "request_digest": "SHA256_OF_COMPLETE_REQUEST_OBJECT",
+  "tool_identity_sha256": "SHA256_OF_CURRENT_TEST_AND_UPDATE_MILL_SOURCE_IDENTITIES",
+  "allowed_batch_roots": [
+    "C:\\approved-batches"
+  ]
+}
