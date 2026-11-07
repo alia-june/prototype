@@ -1,72 +1,25 @@
-<div align="center">
+# xOSG-prototype
 
-# How to Instrument a Tool
+Public research prototypes for inspectable AI-assisted work, reference-native documents, and deterministic computation. Each project identifies its own authority, evidence, validation, and release boundaries.
 
-> **Start here.** Before asking an LLM to repeatedly operate a tool, inspect
-> that tool and decide whether its repeatable mechanical work can be moved into
-> a small deterministic mechanism. Until that work is instrumented and
-> validated, repeated prompt-led operation can consume unnecessary model
-> context, time, and credits. Instrumentation is not proof of total savings; it
-> transfers work into an explicitly bounded mechanism that must itself be
-> inspected and maintained.
+**Working on tool instrumentation?** Start with [How to Instrument a Tool](Instrumentation/README.md) and the [living tooling workspace guide](Instrumentation/WORKSPACE_HOW_TO.md). The [existing-controller how-to](Instrumentation/HOW_TO_USE.md) applies after a controller has been fitted to a declared tool and approved.
 
-1. First establish a [living tooling workspace](Instrumentation/WORKSPACE_HOW_TO.md): purpose, operating rules, source/evidence separation, and the boundary between using a tool and changing the environment.
-2. Begin with **one real declared tool**, not an abstract orchestrator.
-3. Inspect its actual inputs, writes, authority, evidence, failures, recovery
-   limits, dependencies, and source identity.
-4. Keep human intent, acceptance, evidence truth, and recovery decisions with
-   the human; isolate only the repeatable mechanical burden.
-5. Build a controller that is **fit for this tool**—idiosyncratic when the
-   tool's state, evidence, or authority boundary is idiosyncratic.
-6. Obtain scoped approval, validate against the unchanged tool, retain the
-   evidence and failures, then move to the next tool separately.
+## Project directory
 
-Read the setup guide first: **[How to grow a living tooling workspace](Instrumentation/WORKSPACE_HOW_TO.md)**. Then read the full method: **[How to Instrument a Tool](Instrumentation/README.md)**. The current Mill controllers are worked examples of this method, not a generic wrapper or a universal orchestration protocol. The downstream [existing-controller guide](Instrumentation/HOW_TO_USE.md) applies only after a specific controller has already been inspected, approved, and validated.
+| Project | What you will find | Architecture or design | Run or read first |
+| --- | --- | --- | --- |
+| [xOSG instrumentation family](docs/xosg/README.md) | DWSK R4 source, Naked Shell identity, Synthetic Simulations documentation, and related deterministic tool instrumentation | [Family and member boundaries](docs/xosg/README.md) | [Choose a member](docs/xosg/README.md) or [set up a tooling workspace](Instrumentation/WORKSPACE_HOW_TO.md) |
+| [xOSG-0](syn-xOSG-0/README.md) | Developmental orchestration research from ES-xOSG-7 through Seed | [Developmental architecture](syn-xOSG-0/ARCHITECTURE.md) | [Read the source ledger](syn-xOSG-0/docs/SOURCE_LEDGER.md) |
+| [Mill Factory](mill-factory/README.md) | PowerShell work batches with evidence, gates, and fail-closed promotion | [Batch architecture](mill-factory/ARCHITECTURE.md) | [Create a disposable batch](mill-factory/HOW_TO.md) |
+| [Code-Lexigraph](code-lexigraph/README.md) | Bounded Python code reconstruction with bidirectional traces and a restricted construction grammar | [Design and grammar](code-lexigraph/docs/DESIGN.md) | [Inspect a reconstruction](code-lexigraph/HOW_TO.md) |
+| [Etabit Schema](etabit-schema/README.md) | Draft multi-drive construction schema, source and reference examples, and unresolved contracts | [Drive and authority architecture](etabit-schema/ARCHITECTURE.md) | [Review and validate a descriptor](etabit-schema/HOW_TO.md) |
+| [Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md) | Reference-native document construction research and a retained CPU compatibility service | [Construction and service architecture](syn-etabit-transformer-textual/ARCHITECTURE.md) | [Read the service setup and environment limits](syn-etabit-transformer-textual/service/README.md) |
+| [sf-AmorphDataDrive](sf-amorph-data-drive/README.md) | Locked v0.3 research specification with open identity, bitmap, topology, and recursion contracts | [Locked v0.3 specification](sf-amorph-data-drive/specifications/sf_edabit_amorph_data_drive_locked_spec_v0_3.md) | [Review a specification change](sf-amorph-data-drive/HOW_TO.md) |
+| [MATH.SC-0](xosg-0-math-sc0/README.md) | Deterministic numerical work across Python, JavaScript, and native C/C++ with verification | [Three-runtime architecture](xosg-0-math-sc0/docs/three_runtime_architecture.md) | [Build and check the runtimes](xosg-0-math-sc0/HOW_TO.md) |
+| [GFX Form Engine / Encoded Lexical Raster](gfx-form-engine/README.md) | JSON-0 CPU scaffold and research on frames, aligned reads, and lexical raster execution | [Frame and execution architecture](gfx-form-engine/ARCHITECTURE.md) | [Build and test the CPU scaffold](gfx-form-engine/HOW_TO.md) |
+| [Semantic Symbol Interpreter](semantic-symbol-interpreter/README.md) | Synthetic text interpretation and an adversarial harness for context, evidence, and uncertainty | [Interpretation architecture](semantic-symbol-interpreter/ARCHITECTURE.md) | [Inspect a fixture grade](semantic-symbol-interpreter/HOW_TO.md) |
 
-
-
-# prototype
-
-### Human-led systems for bounded orchestration, reference-native documents, and deterministic computation
-
-![Stage](https://img.shields.io/badge/stage-prototype-orange)
-![Visibility](https://img.shields.io/badge/repository-public-2da44e)
-![Method](https://img.shields.io/badge/method-evidence--first-2f81f7)
-![Authority](https://img.shields.io/badge/authority-human--led-6f42c1)
-![Failure](https://img.shields.io/badge/failure-fail--closed-b23c17)
-
-**Public research prototypes for systems that keep semantics, execution, authority, provenance, and verification visibly separate.**
-
-<br>
-
-![AI orchestration](https://img.shields.io/badge/AI-orchestration-informational)
-![Deterministic systems](https://img.shields.io/badge/deterministic-systems-informational)
-![Document transformation](https://img.shields.io/badge/document-transformation-informational)
-![Numerical computing](https://img.shields.io/badge/numerical-computing-informational)
-![Provenance](https://img.shields.io/badge/provenance-aware-informational)
-![Fuzz testing](https://img.shields.io/badge/fuzz-testing-informational)
-
-</div>
-
----
-
-## Overview
-
-This repository contains nine related prototype families exploring a common question:
-
-> **How can complex AI-assisted systems remain inspectable when execution, authority, verification, provenance, and failure are distributed across multiple layers?**
-
-| Project | Core question | Current direction |
-| --- | --- | --- |
-| **[xOSG instrumentation](docs/xosg/README.md)** | How can AI project state, tool interfaces, and control-plane experiments remain durable and inspectable? | DWSK R4 source, Naked Shell identity, Synthetic Simulations documentation, and bounded deterministic Mill-controller tooling |
-| **[xOSG-0](syn-xOSG-0/README.md)** | How can a human-directed AI/software system grow through explicit authority, state, testing, and reduction? | ES-xOSG-7 → bare-metal → v0.2 → v0.3 → v0.4 → Seed |
-| **[Mill Factory](mill-factory/README.md)** | How can experimental source, candidates, evidence, gates, and promotion decisions remain inspectable and non-overwriting? | Portable PowerShell batch factory with fail-closed promotion and ten bounded controls |
-| **[Code-Lexigraph](code-lexigraph/README.md)** | How can programming meanings, requirements, construction rules, code roles, and evidence remain connected as code is reconstructed? | Bounded Python rehydration with bidirectional traces and a restricted construction grammar |
-| **[Etabit Schema](etabit-schema/README.md)** | How can multi-drive referential construction and distributed authority be described without granting execution authority? | Draft JSON Schema, source/reference examples, and explicit unresolved contracts |
-| **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** | How can documents remain reference-native, non-destructive, inspectable, and transformable across formats? | Markdown-first, JSON-governed document transformation with a retained CPU compatibility service |
-| **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** | How can raw enumerated values remain free of identity and metadata while external relations and compositions build coherent structures? | Locked v0.3 with open identity, bitmap, topology, and recursion contracts |
-| **[MATH.SC-0](xosg-0-math-sc0/README.md)** | How can AI-operated numerical work be delegated to deterministic computation instead of language-model inference? | Exact, interval, Python, native C/C++, and heterogeneous numerical execution with independent verification |
-| **[GFX Form Engine / Encoded Lexical Raster](gfx-form-engine/README.md)** | How can frame-scoped coordinates connect structured data, execution, and recovery while preserving source lineage? | JSON-0 CPU scaffold, aligned tri-plane resolution, and research on configurable voxel signaling and neural-engine composition |
+**xOSG family entry points:** [Amorphous Durable AI Workspace / DWSK](amorphous-durable-ai-workspace/README.md) (source-qualified storage and recovery; [architecture](amorphous-durable-ai-workspace/ARCHITECTURE.md)), [Naked Shell](Naked%20Shell/README.md) (identity only), [Synthetic Simulations](Synthetic%20Simulations/README.md) (public research account and retained failed experiment; [reading guide](Synthetic%20Simulations/HOW_TO.md)), and [Instrumentation](Instrumentation/README.md) (related tooling and worked controller examples; [architecture](Instrumentation/ARCHITECTURE.md)).
 
 These are separate research systems, not one finished product. Each keeps its own contracts, evidence, compatibility boundaries, validation status, integration gates, and release decisions.
 
