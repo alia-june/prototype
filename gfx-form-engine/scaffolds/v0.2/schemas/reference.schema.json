@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reference",
+  "type": "object",
+  "required": ["reference_id","source_id","target_id","reference_kind","expected_generation","authority_mask","resolution_state","validation_state"],
+  "properties": {
+    "reference_id": {"type":"integer","minimum":0},
+    "source_id": {"type":"integer","minimum":0},
+    "target_id": {"type":"integer","minimum":0},
+    "reference_kind": {"type":"integer","minimum":0},
+    "scope_id": {"type":"integer","minimum":0},
+    "frame_id": {"type":"integer","minimum":0},
+    "expected_generation": {"type":"integer","minimum":0},
+    "authority_mask": {"type":"integer","minimum":0},
+    "resolution_state": {"type":"integer","minimum":0},
+    "validation_state": {"type":"integer","minimum":0}
+  }
+}

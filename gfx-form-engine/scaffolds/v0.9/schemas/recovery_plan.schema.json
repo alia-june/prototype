@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RecoveryPlanCandidate",
+  "type": "object",
+  "required": ["plan_id","checkpoint_id","route_id","recovery_domain_id","recursion_id","activation_id","transaction_id","generation","state","failure"],
+  "properties": {
+    "plan_id":{"type":"integer","minimum":1},
+    "checkpoint_id":{"type":"integer","minimum":1},
+    "route_id":{"type":"integer","minimum":1},
+    "recovery_domain_id":{"type":"integer","minimum":1},
+    "recursion_id":{"type":"integer","minimum":1},
+    "activation_id":{"type":"integer","minimum":1},
+    "transaction_id":{"type":"integer","minimum":1},
+    "generation":{"type":"integer","minimum":1},
+    "state":{"type":"integer","minimum":0},
+    "failure":{"type":"integer","minimum":0}
+  },
+  "additionalProperties":false
+}

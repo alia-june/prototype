@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IntegrityCommitCertificate",
+  "type": "object",
+  "required": ["certificate_id","transaction_id","subject_id","generation","validation_mask","payload_digest","previous_certificate_digest","certificate_digest"],
+  "properties": {
+    "certificate_id": {"type":"integer","minimum":1},
+    "previous_certificate_id": {"type":"integer","minimum":0},
+    "transaction_id": {"type":"integer","minimum":1},
+    "subject_id": {"type":"integer","minimum":1},
+    "generation": {"type":"integer","minimum":1},
+    "validation_mask": {"type":"integer","minimum":1},
+    "payload_digest": {"type":"string","pattern":"^[0-9a-fA-F]{64}$"},
+    "previous_certificate_digest": {"type":"string","pattern":"^[0-9a-fA-F]{64}$"},
+    "certificate_digest": {"type":"string","pattern":"^[0-9a-fA-F]{64}$"}
+  },
+  "additionalProperties": false
+}

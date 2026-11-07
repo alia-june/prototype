@@ -1,0 +1,94 @@
+{
+  "bundle_name": "GFX_Form_Engine_ELR_Conversation_Bundle_2026-10-07",
+  "created_date": "2026-10-07",
+  "scope": "Current conversation textual artifacts and logs accessible in active context",
+  "conversation_file_inventory": {
+    "attached_or_generated_files_found": 0,
+    "note": "Conversation file listing returned no files."
+  },
+  "exclusions": [
+    "system messages",
+    "developer messages",
+    "hidden chain-of-thought/private reasoning",
+    "tool call payloads/results except the non-sensitive fact that no conversation files were present",
+    "inaccessible artifacts from other conversations or Work-mode threads"
+  ],
+  "transcript_note": "Reconstructed from user-visible conversation content available in the active context; not a platform-native export.",
+  "files": [
+    {
+      "path": "ARCHITECTURE_CANON.md",
+      "size_bytes": 3818,
+      "sha256": "013c1b2392b88ed553d5da3ed808eafb7c33e148b52c19e5f51e42b625999055"
+    },
+    {
+      "path": "CHAT_TRANSCRIPT.md",
+      "size_bytes": 43572,
+      "sha256": "7475fd9c5ef697d14644d6386849a52607a495205c331e61613da993314e7586"
+    },
+    {
+      "path": "PROJECT_STATE.json",
+      "size_bytes": 1801,
+      "sha256": "6a5cc0995343e7dcbf56a341e4d98a88c57e7bc083cbc02668935eaf2fb9ee3f"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1149,
+      "sha256": "856157cf73732770e71151f02ee6c0bd9023e48b029bc8554321777f370478f7"
+    },
+    {
+      "path": "SCAFFOLD.md",
+      "size_bytes": 1815,
+      "sha256": "e891a227b56330b2988abd11c53824760bf26fcbbb001093ca96ab07dec5d730"
+    },
+    {
+      "path": "logs/AI_ERROR_LOG.md",
+      "size_bytes": 1312,
+      "sha256": "49974c668d23e9426085054d0dd169878e4f52ed0dd846e64f8156a0c6ce3234"
+    },
+    {
+      "path": "logs/ASSUMPTION_HYPOTHESIS_REGISTER.md",
+      "size_bytes": 890,
+      "sha256": "4bd9ff6e2c91ea707b4259bcffdffd444851be859f698b23d68f6af0a79feaba"
+    },
+    {
+      "path": "logs/BENCHMARK_LOG.md",
+      "size_bytes": 381,
+      "sha256": "1ed4c1d76f0ee94b8cd25fe94ec50852c8208c23153fc99e75460078127f5416"
+    },
+    {
+      "path": "logs/CHANGELOG.md",
+      "size_bytes": 903,
+      "sha256": "d8d1750b4c218e482d2ae17b9d213604e2f361d195f8f0b428a3673986b94503"
+    },
+    {
+      "path": "logs/DECISION_LEDGER.md",
+      "size_bytes": 1583,
+      "sha256": "53017809a598ff50c1ed83cb0d78b43385d9567d9c92b9702a5b59a2826f471d"
+    },
+    {
+      "path": "logs/DEV_NOTES.md",
+      "size_bytes": 934,
+      "sha256": "57c44661bef5dd0e33718b9eb6ac7dec518447b04f44e7a7a32d66390f930a41"
+    },
+    {
+      "path": "logs/EXPERIMENT_LEDGER.md",
+      "size_bytes": 868,
+      "sha256": "e490407f0d5605cf9bf4209ff3c7ff42ba313e0f64a74a3262e044f1e11ba749"
+    },
+    {
+      "path": "logs/INTERFACE_CONTRACT_REGISTER.md",
+      "size_bytes": 601,
+      "sha256": "81ec4ffb2ecfdc0064af9c0b087f476cd9d7618fd184549e402bdf887f2be4f6"
+    },
+    {
+      "path": "logs/RESEARCH_LEDGER.md",
+      "size_bytes": 835,
+      "sha256": "ef53e1cde5d765b6e587f9460f384db3e14dcf825c0e1163fab2d6ba4ae1ef13"
+    },
+    {
+      "path": "logs/TODO.md",
+      "size_bytes": 1059,
+      "sha256": "3d9f47382bd66890dcf82649a6513e16bb351b89e2512f7beef1174a7eafe900"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "project": "GFX Form Engine / Encoded Lexical Raster",
+  "date": "2026-10-07",
+  "state": "SCAFFOLDED",
+  "canonical_workload": "JSON-0",
+  "canonical_raster_name": "Encoded Lexical Raster",
+  "abstraction_model": {
+    "root": "Abstraction",
+    "abstract_forms": {
+      "atomic": [
+        "Primitive"
+      ],
+      "molecular": [
+        "Binding",
+        "Relation",
+        "Reference",
+        "Validation",
+        "Provenance",
+        "Composition",
+        "Decomposition",
+        "Activation",
+        "Continuation",
+        "Progress",
+        "Recursion"
+      ]
+    },
+    "modifiers": [
+      "Generic",
+      "Polymorphic"
+    ]
+  },
+  "atomic_families_provisional": [
+    "IDENTITY",
+    "CODE",
+    "VALUE",
+    "MASK"
+  ],
+  "first_class": [
+    "Reference",
+    "Recursion"
+  ],
+  "recursion": {
+    "fixed_depth_limit": false,
+    "governor": "Plane 3",
+    "bounds": [
+      "progress",
+      "resources",
+      "cycles",
+      "continuations",
+      "generation",
+      "sentinels",
+      "recovery"
+    ]
+  },
+  "tri_plane": {
+    "cast_model": "single 3D cast followed by aligned plane reads",
+    "plane_1": "direction/form intent",
+    "plane_2": "admissible/authorized possibilities",
+    "plane_3": "exception/recovery/fallback and recursion governance",
+    "recovery_authority": "CPU"
+  },
+  "coordinate_model": {
+    "axes": [
+      "x",
+      "y",
+      "z"
+    ],
+    "semantics": "frame-scoped and structure-defined",
+    "hard_coded_axis_meaning": false
+  },
+  "elr": {
+    "source_authority": "immutable source bytes",
+    "backing": [
+      "dense planes",
+      "sparse planes/indexes"
+    ],
+    "logical_3d": true,
+    "dense_3d_required": false
+  },
+  "binary_layout_status": "UNFROZEN",
+  "bitcodes_status": "DEFERRED UNTIL DISTINCTIONS STABILIZE"
+}

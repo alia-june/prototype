@@ -1,0 +1,23 @@
+# Decision Ledger — v0.5
+
+- JSON-0 remains first canonical workload. LOCKED
+- `Encoded Lexical Raster` remains canonical raster representation. LOCKED
+- Source bytes remain authoritative and immutable. LOCKED
+- Reference and Recursion remain first-class molecular forms. LOCKED
+- No universal fixed recursion-depth limit. LOCKED
+- X/Y/Z semantics remain frame-scoped and structure-defined. LOCKED
+- One 3D cast + aligned tri-plane reads remains canonical. LOCKED
+- Plane 1 proposes direction/form intent; Plane 2 constrains admissibility; Plane 3 carries fallback/recovery and recursion governance. LOCKED
+- CPU retains recovery/reauthorization authority. LOCKED
+- Exact bitcodes and binary layouts remain unfrozen. LOCKED
+- Composition/decomposition equivalence is explicitly testable. LOCKED
+- Reversible coordinate reindexing is distinct from semantic projection. LOCKED
+- Semantic projections must declare loss/provenance/validation. LOCKED
+- Cast resolution may carry a preferred recovery candidate without granting recovery authority. LOCKED
+- ELR structural balance includes container-type matching. LOCKED
+- DEC-027 — Plane storage/backing is described explicitly rather than inferred from container implementation. LOCKED
+- DEC-028 — Logical polymorphism may resolve through homogeneous typed backing pools. LOCKED
+- DEC-029 — Route and RouteStep are reusable molecular forms for normal and recovery traversal. LOCKED
+- DEC-030 — Frame graphs may resolve explicit multi-edge frame paths; cross-frame movement still requires declared mappings. LOCKED
+- DEC-031 — JSON higher-order topology emits explicit Relation records and validates them against embedded node links. LOCKED
+- DEC-032 — Plane 3 recovery options may point to prebuilt recovery Routes; route availability remains distinct from recovery authority. LOCKED

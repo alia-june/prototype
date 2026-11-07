@@ -52,7 +52,7 @@ Read the setup guide first: **[How to grow a living tooling workspace](Instrumen
 
 ## Overview
 
-This repository contains eight related prototype families exploring a common question:
+This repository contains nine related prototype families exploring a common question:
 
 > **How can complex AI-assisted systems remain inspectable when execution, authority, verification, provenance, and failure are distributed across multiple layers?**
 
@@ -66,6 +66,7 @@ This repository contains eight related prototype families exploring a common que
 | **[Syn-Etabit Transformer — Textual](syn-etabit-transformer-textual/README.md)** | How can documents remain reference-native, non-destructive, inspectable, and transformable across formats? | Markdown-first, JSON-governed document transformation with a retained CPU compatibility service |
 | **[sf-AmorphDataDrive](sf-amorph-data-drive/README.md)** | How can raw enumerated values remain free of identity and metadata while external relations and compositions build coherent structures? | Locked v0.3 with open identity, bitmap, topology, and recursion contracts |
 | **[MATH.SC-0](xosg-0-math-sc0/README.md)** | How can AI-operated numerical work be delegated to deterministic computation instead of language-model inference? | Exact, interval, Python, native C/C++, and heterogeneous numerical execution with independent verification |
+| **[GFX Form Engine / Encoded Lexical Raster](gfx-form-engine/README.md)** | How can frame-scoped coordinates connect structured data, execution, and recovery while preserving source lineage? | JSON-0 CPU scaffold, aligned tri-plane resolution, and research on configurable voxel signaling and neural-engine composition |
 
 These are separate research systems, not one finished product. Each keeps its own contracts, evidence, compatibility boundaries, validation status, integration gates, and release decisions.
 

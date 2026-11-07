@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CastBundle",
+  "description": "One 3D cast location plus aligned Plane 1/2/3 results.",
+  "type": "object",
+  "required": ["cast_id","frame_id","x","y","z","generation","transaction_id","activation_id","validation_epoch"],
+  "properties": {
+    "cast_id":{"type":"integer"},"frame_id":{"type":"integer"},
+    "x":{"type":"integer"},"y":{"type":"integer"},"z":{"type":"integer"},
+    "generation":{"type":"integer"},"transaction_id":{"type":"integer"},
+    "activation_id":{"type":"integer"},"validation_epoch":{"type":"integer"}
+  }
+}

@@ -1,0 +1,27 @@
+# TODO
+
+- T-001 Define concrete Primitive schemas.
+- T-002 Implement/test Atomic.
+- T-003 Implement/test Binding.
+- T-004 Implement/test Relation.
+- T-005 Implement/test Reference.
+- T-006 Implement/test Validation.
+- T-007 Implement/test Provenance.
+- T-008 Define Activation.
+- T-009 Define Continuation.
+- T-010 Define Progress.
+- T-011 Implement Recursion governor contract.
+- T-012 Define Coordinate + Frame molecules.
+- T-013 Define Generic Plane<T>.
+- T-014 Define polymorphic backing contract.
+- T-015 Define single-cast aligned tri-plane lookup.
+- T-016 Attach Plane 3 recursion governance.
+- T-017 Build JSON-0 ELR classification table.
+- T-018 Build JSON escape/string planes.
+- T-019 Build structural compaction.
+- T-020 Map JSON structure into molecular substrate.
+- T-021 Define frame-mapping record.
+- T-022 Define semantic-projection record with explicit loss/provenance.
+- T-023 Define sparse brick backing experiments.
+- T-024 Define cast trace/breadcrumb record.
+- T-025 Define recovery-set authority boundary and CPU reauthorization hook.

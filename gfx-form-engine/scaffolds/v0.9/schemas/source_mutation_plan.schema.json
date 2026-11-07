@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SourceMutationPlan",
+  "type": "object",
+  "required": ["plan_id","source_id","expected_generation","target_generation","edits"],
+  "properties": {
+    "plan_id": {"type":"integer","minimum":1},
+    "source_id": {"type":"integer","minimum":1},
+    "expected_generation": {"type":"integer","minimum":1},
+    "target_generation": {"type":"integer","minimum":1},
+    "edits": {
+      "type":"array",
+      "items": {
+        "type":"object",
+        "required":["offset","length","replacement"],
+        "properties": {
+          "offset":{"type":"integer","minimum":0},
+          "length":{"type":"integer","minimum":0},
+          "replacement":{"type":"string"}
+        },
+        "additionalProperties":false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,7 @@
+{
+  "name": "gfx-form-engine-scaffold-v0.2",
+  "status": "first executable scaffold",
+  "target": "Windows 11 x86-64 + AMD RX 7700 XT + AMD HIP SDK",
+  "validated_here": "CPU C++20 scaffold only",
+  "unvalidated": ["HIP runtime behavior","GPU kernels","Win32 worker/supervisor recovery","performance characteristics","packed binary layouts","stable opcode bitcodes"]
+}
