@@ -1,0 +1,38 @@
+{
+  "fixture_id": "SYM-036",
+  "title": "External convention required to resolve abstract sign",
+  "bearer": {
+    "kind": "static_text",
+    "source": "CONVENTION: arithmetic\n5!",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:!",
+      "fixity:postfix"
+    ],
+    "structures": [
+      "macro_dynamics:factorial_operation"
+    ],
+    "symbols": [
+      "symbol_meaning:FACTORIAL"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "dilation:D7_EXTERNAL_CONVENTION",
+      "context:arithmetic_convention"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:NEGATION"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

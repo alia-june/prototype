@@ -1,0 +1,37 @@
+{
+  "fixture_id": "WB-017",
+  "title": "Nested legend override",
+  "bearer": {
+    "kind": "static_text",
+    "source": "GLOBAL: ●=ACTIVE\n\nPANEL B:\nIN THIS PANEL ●=FAULT\nITEM ●",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "global_binding:●=ACTIVE",
+      "regional_binding:●=FAULT"
+    ],
+    "structures": [
+      "scope:regional narrower than global"
+    ],
+    "symbols": [
+      "symbol:●"
+    ],
+    "signs": [],
+    "messages": [
+      "message:PANEL B ITEM FAULT"
+    ],
+    "implications": [],
+    "provenance": [
+      "scope_precedence:regional"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:PANEL B ITEM ACTIVE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-006"
+  ],
+  "notes": []
+}

@@ -1,0 +1,46 @@
+{
+  "fixture_id": "WB-023",
+  "title": "Causal implication chain",
+  "bearer": {
+    "kind": "static_text",
+    "source": "PUMP A OFF -> PRESSURE FALLS -> BACKUP PUMP STARTS",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "state:PUMP A OFF",
+      "event:PRESSURE FALLS",
+      "event:BACKUP PUMP STARTS"
+    ],
+    "structures": [
+      "causal_chain:PUMP A OFF->PRESSURE FALLS->BACKUP PUMP STARTS"
+    ],
+    "symbols": [
+      "symbol:->"
+    ],
+    "signs": [
+      "sign:causal process chain"
+    ],
+    "messages": [
+      "message:pump A off leads to pressure fall and backup start"
+    ],
+    "implications": [
+      "implication:pressure fall follows pump A off",
+      "implication:backup pump start follows pressure fall"
+    ],
+    "provenance": [
+      "source_span:whole causal chain"
+    ]
+  },
+  "forbidden_inferences": [
+    "implication:backup pump starts before pressure falls"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002",
+    "P-010"
+  ],
+  "notes": [
+    "Tests multi-step implication propagation and ordering."
+  ]
+}

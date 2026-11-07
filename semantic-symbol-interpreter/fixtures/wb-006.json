@@ -1,0 +1,39 @@
+{
+  "fixture_id": "WB-006",
+  "title": "Whitespace grouping",
+  "bearer": {
+    "kind": "static_text",
+    "source": "ENGINE\nRPM 2400\nTEMP 92\n\nHYDRAULICS\nPRESSURE 2800\nTEMP 71",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "whitespace:section gap"
+    ],
+    "structures": [
+      "section:ENGINE",
+      "section:HYDRAULICS",
+      "relation:ENGINE/TEMP=92",
+      "relation:HYDRAULICS/TEMP=71"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:ENGINE TEMP=92",
+      "message:HYDRAULICS TEMP=71"
+    ],
+    "implications": [],
+    "provenance": [
+      "evidence:blank-line grouping"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:ENGINE TEMP=71",
+    "message:HYDRAULICS TEMP=92"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002"
+  ],
+  "notes": []
+}

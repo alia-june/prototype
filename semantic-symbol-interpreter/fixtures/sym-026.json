@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-026",
+  "title": "Nabla dilation with dot resolves divergence",
+  "bearer": {
+    "kind": "static_text",
+    "source": "VECTOR CALCULUS\n∇·F",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:∇",
+      "adjacent_symbol:·",
+      "operand:F"
+    ],
+    "structures": [
+      "operator_nucleus:∇",
+      "operator_dilation:∇·",
+      "macro_dynamics:vector_to_scalar_operation"
+    ],
+    "symbols": [
+      "symbol_meaning:DIVERGENCE"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "context:vector_calculus",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:GRADIENT"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

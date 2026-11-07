@@ -1,0 +1,43 @@
+{
+  "fixture_id": "SYM-004",
+  "title": "Regex alternation resolves vertical bar",
+  "bearer": {
+    "kind": "static_text",
+    "source": "cat|dog",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:|",
+      "left_expression:cat",
+      "right_expression:dog"
+    ],
+    "structures": [
+      "symbol_role:alternation"
+    ],
+    "symbols": [
+      "symbol_meaning:REGEX_ALTERNATION"
+    ],
+    "signs": [
+      "sign:regex alternative"
+    ],
+    "messages": [
+      "message:match cat or dog"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:regular_expression",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:PIPELINE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

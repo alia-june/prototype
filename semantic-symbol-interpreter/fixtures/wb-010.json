@@ -1,0 +1,37 @@
+{
+  "fixture_id": "WB-010",
+  "title": "Competing reading orders",
+  "bearer": {
+    "kind": "static_text",
+    "source": "STEP 1        STEP 3\n  ↓             ↓\nSTEP 2 -----> STEP 4",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "label:STEP1",
+      "label:STEP2",
+      "label:STEP3",
+      "label:STEP4"
+    ],
+    "structures": [
+      "reading_order_candidate:numbered",
+      "reading_order_candidate:arrow/layout"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "reading_order:forced-left-to-right"
+  ],
+  "required_unknowns": [
+    "reading_order:UNRESOLVED"
+  ],
+  "properties": [
+    "P-003",
+    "P-004"
+  ],
+  "notes": []
+}

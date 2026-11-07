@@ -1,0 +1,42 @@
+{
+  "fixture_id": "SYM-002",
+  "title": "Vertical bar with adjacent operands is still underdetermined",
+  "bearer": {
+    "kind": "static_text",
+    "source": "A | B",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:|",
+      "left_neighbor:A",
+      "right_neighbor:B"
+    ],
+    "structures": [
+      "relation_shape:binary_infix_candidate"
+    ],
+    "symbols": [
+      "symbol_form:|"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "dilation:D1_ADJACENT"
+    ]
+  },
+  "forbidden_inferences": [
+    "meaning:PIPE"
+  ],
+  "required_unknowns": [
+    "symbol_meaning:AMBIGUOUS"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": [
+    "D1 adjacency narrows structure but does not determine domain semantics."
+  ]
+}

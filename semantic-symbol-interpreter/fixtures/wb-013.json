@@ -1,0 +1,43 @@
+{
+  "fixture_id": "WB-013",
+  "title": "Message spans bearers",
+  "bearer": {
+    "kind": "multi_bearer",
+    "source": [
+      "WARNING: SEE REVERSE",
+      "CHEMICAL HAZARD\nWEAR RESPIRATOR"
+    ],
+    "completeness": "COMPLETE_AS_SET"
+  },
+  "expected": {
+    "observations": [
+      "bearerA:SEE REVERSE",
+      "bearerB:CHEMICAL HAZARD",
+      "bearerB:WEAR RESPIRATOR"
+    ],
+    "structures": [
+      "bearer_relation:continuation/reference"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:chemical hazard warning",
+      "message:wear respirator"
+    ],
+    "implications": [
+      "implication:protective action required"
+    ],
+    "provenance": [
+      "source:bearerA",
+      "source:bearerB"
+    ]
+  },
+  "forbidden_inferences": [
+    "bearerA:message complete without reverse"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-008"
+  ],
+  "notes": []
+}

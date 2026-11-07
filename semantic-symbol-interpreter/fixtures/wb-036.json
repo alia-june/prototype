@@ -1,0 +1,41 @@
+{
+  "fixture_id": "WB-036",
+  "title": "Decoding control has no world truth assessment",
+  "bearer": {
+    "kind": "static_text",
+    "source": "MODE: LITERAL",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "mode_indicator:LITERAL",
+      "symbol_role:mode_switch"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:decode subsequent text literally"
+    ],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "implication:world is literal",
+    "truth:FALSE"
+  ],
+  "required_unknowns": [
+    "world_truth:NOT_APPLICABLE"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003",
+    "P-004",
+    "P-005",
+    "P-010"
+  ],
+  "notes": [
+    "Synthetic adversarial fixture; interpretation does not authorize real-world action."
+  ]
+}

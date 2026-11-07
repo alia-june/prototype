@@ -1,0 +1,39 @@
+{
+  "fixture_id": "WB-029",
+  "title": "Second non-linear network case",
+  "bearer": {
+    "kind": "graphical",
+    "source": "network: A connected to B and C; B connected to D; C connected to D",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "node:A",
+      "node:B",
+      "node:C",
+      "node:D"
+    ],
+    "structures": [
+      "structure:NETWORK_GRAPH"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "source_span:network"
+    ]
+  },
+  "forbidden_inferences": [
+    "reading_order:A->B->C->D"
+  ],
+  "required_unknowns": [
+    "reading_order:NO_LINEAR_READING_ORDER"
+  ],
+  "properties": [
+    "P-009"
+  ],
+  "notes": [
+    "Independent no-linear-order example."
+  ]
+}

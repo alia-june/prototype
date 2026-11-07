@@ -1,0 +1,43 @@
+{
+  "fixture_id": "SYM-008",
+  "title": "Bearer-local legend redefines vertical bar",
+  "bearer": {
+    "kind": "static_text",
+    "source": "LEGEND\n| = STOP\n\nSTATUS\n|",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "legend_binding:|=STOP",
+      "status_occurrence:|"
+    ],
+    "structures": [
+      "scope:bearer_local",
+      "macro_dynamics:local_symbol_binding"
+    ],
+    "symbols": [
+      "symbol_meaning:STOP"
+    ],
+    "signs": [],
+    "messages": [
+      "message:STOP"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:local_legend",
+      "dilation:D5_WHOLE_BEARER"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:PIPELINE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": [
+    "Local binding outranks generic candidates only within its scope."
+  ]
+}

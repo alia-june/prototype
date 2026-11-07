@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-014",
+  "title": "Equals in Python assignment",
+  "bearer": {
+    "kind": "static_text",
+    "source": "Python\nx = 5",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:=",
+      "left_target:x",
+      "right_value:5"
+    ],
+    "structures": [
+      "macro_dynamics:state_binding_update"
+    ],
+    "symbols": [
+      "symbol_meaning:ASSIGNMENT"
+    ],
+    "signs": [],
+    "messages": [
+      "message:bind x to 5"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:Python",
+      "dilation:D3_REGION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:EQUALITY_ASSERTION"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

@@ -1,0 +1,38 @@
+{
+  "fixture_id": "SYM-001",
+  "title": "Isolated vertical bar remains ambiguous",
+  "bearer": {
+    "kind": "static_text",
+    "source": "|",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:|"
+    ],
+    "structures": [],
+    "symbols": [
+      "symbol_form:|"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "source_span:|"
+    ]
+  },
+  "forbidden_inferences": [
+    "meaning:PIPE"
+  ],
+  "required_unknowns": [
+    "symbol_meaning:AMBIGUOUS"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": [
+    "D0 self only; no context may force one meaning."
+  ]
+}

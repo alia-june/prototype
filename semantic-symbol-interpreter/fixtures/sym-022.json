@@ -1,0 +1,39 @@
+{
+  "fixture_id": "SYM-022",
+  "title": "Filled circle in list is bullet, not junction",
+  "bearer": {
+    "kind": "static_text",
+    "source": "LIST\n● first item\n● second item",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:●",
+      "position:line_prefix"
+    ],
+    "structures": [
+      "macro_dynamics:list_item_marker"
+    ],
+    "symbols": [
+      "symbol_meaning:BULLET"
+    ],
+    "signs": [],
+    "messages": [
+      "message:list membership marker"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:list_layout"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:JUNCTION"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

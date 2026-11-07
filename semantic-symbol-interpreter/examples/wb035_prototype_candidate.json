@@ -1,0 +1,169 @@
+{
+  "fixture_id": "WB-035",
+  "claims": [
+    "quoted_text:EVACUATE",
+    "scope:descriptive example",
+    "message:example quotes evacuation directive"
+  ],
+  "unknowns": [
+    "normative_action:NOT_APPLICABLE"
+  ],
+  "provenance": [
+    "rule:descriptive-quote",
+    "engine:ssmi-minimal-interpreter/0.2.1"
+  ],
+  "invariants": {
+    "raw_observation_preserved": true,
+    "whole_bearer_preserved": true,
+    "alternatives_preserved": true,
+    "no_unobserved_as_observed": true,
+    "scope_respected": true,
+    "provenance_complete": true
+  },
+  "interpretation": {
+    "schema_version": "1.0",
+    "engine_version": "0.2.1",
+    "bearer": {
+      "kind": "static_text",
+      "source": "EXAMPLE ONLY\nQUOTE: EVACUATE",
+      "completeness": "COMPLETE"
+    },
+    "bearer_sha256": "f4ece4be9b4eb63e0ef08353052619860f68a8972079c8e95aa627690f66b45f",
+    "offset_unit": "Unicode code point; end exclusive; per source segment",
+    "observations": [
+      {
+        "id": "o0-whole",
+        "segment": 0,
+        "start": 0,
+        "end": 28,
+        "text": "EXAMPLE ONLY\nQUOTE: EVACUATE",
+        "kind": "whole_segment"
+      },
+      {
+        "id": "o0-line0",
+        "segment": 0,
+        "start": 0,
+        "end": 13,
+        "text": "EXAMPLE ONLY\n",
+        "kind": "line"
+      },
+      {
+        "id": "o0-line1",
+        "segment": 0,
+        "start": 13,
+        "end": 28,
+        "text": "QUOTE: EVACUATE",
+        "kind": "line"
+      }
+    ],
+    "rules": [
+      {
+        "id": "descriptive-quote",
+        "source": "engine/minimal_interpreter.py",
+        "scope": "whole_bearer",
+        "evidence_ids": [
+          "o0-whole"
+        ],
+        "authority": "prototype rule specification; no action authority",
+        "convention_status": "declared synthetic rule; external conventions are assumptions, not observed facts"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "candidates-1",
+        "value": "quoted_text:EVACUATE",
+        "level": "ANALYSIS",
+        "rule_id": "descriptive-quote",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-2",
+        "value": "scope:descriptive example",
+        "level": "ANALYSIS",
+        "rule_id": "descriptive-quote",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-3",
+        "value": "message:example quotes evacuation directive",
+        "level": "MESSAGE",
+        "rule_id": "descriptive-quote",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "assessments": [
+      {
+        "id": "assessments-1",
+        "value": "normative_action:NOT_APPLICABLE",
+        "level": "ANALYSIS",
+        "rule_id": "descriptive-quote",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "NOT_APPLICABLE",
+        "truth_assessment": "NOT_APPLICABLE",
+        "dimension": "normative_action"
+      }
+    ],
+    "alternatives": [],
+    "provenance_records": [
+      {
+        "id": "provenance_records-1",
+        "value": "rule:descriptive-quote",
+        "level": "ANALYSIS",
+        "rule_id": "descriptive-quote",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-2",
+        "value": "engine:ssmi-minimal-interpreter/0.2.1",
+        "level": "ANALYSIS",
+        "rule_id": "descriptive-quote",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "capability": "synthetic text / supplied textual descriptions only",
+    "completeness": "COMPLETE",
+    "limits": [
+      "No OCR or perception performed.",
+      "Rule source spans are conservative whole-segment dependencies.",
+      "Candidate support is not independently established world truth."
+    ],
+    "validation": {
+      "structural_errors": [],
+      "scope": "source retention and graph structure; no semantic attestation"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "fixture_id": "WB-032",
+  "title": "Inactive condition prevents directive activation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "ALARM INACTIVE\nIF ALARM ACTIVE -> EVACUATE",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "status:ALARM INACTIVE",
+      "conditional_rule:alarm_active=>evacuate"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:evacuate when alarm active"
+    ],
+    "implications": [
+      "implication:evacuation condition is not satisfied"
+    ],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "status:ALARM ACTIVE",
+    "implication:evacuation directive is active"
+  ],
+  "required_unknowns": [
+    "evacuation_activation:CANNOT_INFER"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003",
+    "P-004",
+    "P-005",
+    "P-010"
+  ],
+  "notes": [
+    "Synthetic adversarial fixture; interpretation does not authorize real-world action."
+  ]
+}

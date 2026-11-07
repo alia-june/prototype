@@ -1,0 +1,12 @@
+{
+  "P-001": "Raw observations never change.",
+  "P-002": "Every derived claim has provenance or declared evidence dependency.",
+  "P-003": "Unknown/ambiguous does not become false or resolved automatically.",
+  "P-004": "Rejected/alternative hypotheses remain retrievable.",
+  "P-005": "Missing evidence cannot become observed evidence.",
+  "P-006": "Local context cannot silently alter unrelated regions.",
+  "P-007": "One bearer may produce zero, one, or many messages.",
+  "P-008": "One message may depend on one or many bearers.",
+  "P-009": "No-linear-reading-order is valid.",
+  "P-010": "Every implication identifies message/sign evidence it depends on."
+}

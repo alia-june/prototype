@@ -1,0 +1,38 @@
+{
+  "fixture_id": "SYM-029",
+  "title": "Superscript minus one on scalar is inverse-family operation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "ARITHMETIC\nx⁻¹",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "base:x",
+      "attachment:superscript -1"
+    ],
+    "structures": [
+      "target_type:scalar",
+      "macro_dynamics:multiplicative_inverse"
+    ],
+    "symbols": [
+      "symbol_meaning:MULTIPLICATIVE_INVERSE"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "context:arithmetic"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:INVERSE_FUNCTION"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

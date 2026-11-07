@@ -1,0 +1,238 @@
+{
+  "fixture_id": "WB-024",
+  "claims": [
+    "claim:GATE CLOSED",
+    "claim:GATE OPEN",
+    "modality:both descriptive",
+    "conflict_candidate:same referent/scope"
+  ],
+  "unknowns": [
+    "gate_state:CONFLICTED"
+  ],
+  "provenance": [
+    "rule:conflicting-status",
+    "source_span:STATUS GATE CLOSED",
+    "source_span:STATUS GATE OPEN",
+    "engine:ssmi-minimal-interpreter/0.2.1"
+  ],
+  "invariants": {
+    "raw_observation_preserved": true,
+    "whole_bearer_preserved": true,
+    "alternatives_preserved": true,
+    "no_unobserved_as_observed": true,
+    "scope_respected": true,
+    "provenance_complete": true
+  },
+  "interpretation": {
+    "schema_version": "1.0",
+    "engine_version": "0.2.1",
+    "bearer": {
+      "kind": "static_text",
+      "source": "STATUS: GATE CLOSED\nSTATUS: GATE OPEN",
+      "completeness": "COMPLETE"
+    },
+    "bearer_sha256": "3180b3a6eb71b4ac478eaeffb4b2ea3dabaf5b03e2cb20256f4a5047a9dae550",
+    "offset_unit": "Unicode code point; end exclusive; per source segment",
+    "observations": [
+      {
+        "id": "o0-whole",
+        "segment": 0,
+        "start": 0,
+        "end": 37,
+        "text": "STATUS: GATE CLOSED\nSTATUS: GATE OPEN",
+        "kind": "whole_segment"
+      },
+      {
+        "id": "o0-line0",
+        "segment": 0,
+        "start": 0,
+        "end": 20,
+        "text": "STATUS: GATE CLOSED\n",
+        "kind": "line"
+      },
+      {
+        "id": "o0-line1",
+        "segment": 0,
+        "start": 20,
+        "end": 37,
+        "text": "STATUS: GATE OPEN",
+        "kind": "line"
+      }
+    ],
+    "rules": [
+      {
+        "id": "conflicting-status",
+        "source": "engine/minimal_interpreter.py",
+        "scope": "whole_bearer",
+        "evidence_ids": [
+          "o0-whole"
+        ],
+        "authority": "prototype rule specification; no action authority",
+        "convention_status": "declared synthetic rule; external conventions are assumptions, not observed facts"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "candidates-1",
+        "value": "claim:GATE CLOSED",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-2",
+        "value": "claim:GATE OPEN",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-3",
+        "value": "modality:both descriptive",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-4",
+        "value": "conflict_candidate:same referent/scope",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "assessments": [
+      {
+        "id": "assessments-1",
+        "value": "gate_state:CONFLICTED",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CONFLICTED",
+        "truth_assessment": "UNKNOWN",
+        "dimension": "gate_state"
+      }
+    ],
+    "alternatives": [
+      {
+        "id": "alternatives-1",
+        "value": "message:gate closed",
+        "level": "MESSAGE",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CONFLICTED",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "alternatives-2",
+        "value": "message:gate open",
+        "level": "MESSAGE",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CONFLICTED",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "provenance_records": [
+      {
+        "id": "provenance_records-1",
+        "value": "rule:conflicting-status",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-2",
+        "value": "source_span:STATUS GATE CLOSED",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-3",
+        "value": "source_span:STATUS GATE OPEN",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-4",
+        "value": "engine:ssmi-minimal-interpreter/0.2.1",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-status",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "capability": "synthetic text / supplied textual descriptions only",
+    "completeness": "COMPLETE",
+    "limits": [
+      "No OCR or perception performed.",
+      "Rule source spans are conservative whole-segment dependencies.",
+      "Candidate support is not independently established world truth."
+    ],
+    "validation": {
+      "structural_errors": [],
+      "scope": "source retention and graph structure; no semantic attestation"
+    }
+  }
+}

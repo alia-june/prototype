@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "families": {
+    "vertical_bar_progressive": {
+      "fixtures": [
+        "SYM-001",
+        "SYM-002",
+        "SYM-003",
+        "SYM-004",
+        "SYM-005",
+        "SYM-006",
+        "SYM-007",
+        "SYM-008",
+        "SYM-009",
+        "SYM-035"
+      ],
+      "purpose": "Hold raw | form constant or closely related while increasing/altering context and symbol role."
+    },
+    "exclamation_fixity": {
+      "fixtures": [
+        "SYM-010",
+        "SYM-011",
+        "SYM-012"
+      ],
+      "purpose": "Same glyph/run with prefix, postfix, and unresolved tokenization."
+    },
+    "equality_tokenization": {
+      "fixtures": [
+        "SYM-013",
+        "SYM-014",
+        "SYM-015",
+        "SYM-016",
+        "SYM-017"
+      ],
+      "purpose": "Equality/assignment family plus defeasible decomposition."
+    },
+    "tilde_context": {
+      "fixtures": [
+        "SYM-018",
+        "SYM-019"
+      ],
+      "purpose": "Same glyph; prefix operation versus infix relation."
+    },
+    "circle_context": {
+      "fixtures": [
+        "SYM-021",
+        "SYM-022"
+      ],
+      "purpose": "Same filled-circle form; topology modifier versus bullet."
+    },
+    "nabla_dilation": {
+      "fixtures": [
+        "SYM-025",
+        "SYM-026",
+        "SYM-027"
+      ],
+      "purpose": "Shared operator nucleus resolved by adjacent marks and operand type."
+    },
+    "inverse_attachment": {
+      "fixtures": [
+        "SYM-029",
+        "SYM-030"
+      ],
+      "purpose": "Same superscript attachment resolved against target semantic type."
+    },
+    "arrow_context": {
+      "fixtures": [
+        "SYM-032",
+        "SYM-033"
+      ],
+      "purpose": "Same arrow token at graph versus type-system level."
+    },
+    "backreference_context": {
+      "fixtures": [
+        "SYM-024",
+        "SYM-037"
+      ],
+      "purpose": "History/capture dependent symbols whose meaning points to an earlier symbolic object."
+    },
+    "whole_bearer_override": {
+      "fixtures": [
+        "SYM-008",
+        "SYM-038"
+      ],
+      "purpose": "Distant bearer-scoped legend establishes symbol meaning across the preserved whole bearer."
+    }
+  }
+}

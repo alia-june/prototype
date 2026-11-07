@@ -1,0 +1,38 @@
+{
+  "fixture_id": "SYM-030",
+  "title": "Superscript minus one on function is inverse function candidate",
+  "bearer": {
+    "kind": "static_text",
+    "source": "FUNCTIONS\nf⁻¹",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "base:f",
+      "attachment:superscript -1"
+    ],
+    "structures": [
+      "target_type:function",
+      "macro_dynamics:inverse_function"
+    ],
+    "symbols": [
+      "symbol_meaning:INVERSE_FUNCTION"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "context:function_theory"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:MULTIPLICATIVE_INVERSE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

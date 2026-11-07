@@ -1,0 +1,42 @@
+{
+  "fixture_id": "WB-033",
+  "title": "Conflicting alarm states block activation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "ALARM ACTIVE\nALARM INACTIVE\nIF ALARM ACTIVE -> EVACUATE",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "status:ALARM ACTIVE",
+      "status:ALARM INACTIVE"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:evacuate when alarm active"
+    ],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "implication:evacuation directive is active",
+    "implication:evacuation condition is not satisfied"
+  ],
+  "required_unknowns": [
+    "alarm_state:CONFLICTED",
+    "evacuation_activation:CANNOT_INFER"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003",
+    "P-004",
+    "P-005",
+    "P-010"
+  ],
+  "notes": [
+    "Synthetic adversarial fixture; interpretation does not authorize real-world action."
+  ]
+}

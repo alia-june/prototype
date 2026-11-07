@@ -1,0 +1,42 @@
+{
+  "fixture_id": "SYM-032",
+  "title": "Arrow token in directed graph encodes directed edge",
+  "bearer": {
+    "kind": "static_text",
+    "source": "DIGRAPH\nA -> B",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_run:->",
+      "left_node:A",
+      "right_node:B"
+    ],
+    "structures": [
+      "macro_dynamics:directed_topology",
+      "source:A",
+      "target:B"
+    ],
+    "symbols": [
+      "symbol_meaning:DIRECTED_EDGE"
+    ],
+    "signs": [],
+    "messages": [
+      "message:edge from A to B"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:directed_graph"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:FUNCTION_TYPE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

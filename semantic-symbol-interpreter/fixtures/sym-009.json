@@ -1,0 +1,43 @@
+{
+  "fixture_id": "SYM-009",
+  "title": "Compound branch token preserves alternate decomposition",
+  "bearer": {
+    "kind": "static_text",
+    "source": "ROOT\n|- child",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_run:|-"
+    ],
+    "structures": [
+      "tokenization_candidate:[|-]",
+      "tokenization_candidate:[|][-]",
+      "macro_dynamics:branch_relation"
+    ],
+    "symbols": [
+      "symbol_meaning:ASCII_BRANCH"
+    ],
+    "signs": [],
+    "messages": [
+      "message:child branches from root"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:ascii_tree",
+      "dilation:D3_REGION"
+    ]
+  },
+  "forbidden_inferences": [
+    "meaning:PIPELINE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": [
+    "Tokenization candidates remain represented even when tree context prefers branch token."
+  ]
+}

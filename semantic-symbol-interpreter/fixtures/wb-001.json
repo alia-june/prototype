@@ -1,0 +1,48 @@
+{
+  "fixture_id": "WB-001",
+  "title": "Qualified prohibition",
+  "bearer": {
+    "kind": "static_text",
+    "source": "WARNING\n\nDO NOT\nENTER\n\nAUTHORIZED PERSONNEL ONLY",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "line:WARNING",
+      "line:DO NOT",
+      "line:ENTER",
+      "line:AUTHORIZED PERSONNEL ONLY"
+    ],
+    "structures": [
+      "group:warning assembly",
+      "relation:AUTHORIZED PERSONNEL ONLY qualifies DO NOT ENTER"
+    ],
+    "symbols": [],
+    "signs": [
+      "sign:qualified warning/prohibition"
+    ],
+    "messages": [
+      "message:entry prohibited subject to authorization qualification"
+    ],
+    "implications": [
+      "implication:unauthorized persons must not enter"
+    ],
+    "provenance": [
+      "source_span:WARNING",
+      "source_span:DO NOT ENTER",
+      "source_span:AUTHORIZED PERSONNEL ONLY"
+    ]
+  },
+  "forbidden_inferences": [
+    "implication:authorized personnel must enter",
+    "message:ENTER",
+    "implication:everyone must never enter"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-010"
+  ],
+  "notes": []
+}

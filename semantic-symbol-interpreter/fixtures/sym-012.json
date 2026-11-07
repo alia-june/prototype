@@ -1,0 +1,40 @@
+{
+  "fixture_id": "SYM-012",
+  "title": "Double exclamation without domain stays unresolved",
+  "bearer": {
+    "kind": "static_text",
+    "source": "!!",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_run:!!"
+    ],
+    "structures": [
+      "tokenization_candidate:[!!]",
+      "tokenization_candidate:[!][!]"
+    ],
+    "symbols": [
+      "symbol_form:!!"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "dilation:D0_SELF"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:SHELL_HISTORY_REPEAT"
+  ],
+  "required_unknowns": [
+    "tokenization:AMBIGUOUS",
+    "symbol_meaning:AMBIGUOUS"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

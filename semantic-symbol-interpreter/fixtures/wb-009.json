@@ -1,0 +1,32 @@
+{
+  "fixture_id": "WB-009",
+  "title": "Clipped bearer",
+  "bearer": {
+    "kind": "static_text",
+    "source": "DANGER\nHIGH VOLT... [right edge clipped]",
+    "completeness": "CLIPPED"
+  },
+  "expected": {
+    "observations": [
+      "text:DANGER",
+      "partial_text:HIGH VOLT...",
+      "bearer:CLIPPED"
+    ],
+    "structures": [],
+    "symbols": [],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "observed_text:HIGH VOLTAGE"
+  ],
+  "required_unknowns": [
+    "continuation:UNKNOWN"
+  ],
+  "properties": [
+    "P-005"
+  ],
+  "notes": []
+}

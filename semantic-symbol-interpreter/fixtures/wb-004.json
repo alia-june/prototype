@@ -1,0 +1,42 @@
+{
+  "fixture_id": "WB-004",
+  "title": "Bearer-local legend override",
+  "bearer": {
+    "kind": "static_text",
+    "source": "SYSTEM STATUS\n● = OFF\n○ = ON\nPUMP 1 ●\nPUMP 2 ○",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "legend:●=OFF",
+      "legend:○=ON",
+      "occurrence:PUMP1●",
+      "occurrence:PUMP2○"
+    ],
+    "structures": [
+      "scope:legend applies to status bearer"
+    ],
+    "symbols": [
+      "symbol:●",
+      "symbol:○"
+    ],
+    "signs": [],
+    "messages": [
+      "message:PUMP 1 OFF",
+      "message:PUMP 2 ON"
+    ],
+    "implications": [],
+    "provenance": [
+      "binding:●->OFF",
+      "binding:○->ON"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:PUMP 1 ACTIVE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-006"
+  ],
+  "notes": []
+}

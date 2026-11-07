@@ -1,0 +1,39 @@
+{
+  "fixture_id": "SYM-025",
+  "title": "Nabla nucleus plus scalar operand resolves gradient",
+  "bearer": {
+    "kind": "static_text",
+    "source": "VECTOR CALCULUS\n∇f",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:∇",
+      "operand:f"
+    ],
+    "structures": [
+      "operator_nucleus:∇",
+      "macro_dynamics:scalar_to_vector_operation"
+    ],
+    "symbols": [
+      "symbol_meaning:GRADIENT"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "context:vector_calculus",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:DIVERGENCE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

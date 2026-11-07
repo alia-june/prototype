@@ -1,0 +1,325 @@
+{
+  "fixture_id": "WB-021",
+  "claims": [
+    "status:ALARM ACTIVE",
+    "rule:IF ALARM ACTIVE -> EVACUATE",
+    "conditional_rule:alarm_active=>evacuate",
+    "implication_chain:condition activates directive",
+    "symbol:->",
+    "sign:conditional evacuation directive",
+    "message:alarm is active",
+    "message:evacuate when alarm active",
+    "implication:evacuation directive is active",
+    "destination:ASSEMBLY POINT A",
+    "implication:proceed toward assembly point A"
+  ],
+  "unknowns": [],
+  "provenance": [
+    "rule:conditional-activation",
+    "source_span:ALARM ACTIVE",
+    "source_span:IF ALARM ACTIVE -> EVACUATE",
+    "source_span:ASSEMBLY POINT A",
+    "engine:ssmi-minimal-interpreter/0.2.1"
+  ],
+  "invariants": {
+    "raw_observation_preserved": true,
+    "whole_bearer_preserved": true,
+    "alternatives_preserved": true,
+    "no_unobserved_as_observed": true,
+    "scope_respected": true,
+    "provenance_complete": true
+  },
+  "interpretation": {
+    "schema_version": "1.0",
+    "engine_version": "0.2.1",
+    "bearer": {
+      "kind": "static_text",
+      "source": "ALARM ACTIVE\nIF ALARM ACTIVE -> EVACUATE\nASSEMBLY POINT A",
+      "completeness": "COMPLETE"
+    },
+    "bearer_sha256": "df11584eb70e866421dee46990f94568f87de39b45278ba3a54748de1293e3ce",
+    "offset_unit": "Unicode code point; end exclusive; per source segment",
+    "observations": [
+      {
+        "id": "o0-whole",
+        "segment": 0,
+        "start": 0,
+        "end": 57,
+        "text": "ALARM ACTIVE\nIF ALARM ACTIVE -> EVACUATE\nASSEMBLY POINT A",
+        "kind": "whole_segment"
+      },
+      {
+        "id": "o0-line0",
+        "segment": 0,
+        "start": 0,
+        "end": 13,
+        "text": "ALARM ACTIVE\n",
+        "kind": "line"
+      },
+      {
+        "id": "o0-line1",
+        "segment": 0,
+        "start": 13,
+        "end": 41,
+        "text": "IF ALARM ACTIVE -> EVACUATE\n",
+        "kind": "line"
+      },
+      {
+        "id": "o0-line2",
+        "segment": 0,
+        "start": 41,
+        "end": 57,
+        "text": "ASSEMBLY POINT A",
+        "kind": "line"
+      }
+    ],
+    "rules": [
+      {
+        "id": "conditional-activation",
+        "source": "engine/minimal_interpreter.py",
+        "scope": "whole_bearer",
+        "evidence_ids": [
+          "o0-whole"
+        ],
+        "authority": "prototype rule specification; no action authority",
+        "convention_status": "declared synthetic rule; external conventions are assumptions, not observed facts"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "candidates-1",
+        "value": "status:ALARM ACTIVE",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-2",
+        "value": "rule:IF ALARM ACTIVE -> EVACUATE",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-3",
+        "value": "conditional_rule:alarm_active=>evacuate",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-4",
+        "value": "implication_chain:condition activates directive",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-5",
+        "value": "symbol:->",
+        "level": "SYMBOL",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-6",
+        "value": "sign:conditional evacuation directive",
+        "level": "SIGN",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole",
+          "candidates-5"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-7",
+        "value": "message:alarm is active",
+        "level": "MESSAGE",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole",
+          "candidates-5",
+          "candidates-6"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-8",
+        "value": "message:evacuate when alarm active",
+        "level": "MESSAGE",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole",
+          "candidates-5",
+          "candidates-6"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-9",
+        "value": "implication:evacuation directive is active",
+        "level": "IMPLICATION",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole",
+          "candidates-6",
+          "candidates-7",
+          "candidates-8"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-10",
+        "value": "destination:ASSEMBLY POINT A",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-11",
+        "value": "implication:proceed toward assembly point A",
+        "level": "IMPLICATION",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole",
+          "candidates-6",
+          "candidates-7",
+          "candidates-8"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "assessments": [],
+    "alternatives": [],
+    "provenance_records": [
+      {
+        "id": "provenance_records-1",
+        "value": "rule:conditional-activation",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-2",
+        "value": "source_span:ALARM ACTIVE",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-3",
+        "value": "source_span:IF ALARM ACTIVE -> EVACUATE",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-4",
+        "value": "source_span:ASSEMBLY POINT A",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-5",
+        "value": "engine:ssmi-minimal-interpreter/0.2.1",
+        "level": "ANALYSIS",
+        "rule_id": "conditional-activation",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "capability": "synthetic text / supplied textual descriptions only",
+    "completeness": "COMPLETE",
+    "limits": [
+      "No OCR or perception performed.",
+      "Rule source spans are conservative whole-segment dependencies.",
+      "Candidate support is not independently established world truth."
+    ],
+    "validation": {
+      "structural_errors": [],
+      "scope": "source retention and graph structure; no semantic attestation"
+    }
+  }
+}

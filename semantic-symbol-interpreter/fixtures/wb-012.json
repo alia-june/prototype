@@ -1,0 +1,42 @@
+{
+  "fixture_id": "WB-012",
+  "title": "Region-scoped grammar",
+  "bearer": {
+    "kind": "static_text",
+    "source": "LEGEND\nX = CLOSED\n\nSTATUS\nGate A X\n\nFORMULA\nx = a + b",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "legend:X=CLOSED",
+      "status:Gate A X",
+      "formula:x=a+b"
+    ],
+    "structures": [
+      "region:STATUS",
+      "region:FORMULA",
+      "binding_scope:STATUS"
+    ],
+    "symbols": [
+      "symbol:X",
+      "symbol:x"
+    ],
+    "signs": [],
+    "messages": [
+      "message:Gate A CLOSED",
+      "message:formula assignment/equality unresolved by this fixture"
+    ],
+    "implications": [],
+    "provenance": [
+      "scope:local legend"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:formula x means CLOSED"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-006"
+  ],
+  "notes": []
+}

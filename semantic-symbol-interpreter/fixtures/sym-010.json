@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-010",
+  "title": "Prefix exclamation as logical negation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "JavaScript\n!ready",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:!",
+      "fixity:prefix",
+      "operand:ready"
+    ],
+    "structures": [
+      "macro_dynamics:negation"
+    ],
+    "symbols": [
+      "symbol_meaning:LOGICAL_NEGATION"
+    ],
+    "signs": [],
+    "messages": [
+      "message:not ready"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:JavaScript",
+      "dilation:D3_REGION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:FACTORIAL"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

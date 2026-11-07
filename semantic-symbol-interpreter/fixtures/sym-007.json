@@ -1,0 +1,43 @@
+{
+  "fixture_id": "SYM-007",
+  "title": "Paired vertical bars act as fence",
+  "bearer": {
+    "kind": "static_text",
+    "source": "|x|",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:left |",
+      "raw_symbol:right |"
+    ],
+    "structures": [
+      "pairing:fence",
+      "enclosed_object:x",
+      "macro_dynamics:enclosure"
+    ],
+    "symbols": [
+      "symbol_family:FENCE",
+      "symbol_meaning:ABSOLUTE_VALUE_FENCE"
+    ],
+    "signs": [],
+    "messages": [
+      "message:absolute value of x"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:scalar_arithmetic",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:PIPELINE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

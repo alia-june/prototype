@@ -1,0 +1,34 @@
+{
+  "fixture_id": "WB-014",
+  "title": "One bearer, multiple messages",
+  "bearer": {
+    "kind": "static_text",
+    "source": "ROUTE 7 NORTH\nBOSTON 18\n\nTRUCKS\nNO LEFT TURN\n\nSPEED LIMIT\n35",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "message_group:navigation",
+      "message_group:restriction",
+      "message_group:speed"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:navigation",
+      "message:truck no-left-turn restriction",
+      "message:speed limit 35"
+    ],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "cardinality:one bearer exactly one message"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-007"
+  ],
+  "notes": []
+}

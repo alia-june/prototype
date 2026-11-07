@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-028",
+  "title": "Superscript T resolves by target type",
+  "bearer": {
+    "kind": "static_text",
+    "source": "LINEAR ALGEBRA\nAᵀ",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "base:A",
+      "attachment:superscript T"
+    ],
+    "structures": [
+      "attachment_role:operation",
+      "target_type:matrix",
+      "macro_dynamics:global_structure_transform"
+    ],
+    "symbols": [
+      "symbol_meaning:TRANSPOSE"
+    ],
+    "signs": [],
+    "messages": [
+      "message:transpose A"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:linear_algebra"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:EXPONENT_T"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

@@ -1,0 +1,44 @@
+{
+  "fixture_id": "SYM-023",
+  "title": "Mode indicator changes downstream interpretation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "BRAILLE_MODE_FIXTURE\n⠰ a b [scope:end-word]",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:⠰",
+      "following_symbols:a b"
+    ],
+    "structures": [
+      "macro_dynamics:interpretation_mode_switch",
+      "scope:end-word"
+    ],
+    "symbols": [
+      "symbol_meaning:MODE_INDICATOR"
+    ],
+    "signs": [],
+    "messages": [
+      "message:interpret governed symbols under alternate mode"
+    ],
+    "implications": [
+      "implication:downstream decoding changes until scope terminates"
+    ],
+    "provenance": [
+      "context:mode_control_fixture"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_role:payload_character"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": [
+    "Synthetic mode-control fixture modeled on the already-mined indicator mechanism; not a normative Braille conformance test."
+  ]
+}

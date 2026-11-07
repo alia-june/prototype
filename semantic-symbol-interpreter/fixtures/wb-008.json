@@ -1,0 +1,39 @@
+{
+  "fixture_id": "WB-008",
+  "title": "Correction and history preservation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "VALVE STATUS\nOPEN [struck]\nCLOSED",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "historical:OPEN",
+      "modification:strike OPEN",
+      "current_text:CLOSED"
+    ],
+    "structures": [
+      "layer:OPEN",
+      "layer:strike",
+      "layer:CLOSED"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message_effective:CLOSED"
+    ],
+    "implications": [],
+    "provenance": [
+      "history:OPEN retained"
+    ]
+  },
+  "forbidden_inferences": [
+    "source_history:OPEN deleted"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-004"
+  ],
+  "notes": []
+}

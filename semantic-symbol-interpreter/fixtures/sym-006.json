@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-006",
+  "title": "Set-builder vertical bar creates semantic regions",
+  "bearer": {
+    "kind": "static_text",
+    "source": "{ x | x > 0 }",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:|"
+    ],
+    "structures": [
+      "left_region:expression x",
+      "right_region:predicate x>0",
+      "macro_dynamics:comprehension_boundary"
+    ],
+    "symbols": [
+      "symbol_meaning:COMPREHENSION_BOUNDARY"
+    ],
+    "signs": [],
+    "messages": [
+      "message:set of x satisfying x>0"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:set_builder",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:PIPELINE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

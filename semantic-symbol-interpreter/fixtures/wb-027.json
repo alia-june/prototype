@@ -1,0 +1,43 @@
+{
+  "fixture_id": "WB-027",
+  "title": "Static model label has no temporal transition",
+  "bearer": {
+    "kind": "static_text",
+    "source": "MODEL\nX7",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "label:MODEL",
+      "identifier:X7"
+    ],
+    "structures": [
+      "relation:MODEL->X7"
+    ],
+    "symbols": [],
+    "signs": [
+      "sign:model identification label"
+    ],
+    "messages": [
+      "message:model is X7"
+    ],
+    "implications": [],
+    "provenance": [
+      "source_span:MODEL",
+      "source_span:X7"
+    ]
+  },
+  "forbidden_inferences": [
+    "implication:model will transition to X7"
+  ],
+  "required_unknowns": [
+    "temporal_transition:NOT_APPLICABLE"
+  ],
+  "properties": [
+    "P-002",
+    "P-003"
+  ],
+  "notes": [
+    "Tests NOT_APPLICABLE for a semantic dimension that does not apply."
+  ]
+}

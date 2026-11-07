@@ -1,0 +1,39 @@
+{
+  "fixture_id": "SYM-015",
+  "title": "Double equals in Python comparison",
+  "bearer": {
+    "kind": "static_text",
+    "source": "Python\nx == 5",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_run:=="
+    ],
+    "structures": [
+      "tokenization_preferred:[==]",
+      "macro_dynamics:comparison"
+    ],
+    "symbols": [
+      "symbol_meaning:EQUALITY_COMPARISON"
+    ],
+    "signs": [],
+    "messages": [
+      "message:test whether x equals 5"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:Python"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:ASSIGNMENT"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

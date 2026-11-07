@@ -1,0 +1,42 @@
+{
+  "fixture_id": "WB-034",
+  "title": "Opposed directives retain both alternatives",
+  "bearer": {
+    "kind": "static_text",
+    "source": "DIRECTIVE: ENTER\nDIRECTIVE: DO NOT ENTER",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "directive:ENTER",
+      "directive:DO NOT ENTER",
+      "scope:overlapping directives"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "implication:must enter",
+    "implication:must not enter",
+    "message:enter",
+    "message:do not enter"
+  ],
+  "required_unknowns": [
+    "entry_directive:CONFLICTED"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003",
+    "P-004",
+    "P-005",
+    "P-010"
+  ],
+  "notes": [
+    "Synthetic adversarial fixture; interpretation does not authorize real-world action."
+  ]
+}

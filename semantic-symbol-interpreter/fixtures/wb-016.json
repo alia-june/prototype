@@ -1,0 +1,30 @@
+{
+  "fixture_id": "WB-016",
+  "title": "Qualifier scope ambiguity",
+  "bearer": {
+    "kind": "static_text",
+    "source": "NO PARKING\nMON-FRI\n8 AM-6 PM\nEXCEPT PERMIT HOLDERS",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "qualifier:EXCEPT PERMIT HOLDERS"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "scope:qualifier definitely only modifies time window"
+  ],
+  "required_unknowns": [
+    "qualifier_scope:AMBIGUOUS"
+  ],
+  "properties": [
+    "P-003"
+  ],
+  "notes": []
+}

@@ -1,0 +1,42 @@
+{
+  "fixture_id": "SYM-019",
+  "title": "Infix tilde in geometry context is similarity relation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "GEOMETRY\nA ~ B",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:~",
+      "fixity:infix",
+      "left_operand:A",
+      "right_operand:B"
+    ],
+    "structures": [
+      "macro_dynamics:binary_relation"
+    ],
+    "symbols": [
+      "symbol_meaning:SIMILARITY_RELATION"
+    ],
+    "signs": [],
+    "messages": [
+      "message:A similar to B"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:geometry",
+      "dilation:D3_REGION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:BITWISE_INVERT"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

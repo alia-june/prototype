@@ -1,0 +1,43 @@
+{
+  "fixture_id": "SYM-005",
+  "title": "Mathematical divisibility resolves vertical bar",
+  "bearer": {
+    "kind": "static_text",
+    "source": "3 | 12",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:|",
+      "left_operand:3",
+      "right_operand:12"
+    ],
+    "structures": [
+      "symbol_role:binary_relation"
+    ],
+    "symbols": [
+      "symbol_meaning:DIVIDES"
+    ],
+    "signs": [],
+    "messages": [
+      "message:3 divides 12"
+    ],
+    "implications": [
+      "implication:12 is divisible by 3"
+    ],
+    "provenance": [
+      "context:number_theory",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:PIPELINE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

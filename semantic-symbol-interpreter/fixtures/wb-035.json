@@ -1,0 +1,41 @@
+{
+  "fixture_id": "WB-035",
+  "title": "Quoted directive is a descriptive example",
+  "bearer": {
+    "kind": "static_text",
+    "source": "EXAMPLE ONLY\nQUOTE: EVACUATE",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "quoted_text:EVACUATE",
+      "scope:descriptive example"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:example quotes evacuation directive"
+    ],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "implication:evacuate now",
+    "implication:evacuation directive is active"
+  ],
+  "required_unknowns": [
+    "normative_action:NOT_APPLICABLE"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003",
+    "P-004",
+    "P-005",
+    "P-010"
+  ],
+  "notes": [
+    "Synthetic adversarial fixture; interpretation does not authorize real-world action."
+  ]
+}

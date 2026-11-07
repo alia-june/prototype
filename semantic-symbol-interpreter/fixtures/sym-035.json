@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-035",
+  "title": "Remote legend on related bearer resolves symbol",
+  "bearer": {
+    "kind": "multi_bearer",
+    "source": "BEARER A: STATUS △\n---RELATED BEARER---\nBEARER B LEGEND: △ = CAUTION",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "occurrence:△ on bearer A",
+      "legend_binding:△=CAUTION on bearer B"
+    ],
+    "structures": [
+      "bearer_relation:legend_for",
+      "macro_dynamics:cross_bearer_symbol_resolution"
+    ],
+    "symbols": [
+      "symbol_meaning:CAUTION"
+    ],
+    "signs": [],
+    "messages": [
+      "message:CAUTION"
+    ],
+    "implications": [],
+    "provenance": [
+      "dilation:D6_RELATED_BEARERS",
+      "scope:bearer_set"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:TRIANGLE_UNIVERSAL"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

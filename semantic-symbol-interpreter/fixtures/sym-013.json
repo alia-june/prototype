@@ -1,0 +1,40 @@
+{
+  "fixture_id": "SYM-013",
+  "title": "Equals in mathematical equation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "x = 5",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:=",
+      "left_operand:x",
+      "right_operand:5"
+    ],
+    "structures": [
+      "macro_dynamics:truth_valued_relation"
+    ],
+    "symbols": [
+      "symbol_meaning:EQUALITY"
+    ],
+    "signs": [],
+    "messages": [
+      "message:x equals 5"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:mathematics"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:ASSIGNMENT"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

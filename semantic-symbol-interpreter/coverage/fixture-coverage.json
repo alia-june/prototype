@@ -1,0 +1,2716 @@
+{
+  "schema_version": "1.1",
+  "fixtures": {
+    "WB-001": {
+      "semantic_cells": [
+        "SIGN.ATOMICS",
+        "SIGN.DILATION",
+        "SIGN.META_CONTEXT",
+        "MESSAGE.ATOMICS",
+        "MESSAGE.DILATION",
+        "MESSAGE.MACRO_DYNAMICS",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.ATOMICS",
+        "IMPLICATION.DILATION",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-010",
+        "AF-011"
+      ],
+      "bearer_families": [
+        "plain_text_notice",
+        "physical_sign_or_placard"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "line_neighbor_window",
+        "bearer",
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "spatial_grouping_evidence",
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-002": {
+      "semantic_cells": [
+        "SIGN.DILATION",
+        "MESSAGE.ATOMICS",
+        "MESSAGE.DILATION",
+        "MESSAGE.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-003"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard",
+        "form_or_table"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "spatial_grouping_evidence"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-003": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SIGN.DILATION",
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [
+        "AF-003"
+      ],
+      "bearer_families": [
+        "plain_text_notice",
+        "physical_sign_or_placard"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "spatial_grouping_evidence"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry",
+        "icon_or_pictogram"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-004": {
+      "semantic_cells": [
+        "SYMBOL.META_CONTEXT",
+        "SIGN.META_CONTEXT",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-002"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard",
+        "instrument_panel"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer",
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "icon_or_pictogram"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-005": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [
+        "AF-004"
+      ],
+      "bearer_families": [
+        "diagram_or_schematic"
+      ],
+      "uncertainty_states": [
+        "UNKNOWN",
+        "CANNOT_INFER"
+      ],
+      "context_scopes": [
+        "bearer",
+        "external_convention_dependency"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "external_convention"
+      ],
+      "source_realism": [
+        "synthetic_graphical"
+      ],
+      "modalities": [
+        "geometry",
+        "text"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-006": {
+      "semantic_cells": [
+        "SIGN.DILATION",
+        "SIGN.META_CONTEXT",
+        "MESSAGE.DILATION",
+        "MESSAGE.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-003"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard",
+        "form_or_table"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "line_neighbor_window",
+        "region",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "spatial_grouping_evidence"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-007": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.META_CONTEXT",
+        "MESSAGE.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-007"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard",
+        "form_or_table"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-008": {
+      "semantic_cells": [
+        "SIGN.ATOMICS",
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.MACRO_DYNAMICS",
+        "IMPLICATION.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [
+        "AF-001",
+        "AF-009"
+      ],
+      "bearer_families": [
+        "plain_text_notice",
+        "form_or_table"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [
+        "overprint_or_correction"
+      ],
+      "provenance_requirements": [
+        "modification_history",
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-009": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SIGN.DILATION",
+        "MESSAGE.DILATION"
+      ],
+      "failure_classes": [
+        "AF-001",
+        "AF-005",
+        "AF-012"
+      ],
+      "bearer_families": [
+        "plain_text_notice",
+        "physical_sign_or_placard"
+      ],
+      "uncertainty_states": [
+        "UNKNOWN"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [
+        "clipped"
+      ],
+      "provenance_requirements": [
+        "reconstruction_marked_generated",
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-010": {
+      "semantic_cells": [
+        "SIGN.DILATION",
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.DILATION",
+        "MESSAGE.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [
+        "AF-006",
+        "AF-008"
+      ],
+      "bearer_families": [
+        "diagram_or_schematic"
+      ],
+      "uncertainty_states": [
+        "UNRESOLVED"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "reading_order_dependency",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_graphical"
+      ],
+      "modalities": [
+        "text",
+        "geometry",
+        "icon_or_pictogram"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-011": {
+      "semantic_cells": [
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [
+        "AF-008"
+      ],
+      "bearer_families": [
+        "map_or_spatial_network"
+      ],
+      "uncertainty_states": [
+        "NO_LINEAR_READING_ORDER"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_graphical"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-012": {
+      "semantic_cells": [
+        "SYMBOL.META_CONTEXT",
+        "SIGN.META_CONTEXT",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-002"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard",
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "bearer",
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-013": {
+      "semantic_cells": [
+        "SIGN.DILATION",
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.DILATION",
+        "MESSAGE.MACRO_DYNAMICS",
+        "IMPLICATION.DILATION"
+      ],
+      "failure_classes": [
+        "AF-012"
+      ],
+      "bearer_families": [
+        "multi_bearer_set",
+        "physical_sign_or_placard"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "multi_bearer",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "bearer_set_dependency",
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-014": {
+      "semantic_cells": [
+        "SIGN.DILATION",
+        "MESSAGE.ATOMICS",
+        "MESSAGE.DILATION",
+        "MESSAGE.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "physical_sign_or_placard",
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "spatial_grouping_evidence"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-015": {
+      "semantic_cells": [
+        "SIGN.DILATION",
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.DILATION",
+        "MESSAGE.MACRO_DYNAMICS",
+        "IMPLICATION.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [
+        "AF-005",
+        "AF-012"
+      ],
+      "bearer_families": [
+        "temporal_display",
+        "panel_or_dashboard"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "temporal_interval",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "sequence",
+        "scrolling",
+        "persistent_vs_transient"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "temporal_frame_lineage"
+      ],
+      "source_realism": [
+        "synthetic_temporal"
+      ],
+      "modalities": [
+        "text",
+        "motion_or_gesture"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-016": {
+      "semantic_cells": [
+        "SIGN.DILATION",
+        "SIGN.META_CONTEXT",
+        "MESSAGE.DILATION",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.DILATION",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-006",
+        "AF-010"
+      ],
+      "bearer_families": [
+        "physical_sign_or_placard",
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [
+        "AMBIGUOUS"
+      ],
+      "context_scopes": [
+        "line_neighbor_window",
+        "region",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "scope_binding",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-017": {
+      "semantic_cells": [
+        "SYMBOL.META_CONTEXT",
+        "SIGN.META_CONTEXT",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-002",
+        "AF-010"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard",
+        "instrument_panel"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "icon_or_pictogram"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-018": {
+      "semantic_cells": [
+        "MESSAGE.ATOMICS",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.ATOMICS",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "panel_or_dashboard",
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-019": {
+      "semantic_cells": [
+        "SIGN.ATOMICS",
+        "SIGN.DILATION",
+        "MESSAGE.ATOMICS",
+        "IMPLICATION.ATOMICS"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "physical_sign_or_placard",
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "spatial_grouping_evidence"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry",
+        "image"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-020": {
+      "semantic_cells": [
+        "SIGN.DILATION",
+        "SIGN.META_CONTEXT",
+        "MESSAGE.DILATION",
+        "MESSAGE.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-002",
+        "AF-003"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard",
+        "form_or_table"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer",
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "spatial_grouping_evidence",
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "SYM-001": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION"
+      ],
+      "failure_classes": [],
+      "bearer_families": [],
+      "uncertainty_states": [
+        "AMBIGUOUS"
+      ],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "progressive_dilation",
+        "same_form_different_meaning",
+        "tokenization_defeasible"
+      ],
+      "symbol_dilation_radii": [
+        "D0_SELF"
+      ]
+    },
+    "SYM-002": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [],
+      "bearer_families": [],
+      "uncertainty_states": [
+        "AMBIGUOUS"
+      ],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "progressive_dilation",
+        "same_form_different_meaning"
+      ],
+      "symbol_dilation_radii": [
+        "D1_ADJACENT"
+      ]
+    },
+    "SYM-003": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression",
+        "external_convention_dependency"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "progressive_dilation",
+        "same_form_different_meaning",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION",
+        "D7_EXTERNAL_CONVENTION"
+      ]
+    },
+    "SYM-004": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression",
+        "external_convention_dependency"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "progressive_dilation",
+        "same_form_different_meaning",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION",
+        "D7_EXTERNAL_CONVENTION"
+      ]
+    },
+    "SYM-005": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression",
+        "external_convention_dependency"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "progressive_dilation",
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "operand_or_target_type_resolution"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION",
+        "D7_EXTERNAL_CONVENTION"
+      ]
+    },
+    "SYM-006": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-007": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "different_form_same_family",
+        "operand_or_target_type_resolution"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-008": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-002"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer",
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "region_or_bearer_local_override",
+        "progressive_dilation"
+      ],
+      "symbol_dilation_radii": [
+        "D5_WHOLE_BEARER",
+        "D4_STRUCTURAL_REGION"
+      ]
+    },
+    "SYM-009": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "diagram_or_schematic"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "decomposition_alternatives",
+        "tokenization_defeasible",
+        "progressive_dilation"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION"
+      ]
+    },
+    "SYM-010": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "operator_fixity"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION",
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-011": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "operator_fixity"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-012": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION"
+      ],
+      "failure_classes": [],
+      "bearer_families": [],
+      "uncertainty_states": [
+        "AMBIGUOUS"
+      ],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "decomposition_alternatives",
+        "tokenization_defeasible",
+        "operator_fixity"
+      ],
+      "symbol_dilation_radii": [
+        "D0_SELF"
+      ]
+    },
+    "SYM-013": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-014": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION"
+      ]
+    },
+    "SYM-015": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "decomposition_alternatives",
+        "tokenization_defeasible"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION"
+      ]
+    },
+    "SYM-016": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "decomposition_alternatives",
+        "tokenization_defeasible",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION"
+      ]
+    },
+    "SYM-017": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION"
+      ],
+      "failure_classes": [],
+      "bearer_families": [],
+      "uncertainty_states": [
+        "AMBIGUOUS"
+      ],
+      "context_scopes": [],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "decomposition_alternatives",
+        "tokenization_defeasible"
+      ],
+      "symbol_dilation_radii": [
+        "D0_SELF"
+      ]
+    },
+    "SYM-018": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "operator_fixity"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION"
+      ]
+    },
+    "SYM-019": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "operator_fixity"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION"
+      ]
+    },
+    "SYM-020": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "binder_scope",
+        "mode_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-021": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-004"
+      ],
+      "bearer_families": [
+        "diagram_or_schematic"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "external_convention_dependency"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "topology_modifier"
+      ],
+      "symbol_dilation_radii": [
+        "D4_STRUCTURAL_REGION",
+        "D7_EXTERNAL_CONVENTION"
+      ]
+    },
+    "SYM-022": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D4_STRUCTURAL_REGION"
+      ]
+    },
+    "SYM-023": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression",
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "mode_switch",
+        "binder_scope"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION",
+        "D4_STRUCTURAL_REGION"
+      ]
+    },
+    "SYM-024": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "backreference",
+        "mode_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-025": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "operator_nucleus_dilation",
+        "operand_or_target_type_resolution",
+        "progressive_dilation"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-026": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "operator_nucleus_dilation",
+        "operand_or_target_type_resolution",
+        "progressive_dilation"
+      ],
+      "symbol_dilation_radii": [
+        "D1_ADJACENT",
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-027": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "operator_nucleus_dilation",
+        "operand_or_target_type_resolution",
+        "progressive_dilation"
+      ],
+      "symbol_dilation_radii": [
+        "D1_ADJACENT",
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-028": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "attachment_semantics",
+        "operand_or_target_type_resolution"
+      ],
+      "symbol_dilation_radii": [
+        "D1_ADJACENT",
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-029": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "attachment_semantics",
+        "operand_or_target_type_resolution",
+        "same_form_different_meaning"
+      ],
+      "symbol_dilation_radii": [
+        "D1_ADJACENT",
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-030": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "attachment_semantics",
+        "operand_or_target_type_resolution",
+        "same_form_different_meaning"
+      ],
+      "symbol_dilation_radii": [
+        "D1_ADJACENT",
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-031": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "different_form_same_family",
+        "operand_or_target_type_resolution"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "SYM-032": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "diagram_or_schematic"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "topology_modifier"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION"
+      ]
+    },
+    "SYM-033": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning",
+        "meta_context_switch",
+        "operand_or_target_type_resolution"
+      ],
+      "symbol_dilation_radii": [
+        "D3_NEIGHBOR_LINES_OR_REGION"
+      ]
+    },
+    "SYM-034": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-004"
+      ],
+      "bearer_families": [
+        "diagram_or_schematic"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "region",
+        "external_convention_dependency"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "topology_modifier",
+        "attachment_semantics"
+      ],
+      "symbol_dilation_radii": [
+        "D4_STRUCTURAL_REGION",
+        "D7_EXTERNAL_CONVENTION"
+      ]
+    },
+    "SYM-035": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "multi_bearer_set"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "multi_bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "scope_binding",
+        "bearer_set_dependency"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "region_or_bearer_local_override",
+        "progressive_dilation",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D6_RELATED_BEARERS"
+      ]
+    },
+    "SYM-036": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "external_convention_dependency"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "external_convention"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "operator_fixity",
+        "meta_context_switch",
+        "progressive_dilation"
+      ],
+      "symbol_dilation_radii": [
+        "D7_EXTERNAL_CONVENTION"
+      ]
+    },
+    "SYM-037": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [],
+      "bearer_families": [
+        "code_or_terminal"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression",
+        "external_convention_dependency"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "backreference",
+        "same_form_different_meaning",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION",
+        "D7_EXTERNAL_CONVENTION"
+      ]
+    },
+    "SYM-038": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-002"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "scope_binding"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "icon_or_pictogram"
+      ],
+      "symbol_depth": [
+        "region_or_bearer_local_override",
+        "progressive_dilation",
+        "meta_context_switch"
+      ],
+      "symbol_dilation_radii": [
+        "D5_WHOLE_BEARER"
+      ]
+    },
+    "WB-021": {
+      "semantic_cells": [
+        "SIGN.ATOMICS",
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.ATOMICS",
+        "MESSAGE.MACRO_DYNAMICS",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.ATOMICS",
+        "IMPLICATION.DILATION",
+        "IMPLICATION.MACRO_DYNAMICS",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-011"
+      ],
+      "bearer_families": [
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer",
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "WB-022": {
+      "semantic_cells": [
+        "MESSAGE.MACRO_DYNAMICS",
+        "IMPLICATION.ATOMICS",
+        "IMPLICATION.DILATION",
+        "IMPLICATION.MACRO_DYNAMICS",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-001",
+        "AF-011"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "bearer",
+        "temporal_interval"
+      ],
+      "temporal_modes": [
+        "stateful_display",
+        "persistent_vs_transient"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-023": {
+      "semantic_cells": [
+        "SYMBOL.MACRO_DYNAMICS",
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.MACRO_DYNAMICS",
+        "IMPLICATION.ATOMICS",
+        "IMPLICATION.DILATION",
+        "IMPLICATION.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [
+        "AF-011"
+      ],
+      "bearer_families": [
+        "diagram_or_schematic"
+      ],
+      "uncertainty_states": [],
+      "context_scopes": [
+        "local_expression",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "sequence"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [
+        "operator_nucleus_dilation"
+      ],
+      "symbol_dilation_radii": [
+        "D2_LOCAL_EXPRESSION"
+      ]
+    },
+    "WB-024": {
+      "semantic_cells": [
+        "MESSAGE.ATOMICS",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-006"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard"
+      ],
+      "uncertainty_states": [
+        "CONFLICTED"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-025": {
+      "semantic_cells": [
+        "SYMBOL.DILATION",
+        "SYMBOL.META_CONTEXT",
+        "MESSAGE.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-002",
+        "AF-006"
+      ],
+      "bearer_families": [
+        "panel_or_dashboard"
+      ],
+      "uncertainty_states": [
+        "CONFLICTED"
+      ],
+      "context_scopes": [
+        "bearer",
+        "region"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "scope_binding",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "icon_or_pictogram"
+      ],
+      "symbol_depth": [
+        "region_or_bearer_local_override",
+        "same_form_different_meaning"
+      ],
+      "symbol_dilation_radii": [
+        "D5_WHOLE_BEARER"
+      ]
+    },
+    "WB-026": {
+      "semantic_cells": [
+        "SIGN.ATOMICS",
+        "MESSAGE.ATOMICS",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-011"
+      ],
+      "bearer_families": [
+        "packaging_or_label"
+      ],
+      "uncertainty_states": [
+        "NOT_APPLICABLE"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-027": {
+      "semantic_cells": [
+        "SIGN.ATOMICS",
+        "MESSAGE.ATOMICS",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-011"
+      ],
+      "bearer_families": [
+        "packaging_or_label"
+      ],
+      "uncertainty_states": [
+        "NOT_APPLICABLE"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-028": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT",
+        "MESSAGE.META_CONTEXT",
+        "IMPLICATION.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-006",
+        "AF-011"
+      ],
+      "bearer_families": [
+        "plain_text_notice"
+      ],
+      "uncertainty_states": [
+        "CANNOT_INFER"
+      ],
+      "context_scopes": [
+        "local_expression",
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text",
+        "geometry",
+        "icon_or_pictogram"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning"
+      ],
+      "symbol_dilation_radii": [
+        "D0_SELF"
+      ]
+    },
+    "WB-029": {
+      "semantic_cells": [
+        "SIGN.MACRO_DYNAMICS",
+        "MESSAGE.MACRO_DYNAMICS"
+      ],
+      "failure_classes": [
+        "AF-008"
+      ],
+      "bearer_families": [
+        "map_or_spatial_network"
+      ],
+      "uncertainty_states": [
+        "NO_LINEAR_READING_ORDER"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span"
+      ],
+      "source_realism": [
+        "synthetic_graphical"
+      ],
+      "modalities": [
+        "text",
+        "geometry"
+      ],
+      "symbol_depth": [],
+      "symbol_dilation_radii": []
+    },
+    "WB-030": {
+      "semantic_cells": [
+        "SYMBOL.ATOMICS",
+        "SYMBOL.DILATION",
+        "SYMBOL.MACRO_DYNAMICS",
+        "SYMBOL.META_CONTEXT"
+      ],
+      "failure_classes": [
+        "AF-006"
+      ],
+      "bearer_families": [
+        "mathematical_notation"
+      ],
+      "uncertainty_states": [
+        "UNRESOLVED"
+      ],
+      "context_scopes": [
+        "local_expression"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "corruption_modes": [],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "symbol_depth": [
+        "same_form_different_meaning"
+      ],
+      "symbol_dilation_radii": [
+        "D1_ADJACENT"
+      ]
+    },
+    "WB-031": {
+      "semantic_cells": [
+        "IMPLICATION.MACRO_DYNAMICS"
+      ],
+      "uncertainty_states": [
+        "UNKNOWN",
+        "CANNOT_INFER"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "provenance_requirements": [
+        "source_span"
+      ]
+    },
+    "WB-032": {
+      "semantic_cells": [
+        "IMPLICATION.MACRO_DYNAMICS"
+      ],
+      "uncertainty_states": [
+        "CANNOT_INFER"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "provenance_requirements": [
+        "source_span"
+      ]
+    },
+    "WB-033": {
+      "semantic_cells": [
+        "IMPLICATION.MACRO_DYNAMICS"
+      ],
+      "uncertainty_states": [
+        "CONFLICTED",
+        "CANNOT_INFER"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ]
+    },
+    "WB-034": {
+      "uncertainty_states": [
+        "CONFLICTED"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "provenance_requirements": [
+        "source_span",
+        "alternative_hypothesis_lineage"
+      ]
+    },
+    "WB-035": {
+      "uncertainty_states": [
+        "NOT_APPLICABLE"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "provenance_requirements": [
+        "source_span"
+      ]
+    },
+    "WB-036": {
+      "semantic_cells": [
+        "SYMBOL.MACRO_DYNAMICS"
+      ],
+      "uncertainty_states": [
+        "NOT_APPLICABLE"
+      ],
+      "source_realism": [
+        "synthetic_text"
+      ],
+      "modalities": [
+        "text"
+      ],
+      "context_scopes": [
+        "bearer"
+      ],
+      "temporal_modes": [
+        "static"
+      ],
+      "provenance_requirements": [
+        "source_span"
+      ]
+    }
+  }
+}

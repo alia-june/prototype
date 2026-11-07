@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-016",
+  "title": "Triple equals in JavaScript strict equality",
+  "bearer": {
+    "kind": "static_text",
+    "source": "JavaScript\nx === 5",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_run:==="
+    ],
+    "structures": [
+      "tokenization_preferred:[===]",
+      "alternate_decomposition:[==][=]",
+      "alternate_decomposition:[=][==]",
+      "macro_dynamics:strict_comparison"
+    ],
+    "symbols": [
+      "symbol_meaning:STRICT_EQUALITY"
+    ],
+    "signs": [],
+    "messages": [
+      "message:strict equality comparison"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:JavaScript"
+    ]
+  },
+  "forbidden_inferences": [
+    "tokenization_resolved:[=][=][=]"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

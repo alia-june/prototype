@@ -1,0 +1,2253 @@
+{
+  "fixture_count": 74,
+  "dimensions": {
+    "semantic_cells": {
+      "description": "SYMBOL/SIGN/MESSAGE/IMPLICATION x ATOMICS/DILATION/MACRO_DYNAMICS/META_CONTEXT",
+      "total_items": 16,
+      "touched_items": 16,
+      "covered_items": 16,
+      "touched_pct": 100.0,
+      "covered_pct": 100.0,
+      "gaps": [],
+      "thin": [],
+      "items": [
+        {
+          "item": "SYMBOL.ATOMICS",
+          "count": 44,
+          "minimum_examples": 8,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-003",
+            "WB-005",
+            "WB-007",
+            "WB-009",
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-011",
+            "SYM-012",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-017",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038",
+            "WB-028",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "SYMBOL.DILATION",
+          "count": 43,
+          "minimum_examples": 8,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-003",
+            "WB-005",
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-011",
+            "SYM-012",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-017",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038",
+            "WB-025",
+            "WB-028",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "SYMBOL.MACRO_DYNAMICS",
+          "count": 40,
+          "minimum_examples": 8,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-003",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-011",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038",
+            "WB-023",
+            "WB-028",
+            "WB-030",
+            "WB-036"
+          ]
+        },
+        {
+          "item": "SYMBOL.META_CONTEXT",
+          "count": 41,
+          "minimum_examples": 8,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-004",
+            "WB-007",
+            "WB-012",
+            "WB-017",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-011",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038",
+            "WB-025",
+            "WB-028",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "SIGN.ATOMICS",
+          "count": 6,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-008",
+            "WB-019",
+            "WB-021",
+            "WB-026",
+            "WB-027"
+          ]
+        },
+        {
+          "item": "SIGN.DILATION",
+          "count": 12,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-003",
+            "WB-006",
+            "WB-009",
+            "WB-010",
+            "WB-013",
+            "WB-014",
+            "WB-015",
+            "WB-016",
+            "WB-019",
+            "WB-020"
+          ]
+        },
+        {
+          "item": "SIGN.MACRO_DYNAMICS",
+          "count": 10,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-003",
+            "WB-005",
+            "WB-008",
+            "WB-010",
+            "WB-011",
+            "WB-013",
+            "WB-015",
+            "WB-021",
+            "WB-023",
+            "WB-029"
+          ]
+        },
+        {
+          "item": "SIGN.META_CONTEXT",
+          "count": 7,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-004",
+            "WB-006",
+            "WB-012",
+            "WB-016",
+            "WB-017",
+            "WB-020"
+          ]
+        },
+        {
+          "item": "MESSAGE.ATOMICS",
+          "count": 9,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-014",
+            "WB-018",
+            "WB-019",
+            "WB-021",
+            "WB-024",
+            "WB-026",
+            "WB-027"
+          ]
+        },
+        {
+          "item": "MESSAGE.DILATION",
+          "count": 10,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-006",
+            "WB-009",
+            "WB-010",
+            "WB-013",
+            "WB-014",
+            "WB-015",
+            "WB-016",
+            "WB-020"
+          ]
+        },
+        {
+          "item": "MESSAGE.MACRO_DYNAMICS",
+          "count": 13,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-003",
+            "WB-005",
+            "WB-008",
+            "WB-010",
+            "WB-011",
+            "WB-013",
+            "WB-014",
+            "WB-015",
+            "WB-021",
+            "WB-022",
+            "WB-023",
+            "WB-029"
+          ]
+        },
+        {
+          "item": "MESSAGE.META_CONTEXT",
+          "count": 14,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-004",
+            "WB-006",
+            "WB-007",
+            "WB-012",
+            "WB-016",
+            "WB-017",
+            "WB-018",
+            "WB-020",
+            "WB-021",
+            "WB-024",
+            "WB-025",
+            "WB-028"
+          ]
+        },
+        {
+          "item": "IMPLICATION.ATOMICS",
+          "count": 6,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-018",
+            "WB-019",
+            "WB-021",
+            "WB-022",
+            "WB-023"
+          ]
+        },
+        {
+          "item": "IMPLICATION.DILATION",
+          "count": 6,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-013",
+            "WB-016",
+            "WB-021",
+            "WB-022",
+            "WB-023"
+          ]
+        },
+        {
+          "item": "IMPLICATION.MACRO_DYNAMICS",
+          "count": 8,
+          "minimum_examples": 6,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-008",
+            "WB-015",
+            "WB-021",
+            "WB-022",
+            "WB-023",
+            "WB-031",
+            "WB-032",
+            "WB-033"
+          ]
+        },
+        {
+          "item": "IMPLICATION.META_CONTEXT",
+          "count": 12,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-004",
+            "WB-012",
+            "WB-016",
+            "WB-017",
+            "WB-018",
+            "WB-021",
+            "WB-022",
+            "WB-024",
+            "WB-026",
+            "WB-027",
+            "WB-028"
+          ]
+        }
+      ]
+    },
+    "failure_classes": {
+      "description": "Known architecture anti-pattern/failure classes AF-001..AF-012",
+      "total_items": 12,
+      "touched_items": 12,
+      "covered_items": 10,
+      "touched_pct": 100.0,
+      "covered_pct": 83.3,
+      "gaps": [],
+      "thin": [
+        "AF-007",
+        "AF-009"
+      ],
+      "items": [
+        {
+          "item": "AF-001",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-008",
+            "WB-009",
+            "WB-022"
+          ]
+        },
+        {
+          "item": "AF-002",
+          "count": 7,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-004",
+            "WB-012",
+            "WB-017",
+            "WB-020",
+            "SYM-008",
+            "SYM-038",
+            "WB-025"
+          ]
+        },
+        {
+          "item": "AF-003",
+          "count": 4,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-002",
+            "WB-003",
+            "WB-006",
+            "WB-020"
+          ]
+        },
+        {
+          "item": "AF-004",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-005",
+            "SYM-021",
+            "SYM-034"
+          ]
+        },
+        {
+          "item": "AF-005",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-009",
+            "WB-015"
+          ]
+        },
+        {
+          "item": "AF-006",
+          "count": 6,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-010",
+            "WB-016",
+            "WB-024",
+            "WB-025",
+            "WB-028",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "AF-007",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-007"
+          ]
+        },
+        {
+          "item": "AF-008",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-010",
+            "WB-011",
+            "WB-029"
+          ]
+        },
+        {
+          "item": "AF-009",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-008"
+          ]
+        },
+        {
+          "item": "AF-010",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-016",
+            "WB-017"
+          ]
+        },
+        {
+          "item": "AF-011",
+          "count": 7,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-021",
+            "WB-022",
+            "WB-023",
+            "WB-026",
+            "WB-027",
+            "WB-028"
+          ]
+        },
+        {
+          "item": "AF-012",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-009",
+            "WB-013",
+            "WB-015"
+          ]
+        }
+      ]
+    },
+    "bearer_families": {
+      "description": "Structural bearer families the target suite should exercise",
+      "total_items": 14,
+      "touched_items": 12,
+      "covered_items": 11,
+      "touched_pct": 85.7,
+      "covered_pct": 78.6,
+      "gaps": [
+        "tactile_bearer",
+        "multimodal_bearer"
+      ],
+      "thin": [
+        "temporal_display"
+      ],
+      "items": [
+        {
+          "item": "plain_text_notice",
+          "count": 13,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-003",
+            "WB-008",
+            "WB-009",
+            "WB-014",
+            "WB-016",
+            "WB-018",
+            "WB-019",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "WB-021",
+            "WB-028"
+          ]
+        },
+        {
+          "item": "panel_or_dashboard",
+          "count": 14,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-002",
+            "WB-004",
+            "WB-006",
+            "WB-007",
+            "WB-012",
+            "WB-015",
+            "WB-017",
+            "WB-018",
+            "WB-020",
+            "SYM-008",
+            "SYM-038",
+            "WB-022",
+            "WB-024",
+            "WB-025"
+          ]
+        },
+        {
+          "item": "diagram_or_schematic",
+          "count": 7,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-005",
+            "WB-010",
+            "SYM-009",
+            "SYM-021",
+            "SYM-032",
+            "SYM-034",
+            "WB-023"
+          ]
+        },
+        {
+          "item": "map_or_spatial_network",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-011",
+            "WB-029"
+          ]
+        },
+        {
+          "item": "form_or_table",
+          "count": 5,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-002",
+            "WB-006",
+            "WB-007",
+            "WB-008",
+            "WB-020"
+          ]
+        },
+        {
+          "item": "mathematical_notation",
+          "count": 17,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-012",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-011",
+            "SYM-013",
+            "SYM-019",
+            "SYM-020",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-036",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "code_or_terminal",
+          "count": 9,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-003",
+            "SYM-004",
+            "SYM-010",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-018",
+            "SYM-033",
+            "SYM-037"
+          ]
+        },
+        {
+          "item": "physical_sign_or_placard",
+          "count": 7,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-003",
+            "WB-009",
+            "WB-013",
+            "WB-014",
+            "WB-016",
+            "WB-019"
+          ]
+        },
+        {
+          "item": "packaging_or_label",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-026",
+            "WB-027"
+          ]
+        },
+        {
+          "item": "instrument_panel",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-004",
+            "WB-017"
+          ]
+        },
+        {
+          "item": "multi_bearer_set",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-013",
+            "SYM-035"
+          ]
+        },
+        {
+          "item": "temporal_display",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-015"
+          ]
+        },
+        {
+          "item": "tactile_bearer",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "multimodal_bearer",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        }
+      ]
+    },
+    "uncertainty_states": {
+      "description": "Uncertainty/epistemic outcomes that must be deliberately tested",
+      "total_items": 7,
+      "touched_items": 7,
+      "covered_items": 7,
+      "touched_pct": 100.0,
+      "covered_pct": 100.0,
+      "gaps": [],
+      "thin": [],
+      "items": [
+        {
+          "item": "UNKNOWN",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-005",
+            "WB-009",
+            "WB-031"
+          ]
+        },
+        {
+          "item": "AMBIGUOUS",
+          "count": 5,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-016",
+            "SYM-001",
+            "SYM-002",
+            "SYM-012",
+            "SYM-017"
+          ]
+        },
+        {
+          "item": "UNRESOLVED",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-010",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "CONFLICTED",
+          "count": 4,
+          "minimum_examples": 4,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-024",
+            "WB-025",
+            "WB-033",
+            "WB-034"
+          ]
+        },
+        {
+          "item": "CANNOT_INFER",
+          "count": 5,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-005",
+            "WB-028",
+            "WB-031",
+            "WB-032",
+            "WB-033"
+          ]
+        },
+        {
+          "item": "NOT_APPLICABLE",
+          "count": 4,
+          "minimum_examples": 4,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-026",
+            "WB-027",
+            "WB-035",
+            "WB-036"
+          ]
+        },
+        {
+          "item": "NO_LINEAR_READING_ORDER",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-011",
+            "WB-029"
+          ]
+        }
+      ]
+    },
+    "context_scopes": {
+      "description": "Context boundaries and override scopes",
+      "total_items": 8,
+      "touched_items": 7,
+      "covered_items": 7,
+      "touched_pct": 87.5,
+      "covered_pct": 87.5,
+      "gaps": [
+        "document"
+      ],
+      "thin": [],
+      "items": [
+        {
+          "item": "line_neighbor_window",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-006",
+            "WB-016"
+          ]
+        },
+        {
+          "item": "local_expression",
+          "count": 32,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-012",
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-010",
+            "SYM-011",
+            "SYM-012",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-037",
+            "WB-021",
+            "WB-023",
+            "WB-028",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "region",
+          "count": 26,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-004",
+            "WB-006",
+            "WB-007",
+            "WB-012",
+            "WB-014",
+            "WB-016",
+            "WB-017",
+            "WB-018",
+            "WB-020",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-018",
+            "SYM-019",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "WB-025"
+          ]
+        },
+        {
+          "item": "bearer",
+          "count": 37,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-003",
+            "WB-004",
+            "WB-005",
+            "WB-006",
+            "WB-007",
+            "WB-008",
+            "WB-009",
+            "WB-010",
+            "WB-011",
+            "WB-012",
+            "WB-013",
+            "WB-014",
+            "WB-015",
+            "WB-016",
+            "WB-017",
+            "WB-018",
+            "WB-019",
+            "WB-020",
+            "SYM-008",
+            "SYM-038",
+            "WB-021",
+            "WB-022",
+            "WB-023",
+            "WB-024",
+            "WB-025",
+            "WB-026",
+            "WB-027",
+            "WB-028",
+            "WB-029",
+            "WB-031",
+            "WB-032",
+            "WB-033",
+            "WB-034",
+            "WB-035",
+            "WB-036"
+          ]
+        },
+        {
+          "item": "document",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "multi_bearer",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-013",
+            "SYM-035"
+          ]
+        },
+        {
+          "item": "temporal_interval",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-015",
+            "WB-022"
+          ]
+        },
+        {
+          "item": "external_convention_dependency",
+          "count": 8,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-005",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-021",
+            "SYM-034",
+            "SYM-036",
+            "SYM-037"
+          ]
+        }
+      ]
+    },
+    "temporal_modes": {
+      "description": "Static/dynamic bearer behavior",
+      "total_items": 7,
+      "touched_items": 5,
+      "covered_items": 3,
+      "touched_pct": 71.4,
+      "covered_pct": 42.9,
+      "gaps": [
+        "flashing_or_rhythm",
+        "gesture_or_motion"
+      ],
+      "thin": [
+        "scrolling",
+        "stateful_display"
+      ],
+      "items": [
+        {
+          "item": "static",
+          "count": 71,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-003",
+            "WB-004",
+            "WB-005",
+            "WB-006",
+            "WB-007",
+            "WB-008",
+            "WB-009",
+            "WB-010",
+            "WB-011",
+            "WB-012",
+            "WB-013",
+            "WB-014",
+            "WB-016",
+            "WB-017",
+            "WB-018",
+            "WB-019",
+            "WB-020",
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-011",
+            "SYM-012",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-017",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038",
+            "WB-021",
+            "WB-024",
+            "WB-025",
+            "WB-026",
+            "WB-027",
+            "WB-028",
+            "WB-029",
+            "WB-030",
+            "WB-031",
+            "WB-032",
+            "WB-033",
+            "WB-034",
+            "WB-035",
+            "WB-036"
+          ]
+        },
+        {
+          "item": "sequence",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-015",
+            "WB-023"
+          ]
+        },
+        {
+          "item": "persistent_vs_transient",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-015",
+            "WB-022"
+          ]
+        },
+        {
+          "item": "scrolling",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-015"
+          ]
+        },
+        {
+          "item": "flashing_or_rhythm",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "gesture_or_motion",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "stateful_display",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-022"
+          ]
+        }
+      ]
+    },
+    "corruption_modes": {
+      "description": "Input degradation and incomplete-observation modes",
+      "total_items": 12,
+      "touched_items": 2,
+      "covered_items": 0,
+      "touched_pct": 16.7,
+      "covered_pct": 0.0,
+      "gaps": [
+        "occluded",
+        "blurred",
+        "rotated",
+        "perspective_distorted",
+        "low_contrast",
+        "glare",
+        "damaged",
+        "handwritten_overlay",
+        "low_resolution",
+        "compression_artifacts"
+      ],
+      "thin": [
+        "clipped",
+        "overprint_or_correction"
+      ],
+      "items": [
+        {
+          "item": "clipped",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-009"
+          ]
+        },
+        {
+          "item": "occluded",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "blurred",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "rotated",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "perspective_distorted",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "low_contrast",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "glare",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "damaged",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "handwritten_overlay",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "overprint_or_correction",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-008"
+          ]
+        },
+        {
+          "item": "low_resolution",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "compression_artifacts",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        }
+      ]
+    },
+    "provenance_requirements": {
+      "description": "Kinds of evidence lineage the suite should exercise",
+      "total_items": 10,
+      "touched_items": 10,
+      "covered_items": 6,
+      "touched_pct": 100.0,
+      "covered_pct": 60.0,
+      "gaps": [],
+      "thin": [
+        "temporal_frame_lineage",
+        "modification_history",
+        "reading_order_dependency",
+        "reconstruction_marked_generated"
+      ],
+      "items": [
+        {
+          "item": "source_span",
+          "count": 60,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-007",
+            "WB-008",
+            "WB-009",
+            "WB-013",
+            "WB-018",
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-011",
+            "SYM-012",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-017",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038",
+            "WB-021",
+            "WB-022",
+            "WB-023",
+            "WB-024",
+            "WB-025",
+            "WB-026",
+            "WB-027",
+            "WB-028",
+            "WB-029",
+            "WB-030",
+            "WB-031",
+            "WB-032",
+            "WB-033",
+            "WB-034",
+            "WB-035",
+            "WB-036"
+          ]
+        },
+        {
+          "item": "spatial_grouping_evidence",
+          "count": 7,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-003",
+            "WB-006",
+            "WB-014",
+            "WB-019",
+            "WB-020"
+          ]
+        },
+        {
+          "item": "scope_binding",
+          "count": 12,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-004",
+            "WB-012",
+            "WB-016",
+            "WB-017",
+            "WB-020",
+            "SYM-008",
+            "SYM-020",
+            "SYM-023",
+            "SYM-035",
+            "SYM-038",
+            "WB-025"
+          ]
+        },
+        {
+          "item": "temporal_frame_lineage",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-015"
+          ]
+        },
+        {
+          "item": "modification_history",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-008"
+          ]
+        },
+        {
+          "item": "reading_order_dependency",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-010"
+          ]
+        },
+        {
+          "item": "bearer_set_dependency",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-013",
+            "SYM-035"
+          ]
+        },
+        {
+          "item": "external_convention",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-005",
+            "SYM-036"
+          ]
+        },
+        {
+          "item": "reconstruction_marked_generated",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-009"
+          ]
+        },
+        {
+          "item": "alternative_hypothesis_lineage",
+          "count": 15,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-010",
+            "WB-011",
+            "WB-016",
+            "SYM-009",
+            "SYM-012",
+            "SYM-016",
+            "SYM-017",
+            "SYM-024",
+            "SYM-037",
+            "WB-024",
+            "WB-025",
+            "WB-028",
+            "WB-030",
+            "WB-033",
+            "WB-034"
+          ]
+        }
+      ]
+    },
+    "source_realism": {
+      "description": "Source realism/origin classes",
+      "total_items": 8,
+      "touched_items": 3,
+      "covered_items": 2,
+      "touched_pct": 37.5,
+      "covered_pct": 25.0,
+      "gaps": [
+        "real_world_photo",
+        "real_world_scan",
+        "captured_screen",
+        "real_document_extract",
+        "real_dynamic_capture"
+      ],
+      "thin": [
+        "synthetic_temporal"
+      ],
+      "items": [
+        {
+          "item": "synthetic_text",
+          "count": 69,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-003",
+            "WB-004",
+            "WB-006",
+            "WB-007",
+            "WB-008",
+            "WB-009",
+            "WB-012",
+            "WB-013",
+            "WB-014",
+            "WB-016",
+            "WB-017",
+            "WB-018",
+            "WB-019",
+            "WB-020",
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-011",
+            "SYM-012",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-017",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038",
+            "WB-021",
+            "WB-022",
+            "WB-023",
+            "WB-024",
+            "WB-025",
+            "WB-026",
+            "WB-027",
+            "WB-028",
+            "WB-030",
+            "WB-031",
+            "WB-032",
+            "WB-033",
+            "WB-034",
+            "WB-035",
+            "WB-036"
+          ]
+        },
+        {
+          "item": "synthetic_graphical",
+          "count": 4,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-005",
+            "WB-010",
+            "WB-011",
+            "WB-029"
+          ]
+        },
+        {
+          "item": "synthetic_temporal",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-015"
+          ]
+        },
+        {
+          "item": "real_world_photo",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "real_world_scan",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "captured_screen",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "real_document_extract",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "real_dynamic_capture",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        }
+      ]
+    },
+    "modalities": {
+      "description": "Carrier/perception modalities",
+      "total_items": 9,
+      "touched_items": 5,
+      "covered_items": 3,
+      "touched_pct": 55.6,
+      "covered_pct": 33.3,
+      "gaps": [
+        "color",
+        "tactile",
+        "audio",
+        "light_or_flash"
+      ],
+      "thin": [
+        "image",
+        "motion_or_gesture"
+      ],
+      "items": [
+        {
+          "item": "text",
+          "count": 74,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-003",
+            "WB-004",
+            "WB-005",
+            "WB-006",
+            "WB-007",
+            "WB-008",
+            "WB-009",
+            "WB-010",
+            "WB-011",
+            "WB-012",
+            "WB-013",
+            "WB-014",
+            "WB-015",
+            "WB-016",
+            "WB-017",
+            "WB-018",
+            "WB-019",
+            "WB-020",
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-009",
+            "SYM-010",
+            "SYM-011",
+            "SYM-012",
+            "SYM-013",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-017",
+            "SYM-018",
+            "SYM-019",
+            "SYM-020",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-032",
+            "SYM-033",
+            "SYM-034",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038",
+            "WB-021",
+            "WB-022",
+            "WB-023",
+            "WB-024",
+            "WB-025",
+            "WB-026",
+            "WB-027",
+            "WB-028",
+            "WB-029",
+            "WB-030",
+            "WB-031",
+            "WB-032",
+            "WB-033",
+            "WB-034",
+            "WB-035",
+            "WB-036"
+          ]
+        },
+        {
+          "item": "geometry",
+          "count": 17,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-001",
+            "WB-002",
+            "WB-003",
+            "WB-005",
+            "WB-006",
+            "WB-007",
+            "WB-008",
+            "WB-010",
+            "WB-011",
+            "WB-012",
+            "WB-014",
+            "WB-016",
+            "WB-019",
+            "WB-020",
+            "WB-023",
+            "WB-028",
+            "WB-029"
+          ]
+        },
+        {
+          "item": "icon_or_pictogram",
+          "count": 7,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "WB-003",
+            "WB-004",
+            "WB-010",
+            "WB-017",
+            "SYM-038",
+            "WB-025",
+            "WB-028"
+          ]
+        },
+        {
+          "item": "color",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "image",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-019"
+          ]
+        },
+        {
+          "item": "tactile",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "audio",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        },
+        {
+          "item": "motion_or_gesture",
+          "count": 1,
+          "minimum_examples": 2,
+          "status": "THIN",
+          "fixtures": [
+            "WB-015"
+          ]
+        },
+        {
+          "item": "light_or_flash",
+          "count": 0,
+          "minimum_examples": 2,
+          "status": "GAP",
+          "fixtures": []
+        }
+      ]
+    },
+    "symbol_depth": {
+      "description": "Dedicated clean-input symbol-depth mechanisms required before corruption-first expansion",
+      "total_items": 15,
+      "touched_items": 15,
+      "covered_items": 15,
+      "touched_pct": 100.0,
+      "covered_pct": 100.0,
+      "gaps": [],
+      "thin": [],
+      "items": [
+        {
+          "item": "decomposition_alternatives",
+          "count": 5,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-009",
+            "SYM-012",
+            "SYM-015",
+            "SYM-016",
+            "SYM-017"
+          ]
+        },
+        {
+          "item": "progressive_dilation",
+          "count": 13,
+          "minimum_examples": 5,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-008",
+            "SYM-009",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-035",
+            "SYM-036",
+            "SYM-038"
+          ]
+        },
+        {
+          "item": "same_form_different_meaning",
+          "count": 25,
+          "minimum_examples": 6,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-001",
+            "SYM-002",
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-008",
+            "SYM-010",
+            "SYM-011",
+            "SYM-013",
+            "SYM-014",
+            "SYM-018",
+            "SYM-019",
+            "SYM-021",
+            "SYM-022",
+            "SYM-029",
+            "SYM-030",
+            "SYM-032",
+            "SYM-033",
+            "SYM-037",
+            "WB-021",
+            "WB-025",
+            "WB-028",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "different_form_same_family",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-007",
+            "SYM-031"
+          ]
+        },
+        {
+          "item": "meta_context_switch",
+          "count": 20,
+          "minimum_examples": 6,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-008",
+            "SYM-010",
+            "SYM-011",
+            "SYM-013",
+            "SYM-014",
+            "SYM-016",
+            "SYM-018",
+            "SYM-019",
+            "SYM-021",
+            "SYM-022",
+            "SYM-032",
+            "SYM-033",
+            "SYM-035",
+            "SYM-036",
+            "SYM-037",
+            "SYM-038"
+          ]
+        },
+        {
+          "item": "region_or_bearer_local_override",
+          "count": 4,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-008",
+            "SYM-035",
+            "SYM-038",
+            "WB-025"
+          ]
+        },
+        {
+          "item": "operator_fixity",
+          "count": 6,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-010",
+            "SYM-011",
+            "SYM-012",
+            "SYM-018",
+            "SYM-019",
+            "SYM-036"
+          ]
+        },
+        {
+          "item": "operand_or_target_type_resolution",
+          "count": 10,
+          "minimum_examples": 4,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-005",
+            "SYM-007",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-033"
+          ]
+        },
+        {
+          "item": "mode_switch",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-020",
+            "SYM-023",
+            "SYM-024"
+          ]
+        },
+        {
+          "item": "binder_scope",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-020",
+            "SYM-023"
+          ]
+        },
+        {
+          "item": "topology_modifier",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-021",
+            "SYM-032",
+            "SYM-034"
+          ]
+        },
+        {
+          "item": "backreference",
+          "count": 2,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-024",
+            "SYM-037"
+          ]
+        },
+        {
+          "item": "attachment_semantics",
+          "count": 4,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-034"
+          ]
+        },
+        {
+          "item": "operator_nucleus_dilation",
+          "count": 4,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "WB-023"
+          ]
+        },
+        {
+          "item": "tokenization_defeasible",
+          "count": 6,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-001",
+            "SYM-009",
+            "SYM-012",
+            "SYM-015",
+            "SYM-016",
+            "SYM-017"
+          ]
+        }
+      ]
+    },
+    "symbol_dilation_radii": {
+      "description": "Analytical expansion radii exercised specifically for symbol interpretation",
+      "total_items": 8,
+      "touched_items": 8,
+      "covered_items": 8,
+      "touched_pct": 100.0,
+      "covered_pct": 100.0,
+      "gaps": [],
+      "thin": [],
+      "items": [
+        {
+          "item": "D0_SELF",
+          "count": 4,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-001",
+            "SYM-012",
+            "SYM-017",
+            "WB-028"
+          ]
+        },
+        {
+          "item": "D1_ADJACENT",
+          "count": 7,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-002",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "WB-030"
+          ]
+        },
+        {
+          "item": "D2_LOCAL_EXPRESSION",
+          "count": 21,
+          "minimum_examples": 6,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-006",
+            "SYM-007",
+            "SYM-010",
+            "SYM-011",
+            "SYM-013",
+            "SYM-020",
+            "SYM-023",
+            "SYM-024",
+            "SYM-025",
+            "SYM-026",
+            "SYM-027",
+            "SYM-028",
+            "SYM-029",
+            "SYM-030",
+            "SYM-031",
+            "SYM-037",
+            "WB-021",
+            "WB-023"
+          ]
+        },
+        {
+          "item": "D3_NEIGHBOR_LINES_OR_REGION",
+          "count": 9,
+          "minimum_examples": 3,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-009",
+            "SYM-010",
+            "SYM-014",
+            "SYM-015",
+            "SYM-016",
+            "SYM-018",
+            "SYM-019",
+            "SYM-032",
+            "SYM-033"
+          ]
+        },
+        {
+          "item": "D4_STRUCTURAL_REGION",
+          "count": 5,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-008",
+            "SYM-021",
+            "SYM-022",
+            "SYM-023",
+            "SYM-034"
+          ]
+        },
+        {
+          "item": "D5_WHOLE_BEARER",
+          "count": 3,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-008",
+            "SYM-038",
+            "WB-025"
+          ]
+        },
+        {
+          "item": "D6_RELATED_BEARERS",
+          "count": 1,
+          "minimum_examples": 1,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-035"
+          ]
+        },
+        {
+          "item": "D7_EXTERNAL_CONVENTION",
+          "count": 7,
+          "minimum_examples": 2,
+          "status": "COVERED",
+          "fixtures": [
+            "SYM-003",
+            "SYM-004",
+            "SYM-005",
+            "SYM-021",
+            "SYM-034",
+            "SYM-036",
+            "SYM-037"
+          ]
+        }
+      ]
+    }
+  },
+  "overall": {
+    "total_items": 126,
+    "touched_items": 102,
+    "covered_items": 88,
+    "touched_pct": 81.0,
+    "covered_pct": 69.8,
+    "interpretation": "Touched means at least one fixture exercises the item; Covered means the configured minimum example count is met."
+  }
+}

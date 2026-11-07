@@ -1,0 +1,443 @@
+{
+  "schema_version": "1.0",
+  "dimensions": {
+    "semantic_cells": {
+      "description": "SYMBOL/SIGN/MESSAGE/IMPLICATION x ATOMICS/DILATION/MACRO_DYNAMICS/META_CONTEXT",
+      "items": {
+        "SYMBOL.ATOMICS": {
+          "minimum_examples": 8
+        },
+        "SYMBOL.DILATION": {
+          "minimum_examples": 8
+        },
+        "SYMBOL.MACRO_DYNAMICS": {
+          "minimum_examples": 8
+        },
+        "SYMBOL.META_CONTEXT": {
+          "minimum_examples": 8
+        },
+        "SIGN.ATOMICS": {
+          "minimum_examples": 3
+        },
+        "SIGN.DILATION": {
+          "minimum_examples": 3
+        },
+        "SIGN.MACRO_DYNAMICS": {
+          "minimum_examples": 3
+        },
+        "SIGN.META_CONTEXT": {
+          "minimum_examples": 3
+        },
+        "MESSAGE.ATOMICS": {
+          "minimum_examples": 3
+        },
+        "MESSAGE.DILATION": {
+          "minimum_examples": 3
+        },
+        "MESSAGE.MACRO_DYNAMICS": {
+          "minimum_examples": 3
+        },
+        "MESSAGE.META_CONTEXT": {
+          "minimum_examples": 3
+        },
+        "IMPLICATION.ATOMICS": {
+          "minimum_examples": 3
+        },
+        "IMPLICATION.DILATION": {
+          "minimum_examples": 3
+        },
+        "IMPLICATION.MACRO_DYNAMICS": {
+          "minimum_examples": 6
+        },
+        "IMPLICATION.META_CONTEXT": {
+          "minimum_examples": 3
+        }
+      }
+    },
+    "failure_classes": {
+      "description": "Known architecture anti-pattern/failure classes AF-001..AF-012",
+      "items": {
+        "AF-001": {
+          "minimum_examples": 2
+        },
+        "AF-002": {
+          "minimum_examples": 2
+        },
+        "AF-003": {
+          "minimum_examples": 2
+        },
+        "AF-004": {
+          "minimum_examples": 2
+        },
+        "AF-005": {
+          "minimum_examples": 2
+        },
+        "AF-006": {
+          "minimum_examples": 2
+        },
+        "AF-007": {
+          "minimum_examples": 2
+        },
+        "AF-008": {
+          "minimum_examples": 2
+        },
+        "AF-009": {
+          "minimum_examples": 2
+        },
+        "AF-010": {
+          "minimum_examples": 2
+        },
+        "AF-011": {
+          "minimum_examples": 2
+        },
+        "AF-012": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "bearer_families": {
+      "description": "Structural bearer families the target suite should exercise",
+      "items": {
+        "plain_text_notice": {
+          "minimum_examples": 2
+        },
+        "panel_or_dashboard": {
+          "minimum_examples": 2
+        },
+        "diagram_or_schematic": {
+          "minimum_examples": 2
+        },
+        "map_or_spatial_network": {
+          "minimum_examples": 2
+        },
+        "form_or_table": {
+          "minimum_examples": 2
+        },
+        "mathematical_notation": {
+          "minimum_examples": 2
+        },
+        "code_or_terminal": {
+          "minimum_examples": 2
+        },
+        "physical_sign_or_placard": {
+          "minimum_examples": 2
+        },
+        "packaging_or_label": {
+          "minimum_examples": 2
+        },
+        "instrument_panel": {
+          "minimum_examples": 2
+        },
+        "multi_bearer_set": {
+          "minimum_examples": 2
+        },
+        "temporal_display": {
+          "minimum_examples": 2
+        },
+        "tactile_bearer": {
+          "minimum_examples": 2
+        },
+        "multimodal_bearer": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "uncertainty_states": {
+      "description": "Uncertainty/epistemic outcomes that must be deliberately tested",
+      "items": {
+        "UNKNOWN": {
+          "minimum_examples": 2
+        },
+        "AMBIGUOUS": {
+          "minimum_examples": 2
+        },
+        "UNRESOLVED": {
+          "minimum_examples": 2
+        },
+        "CONFLICTED": {
+          "minimum_examples": 4
+        },
+        "CANNOT_INFER": {
+          "minimum_examples": 2
+        },
+        "NOT_APPLICABLE": {
+          "minimum_examples": 4
+        },
+        "NO_LINEAR_READING_ORDER": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "context_scopes": {
+      "description": "Context boundaries and override scopes",
+      "items": {
+        "line_neighbor_window": {
+          "minimum_examples": 2
+        },
+        "local_expression": {
+          "minimum_examples": 2
+        },
+        "region": {
+          "minimum_examples": 2
+        },
+        "bearer": {
+          "minimum_examples": 2
+        },
+        "document": {
+          "minimum_examples": 2
+        },
+        "multi_bearer": {
+          "minimum_examples": 2
+        },
+        "temporal_interval": {
+          "minimum_examples": 2
+        },
+        "external_convention_dependency": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "temporal_modes": {
+      "description": "Static/dynamic bearer behavior",
+      "items": {
+        "static": {
+          "minimum_examples": 2
+        },
+        "sequence": {
+          "minimum_examples": 2
+        },
+        "persistent_vs_transient": {
+          "minimum_examples": 2
+        },
+        "scrolling": {
+          "minimum_examples": 2
+        },
+        "flashing_or_rhythm": {
+          "minimum_examples": 2
+        },
+        "gesture_or_motion": {
+          "minimum_examples": 2
+        },
+        "stateful_display": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "corruption_modes": {
+      "description": "Input degradation and incomplete-observation modes",
+      "items": {
+        "clipped": {
+          "minimum_examples": 2
+        },
+        "occluded": {
+          "minimum_examples": 2
+        },
+        "blurred": {
+          "minimum_examples": 2
+        },
+        "rotated": {
+          "minimum_examples": 2
+        },
+        "perspective_distorted": {
+          "minimum_examples": 2
+        },
+        "low_contrast": {
+          "minimum_examples": 2
+        },
+        "glare": {
+          "minimum_examples": 2
+        },
+        "damaged": {
+          "minimum_examples": 2
+        },
+        "handwritten_overlay": {
+          "minimum_examples": 2
+        },
+        "overprint_or_correction": {
+          "minimum_examples": 2
+        },
+        "low_resolution": {
+          "minimum_examples": 2
+        },
+        "compression_artifacts": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "provenance_requirements": {
+      "description": "Kinds of evidence lineage the suite should exercise",
+      "items": {
+        "source_span": {
+          "minimum_examples": 2
+        },
+        "spatial_grouping_evidence": {
+          "minimum_examples": 2
+        },
+        "scope_binding": {
+          "minimum_examples": 2
+        },
+        "temporal_frame_lineage": {
+          "minimum_examples": 2
+        },
+        "modification_history": {
+          "minimum_examples": 2
+        },
+        "reading_order_dependency": {
+          "minimum_examples": 2
+        },
+        "bearer_set_dependency": {
+          "minimum_examples": 2
+        },
+        "external_convention": {
+          "minimum_examples": 2
+        },
+        "reconstruction_marked_generated": {
+          "minimum_examples": 2
+        },
+        "alternative_hypothesis_lineage": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "source_realism": {
+      "description": "Source realism/origin classes",
+      "items": {
+        "synthetic_text": {
+          "minimum_examples": 2
+        },
+        "synthetic_graphical": {
+          "minimum_examples": 2
+        },
+        "synthetic_temporal": {
+          "minimum_examples": 2
+        },
+        "real_world_photo": {
+          "minimum_examples": 2
+        },
+        "real_world_scan": {
+          "minimum_examples": 2
+        },
+        "captured_screen": {
+          "minimum_examples": 2
+        },
+        "real_document_extract": {
+          "minimum_examples": 2
+        },
+        "real_dynamic_capture": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "modalities": {
+      "description": "Carrier/perception modalities",
+      "items": {
+        "text": {
+          "minimum_examples": 2
+        },
+        "geometry": {
+          "minimum_examples": 2
+        },
+        "icon_or_pictogram": {
+          "minimum_examples": 2
+        },
+        "color": {
+          "minimum_examples": 2
+        },
+        "image": {
+          "minimum_examples": 2
+        },
+        "tactile": {
+          "minimum_examples": 2
+        },
+        "audio": {
+          "minimum_examples": 2
+        },
+        "motion_or_gesture": {
+          "minimum_examples": 2
+        },
+        "light_or_flash": {
+          "minimum_examples": 2
+        }
+      }
+    },
+    "symbol_depth": {
+      "description": "Dedicated clean-input symbol-depth mechanisms required before corruption-first expansion",
+      "items": {
+        "decomposition_alternatives": {
+          "minimum_examples": 3
+        },
+        "progressive_dilation": {
+          "minimum_examples": 5
+        },
+        "same_form_different_meaning": {
+          "minimum_examples": 6
+        },
+        "different_form_same_family": {
+          "minimum_examples": 2
+        },
+        "meta_context_switch": {
+          "minimum_examples": 6
+        },
+        "region_or_bearer_local_override": {
+          "minimum_examples": 2
+        },
+        "operator_fixity": {
+          "minimum_examples": 3
+        },
+        "operand_or_target_type_resolution": {
+          "minimum_examples": 4
+        },
+        "mode_switch": {
+          "minimum_examples": 2
+        },
+        "binder_scope": {
+          "minimum_examples": 2
+        },
+        "topology_modifier": {
+          "minimum_examples": 2
+        },
+        "backreference": {
+          "minimum_examples": 2
+        },
+        "attachment_semantics": {
+          "minimum_examples": 3
+        },
+        "operator_nucleus_dilation": {
+          "minimum_examples": 3
+        },
+        "tokenization_defeasible": {
+          "minimum_examples": 3
+        }
+      }
+    },
+    "symbol_dilation_radii": {
+      "description": "Analytical expansion radii exercised specifically for symbol interpretation",
+      "items": {
+        "D0_SELF": {
+          "minimum_examples": 3
+        },
+        "D1_ADJACENT": {
+          "minimum_examples": 3
+        },
+        "D2_LOCAL_EXPRESSION": {
+          "minimum_examples": 6
+        },
+        "D3_NEIGHBOR_LINES_OR_REGION": {
+          "minimum_examples": 3
+        },
+        "D4_STRUCTURAL_REGION": {
+          "minimum_examples": 2
+        },
+        "D5_WHOLE_BEARER": {
+          "minimum_examples": 2
+        },
+        "D6_RELATED_BEARERS": {
+          "minimum_examples": 1
+        },
+        "D7_EXTERNAL_CONVENTION": {
+          "minimum_examples": 2
+        }
+      }
+    }
+  }
+}

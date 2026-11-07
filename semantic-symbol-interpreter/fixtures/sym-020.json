@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-020",
+  "title": "Universal quantifier binds variable over scope",
+  "bearer": {
+    "kind": "static_text",
+    "source": "∀x P(x)",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:∀",
+      "bound_variable:x",
+      "body:P(x)"
+    ],
+    "structures": [
+      "macro_dynamics:binder_scope",
+      "scope:P(x)"
+    ],
+    "symbols": [
+      "symbol_meaning:UNIVERSAL_QUANTIFIER"
+    ],
+    "signs": [],
+    "messages": [
+      "message:for every x, P(x)"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:predicate_logic"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_role:ordinary_unary_operator"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

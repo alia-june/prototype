@@ -1,0 +1,37 @@
+{
+  "fixture_id": "WB-007",
+  "title": "Repeated labels, distinct occurrences",
+  "bearer": {
+    "kind": "static_text",
+    "source": "LEFT ENGINE       RIGHT ENGINE\nTEMP 90           TEMP 94\nRPM 2200          RPM 2180",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "occurrence:TEMP#1",
+      "occurrence:TEMP#2"
+    ],
+    "structures": [
+      "ground:TEMP#1->LEFT ENGINE",
+      "ground:TEMP#2->RIGHT ENGINE"
+    ],
+    "symbols": [
+      "symbol_type:TEMP"
+    ],
+    "signs": [],
+    "messages": [
+      "message:LEFT ENGINE TEMP=90",
+      "message:RIGHT ENGINE TEMP=94"
+    ],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "occurrence_merge:TEMP#1=TEMP#2"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001"
+  ],
+  "notes": []
+}

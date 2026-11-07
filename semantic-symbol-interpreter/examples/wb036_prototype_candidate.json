@@ -1,0 +1,162 @@
+{
+  "fixture_id": "WB-036",
+  "claims": [
+    "mode_indicator:LITERAL",
+    "symbol_role:mode_switch",
+    "message:decode subsequent text literally"
+  ],
+  "unknowns": [
+    "world_truth:NOT_APPLICABLE"
+  ],
+  "provenance": [
+    "rule:decoding-mode",
+    "engine:ssmi-minimal-interpreter/0.2.1"
+  ],
+  "invariants": {
+    "raw_observation_preserved": true,
+    "whole_bearer_preserved": true,
+    "alternatives_preserved": true,
+    "no_unobserved_as_observed": true,
+    "scope_respected": true,
+    "provenance_complete": true
+  },
+  "interpretation": {
+    "schema_version": "1.0",
+    "engine_version": "0.2.1",
+    "bearer": {
+      "kind": "static_text",
+      "source": "MODE: LITERAL",
+      "completeness": "COMPLETE"
+    },
+    "bearer_sha256": "4f1c5e8fecd2e85ce155c5a52c6094c04dcc9a2376fac2ddfef82e0f6221b4aa",
+    "offset_unit": "Unicode code point; end exclusive; per source segment",
+    "observations": [
+      {
+        "id": "o0-whole",
+        "segment": 0,
+        "start": 0,
+        "end": 13,
+        "text": "MODE: LITERAL",
+        "kind": "whole_segment"
+      },
+      {
+        "id": "o0-line0",
+        "segment": 0,
+        "start": 0,
+        "end": 13,
+        "text": "MODE: LITERAL",
+        "kind": "line"
+      }
+    ],
+    "rules": [
+      {
+        "id": "decoding-mode",
+        "source": "engine/minimal_interpreter.py",
+        "scope": "whole_bearer",
+        "evidence_ids": [
+          "o0-whole"
+        ],
+        "authority": "prototype rule specification; no action authority",
+        "convention_status": "declared synthetic rule; external conventions are assumptions, not observed facts"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "candidates-1",
+        "value": "mode_indicator:LITERAL",
+        "level": "ANALYSIS",
+        "rule_id": "decoding-mode",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-2",
+        "value": "symbol_role:mode_switch",
+        "level": "SYMBOL",
+        "rule_id": "decoding-mode",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-3",
+        "value": "message:decode subsequent text literally",
+        "level": "MESSAGE",
+        "rule_id": "decoding-mode",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole",
+          "candidates-2"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "assessments": [
+      {
+        "id": "assessments-1",
+        "value": "world_truth:NOT_APPLICABLE",
+        "level": "ANALYSIS",
+        "rule_id": "decoding-mode",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "NOT_APPLICABLE",
+        "truth_assessment": "NOT_APPLICABLE",
+        "dimension": "world_truth"
+      }
+    ],
+    "alternatives": [],
+    "provenance_records": [
+      {
+        "id": "provenance_records-1",
+        "value": "rule:decoding-mode",
+        "level": "ANALYSIS",
+        "rule_id": "decoding-mode",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-2",
+        "value": "engine:ssmi-minimal-interpreter/0.2.1",
+        "level": "ANALYSIS",
+        "rule_id": "decoding-mode",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "capability": "synthetic text / supplied textual descriptions only",
+    "completeness": "COMPLETE",
+    "limits": [
+      "No OCR or perception performed.",
+      "Rule source spans are conservative whole-segment dependencies.",
+      "Candidate support is not independently established world truth."
+    ],
+    "validation": {
+      "structural_errors": [],
+      "scope": "source retention and graph structure; no semantic attestation"
+    }
+  }
+}

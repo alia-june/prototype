@@ -1,0 +1,41 @@
+{
+  "fixture_id": "WB-028",
+  "title": "Isolated arrow cannot establish message",
+  "bearer": {
+    "kind": "static_text",
+    "source": "\u2191",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:\u2191",
+      "orientation:up"
+    ],
+    "structures": [
+      "direction_shape:upward_candidate"
+    ],
+    "symbols": [
+      "symbol:up-arrow"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "source_span:\u2191"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:go up",
+    "implication:move upward"
+  ],
+  "required_unknowns": [
+    "message:CANNOT_INFER",
+    "implication:CANNOT_INFER"
+  ],
+  "properties": [
+    "P-003"
+  ],
+  "notes": [
+    "Arrow orientation is observed; communicative function is not established."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "fixture_id": "WB-025",
+  "title": "Conflicting local symbol definitions",
+  "bearer": {
+    "kind": "static_text",
+    "source": "LEGEND A: \u25cf = ON\nLEGEND B: \u25cf = OFF\nSTATUS: \u25cf",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "binding_A:\u25cf=ON",
+      "binding_B:\u25cf=OFF",
+      "status_occurrence:\u25cf"
+    ],
+    "structures": [
+      "scope:bindings overlap",
+      "conflict_candidate:local symbol definitions"
+    ],
+    "symbols": [
+      "symbol:\u25cf"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "source_span:LEGEND A",
+      "source_span:LEGEND B",
+      "source_span:STATUS"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:STATUS ON",
+    "message:STATUS OFF"
+  ],
+  "required_unknowns": [
+    "symbol_meaning:CONFLICTED"
+  ],
+  "properties": [
+    "P-003",
+    "P-004",
+    "P-006"
+  ],
+  "notes": [
+    "No precedence cue is provided, so choosing either legend is overreach."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "fixture_id": "SYM-018",
+  "title": "Prefix tilde in Python is bitwise inversion",
+  "bearer": {
+    "kind": "static_text",
+    "source": "Python\n~mask",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:~",
+      "fixity:prefix",
+      "operand:mask"
+    ],
+    "structures": [
+      "macro_dynamics:bitwise_inversion"
+    ],
+    "symbols": [
+      "symbol_meaning:BITWISE_INVERT"
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "context:Python"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:SIMILARITY_RELATION"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

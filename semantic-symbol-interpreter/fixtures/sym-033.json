@@ -1,0 +1,40 @@
+{
+  "fixture_id": "SYM-033",
+  "title": "Arrow token in type context encodes function type",
+  "bearer": {
+    "kind": "static_text",
+    "source": "TYPE\nA -> B",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_run:->",
+      "left_type:A",
+      "right_type:B"
+    ],
+    "structures": [
+      "macro_dynamics:type_constructor"
+    ],
+    "symbols": [
+      "symbol_meaning:FUNCTION_TYPE_ARROW"
+    ],
+    "signs": [],
+    "messages": [
+      "message:function from A to B"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:type_system"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:DIRECTED_GRAPH_EDGE"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

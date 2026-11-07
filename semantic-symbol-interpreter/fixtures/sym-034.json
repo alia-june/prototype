@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-034",
+  "title": "No-connect marker creates intentional absence",
+  "bearer": {
+    "kind": "static_text",
+    "source": "SCHEMATIC\nPIN 3  X",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:X",
+      "attachment_target:PIN 3"
+    ],
+    "structures": [
+      "macro_dynamics:intentional_disconnection"
+    ],
+    "symbols": [
+      "symbol_meaning:NO_CONNECT"
+    ],
+    "signs": [],
+    "messages": [
+      "message:pin intentionally unconnected"
+    ],
+    "implications": [
+      "implication:missing connection is intentional"
+    ],
+    "provenance": [
+      "context:schematic_convention"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:unknown error marker"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

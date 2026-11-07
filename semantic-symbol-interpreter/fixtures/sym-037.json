@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-037",
+  "title": "Regex numeric backreference resolves against prior capture",
+  "bearer": {
+    "kind": "static_text",
+    "source": "REGEX\n([A-Z])\\1",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_run:\\1",
+      "prior_capture_group:1"
+    ],
+    "structures": [
+      "macro_dynamics:backreference_to_capture_group",
+      "resolved_reference:group 1"
+    ],
+    "symbols": [
+      "symbol_meaning:REGEX_BACKREFERENCE"
+    ],
+    "signs": [],
+    "messages": [
+      "message:repeat text matched by capture group 1"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:regular_expression",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:literal characters backslash-one"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

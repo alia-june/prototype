@@ -1,0 +1,226 @@
+{
+  "fixture_id": "WB-026",
+  "claims": [
+    "label:SERIAL NUMBER",
+    "identifier:A17-42",
+    "relation:SERIAL NUMBER->A17-42",
+    "sign:identification label",
+    "message:serial number is A17-42"
+  ],
+  "unknowns": [
+    "normative_action:NOT_APPLICABLE"
+  ],
+  "provenance": [
+    "rule:identification-label",
+    "source_span:SERIAL NUMBER",
+    "source_span:A17-42",
+    "engine:ssmi-minimal-interpreter/0.2.1"
+  ],
+  "invariants": {
+    "raw_observation_preserved": true,
+    "whole_bearer_preserved": true,
+    "alternatives_preserved": true,
+    "no_unobserved_as_observed": true,
+    "scope_respected": true,
+    "provenance_complete": true
+  },
+  "interpretation": {
+    "schema_version": "1.0",
+    "engine_version": "0.2.1",
+    "bearer": {
+      "kind": "static_text",
+      "source": "SERIAL NUMBER\nA17-42",
+      "completeness": "COMPLETE"
+    },
+    "bearer_sha256": "e47b8ad07f29baeb6ea9a1a508c131121ff3c25149607fcde3a74911c5831ade",
+    "offset_unit": "Unicode code point; end exclusive; per source segment",
+    "observations": [
+      {
+        "id": "o0-whole",
+        "segment": 0,
+        "start": 0,
+        "end": 20,
+        "text": "SERIAL NUMBER\nA17-42",
+        "kind": "whole_segment"
+      },
+      {
+        "id": "o0-line0",
+        "segment": 0,
+        "start": 0,
+        "end": 14,
+        "text": "SERIAL NUMBER\n",
+        "kind": "line"
+      },
+      {
+        "id": "o0-line1",
+        "segment": 0,
+        "start": 14,
+        "end": 20,
+        "text": "A17-42",
+        "kind": "line"
+      }
+    ],
+    "rules": [
+      {
+        "id": "identification-label",
+        "source": "engine/minimal_interpreter.py",
+        "scope": "whole_bearer",
+        "evidence_ids": [
+          "o0-whole"
+        ],
+        "authority": "prototype rule specification; no action authority",
+        "convention_status": "declared synthetic rule; external conventions are assumptions, not observed facts"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "candidates-1",
+        "value": "label:SERIAL NUMBER",
+        "level": "ANALYSIS",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-2",
+        "value": "identifier:A17-42",
+        "level": "ANALYSIS",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-3",
+        "value": "relation:SERIAL NUMBER->A17-42",
+        "level": "ANALYSIS",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-4",
+        "value": "sign:identification label",
+        "level": "SIGN",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-5",
+        "value": "message:serial number is A17-42",
+        "level": "MESSAGE",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole",
+          "candidates-4"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "assessments": [
+      {
+        "id": "assessments-1",
+        "value": "normative_action:NOT_APPLICABLE",
+        "level": "ANALYSIS",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "NOT_APPLICABLE",
+        "truth_assessment": "NOT_APPLICABLE",
+        "dimension": "normative_action"
+      }
+    ],
+    "alternatives": [],
+    "provenance_records": [
+      {
+        "id": "provenance_records-1",
+        "value": "rule:identification-label",
+        "level": "ANALYSIS",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-2",
+        "value": "source_span:SERIAL NUMBER",
+        "level": "ANALYSIS",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-3",
+        "value": "source_span:A17-42",
+        "level": "ANALYSIS",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-4",
+        "value": "engine:ssmi-minimal-interpreter/0.2.1",
+        "level": "ANALYSIS",
+        "rule_id": "identification-label",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "capability": "synthetic text / supplied textual descriptions only",
+    "completeness": "COMPLETE",
+    "limits": [
+      "No OCR or perception performed.",
+      "Rule source spans are conservative whole-segment dependencies.",
+      "Candidate support is not independently established world truth."
+    ],
+    "validation": {
+      "structural_errors": [],
+      "scope": "source retention and graph structure; no semantic attestation"
+    }
+  }
+}

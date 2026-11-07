@@ -1,0 +1,330 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SSMI structured interpretation extension 1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "engine_version",
+    "bearer",
+    "bearer_sha256",
+    "observations",
+    "rules",
+    "candidates",
+    "assessments",
+    "alternatives",
+    "provenance_records",
+    "completeness",
+    "validation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "engine_version": {
+      "type": "string"
+    },
+    "bearer": {
+      "type": "object",
+      "required": [
+        "kind",
+        "source"
+      ]
+    },
+    "bearer_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "segment",
+          "start",
+          "end",
+          "text",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "whole_segment",
+              "line"
+            ]
+          },
+          "segment": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source",
+          "scope",
+          "evidence_ids",
+          "authority",
+          "convention_status"
+        ]
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "value",
+          "level",
+          "rule_id",
+          "scope",
+          "dependency_ids",
+          "completeness",
+          "status",
+          "truth_assessment"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "ANALYSIS",
+              "SYMBOL",
+              "SIGN",
+              "MESSAGE",
+              "IMPLICATION"
+            ]
+          },
+          "rule_id": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "completeness": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "truth_assessment": {
+            "type": "string"
+          },
+          "dependency_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "value",
+          "level",
+          "rule_id",
+          "scope",
+          "dependency_ids",
+          "completeness",
+          "status",
+          "truth_assessment"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "ANALYSIS",
+              "SYMBOL",
+              "SIGN",
+              "MESSAGE",
+              "IMPLICATION"
+            ]
+          },
+          "rule_id": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "completeness": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "truth_assessment": {
+            "type": "string"
+          },
+          "dependency_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "value",
+          "level",
+          "rule_id",
+          "scope",
+          "dependency_ids",
+          "completeness",
+          "status",
+          "truth_assessment"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "ANALYSIS",
+              "SYMBOL",
+              "SIGN",
+              "MESSAGE",
+              "IMPLICATION"
+            ]
+          },
+          "rule_id": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "completeness": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "truth_assessment": {
+            "type": "string"
+          },
+          "dependency_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "provenance_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "value",
+          "level",
+          "rule_id",
+          "scope",
+          "dependency_ids",
+          "completeness",
+          "status",
+          "truth_assessment"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string",
+            "enum": [
+              "ANALYSIS",
+              "SYMBOL",
+              "SIGN",
+              "MESSAGE",
+              "IMPLICATION"
+            ]
+          },
+          "rule_id": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "completeness": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "truth_assessment": {
+            "type": "string"
+          },
+          "dependency_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "structural_errors",
+        "scope"
+      ]
+    },
+    "completeness": {
+      "type": "string"
+    }
+  }
+}

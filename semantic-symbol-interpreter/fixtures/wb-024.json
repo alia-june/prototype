@@ -1,0 +1,41 @@
+{
+  "fixture_id": "WB-024",
+  "title": "Conflicting descriptive states",
+  "bearer": {
+    "kind": "static_text",
+    "source": "STATUS: GATE CLOSED\nSTATUS: GATE OPEN",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "claim:GATE CLOSED",
+      "claim:GATE OPEN"
+    ],
+    "structures": [
+      "modality:both descriptive",
+      "conflict_candidate:same referent/scope"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "source_span:STATUS GATE CLOSED",
+      "source_span:STATUS GATE OPEN"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:gate definitely closed",
+    "message:gate definitely open"
+  ],
+  "required_unknowns": [
+    "gate_state:CONFLICTED"
+  ],
+  "properties": [
+    "P-003",
+    "P-004"
+  ],
+  "notes": [
+    "Same modality, referent and bearer scope deliberately conflict."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "fixture_id": "WB-022",
+  "title": "Temporal implication state transition",
+  "bearer": {
+    "kind": "static_text",
+    "source": "DOOR STATUS OPEN\nAUTO-CLOSE IN 5s",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "status:DOOR OPEN",
+      "transition_notice:AUTO-CLOSE IN 5s"
+    ],
+    "structures": [
+      "state_transition:OPEN->CLOSED",
+      "temporal_delay:5s"
+    ],
+    "symbols": [],
+    "signs": [
+      "sign:door state plus scheduled transition"
+    ],
+    "messages": [
+      "message:door currently open",
+      "message:door scheduled to close in 5s"
+    ],
+    "implications": [
+      "implication:door state expected to transition OPEN->CLOSED after 5s"
+    ],
+    "provenance": [
+      "source_span:DOOR STATUS OPEN",
+      "source_span:AUTO-CLOSE IN 5s"
+    ]
+  },
+  "forbidden_inferences": [
+    "implication:door is currently closed"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002",
+    "P-010"
+  ],
+  "notes": [
+    "Tests implication macro-dynamics across time without overwriting current state."
+  ]
+}

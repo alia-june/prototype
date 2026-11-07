@@ -1,0 +1,32 @@
+{
+  "fixture_id": "WB-018",
+  "title": "Descriptive vs normative non-contradiction",
+  "bearer": {
+    "kind": "static_text",
+    "source": "STATUS: DOOR OPEN\nINSTRUCTION: KEEP DOOR CLOSED",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "modality:status descriptive",
+      "modality:instruction normative"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:door currently open",
+      "message:door should be kept closed"
+    ],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "contradiction:DOOR OPEN vs KEEP DOOR CLOSED"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002"
+  ],
+  "notes": []
+}

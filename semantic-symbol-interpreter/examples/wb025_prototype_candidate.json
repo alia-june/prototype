@@ -1,0 +1,288 @@
+{
+  "fixture_id": "WB-025",
+  "claims": [
+    "binding_A:●=ON",
+    "binding_B:●=OFF",
+    "status_occurrence:●",
+    "scope:bindings overlap",
+    "conflict_candidate:local symbol definitions",
+    "symbol:●"
+  ],
+  "unknowns": [
+    "symbol_meaning:CONFLICTED"
+  ],
+  "provenance": [
+    "rule:conflicting-local-definitions",
+    "source_span:LEGEND A",
+    "source_span:LEGEND B",
+    "source_span:STATUS",
+    "engine:ssmi-minimal-interpreter/0.2.1"
+  ],
+  "invariants": {
+    "raw_observation_preserved": true,
+    "whole_bearer_preserved": true,
+    "alternatives_preserved": true,
+    "no_unobserved_as_observed": true,
+    "scope_respected": true,
+    "provenance_complete": true
+  },
+  "interpretation": {
+    "schema_version": "1.0",
+    "engine_version": "0.2.1",
+    "bearer": {
+      "kind": "static_text",
+      "source": "LEGEND A: ● = ON\nLEGEND B: ● = OFF\nSTATUS: ●",
+      "completeness": "COMPLETE"
+    },
+    "bearer_sha256": "682a834868b17fb0b180ca7665fe5cf89d13cdd5f081a764b425e05a8832b230",
+    "offset_unit": "Unicode code point; end exclusive; per source segment",
+    "observations": [
+      {
+        "id": "o0-whole",
+        "segment": 0,
+        "start": 0,
+        "end": 44,
+        "text": "LEGEND A: ● = ON\nLEGEND B: ● = OFF\nSTATUS: ●",
+        "kind": "whole_segment"
+      },
+      {
+        "id": "o0-line0",
+        "segment": 0,
+        "start": 0,
+        "end": 17,
+        "text": "LEGEND A: ● = ON\n",
+        "kind": "line"
+      },
+      {
+        "id": "o0-line1",
+        "segment": 0,
+        "start": 17,
+        "end": 35,
+        "text": "LEGEND B: ● = OFF\n",
+        "kind": "line"
+      },
+      {
+        "id": "o0-line2",
+        "segment": 0,
+        "start": 35,
+        "end": 44,
+        "text": "STATUS: ●",
+        "kind": "line"
+      }
+    ],
+    "rules": [
+      {
+        "id": "conflicting-local-definitions",
+        "source": "engine/minimal_interpreter.py",
+        "scope": "whole_bearer",
+        "evidence_ids": [
+          "o0-whole"
+        ],
+        "authority": "prototype rule specification; no action authority",
+        "convention_status": "declared synthetic rule; external conventions are assumptions, not observed facts"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "candidates-1",
+        "value": "binding_A:●=ON",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-2",
+        "value": "binding_B:●=OFF",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-3",
+        "value": "status_occurrence:●",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-4",
+        "value": "scope:bindings overlap",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-5",
+        "value": "conflict_candidate:local symbol definitions",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "candidates-6",
+        "value": "symbol:●",
+        "level": "SYMBOL",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "assessments": [
+      {
+        "id": "assessments-1",
+        "value": "symbol_meaning:CONFLICTED",
+        "level": "SYMBOL",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CONFLICTED",
+        "truth_assessment": "UNKNOWN",
+        "dimension": "symbol_meaning"
+      }
+    ],
+    "alternatives": [
+      {
+        "id": "alternatives-1",
+        "value": "symbol_meaning:●=ON",
+        "level": "SYMBOL",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CONFLICTED",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "alternatives-2",
+        "value": "symbol_meaning:●=OFF",
+        "level": "SYMBOL",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CONFLICTED",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "provenance_records": [
+      {
+        "id": "provenance_records-1",
+        "value": "rule:conflicting-local-definitions",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-2",
+        "value": "source_span:LEGEND A",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-3",
+        "value": "source_span:LEGEND B",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-4",
+        "value": "source_span:STATUS",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      },
+      {
+        "id": "provenance_records-5",
+        "value": "engine:ssmi-minimal-interpreter/0.2.1",
+        "level": "ANALYSIS",
+        "rule_id": "conflicting-local-definitions",
+        "scope": "whole_bearer",
+        "dependency_ids": [
+          "o0-whole"
+        ],
+        "completeness": "COMPLETE",
+        "status": "CANDIDATE",
+        "truth_assessment": "UNKNOWN"
+      }
+    ],
+    "capability": "synthetic text / supplied textual descriptions only",
+    "completeness": "COMPLETE",
+    "limits": [
+      "No OCR or perception performed.",
+      "Rule source spans are conservative whole-segment dependencies.",
+      "Candidate support is not independently established world truth."
+    ],
+    "validation": {
+      "structural_errors": [],
+      "scope": "source retention and graph structure; no semantic attestation"
+    }
+  }
+}

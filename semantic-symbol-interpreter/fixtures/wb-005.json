@@ -1,0 +1,32 @@
+{
+  "fixture_id": "WB-005",
+  "title": "Geometry is not topology",
+  "bearer": {
+    "kind": "graphical",
+    "source": "A ──────┐\n        │\nB ──────┼──── C\n        │\n        └──── D",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "geometry:line intersection"
+    ],
+    "structures": [
+      "geometric_contact:observed"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "semantic_connection:all intersecting lines connected"
+  ],
+  "required_unknowns": [
+    "semantic_connection:UNKNOWN"
+  ],
+  "properties": [
+    "P-003"
+  ],
+  "notes": []
+}

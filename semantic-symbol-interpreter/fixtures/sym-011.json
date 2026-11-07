@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-011",
+  "title": "Postfix exclamation as factorial",
+  "bearer": {
+    "kind": "static_text",
+    "source": "5!",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:!",
+      "fixity:postfix",
+      "operand:5"
+    ],
+    "structures": [
+      "macro_dynamics:factorial_operation"
+    ],
+    "symbols": [
+      "symbol_meaning:FACTORIAL"
+    ],
+    "signs": [],
+    "messages": [
+      "message:factorial of 5"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:arithmetic",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:LOGICAL_NEGATION"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

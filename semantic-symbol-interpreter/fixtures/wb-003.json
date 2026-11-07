@@ -1,0 +1,40 @@
+{
+  "fixture_id": "WB-003",
+  "title": "Distant directional assembly",
+  "bearer": {
+    "kind": "static_text",
+    "source": "EXIT\n\n          ↑\n          │\n\n         DOOR",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "text:EXIT",
+      "arrow:up",
+      "text:DOOR"
+    ],
+    "structures": [
+      "assembly:EXIT+arrow+DOOR"
+    ],
+    "symbols": [
+      "symbol:up-arrow"
+    ],
+    "signs": [
+      "sign:directional exit assembly"
+    ],
+    "messages": [
+      "message:exit located in indicated direction"
+    ],
+    "implications": [],
+    "provenance": [
+      "relation:arrow points/references target"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:arrow is independent because distant"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002"
+  ],
+  "notes": []
+}

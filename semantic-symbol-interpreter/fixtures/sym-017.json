@@ -1,0 +1,42 @@
+{
+  "fixture_id": "SYM-017",
+  "title": "Triple equals without context preserves tokenization alternatives",
+  "bearer": {
+    "kind": "static_text",
+    "source": "===",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_run:==="
+    ],
+    "structures": [
+      "tokenization_candidate:[===]",
+      "tokenization_candidate:[==][=]",
+      "tokenization_candidate:[=][==]",
+      "tokenization_candidate:[=][=][=]"
+    ],
+    "symbols": [
+      "symbol_form:==="
+    ],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": [
+      "dilation:D0_SELF"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:STRICT_EQUALITY"
+  ],
+  "required_unknowns": [
+    "tokenization:AMBIGUOUS",
+    "symbol_meaning:AMBIGUOUS"
+  ],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

@@ -1,0 +1,1527 @@
+{
+  "engine": "ssmi-minimal-interpreter/0.2.1",
+  "fixture_count": 74,
+  "passed": 48,
+  "failed": 26,
+  "pass_pct": 64.9,
+  "results": [
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-001",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-001.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-002",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-002.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-003",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-003.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-004",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-004.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-005",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-005.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-006",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-006.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-007",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-007.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-008",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-008.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-009",
+      "pass": false,
+      "missing_required": [
+        "raw_run:|-",
+        "tokenization_candidate:[|-]",
+        "tokenization_candidate:[|][-]",
+        "macro_dynamics:branch_relation",
+        "symbol_meaning:ASCII_BRANCH",
+        "message:child branches from root",
+        "context:ascii_tree",
+        "dilation:D3_REGION"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-009.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-010",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-010.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-011",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-011.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-012",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-012.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-013",
+      "pass": false,
+      "missing_required": [
+        "macro_dynamics:truth_valued_relation"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.8571,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-013.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-014",
+      "pass": false,
+      "missing_required": [
+        "left_target:x",
+        "right_value:5",
+        "macro_dynamics:state_binding_update"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.625,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-014.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-015",
+      "pass": false,
+      "missing_required": [
+        "tokenization_preferred:[==]",
+        "macro_dynamics:comparison",
+        "message:test whether x equals 5"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.5,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-015.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-016",
+      "pass": false,
+      "missing_required": [
+        "tokenization_preferred:[===]",
+        "alternate_decomposition:[==][=]",
+        "alternate_decomposition:[=][==]",
+        "macro_dynamics:strict_comparison",
+        "message:strict equality comparison"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.375,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-016.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-017",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-017.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-018",
+      "pass": false,
+      "missing_required": [
+        "macro_dynamics:bitwise_inversion",
+        "symbol_meaning:BITWISE_INVERT"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.6667,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-018.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-019",
+      "pass": false,
+      "missing_required": [
+        "macro_dynamics:binary_relation",
+        "message:A similar to B"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.7778,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-019.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-020",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-020.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-021",
+      "pass": false,
+      "missing_required": [
+        "raw_symbol:●",
+        "geometric_contact:three conductors",
+        "macro_dynamics:topology_merge",
+        "symbol_meaning:JUNCTION",
+        "message:conductors connected at junction",
+        "context:schematic_convention"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-021.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-022",
+      "pass": false,
+      "missing_required": [
+        "raw_symbol:●",
+        "position:line_prefix",
+        "macro_dynamics:list_item_marker",
+        "symbol_meaning:BULLET",
+        "message:list membership marker",
+        "context:list_layout"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-022.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-023",
+      "pass": false,
+      "missing_required": [
+        "raw_symbol:⠰",
+        "following_symbols:a b",
+        "macro_dynamics:interpretation_mode_switch",
+        "scope:end-word",
+        "symbol_meaning:MODE_INDICATOR",
+        "message:interpret governed symbols under alternate mode",
+        "implication:downstream decoding changes until scope terminates",
+        "context:mode_control_fixture"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-023.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-024",
+      "pass": false,
+      "missing_required": [
+        "raw_symbol:SUB1",
+        "prior_symbol_1:V",
+        "macro_dynamics:ordinal_backreference",
+        "resolved_sequence:V V",
+        "symbol_meaning:BACKREFERENCE_1",
+        "message:repeat first applicable prior symbol",
+        "context:substitution_code_fixture"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-024.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-025",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-025.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-026",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-026.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-027",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-027.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-028",
+      "pass": false,
+      "missing_required": [
+        "base:A",
+        "attachment:superscript T",
+        "attachment_role:operation",
+        "target_type:matrix",
+        "macro_dynamics:global_structure_transform",
+        "symbol_meaning:TRANSPOSE",
+        "message:transpose A",
+        "context:linear_algebra"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-028.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-029",
+      "pass": false,
+      "missing_required": [
+        "base:x",
+        "attachment:superscript -1",
+        "target_type:scalar",
+        "macro_dynamics:multiplicative_inverse",
+        "symbol_meaning:MULTIPLICATIVE_INVERSE",
+        "context:arithmetic"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-029.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-030",
+      "pass": false,
+      "missing_required": [
+        "base:f",
+        "attachment:superscript -1",
+        "target_type:function",
+        "macro_dynamics:inverse_function",
+        "symbol_meaning:INVERSE_FUNCTION",
+        "context:function_theory"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-030.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-031",
+      "pass": false,
+      "missing_required": [
+        "single_fence:|x|",
+        "double_fence:‖v‖",
+        "family:FENCE",
+        "different_surface_forms:true",
+        "symbol_meaning:ABSOLUTE_VALUE_FENCE",
+        "symbol_meaning:NORM_FENCE",
+        "context:norms"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-031.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-032",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-032.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-033",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-033.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-034",
+      "pass": false,
+      "missing_required": [
+        "raw_symbol:X",
+        "attachment_target:PIN 3",
+        "macro_dynamics:intentional_disconnection",
+        "symbol_meaning:NO_CONNECT",
+        "message:pin intentionally unconnected",
+        "implication:missing connection is intentional",
+        "context:schematic_convention"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-034.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-035",
+      "pass": false,
+      "missing_required": [
+        "occurrence:△ on bearer A",
+        "legend_binding:△=CAUTION on bearer B",
+        "bearer_relation:legend_for",
+        "macro_dynamics:cross_bearer_symbol_resolution",
+        "symbol_meaning:CAUTION",
+        "message:CAUTION",
+        "dilation:D6_RELATED_BEARERS",
+        "scope:bearer_set"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-035.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-036",
+      "pass": false,
+      "missing_required": [
+        "raw_symbol:!",
+        "fixity:postfix",
+        "macro_dynamics:factorial_operation",
+        "symbol_meaning:FACTORIAL",
+        "dilation:D7_EXTERNAL_CONVENTION",
+        "context:arithmetic_convention"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-036.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-037",
+      "pass": false,
+      "missing_required": [
+        "raw_run:\\1",
+        "prior_capture_group:1",
+        "macro_dynamics:backreference_to_capture_group",
+        "resolved_reference:group 1",
+        "symbol_meaning:REGEX_BACKREFERENCE",
+        "message:repeat text matched by capture group 1",
+        "context:regular_expression",
+        "dilation:D2_LOCAL_EXPRESSION"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-037.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "SYM-038",
+      "pass": false,
+      "missing_required": [
+        "legend_binding:★=HIGH PRIORITY",
+        "distant_occurrence:★",
+        "macro_dynamics:bearer_scoped_binding",
+        "scope:whole_bearer",
+        "symbol_meaning:HIGH_PRIORITY",
+        "message:Task A high priority",
+        "context:whole_bearer_legend",
+        "dilation:D5_WHOLE_BEARER"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "sym-038.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-001",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-001.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-002",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-002.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-003",
+      "pass": false,
+      "missing_required": [
+        "text:EXIT",
+        "arrow:up",
+        "text:DOOR",
+        "assembly:EXIT+arrow+DOOR",
+        "symbol:up-arrow",
+        "sign:directional exit assembly",
+        "message:exit located in indicated direction",
+        "relation:arrow points/references target"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-003.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-004",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-004.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-005",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-005.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-006",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-006.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-007",
+      "pass": false,
+      "missing_required": [
+        "occurrence:TEMP#1",
+        "occurrence:TEMP#2",
+        "ground:TEMP#1->LEFT ENGINE",
+        "ground:TEMP#2->RIGHT ENGINE",
+        "symbol_type:TEMP",
+        "message:LEFT ENGINE TEMP=90",
+        "message:RIGHT ENGINE TEMP=94"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-007.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-008",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-008.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-009",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-009.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-010",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-010.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-011",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-011.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-012",
+      "pass": false,
+      "missing_required": [
+        "legend:X=CLOSED",
+        "status:Gate A X",
+        "formula:x=a+b",
+        "region:STATUS",
+        "region:FORMULA",
+        "binding_scope:STATUS",
+        "symbol:X",
+        "symbol:x",
+        "message:Gate A CLOSED",
+        "message:formula assignment/equality unresolved by this fixture",
+        "scope:local legend"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-012.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-013",
+      "pass": false,
+      "missing_required": [
+        "bearerA:SEE REVERSE",
+        "bearerB:CHEMICAL HAZARD",
+        "bearerB:WEAR RESPIRATOR",
+        "bearer_relation:continuation/reference",
+        "message:chemical hazard warning",
+        "message:wear respirator",
+        "implication:protective action required",
+        "source:bearerA",
+        "source:bearerB"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-013.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-014",
+      "pass": false,
+      "missing_required": [
+        "message_group:navigation",
+        "message_group:restriction",
+        "message_group:speed",
+        "message:navigation",
+        "message:truck no-left-turn restriction",
+        "message:speed limit 35"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-014.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-015",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-015.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-016",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-016.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-017",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-017.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-018",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-018.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-019",
+      "pass": false,
+      "missing_required": [
+        "salience:logo high",
+        "operational_priority:warning high",
+        "message:high pressure",
+        "message:do not open"
+      ],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 0.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-019.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-020",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-020.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-021",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-021.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-022",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-022.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-023",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-023.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-024",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-024.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-025",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-025.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-026",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-026.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-027",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-027.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-028",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-028.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-029",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-029.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-030",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-030.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-031",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-031.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-032",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-032.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-033",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-033.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-034",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-034.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-035",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-035.json"
+    },
+    {
+      "document_type": "candidate_result",
+      "source": "candidate.json",
+      "fixture_id": "WB-036",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_present": [],
+      "missing_required_unknowns": [],
+      "invariant_failures": [],
+      "scores": {
+        "required_claim_recall": 1.0,
+        "overreach_count": 0,
+        "ambiguity_retention": 1.0,
+        "provenance_completeness": 1.0,
+        "source_preservation": 1.0
+      },
+      "fixture_file": "wb-036.json"
+    }
+  ]
+}

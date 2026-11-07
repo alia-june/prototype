@@ -1,0 +1,42 @@
+{
+  "fixture_id": "SYM-024",
+  "title": "Substitute symbol backreferences prior symbol",
+  "bearer": {
+    "kind": "static_text",
+    "source": "CODE_SEQUENCE\nV SUB1",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:SUB1",
+      "prior_symbol_1:V"
+    ],
+    "structures": [
+      "macro_dynamics:ordinal_backreference",
+      "resolved_sequence:V V"
+    ],
+    "symbols": [
+      "symbol_meaning:BACKREFERENCE_1"
+    ],
+    "signs": [],
+    "messages": [
+      "message:repeat first applicable prior symbol"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:substitution_code_fixture"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:SUB1 literal payload"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": [
+    "Mechanism test; not a full International Code of Signals conformance fixture."
+  ]
+}

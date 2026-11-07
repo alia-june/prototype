@@ -1,0 +1,40 @@
+{
+  "fixture_id": "WB-015",
+  "title": "Temporal scrolling assembly",
+  "bearer": {
+    "kind": "temporal",
+    "source": [
+      "EVAC",
+      "EVACU",
+      "EVACUATE",
+      "EVACUATE N",
+      "EVACUATE NOW"
+    ],
+    "completeness": "COMPLETE_INTERVAL"
+  },
+  "expected": {
+    "observations": [
+      "frame_sequence:5"
+    ],
+    "structures": [
+      "temporal_assembly:scroll"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:EVACUATE NOW"
+    ],
+    "implications": [],
+    "provenance": [
+      "source:frames t0..t4"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:t0 complete EVAC"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002"
+  ],
+  "notes": []
+}

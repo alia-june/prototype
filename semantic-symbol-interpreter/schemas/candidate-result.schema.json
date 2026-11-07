@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SSMI CandidateResult",
+  "type": "object",
+  "required": [
+    "fixture_id",
+    "claims",
+    "unknowns",
+    "provenance",
+    "invariants"
+  ],
+  "properties": {
+    "fixture_id": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "invariants": {
+      "type": "object"
+    },
+    "interpretation": {
+      "$ref": "interpretation.schema.json"
+    }
+  }
+}

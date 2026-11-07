@@ -1,0 +1,41 @@
+{
+  "fixture_id": "WB-002",
+  "title": "Separate label-value panels",
+  "bearer": {
+    "kind": "static_text",
+    "source": "[TEMPERATURE 72] [PRESSURE 120]",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "label:TEMPERATURE",
+      "value:72",
+      "label:PRESSURE",
+      "value:120"
+    ],
+    "structures": [
+      "pair:TEMPERATURE->72",
+      "pair:PRESSURE->120"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:TEMPERATURE=72",
+      "message:PRESSURE=120"
+    ],
+    "implications": [],
+    "provenance": [
+      "evidence:enclosure",
+      "evidence:alignment"
+    ]
+  },
+  "forbidden_inferences": [
+    "message:TEMPERATURE=120",
+    "message:PRESSURE=72"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002"
+  ],
+  "notes": []
+}

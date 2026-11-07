@@ -1,0 +1,50 @@
+{
+  "fixture_id": "WB-021",
+  "title": "Conditional implication activation and propagation",
+  "bearer": {
+    "kind": "static_text",
+    "source": "ALARM ACTIVE\nIF ALARM ACTIVE -> EVACUATE\nASSEMBLY POINT A",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "status:ALARM ACTIVE",
+      "rule:IF ALARM ACTIVE -> EVACUATE",
+      "destination:ASSEMBLY POINT A"
+    ],
+    "structures": [
+      "conditional_rule:alarm_active=>evacuate",
+      "implication_chain:condition activates directive"
+    ],
+    "symbols": [
+      "symbol:->"
+    ],
+    "signs": [
+      "sign:conditional evacuation directive"
+    ],
+    "messages": [
+      "message:alarm is active",
+      "message:evacuate when alarm active"
+    ],
+    "implications": [
+      "implication:evacuation directive is active",
+      "implication:proceed toward assembly point A"
+    ],
+    "provenance": [
+      "source_span:ALARM ACTIVE",
+      "source_span:IF ALARM ACTIVE -> EVACUATE",
+      "source_span:ASSEMBLY POINT A"
+    ]
+  },
+  "forbidden_inferences": [
+    "implication:evacuate when alarm inactive"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002",
+    "P-010"
+  ],
+  "notes": [
+    "Tests implication macro-dynamics: condition activation and downstream action propagation."
+  ]
+}

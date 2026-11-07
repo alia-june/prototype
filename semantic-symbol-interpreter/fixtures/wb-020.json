@@ -1,0 +1,37 @@
+{
+  "fixture_id": "WB-020",
+  "title": "Template-induced local grammar",
+  "bearer": {
+    "kind": "static_text",
+    "source": "TEMP 72\nPRESSURE 120\nFLOW 18\nPOWER 42",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [],
+    "structures": [
+      "local_grammar:left-column=measurement",
+      "local_grammar:right-column=value"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [
+      "message:TEMP=72",
+      "message:PRESSURE=120",
+      "message:FLOW=18",
+      "message:POWER=42"
+    ],
+    "implications": [],
+    "provenance": [
+      "evidence:repeated layout pattern"
+    ]
+  },
+  "forbidden_inferences": [
+    "scope:local grammar universal"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-002",
+    "P-006"
+  ],
+  "notes": []
+}

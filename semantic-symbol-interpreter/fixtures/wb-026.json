@@ -1,0 +1,43 @@
+{
+  "fixture_id": "WB-026",
+  "title": "Identification label with no normative action",
+  "bearer": {
+    "kind": "static_text",
+    "source": "SERIAL NUMBER\nA17-42",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "label:SERIAL NUMBER",
+      "identifier:A17-42"
+    ],
+    "structures": [
+      "relation:SERIAL NUMBER->A17-42"
+    ],
+    "symbols": [],
+    "signs": [
+      "sign:identification label"
+    ],
+    "messages": [
+      "message:serial number is A17-42"
+    ],
+    "implications": [],
+    "provenance": [
+      "source_span:SERIAL NUMBER",
+      "source_span:A17-42"
+    ]
+  },
+  "forbidden_inferences": [
+    "implication:perform action A17-42"
+  ],
+  "required_unknowns": [
+    "normative_action:NOT_APPLICABLE"
+  ],
+  "properties": [
+    "P-002",
+    "P-003"
+  ],
+  "notes": [
+    "Tests explicit NOT_APPLICABLE rather than inventing an action implication."
+  ]
+}

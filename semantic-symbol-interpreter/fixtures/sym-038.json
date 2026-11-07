@@ -1,0 +1,41 @@
+{
+  "fixture_id": "SYM-038",
+  "title": "Whole-bearer legend resolves distant star symbol",
+  "bearer": {
+    "kind": "static_text",
+    "source": "PRIORITY KEY\n★ = HIGH PRIORITY\n\n\nTASKS\nTask A       ★",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "legend_binding:★=HIGH PRIORITY",
+      "distant_occurrence:★"
+    ],
+    "structures": [
+      "macro_dynamics:bearer_scoped_binding",
+      "scope:whole_bearer"
+    ],
+    "symbols": [
+      "symbol_meaning:HIGH_PRIORITY"
+    ],
+    "signs": [],
+    "messages": [
+      "message:Task A high priority"
+    ],
+    "implications": [],
+    "provenance": [
+      "context:whole_bearer_legend",
+      "dilation:D5_WHOLE_BEARER"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:DECORATIVE_STAR"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

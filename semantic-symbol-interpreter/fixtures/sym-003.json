@@ -1,0 +1,46 @@
+{
+  "fixture_id": "SYM-003",
+  "title": "Shell pipeline resolves vertical bar",
+  "bearer": {
+    "kind": "static_text",
+    "source": "cat file | grep x",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "raw_symbol:|",
+      "left_expression:cat file",
+      "right_expression:grep x"
+    ],
+    "structures": [
+      "symbol_role:infix_connector",
+      "macro_dynamics:data_flow"
+    ],
+    "symbols": [
+      "symbol_meaning:PIPELINE"
+    ],
+    "signs": [
+      "sign:shell pipeline"
+    ],
+    "messages": [
+      "message:stdout left connects to stdin right"
+    ],
+    "implications": [
+      "implication:right command receives left output"
+    ],
+    "provenance": [
+      "context:shell",
+      "dilation:D2_LOCAL_EXPRESSION"
+    ]
+  },
+  "forbidden_inferences": [
+    "symbol_meaning:REGEX_ALTERNATION"
+  ],
+  "required_unknowns": [],
+  "properties": [
+    "P-001",
+    "P-002",
+    "P-003"
+  ],
+  "notes": []
+}

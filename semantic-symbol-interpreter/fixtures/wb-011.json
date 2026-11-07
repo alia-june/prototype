@@ -1,0 +1,35 @@
+{
+  "fixture_id": "WB-011",
+  "title": "No linear reading order",
+  "bearer": {
+    "kind": "graphical",
+    "source": "map/network with Hospital, Park, School, Station",
+    "completeness": "COMPLETE"
+  },
+  "expected": {
+    "observations": [
+      "node:Hospital",
+      "node:Park",
+      "node:School",
+      "node:Station"
+    ],
+    "structures": [
+      "structure:SPATIAL_NETWORK"
+    ],
+    "symbols": [],
+    "signs": [],
+    "messages": [],
+    "implications": [],
+    "provenance": []
+  },
+  "forbidden_inferences": [
+    "reading_order:Hospital->Park->School->Station"
+  ],
+  "required_unknowns": [
+    "reading_order:NO_LINEAR_READING_ORDER"
+  ],
+  "properties": [
+    "P-009"
+  ],
+  "notes": []
+}

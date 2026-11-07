@@ -1,0 +1,28 @@
+{
+  "fixture_id": "WB-001",
+  "claims": [
+    "line:WARNING",
+    "line:DO NOT",
+    "line:ENTER",
+    "line:AUTHORIZED PERSONNEL ONLY",
+    "group:warning assembly",
+    "relation:AUTHORIZED PERSONNEL ONLY qualifies DO NOT ENTER",
+    "sign:qualified warning/prohibition",
+    "message:entry prohibited subject to authorization qualification",
+    "implication:unauthorized persons must not enter"
+  ],
+  "unknowns": [],
+  "provenance": [
+    "source_span:WARNING",
+    "source_span:DO NOT ENTER",
+    "source_span:AUTHORIZED PERSONNEL ONLY"
+  ],
+  "invariants": {
+    "raw_observation_preserved": true,
+    "whole_bearer_preserved": true,
+    "alternatives_preserved": true,
+    "no_unobserved_as_observed": true,
+    "scope_respected": true,
+    "provenance_complete": true
+  }
+}
